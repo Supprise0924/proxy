@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 
 from sub_convert import sub_convert # Python 之间互相调用文件https://blog.csdn.net/winycg/article/details/78512300
-from list_update import update_url
+from sub_update import update_url
 
-import json, re, os
+import json, re, os, time
 from urllib import request
 
 
@@ -88,15 +88,6 @@ class sub_merge():
                 raw_list[index]['url'] = urls
                 input_list.append(raw_list[index])
         return input_list
-
-    def geoip_update(url):
-        print('Downloading Country.mmdb...')
-        try:
-            request.urlretrieve(url, './utils/Country.mmdb')
-            print('Success!\n')
-        except Exception:
-            print('Failed!\n')
-            pass
 
     def readme_update(readme_file='./README.md', sub_list=[]): # 更新 README 节点信息
         print('更新 README.md 中')
@@ -199,9 +190,26 @@ class sub_merge():
             print('完成!\n')
             f.write(data)
 
+    def backup(file):
+        t = time.localtime()
+        date = time.strftime('%y%m', t)
+        date_day = time.strftime('%y%m%d', t)
+
+        file_eternity = open(file, 'r', encoding='utf-8')
+        sub_content = file_eternity.read()
+        file_eternity.close()
+
+        try:
+            os.mkdir(f'{update_path}{date}')
+        except FileExistsError:
+            pass
+        txt_dir = update_path + date + '/' + date_day + '.txt' # 生成$MM$DD.txt文件名
+        file = open(txt_dir, 'w', encoding= 'utf-8')
+        file.write(sub_convert.base64_decode(sub_content))
+        file.close()
+
 if __name__ == '__main__':
     update_url.update_main()
-    sub_merge.geoip_update('https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country.mmdb')
 
     sub_list = sub_merge.read_list(sub_list_json)
     sub_list_remote = sub_merge.read_list(sub_list_json,True)
