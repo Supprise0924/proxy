@@ -1,0 +1,20 @@
+subscription:
+  - dir: './sub'
+  - sublist-file: './sub/sub_list.json'
+
+provider:
+  - dir: './update/provider'
+  - config: './update/provider/config.yml'
+
+outfile:
+  - base64: 'Eternity'
+  - clash: 'Eternity.yml'
+  - readme: 'README.md'
+
+subconvert:
+  - geoip-url: 'https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country.mmdb'
+  - dup-rm: False
+  - name-format: True
+
+speedtest:
+  - num: 99
