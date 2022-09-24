@@ -37,7 +37,7 @@ jobs:
         tar -zxvf subconverter.tar.gz -C ./
         chmod +x ./subconverter/subconverter && nohup ./subconverter/subconverter >./subconverter.log 2>&1 &
 
-        python ./utils/list_merge.py
+        python ./utils/main.py
       
     - name: 提交更改
       run: |                 
