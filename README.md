@@ -141,30 +141,30 @@
 </details>
 
 ### 所有节点
-合并节点总数: `5932`
+合并节点总数: `6095`
 [节点链接](https://raw.githubusercontent.com/alanbobs999/TopFreeProxies/master/sub/sub_merge.txt)
 
 ### 节点来源
-- [pojiezhiyuanjun/freev2](https://github.com/pojiezhiyuanjun/freev2), 节点数量: `51`
+- [pojiezhiyuanjun/freev2](https://github.com/pojiezhiyuanjun/freev2), 节点数量: `116`
 - [xiyaowong/freeFQ](https://github.com/xiyaowong/freeFQ), 节点数量: `143`
-- [freefq/free](https://github.com/freefq/free), 节点数量: `32`
+- [freefq/free](https://github.com/freefq/free), 节点数量: `47`
 - [learnhard-cn/free_proxy_ss](https://github.com/learnhard-cn/free_proxy_ss), 节点数量: `90`
 - [vpei/Free-Node-Merge](https://github.com/vpei/Free-Node-Merge), 节点数量: `200`
 - [colatiger/v2ray-nodes](https://github.com/colatiger/v2ray-nodes), 节点数量: `21`
 - [oslook/clash-freenode](https://github.com/oslook/clash-freenode), 节点数量: `42`
 - [ssrsub/ssr](https://github.com/ssrsub/ssr), 节点数量: `40`
 - [Leon406/SubCrawler](https://github.com/Leon406/SubCrawler), 节点数量: `3583`
-- [yu-steven/openit](https://github.com/yu-steven/openit), 节点数量: `214`
+- [yu-steven/openit](https://github.com/yu-steven/openit), 节点数量: `256`
 - [Jsnzkpg/Jsnzkpg](https://github.com/Jsnzkpg/Jsnzkpg), 节点数量: `49`
 - [ermaozi/get_subscribe](https://github.com/ermaozi/get_subscribe), 节点数量: `41`
-- [wrfree/free](https://github.com/wrfree/free), 节点数量: `32`
+- [wrfree/free](https://github.com/wrfree/free), 节点数量: `47`
 - [changfengoss](https://github.com/ronghuaxueleng/get_v2), 节点数量: `49`
-- [anaer/Sub](https://github.com/anaer/Sub), 节点数量: `262`
+- [anaer/Sub](https://github.com/anaer/Sub), 节点数量: `281`
 - [xrayfree/free-ssr-ss-v2ray-vpn-clash](https://github.com/xrayfree/free-ssr-ss-v2ray-vpn-clash), 节点数量: `268`
-- [mhmhone/shadowrocket-free-subscribe](https://github.com/mhmhone/shadowrocket-free-subscribe), 节点数量: `29`
+- [mhmhone/shadowrocket-free-subscribe](https://github.com/mhmhone/shadowrocket-free-subscribe), 节点数量: `41`
 - [aiboboxx/v2rayfree](https://github.com/aiboboxx/v2rayfree), 节点数量: `33`
 - [Pawdroid/Free-servers](https://github.com/Pawdroid/Free-servers), 节点数量: `13`
-- [kxswa/k](https://github.com/kxswa/k), 节点数量: `47`
+- [kxswa/k](https://github.com/kxswa/k), 节点数量: `42`
 - [Nodefree.org](https://github.com/Fukki-Z/nodefree), 节点数量: `41`
 - [Rokate/Proxy-Sub](https://github.com/Rokate/Proxy-Sub), 节点数量: `331`
 - [mianfeifq/share](https://github.com/mianfeifq/share), 节点数量: `222`
