@@ -345,7 +345,7 @@ class parse():
         else:
             yaml_content = yaml_content_dic
         return yaml_content
-    def base64_decode(url_content): # Base64 转换为 URL 链接内容
+    def base64_decode(url_content):
         if '-' in url_content:
             url_content = url_content.replace('-', '+')
         if '_' in url_content:
@@ -362,7 +362,7 @@ class parse():
             base64_content = base64.b64decode(url_content)
             base64_content_format = base64_content
             return str(base64_content)
-    def base64_encode(url_content): # 将 URL 内容转换为 Base64
+    def base64_encode(url_content):
         if url_content == None:
             url_content = ''
         base64_content = base64.b64encode(url_content.encode('utf-8')).decode('ascii')
