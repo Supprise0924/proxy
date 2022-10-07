@@ -1,22 +1,11 @@
 #!/usr/bin/env python3
 
-from sub_convert import sub_convert # Python 之间互相调用文件https://blog.csdn.net/winycg/article/details/78512300
+from sub_convert import sub_convert
 from sub_update import update_url
 
 import json, re, os, time
 from urllib import request
 
-
-# 分析当前项目依赖 https://blog.csdn.net/lovedingd/article/details/102522094
-
-
-# 文件路径定义
-Eterniy = './Eternity'
-readme = './README.md'
-
-sub_list_json = './sub/sub_list.json'
-sub_merge_path = './sub/'
-sub_list_path = './sub/list/'
 
 class sub_merge():
     def sub_merge(url_list): # 将转换后的所有 Url 链接内容合并转换 YAML or Base64, ，并输出文件，输入订阅列表。
