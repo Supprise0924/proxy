@@ -141,7 +141,7 @@
 </details>
 
 ### 所有节点
-合并节点总数: `5885`
+合并节点总数: `5839`
 [节点链接](https://raw.githubusercontent.com/alanbobs999/TopFreeProxies/master/sub/sub_merge.txt)
 
 ### 节点来源
@@ -154,20 +154,20 @@
 - [oslook/clash-freenode](https://github.com/oslook/clash-freenode), 节点数量: `42`
 - [ssrsub/ssr](https://github.com/ssrsub/ssr), 节点数量: `40`
 - [Leon406/SubCrawler](https://github.com/Leon406/SubCrawler), 节点数量: `3524`
-- [yu-steven/openit](https://github.com/yu-steven/openit), 节点数量: `58`
-- [Jsnzkpg/Jsnzkpg](https://github.com/Jsnzkpg/Jsnzkpg), 节点数量: `19`
+- [yu-steven/openit](https://github.com/yu-steven/openit), 节点数量: `37`
+- [Jsnzkpg/Jsnzkpg](https://github.com/Jsnzkpg/Jsnzkpg), 节点数量: `26`
 - [ermaozi/get_subscribe](https://github.com/ermaozi/get_subscribe), 节点数量: `50`
 - [wrfree/free](https://github.com/wrfree/free), 节点数量: `51`
 - [changfengoss](https://github.com/ronghuaxueleng/get_v2), 节点数量: `48`
-- [anaer/Sub](https://github.com/anaer/Sub), 节点数量: `210`
+- [anaer/Sub](https://github.com/anaer/Sub), 节点数量: `199`
 - [xrayfree/free-ssr-ss-v2ray-vpn-clash](https://github.com/xrayfree/free-ssr-ss-v2ray-vpn-clash), 节点数量: `73`
-- [mhmhone/shadowrocket-free-subscribe](https://github.com/mhmhone/shadowrocket-free-subscribe), 节点数量: `39`
+- [mhmhone/shadowrocket-free-subscribe](https://github.com/mhmhone/shadowrocket-free-subscribe), 节点数量: `37`
 - [aiboboxx/v2rayfree](https://github.com/aiboboxx/v2rayfree), 节点数量: `48`
 - [Pawdroid/Free-servers](https://github.com/Pawdroid/Free-servers), 节点数量: `13`
-- [kxswa/k](https://github.com/kxswa/k), 节点数量: `35`
+- [kxswa/k](https://github.com/kxswa/k), 节点数量: `76`
 - [Nodefree.org](https://github.com/Fukki-Z/nodefree), 节点数量: `50`
-- [Rokate/Proxy-Sub](https://github.com/Rokate/Proxy-Sub), 节点数量: `276`
-- [mianfeifq/share](https://github.com/mianfeifq/share), 节点数量: `240`
+- [Rokate/Proxy-Sub](https://github.com/Rokate/Proxy-Sub), 节点数量: `227`
+- [mianfeifq/share](https://github.com/mianfeifq/share), 节点数量: `229`
 - [peasoft/NoMoreWalls](https://github.com/peasoft/NoMoreWalls), 节点数量: `287`
 - [ClashNode](https://clashnode.com/f/freenode), 节点数量: `50`
 
