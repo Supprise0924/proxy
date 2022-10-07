@@ -16,9 +16,6 @@ class parser():
         self.nodeconfig = self.main()
 
     def main(self):
-        """Convert subscribe content to YAML or Base64 or url.
-        首先获取到订阅内容，然后对其进行格式化处理。如果内容不是 “订阅内容解析错误”，在进行去重、改名操作后（可选）输出目标格式，否则输出 “订阅内容解析错误”。
-        """
         if self.content[:8] == 'https://': # 获取 URL 订阅链接内容
             s = requests.Session()
             s.mount('http://', HTTPAdapter(max_retries=5))
@@ -319,16 +316,18 @@ class parser():
             return str(base64_content)
 class converter():
     def __init__(self,content,config):
-        self.nodeconfig = parser(content)
-    def makeup(input, dup_rm_enabled=False, format_name_enabled=False): # 输入节点配置字典, 对节点进行区域的筛选和重命名，输出 YAML 文本 
-        # 区域判断(Clash YAML): https://blog.csdn.net/CSDN_duomaomao/article/details/89712826 (ip-api)
-        if isinstance(input, dict):
-            sub_content = input
-        else:
-            sub_content = sub_convert.format(input)
-        proxies_list = sub_content['proxies']
+        self.proxies = parser(content).nodeconfig['proxies']
+        self.config = config['subconvert']
+        self.output = self.main()
+
+    def main(self):
         
-        if dup_rm_enabled: # 去重
+        return ''
+    def makeup(self): # 输入节点配置字典, 对节点进行区域的筛选和重命名，输出 YAML 文本 
+        proxies_list = self.proxies
+        config = self.config
+        
+        if config['dup-rm']: # 去重
             begin = 0
             raw_length = len(proxies_list)
             length = len(proxies_list)
@@ -351,10 +350,9 @@ class converter():
                     begin_2 += 1
                 begin += 1
 
-        url_list = []
-
-        for proxy in proxies_list: # 改名
-            if format_name_enabled:
+        if config['rename']: #改名
+            rename_list = []
+            for proxy in proxies_list: # 改名
                 emoji = {
                     'AD': '🇦🇩', 'AE': '🇦🇪', 'AF': '🇦🇫', 'AG': '🇦🇬', 
                     'AI': '🇦🇮', 'AL': '🇦🇱', 'AM': '🇦🇲', 'AO': '🇦🇴', 
@@ -457,25 +455,14 @@ class converter():
                     proxy['name'] = f'{name_emoji}{country_code}-{ip}-{proxy_index:0>3d}'
                 elif len(proxies_list) <= 99:
                     proxy['name'] = f'{name_emoji}{country_code}-{ip}-{proxy_index:0>2d}'
+                rename_list.append(proxy)
+            proxies_list = rename_list
 
-                if proxy['server'] != '127.0.0.1':
-                    proxy_str = str(proxy)
-                    url_list.append(proxy_str)
-            elif format_name_enabled == False:
-                if proxy['server'] != '127.0.0.1': # 防止加入无用节点
-                    proxy_str = str(proxy)
-                    url_list.append(proxy_str)
-
-        yaml_content_dic = {'proxies': url_list}
-        yaml_content_raw = yaml.dump(yaml_content_dic, default_flow_style=False, sort_keys=False, allow_unicode=True, width=750, indent=2) # yaml.dump 显示中文方法 https://blog.csdn.net/weixin_41548578/article/details/90651464 yaml.dump 各种参数 https://blog.csdn.net/swinfans/article/details/88770119
-        yaml_content = sub_convert.format(yaml_content_raw,output=True)
-        
-        return yaml_content # 输出 YAML 格式文本
-    def provider2clash(file, config, output, provider_file_enabled=True):
+        return proxies_list # 输出格式化后的节点列表
+    def provider2clash(self):
         file_eternity = open(file, 'r', encoding='utf-8')
         sub_content = file_eternity.read()
         file_eternity.close()
-        all_provider = parse.main(sub_content,'content','YAML',custom_set={'dup_rm_enabled': False,'format_name_enabled': True})
 
         # 创建并写入 provider 
         lines = re.split(r'\n+', all_provider)
@@ -598,13 +585,9 @@ class converter():
         Eternity_yml = open(output, 'w+', encoding='utf-8')
         Eternity_yml.write(config_yaml)
         Eternity_yml.close()
-    def clash2url(url_content): # YAML 文本转换为 URL 链接内容
+    def clash2url(self): # YAML 文本转换为 URL 链接内容
         try:
-            if isinstance(url_content, dict):
-                sub_content = url_content
-            else:
-                sub_content = sub_convert.format(url_content)
-            proxies_list = sub_content['proxies']
+            proxies_list = self.makeup()
 
             protocol_url = []
             for index in range(len(proxies_list)): # 不同节点订阅链接内容 https://github.com/hoochanlon/fq-book/blob/master/docs/append/srvurl.md
@@ -629,12 +612,12 @@ class converter():
                         }
 
                     vmess_raw_proxy = json.dumps(vmess_value, sort_keys=False, indent=2, ensure_ascii=False)
-                    vmess_proxy = str('vmess://' + sub_convert.base64_encode(vmess_raw_proxy) + '\n')
+                    vmess_proxy = str('vmess://' + self.url2base64(vmess_raw_proxy) + '\n')
                     protocol_url.append(vmess_proxy)
 
                 elif proxy['type'] == 'ss': # SS 节点提取, 由 ss_base64_decoded 部分(参数: 'cipher', 'password', 'server', 'port') Base64 编码后 加 # 加注释(URL_encode) 
                     ss_base64_decoded = str(proxy['cipher']) + ':' + str(proxy['password']) + '@' + str(proxy['server']) + ':' + str(proxy['port'])
-                    ss_base64 = sub_convert.base64_encode(ss_base64_decoded)
+                    ss_base64 = self.url2base64(ss_base64_decoded)
                     ss_proxy = str('ss://' + ss_base64 + '#' + str(urllib.parse.quote(proxy['name'])) + '\n')
                     protocol_url.append(ss_proxy)
 
@@ -654,17 +637,17 @@ class converter():
                 
                 elif proxy['type'] == 'ssr': # ssr 节点提取, 由 ssr_base64_decoded 中所有参数总体 base64 encode
                     ssr_default_config = {}
-                    remarks = sub_convert.base64_encode(proxy['name']).replace('+', '-')
+                    remarks = self.url2base64(proxy['name']).replace('+', '-')
                     server = proxy['server']
                     port = str(proxy['port'])
-                    password = sub_convert.base64_encode(proxy['password'])
+                    password = self.url2base64(proxy['password'])
                     cipher = proxy['cipher']
                     protocol = proxy['protocol']
                     obfs = proxy['obfs']
                     param_dic = {'group': 'U1NSUHJvdmlkZXI', 'obfsparam':'', 'protoparam':''}
                     for key in param_dic.keys():
                         try:
-                            param_dic.update({key: sub_convert.base64_encode(proxy[key])})
+                            param_dic.update({key: self.url2base64(proxy[key])})
                         except Exception:
                             pass
                     group, obfsparam, protoparam = param_dic['group'], param_dic['obfsparam'], param_dic['protoparam']
@@ -672,11 +655,11 @@ class converter():
                     for key in {'group', 'obfsparam', 'protoparam'}:
                         if key in proxy:
                             if key == 'group':
-                                group = sub_convert.base64_encode(proxy[key])
+                                group = self.url2base64(proxy[key])
                             elif key == 'obfsparam':
-                                obfsparam = sub_convert.base64_encode(proxy[key])
+                                obfsparam = self.url2base64(proxy[key])
                             elif key == 'protoparam':
-                                protoparam = sub_convert.base64_encode(proxy[key])
+                                protoparam = self.url2base64(proxy[key])
                         else:
                             if key == 'group':
                                 group = 'U1NSUHJvdmlkZXI'
@@ -686,7 +669,7 @@ class converter():
                                 protoparam = ''
                     """
 
-                    ssr_proxy = 'ssr://'+sub_convert.base64_encode(server+':'+port+':'+protocol+':'+cipher+':'+obfs+':'+password+'/?group='+group+'&remarks='+remarks+'&obfsparam='+obfsparam+'&protoparam='+protoparam+'\n')
+                    ssr_proxy = 'ssr://'+self.url2base64(server+':'+port+':'+protocol+':'+cipher+':'+obfs+':'+password+'/?group='+group+'&remarks='+remarks+'&obfsparam='+obfsparam+'&protoparam='+protoparam+'\n')
                     protocol_url.append(ssr_proxy)
 
             yaml_content = ''.join(protocol_url)
@@ -699,7 +682,7 @@ class converter():
             url_content = ''
         base64_content = base64.b64encode(url_content.encode('utf-8')).decode('ascii')
         return base64_content
-    def convert_remote(url='', output_type='clash', host='http://127.0.0.1:25500'): #{url='订阅链接', output_type={'clash': 输出 Clash 配置, 'base64': 输出 Base64 配置, 'url': 输出 url 配置}, host='远程订阅转化服务地址'}
+    def convert_remote(self,url='', output_type='clash', host='http://127.0.0.1:25500'): #{url='订阅链接', output_type={'clash': 输出 Clash 配置, 'base64': 输出 Base64 配置, 'url': 输出 url 配置}, host='远程订阅转化服务地址'}
         # 使用远程订阅转换服务，输出相应配置。
         sever_host = host
         url = urllib.parse.quote(url, safe='') # https://docs.python.org/zh-cn/3/library/urllib.parse.html
@@ -724,7 +707,7 @@ class converter():
             if resp.text == 'No nodes were found!':
                 sub_content = 'Url 解析错误'
             else:
-                sub_content = sub_convert.base64_encode(resp.text)
+                sub_content = self.url2base64(resp.text)
         elif output_type == 'url':
             converted_url = sever_host+'/sub?target=mixed&url='+url+'&insert=false&emoji=true&list=true'
             try:
