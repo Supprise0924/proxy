@@ -7,15 +7,15 @@ import geoip2.database
 from requests.adapters import HTTPAdapter
 
 
-class converter():
-    def __init__(self,content,config={'subconvert': True}):
+class format():
+    def __init__(self,content,config={'subconvert': {'dup-rm': {'enabled': False}, 'rename': {'enabled': True, 'format': True}}}):
         self.content = content
         self.config = config['subconvert']
         self.output = self.main()
 
     def main(self):
-        output_type = self.config['output_type']
-        remote_convert = self.config['remote_convert']
+        proxies = self.makeup(self.getconfig())
+        output = self.config2url(proxies)
         return output
     def getconfig(self): # 输入订阅链接或订阅内容，得到节点配置列表
         if self.content[:8] == 'https://': # 获取 URL 订阅链接内容
@@ -314,7 +314,7 @@ class converter():
             'name':'SSR Node', 'server':'127.0.0.1', 'type':'ssr', 'country':'🇺🇸US', 'port':8099, 'password':'xxxxxxxxxxxxxxxx', 'cipher':'aes-256-cfb', 'protocol':'origin', 'obfs':'plain'
         }
         trojan_config_template = {
-            'name':'Trojan Node', 'server':'127.0.0.1', 'type':'trojan', 'country':'🇺🇸US', 'port':443, 'password':'xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx', 'skip-cert-verify': True, 'udp': True
+            'name':'Trojan Node', 'server':'127.0.0.1', 'type':'trojan', 'country':'🇺🇸US', 'port':443, 'password':'xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx', 'sni': 'www.gstatic.com', 'skip-cert-verify': True, 'udp': True
         }
 
         flags = {
@@ -384,45 +384,44 @@ class converter():
         }
 
 
-        for proxy in proxies_list:
+        for index in range(len(proxies_list)):
+            proxy = proxies_list[index]
             if proxy['type'] == 'vmess':
                 vmess_config_template.update(proxy)
                 proxy = vmess_config_template
-            if proxy['type'] == 'ss':
-                vmess_config_template.update(proxy)
+            elif proxy['type'] == 'ss':
+                ss_config_template.update(proxy)
                 proxy = ss_config_template
-            if proxy['type'] == 'ssr':
-                vmess_config_template.update(proxy)
+            elif proxy['type'] == 'ssr':
+                ssr_config_template.update(proxy)
                 proxy = ssr_config_template
-            if proxy['type'] == 'trojan':
-                vmess_config_template.update(proxy)
+            elif proxy['type'] == 'trojan':
+                trojan_config_template.update(proxy)
                 proxy = trojan_config_template
 
-            if proxy['server'] == '127.0.0.1':
-                proxies_list.pop(proxy)
+            server = proxy['server']
+            if server.replace('.','').isdigit():
+                ip = server
             else:
-                server = proxy['server']
-                if server.replace('.','').isdigit():
-                    ip = server
-                else:
-                    try:
-                        ip = socket.gethostbyname(server) # https://cloud.tencent.com/developer/article/1569841
-                    except Exception:
-                        ip = server
-                with geoip2.database.Reader('./utils/Country.mmdb') as ip_reader:
-                    try:
-                        response = ip_reader.country(ip)
-                        country_code = response.country.iso_code
-                    except Exception:
-                        country_code = 'ZZ'
-                if country_code == 'CLOUDFLARE':
-                    country_code = 'ZZ'
-                elif country_code == 'PRIVATE':
-                    country_code = 'ZZ'
                 try:
-                    proxy['country'] = flags[country_code]+country_code
-                except KeyError:
-                    proxy['country'] = '🏁ZZ'
+                    ip = socket.gethostbyname(server) # https://cloud.tencent.com/developer/article/1569841
+                except Exception:
+                    ip = server
+            with geoip2.database.Reader('./utils/Country.mmdb') as ip_reader:
+                try:
+                    response = ip_reader.country(ip)
+                    country_code = response.country.iso_code
+                except Exception:
+                    country_code = 'ZZ'
+            if country_code == 'CLOUDFLARE':
+                country_code = 'ZZ'
+            elif country_code == 'PRIVATE':
+                country_code = 'ZZ'
+            try:
+                proxy['country'] = flags[country_code]+country_code
+            except KeyError:
+                proxy['country'] = '🏁ZZ'
+            proxies_list[index] = proxy
 
         if config['dup-rm']['enabled']: # 去重
             begin = 0
@@ -452,8 +451,8 @@ class converter():
             name_format = config['rename']['format']
             for proxy in proxies_list: # 改名
                 proxy_index = proxies_list.index(proxy)
-                flag = proxy['country'][:0]
-                code = proxy['country'][1:2]
+                flag = proxy['country'][:1]
+                code = proxy['country'][1:3]
                 address = ip
                 if len(proxies_list) >= 999:
                     proxy['name'] = f'{flag}{code}-{address}-{proxy_index:0>4d}'
@@ -464,10 +463,6 @@ class converter():
                 rename_list.append(proxy)
             proxies_list = rename_list
 
-        if config['filter'] != 'none':
-            filter_rules = config['filter']
-
-            
         return proxies_list # 输出格式化后的节点列表
     def config2url(self,proxies): # 节点配置转换为 URL 链接内容
         url_list = []
@@ -537,74 +532,77 @@ class converter():
 
         url_content = ''.join(url_list)
         return url_content
-    def base64_decode(url_content):
-        if '-' in url_content:
-            url_content = url_content.replace('-', '+')
-        if '_' in url_content:
-            url_content = url_content.replace('_', '/')
+    def base64_decode(self,content):
+        if '-' in content:
+            content = content.replace('-', '+')
+        if '_' in content:
+            content = content.replace('_', '/')
         #print(len(url_content))
-        missing_padding = len(url_content) % 4
+        missing_padding = len(content) % 4
         if missing_padding != 0:
-            url_content += '='*(4 - missing_padding) # 不是4的倍数后加= https://www.cnblogs.com/wswang/p/7717997.html
+            content += '='*(4 - missing_padding) # 不是4的倍数后加= https://www.cnblogs.com/wswang/p/7717997.html
         try:
-            base64_content = base64.b64decode(url_content.encode('utf-8')).decode('utf-8','ignore') # https://www.codenong.com/42339876/
+            base64_content = base64.b64decode(content.encode('utf-8')).decode('utf-8','ignore') # https://www.codenong.com/42339876/
             base64_content_format = base64_content
             return base64_content_format
         except UnicodeDecodeError:
-            base64_content = base64.b64decode(url_content)
+            base64_content = base64.b64decode(content)
             base64_content_format = base64_content
             return str(base64_content)
-    def base64_encode(content): # 将 URL 内容转换为 Base64
+    def base64_encode(self,content): # 将 URL 内容转换为 Base64
         if content == None:
             content = ''
         base64_content = base64.b64encode(content.encode('utf-8')).decode('ascii')
         return base64_content
-    def subconvert(self): #{url='订阅链接', output_type={'clash': 输出 Clash 配置, 'base64': 输出 Base64 配置, 'url': 输出 url 配置}, host='远程订阅转化服务地址'}
-        # 使用远程订阅转换服务，输出相应配置。
-        sever_host = host
-        url = urllib.parse.quote(url, safe='') # https://docs.python.org/zh-cn/3/library/urllib.parse.html
-        if output_type == 'clash':
-            converted_url = sever_host+'/sub?target=clash&url='+url+'&insert=false&emoji=true&list=true'
-            try:
-                resp = requests.get(converted_url)
-            except Exception as err:
-                print(err)
-                return 'Url 解析错误'
-            if resp.text == 'No node was found!':
-                sub_content = 'Url 解析错误'
-            else:
-                sub_content = sub_convert.makeup(sub_convert.format(resp.text), dup_rm_enabled=False, format_name_enabled=True)
-        elif output_type == 'base64':
-            converted_url = sever_host+'/sub?target=mixed&url='+url+'&insert=false&emoji=true&list=true'
-            try:
-                resp = requests.get(converted_url)
-            except Exception as err:
-                print(err)
-                return 'Url 解析错误'
-            if resp.text == 'No nodes were found!':
-                sub_content = 'Url 解析错误'
-            else:
-                sub_content = self.base64_encode(resp.text)
-        elif output_type == 'url':
-            converted_url = sever_host+'/sub?target=mixed&url='+url+'&insert=false&emoji=true&list=true'
-            try:
-                resp = requests.get(converted_url)
-            except Exception as err:
-                print(err)
-                return 'Url 解析错误'
-            if resp.text == 'No nodes were found!':
-                sub_content = 'Url 解析错误'
-            else:
-                sub_content = resp.text
 
-        return sub_content
+def subconvert(self): #{url='订阅链接', output_type={'clash': 输出 Clash 配置, 'base64': 输出 Base64 配置, 'url': 输出 url 配置}, host='远程订阅转化服务地址'}
+    # 使用远程订阅转换服务，输出相应配置。
+    sever_host = host
+    url = urllib.parse.quote(url, safe='') # https://docs.python.org/zh-cn/3/library/urllib.parse.html
+    if output_type == 'clash':
+        converted_url = sever_host+'/sub?target=clash&url='+url+'&insert=false&emoji=true&list=true'
+        try:
+            resp = requests.get(converted_url)
+        except Exception as err:
+            print(err)
+            return 'Url 解析错误'
+        if resp.text == 'No node was found!':
+            sub_content = 'Url 解析错误'
+        else:
+            sub_content = sub_convert.makeup(sub_convert.format(resp.text), dup_rm_enabled=False, format_name_enabled=True)
+    elif output_type == 'base64':
+        converted_url = sever_host+'/sub?target=mixed&url='+url+'&insert=false&emoji=true&list=true'
+        try:
+            resp = requests.get(converted_url)
+        except Exception as err:
+            print(err)
+            return 'Url 解析错误'
+        if resp.text == 'No nodes were found!':
+            sub_content = 'Url 解析错误'
+        else:
+            sub_content = self.base64_encode(resp.text)
+    elif output_type == 'url':
+        converted_url = sever_host+'/sub?target=mixed&url='+url+'&insert=false&emoji=true&list=true'
+        try:
+            resp = requests.get(converted_url)
+        except Exception as err:
+            print(err)
+            return 'Url 解析错误'
+        if resp.text == 'No nodes were found!':
+            sub_content = 'Url 解析错误'
+        else:
+            sub_content = resp.text
+
+    return sub_content
+
 
 if __name__ == '__main__':
+    
     subscribe = 'https://fastly.jsdelivr.net/gh/alanbobs999/TopFreeProxies@master/Eternity.yml'
     content = ''
     output_path = './output.txt'
 
-    content = converter(subscribe).output
+    content = format(subscribe).output
 
     file = open(output_path, 'w', encoding= 'utf-8')
     file.write(content)
