@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-import re, sys, os, argparse
+import re, os, argparse
 import yaml, json, base64
 import requests, socket, urllib.parse
 import geoip2.database
@@ -308,13 +308,13 @@ class format():
             'ws-opts': {'path': '/', 'headers': {'Host': '127.0.0.1'}}, 'udp': True
         }
         ss_config_template = {
-            'name': 'SS Node', 'server':'127.0.0.1', 'type':'ss', 'country':'🇺🇸US', 'port':50000, 'password':'xxxxxxxxxx', 'cipher':'aes-256-gcm'
+            'name': 'SS Node', 'server':'127.0.0.1', 'port':50000, 'type':'ss', 'country':'🇺🇸US', 'password':'xxxxxxxxxx', 'cipher':'aes-256-gcm'
         }
         ssr_config_template = {
-            'name':'SSR Node', 'server':'127.0.0.1', 'type':'ssr', 'country':'🇺🇸US', 'port':8099, 'password':'xxxxxxxxxxxxxxxx', 'cipher':'aes-256-cfb', 'protocol':'origin', 'obfs':'plain'
+            'name':'SSR Node', 'server':'127.0.0.1', 'port':8099, 'type':'ssr', 'country':'🇺🇸US', 'password':'xxxxxxxxxxxxxxxx', 'cipher':'aes-256-cfb', 'protocol':'origin', 'obfs':'plain'
         }
         trojan_config_template = {
-            'name':'Trojan Node', 'server':'127.0.0.1', 'type':'trojan', 'country':'🇺🇸US', 'port':443, 'password':'xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx', 'sni': 'www.gstatic.com', 'skip-cert-verify': True, 'udp': True
+            'name':'Trojan Node', 'server':'127.0.0.1', 'port':443, 'type':'trojan', 'country':'🇺🇸US', 'password':'xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx', 'skip-cert-verify': True, 'udp': True
         }
 
         flags = {
@@ -390,16 +390,16 @@ class format():
             proxy = proxies[index]
             if proxy['type'] == 'vmess':
                 vmess_config_template.update(proxy)
-                proxy = vmess_config_template
+                proxy = vmess_config_template.copy()
             elif proxy['type'] == 'ss':
                 ss_config_template.update(proxy)
-                proxy = ss_config_template
+                proxy = ss_config_template.copy()
             elif proxy['type'] == 'ssr':
                 ssr_config_template.update(proxy)
-                proxy = ssr_config_template
+                proxy = ssr_config_template.copy()
             elif proxy['type'] == 'trojan':
                 trojan_config_template.update(proxy)
-                proxy = trojan_config_template
+                proxy = trojan_config_template.copy()
 
             server = proxy['server']
             if server.replace('.','').isdigit():
@@ -568,26 +568,26 @@ def output(subscription,target='clash',exe_dir='./subconverter'):
     return output
 
 if __name__ == '__main__':
-    """parser = argparse.ArgumentParser(description='Convert between various proxy subscription formats using Subconverter.')
+    parser = argparse.ArgumentParser(description='Convert between various proxy subscription formats using Subconverter.')
     parser.add_argument('--subscription', '-s', help='Your subscription url or local file path.', required=True)
     parser.add_argument('--target', '-t', help='Target convert format, support url, clash, clash_provider, quanx.', default='clash')
     parser.add_argument('--output', '-o', help='Target path to output.', default='./')
-    parser.add_argument('--execution', '-e', help='Subconverter execution file path(relative path to current python file).', default='./subconverter')
     args = parser.parse_args()
 
     subscription = args.subscription
     target = args.target
-    exe_dir = args.execution
+    
     os.chdir(os.path.dirname(os.path.abspath(__file__)))
-    os.chdir(exe_dir)
+    os.chdir('./subconverter')
 
     with open(f'./temp', 'w+', encoding= 'utf-8') as temp_file:
         temp_file.write(format(subscription).output)
-
         if os.name == 'posix':
             os.system(f'./subconverter -g --artifact \"{target}\"')
         elif os.name == 'nt':
             os.system(f'subconverter.exe -g --artifact \"{target}\"')
-    os.remove('./temp')"""
-
-    print(format('https://raw.iqiq.io/yu-steven/openit/main/Clash.yaml').output)
+    os.remove('./temp')
+    
+    #print(format('https://raw.iqiq.io/yu-steven/openit/main/Clash.yaml').output)
+    #with open(f'./temp', 'w+', encoding= 'utf-8') as temp_file:
+    #    temp_file.write(format('https://raw.iqiq.io/yu-steven/openit/main/Clash.yaml').output)
