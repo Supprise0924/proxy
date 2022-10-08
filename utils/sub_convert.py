@@ -1,21 +1,23 @@
 #!/usr/bin/env python3
 
-import re, yaml, json, base64
+import re, sys, yaml, json, base64
 import requests, socket, urllib.parse
 import geoip2.database
 
 from requests.adapters import HTTPAdapter
 
-class NoAliasDumper(yaml.SafeDumper): # https://ttl255.com/yaml-anchors-and-aliases-and-how-to-disable-them/
-    def ignore_aliases(self, data):
-        return True
 
-class parser():
-    def __init__(self,content):
+class converter():
+    def __init__(self,content,config={'subconvert': True}):
         self.content = content
-        self.nodeconfig = self.main()
+        self.config = config['subconvert']
+        self.output = self.main()
 
     def main(self):
+        output_type = self.config['output_type']
+        remote_convert = self.config['remote_convert']
+        return output
+    def getconfig(self): # 输入订阅链接或订阅内容，得到节点配置列表
         if self.content[:8] == 'https://': # 获取 URL 订阅链接内容
             s = requests.Session()
             s.mount('http://', HTTPAdapter(max_retries=5))
@@ -28,12 +30,12 @@ class parser():
                 return node_config
             except Exception:
                 print('Problem occurs when fetching config')
-                return {'proxies': []}
+                return []
         else:
             content = self.content
             node_config = self.parse(content)
             return node_config
-    def parse(self,sub_content): # 解析链接文本(Base64, url, YAML), 输出节点的配置字典（Clash 配置）
+    def parse(self,sub_content): # 解析订阅内容, 输出节点配置列表
         if 'proxies:' not in sub_content: # 对 URL 内容进行格式化处理
             try:
                 if '://' not in sub_content:
@@ -66,11 +68,11 @@ class parser():
                 return node_config
             except:
                 print('Problem occurs when parsing URL config.')
-                return {'proxies': []}
+                return []
         elif 'proxies:' in sub_content: # 对 Clash 内容进行格式化处理
             try:
                 try_load = yaml.safe_load(sub_content)
-                node_config = {'proxies': try_load['proxies']}
+                node_config = try_load['proxies']
                 return node_config
             except Exception:
                 try:
@@ -130,15 +132,14 @@ class parser():
 
                     sub_content = '\n'.join(line_fix_list)
                     node_config = yaml.safe_load(sub_content)
-                    return node_config
+                    return node_config['proxies']
                 except:
                     print('Problem occurs when parsing Clash config.')
-                    return {'proxies': []}
+                    return []
         else:
             print('No node found in input config.')
-            return {'proxies': []}
-
-    def url2config(self,url_content): # 将 URL 内容转换为 YAML 文本, output 为 False 时输出节点配置字典
+            return []
+    def url2config(self,url_content): # 将 URL 内容转换为节点配置列表
         url_list = []
 
         lines = re.split(r'\n+', url_content)
@@ -296,38 +297,134 @@ class parser():
                     print(f'yaml_encode 解析 trojan 节点发生错误: {err}')
                     pass
 
-        return {'proxies': url_list}
-    def base64_decode(self,url_content):
-        if '-' in url_content:
-            url_content = url_content.replace('-', '+')
-        if '_' in url_content:
-            url_content = url_content.replace('_', '/')
-        #print(len(url_content))
-        missing_padding = len(url_content) % 4
-        if missing_padding != 0:
-            url_content += '='*(4 - missing_padding) # 不是4的倍数后加= https://www.cnblogs.com/wswang/p/7717997.html
-        try:
-            base64_content = base64.b64decode(url_content.encode('utf-8')).decode('utf-8','ignore') # https://www.codenong.com/42339876/
-            base64_content_format = base64_content
-            return base64_content_format
-        except UnicodeDecodeError:
-            base64_content = base64.b64decode(url_content)
-            base64_content_format = base64_content
-            return str(base64_content)
-class converter():
-    def __init__(self,content,config):
-        self.proxies = parser(content).nodeconfig['proxies']
-        self.config = config['subconvert']
-        self.output = self.main()
-
-    def main(self):
-        
-        return ''
-    def makeup(self): # 输入节点配置字典, 对节点进行区域的筛选和重命名，输出 YAML 文本 
-        proxies_list = self.proxies
+        return url_list
+    def makeup(self,proxies): # 输入节点列表, 对节点进行区域的筛选和重命名，输出格式化后的节点列表
+        proxies_list = proxies
         config = self.config
-        
-        if config['dup-rm']: # 去重
+
+        vmess_config_template = {
+            'name': 'Vmess Node', 'server': '127.0.0.1', 'port': 443, 'type': 'vmess', 'country': '🇺🇸US', 'uuid': 'xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx',
+            'alterId': 0, 'cipher': 'auto', 'tls': True, 'skip-cert-verify': True, 'network': 'ws', 
+            'ws-opts': {'path': '/', 'headers': {'Host': '127.0.0.1'}}, 'udp': True
+        }
+        ss_config_template = {
+            'name': 'SS Node', 'server':'127.0.0.1', 'type':'ss', 'country':'🇺🇸US', 'port':50000, 'password':'xxxxxxxxxx', 'cipher':'aes-256-gcm'
+        }
+        ssr_config_template = {
+            'name':'SSR Node', 'server':'127.0.0.1', 'type':'ssr', 'country':'🇺🇸US', 'port':8099, 'password':'xxxxxxxxxxxxxxxx', 'cipher':'aes-256-cfb', 'protocol':'origin', 'obfs':'plain'
+        }
+        trojan_config_template = {
+            'name':'Trojan Node', 'server':'127.0.0.1', 'type':'trojan', 'country':'🇺🇸US', 'port':443, 'password':'xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx', 'skip-cert-verify': True, 'udp': True
+        }
+
+        flags = {
+            'AD': '🇦🇩', 'AE': '🇦🇪', 'AF': '🇦🇫', 'AG': '🇦🇬', 
+            'AI': '🇦🇮', 'AL': '🇦🇱', 'AM': '🇦🇲', 'AO': '🇦🇴', 
+            'AQ': '🇦🇶', 'AR': '🇦🇷', 'AS': '🇦🇸', 'AT': '🇦🇹', 
+            'AU': '🇦🇺', 'AW': '🇦🇼', 'AX': '🇦🇽', 'AZ': '🇦🇿', 
+            'BA': '🇧🇦', 'BB': '🇧🇧', 'BD': '🇧🇩', 'BE': '🇧🇪', 
+            'BF': '🇧🇫', 'BG': '🇧🇬', 'BH': '🇧🇭', 'BI': '🇧🇮', 
+            'BJ': '🇧🇯', 'BL': '🇧🇱', 'BM': '🇧🇲', 'BN': '🇧🇳', 
+            'BO': '🇧🇴', 'BQ': '🇧🇶', 'BR': '🇧🇷', 'BS': '🇧🇸', 
+            'BT': '🇧🇹', 'BV': '🇧🇻', 'BW': '🇧🇼', 'BY': '🇧🇾', 
+            'BZ': '🇧🇿', 'CA': '🇨🇦', 'CC': '🇨🇨', 'CD': '🇨🇩', 
+            'CF': '🇨🇫', 'CG': '🇨🇬', 'CH': '🇨🇭', 'CI': '🇨🇮', 
+            'CK': '🇨🇰', 'CL': '🇨🇱', 'CM': '🇨🇲', 'CN': '🇨🇳', 
+            'CO': '🇨🇴', 'CR': '🇨🇷', 'CU': '🇨🇺', 'CV': '🇨🇻', 
+            'CW': '🇨🇼', 'CX': '🇨🇽', 'CY': '🇨🇾', 'CZ': '🇨🇿', 
+            'DE': '🇩🇪', 'DJ': '🇩🇯', 'DK': '🇩🇰', 'DM': '🇩🇲', 
+            'DO': '🇩🇴', 'DZ': '🇩🇿', 'EC': '🇪🇨', 'EE': '🇪🇪', 
+            'EG': '🇪🇬', 'EH': '🇪🇭', 'ER': '🇪🇷', 'ES': '🇪🇸', 
+            'ET': '🇪🇹', 'EU': '🇪🇺', 'FI': '🇫🇮', 'FJ': '🇫🇯', 
+            'FK': '🇫🇰', 'FM': '🇫🇲', 'FO': '🇫🇴', 'FR': '🇫🇷', 
+            'GA': '🇬🇦', 'GB': '🇬🇧', 'GD': '🇬🇩', 'GE': '🇬🇪', 
+            'GF': '🇬🇫', 'GG': '🇬🇬', 'GH': '🇬🇭', 'GI': '🇬🇮', 
+            'GL': '🇬🇱', 'GM': '🇬🇲', 'GN': '🇬🇳', 'GP': '🇬🇵', 
+            'GQ': '🇬🇶', 'GR': '🇬🇷', 'GS': '🇬🇸', 'GT': '🇬🇹', 
+            'GU': '🇬🇺', 'GW': '🇬🇼', 'GY': '🇬🇾', 'HK': '🇭🇰', 
+            'HM': '🇭🇲', 'HN': '🇭🇳', 'HR': '🇭🇷', 'HT': '🇭🇹', 
+            'HU': '🇭🇺', 'ID': '🇮🇩', 'IE': '🇮🇪', 'IL': '🇮🇱', 
+            'IM': '🇮🇲', 'IN': '🇮🇳', 'IO': '🇮🇴', 'IQ': '🇮🇶', 
+            'IR': '🇮🇷', 'IS': '🇮🇸', 'IT': '🇮🇹', 'JE': '🇯🇪', 
+            'JM': '🇯🇲', 'JO': '🇯🇴', 'JP': '🇯🇵', 'KE': '🇰🇪', 
+            'KG': '🇰🇬', 'KH': '🇰🇭', 'KI': '🇰🇮', 'KM': '🇰🇲', 
+            'KN': '🇰🇳', 'KP': '🇰🇵', 'KR': '🇰🇷', 'KW': '🇰🇼', 
+            'KY': '🇰🇾', 'KZ': '🇰🇿', 'LA': '🇱🇦', 'LB': '🇱🇧', 
+            'LC': '🇱🇨', 'LI': '🇱🇮', 'LK': '🇱🇰', 'LR': '🇱🇷', 
+            'LS': '🇱🇸', 'LT': '🇱🇹', 'LU': '🇱🇺', 'LV': '🇱🇻', 
+            'LY': '🇱🇾', 'MA': '🇲🇦', 'MC': '🇲🇨', 'MD': '🇲🇩', 
+            'ME': '🇲🇪', 'MF': '🇲🇫', 'MG': '🇲🇬', 'MH': '🇲🇭', 
+            'MK': '🇲🇰', 'ML': '🇲🇱', 'MM': '🇲🇲', 'MN': '🇲🇳', 
+            'MO': '🇲🇴', 'MP': '🇲🇵', 'MQ': '🇲🇶', 'MR': '🇲🇷', 
+            'MS': '🇲🇸', 'MT': '🇲🇹', 'MU': '🇲🇺', 'MV': '🇲🇻', 
+            'MW': '🇲🇼', 'MX': '🇲🇽', 'MY': '🇲🇾', 'MZ': '🇲🇿', 
+            'NA': '🇳🇦', 'NC': '🇳🇨', 'NE': '🇳🇪', 'NF': '🇳🇫', 
+            'NG': '🇳🇬', 'NI': '🇳🇮', 'NL': '🇳🇱', 'NO': '🇳🇴', 
+            'NP': '🇳🇵', 'NR': '🇳🇷', 'NU': '🇳🇺', 'NZ': '🇳🇿', 
+            'OM': '🇴🇲', 'PA': '🇵🇦', 'PE': '🇵🇪', 'PF': '🇵🇫', 
+            'PG': '🇵🇬', 'PH': '🇵🇭', 'PK': '🇵🇰', 'PL': '🇵🇱', 
+            'PM': '🇵🇲', 'PN': '🇵🇳', 'PR': '🇵🇷', 'PS': '🇵🇸', 
+            'PT': '🇵🇹', 'PW': '🇵🇼', 'PY': '🇵🇾', 'QA': '🇶🇦', 
+            'RE': '🇷🇪', 'RO': '🇷🇴', 'RS': '🇷🇸', 'RU': '🇷🇺', 
+            'RW': '🇷🇼', 'SA': '🇸🇦', 'SB': '🇸🇧', 'SC': '🇸🇨', 
+            'SD': '🇸🇩', 'SE': '🇸🇪', 'SG': '🇸🇬', 'SH': '🇸🇭', 
+            'SI': '🇸🇮', 'SJ': '🇸🇯', 'SK': '🇸🇰', 'SL': '🇸🇱', 
+            'SM': '🇸🇲', 'SN': '🇸🇳', 'SO': '🇸🇴', 'SR': '🇸🇷', 
+            'SS': '🇸🇸', 'ST': '🇸🇹', 'SV': '🇸🇻', 'SX': '🇸🇽', 
+            'SY': '🇸🇾', 'SZ': '🇸🇿', 'TC': '🇹🇨', 'TD': '🇹🇩', 
+            'TF': '🇹🇫', 'TG': '🇹🇬', 'TH': '🇹🇭', 'TJ': '🇹🇯', 
+            'TK': '🇹🇰', 'TL': '🇹🇱', 'TM': '🇹🇲', 'TN': '🇹🇳', 
+            'TO': '🇹🇴', 'TR': '🇹🇷', 'TT': '🇹🇹', 'TV': '🇹🇻', 
+            'TW': '🇹🇼', 'TZ': '🇹🇿', 'UA': '🇺🇦', 'UG': '🇺🇬', 
+            'UM': '🇺🇲', 'US': '🇺🇸', 'UY': '🇺🇾', 'UZ': '🇺🇿', 
+            'VA': '🇻🇦', 'VC': '🇻🇨', 'VE': '🇻🇪', 'VG': '🇻🇬', 
+            'VI': '🇻🇮', 'VN': '🇻🇳', 'VU': '🇻🇺', 'WF': '🇼🇫', 
+            'WS': '🇼🇸', 'XK': '🇽🇰', 'YE': '🇾🇪', 'YT': '🇾🇹', 
+            'ZA': '🇿🇦', 'ZM': '🇿🇲', 'ZW': '🇿🇼', 'ZZ': '🏁'
+        }
+
+
+        for proxy in proxies_list:
+            if proxy['type'] == 'vmess':
+                vmess_config_template.update(proxy)
+                proxy = vmess_config_template
+            if proxy['type'] == 'ss':
+                vmess_config_template.update(proxy)
+                proxy = ss_config_template
+            if proxy['type'] == 'ssr':
+                vmess_config_template.update(proxy)
+                proxy = ssr_config_template
+            if proxy['type'] == 'trojan':
+                vmess_config_template.update(proxy)
+                proxy = trojan_config_template
+
+            if proxy['server'] == '127.0.0.1':
+                proxies_list.pop(proxy)
+            else:
+                server = proxy['server']
+                if server.replace('.','').isdigit():
+                    ip = server
+                else:
+                    try:
+                        ip = socket.gethostbyname(server) # https://cloud.tencent.com/developer/article/1569841
+                    except Exception:
+                        ip = server
+                with geoip2.database.Reader('./utils/Country.mmdb') as ip_reader:
+                    try:
+                        response = ip_reader.country(ip)
+                        country_code = response.country.iso_code
+                    except Exception:
+                        country_code = 'ZZ'
+                if country_code == 'CLOUDFLARE':
+                    country_code = 'ZZ'
+                elif country_code == 'PRIVATE':
+                    country_code = 'ZZ'
+                try:
+                    proxy['country'] = flags[country_code]+country_code
+                except KeyError:
+                    proxy['country'] = '🏁ZZ'
+
+        if config['dup-rm']['enabled']: # 去重
             begin = 0
             raw_length = len(proxies_list)
             length = len(proxies_list)
@@ -350,251 +447,33 @@ class converter():
                     begin_2 += 1
                 begin += 1
 
-        if config['rename']: #改名
+        if config['rename']['enabled']: # 改名
             rename_list = []
+            name_format = config['rename']['format']
             for proxy in proxies_list: # 改名
-                emoji = {
-                    'AD': '🇦🇩', 'AE': '🇦🇪', 'AF': '🇦🇫', 'AG': '🇦🇬', 
-                    'AI': '🇦🇮', 'AL': '🇦🇱', 'AM': '🇦🇲', 'AO': '🇦🇴', 
-                    'AQ': '🇦🇶', 'AR': '🇦🇷', 'AS': '🇦🇸', 'AT': '🇦🇹', 
-                    'AU': '🇦🇺', 'AW': '🇦🇼', 'AX': '🇦🇽', 'AZ': '🇦🇿', 
-                    'BA': '🇧🇦', 'BB': '🇧🇧', 'BD': '🇧🇩', 'BE': '🇧🇪', 
-                    'BF': '🇧🇫', 'BG': '🇧🇬', 'BH': '🇧🇭', 'BI': '🇧🇮', 
-                    'BJ': '🇧🇯', 'BL': '🇧🇱', 'BM': '🇧🇲', 'BN': '🇧🇳', 
-                    'BO': '🇧🇴', 'BQ': '🇧🇶', 'BR': '🇧🇷', 'BS': '🇧🇸', 
-                    'BT': '🇧🇹', 'BV': '🇧🇻', 'BW': '🇧🇼', 'BY': '🇧🇾', 
-                    'BZ': '🇧🇿', 'CA': '🇨🇦', 'CC': '🇨🇨', 'CD': '🇨🇩', 
-                    'CF': '🇨🇫', 'CG': '🇨🇬', 'CH': '🇨🇭', 'CI': '🇨🇮', 
-                    'CK': '🇨🇰', 'CL': '🇨🇱', 'CM': '🇨🇲', 'CN': '🇨🇳', 
-                    'CO': '🇨🇴', 'CR': '🇨🇷', 'CU': '🇨🇺', 'CV': '🇨🇻', 
-                    'CW': '🇨🇼', 'CX': '🇨🇽', 'CY': '🇨🇾', 'CZ': '🇨🇿', 
-                    'DE': '🇩🇪', 'DJ': '🇩🇯', 'DK': '🇩🇰', 'DM': '🇩🇲', 
-                    'DO': '🇩🇴', 'DZ': '🇩🇿', 'EC': '🇪🇨', 'EE': '🇪🇪', 
-                    'EG': '🇪🇬', 'EH': '🇪🇭', 'ER': '🇪🇷', 'ES': '🇪🇸', 
-                    'ET': '🇪🇹', 'EU': '🇪🇺', 'FI': '🇫🇮', 'FJ': '🇫🇯', 
-                    'FK': '🇫🇰', 'FM': '🇫🇲', 'FO': '🇫🇴', 'FR': '🇫🇷', 
-                    'GA': '🇬🇦', 'GB': '🇬🇧', 'GD': '🇬🇩', 'GE': '🇬🇪', 
-                    'GF': '🇬🇫', 'GG': '🇬🇬', 'GH': '🇬🇭', 'GI': '🇬🇮', 
-                    'GL': '🇬🇱', 'GM': '🇬🇲', 'GN': '🇬🇳', 'GP': '🇬🇵', 
-                    'GQ': '🇬🇶', 'GR': '🇬🇷', 'GS': '🇬🇸', 'GT': '🇬🇹', 
-                    'GU': '🇬🇺', 'GW': '🇬🇼', 'GY': '🇬🇾', 'HK': '🇭🇰', 
-                    'HM': '🇭🇲', 'HN': '🇭🇳', 'HR': '🇭🇷', 'HT': '🇭🇹', 
-                    'HU': '🇭🇺', 'ID': '🇮🇩', 'IE': '🇮🇪', 'IL': '🇮🇱', 
-                    'IM': '🇮🇲', 'IN': '🇮🇳', 'IO': '🇮🇴', 'IQ': '🇮🇶', 
-                    'IR': '🇮🇷', 'IS': '🇮🇸', 'IT': '🇮🇹', 'JE': '🇯🇪', 
-                    'JM': '🇯🇲', 'JO': '🇯🇴', 'JP': '🇯🇵', 'KE': '🇰🇪', 
-                    'KG': '🇰🇬', 'KH': '🇰🇭', 'KI': '🇰🇮', 'KM': '🇰🇲', 
-                    'KN': '🇰🇳', 'KP': '🇰🇵', 'KR': '🇰🇷', 'KW': '🇰🇼', 
-                    'KY': '🇰🇾', 'KZ': '🇰🇿', 'LA': '🇱🇦', 'LB': '🇱🇧', 
-                    'LC': '🇱🇨', 'LI': '🇱🇮', 'LK': '🇱🇰', 'LR': '🇱🇷', 
-                    'LS': '🇱🇸', 'LT': '🇱🇹', 'LU': '🇱🇺', 'LV': '🇱🇻', 
-                    'LY': '🇱🇾', 'MA': '🇲🇦', 'MC': '🇲🇨', 'MD': '🇲🇩', 
-                    'ME': '🇲🇪', 'MF': '🇲🇫', 'MG': '🇲🇬', 'MH': '🇲🇭', 
-                    'MK': '🇲🇰', 'ML': '🇲🇱', 'MM': '🇲🇲', 'MN': '🇲🇳', 
-                    'MO': '🇲🇴', 'MP': '🇲🇵', 'MQ': '🇲🇶', 'MR': '🇲🇷', 
-                    'MS': '🇲🇸', 'MT': '🇲🇹', 'MU': '🇲🇺', 'MV': '🇲🇻', 
-                    'MW': '🇲🇼', 'MX': '🇲🇽', 'MY': '🇲🇾', 'MZ': '🇲🇿', 
-                    'NA': '🇳🇦', 'NC': '🇳🇨', 'NE': '🇳🇪', 'NF': '🇳🇫', 
-                    'NG': '🇳🇬', 'NI': '🇳🇮', 'NL': '🇳🇱', 'NO': '🇳🇴', 
-                    'NP': '🇳🇵', 'NR': '🇳🇷', 'NU': '🇳🇺', 'NZ': '🇳🇿', 
-                    'OM': '🇴🇲', 'PA': '🇵🇦', 'PE': '🇵🇪', 'PF': '🇵🇫', 
-                    'PG': '🇵🇬', 'PH': '🇵🇭', 'PK': '🇵🇰', 'PL': '🇵🇱', 
-                    'PM': '🇵🇲', 'PN': '🇵🇳', 'PR': '🇵🇷', 'PS': '🇵🇸', 
-                    'PT': '🇵🇹', 'PW': '🇵🇼', 'PY': '🇵🇾', 'QA': '🇶🇦', 
-                    'RE': '🇷🇪', 'RO': '🇷🇴', 'RS': '🇷🇸', 'RU': '🇷🇺', 
-                    'RW': '🇷🇼', 'SA': '🇸🇦', 'SB': '🇸🇧', 'SC': '🇸🇨', 
-                    'SD': '🇸🇩', 'SE': '🇸🇪', 'SG': '🇸🇬', 'SH': '🇸🇭', 
-                    'SI': '🇸🇮', 'SJ': '🇸🇯', 'SK': '🇸🇰', 'SL': '🇸🇱', 
-                    'SM': '🇸🇲', 'SN': '🇸🇳', 'SO': '🇸🇴', 'SR': '🇸🇷', 
-                    'SS': '🇸🇸', 'ST': '🇸🇹', 'SV': '🇸🇻', 'SX': '🇸🇽', 
-                    'SY': '🇸🇾', 'SZ': '🇸🇿', 'TC': '🇹🇨', 'TD': '🇹🇩', 
-                    'TF': '🇹🇫', 'TG': '🇹🇬', 'TH': '🇹🇭', 'TJ': '🇹🇯', 
-                    'TK': '🇹🇰', 'TL': '🇹🇱', 'TM': '🇹🇲', 'TN': '🇹🇳', 
-                    'TO': '🇹🇴', 'TR': '🇹🇷', 'TT': '🇹🇹', 'TV': '🇹🇻', 
-                    'TW': '🇹🇼', 'TZ': '🇹🇿', 'UA': '🇺🇦', 'UG': '🇺🇬', 
-                    'UM': '🇺🇲', 'US': '🇺🇸', 'UY': '🇺🇾', 'UZ': '🇺🇿', 
-                    'VA': '🇻🇦', 'VC': '🇻🇨', 'VE': '🇻🇪', 'VG': '🇻🇬', 
-                    'VI': '🇻🇮', 'VN': '🇻🇳', 'VU': '🇻🇺', 'WF': '🇼🇫', 
-                    'WS': '🇼🇸', 'XK': '🇽🇰', 'YE': '🇾🇪', 'YT': '🇾🇹', 
-                    'ZA': '🇿🇦', 'ZM': '🇿🇲', 'ZW': '🇿🇼', 
-                    'RELAY': '🏁',
-                    'NOWHERE': '🇦🇶',
-                }
-
-                server = proxy['server']
-                if server.replace('.','').isdigit():
-                    ip = server
-                else:
-                    try:
-                        ip = socket.gethostbyname(server) # https://cloud.tencent.com/developer/article/1569841
-                    except Exception:
-                        ip = server
-
-                with geoip2.database.Reader('./utils/Country.mmdb') as ip_reader:
-                    try:
-                        response = ip_reader.country(ip)
-                        country_code = response.country.iso_code
-                    except Exception:
-                        ip = '0.0.0.0'
-                        country_code = 'NOWHERE'
-
-                if country_code == 'CLOUDFLARE':
-                    country_code = 'RELAY'
-                elif country_code == 'PRIVATE':
-                    country_code = 'RELAY'
-
-                if country_code in emoji:
-                    name_emoji = emoji[country_code]
-                else:
-                    name_emoji = emoji['NOWHERE']
-
                 proxy_index = proxies_list.index(proxy)
+                flag = proxy['country'][:0]
+                code = proxy['country'][1:2]
+                address = ip
                 if len(proxies_list) >= 999:
-                    proxy['name'] = f'{name_emoji}{country_code}-{ip}-{proxy_index:0>4d}'
+                    proxy['name'] = f'{flag}{code}-{address}-{proxy_index:0>4d}'
                 elif len(proxies_list) <= 999 and len(proxies_list) > 99:
-                    proxy['name'] = f'{name_emoji}{country_code}-{ip}-{proxy_index:0>3d}'
+                    proxy['name'] = f'{flag}{code}-{address}-{proxy_index:0>3d}'
                 elif len(proxies_list) <= 99:
-                    proxy['name'] = f'{name_emoji}{country_code}-{ip}-{proxy_index:0>2d}'
+                    proxy['name'] = f'{flag}{code}-{address}-{proxy_index:0>2d}'
                 rename_list.append(proxy)
             proxies_list = rename_list
 
+        if config['filter'] != 'none':
+            filter_rules = config['filter']
+
+            
         return proxies_list # 输出格式化后的节点列表
-    def provider2clash(self):
-        file_eternity = open(file, 'r', encoding='utf-8')
-        sub_content = file_eternity.read()
-        file_eternity.close()
-
-        # 创建并写入 provider 
-        lines = re.split(r'\n+', all_provider)
-        proxy_all = []
-        us_proxy = []
-        hk_proxy = []
-        sg_proxy = []
-        others_proxy = []
-        for line in lines:
-            if line != 'proxies:':
-                line = '  ' + line
-                proxy_all.append(line)
-
-                if 'US' in line or '美国' in line:
-                    us_proxy.append(line)
-                elif 'HK' in line or '香港' in line:
-                    hk_proxy.append(line)
-                elif 'SG' in line or '新加坡' in line:
-                    sg_proxy.append(line)
-                else:
-                    others_proxy.append(line)
-        us_provider = 'proxies:\n' + '\n'.join(us_proxy)
-        hk_provider = 'proxies:\n' + '\n'.join(hk_proxy)
-        sg_provider = 'proxies:\n' + '\n'.join(sg_proxy)
-        others_provider = 'proxies:\n' + '\n'.join(others_proxy)
-        
-        if provider_file_enabled:
-            providers_files = {
-                'all': provider_path + 'provider-all.yml',
-                'others': provider_path + 'provider-others.yml',
-                'us': provider_path + 'provider-us.yml',
-                'hk': provider_path + 'provider-hk.yml',
-                'sg': provider_path + 'provider-sg.yml'
-            }
-            eternity_providers = {
-                'all': all_provider,
-                'others': others_provider,
-                'us': us_provider,
-                'hk': hk_provider,
-                'sg': sg_provider
-            }
-            print('Writing content to provider')
-            for key in providers_files.keys():
-                provider_all = open(providers_files[key], 'w', encoding= 'utf-8')
-                provider_all.write(eternity_providers[key])
-                provider_all.close()
-            print('Done!\n')
-
-        # 创建完全配置的Eternity.yml
-        config_f = open(config_file, 'r', encoding='utf-8')
-        config_raw = config_f.read()
-        config_f.close()
-        
-        config = yaml.safe_load(config_raw)
-
-        all_provider_dic = {'proxies': []}
-        others_provider_dic = {'proxies': []}
-        us_provider_dic = {'proxies': []}
-        hk_provider_dic = {'proxies': []}
-        sg_provider_dic = {'proxies': []}
-        provider_dic = {
-            'all': all_provider_dic,
-            'others': others_provider_dic,
-            'us': us_provider_dic,
-            'hk': hk_provider_dic,
-            'sg': sg_provider_dic
-        }
-        for key in eternity_providers.keys(): # 将节点转换为字典形式
-            provider_load = yaml.safe_load(eternity_providers[key])
-            provider_dic[key].update(provider_load)
-
-        # 创建节点名列表
-        all_name = []
-        others_name = []
-        us_name = []
-        hk_name = []
-        sg_name = [] 
-        name_dict = {
-            'all': all_name,
-            'others': others_name,
-            'us': us_name,
-            'hk': hk_name,
-            'sg': sg_name
-        }
-        for key in provider_dic.keys():
-            if not provider_dic[key]['proxies'] is None:
-                for proxy in provider_dic[key]['proxies']:
-                    name_dict[key].append(proxy['name'])
-            if provider_dic[key]['proxies'] is None:
-                name_dict[key].append('DIRECT')
-        # 策略分组添加节点名
-        proxy_groups = config['proxy-groups']
-        proxy_group_fill = []
-        for rule in proxy_groups:
-            if rule['proxies'] is None: # 不是空集加入待加入名称列表
-                proxy_group_fill.append(rule['name'])
-        for rule_name in proxy_group_fill:
-            for rule in proxy_groups:
-                if rule['name'] == rule_name:
-                    if '美国' in rule_name:
-                        rule.update({'proxies': us_name})
-                    elif '香港' in rule_name:
-                        rule.update({'proxies': hk_name})
-                    elif '狮城' in rule_name or '新加坡' in rule_name:
-                        rule.update({'proxies': sg_name})
-                    elif '其他' in rule_name:
-                        rule.update({'proxies': others_name})
-                    else:
-                        rule.update({'proxies': all_name})
-        config.update(all_provider_dic)
-        config.update({'proxy-groups': proxy_groups})
-
-        """
-        yaml_format = ruamel.yaml.YAML() # https://www.coder.work/article/4975478
-        yaml_format.indent(mapping=2, sequence=4, offset=2)
-        config_yaml = yaml_format.dump(config, sys.stdout)
-        """
-        config_yaml = yaml.dump(config, default_flow_style=False, sort_keys=False, allow_unicode=True, width=750, indent=2, Dumper=NoAliasDumper)
-        
-        Eternity_yml = open(output, 'w+', encoding='utf-8')
-        Eternity_yml.write(config_yaml)
-        Eternity_yml.close()
-    def clash2url(self): # YAML 文本转换为 URL 链接内容
-        try:
-            proxies_list = self.makeup()
-
-            protocol_url = []
-            for index in range(len(proxies_list)): # 不同节点订阅链接内容 https://github.com/hoochanlon/fq-book/blob/master/docs/append/srvurl.md
-                proxy = proxies_list[index]
-
+    def config2url(self,proxies): # 节点配置转换为 URL 链接内容
+        url_list = []
+        for proxy in proxies: # 不同节点订阅链接内容 https://github.com/hoochanlon/fq-book/blob/master/docs/append/srvurl.md
+            try:
                 if proxy['type'] == 'vmess': # Vmess 节点提取, 由 Vmess 所有参数 dump JSON 后 base64 encode 得来。
-
                     yaml_default_config = {
                         'name': 'Vmess Node', 'server': '0.0.0.0', 'port': 0, 'uuid': '', 'alterId': 0,
                         'cipher': 'auto', 'network': 'ws', 'ws-opts': {'path': '/', 'headers': {'Host': proxy['server']}},
@@ -612,14 +491,14 @@ class converter():
                         }
 
                     vmess_raw_proxy = json.dumps(vmess_value, sort_keys=False, indent=2, ensure_ascii=False)
-                    vmess_proxy = str('vmess://' + self.url2base64(vmess_raw_proxy) + '\n')
-                    protocol_url.append(vmess_proxy)
+                    vmess_proxy = str('vmess://' + self.base64_encode(vmess_raw_proxy) + '\n')
+                    url_list.append(vmess_proxy)
 
-                elif proxy['type'] == 'ss': # SS 节点提取, 由 ss_base64_decoded 部分(参数: 'cipher', 'password', 'server', 'port') Base64 编码后 加 # 加注释(URL_encode) 
+                elif proxy['type'] == 'ss': # SS 节点提取, 由 ss_base64_decoded 部分(参数: 'cipher', 'password', 'server', 'port') Base64 编码后 加 # 加注释(URL_encode)
                     ss_base64_decoded = str(proxy['cipher']) + ':' + str(proxy['password']) + '@' + str(proxy['server']) + ':' + str(proxy['port'])
-                    ss_base64 = self.url2base64(ss_base64_decoded)
+                    ss_base64 = self.base64_encode(ss_base64_decoded)
                     ss_proxy = str('ss://' + ss_base64 + '#' + str(urllib.parse.quote(proxy['name'])) + '\n')
-                    protocol_url.append(ss_proxy)
+                    url_list.append(ss_proxy)
 
                 elif proxy['type'] == 'trojan': # Trojan 节点提取, 由 trojan_proxy 中参数再加上 # 加注释(URL_encode) # trojan Go https://p4gefau1t.github.io/trojan-go/developer/url/
                     if 'tls' in proxy.keys() and 'network' in proxy.keys():
@@ -633,56 +512,54 @@ class converter():
                     if 'sni' in proxy.keys():
                         trojan_go = trojan_go+'&sni='+proxy['sni']
                     trojan_proxy = str('trojan://' + str(proxy['password']) + '@' + str(proxy['server']) + ':' + str(proxy['port']) + trojan_go + '#' + str(urllib.parse.quote(proxy['name'])) + '\n')
-                    protocol_url.append(trojan_proxy)
+                    url_list.append(trojan_proxy)
                 
                 elif proxy['type'] == 'ssr': # ssr 节点提取, 由 ssr_base64_decoded 中所有参数总体 base64 encode
                     ssr_default_config = {}
-                    remarks = self.url2base64(proxy['name']).replace('+', '-')
+                    remarks = self.base64_encode(proxy['name']).replace('+', '-')
                     server = proxy['server']
                     port = str(proxy['port'])
-                    password = self.url2base64(proxy['password'])
+                    password = self.base64_encode(proxy['password'])
                     cipher = proxy['cipher']
                     protocol = proxy['protocol']
                     obfs = proxy['obfs']
                     param_dic = {'group': 'U1NSUHJvdmlkZXI', 'obfsparam':'', 'protoparam':''}
                     for key in param_dic.keys():
                         try:
-                            param_dic.update({key: self.url2base64(proxy[key])})
+                            param_dic.update({key: self.base64_encode(proxy[key])})
                         except Exception:
                             pass
                     group, obfsparam, protoparam = param_dic['group'], param_dic['obfsparam'], param_dic['protoparam']
-                    """
-                    for key in {'group', 'obfsparam', 'protoparam'}:
-                        if key in proxy:
-                            if key == 'group':
-                                group = self.url2base64(proxy[key])
-                            elif key == 'obfsparam':
-                                obfsparam = self.url2base64(proxy[key])
-                            elif key == 'protoparam':
-                                protoparam = self.url2base64(proxy[key])
-                        else:
-                            if key == 'group':
-                                group = 'U1NSUHJvdmlkZXI'
-                            elif key == 'obfsparam':
-                                obfsparam = ''
-                            elif key == 'protoparam':
-                                protoparam = ''
-                    """
+                    ssr_proxy = 'ssr://'+self.base64_encode(server+':'+port+':'+protocol+':'+cipher+':'+obfs+':'+password+'/?group='+group+'&remarks='+remarks+'&obfsparam='+obfsparam+'&protoparam='+protoparam+'\n')
+                    url_list.append(ssr_proxy)
+            except Exception:
+                pass
 
-                    ssr_proxy = 'ssr://'+self.url2base64(server+':'+port+':'+protocol+':'+cipher+':'+obfs+':'+password+'/?group='+group+'&remarks='+remarks+'&obfsparam='+obfsparam+'&protoparam='+protoparam+'\n')
-                    protocol_url.append(ssr_proxy)
-
-            yaml_content = ''.join(protocol_url)
-            return yaml_content
-        except Exception as err:
-            print(f'yaml decode 发生 {err} 错误')
-            return '订阅内容解析错误'
-    def url2base64(url_content): # 将 URL 内容转换为 Base64
-        if url_content == None:
-            url_content = ''
-        base64_content = base64.b64encode(url_content.encode('utf-8')).decode('ascii')
+        url_content = ''.join(url_list)
+        return url_content
+    def base64_decode(url_content):
+        if '-' in url_content:
+            url_content = url_content.replace('-', '+')
+        if '_' in url_content:
+            url_content = url_content.replace('_', '/')
+        #print(len(url_content))
+        missing_padding = len(url_content) % 4
+        if missing_padding != 0:
+            url_content += '='*(4 - missing_padding) # 不是4的倍数后加= https://www.cnblogs.com/wswang/p/7717997.html
+        try:
+            base64_content = base64.b64decode(url_content.encode('utf-8')).decode('utf-8','ignore') # https://www.codenong.com/42339876/
+            base64_content_format = base64_content
+            return base64_content_format
+        except UnicodeDecodeError:
+            base64_content = base64.b64decode(url_content)
+            base64_content_format = base64_content
+            return str(base64_content)
+    def base64_encode(content): # 将 URL 内容转换为 Base64
+        if content == None:
+            content = ''
+        base64_content = base64.b64encode(content.encode('utf-8')).decode('ascii')
         return base64_content
-    def convert_remote(self,url='', output_type='clash', host='http://127.0.0.1:25500'): #{url='订阅链接', output_type={'clash': 输出 Clash 配置, 'base64': 输出 Base64 配置, 'url': 输出 url 配置}, host='远程订阅转化服务地址'}
+    def subconvert(self): #{url='订阅链接', output_type={'clash': 输出 Clash 配置, 'base64': 输出 Base64 配置, 'url': 输出 url 配置}, host='远程订阅转化服务地址'}
         # 使用远程订阅转换服务，输出相应配置。
         sever_host = host
         url = urllib.parse.quote(url, safe='') # https://docs.python.org/zh-cn/3/library/urllib.parse.html
@@ -693,7 +570,7 @@ class converter():
             except Exception as err:
                 print(err)
                 return 'Url 解析错误'
-            if resp.text == 'No nodes were found!':
+            if resp.text == 'No node was found!':
                 sub_content = 'Url 解析错误'
             else:
                 sub_content = sub_convert.makeup(sub_convert.format(resp.text), dup_rm_enabled=False, format_name_enabled=True)
@@ -707,7 +584,7 @@ class converter():
             if resp.text == 'No nodes were found!':
                 sub_content = 'Url 解析错误'
             else:
-                sub_content = self.url2base64(resp.text)
+                sub_content = self.base64_encode(resp.text)
         elif output_type == 'url':
             converted_url = sever_host+'/sub?target=mixed&url='+url+'&insert=false&emoji=true&list=true'
             try:
@@ -727,7 +604,7 @@ if __name__ == '__main__':
     content = ''
     output_path = './output.txt'
 
-    content = str(parser(subscribe).nodeconfig)
+    content = converter(subscribe).output
 
     file = open(output_path, 'w', encoding= 'utf-8')
     file.write(content)
