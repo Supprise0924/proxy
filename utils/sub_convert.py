@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
-import re, sys, yaml, json, base64
+import re, sys, os, argparse
+import yaml, json, base64
 import requests, socket, urllib.parse
 import geoip2.database
 
@@ -8,7 +9,7 @@ from requests.adapters import HTTPAdapter
 
 
 class format():
-    def __init__(self,content,config={'subconvert': {'dup-rm': {'enabled': False}, 'rename': {'enabled': True, 'format': True}}}):
+    def __init__(self,content,config={'subconvert': {'dup-rm': {'enabled': True}, 'rename': {'enabled': True, 'format': True}}}):
         self.content = content
         self.config = config['subconvert']
         self.output = self.main()
@@ -16,14 +17,14 @@ class format():
     def main(self):
         proxies = self.makeup(self.getconfig())
         output = self.config2url(proxies)
-        return output
+        return self.base64_encode(output)
     def getconfig(self): # 输入订阅链接或订阅内容，得到节点配置列表
         if self.content[:8] == 'https://': # 获取 URL 订阅链接内容
             s = requests.Session()
             s.mount('http://', HTTPAdapter(max_retries=5))
             s.mount('https://', HTTPAdapter(max_retries=5))
             try:
-                print('Downloading from:' + self.content)
+                print('Downloading from: ' + self.content)
                 resp = s.get(self.content, timeout=5)
                 content = resp.content.decode('utf-8')
                 node_config = self.parse(content)
@@ -299,7 +300,6 @@ class format():
 
         return url_list
     def makeup(self,proxies): # 输入节点列表, 对节点进行区域的筛选和重命名，输出格式化后的节点列表
-        proxies_list = proxies
         config = self.config
 
         vmess_config_template = {
@@ -382,10 +382,12 @@ class format():
             'WS': '🇼🇸', 'XK': '🇽🇰', 'YE': '🇾🇪', 'YT': '🇾🇹', 
             'ZA': '🇿🇦', 'ZM': '🇿🇲', 'ZW': '🇿🇼', 'ZZ': '🏁'
         }
-
-
-        for index in range(len(proxies_list)):
-            proxy = proxies_list[index]
+        
+        work_dir = os.getcwd() # Get working directory
+        os.chdir(os.path.dirname(os.path.abspath(__file__)))
+        proxies_list = []
+        for index in range(len(proxies)):
+            proxy = proxies[index]
             if proxy['type'] == 'vmess':
                 vmess_config_template.update(proxy)
                 proxy = vmess_config_template
@@ -407,22 +409,17 @@ class format():
                     ip = socket.gethostbyname(server) # https://cloud.tencent.com/developer/article/1569841
                 except Exception:
                     ip = server
-            with geoip2.database.Reader('./utils/Country.mmdb') as ip_reader:
+            with geoip2.database.Reader('./Country.mmdb') as ip_reader:
                 try:
                     response = ip_reader.country(ip)
                     country_code = response.country.iso_code
+                    proxy['country'] = flags[country_code]+country_code
                 except Exception:
                     country_code = 'ZZ'
-            if country_code == 'CLOUDFLARE':
-                country_code = 'ZZ'
-            elif country_code == 'PRIVATE':
-                country_code = 'ZZ'
-            try:
-                proxy['country'] = flags[country_code]+country_code
-            except KeyError:
-                proxy['country'] = '🏁ZZ'
-            proxies_list[index] = proxy
 
+            proxies_list.append(proxy)
+        os.chdir(work_dir) # Back to work directory
+        
         if config['dup-rm']['enabled']: # 去重
             begin = 0
             raw_length = len(proxies_list)
@@ -449,17 +446,17 @@ class format():
         if config['rename']['enabled']: # 改名
             rename_list = []
             name_format = config['rename']['format']
-            for proxy in proxies_list: # 改名
-                proxy_index = proxies_list.index(proxy)
+            for index in range(len(proxies_list)):
+                proxy = proxies_list[index]
                 flag = proxy['country'][:1]
-                code = proxy['country'][1:3]
+                code = proxy['country'][1:4]
                 address = ip
-                if len(proxies_list) >= 999:
-                    proxy['name'] = f'{flag}{code}-{address}-{proxy_index:0>4d}'
-                elif len(proxies_list) <= 999 and len(proxies_list) > 99:
-                    proxy['name'] = f'{flag}{code}-{address}-{proxy_index:0>3d}'
-                elif len(proxies_list) <= 99:
-                    proxy['name'] = f'{flag}{code}-{address}-{proxy_index:0>2d}'
+                if index >= 999:
+                    proxy['name'] = f'{flag}{code}-{address}-{index:0>4d}'
+                elif index <= 999 and index > 99:
+                    proxy['name'] = f'{flag}{code}-{address}-{index:0>3d}'
+                elif index <= 99:
+                    proxy['name'] = f'{flag}{code}-{address}-{index:0>2d}'
                 rename_list.append(proxy)
             proxies_list = rename_list
 
@@ -555,56 +552,42 @@ class format():
         base64_content = base64.b64encode(content.encode('utf-8')).decode('ascii')
         return base64_content
 
-def subconvert(self): #{url='订阅链接', output_type={'clash': 输出 Clash 配置, 'base64': 输出 Base64 配置, 'url': 输出 url 配置}, host='远程订阅转化服务地址'}
-    # 使用远程订阅转换服务，输出相应配置。
-    sever_host = host
-    url = urllib.parse.quote(url, safe='') # https://docs.python.org/zh-cn/3/library/urllib.parse.html
-    if output_type == 'clash':
-        converted_url = sever_host+'/sub?target=clash&url='+url+'&insert=false&emoji=true&list=true'
-        try:
-            resp = requests.get(converted_url)
-        except Exception as err:
-            print(err)
-            return 'Url 解析错误'
-        if resp.text == 'No node was found!':
-            sub_content = 'Url 解析错误'
-        else:
-            sub_content = sub_convert.makeup(sub_convert.format(resp.text), dup_rm_enabled=False, format_name_enabled=True)
-    elif output_type == 'base64':
-        converted_url = sever_host+'/sub?target=mixed&url='+url+'&insert=false&emoji=true&list=true'
-        try:
-            resp = requests.get(converted_url)
-        except Exception as err:
-            print(err)
-            return 'Url 解析错误'
-        if resp.text == 'No nodes were found!':
-            sub_content = 'Url 解析错误'
-        else:
-            sub_content = self.base64_encode(resp.text)
-    elif output_type == 'url':
-        converted_url = sever_host+'/sub?target=mixed&url='+url+'&insert=false&emoji=true&list=true'
-        try:
-            resp = requests.get(converted_url)
-        except Exception as err:
-            print(err)
-            return 'Url 解析错误'
-        if resp.text == 'No nodes were found!':
-            sub_content = 'Url 解析错误'
-        else:
-            sub_content = resp.text
+def output(subscription,target='clash',exe_dir='./subconverter'):
+    os.chdir(exe_dir)
 
-    return sub_content
+    with open(f'./temp', 'w+', encoding= 'utf-8') as temp_file:
+        temp_file.write(format(subscription).output)
+        if os.name == 'posix':
+            os.system(f'./subconverter -g --artifact \"{target}\"')
+        elif os.name == 'nt':
+            os.system(f'subconverter.exe -g --artifact \"{target}\"')
+        output = temp_file.read()
 
+    os.remove('./temp')
+
+    return output
 
 if __name__ == '__main__':
-    
-    subscribe = 'https://fastly.jsdelivr.net/gh/alanbobs999/TopFreeProxies@master/Eternity.yml'
-    content = ''
-    output_path = './output.txt'
+    """parser = argparse.ArgumentParser(description='Convert between various proxy subscription formats using Subconverter.')
+    parser.add_argument('--subscription', '-s', help='Your subscription url or local file path.', required=True)
+    parser.add_argument('--target', '-t', help='Target convert format, support url, clash, clash_provider, quanx.', default='clash')
+    parser.add_argument('--output', '-o', help='Target path to output.', default='./')
+    parser.add_argument('--execution', '-e', help='Subconverter execution file path(relative path to current python file).', default='./subconverter')
+    args = parser.parse_args()
 
-    content = format(subscribe).output
+    subscription = args.subscription
+    target = args.target
+    exe_dir = args.execution
+    os.chdir(os.path.dirname(os.path.abspath(__file__)))
+    os.chdir(exe_dir)
 
-    file = open(output_path, 'w', encoding= 'utf-8')
-    file.write(content)
-    file.close()
-    print(f'Writing content to output.txt\n')
+    with open(f'./temp', 'w+', encoding= 'utf-8') as temp_file:
+        temp_file.write(format(subscription).output)
+
+        if os.name == 'posix':
+            os.system(f'./subconverter -g --artifact \"{target}\"')
+        elif os.name == 'nt':
+            os.system(f'subconverter.exe -g --artifact \"{target}\"')
+    os.remove('./temp')"""
+
+    print(format('https://raw.iqiq.io/yu-steven/openit/main/Clash.yaml').output)
