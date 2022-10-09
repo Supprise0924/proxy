@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-import os
+import os, urllib
 
 from sub_merge import merge
 from sub_update import update
@@ -8,6 +8,15 @@ from config_parser import configparse, externalhandler
 
 if __name__ == '__main__':
     externalhandler() # Initialize config
+
+    print('Downloading Country.mmdb...')
+    try:
+        urllib.request.urlretrieve('https://raw.githubusercontent.com/Loyalsoldier/geoip/release/Country.mmdb', './utils/Country.mmdb')
+        print('Success!\n')
+    except Exception:
+        print('Failed!\n')
+        pass
+
 
     if configparse('common').getboolean('update_enabled'):
         config = configparse('common')
