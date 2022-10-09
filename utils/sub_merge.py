@@ -4,7 +4,6 @@ import json, os, time
 
 from sub_convert import config_output
 from sub_convert import format
-from sub_update import update_url
 
 #file path: list_path, list_file, merge_path, update_path, readme_path, share_file
 
