@@ -14,8 +14,6 @@ class format():
         self.output = self.main()
 
     def main(self):
-        url = self.content
-        multi = str('|http' in self.config)
         if self.content[:8] == 'https://' and '|http' in self.content:
             urls = re.split('\|',self.content)
             content_list = []
@@ -42,7 +40,11 @@ class format():
                 print('Problem occurs when fetching config')
                 return []
         else:
-            content = self.content
+            try:
+                with open(self.content, 'r', encoding='utf-8') as f:
+                    content = f.read()
+            except Exception:
+                content = self.content
             node_config = self.parse(content)
             return node_config
     def parse(self,sub_content): # 解析订阅内容, 输出节点配置列表
@@ -595,16 +597,28 @@ if __name__ == '__main__':
 
     subscription = args.subscription
     target = args.target
+    output_dir = args.output
+    
+    content = format(subscription).output
     
     work_dir = os.getcwd()
     os.chdir(os.path.dirname(os.path.abspath(__file__)))
     os.chdir('./subconverter')
 
     with open(f'./temp', 'w+', encoding= 'utf-8') as temp_file:
-        temp_file.write(format(subscription).output)
+        temp_file.write(content)
         if os.name == 'posix':
             os.system(f'./subconverter -g --artifact \"{target}\"')
         elif os.name == 'nt':
             os.system(f'subconverter.exe -g --artifact \"{target}\"')
+    with open(f'./temp', 'r', encoding= 'utf-8') as temp_file:
+        temp = ''
+        while True:
+            content = temp_file.read(100)
+            if not content:
+                break
+            temp += content
+    with open(output_dir, 'w', encoding= 'utf-8') as temp_file:
+        temp_file.write(temp)
     os.remove('./temp')
     os.chdir(work_dir)
