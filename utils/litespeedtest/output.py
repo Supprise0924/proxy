@@ -9,6 +9,7 @@ def output(output_file='./Eternity',num=99):
 
     with open('./out.json', 'r', encoding='utf-8') as f:
         proxies_all = json.load(f)
+    os.remove('./out.json')
     for index in range(num):
         proxy = proxies_all[index]['Link']
         output_list.append(proxy)
@@ -19,7 +20,7 @@ def output(output_file='./Eternity',num=99):
     return proxies_all
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='Convert between various proxy subscription formats using Subconverter.')
+    parser = argparse.ArgumentParser(description='Test nodes, and output base64 subscription file.')
     parser.add_argument('--target', '-t', help='Target file path to output', default='./output.txt')
     parser.add_argument('--num', '-n', help='Target proxies amount to output', default=99)
     
@@ -32,6 +33,6 @@ if __name__ == '__main__':
         os.system('./lite --config ./config.json --test \"https://raw.githubusercontent.com/alanbobs999/TopFreeProxies/master/Eternity.yml\"')
     elif os.name == 'nt':
         os.system('lite.exe --config ./config.json --test \"https://raw.githubusercontent.com/alanbobs999/TopFreeProxies/master/Eternity.yml\"')
-    output(args.target,args.num)
+    output(args.target,int(args.num))
 
     os.chdir(work_dir)
