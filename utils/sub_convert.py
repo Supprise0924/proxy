@@ -5,18 +5,18 @@ import yaml, json, base64
 import requests, socket, urllib.parse
 import geoip2.database
 
-from config_parser import output
-
 #config: dup_rm_enabled, rename_enabled, rename_format, output_path
 
 class format():
-    def __init__(self,content='',config={'subconvert': {'dup-rm': {'enabled': True}, 'rename': {'enabled': True, 'format': True}}}):
+    def __init__(self,content='',config={'duplicate_remove': False, 'format_remarks': ''}):
         self.content = content
-        self.config = config['subconvert']
+        self.config = config
         self.output = self.main()
 
     def main(self):
-        if self.content[:8] == 'https://' and '|http' in self.config:
+        url = self.content
+        multi = str('|http' in self.config)
+        if self.content[:8] == 'https://' and '|http' in self.content:
             urls = re.split('\|',self.content)
             content_list = []
             for url in urls:
@@ -28,7 +28,7 @@ class format():
         else:
             proxies = self.makeup(self.getconfig())
             output = self.config2url(proxies)
-        return self.base64_encode(output)
+        return format.base64_encode(output)
     def getconfig(self): # 输入订阅链接或订阅内容，得到节点配置列表
         if self.content[:8] == 'https://': # 获取 URL 订阅链接内容
             try:
@@ -49,7 +49,7 @@ class format():
         if 'proxies:' not in sub_content: # 对 URL 内容进行格式化处理
             try:
                 if '://' not in sub_content:
-                    sub_content = self.base64_decode(sub_content)
+                    sub_content = format.base64_decode(sub_content)
 
                 raw_url_list = re.split(r'\r?\n+', sub_content)
                 url_list = []
@@ -158,7 +158,7 @@ class format():
             yaml_url = {}
             if 'vmess://' in line:
                 try:
-                    vmess_json_config = json.loads(self.base64_decode(line.replace('vmess://', '')))
+                    vmess_json_config = json.loads(format.base64_decode(line.replace('vmess://', '')))
                     vmess_default_config = {
                         'v': 'Vmess Node', 'ps': 'Vmess Node', 'add': '0.0.0.0', 'port': 0, 'id': '',
                         'aid': 0, 'scy': 'auto', 'net': '', 'type': '', 'host': vmess_json_config['add'], 'path': '/', 'tls': ''
@@ -215,10 +215,10 @@ class format():
                     yaml_url.setdefault('name', urllib.parse.unquote(part_list[1]))
                     if '@' in part_list[0]:
                         mix_part = part_list[0].split('@', 1)
-                        method_part = self.base64_decode(mix_part[0])
+                        method_part = format.base64_decode(mix_part[0])
                         server_part = f'{method_part}@{mix_part[1]}'
                     else:
-                        server_part = self.base64_decode(part_list[0])
+                        server_part = format.base64_decode(part_list[0])
 
                     server_part_list = server_part.split(':', 1) # 使用多个分隔符 https://blog.csdn.net/shidamowang/article/details/80254476 https://zhuanlan.zhihu.com/p/92287240
                     method_part = server_part_list[0]
@@ -239,7 +239,7 @@ class format():
 
             if 'ssr://' in line:
                 try:
-                    ssr_content = self.base64_decode(line.replace('ssr://', ''))
+                    ssr_content = format.base64_decode(line.replace('ssr://', ''))
                 
                     parts = re.split(':', ssr_content)
                     if len(parts) != 6:
@@ -254,17 +254,17 @@ class format():
                     for part in param_parts:
                         key_and_value = re.split('\=', part)
                         param_dic.update({key_and_value[0]: key_and_value[1]})
-                    yaml_url.setdefault('name', self.base64_decode(param_dic['remarks']))
+                    yaml_url.setdefault('name', format.base64_decode(param_dic['remarks']))
                     yaml_url.setdefault('server', parts[0])
                     yaml_url.setdefault('port', parts[1])
                     yaml_url.setdefault('type', 'ssr')
                     yaml_url.setdefault('cipher', parts[3])
-                    yaml_url.setdefault('password', self.base64_decode(password_encode_str))
+                    yaml_url.setdefault('password', format.base64_decode(password_encode_str))
                     yaml_url.setdefault('obfs', parts[4])
                     yaml_url.setdefault('protocol', parts[2])
-                    yaml_url.setdefault('obfsparam', self.base64_decode(param_dic['obfsparam']))
-                    yaml_url.setdefault('protoparam', self.base64_decode(param_dic['protoparam']))
-                    yaml_url.setdefault('group', self.base64_decode(param_dic['group']))
+                    yaml_url.setdefault('obfsparam', format.base64_decode(param_dic['obfsparam']))
+                    yaml_url.setdefault('protoparam', format.base64_decode(param_dic['protoparam']))
+                    yaml_url.setdefault('group', format.base64_decode(param_dic['group']))
 
                     url_list.append(yaml_url)
                 except Exception as err:
@@ -429,7 +429,7 @@ class format():
             proxies_list.append(proxy)
         os.chdir(work_dir) # Back to work directory
         
-        if config['dup-rm']['enabled']: # 去重
+        if self.config['duplicate_remove']: # 去重
             begin = 0
             raw_length = len(proxies_list)
             length = len(proxies_list)
@@ -452,7 +452,7 @@ class format():
                     begin_2 += 1
                 begin += 1
 
-        if config['rename']['enabled']: # 改名
+        if self.config['format_remarks'] != '': # 改名
             rename_list = []
             name_format = config['rename']['format']
             for index in range(len(proxies_list)):
@@ -492,12 +492,12 @@ class format():
                         }
 
                     vmess_raw_proxy = json.dumps(vmess_value, sort_keys=False, indent=2, ensure_ascii=False)
-                    vmess_proxy = str('vmess://' + self.base64_encode(vmess_raw_proxy) + '\n')
+                    vmess_proxy = str('vmess://' + format.base64_encode(vmess_raw_proxy) + '\n')
                     url_list.append(vmess_proxy)
 
                 elif proxy['type'] == 'ss': # SS 节点提取, 由 ss_base64_decoded 部分(参数: 'cipher', 'password', 'server', 'port') Base64 编码后 加 # 加注释(URL_encode)
                     ss_base64_decoded = str(proxy['cipher']) + ':' + str(proxy['password']) + '@' + str(proxy['server']) + ':' + str(proxy['port'])
-                    ss_base64 = self.base64_encode(ss_base64_decoded)
+                    ss_base64 = format.base64_encode(ss_base64_decoded)
                     ss_proxy = str('ss://' + ss_base64 + '#' + str(urllib.parse.quote(proxy['name'])) + '\n')
                     url_list.append(ss_proxy)
 
@@ -517,28 +517,28 @@ class format():
                 
                 elif proxy['type'] == 'ssr': # ssr 节点提取, 由 ssr_base64_decoded 中所有参数总体 base64 encode
                     ssr_default_config = {}
-                    remarks = self.base64_encode(proxy['name']).replace('+', '-')
+                    remarks = format.base64_encode(proxy['name']).replace('+', '-')
                     server = proxy['server']
                     port = str(proxy['port'])
-                    password = self.base64_encode(proxy['password'])
+                    password = format.base64_encode(proxy['password'])
                     cipher = proxy['cipher']
                     protocol = proxy['protocol']
                     obfs = proxy['obfs']
                     param_dic = {'group': 'U1NSUHJvdmlkZXI', 'obfsparam':'', 'protoparam':''}
                     for key in param_dic.keys():
                         try:
-                            param_dic.update({key: self.base64_encode(proxy[key])})
+                            param_dic.update({key: format.base64_encode(proxy[key])})
                         except Exception:
                             pass
                     group, obfsparam, protoparam = param_dic['group'], param_dic['obfsparam'], param_dic['protoparam']
-                    ssr_proxy = 'ssr://'+self.base64_encode(server+':'+port+':'+protocol+':'+cipher+':'+obfs+':'+password+'/?group='+group+'&remarks='+remarks+'&obfsparam='+obfsparam+'&protoparam='+protoparam+'\n')
+                    ssr_proxy = 'ssr://'+format.base64_encode(server+':'+port+':'+protocol+':'+cipher+':'+obfs+':'+password+'/?group='+group+'&remarks='+remarks+'&obfsparam='+obfsparam+'&protoparam='+protoparam+'\n')
                     url_list.append(ssr_proxy)
             except Exception:
                 pass
 
         url_content = ''.join(url_list)
         return url_content
-    def base64_decode(self,content):
+    def base64_decode(content):
         if '-' in content:
             content = content.replace('-', '+')
         if '_' in content:
@@ -555,32 +555,33 @@ class format():
             base64_content = base64.b64decode(content)
             base64_content_format = base64_content
             return str(base64_content)
-    def base64_encode(self,content): # 将 URL 内容转换为 Base64
+    def base64_encode(content): # 将 URL 内容转换为 Base64
         if content == None:
             content = ''
         base64_content = base64.b64encode(content.encode('utf-8')).decode('ascii')
         return base64_content
 
-def config_output(subscription,target='clash'):
+def config_output(subscription,target='clash',config={'duplicate_remove': False, 'format_remarks': ''}):
     work_dir = os.getcwd()
     os.chdir(os.path.dirname(os.path.abspath(__file__)))
     os.chdir('./subconverter')
 
-    with open(f'./temp', 'w+', encoding= 'utf-8') as temp_file:
-        temp = format(subscription).output
-        if target == 'url':
-            output = format().base64_decode(temp)
-        elif target == 'base64':
-            output = temp
-        else:
+    temp = format(subscription,config).output
+    if target == 'url':
+        output = format.base64_decode(temp)
+    elif target == 'base64':
+        output = temp
+    else:
+        with open(f'./temp', 'w', encoding= 'utf-8') as temp_file:
             temp_file.write(temp)
             if os.name == 'posix':
                 os.system(f'./subconverter -g --artifact \"{target}\"')
             elif os.name == 'nt':
                 os.system(f'subconverter.exe -g --artifact \"{target}\"')
+        with open(f'./temp', 'r', encoding= 'utf-8') as temp_file:
             output = temp_file.read()
 
-    os.remove('./temp')
+        os.remove('./temp')
     os.chdir(work_dir)
 
     return output

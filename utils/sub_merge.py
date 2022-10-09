@@ -8,13 +8,18 @@ from sub_convert import format
 #file path: list_dir, list_file, merge_dir, update_dir, readme_file, share_file
 
 class merge():
-    def __init__(self,list_dir,list_file,merge_dir,update_dir,readme_file,share_file):
-        self.list_dir = list_dir
-        self.list_file = list_file
-        self.merge_dir = merge_dir
-        self.update_dir = update_dir
-        self.readme_file = readme_file
-        self.share_file = share_file
+    def __init__(self,file_dir,format_config):
+        self.list_dir = file_dir['list_dir']
+        self.list_file = file_dir['list_file']
+        self.merge_dir = file_dir['merge_dir']
+        self.update_dir = file_dir['update_dir']
+        self.readme_file = file_dir['readme_file']
+        self.share_file = file_dir['share_file']
+
+        self.format_config = {
+            'duplicate_remove': format_config['duplicate_remove'], 'format_remarks': format_config['format_remarks'],
+            'include_remarks': format_config['include_remarks'], 'exclude_remarks': format_config['exclude_remarks']
+            }
 
         os.chdir(os.getcwd()) # Move to working directory
         self.url_list = self.read_list()
@@ -38,10 +43,11 @@ class merge():
         list_dir = self.list_dir
         merge_dir = self.merge_dir
 
-        for t in os.walk(list_dir):
+        for t in os.walk(list_dir): # Remvove old files
             for f in t[2]:
                 f = t[0]+f
                 os.remove(f)
+
         content_list = []
         for index in range(len(url_list)):
             content = config_output(url_list[index]['url'],'url')
@@ -51,14 +57,14 @@ class merge():
                 content_list.append(content)
                 print(f'Writing content of {remarks} to {ids:0>2d}.txt\n')
             else:
-                content = 'None node found in url.'
+                content = 'No nodes were found in url.'
                 print(f'Writing error of {remarks} to {ids:0>2d}.txt\n')
             if self.list_dir != '':
                 with open(f'{list_dir}{ids:0>2d}.txt', 'w+', encoding= 'utf-8') as file:
                     file.write(content)
 
         print('Merging nodes...\n')
-        content_raw = ''.join(content_list) # https://python3-cookbook.readthedocs.io/zh_CN/latest/c02/p14_combine_and_concatenate_strings.html
+        content_raw = config_output(''.join(content_list),'url') # https://python3-cookbook.readthedocs.io/zh_CN/latest/c02/p14_combine_and_concatenate_strings.html
         content = content_raw
         content_clash = config_output(content_raw,'clash_provider')
         content_base64 = config_output(content_raw, 'base64')
@@ -113,7 +119,7 @@ class merge():
 
                 with open(self.share_file, 'r', encoding='utf-8') as f:
                     proxies_base64 = f.read()
-                    proxies = format().base64_decode(proxies_base64)
+                    proxies = format.base64_decode(proxies_base64)
                     proxies = proxies.split('\n')
                     proxies = ['    '+proxy for proxy in proxies]
                     proxies = [proxy+'\n' for proxy in proxies]
@@ -186,7 +192,7 @@ class merge():
             pass
         txt_dir = self.update_dir + date + '/' + date_day + '.txt' # 生成$MM$DD.txt文件名
         file = open(txt_dir, 'w', encoding= 'utf-8')
-        file.write(format().base64_decode(sub_content))
+        file.write(format.base64_decode(sub_content))
         file.close()
 
 if __name__ == '__main__':
