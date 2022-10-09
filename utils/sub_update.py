@@ -1,36 +1,32 @@
 #!/usr/bin/env python3
 
-from datetime import timedelta, datetime
+from datetime import datetime
 import json, re
 import requests
-from requests.adapters import HTTPAdapter
-
-# 文件路径定义
-sub_list_json = './sub/sub_list.json'
 
 
-with open(sub_list_json, 'r', encoding='utf-8') as f: # 载入订阅链接
-    raw_list = json.load(f)
-    f.close()
+class update():
+    def __init__(self,list_file):
+        self.list_file = list_file
+        with open(self.list_file, 'r', encoding='utf-8') as f: # 载入订阅链接
+            raw_list = json.load(f)
+            self.raw_list = raw_list
+        
 
-def url_updated(url): # 判断远程远程链接是否已经更新
-    s = requests.Session()
-    s.mount('http://', HTTPAdapter(max_retries=2))
-    s.mount('https://', HTTPAdapter(max_retries=2))
-    try:
-        resp = s.get(url, timeout=2)
-        status = resp.status_code
-    except Exception:
-        status = 404
-    if status == 200:
-        url_updated = True
-    else:
-        url_updated = False
-    return url_updated
+    def url_updated(self,url): # 判断远程远程链接是否已经更新
+        s = requests.Session()
+        try:
+            resp = s.get(url, timeout=2)
+            status = resp.status_code
+        except Exception:
+            status = 404
+        if status == 200:
+            url_updated = True
+        else:
+            url_updated = False
+        return url_updated
 
-class update_url():
-
-    def update_main():
+    def update_main(self):
         for sub in raw_list:
             id = sub['id']
             current_url = sub['url']
@@ -38,14 +34,14 @@ class update_url():
                 if sub['update_method'] != 'auto' and sub['enabled'] == True:
                     print(f'Finding available update for ID{id}')
                     if sub['update_method'] == 'change_date':
-                        new_url = update_url.change_date(id,current_url)
+                        new_url = self.change_date(id,current_url)
                         if new_url == current_url:
                             print(f'No available update for ID{id}\n')
                         else:
                             sub['url'] = new_url
                             print(f'ID{id} url updated to {new_url}\n')
                     elif sub['update_method'] == 'page_release':
-                        new_url = update_url.find_link(id,current_url)
+                        new_url = self.find_link(id,current_url)
                         if new_url == current_url:
                             print(f'No available update for ID{id}\n')
                         else:
@@ -59,7 +55,7 @@ class update_url():
             file.write(updated_list)
             file.close()
 
-    def change_date(id,current_url):
+    def change_date(self,id,current_url):
         if id == 40:
             new_url = datetime.today().strftime('https://clashnode.com/wp-content/uploads/%Y/%m/%Y%m%d.txt')
         if id == 36:
@@ -79,7 +75,7 @@ class update_url():
         else:
             return current_url
 
-    def find_link(id,current_url):
+    def find_link(self,id,current_url):
         if id == 38:
             try:
                 res_json = requests.get('https://api.github.com/repos/mianfeifq/share/contents/').json()
@@ -109,4 +105,4 @@ class update_url():
                 return current_url
 
 if __name__ == '__main__':
-    update_url.update_main()
+    update()
