@@ -33,6 +33,8 @@ jobs:
         pip install -r ./utils/requirements.txt
     - name: 执行任务
       run: |
+        chmod +x ./utils/subconverter/subconverter && chmod +x ./utils/litespeedtest/lite
+
         python ./utils/main.py
     - name: 提交更改
       run: |                 
