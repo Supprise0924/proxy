@@ -6,12 +6,12 @@ import requests
 
 
 class update():
-    def __init__(self,list_file):
+    def __init__(self,list_file='./sub/sub_list.json',):
         self.list_file = list_file
         with open(self.list_file, 'r', encoding='utf-8') as f: # 载入订阅链接
             raw_list = json.load(f)
             self.raw_list = raw_list
-        
+        self.update_main()
 
     def url_updated(self,url): # 判断远程远程链接是否已经更新
         s = requests.Session()
@@ -27,7 +27,7 @@ class update():
         return url_updated
 
     def update_main(self):
-        for sub in raw_list:
+        for sub in self.raw_list:
             id = sub['id']
             current_url = sub['url']
             try:
@@ -50,8 +50,8 @@ class update():
             except KeyError:
                 print(f'{id} Url not changed! Please define update method.')
             
-            updated_list = json.dumps(raw_list, sort_keys=False, indent=2, ensure_ascii=False)
-            file = open(sub_list_json, 'w', encoding='utf-8')
+            updated_list = json.dumps(self.raw_list, sort_keys=False, indent=2, ensure_ascii=False)
+            file = open(self.list_file, 'w', encoding='utf-8')
             file.write(updated_list)
             file.close()
 
@@ -70,7 +70,7 @@ class update():
             url_end = '.txt'
             new_url = url_front + today + url_end
 
-        if url_updated(new_url):
+        if self.url_updated(new_url):
             return new_url
         else:
             return current_url
@@ -89,7 +89,7 @@ class update():
         if id == 33:
             url_update = 'https://v2cross.com/archives/1884'
 
-            if url_updated(url_update):
+            if self.url_updated(url_update):
                 try:
                     resp = requests.get(url_update, timeout=5)
                     raw_content = resp.text
