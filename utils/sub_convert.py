@@ -5,25 +5,34 @@ import yaml, json, base64
 import requests, socket, urllib.parse
 import geoip2.database
 
-from requests.adapters import HTTPAdapter
+from config_parser import output
 
+#config: dup_rm_enabled, rename_enabled, rename_format, output_path
 
 class format():
-    def __init__(self,content,config={'subconvert': {'dup-rm': {'enabled': True}, 'rename': {'enabled': True, 'format': True}}}):
+    def __init__(self,content='',config={'subconvert': {'dup-rm': {'enabled': True}, 'rename': {'enabled': True, 'format': True}}}):
         self.content = content
         self.config = config['subconvert']
         self.output = self.main()
 
     def main(self):
-        proxies = self.makeup(self.getconfig())
-        output = self.config2url(proxies)
+        if self.content[:8] == 'https://' and '|http' in self.config:
+            urls = re.split('\|',self.content)
+            content_list = []
+            for url in urls:
+                self.content = url
+                proxies = self.makeup(self.getconfig())
+                output = self.config2url(proxies)
+                content_list.append(output)
+            output = ''.join(content_list)
+        else:
+            proxies = self.makeup(self.getconfig())
+            output = self.config2url(proxies)
         return self.base64_encode(output)
     def getconfig(self): # 输入订阅链接或订阅内容，得到节点配置列表
         if self.content[:8] == 'https://': # 获取 URL 订阅链接内容
-            s = requests.Session()
-            s.mount('http://', HTTPAdapter(max_retries=5))
-            s.mount('https://', HTTPAdapter(max_retries=5))
             try:
+                s = requests.Session()
                 print('Downloading from: ' + self.content)
                 resp = s.get(self.content, timeout=5)
                 content = resp.content.decode('utf-8')
@@ -552,31 +561,41 @@ class format():
         base64_content = base64.b64encode(content.encode('utf-8')).decode('ascii')
         return base64_content
 
-def output(subscription,target='clash',exe_dir='./subconverter'):
-    os.chdir(exe_dir)
+def config_output(subscription,target='clash'):
+    work_dir = os.getcwd()
+    os.chdir(os.path.dirname(os.path.abspath(__file__)))
+    os.chdir('./subconverter')
 
     with open(f'./temp', 'w+', encoding= 'utf-8') as temp_file:
-        temp_file.write(format(subscription).output)
-        if os.name == 'posix':
-            os.system(f'./subconverter -g --artifact \"{target}\"')
-        elif os.name == 'nt':
-            os.system(f'subconverter.exe -g --artifact \"{target}\"')
-        output = temp_file.read()
+        temp = format(subscription).output
+        if target == 'url':
+            output = format().base64_decode(temp)
+        elif target == 'base64':
+            output = temp
+        else:
+            temp_file.write(temp)
+            if os.name == 'posix':
+                os.system(f'./subconverter -g --artifact \"{target}\"')
+            elif os.name == 'nt':
+                os.system(f'subconverter.exe -g --artifact \"{target}\"')
+            output = temp_file.read()
 
     os.remove('./temp')
+    os.chdir(work_dir)
 
     return output
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Convert between various proxy subscription formats using Subconverter.')
     parser.add_argument('--subscription', '-s', help='Your subscription url or local file path.', required=True)
-    parser.add_argument('--target', '-t', help='Target convert format, support url, clash, clash_provider, quanx.', default='clash')
-    parser.add_argument('--output', '-o', help='Target path to output.', default='./')
+    parser.add_argument('--target', '-t', help='Target convert format, support base64, clash, clash_provider, quanx.', default='clash')
+    parser.add_argument('--output', '-o', help='Target path to output, default value is the Subconverter root directionary.', default='./')
     args = parser.parse_args()
 
     subscription = args.subscription
     target = args.target
     
+    work_dir = os.getcwd()
     os.chdir(os.path.dirname(os.path.abspath(__file__)))
     os.chdir('./subconverter')
 
@@ -587,7 +606,4 @@ if __name__ == '__main__':
         elif os.name == 'nt':
             os.system(f'subconverter.exe -g --artifact \"{target}\"')
     os.remove('./temp')
-    
-    #print(format('https://raw.iqiq.io/yu-steven/openit/main/Clash.yaml').output)
-    #with open(f'./temp', 'w+', encoding= 'utf-8') as temp_file:
-    #    temp_file.write(format('https://raw.iqiq.io/yu-steven/openit/main/Clash.yaml').output)
+    os.chdir(work_dir)
