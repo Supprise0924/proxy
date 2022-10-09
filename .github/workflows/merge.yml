@@ -33,18 +33,18 @@ jobs:
         pip install -r ./utils/requirements.txt
     - name: 执行任务
       run: |
-        wget -O subconverter.tar.gz https://github.com/tindy2013/subconverter/releases/latest/download/subconverter_linux64.tar.gz
-        tar -zxvf subconverter.tar.gz -C ./
-        chmod +x ./subconverter/subconverter && nohup ./subconverter/subconverter >./subconverter.log 2>&1 &
+        chmod +x ./utils/subconverter/subconverter && chmod +x ./utils/litespeedtest/lite
 
-        python ./utils/list_merge.py
-      
+        python ./utils/main.py
     - name: 提交更改
       run: |                 
         git config --local user.email "actions@github.com"
         git config --local user.name "GitHub Actions"
         git pull origin master
         git add ./sub
+        git add ./update
+        git add ./Eternity
+        git add ./Eternity.yaml
         git add README.md
         git commit -m "$(date '+%Y-%m-%d %H:%M:%S')合并节点"
     - name: 推送更改
