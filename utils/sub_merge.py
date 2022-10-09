@@ -6,7 +6,7 @@ from sub_convert import config_output
 from sub_convert import format
 from sub_update import update_url
 
-#config: list_path, list_file, readme_file, update_path, merge_path
+#file path: list_path, list_file, merge_path, update_path, readme_path, share_file
 
 class merge():
     def __init__(self,list_path='./sub/list/',list_file='./sub/sub_list.json',merge_path='./sub/',update_path='./update/',readme_file='./README.md',share_file='./Eternity'):
@@ -17,6 +17,7 @@ class merge():
         self.readme_file = readme_file
         self.share_file = share_file
 
+        os.chdir(os.getcwd()) # Move to working directory
         self.url_list = self.read_list()
         self.sub_merge()
         self.readme_update()
@@ -188,7 +189,4 @@ class merge():
         file.close()
 
 if __name__ == '__main__':
-
-    #update_url.update_main()
-
     merge()
