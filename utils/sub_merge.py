@@ -5,22 +5,24 @@ import json, os, time
 from sub_convert import config_output
 from sub_convert import format
 
-#file path: list_path, list_file, merge_path, update_path, readme_path, share_file
+#file path: list_dir, list_file, merge_dir, update_dir, readme_file, share_file
 
 class merge():
-    def __init__(self,list_path='./sub/list/',list_file='./sub/sub_list.json',merge_path='./sub/',update_path='./update/',readme_file='./README.md',share_file='./Eternity'):
-        self.list_path = list_path
+    def __init__(self,list_dir,list_file,merge_dir,update_dir,readme_file,share_file):
+        self.list_dir = list_dir
         self.list_file = list_file
-        self.merge_path = merge_path
-        self.update_path = update_path
+        self.merge_dir = merge_dir
+        self.update_dir = update_dir
         self.readme_file = readme_file
         self.share_file = share_file
 
         os.chdir(os.getcwd()) # Move to working directory
         self.url_list = self.read_list()
         self.sub_merge()
-        self.readme_update()
-        self.backup()
+        if self.readme_file != '':
+            self.readme_update()
+        if self.update_dir != '':
+            self.backup()
 
     def read_list(self): # 将 sub_list.json Url 内容读取为列表
         with open(self.list_file, 'r', encoding='utf-8') as f:
@@ -33,10 +35,10 @@ class merge():
 
     def sub_merge(self): # 将转换后的所有 Url 链接内容合并转换 YAML or Base64, ，并输出文件，输入订阅列表。
         url_list = self.url_list
-        list_path = self.list_path
-        merge_path = self.merge_path
+        list_dir = self.list_dir
+        merge_dir = self.merge_dir
 
-        for t in os.walk(list_path):
+        for t in os.walk(list_dir):
             for f in t[2]:
                 f = t[0]+f
                 os.remove(f)
@@ -47,13 +49,13 @@ class merge():
             remarks = url_list[index]['remarks']
             if content != '' and content != None:
                 content_list.append(content)
-                with open(f'{list_path}{ids:0>2d}.txt', 'w+', encoding= 'utf-8') as file:
-                    file.write(content)
-                    print(f'Writing content of {remarks} to {ids:0>2d}.txt\n')
+                print(f'Writing content of {remarks} to {ids:0>2d}.txt\n')
             else:
-                with open(f'{list_path}{ids:0>2d}.txt', 'w+', encoding= 'utf-8') as file:
-                    file.write('None node found in url.')
-                    print(f'Writing error of {remarks} to {ids:0>2d}.txt\n')
+                content = 'None node found in url.'
+                print(f'Writing error of {remarks} to {ids:0>2d}.txt\n')
+            if self.list_dir != '':
+                with open(f'{list_dir}{ids:0>2d}.txt', 'w+', encoding= 'utf-8') as file:
+                    file.write(content)
 
         print('Merging nodes...\n')
         content_raw = ''.join(content_list) # https://python3-cookbook.readthedocs.io/zh_CN/latest/c02/p14_combine_and_concatenate_strings.html
@@ -65,7 +67,7 @@ class merge():
             file = open(file, 'w+', encoding = 'utf-8')
             file.write(output_type)
             file.close
-        write_list = [f'{merge_path}/sub_merge.txt', f'{merge_path}/sub_merge_base64.txt', f'{merge_path}/sub_merge_clash.yaml']
+        write_list = [f'{merge_dir}/sub_merge.txt', f'{merge_dir}/sub_merge_base64.txt', f'{merge_dir}/sub_merge_clash.yaml']
         content_type = (content, content_base64, content_clash)
         for index in range(len(write_list)):
             content_write(write_list[index], content_type[index])
@@ -78,7 +80,7 @@ class merge():
             lines = f.readlines()
             f.close()
         # 获得当前名单及各仓库节点数量
-        with open(f'{self.merge_path}sub_merge.txt', 'r', encoding='utf-8') as f:
+        with open(f'{self.merge_dir}sub_merge.txt', 'r', encoding='utf-8') as f:
             total = len(f.readlines())
             total = f'合并节点总数: `{total}`\n'
             thanks = []
@@ -90,7 +92,7 @@ class merge():
                     remarks = repo['remarks']
                     repo_site = repo['site']
 
-                    sub_file = f'{self.list_path}{id:0>2d}.txt'
+                    sub_file = f'{self.list_dir}{id:0>2d}.txt'
                     with open(sub_file, 'r', encoding='utf-8') as f:
                         proxies = f.readlines()
                         amount = len(proxies)
@@ -129,7 +131,7 @@ class merge():
                 # 清除旧内容
                 lines.pop(index+1) # 删除节点数量
 
-                with open(f'{self.merge_path}sub_merge.txt', 'r', encoding='utf-8') as f:
+                with open(f'{self.merge_dir}sub_merge.txt', 'r', encoding='utf-8') as f:
                     proxies = f.read()
                     proxies = proxies.split('\n')
                     top_amount = len(proxies) - 1
@@ -179,10 +181,10 @@ class merge():
         file_eternity.close()
 
         try:
-            os.mkdir(f'{self.update_path}{date}')
+            os.mkdir(f'{self.update_dir}{date}')
         except FileExistsError:
             pass
-        txt_dir = self.update_path + date + '/' + date_day + '.txt' # 生成$MM$DD.txt文件名
+        txt_dir = self.update_dir + date + '/' + date_day + '.txt' # 生成$MM$DD.txt文件名
         file = open(txt_dir, 'w', encoding= 'utf-8')
         file.write(format().base64_decode(sub_content))
         file.close()

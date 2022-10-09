@@ -6,7 +6,7 @@ import requests
 
 
 class update():
-    def __init__(self,list_file='./sub/sub_list.json',):
+    def __init__(self,list_file='./sub/sub_list.json'):
         self.list_file = list_file
         with open(self.list_file, 'r', encoding='utf-8') as f: # 载入订阅链接
             raw_list = json.load(f)
