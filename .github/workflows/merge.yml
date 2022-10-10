@@ -33,7 +33,9 @@ jobs:
         pip install -r ./utils/requirements.txt
     - name: 执行任务
       run: |
-        sudo sh ./utils/scripts/action_merge.sh
+        sudo sh ./utils/scripts/set_proxy.sh
+        chmod +x ./utils/subconverter/subconverter && chmod +x ./utils/litespeedtest/lite
+        python ./utils/main.py
     - name: 提交更改
       run: |
         git config --local user.email "actions@github.com"

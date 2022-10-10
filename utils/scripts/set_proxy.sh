@@ -10,6 +10,3 @@ mv -f ./utils/scripts/proxychains.conf ../../../../../../etc/proxychains.conf
 # Run Clash
 sudo pkill -f clash
 ./clash -f ./utils/scripts/clash_config.yml &
-# Begin merge
-chmod +x ./utils/subconverter/subconverter && chmod +x ./utils/litespeedtest/lite
-python ./utils/main.py
