@@ -35,7 +35,7 @@ jobs:
       run: |
         sudo sh ./utils/scripts/set_proxy.sh
         chmod +x ./utils/subconverter/subconverter && chmod +x ./utils/litespeedtest/lite
-        proxychains python ./utils/main.py
+        python ./utils/main.py
     - name: 提交更改
       run: |
         git config --local user.email "actions@github.com"
