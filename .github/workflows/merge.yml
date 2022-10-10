@@ -7,7 +7,7 @@ on:
   schedule:
     # - cron: '*/5 * * * *'
     # 表达式生成  https://crontab.guru/
-    - cron: '0 3,9,15,21 * * *'
+    - cron: '0 0-23/3 * * *'
 
 jobs:
   deploy:
@@ -33,11 +33,11 @@ jobs:
         pip install -r ./utils/requirements.txt
     - name: 执行任务
       run: |
-        chmod +x ./utils/subconverter/subconverter && chmod +x ./utils/litespeedtest/lite
+        chmod +x ./utils/subconverter/subconverter && chmod +x ./utils/litespeedtest/lite && chmod +x ./clash
 
-        python ./utils/main.py
+        python3 ./utils/main.py
     - name: 提交更改
-      run: |                 
+      run: |
         git config --local user.email "actions@github.com"
         git config --local user.name "GitHub Actions"
         git pull origin master
