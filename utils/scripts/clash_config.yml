@@ -28,13 +28,14 @@ proxy-groups:
 proxy-providers:
   all:
     type: http
-    url: "https://sspool.herokuapp.com/clash/proxies?c=CN"
-    path: sspool.herokuapp.com/provider-cn.yaml
+    url: "https://proxies.bihai.cf/clash/proxies?c=CN,HK,TW,JP,SG"
+    path: bihai/provider-cn.yaml
     health-check:
       enable: true
       interval: 600
       url: http://www.gstatic.com/generate_204
 
 rules:
-  - DOMAIN-SUFFIX,smtp,DIRECT
+  - DOMAIN-SUFFIX,githubusercontent.com,DIRECT
+  - DOMAIN-SUFFIX,github.com,DIRECT
   - MATCH,cn
