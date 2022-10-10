@@ -12,4 +12,4 @@ sudo pkill -f clash
 ./clash -f ./utils/scripts/clash_config.yml &
 # Begin merge
 chmod +x ./utils/subconverter/subconverter && chmod +x ./utils/litespeedtest/lite
-proxychains python ./utils/main.py
+python ./utils/main.py
