@@ -11,4 +11,5 @@ mv -f ./utils/scripts/proxychains.conf ../../../../../../etc/proxychains.conf
 sudo pkill -f clash
 ./clash -f ./utils/shell/clash_config.yml &
 # Begin merge
+chmod +x ./utils/subconverter/subconverter && chmod +x ./utils/litespeedtest/lite
 sudo nohup proxychains python3 ./utils/main.py >merge.log 2>&1 &
