@@ -5,738 +5,737 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇺🇸 美国_1010112, server: us.kapok.buzz, port: 443, type: vmess, uuid: eb4550a1-bd63-4f9c-b4b6-fdd24b440728, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /SCP-914, headers: {Host: us.kapok.buzz}}}
-  - {name: 🇺🇸 美国_1010604, server: us.kapok.buzz, port: 443, type: vmess, uuid: eb4550a1-bd63-4f9c-b4b6-fdd24b440728, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /SCP-914, headers: {Host: us.kapok.buzz}}}
-  - {name: 🇺🇸 US 609, server: us03.gogogoo.cyou, port: 443, type: vmess, uuid: db5d1aa3-908b-44d1-be0a-4e6a8d4e4cda, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /go, headers: {Host: us03.gogogoo.cyou}}}
-  - {name: 🇺🇸 US 609 2, server: us03.gogogoo.cyou, port: 443, type: vmess, uuid: db5d1aa3-908b-44d1-be0a-4e6a8d4e4cda, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /go, headers: {Host: us03.gogogoo.cyou}}}
-  - {name: US_09, server: 156.146.38.163, port: 443, type: ss, cipher: aes-128-cfb, password: shadowsocks}
-  - {name: 🇺🇸 美国_1006432, server: us03.gogogoo.cyou, port: 443, type: vmess, uuid: db5d1aa3-908b-44d1-be0a-4e6a8d4e4cda, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /go, headers: {Host: us03.gogogoo.cyou}}}
-  - {name: 🇺🇸 美国 047, server: us.kapok.buzz, port: 443, type: vmess, uuid: eb4550a1-bd63-4f9c-b4b6-fdd24b440728, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /SCP-914, headers: {Host: us.kapok.buzz}}}
-  - {name: 🇺🇸 US 609 3, server: us03.gogogoo.cyou, port: 443, type: vmess, uuid: db5d1aa3-908b-44d1-be0a-4e6a8d4e4cda, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /go, headers: {Host: us03.gogogoo.cyou}}}
-  - {name: US_09 2, server: 156.146.38.163, port: 443, type: ss, cipher: aes-128-cfb, password: shadowsocks}
-  - {name: US_09 3, server: 156.146.38.163, port: 443, type: ss, cipher: aes-128-cfb, password: shadowsocks}
-  - {name: US_09 4, server: 156.146.38.163, port: 443, type: ss, cipher: aes-128-cfb, password: shadowsocks}
-  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:), server: us.kapok.buzz, port: 443, type: vmess, uuid: eb4550a1-bd63-4f9c-b4b6-fdd24b440728, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /SCP-914, headers: {Host: us.kapok.buzz}}}
-  - {name: US_09 5, server: 156.146.38.163, port: 443, type: ss, cipher: aes-128-cfb, password: shadowsocks}
-  - {name: US_09 6, server: 156.146.38.163, port: 443, type: ss, cipher: aes-128-cfb, password: shadowsocks}
-  - {name: US_09 7, server: 156.146.38.163, port: 443, type: ss, cipher: aes-128-cfb, password: shadowsocks}
-  - {name: "[10-10]-🇺🇦-乌克兰-2450-5.181.234.254", server: 5.181.234.254, port: 808, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: 🇺🇸 美国_1006054, server: vus4.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /chat, headers: {Host: vus4.0bad.com}}}
-  - {name: 🇺🇸 美国_1010055, server: vus4.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /chat, headers: {Host: vus4.0bad.com}}}
-  - {name: mianfeifq |US_45.79.31.246_1008cc3f-368, server: vus4.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /chat, headers: {Host: vus4.0bad.com}}}
-  - {name: 🇺🇸 美国_1010562, server: vus4.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /chat, headers: {Host: vus4.0bad.com}}}
-  - {name: mianfeifq |US_45.79.31.246_1008cc3f-368 2, server: vus4.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /chat, headers: {Host: vus4.0bad.com}}}
-  - {name: 🇺🇸 美国_1010562 2, server: vus4.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /chat, headers: {Host: vus4.0bad.com}}}
-  - {name: 🇺🇸 美国_1010055 2, server: vus4.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /chat, headers: {Host: vus4.0bad.com}}}
-  - {name: US_09 8, server: 156.146.38.163, port: 443, type: ss, cipher: aes-128-cfb, password: shadowsocks}
-  - {name: 🇺🇸 美国_1010112 2, server: us.kapok.buzz, port: 443, type: vmess, uuid: eb4550a1-bd63-4f9c-b4b6-fdd24b440728, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /SCP-914, headers: {Host: us.kapok.buzz}}}
-  - {name: 🇺🇸 _US_美国, server: 64.112.42.72, port: 16999, type: vmess, uuid: b5a01f44-b981-421a-bdc0-6d9d53da07fd, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 美国_1010612, server: 64.112.42.72, port: 16999, type: vmess, uuid: b5a01f44-b981-421a-bdc0-6d9d53da07fd, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 美国_1010604 2, server: us.kapok.buzz, port: 443, type: vmess, uuid: eb4550a1-bd63-4f9c-b4b6-fdd24b440728, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /SCP-914, headers: {Host: us.kapok.buzz}}}
-  - {name: US_1229 | 7.67Mb, server: 23.94.103.146, port: 443, type: trojan, password: 8c836caa-3d53-4829-bcfb-cbe0aa453a57, sni: 112.fastea.top, skip-cert-verify: true}
-  - {name: 🇺🇸 _US_美国 2, server: 144.168.60.70, port: 252, type: ss, cipher: aes-256-cfb, password: bwhskrskr03}
-  - {name: 🇺🇸 US【付费推荐：wxfz.ml】, server: 64.112.42.72, port: 16999, type: vmess, uuid: b5a01f44-b981-421a-bdc0-6d9d53da07fd, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 _US_美国 3, server: 129.146.242.130, port: 443, type: trojan, password: 05742120-ce23-4cc8-88f5-6d221ce45bf4, sni: 112.fastea.top, skip-cert-verify: true}
-  - {name: 白嫖-0446, server: 23.94.103.146, port: 443, type: trojan, password: 8c836caa-3d53-4829-bcfb-cbe0aa453a57, sni: www.sxsy88.tk, skip-cert-verify: true}
-  - {name: 🇺🇸 _US_美国 4, server: 129.146.242.130, port: 443, type: trojan, password: 05742120-ce23-4cc8-88f5-6d221ce45bf4, sni: sni=hg.jiashumao.net, skip-cert-verify: true}
-  - {name: mianfeifq |_AzadNet_7, server: 188.114.97.7, port: 443, type: vmess, uuid: db5d1aa3-908b-44d1-be0a-4e6a8d4e4cda, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /go, headers: {Host: us02.gogogoo.cyou}}}
-  - {name: 🇺🇸 _US_美国 5, server: 144.168.60.70, port: 252, type: ss, cipher: aes-256-cfb, password: bwhskrskr03}
-  - {name: 🇺🇸 US 8 → openitsub.com, server: 23.94.103.146, port: 443, type: trojan, password: 8c836caa-3d53-4829-bcfb-cbe0aa453a57, sni: eksrda.meijireform.com, skip-cert-verify: true}
-  - {name: 🇺🇸 美国_1006055, server: us02.gogogoo.cyou, port: 443, type: vmess, uuid: db5d1aa3-908b-44d1-be0a-4e6a8d4e4cda, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /go, headers: {Host: us02.gogogoo.cyou}}}
-  - {name: 🇺🇸 _US_美国_9, server: 172.96.192.58, port: 254, type: ss, cipher: aes-256-cfb, password: bwhskrskr03}
-  - {name: 🇺🇸 美国 035, server: 172.64.153.100, port: 443, type: vmess, uuid: 6e9217de-ad7e-4a67-bd17-a6dca951733b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: lg3.zhujicn2.com}}}
-  - {name: 🇺🇸 美国 064, server: 172.96.192.100, port: 246, type: ss, cipher: aes-256-cfb, password: bwhskrskr05}
-  - {name: 🇺🇸 美国 068, server: 172.96.192.58, port: 254, type: ss, cipher: aes-256-cfb, password: bwhskrskr03}
-  - {name: 🇺🇸 :美国-ss-107.182.177.136:256-被墙-直连-解锁美国地区NF非自制剧, server: 107.182.177.136, port: 256, type: ss, cipher: aes-256-cfb, password: bwhskrskr05}
-  - {name: 🇳🇱 +NL+38, server: 23.247.137.70, port: 3389, type: trojan, password: d4e41ff772c7fd45, sni: wel-jp.qchwnd.moe, skip-cert-verify: true}
-  - {name: 巴林(TG频道:@kxswa), server: 23.247.137.70, port: 3389, type: trojan, password: d4e41ff772c7fd45, sni: 921tw.tfzhc.top, skip-cert-verify: true}
-  - {name: 🇺🇸 美国_1010093, server: us02.gogogoo.cyou, port: 443, type: vmess, uuid: db5d1aa3-908b-44d1-be0a-4e6a8d4e4cda, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /go, headers: {Host: us02.gogogoo.cyou}}}
-  - {name: 🇺🇸 美国_1010618, server: us02.gogogoo.cyou, port: 443, type: vmess, uuid: db5d1aa3-908b-44d1-be0a-4e6a8d4e4cda, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /go, headers: {Host: us02.gogogoo.cyou}}}
-  - {name: 🇺🇸 美国_1010604 3, server: us.kapok.buzz, port: 443, type: vmess, uuid: eb4550a1-bd63-4f9c-b4b6-fdd24b440728, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /SCP-914, headers: {Host: us.kapok.buzz}}}
-  - {name: mianfeifq |US_45.79.31.246_1008cc3f-368 3, server: vus4.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /chat, headers: {Host: vus4.0bad.com}}}
-  - {name: 🇺🇸 _US_美国 6, server: 129.146.190.42, port: 443, type: trojan, password: dbf9bf9c-2c3f-474a-8031-d4c00666a989, sni: wel-ru.qchwnd.moe, skip-cert-verify: true}
-  - {name: 🇺🇸 美国_1010118, server: 129.146.133.157, port: 51009, type: vmess, uuid: 81714cef-9bde-4a08-aa50-d6bc0172d78b, alterId: 0, cipher: auto, tls: false}
-  - {name: mianfeifq |_AzadNet_7 2, server: 188.114.97.7, port: 443, type: vmess, uuid: db5d1aa3-908b-44d1-be0a-4e6a8d4e4cda, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /go, headers: {Host: us02.gogogoo.cyou}}}
-  - {name: Relay_ | 8.99Mb, server: ca.0112233.xyz, port: 8443, type: vmess, uuid: c3000e9d-bee7-4fdb-b312-dd07030f325d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /home, headers: {Host: ca.0112233.xyz}}}
-  - {name: 🇺🇸 :美国-ss-107.182.177.136:256-被墙-直连-解锁美国地区NF非自制剧 2, server: 107.182.177.136, port: 256, type: ss, cipher: aes-256-cfb, password: bwhskrskr05}
-  - {name: 🇺🇸 美国_1010093 2, server: us02.gogogoo.cyou, port: 443, type: vmess, uuid: db5d1aa3-908b-44d1-be0a-4e6a8d4e4cda, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /go, headers: {Host: us02.gogogoo.cyou}}}
-  - {name: 🇺🇸 youtube-bai-piao-wang-zhe-usa.98848.xyz_vmess_ws, server: youtube-bai-piao-wang-zhe-usa.98848.xyz, port: 443, type: vmess, uuid: d1478689-439c-4590-b7ce-36e786a02dc3, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /YouTube@bai-piao-wang-zhe_vws, headers: {Host: youtube-bai-piao-wang-zhe-usa.98848.xyz}}}
-  - {name: 🇺🇸 _US_美国 7, server: 172.96.192.100, port: 246, type: ss, cipher: aes-256-cfb, password: bwhskrskr05}
-  - {name: 🇺🇸 美国_1010112 3, server: us.kapok.buzz, port: 443, type: vmess, uuid: eb4550a1-bd63-4f9c-b4b6-fdd24b440728, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /SCP-914, headers: {Host: us.kapok.buzz}}}
-  - {name: TG@hkaa0 009, server: 141.101.114.20, port: 443, type: vmess, uuid: 07a63fe3-8a46-4f89-b548-9151c61b9dc8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: v2ray1.zhujicn2.com}}}
-  - {name: mianfeifq |US_45.79.88.215_10088df1-365, server: vus2.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /chat, headers: {Host: vus2.0bad.com}}}
   - {name: 🇺🇸 美国_1010057, server: vus2.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /chat, headers: {Host: vus2.0bad.com}}}
-  - {name: 🇺🇸 US 787, server: 150.230.41.9, port: 23292, type: vmess, uuid: 956c6c2f-bf54-4b87-fafd-4b767ca12750, alterId: 0, cipher: auto, tls: false}
-  - {name: 巴林(TG频道:@kxswa) 2, server: 23.247.137.70, port: 3389, type: trojan, password: d4e41ff772c7fd45, sni: 921tw.tfzhc.top, skip-cert-verify: true}
-  - {name: 🇺🇸 _US_美国 8, server: 97.64.31.80, port: 247, type: ss, cipher: aes-256-cfb, password: bwhskrskr03}
-  - {name: 🇺🇸 :美国-ss-107.182.177.136:256-被墙-直连-解锁美国地区NF非自制剧 3, server: 107.182.177.136, port: 256, type: ss, cipher: aes-256-cfb, password: bwhskrskr05}
-  - {name: 🇺🇸 _US_美国 9, server: 144.168.60.70, port: 252, type: ss, cipher: aes-256-cfb, password: bwhskrskr03}
-  - {name: 🇺🇸 美国 026, server: 23.247.137.70, port: 3389, type: trojan, password: d4e41ff772c7fd45, sni: eksrda.meijireform.com, skip-cert-verify: true}
-  - {name: 未知_1010079, server: 190.93.246.145, port: 443, type: vmess, uuid: 94887268-f3cb-48be-ade3-87d42faae3e4, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /ray, headers: {Host: m5.v2rayfree1.xyz}}}
-  - {name: 🇺🇸 美国 035 2, server: youtube-bai-piao-wang-zhe-usa.98848.xyz, port: 443, type: trojan, password: d1478689-439c-4590-b7ce-36e786a02dc3, sni: wel-jp.qchwnd.moe, skip-cert-verify: true}
-  - {name: 🇺🇸 美国_1010606, server: 172.64.153.100, port: 443, type: vmess, uuid: 6e9217de-ad7e-4a67-bd17-a6dca951733b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: lg3.zhujicn2.com}}}
-  - {name: 🇺🇸 US 5 → openitsub.com, server: youtube-bai-piao-wang-zhe-usa.98848.xyz, port: 443, type: trojan, password: d1478689-439c-4590-b7ce-36e786a02dc3, sni: eksrda.meijireform.com, skip-cert-verify: true}
-  - {name: 🇺🇸 _US_美国 10, server: 172.96.192.58, port: 254, type: ss, cipher: aes-256-cfb, password: bwhskrskr03}
-  - {name: mianfeifq |_AzadNet_7 3, server: 188.114.97.7, port: 443, type: vmess, uuid: db5d1aa3-908b-44d1-be0a-4e6a8d4e4cda, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /go, headers: {Host: us02.gogogoo.cyou}}}
-  - {name: 🇺🇸 美国_1010618 2, server: us02.gogogoo.cyou, port: 443, type: vmess, uuid: db5d1aa3-908b-44d1-be0a-4e6a8d4e4cda, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /go, headers: {Host: us02.gogogoo.cyou}}}
-  - {name: 🇺🇸 美国_1010069, server: s2.520guge.com, port: 443, type: vmess, uuid: cf1819c8-e530-4626-aec0-87ac04200385, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /happy, headers: {Host: s2.520guge.com}}}
-  - {name: 🇺🇸 _US_美国 11, server: 172.96.192.58, port: 254, type: ss, cipher: aes-256-cfb, password: bwhskrskr03}
-  - {name: 🇺🇸 美国_1010030, server: taobao.babazhuji.com, port: 443, type: vmess, uuid: 2a4918de-adce-4c4e-aa00-88a4227cf6ea, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /didi, headers: {Host: taobao.babazhuji.com}}}
-  - {name: 🇺🇸 美国_10061867, server: vus4.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /chat, headers: {Host: vus4.0bad.com}}}
-  - {name: 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶IT7网络 37, server: 198.181.56.163, port: 238, type: ss, cipher: aes-256-cfb, password: bwhskrskr05}
-  - {name: 🇺🇸 US【付费推荐：wxfz.ml】 2, server: 172.64.144.154, port: 443, type: vmess, uuid: 94887268-f3cb-48be-ade3-87d42faae3e4, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /ray, headers: {Host: m5.v2rayfree1.xyz}}}
-  - {name: US_13, server: 150.230.41.9, port: 23292, type: vmess, uuid: 956c6c2f-bf54-4b87-fafd-4b767ca12750, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 美国 041, server: youtube-bai-piao-wang-zhe-usa.98848.xyz, port: 443, type: trojan, password: d1478689-439c-4590-b7ce-36e786a02dc3, sni: eksrda.meijireform.com, skip-cert-verify: true}
-  - {name: 🇺🇸 github.com/freefq - 美国  19, server: taobao.babazhuji.com, port: 443, type: vmess, uuid: 2a4918de-adce-4c4e-aa00-88a4227cf6ea, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /didi, headers: {Host: taobao.babazhuji.com}}}
-  - {name: 🇺🇸 youtube-bai-piao-wang-zhe-usa.98848.xyz_vmess_ws 2, server: youtube-bai-piao-wang-zhe-usa.98848.xyz, port: 443, type: vmess, uuid: d1478689-439c-4590-b7ce-36e786a02dc3, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /YouTube@bai-piao-wang-zhe_vws, headers: {Host: youtube-bai-piao-wang-zhe-usa.98848.xyz}}}
-  - {name: 🇺🇸 美国_1010164, server: c59s3.jamjams3.net, port: 7523, type: vmess, uuid: ca487d71-81ab-4034-8693-b3dad4d45642, alterId: 0, cipher: auto, tls: false}
-  - {name: 未知_1010003, server: 141.101.114.20, port: 443, type: vmess, uuid: 07a63fe3-8a46-4f89-b548-9151c61b9dc8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: v2ray1.zhujicn2.com}}}
-  - {name: 🇺🇸 美国_1010069 2, server: s2.520guge.com, port: 443, type: vmess, uuid: cf1819c8-e530-4626-aec0-87ac04200385, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /happy, headers: {Host: s2.520guge.com}}}
-  - {name: 🇺🇸 美国_1010060, server: weixin.babazhuji.com, port: 443, type: vmess, uuid: 27848739-7e62-4138-9fd3-098a63964b6b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /tech, headers: {Host: weixin.babazhuji.com}}}
-  - {name: 🇺🇸 美国_1010647, server: c59s3.jamjams3.net, port: 7523, type: vmess, uuid: ca487d71-81ab-4034-8693-b3dad4d45642, alterId: 0, cipher: auto, tls: false}
+  - {name: mianfeifq |US_45.79.88.215_10088df1-365, server: vus2.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /chat, headers: {Host: vus2.0bad.com}}}
+  - {name: mianfeifq |US_45.79.88.215_10088df1-365 2, server: vus2.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /chat, headers: {Host: vus2.0bad.com}}}
   - {name: 🇺🇸 美国_1010563, server: vus2.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /chat, headers: {Host: vus2.0bad.com}}}
-  - {name: 未知_1010058, server: 141.101.114.20, port: 443, type: vmess, uuid: 07a63fe3-8a46-4f89-b548-9151c61b9dc8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: v2ray1.zhujicn2.com}}}
-  - {name: "🇬🇧 [10-11]-🇬🇧-英国-1002-78.129.253.9", server: 78.129.253.9, port: 808, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: 🇺🇸 _US_美国 12, server: 64.112.42.72, port: 16999, type: vmess, uuid: b5a01f44-b981-421a-bdc0-6d9d53da07fd, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 美国_1006256, server: weixin.babazhuji.com, port: 443, type: vmess, uuid: 27848739-7e62-4138-9fd3-098a63964b6b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /tech, headers: {Host: weixin.babazhuji.com}}}
+  - {name: 🇺🇸 美国 037, server: nice-us02.nicevpn.top, port: 443, type: trojan, password: 97e19992-cde3-4314-814d-5529a4e5c874, sni: 112.fastea.top, skip-cert-verify: true}
+  - {name: mianfeifq |US_35.89.213.183_1009d64f-272, server: 35.89.213.183, port: 443, type: trojan, password: 97e19992-cde3-4314-814d-5529a4e5c874, sni: wel-jp.qchwnd.moe, skip-cert-verify: true}
+  - {name: 🇺🇸 美国 032, server: nice-us02.nicevpn.top, port: 443, type: trojan, password: 97e19992-cde3-4314-814d-5529a4e5c874, sni: wel-jp.qchwnd.moe, skip-cert-verify: true}
+  - {name: 🇺🇸 US 9 → openitsub.com, server: nice-us02.nicevpn.top, port: 443, type: trojan, password: 97e19992-cde3-4314-814d-5529a4e5c874, sni: eksrda.meijireform.com, skip-cert-verify: true}
+  - {name: mianfeifq+314, server: nice-us02.nicevpn.top, port: 443, type: trojan, password: 97e19992-cde3-4314-814d-5529a4e5c874, sni: wel-jp.qchwnd.moe, skip-cert-verify: true}
+  - {name: 🇺🇸 美国_1010563 2, server: vus2.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /chat, headers: {Host: vus2.0bad.com}}}
+  - {name: 🇺🇸 美国_1010611, server: 23.230.146.254, port: 1258, type: vmess, uuid: edeb41cc-a76a-47f2-fa96-b9141e66a2b0, alterId: 0, cipher: auto, tls: false}
+  - {name: 白嫖-008, server: weixin.babazhuji.com, port: 443, type: vmess, uuid: 27848739-7e62-4138-9fd3-098a63964b6b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /tech, headers: {Host: weixin.babazhuji.com}}}
+  - {name: US_13, server: 150.230.41.9, port: 23292, type: vmess, uuid: 956c6c2f-bf54-4b87-fafd-4b767ca12750, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 美国_1010060, server: weixin.babazhuji.com, port: 443, type: vmess, uuid: 27848739-7e62-4138-9fd3-098a63964b6b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /tech, headers: {Host: weixin.babazhuji.com}}}
+  - {name: 🇺🇸 美国_1010120, server: 23.230.146.254, port: 1258, type: vmess, uuid: edeb41cc-a76a-47f2-fa96-b9141e66a2b0, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 美国 021, server: 67.21.72.44, port: 443, type: vmess, uuid: 2566d00f-218c-48f7-9a36-13d3d6f1a724, alterId: 64, cipher: auto, tls: false, network: ws, ws-opts: {path: /path/120208301422, headers: {Host: www.48816626.xyz}}}
+  - {name: 白嫖-008 2, server: weixin.babazhuji.com, port: 443, type: vmess, uuid: 27848739-7e62-4138-9fd3-098a63964b6b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /tech, headers: {Host: weixin.babazhuji.com}}}
+  - {name: 🇺🇸 v2rayfree.eu.org - 美国加利福尼亚州洛杉矶IT7网络 32, server: 198.181.56.163, port: 238, type: ss, cipher: aes-256-cfb, password: bwhskrskr05}
+  - {name: "|22.95Mb", server: 67.21.72.44, port: 443, type: vmess, uuid: 2566d00f-218c-48f7-9a36-13d3d6f1a724, alterId: 64, cipher: auto, tls: false, network: ws, ws-opts: {path: /path/120208301422, headers: {Host: www.48816626.xyz}}}
+  - {name: 🇺🇸 美国 013, server: 67.21.72.44, port: 443, type: vmess, uuid: 2566d00f-218c-48f7-9a36-13d3d6f1a724, alterId: 64, cipher: auto, tls: false, network: ws, ws-opts: {path: /path/120208301422, headers: {Host: www.48816626.xyz}}}
+  - {name: 白嫖-008 3, server: weixin.babazhuji.com, port: 443, type: vmess, uuid: 27848739-7e62-4138-9fd3-098a63964b6b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /tech, headers: {Host: weixin.babazhuji.com}}}
+  - {name: 🇺🇸 美国_1010057 2, server: vus2.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /chat, headers: {Host: vus2.0bad.com}}}
+  - {name: 🇺🇸 :美国-ss-107.182.177.136:256-被墙-直连-解锁美国地区NF非自制剧, server: 107.182.177.136, port: 256, type: ss, cipher: aes-256-cfb, password: bwhskrskr05}
+  - {name: 🇺🇸 _US_美国_7, server: 144.168.60.70, port: 252, type: ss, cipher: aes-256-cfb, password: bwhskrskr03}
+  - {name: 🇺🇸 美国_1010563 3, server: vus2.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /chat, headers: {Host: vus2.0bad.com}}}
+  - {name: 🇺🇸 :美国-ss-107.182.177.136:256-被墙-直连-解锁美国地区NF非自制剧 2, server: 107.182.177.136, port: 256, type: ss, cipher: aes-256-cfb, password: bwhskrskr05}
+  - {name: 🇺🇸 美国 036, server: nice-us02.nicevpn.top, port: 443, type: trojan, password: 97e19992-cde3-4314-814d-5529a4e5c874, sni: glc.hruqoaw.cn, skip-cert-verify: true}
+  - {name: 🇺🇸 美国 055, server: 198.181.56.163, port: 238, type: ss, cipher: aes-256-cfb, password: bwhskrskr05}
+  - {name: "|22.95Mb 2", server: 67.21.72.44, port: 443, type: vmess, uuid: 2566d00f-218c-48f7-9a36-13d3d6f1a724, alterId: 64, cipher: auto, tls: false, network: ws, ws-opts: {path: /path/120208301422, headers: {Host: www.48816626.xyz}}}
+  - {name: 🇺🇸 :美国-ss-107.182.177.136:256-被墙-直连-解锁美国地区NF非自制剧 3, server: 107.182.177.136, port: 256, type: ss, cipher: aes-256-cfb, password: bwhskrskr05}
+  - {name: 🇺🇸 _US_美国, server: 23.230.146.254, port: 1258, type: vmess, uuid: edeb41cc-a76a-47f2-fa96-b9141e66a2b0, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 美国_1010060 2, server: weixin.babazhuji.com, port: 443, type: vmess, uuid: 27848739-7e62-4138-9fd3-098a63964b6b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /tech, headers: {Host: weixin.babazhuji.com}}}
+  - {name: 白嫖-008 4, server: weixin.babazhuji.com, port: 443, type: vmess, uuid: 27848739-7e62-4138-9fd3-098a63964b6b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /tech, headers: {Host: weixin.babazhuji.com}}}
+  - {name: 🇺🇸 _US_美国 2, server: 23.230.146.254, port: 1258, type: vmess, uuid: edeb41cc-a76a-47f2-fa96-b9141e66a2b0, alterId: 0, cipher: auto, tls: false}
   - {name: 🇺🇸 美国_1010058, server: taobao.babazhuji.com, port: 443, type: vmess, uuid: 2a4918de-adce-4c4e-aa00-88a4227cf6ea, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /didi, headers: {Host: taobao.babazhuji.com}}}
-  - {name: 🇺🇸 _US_美国 13, server: 198.181.56.163, port: 238, type: ss, cipher: aes-256-cfb, password: bwhskrskr05}
-  - {name: 🇺🇸 US【付费推荐：wxfz.ml】 3, server: 172.64.153.100, port: 443, type: vmess, uuid: 6e9217de-ad7e-4a67-bd17-a6dca951733b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: lg3.zhujicn2.com}}}
-  - {name: 🇺🇸 github.com/freefq - 美国  19 2, server: taobao.babazhuji.com, port: 443, type: vmess, uuid: 2a4918de-adce-4c4e-aa00-88a4227cf6ea, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /didi, headers: {Host: taobao.babazhuji.com}}}
-  - {name: 🇬🇧 GB 41, server: vuk2.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /chat, headers: {Host: vuk2.0bad.com}}}
-  - {name: BH 1 → openitsub.com, server: 23.247.137.70, port: 3389, type: trojan, password: d4e41ff772c7fd45, sni: 921tw.tfzhc.top, skip-cert-verify: true}
+  - {name: _AzadNet_7, server: 188.114.96.7, port: 443, type: vmess, uuid: db5d1aa3-908b-44d1-be0a-4e6a8d4e4cda, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /go, headers: {Host: us02.gogogoo.cyou}}}
+  - {name: 🇺🇸 美国_1010162, server: ca.0112233.xyz, port: 8443, type: vmess, uuid: c3000e9d-bee7-4fdb-b312-dd07030f325d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /home, headers: {Host: ca.0112233.xyz}}}
+  - {name: 🇺🇸 美国_1010093, server: us02.gogogoo.cyou, port: 443, type: vmess, uuid: db5d1aa3-908b-44d1-be0a-4e6a8d4e4cda, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /go, headers: {Host: us02.gogogoo.cyou}}}
+  - {name: 🇺🇸 美国_1006060, server: vus2.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /chat, headers: {Host: vus2.0bad.com}}}
+  - {name: US_09, server: 156.146.38.163, port: 443, type: ss, cipher: aes-128-cfb, password: shadowsocks}
+  - {name: 🇺🇸 美国_1010618, server: us02.gogogoo.cyou, port: 443, type: vmess, uuid: db5d1aa3-908b-44d1-be0a-4e6a8d4e4cda, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /go, headers: {Host: us02.gogogoo.cyou}}}
+  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:), server: 198.181.56.163, port: 238, type: ss, cipher: aes-256-cfb, password: bwhskrskr05}
+  - {name: mianfeifq |US_45.79.88.215_10088df1-365 3, server: vus2.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /chat, headers: {Host: vus2.0bad.com}}}
+  - {name: 🇺🇸 _US_美国 3, server: 172.96.192.100, port: 246, type: ss, cipher: aes-256-cfb, password: bwhskrskr05}
+  - {name: 🇺🇸 github.com/freefq - 美国  19, server: taobao.babazhuji.com, port: 443, type: vmess, uuid: 2a4918de-adce-4c4e-aa00-88a4227cf6ea, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /didi, headers: {Host: taobao.babazhuji.com}}}
+  - {name: mianfeifq |_AzadNet_7, server: 188.114.97.7, port: 443, type: vmess, uuid: db5d1aa3-908b-44d1-be0a-4e6a8d4e4cda, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /go, headers: {Host: us02.gogogoo.cyou}}}
+  - {name: 🇺🇸 美国_1010618 2, server: us02.gogogoo.cyou, port: 443, type: vmess, uuid: db5d1aa3-908b-44d1-be0a-4e6a8d4e4cda, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /go, headers: {Host: us02.gogogoo.cyou}}}
+  - {name: 🇺🇸 美国 053, server: 172.64.153.200, port: 443, type: vmess, uuid: a8030afd-812a-4afe-a766-9c76ff3eddd4, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: lg4.zhujicn2.com}}}
+  - {name: mianfeifq |US_45.79.31.246_1008cc3f-368, server: vus4.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /chat, headers: {Host: vus4.0bad.com}}}
+  - {name: 🇺🇸 美国_1010055, server: vus4.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /chat, headers: {Host: vus4.0bad.com}}}
+  - {name: 🇺🇸 _US_美国 4, server: 144.168.60.70, port: 252, type: ss, cipher: aes-256-cfb, password: bwhskrskr03}
+  - {name: mianfeifq |US_45.79.88.215_10088df1-365 4, server: vus2.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /chat, headers: {Host: vus2.0bad.com}}}
+  - {name: 🇺🇸 美国_1010562, server: vus4.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /chat, headers: {Host: vus4.0bad.com}}}
+  - {name: 🇺🇸 _US_美国 5, server: 144.168.60.70, port: 252, type: ss, cipher: aes-256-cfb, password: bwhskrskr03}
+  - {name: 🇺🇸 美国 061, server: 172.96.192.58, port: 254, type: ss, cipher: aes-256-cfb, password: bwhskrskr03}
+  - {name: 🇺🇸 _US_美国 6, server: 172.96.192.100, port: 246, type: ss, cipher: aes-256-cfb, password: bwhskrskr05}
+  - {name: 🇺🇸 美国_1010060 3, server: weixin.babazhuji.com, port: 443, type: vmess, uuid: 27848739-7e62-4138-9fd3-098a63964b6b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /tech, headers: {Host: weixin.babazhuji.com}}}
+  - {name: mianfeifq+314 2, server: nice-us02.nicevpn.top, port: 443, type: trojan, password: 97e19992-cde3-4314-814d-5529a4e5c874, sni: wel-jp.qchwnd.moe, skip-cert-verify: true}
+  - {name: 🇺🇸 _US_美国 7, server: 198.181.56.163, port: 238, type: ss, cipher: aes-256-cfb, password: bwhskrskr05}
+  - {name: 🇺🇸 美国_1010093 2, server: us02.gogogoo.cyou, port: 443, type: vmess, uuid: db5d1aa3-908b-44d1-be0a-4e6a8d4e4cda, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /go, headers: {Host: us02.gogogoo.cyou}}}
+  - {name: 🇺🇸 github.com/freefq - 美国  10, server: fhcarm2.gaox.ml, port: 443, type: trojan, password: f39bd244-f5fe-415c-8b98-a1e5250bf178, sni: wel-jp.qchwnd.moe, skip-cert-verify: true}
+  - {name: 巴林(TG频道:@kxswa), server: 23.247.137.70, port: 3389, type: trojan, password: d4e41ff772c7fd45, sni: 921tw.tfzhc.top, skip-cert-verify: true}
+  - {name: 🇺🇸 :美国-ss-107.182.177.136:256-被墙-直连-解锁美国地区NF非自制剧 4, server: 107.182.177.136, port: 256, type: ss, cipher: aes-256-cfb, password: bwhskrskr05}
+  - {name: 🇺🇸 US 19 → openitsub.com, server: fhcarm2.gaox.ml, port: 443, type: trojan, password: f39bd244-f5fe-415c-8b98-a1e5250bf178, sni: wel-jp.qchwnd.moe, skip-cert-verify: true}
+  - {name: 🇺🇸 美国_1010564, server: 150.230.41.9, port: 23292, type: vmess, uuid: 956c6c2f-bf54-4b87-fafd-4b767ca12750, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 美国_1010055 2, server: vus4.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /chat, headers: {Host: vus4.0bad.com}}}
+  - {name: mianfeifq |US_45.79.31.246_1008cc3f-368 2, server: vus4.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /chat, headers: {Host: vus4.0bad.com}}}
+  - {name: 白嫖-013, server: us02.gogogoo.cyou, port: 443, type: vmess, uuid: db5d1aa3-908b-44d1-be0a-4e6a8d4e4cda, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /go, headers: {Host: us02.gogogoo.cyou}}}
+  - {name: 🇺🇸 美国_1006060 2, server: vus2.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /chat, headers: {Host: vus2.0bad.com}}}
+  - {name: 🇺🇸 US 605, server: s2.520guge.com, port: 443, type: vmess, uuid: cf1819c8-e530-4626-aec0-87ac04200385, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /happy, headers: {Host: s2.520guge.com}}}
+  - {name: 🇺🇸 US 1 → openitsub.com, server: nice-us02.nicevpn.top, port: 443, type: trojan, password: 97e19992-cde3-4314-814d-5529a4e5c874, sni: wel-jp.qchwnd.moe, skip-cert-verify: true}
+  - {name: 🇺🇸 美国_1010562 2, server: vus4.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /chat, headers: {Host: vus4.0bad.com}}}
+  - {name: 🇺🇸 美国 023, server: nice-us02.nicevpn.top, port: 443, type: trojan, password: 97e19992-cde3-4314-814d-5529a4e5c874, sni: glc.hruqoaw.cn, skip-cert-verify: true}
+  - {name: 🇺🇸 美国 035, server: youtube-bai-piao-wang-zhe-usa.98848.xyz, port: 443, type: trojan, password: d1478689-439c-4590-b7ce-36e786a02dc3, sni: wel-jp.qchwnd.moe, skip-cert-verify: true}
+  - {name: 🇺🇸 US【付费推荐：wxfz.ml】, server: 172.64.153.200, port: 443, type: vmess, uuid: a8030afd-812a-4afe-a766-9c76ff3eddd4, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: lg4.zhujicn2.com}}}
+  - {name: 🇺🇸 _US_美国 8, server: 97.64.31.80, port: 247, type: ss, cipher: aes-256-cfb, password: bwhskrskr03}
+  - {name: 🇺🇸 美国_10061868, server: vus2.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /chat, headers: {Host: vus2.0bad.com}}}
+  - {name: BH 1 → openitsub.com, server: 23.247.137.70, port: 3389, type: trojan, password: d4e41ff772c7fd45, sni: d76bb35696.wns.windows.com, skip-cert-verify: true}
+  - {name: 🇺🇸 :美国-ss-107.182.177.136:256-被墙-直连-解锁美国地区NF非自制剧 5, server: 107.182.177.136, port: 256, type: ss, cipher: aes-256-cfb, password: bwhskrskr05}
+  - {name: 巴林(TG频道:@kxswa) 2, server: 23.247.137.70, port: 3389, type: trojan, password: d4e41ff772c7fd45, sni: 921tw.tfzhc.top, skip-cert-verify: true}
+  - {name: US_64.112.42.53_101055b7-104, server: 64.112.42.53, port: 16999, type: vmess, uuid: 48fb27a4-e6fe-42cf-95bf-103d2318ed5d, alterId: 0, cipher: auto, tls: false}
+  - {name: US_23.247.137.70_10118241-323, server: 23.247.137.70, port: 3389, type: trojan, password: d4e41ff772c7fd45, sni: hiubbxiygcwax.vzwzasc.cn, skip-cert-verify: true}
+  - {name: 🇺🇸 US【付费推荐：wxfz.ml】 2, server: 64.112.42.72, port: 16999, type: vmess, uuid: b5a01f44-b981-421a-bdc0-6d9d53da07fd, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 美国 041, server: youtube-bai-piao-wang-zhe-usa.98848.xyz, port: 443, type: trojan, password: d1478689-439c-4590-b7ce-36e786a02dc3, sni: eksrda.meijireform.com, skip-cert-verify: true}
+  - {name: 🇺🇸 _US_美国 9, server: 198.181.56.163, port: 238, type: ss, cipher: aes-256-cfb, password: bwhskrskr05}
+  - {name: 🇺🇸 美国_1010612, server: 64.112.42.72, port: 16999, type: vmess, uuid: b5a01f44-b981-421a-bdc0-6d9d53da07fd, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 美国_1010612 2, server: 64.112.42.72, port: 16999, type: vmess, uuid: b5a01f44-b981-421a-bdc0-6d9d53da07fd, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 美国 011, server: 129.159.41.233, port: 32586, type: vmess, uuid: 341a9182-c423-499c-c46e-d17838b29037, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 美国_1010057 3, server: vus2.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /chat, headers: {Host: vus2.0bad.com}}}
+  - {name: mianfeifq |US_35.89.213.183_1009d64f-272 2, server: 35.89.213.183, port: 443, type: trojan, password: 97e19992-cde3-4314-814d-5529a4e5c874, sni: wel-jp.qchwnd.moe, skip-cert-verify: true}
+  - {name: mianfeifq |_AzadNet_7 2, server: 188.114.97.7, port: 443, type: vmess, uuid: db5d1aa3-908b-44d1-be0a-4e6a8d4e4cda, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /go, headers: {Host: us02.gogogoo.cyou}}}
+  - {name: 🇺🇸 美国_1010605, server: 172.64.153.200, port: 443, type: vmess, uuid: a8030afd-812a-4afe-a766-9c76ff3eddd4, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: lg4.zhujicn2.com}}}
+  - {name: 🇺🇸 美国_1010069, server: s2.520guge.com, port: 443, type: vmess, uuid: cf1819c8-e530-4626-aec0-87ac04200385, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /happy, headers: {Host: s2.520guge.com}}}
+  - {name: 🇺🇸 _US_美国 10, server: 198.181.56.163, port: 238, type: ss, cipher: aes-256-cfb, password: bwhskrskr05}
+  - {name: 🇺🇸 美国 026, server: 23.247.137.70, port: 3389, type: trojan, password: d4e41ff772c7fd45, sni: eksrda.meijireform.com, skip-cert-verify: true}
+  - {name: 🇺🇸 美国_1010119, server: 129.159.41.233, port: 32586, type: vmess, uuid: 341a9182-c423-499c-c46e-d17838b29037, alterId: 0, cipher: auto, tls: false}
+  - {name: BH 1 → openitsub.com 2, server: 23.247.137.70, port: 3389, type: trojan, password: d4e41ff772c7fd45, sni: d76bb35696.wns.windows.com, skip-cert-verify: true}
+  - {name: 🇺🇸 美国_1010069 2, server: s2.520guge.com, port: 443, type: vmess, uuid: cf1819c8-e530-4626-aec0-87ac04200385, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /happy, headers: {Host: s2.520guge.com}}}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸 美国_1010112
-      - 🇺🇸 美国_1010604
-      - 🇺🇸 US 609
-      - 🇺🇸 US 609 2
-      - US_09
-      - 🇺🇸 美国_1006432
-      - 🇺🇸 美国 047
-      - 🇺🇸 US 609 3
-      - US_09 2
-      - US_09 3
-      - US_09 4
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
-      - US_09 5
-      - US_09 6
-      - US_09 7
-      - "[10-10]-🇺🇦-乌克兰-2450-5.181.234.254"
-      - 🇺🇸 美国_1006054
-      - 🇺🇸 美国_1010055
-      - mianfeifq |US_45.79.31.246_1008cc3f-368
-      - 🇺🇸 美国_1010562
-      - mianfeifq |US_45.79.31.246_1008cc3f-368 2
-      - 🇺🇸 美国_1010562 2
-      - 🇺🇸 美国_1010055 2
-      - US_09 8
-      - 🇺🇸 美国_1010112 2
-      - 🇺🇸 _US_美国
-      - 🇺🇸 美国_1010612
-      - 🇺🇸 美国_1010604 2
-      - US_1229 | 7.67Mb
-      - 🇺🇸 _US_美国 2
-      - 🇺🇸 US【付费推荐：wxfz.ml】
-      - 🇺🇸 _US_美国 3
-      - 白嫖-0446
-      - 🇺🇸 _US_美国 4
-      - mianfeifq |_AzadNet_7
-      - 🇺🇸 _US_美国 5
-      - 🇺🇸 US 8 → openitsub.com
-      - 🇺🇸 美国_1006055
-      - 🇺🇸 _US_美国_9
-      - 🇺🇸 美国 035
-      - 🇺🇸 美国 064
-      - 🇺🇸 美国 068
-      - 🇺🇸 :美国-ss-107.182.177.136:256-被墙-直连-解锁美国地区NF非自制剧
-      - 🇳🇱 +NL+38
-      - 巴林(TG频道:@kxswa)
-      - 🇺🇸 美国_1010093
-      - 🇺🇸 美国_1010618
-      - 🇺🇸 美国_1010604 3
-      - mianfeifq |US_45.79.31.246_1008cc3f-368 3
-      - 🇺🇸 _US_美国 6
-      - 🇺🇸 美国_1010118
-      - mianfeifq |_AzadNet_7 2
-      - Relay_ | 8.99Mb
-      - 🇺🇸 :美国-ss-107.182.177.136:256-被墙-直连-解锁美国地区NF非自制剧 2
-      - 🇺🇸 美国_1010093 2
-      - 🇺🇸 youtube-bai-piao-wang-zhe-usa.98848.xyz_vmess_ws
-      - 🇺🇸 _US_美国 7
-      - 🇺🇸 美国_1010112 3
-      - TG@hkaa0 009
-      - mianfeifq |US_45.79.88.215_10088df1-365
       - 🇺🇸 美国_1010057
-      - 🇺🇸 US 787
-      - 巴林(TG频道:@kxswa) 2
-      - 🇺🇸 _US_美国 8
-      - 🇺🇸 :美国-ss-107.182.177.136:256-被墙-直连-解锁美国地区NF非自制剧 3
-      - 🇺🇸 _US_美国 9
-      - 🇺🇸 美国 026
-      - 未知_1010079
-      - 🇺🇸 美国 035 2
-      - 🇺🇸 美国_1010606
-      - 🇺🇸 US 5 → openitsub.com
-      - 🇺🇸 _US_美国 10
-      - mianfeifq |_AzadNet_7 3
-      - 🇺🇸 美国_1010618 2
-      - 🇺🇸 美国_1010069
-      - 🇺🇸 _US_美国 11
-      - 🇺🇸 美国_1010030
-      - 🇺🇸 美国_10061867
-      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶IT7网络 37
-      - 🇺🇸 US【付费推荐：wxfz.ml】 2
-      - US_13
-      - 🇺🇸 美国 041
-      - 🇺🇸 github.com/freefq - 美国  19
-      - 🇺🇸 youtube-bai-piao-wang-zhe-usa.98848.xyz_vmess_ws 2
-      - 🇺🇸 美国_1010164
-      - 未知_1010003
-      - 🇺🇸 美国_1010069 2
-      - 🇺🇸 美国_1010060
-      - 🇺🇸 美国_1010647
+      - mianfeifq |US_45.79.88.215_10088df1-365
+      - mianfeifq |US_45.79.88.215_10088df1-365 2
       - 🇺🇸 美国_1010563
-      - 未知_1010058
-      - 🇬🇧 [10-11]-🇬🇧-英国-1002-78.129.253.9
-      - 🇺🇸 _US_美国 12
+      - 🇺🇸 美国_1006256
+      - 🇺🇸 美国 037
+      - mianfeifq |US_35.89.213.183_1009d64f-272
+      - 🇺🇸 美国 032
+      - 🇺🇸 US 9 → openitsub.com
+      - mianfeifq+314
+      - 🇺🇸 美国_1010563 2
+      - 🇺🇸 美国_1010611
+      - 白嫖-008
+      - US_13
+      - 🇺🇸 美国_1010060
+      - 🇺🇸 美国_1010120
+      - 🇺🇸 美国 021
+      - 白嫖-008 2
+      - 🇺🇸 v2rayfree.eu.org - 美国加利福尼亚州洛杉矶IT7网络 32
+      - "|22.95Mb"
+      - 🇺🇸 美国 013
+      - 白嫖-008 3
+      - 🇺🇸 美国_1010057 2
+      - 🇺🇸 :美国-ss-107.182.177.136:256-被墙-直连-解锁美国地区NF非自制剧
+      - 🇺🇸 _US_美国_7
+      - 🇺🇸 美国_1010563 3
+      - 🇺🇸 :美国-ss-107.182.177.136:256-被墙-直连-解锁美国地区NF非自制剧 2
+      - 🇺🇸 美国 036
+      - 🇺🇸 美国 055
+      - "|22.95Mb 2"
+      - 🇺🇸 :美国-ss-107.182.177.136:256-被墙-直连-解锁美国地区NF非自制剧 3
+      - 🇺🇸 _US_美国
+      - 🇺🇸 美国_1010060 2
+      - 白嫖-008 4
+      - 🇺🇸 _US_美国 2
       - 🇺🇸 美国_1010058
-      - 🇺🇸 _US_美国 13
-      - 🇺🇸 US【付费推荐：wxfz.ml】 3
-      - 🇺🇸 github.com/freefq - 美国  19 2
-      - 🇬🇧 GB 41
+      - _AzadNet_7
+      - 🇺🇸 美国_1010162
+      - 🇺🇸 美国_1010093
+      - 🇺🇸 美国_1006060
+      - US_09
+      - 🇺🇸 美国_1010618
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
+      - mianfeifq |US_45.79.88.215_10088df1-365 3
+      - 🇺🇸 _US_美国 3
+      - 🇺🇸 github.com/freefq - 美国  19
+      - mianfeifq |_AzadNet_7
+      - 🇺🇸 美国_1010618 2
+      - 🇺🇸 美国 053
+      - mianfeifq |US_45.79.31.246_1008cc3f-368
+      - 🇺🇸 美国_1010055
+      - 🇺🇸 _US_美国 4
+      - mianfeifq |US_45.79.88.215_10088df1-365 4
+      - 🇺🇸 美国_1010562
+      - 🇺🇸 _US_美国 5
+      - 🇺🇸 美国 061
+      - 🇺🇸 _US_美国 6
+      - 🇺🇸 美国_1010060 3
+      - mianfeifq+314 2
+      - 🇺🇸 _US_美国 7
+      - 🇺🇸 美国_1010093 2
+      - 🇺🇸 github.com/freefq - 美国  10
+      - 巴林(TG频道:@kxswa)
+      - 🇺🇸 :美国-ss-107.182.177.136:256-被墙-直连-解锁美国地区NF非自制剧 4
+      - 🇺🇸 US 19 → openitsub.com
+      - 🇺🇸 美国_1010564
+      - 🇺🇸 美国_1010055 2
+      - mianfeifq |US_45.79.31.246_1008cc3f-368 2
+      - 白嫖-013
+      - 🇺🇸 美国_1006060 2
+      - 🇺🇸 US 605
+      - 🇺🇸 US 1 → openitsub.com
+      - 🇺🇸 美国_1010562 2
+      - 🇺🇸 美国 023
+      - 🇺🇸 美国 035
+      - 🇺🇸 US【付费推荐：wxfz.ml】
+      - 🇺🇸 _US_美国 8
+      - 🇺🇸 美国_10061868
       - BH 1 → openitsub.com
+      - 🇺🇸 :美国-ss-107.182.177.136:256-被墙-直连-解锁美国地区NF非自制剧 5
+      - 巴林(TG频道:@kxswa) 2
+      - US_64.112.42.53_101055b7-104
+      - US_23.247.137.70_10118241-323
+      - 🇺🇸 US【付费推荐：wxfz.ml】 2
+      - 🇺🇸 美国 041
+      - 🇺🇸 _US_美国 9
+      - 🇺🇸 美国_1010612
+      - 🇺🇸 美国_1010612 2
+      - 🇺🇸 美国 011
+      - 🇺🇸 美国_1010057 3
+      - mianfeifq |US_35.89.213.183_1009d64f-272 2
+      - mianfeifq |_AzadNet_7 2
+      - 🇺🇸 美国_1010605
+      - 🇺🇸 美国_1010069
+      - 🇺🇸 _US_美国 10
+      - 🇺🇸 美国 026
+      - 🇺🇸 美国_1010119
+      - BH 1 → openitsub.com 2
+      - 🇺🇸 美国_1010069 2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇺🇸 美国_1010112
-      - 🇺🇸 美国_1010604
-      - 🇺🇸 US 609
-      - 🇺🇸 US 609 2
-      - US_09
-      - 🇺🇸 美国_1006432
-      - 🇺🇸 美国 047
-      - 🇺🇸 US 609 3
-      - US_09 2
-      - US_09 3
-      - US_09 4
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
-      - US_09 5
-      - US_09 6
-      - US_09 7
-      - "[10-10]-🇺🇦-乌克兰-2450-5.181.234.254"
-      - 🇺🇸 美国_1006054
-      - 🇺🇸 美国_1010055
-      - mianfeifq |US_45.79.31.246_1008cc3f-368
-      - 🇺🇸 美国_1010562
-      - mianfeifq |US_45.79.31.246_1008cc3f-368 2
-      - 🇺🇸 美国_1010562 2
-      - 🇺🇸 美国_1010055 2
-      - US_09 8
-      - 🇺🇸 美国_1010112 2
-      - 🇺🇸 _US_美国
-      - 🇺🇸 美国_1010612
-      - 🇺🇸 美国_1010604 2
-      - US_1229 | 7.67Mb
-      - 🇺🇸 _US_美国 2
-      - 🇺🇸 US【付费推荐：wxfz.ml】
-      - 🇺🇸 _US_美国 3
-      - 白嫖-0446
-      - 🇺🇸 _US_美国 4
-      - mianfeifq |_AzadNet_7
-      - 🇺🇸 _US_美国 5
-      - 🇺🇸 US 8 → openitsub.com
-      - 🇺🇸 美国_1006055
-      - 🇺🇸 _US_美国_9
-      - 🇺🇸 美国 035
-      - 🇺🇸 美国 064
-      - 🇺🇸 美国 068
-      - 🇺🇸 :美国-ss-107.182.177.136:256-被墙-直连-解锁美国地区NF非自制剧
-      - 🇳🇱 +NL+38
-      - 巴林(TG频道:@kxswa)
-      - 🇺🇸 美国_1010093
-      - 🇺🇸 美国_1010618
-      - 🇺🇸 美国_1010604 3
-      - mianfeifq |US_45.79.31.246_1008cc3f-368 3
-      - 🇺🇸 _US_美国 6
-      - 🇺🇸 美国_1010118
-      - mianfeifq |_AzadNet_7 2
-      - Relay_ | 8.99Mb
-      - 🇺🇸 :美国-ss-107.182.177.136:256-被墙-直连-解锁美国地区NF非自制剧 2
-      - 🇺🇸 美国_1010093 2
-      - 🇺🇸 youtube-bai-piao-wang-zhe-usa.98848.xyz_vmess_ws
-      - 🇺🇸 _US_美国 7
-      - 🇺🇸 美国_1010112 3
-      - TG@hkaa0 009
-      - mianfeifq |US_45.79.88.215_10088df1-365
       - 🇺🇸 美国_1010057
-      - 🇺🇸 US 787
-      - 巴林(TG频道:@kxswa) 2
-      - 🇺🇸 _US_美国 8
-      - 🇺🇸 :美国-ss-107.182.177.136:256-被墙-直连-解锁美国地区NF非自制剧 3
-      - 🇺🇸 _US_美国 9
-      - 🇺🇸 美国 026
-      - 未知_1010079
-      - 🇺🇸 美国 035 2
-      - 🇺🇸 美国_1010606
-      - 🇺🇸 US 5 → openitsub.com
-      - 🇺🇸 _US_美国 10
-      - mianfeifq |_AzadNet_7 3
-      - 🇺🇸 美国_1010618 2
-      - 🇺🇸 美国_1010069
-      - 🇺🇸 _US_美国 11
-      - 🇺🇸 美国_1010030
-      - 🇺🇸 美国_10061867
-      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶IT7网络 37
-      - 🇺🇸 US【付费推荐：wxfz.ml】 2
-      - US_13
-      - 🇺🇸 美国 041
-      - 🇺🇸 github.com/freefq - 美国  19
-      - 🇺🇸 youtube-bai-piao-wang-zhe-usa.98848.xyz_vmess_ws 2
-      - 🇺🇸 美国_1010164
-      - 未知_1010003
-      - 🇺🇸 美国_1010069 2
-      - 🇺🇸 美国_1010060
-      - 🇺🇸 美国_1010647
+      - mianfeifq |US_45.79.88.215_10088df1-365
+      - mianfeifq |US_45.79.88.215_10088df1-365 2
       - 🇺🇸 美国_1010563
-      - 未知_1010058
-      - 🇬🇧 [10-11]-🇬🇧-英国-1002-78.129.253.9
-      - 🇺🇸 _US_美国 12
+      - 🇺🇸 美国_1006256
+      - 🇺🇸 美国 037
+      - mianfeifq |US_35.89.213.183_1009d64f-272
+      - 🇺🇸 美国 032
+      - 🇺🇸 US 9 → openitsub.com
+      - mianfeifq+314
+      - 🇺🇸 美国_1010563 2
+      - 🇺🇸 美国_1010611
+      - 白嫖-008
+      - US_13
+      - 🇺🇸 美国_1010060
+      - 🇺🇸 美国_1010120
+      - 🇺🇸 美国 021
+      - 白嫖-008 2
+      - 🇺🇸 v2rayfree.eu.org - 美国加利福尼亚州洛杉矶IT7网络 32
+      - "|22.95Mb"
+      - 🇺🇸 美国 013
+      - 白嫖-008 3
+      - 🇺🇸 美国_1010057 2
+      - 🇺🇸 :美国-ss-107.182.177.136:256-被墙-直连-解锁美国地区NF非自制剧
+      - 🇺🇸 _US_美国_7
+      - 🇺🇸 美国_1010563 3
+      - 🇺🇸 :美国-ss-107.182.177.136:256-被墙-直连-解锁美国地区NF非自制剧 2
+      - 🇺🇸 美国 036
+      - 🇺🇸 美国 055
+      - "|22.95Mb 2"
+      - 🇺🇸 :美国-ss-107.182.177.136:256-被墙-直连-解锁美国地区NF非自制剧 3
+      - 🇺🇸 _US_美国
+      - 🇺🇸 美国_1010060 2
+      - 白嫖-008 4
+      - 🇺🇸 _US_美国 2
       - 🇺🇸 美国_1010058
-      - 🇺🇸 _US_美国 13
-      - 🇺🇸 US【付费推荐：wxfz.ml】 3
-      - 🇺🇸 github.com/freefq - 美国  19 2
-      - 🇬🇧 GB 41
+      - _AzadNet_7
+      - 🇺🇸 美国_1010162
+      - 🇺🇸 美国_1010093
+      - 🇺🇸 美国_1006060
+      - US_09
+      - 🇺🇸 美国_1010618
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
+      - mianfeifq |US_45.79.88.215_10088df1-365 3
+      - 🇺🇸 _US_美国 3
+      - 🇺🇸 github.com/freefq - 美国  19
+      - mianfeifq |_AzadNet_7
+      - 🇺🇸 美国_1010618 2
+      - 🇺🇸 美国 053
+      - mianfeifq |US_45.79.31.246_1008cc3f-368
+      - 🇺🇸 美国_1010055
+      - 🇺🇸 _US_美国 4
+      - mianfeifq |US_45.79.88.215_10088df1-365 4
+      - 🇺🇸 美国_1010562
+      - 🇺🇸 _US_美国 5
+      - 🇺🇸 美国 061
+      - 🇺🇸 _US_美国 6
+      - 🇺🇸 美国_1010060 3
+      - mianfeifq+314 2
+      - 🇺🇸 _US_美国 7
+      - 🇺🇸 美国_1010093 2
+      - 🇺🇸 github.com/freefq - 美国  10
+      - 巴林(TG频道:@kxswa)
+      - 🇺🇸 :美国-ss-107.182.177.136:256-被墙-直连-解锁美国地区NF非自制剧 4
+      - 🇺🇸 US 19 → openitsub.com
+      - 🇺🇸 美国_1010564
+      - 🇺🇸 美国_1010055 2
+      - mianfeifq |US_45.79.31.246_1008cc3f-368 2
+      - 白嫖-013
+      - 🇺🇸 美国_1006060 2
+      - 🇺🇸 US 605
+      - 🇺🇸 US 1 → openitsub.com
+      - 🇺🇸 美国_1010562 2
+      - 🇺🇸 美国 023
+      - 🇺🇸 美国 035
+      - 🇺🇸 US【付费推荐：wxfz.ml】
+      - 🇺🇸 _US_美国 8
+      - 🇺🇸 美国_10061868
       - BH 1 → openitsub.com
+      - 🇺🇸 :美国-ss-107.182.177.136:256-被墙-直连-解锁美国地区NF非自制剧 5
+      - 巴林(TG频道:@kxswa) 2
+      - US_64.112.42.53_101055b7-104
+      - US_23.247.137.70_10118241-323
+      - 🇺🇸 US【付费推荐：wxfz.ml】 2
+      - 🇺🇸 美国 041
+      - 🇺🇸 _US_美国 9
+      - 🇺🇸 美国_1010612
+      - 🇺🇸 美国_1010612 2
+      - 🇺🇸 美国 011
+      - 🇺🇸 美国_1010057 3
+      - mianfeifq |US_35.89.213.183_1009d64f-272 2
+      - mianfeifq |_AzadNet_7 2
+      - 🇺🇸 美国_1010605
+      - 🇺🇸 美国_1010069
+      - 🇺🇸 _US_美国 10
+      - 🇺🇸 美国 026
+      - 🇺🇸 美国_1010119
+      - BH 1 → openitsub.com 2
+      - 🇺🇸 美国_1010069 2
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸 美国_1010112
-      - 🇺🇸 美国_1010604
-      - 🇺🇸 US 609
-      - 🇺🇸 US 609 2
-      - US_09
-      - 🇺🇸 美国_1006432
-      - 🇺🇸 美国 047
-      - 🇺🇸 US 609 3
-      - US_09 2
-      - US_09 3
-      - US_09 4
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
-      - US_09 5
-      - US_09 6
-      - US_09 7
-      - "[10-10]-🇺🇦-乌克兰-2450-5.181.234.254"
-      - 🇺🇸 美国_1006054
-      - 🇺🇸 美国_1010055
-      - mianfeifq |US_45.79.31.246_1008cc3f-368
-      - 🇺🇸 美国_1010562
-      - mianfeifq |US_45.79.31.246_1008cc3f-368 2
-      - 🇺🇸 美国_1010562 2
-      - 🇺🇸 美国_1010055 2
-      - US_09 8
-      - 🇺🇸 美国_1010112 2
-      - 🇺🇸 _US_美国
-      - 🇺🇸 美国_1010612
-      - 🇺🇸 美国_1010604 2
-      - US_1229 | 7.67Mb
-      - 🇺🇸 _US_美国 2
-      - 🇺🇸 US【付费推荐：wxfz.ml】
-      - 🇺🇸 _US_美国 3
-      - 白嫖-0446
-      - 🇺🇸 _US_美国 4
-      - mianfeifq |_AzadNet_7
-      - 🇺🇸 _US_美国 5
-      - 🇺🇸 US 8 → openitsub.com
-      - 🇺🇸 美国_1006055
-      - 🇺🇸 _US_美国_9
-      - 🇺🇸 美国 035
-      - 🇺🇸 美国 064
-      - 🇺🇸 美国 068
-      - 🇺🇸 :美国-ss-107.182.177.136:256-被墙-直连-解锁美国地区NF非自制剧
-      - 🇳🇱 +NL+38
-      - 巴林(TG频道:@kxswa)
-      - 🇺🇸 美国_1010093
-      - 🇺🇸 美国_1010618
-      - 🇺🇸 美国_1010604 3
-      - mianfeifq |US_45.79.31.246_1008cc3f-368 3
-      - 🇺🇸 _US_美国 6
-      - 🇺🇸 美国_1010118
-      - mianfeifq |_AzadNet_7 2
-      - Relay_ | 8.99Mb
-      - 🇺🇸 :美国-ss-107.182.177.136:256-被墙-直连-解锁美国地区NF非自制剧 2
-      - 🇺🇸 美国_1010093 2
-      - 🇺🇸 youtube-bai-piao-wang-zhe-usa.98848.xyz_vmess_ws
-      - 🇺🇸 _US_美国 7
-      - 🇺🇸 美国_1010112 3
-      - TG@hkaa0 009
-      - mianfeifq |US_45.79.88.215_10088df1-365
       - 🇺🇸 美国_1010057
-      - 🇺🇸 US 787
-      - 巴林(TG频道:@kxswa) 2
-      - 🇺🇸 _US_美国 8
-      - 🇺🇸 :美国-ss-107.182.177.136:256-被墙-直连-解锁美国地区NF非自制剧 3
-      - 🇺🇸 _US_美国 9
-      - 🇺🇸 美国 026
-      - 未知_1010079
-      - 🇺🇸 美国 035 2
-      - 🇺🇸 美国_1010606
-      - 🇺🇸 US 5 → openitsub.com
-      - 🇺🇸 _US_美国 10
-      - mianfeifq |_AzadNet_7 3
-      - 🇺🇸 美国_1010618 2
-      - 🇺🇸 美国_1010069
-      - 🇺🇸 _US_美国 11
-      - 🇺🇸 美国_1010030
-      - 🇺🇸 美国_10061867
-      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶IT7网络 37
-      - 🇺🇸 US【付费推荐：wxfz.ml】 2
-      - US_13
-      - 🇺🇸 美国 041
-      - 🇺🇸 github.com/freefq - 美国  19
-      - 🇺🇸 youtube-bai-piao-wang-zhe-usa.98848.xyz_vmess_ws 2
-      - 🇺🇸 美国_1010164
-      - 未知_1010003
-      - 🇺🇸 美国_1010069 2
-      - 🇺🇸 美国_1010060
-      - 🇺🇸 美国_1010647
+      - mianfeifq |US_45.79.88.215_10088df1-365
+      - mianfeifq |US_45.79.88.215_10088df1-365 2
       - 🇺🇸 美国_1010563
-      - 未知_1010058
-      - 🇬🇧 [10-11]-🇬🇧-英国-1002-78.129.253.9
-      - 🇺🇸 _US_美国 12
+      - 🇺🇸 美国_1006256
+      - 🇺🇸 美国 037
+      - mianfeifq |US_35.89.213.183_1009d64f-272
+      - 🇺🇸 美国 032
+      - 🇺🇸 US 9 → openitsub.com
+      - mianfeifq+314
+      - 🇺🇸 美国_1010563 2
+      - 🇺🇸 美国_1010611
+      - 白嫖-008
+      - US_13
+      - 🇺🇸 美国_1010060
+      - 🇺🇸 美国_1010120
+      - 🇺🇸 美国 021
+      - 白嫖-008 2
+      - 🇺🇸 v2rayfree.eu.org - 美国加利福尼亚州洛杉矶IT7网络 32
+      - "|22.95Mb"
+      - 🇺🇸 美国 013
+      - 白嫖-008 3
+      - 🇺🇸 美国_1010057 2
+      - 🇺🇸 :美国-ss-107.182.177.136:256-被墙-直连-解锁美国地区NF非自制剧
+      - 🇺🇸 _US_美国_7
+      - 🇺🇸 美国_1010563 3
+      - 🇺🇸 :美国-ss-107.182.177.136:256-被墙-直连-解锁美国地区NF非自制剧 2
+      - 🇺🇸 美国 036
+      - 🇺🇸 美国 055
+      - "|22.95Mb 2"
+      - 🇺🇸 :美国-ss-107.182.177.136:256-被墙-直连-解锁美国地区NF非自制剧 3
+      - 🇺🇸 _US_美国
+      - 🇺🇸 美国_1010060 2
+      - 白嫖-008 4
+      - 🇺🇸 _US_美国 2
       - 🇺🇸 美国_1010058
-      - 🇺🇸 _US_美国 13
-      - 🇺🇸 US【付费推荐：wxfz.ml】 3
-      - 🇺🇸 github.com/freefq - 美国  19 2
-      - 🇬🇧 GB 41
+      - _AzadNet_7
+      - 🇺🇸 美国_1010162
+      - 🇺🇸 美国_1010093
+      - 🇺🇸 美国_1006060
+      - US_09
+      - 🇺🇸 美国_1010618
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
+      - mianfeifq |US_45.79.88.215_10088df1-365 3
+      - 🇺🇸 _US_美国 3
+      - 🇺🇸 github.com/freefq - 美国  19
+      - mianfeifq |_AzadNet_7
+      - 🇺🇸 美国_1010618 2
+      - 🇺🇸 美国 053
+      - mianfeifq |US_45.79.31.246_1008cc3f-368
+      - 🇺🇸 美国_1010055
+      - 🇺🇸 _US_美国 4
+      - mianfeifq |US_45.79.88.215_10088df1-365 4
+      - 🇺🇸 美国_1010562
+      - 🇺🇸 _US_美国 5
+      - 🇺🇸 美国 061
+      - 🇺🇸 _US_美国 6
+      - 🇺🇸 美国_1010060 3
+      - mianfeifq+314 2
+      - 🇺🇸 _US_美国 7
+      - 🇺🇸 美国_1010093 2
+      - 🇺🇸 github.com/freefq - 美国  10
+      - 巴林(TG频道:@kxswa)
+      - 🇺🇸 :美国-ss-107.182.177.136:256-被墙-直连-解锁美国地区NF非自制剧 4
+      - 🇺🇸 US 19 → openitsub.com
+      - 🇺🇸 美国_1010564
+      - 🇺🇸 美国_1010055 2
+      - mianfeifq |US_45.79.31.246_1008cc3f-368 2
+      - 白嫖-013
+      - 🇺🇸 美国_1006060 2
+      - 🇺🇸 US 605
+      - 🇺🇸 US 1 → openitsub.com
+      - 🇺🇸 美国_1010562 2
+      - 🇺🇸 美国 023
+      - 🇺🇸 美国 035
+      - 🇺🇸 US【付费推荐：wxfz.ml】
+      - 🇺🇸 _US_美国 8
+      - 🇺🇸 美国_10061868
       - BH 1 → openitsub.com
+      - 🇺🇸 :美国-ss-107.182.177.136:256-被墙-直连-解锁美国地区NF非自制剧 5
+      - 巴林(TG频道:@kxswa) 2
+      - US_64.112.42.53_101055b7-104
+      - US_23.247.137.70_10118241-323
+      - 🇺🇸 US【付费推荐：wxfz.ml】 2
+      - 🇺🇸 美国 041
+      - 🇺🇸 _US_美国 9
+      - 🇺🇸 美国_1010612
+      - 🇺🇸 美国_1010612 2
+      - 🇺🇸 美国 011
+      - 🇺🇸 美国_1010057 3
+      - mianfeifq |US_35.89.213.183_1009d64f-272 2
+      - mianfeifq |_AzadNet_7 2
+      - 🇺🇸 美国_1010605
+      - 🇺🇸 美国_1010069
+      - 🇺🇸 _US_美国 10
+      - 🇺🇸 美国 026
+      - 🇺🇸 美国_1010119
+      - BH 1 → openitsub.com 2
+      - 🇺🇸 美国_1010069 2
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - TG@hkaa0 009
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇺🇸 美国_1010112
-      - 🇺🇸 美国_1010604
-      - 🇺🇸 US 609
-      - 🇺🇸 US 609 2
-      - US_09
-      - 🇺🇸 美国_1006432
-      - 🇺🇸 美国 047
-      - 🇺🇸 US 609 3
-      - US_09 2
-      - US_09 3
-      - US_09 4
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
-      - US_09 5
-      - US_09 6
-      - US_09 7
-      - "[10-10]-🇺🇦-乌克兰-2450-5.181.234.254"
-      - 🇺🇸 美国_1006054
-      - 🇺🇸 美国_1010055
-      - mianfeifq |US_45.79.31.246_1008cc3f-368
-      - 🇺🇸 美国_1010562
-      - mianfeifq |US_45.79.31.246_1008cc3f-368 2
-      - 🇺🇸 美国_1010562 2
-      - 🇺🇸 美国_1010055 2
-      - US_09 8
-      - 🇺🇸 美国_1010112 2
-      - 🇺🇸 _US_美国
-      - 🇺🇸 美国_1010612
-      - 🇺🇸 美国_1010604 2
-      - US_1229 | 7.67Mb
-      - 🇺🇸 _US_美国 2
-      - 🇺🇸 US【付费推荐：wxfz.ml】
-      - 🇺🇸 _US_美国 3
-      - 白嫖-0446
-      - 🇺🇸 _US_美国 4
-      - mianfeifq |_AzadNet_7
-      - 🇺🇸 _US_美国 5
-      - 🇺🇸 US 8 → openitsub.com
-      - 🇺🇸 美国_1006055
-      - 🇺🇸 _US_美国_9
-      - 🇺🇸 美国 035
-      - 🇺🇸 美国 064
-      - 🇺🇸 美国 068
-      - 🇺🇸 :美国-ss-107.182.177.136:256-被墙-直连-解锁美国地区NF非自制剧
-      - 🇳🇱 +NL+38
-      - 巴林(TG频道:@kxswa)
-      - 🇺🇸 美国_1010093
-      - 🇺🇸 美国_1010618
-      - 🇺🇸 美国_1010604 3
-      - mianfeifq |US_45.79.31.246_1008cc3f-368 3
-      - 🇺🇸 _US_美国 6
-      - 🇺🇸 美国_1010118
-      - mianfeifq |_AzadNet_7 2
-      - Relay_ | 8.99Mb
-      - 🇺🇸 :美国-ss-107.182.177.136:256-被墙-直连-解锁美国地区NF非自制剧 2
-      - 🇺🇸 美国_1010093 2
-      - 🇺🇸 youtube-bai-piao-wang-zhe-usa.98848.xyz_vmess_ws
-      - 🇺🇸 _US_美国 7
-      - 🇺🇸 美国_1010112 3
-      - TG@hkaa0 009
-      - mianfeifq |US_45.79.88.215_10088df1-365
       - 🇺🇸 美国_1010057
-      - 🇺🇸 US 787
-      - 巴林(TG频道:@kxswa) 2
-      - 🇺🇸 _US_美国 8
-      - 🇺🇸 :美国-ss-107.182.177.136:256-被墙-直连-解锁美国地区NF非自制剧 3
-      - 🇺🇸 _US_美国 9
-      - 🇺🇸 美国 026
-      - 未知_1010079
-      - 🇺🇸 美国 035 2
-      - 🇺🇸 美国_1010606
-      - 🇺🇸 US 5 → openitsub.com
-      - 🇺🇸 _US_美国 10
-      - mianfeifq |_AzadNet_7 3
-      - 🇺🇸 美国_1010618 2
-      - 🇺🇸 美国_1010069
-      - 🇺🇸 _US_美国 11
-      - 🇺🇸 美国_1010030
-      - 🇺🇸 美国_10061867
-      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶IT7网络 37
-      - 🇺🇸 US【付费推荐：wxfz.ml】 2
-      - US_13
-      - 🇺🇸 美国 041
-      - 🇺🇸 github.com/freefq - 美国  19
-      - 🇺🇸 youtube-bai-piao-wang-zhe-usa.98848.xyz_vmess_ws 2
-      - 🇺🇸 美国_1010164
-      - 未知_1010003
-      - 🇺🇸 美国_1010069 2
-      - 🇺🇸 美国_1010060
-      - 🇺🇸 美国_1010647
+      - mianfeifq |US_45.79.88.215_10088df1-365
+      - mianfeifq |US_45.79.88.215_10088df1-365 2
       - 🇺🇸 美国_1010563
-      - 未知_1010058
-      - 🇬🇧 [10-11]-🇬🇧-英国-1002-78.129.253.9
-      - 🇺🇸 _US_美国 12
+      - 🇺🇸 美国_1006256
+      - 🇺🇸 美国 037
+      - mianfeifq |US_35.89.213.183_1009d64f-272
+      - 🇺🇸 美国 032
+      - 🇺🇸 US 9 → openitsub.com
+      - mianfeifq+314
+      - 🇺🇸 美国_1010563 2
+      - 🇺🇸 美国_1010611
+      - 白嫖-008
+      - US_13
+      - 🇺🇸 美国_1010060
+      - 🇺🇸 美国_1010120
+      - 🇺🇸 美国 021
+      - 白嫖-008 2
+      - 🇺🇸 v2rayfree.eu.org - 美国加利福尼亚州洛杉矶IT7网络 32
+      - "|22.95Mb"
+      - 🇺🇸 美国 013
+      - 白嫖-008 3
+      - 🇺🇸 美国_1010057 2
+      - 🇺🇸 :美国-ss-107.182.177.136:256-被墙-直连-解锁美国地区NF非自制剧
+      - 🇺🇸 _US_美国_7
+      - 🇺🇸 美国_1010563 3
+      - 🇺🇸 :美国-ss-107.182.177.136:256-被墙-直连-解锁美国地区NF非自制剧 2
+      - 🇺🇸 美国 036
+      - 🇺🇸 美国 055
+      - "|22.95Mb 2"
+      - 🇺🇸 :美国-ss-107.182.177.136:256-被墙-直连-解锁美国地区NF非自制剧 3
+      - 🇺🇸 _US_美国
+      - 🇺🇸 美国_1010060 2
+      - 白嫖-008 4
+      - 🇺🇸 _US_美国 2
       - 🇺🇸 美国_1010058
-      - 🇺🇸 _US_美国 13
-      - 🇺🇸 US【付费推荐：wxfz.ml】 3
-      - 🇺🇸 github.com/freefq - 美国  19 2
-      - 🇬🇧 GB 41
+      - _AzadNet_7
+      - 🇺🇸 美国_1010162
+      - 🇺🇸 美国_1010093
+      - 🇺🇸 美国_1006060
+      - US_09
+      - 🇺🇸 美国_1010618
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
+      - mianfeifq |US_45.79.88.215_10088df1-365 3
+      - 🇺🇸 _US_美国 3
+      - 🇺🇸 github.com/freefq - 美国  19
+      - mianfeifq |_AzadNet_7
+      - 🇺🇸 美国_1010618 2
+      - 🇺🇸 美国 053
+      - mianfeifq |US_45.79.31.246_1008cc3f-368
+      - 🇺🇸 美国_1010055
+      - 🇺🇸 _US_美国 4
+      - mianfeifq |US_45.79.88.215_10088df1-365 4
+      - 🇺🇸 美国_1010562
+      - 🇺🇸 _US_美国 5
+      - 🇺🇸 美国 061
+      - 🇺🇸 _US_美国 6
+      - 🇺🇸 美国_1010060 3
+      - mianfeifq+314 2
+      - 🇺🇸 _US_美国 7
+      - 🇺🇸 美国_1010093 2
+      - 🇺🇸 github.com/freefq - 美国  10
+      - 巴林(TG频道:@kxswa)
+      - 🇺🇸 :美国-ss-107.182.177.136:256-被墙-直连-解锁美国地区NF非自制剧 4
+      - 🇺🇸 US 19 → openitsub.com
+      - 🇺🇸 美国_1010564
+      - 🇺🇸 美国_1010055 2
+      - mianfeifq |US_45.79.31.246_1008cc3f-368 2
+      - 白嫖-013
+      - 🇺🇸 美国_1006060 2
+      - 🇺🇸 US 605
+      - 🇺🇸 US 1 → openitsub.com
+      - 🇺🇸 美国_1010562 2
+      - 🇺🇸 美国 023
+      - 🇺🇸 美国 035
+      - 🇺🇸 US【付费推荐：wxfz.ml】
+      - 🇺🇸 _US_美国 8
+      - 🇺🇸 美国_10061868
       - BH 1 → openitsub.com
+      - 🇺🇸 :美国-ss-107.182.177.136:256-被墙-直连-解锁美国地区NF非自制剧 5
+      - 巴林(TG频道:@kxswa) 2
+      - US_64.112.42.53_101055b7-104
+      - US_23.247.137.70_10118241-323
+      - 🇺🇸 US【付费推荐：wxfz.ml】 2
+      - 🇺🇸 美国 041
+      - 🇺🇸 _US_美国 9
+      - 🇺🇸 美国_1010612
+      - 🇺🇸 美国_1010612 2
+      - 🇺🇸 美国 011
+      - 🇺🇸 美国_1010057 3
+      - mianfeifq |US_35.89.213.183_1009d64f-272 2
+      - mianfeifq |_AzadNet_7 2
+      - 🇺🇸 美国_1010605
+      - 🇺🇸 美国_1010069
+      - 🇺🇸 _US_美国 10
+      - 🇺🇸 美国 026
+      - 🇺🇸 美国_1010119
+      - BH 1 → openitsub.com 2
+      - 🇺🇸 美国_1010069 2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇺🇸 美国_1010112
-      - 🇺🇸 美国_1010604
-      - 🇺🇸 US 609
-      - 🇺🇸 US 609 2
-      - US_09
-      - 🇺🇸 美国_1006432
-      - 🇺🇸 美国 047
-      - 🇺🇸 US 609 3
-      - US_09 2
-      - US_09 3
-      - US_09 4
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
-      - US_09 5
-      - US_09 6
-      - US_09 7
-      - "[10-10]-🇺🇦-乌克兰-2450-5.181.234.254"
-      - 🇺🇸 美国_1006054
-      - 🇺🇸 美国_1010055
-      - mianfeifq |US_45.79.31.246_1008cc3f-368
-      - 🇺🇸 美国_1010562
-      - mianfeifq |US_45.79.31.246_1008cc3f-368 2
-      - 🇺🇸 美国_1010562 2
-      - 🇺🇸 美国_1010055 2
-      - US_09 8
-      - 🇺🇸 美国_1010112 2
-      - 🇺🇸 _US_美国
-      - 🇺🇸 美国_1010612
-      - 🇺🇸 美国_1010604 2
-      - US_1229 | 7.67Mb
-      - 🇺🇸 _US_美国 2
-      - 🇺🇸 US【付费推荐：wxfz.ml】
-      - 🇺🇸 _US_美国 3
-      - 白嫖-0446
-      - 🇺🇸 _US_美国 4
-      - mianfeifq |_AzadNet_7
-      - 🇺🇸 _US_美国 5
-      - 🇺🇸 US 8 → openitsub.com
-      - 🇺🇸 美国_1006055
-      - 🇺🇸 _US_美国_9
-      - 🇺🇸 美国 035
-      - 🇺🇸 美国 064
-      - 🇺🇸 美国 068
-      - 🇺🇸 :美国-ss-107.182.177.136:256-被墙-直连-解锁美国地区NF非自制剧
-      - 🇳🇱 +NL+38
-      - 巴林(TG频道:@kxswa)
-      - 🇺🇸 美国_1010093
-      - 🇺🇸 美国_1010618
-      - 🇺🇸 美国_1010604 3
-      - mianfeifq |US_45.79.31.246_1008cc3f-368 3
-      - 🇺🇸 _US_美国 6
-      - 🇺🇸 美国_1010118
-      - mianfeifq |_AzadNet_7 2
-      - Relay_ | 8.99Mb
-      - 🇺🇸 :美国-ss-107.182.177.136:256-被墙-直连-解锁美国地区NF非自制剧 2
-      - 🇺🇸 美国_1010093 2
-      - 🇺🇸 youtube-bai-piao-wang-zhe-usa.98848.xyz_vmess_ws
-      - 🇺🇸 _US_美国 7
-      - 🇺🇸 美国_1010112 3
-      - TG@hkaa0 009
-      - mianfeifq |US_45.79.88.215_10088df1-365
       - 🇺🇸 美国_1010057
-      - 🇺🇸 US 787
-      - 巴林(TG频道:@kxswa) 2
-      - 🇺🇸 _US_美国 8
-      - 🇺🇸 :美国-ss-107.182.177.136:256-被墙-直连-解锁美国地区NF非自制剧 3
-      - 🇺🇸 _US_美国 9
-      - 🇺🇸 美国 026
-      - 未知_1010079
-      - 🇺🇸 美国 035 2
-      - 🇺🇸 美国_1010606
-      - 🇺🇸 US 5 → openitsub.com
-      - 🇺🇸 _US_美国 10
-      - mianfeifq |_AzadNet_7 3
-      - 🇺🇸 美国_1010618 2
-      - 🇺🇸 美国_1010069
-      - 🇺🇸 _US_美国 11
-      - 🇺🇸 美国_1010030
-      - 🇺🇸 美国_10061867
-      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶IT7网络 37
-      - 🇺🇸 US【付费推荐：wxfz.ml】 2
-      - US_13
-      - 🇺🇸 美国 041
-      - 🇺🇸 github.com/freefq - 美国  19
-      - 🇺🇸 youtube-bai-piao-wang-zhe-usa.98848.xyz_vmess_ws 2
-      - 🇺🇸 美国_1010164
-      - 未知_1010003
-      - 🇺🇸 美国_1010069 2
-      - 🇺🇸 美国_1010060
-      - 🇺🇸 美国_1010647
+      - mianfeifq |US_45.79.88.215_10088df1-365
+      - mianfeifq |US_45.79.88.215_10088df1-365 2
       - 🇺🇸 美国_1010563
-      - 未知_1010058
-      - 🇬🇧 [10-11]-🇬🇧-英国-1002-78.129.253.9
-      - 🇺🇸 _US_美国 12
+      - 🇺🇸 美国_1006256
+      - 🇺🇸 美国 037
+      - mianfeifq |US_35.89.213.183_1009d64f-272
+      - 🇺🇸 美国 032
+      - 🇺🇸 US 9 → openitsub.com
+      - mianfeifq+314
+      - 🇺🇸 美国_1010563 2
+      - 🇺🇸 美国_1010611
+      - 白嫖-008
+      - US_13
+      - 🇺🇸 美国_1010060
+      - 🇺🇸 美国_1010120
+      - 🇺🇸 美国 021
+      - 白嫖-008 2
+      - 🇺🇸 v2rayfree.eu.org - 美国加利福尼亚州洛杉矶IT7网络 32
+      - "|22.95Mb"
+      - 🇺🇸 美国 013
+      - 白嫖-008 3
+      - 🇺🇸 美国_1010057 2
+      - 🇺🇸 :美国-ss-107.182.177.136:256-被墙-直连-解锁美国地区NF非自制剧
+      - 🇺🇸 _US_美国_7
+      - 🇺🇸 美国_1010563 3
+      - 🇺🇸 :美国-ss-107.182.177.136:256-被墙-直连-解锁美国地区NF非自制剧 2
+      - 🇺🇸 美国 036
+      - 🇺🇸 美国 055
+      - "|22.95Mb 2"
+      - 🇺🇸 :美国-ss-107.182.177.136:256-被墙-直连-解锁美国地区NF非自制剧 3
+      - 🇺🇸 _US_美国
+      - 🇺🇸 美国_1010060 2
+      - 白嫖-008 4
+      - 🇺🇸 _US_美国 2
       - 🇺🇸 美国_1010058
-      - 🇺🇸 _US_美国 13
-      - 🇺🇸 US【付费推荐：wxfz.ml】 3
-      - 🇺🇸 github.com/freefq - 美国  19 2
-      - 🇬🇧 GB 41
+      - _AzadNet_7
+      - 🇺🇸 美国_1010162
+      - 🇺🇸 美国_1010093
+      - 🇺🇸 美国_1006060
+      - US_09
+      - 🇺🇸 美国_1010618
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
+      - mianfeifq |US_45.79.88.215_10088df1-365 3
+      - 🇺🇸 _US_美国 3
+      - 🇺🇸 github.com/freefq - 美国  19
+      - mianfeifq |_AzadNet_7
+      - 🇺🇸 美国_1010618 2
+      - 🇺🇸 美国 053
+      - mianfeifq |US_45.79.31.246_1008cc3f-368
+      - 🇺🇸 美国_1010055
+      - 🇺🇸 _US_美国 4
+      - mianfeifq |US_45.79.88.215_10088df1-365 4
+      - 🇺🇸 美国_1010562
+      - 🇺🇸 _US_美国 5
+      - 🇺🇸 美国 061
+      - 🇺🇸 _US_美国 6
+      - 🇺🇸 美国_1010060 3
+      - mianfeifq+314 2
+      - 🇺🇸 _US_美国 7
+      - 🇺🇸 美国_1010093 2
+      - 🇺🇸 github.com/freefq - 美国  10
+      - 巴林(TG频道:@kxswa)
+      - 🇺🇸 :美国-ss-107.182.177.136:256-被墙-直连-解锁美国地区NF非自制剧 4
+      - 🇺🇸 US 19 → openitsub.com
+      - 🇺🇸 美国_1010564
+      - 🇺🇸 美国_1010055 2
+      - mianfeifq |US_45.79.31.246_1008cc3f-368 2
+      - 白嫖-013
+      - 🇺🇸 美国_1006060 2
+      - 🇺🇸 US 605
+      - 🇺🇸 US 1 → openitsub.com
+      - 🇺🇸 美国_1010562 2
+      - 🇺🇸 美国 023
+      - 🇺🇸 美国 035
+      - 🇺🇸 US【付费推荐：wxfz.ml】
+      - 🇺🇸 _US_美国 8
+      - 🇺🇸 美国_10061868
       - BH 1 → openitsub.com
+      - 🇺🇸 :美国-ss-107.182.177.136:256-被墙-直连-解锁美国地区NF非自制剧 5
+      - 巴林(TG频道:@kxswa) 2
+      - US_64.112.42.53_101055b7-104
+      - US_23.247.137.70_10118241-323
+      - 🇺🇸 US【付费推荐：wxfz.ml】 2
+      - 🇺🇸 美国 041
+      - 🇺🇸 _US_美国 9
+      - 🇺🇸 美国_1010612
+      - 🇺🇸 美国_1010612 2
+      - 🇺🇸 美国 011
+      - 🇺🇸 美国_1010057 3
+      - mianfeifq |US_35.89.213.183_1009d64f-272 2
+      - mianfeifq |_AzadNet_7 2
+      - 🇺🇸 美国_1010605
+      - 🇺🇸 美国_1010069
+      - 🇺🇸 _US_美国 10
+      - 🇺🇸 美国 026
+      - 🇺🇸 美国_1010119
+      - BH 1 → openitsub.com 2
+      - 🇺🇸 美国_1010069 2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸 美国_1010112
-      - 🇺🇸 美国_1010604
-      - 🇺🇸 US 609
-      - 🇺🇸 US 609 2
-      - US_09
-      - 🇺🇸 美国_1006432
-      - 🇺🇸 美国 047
-      - 🇺🇸 US 609 3
-      - US_09 2
-      - US_09 3
-      - US_09 4
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
-      - US_09 5
-      - US_09 6
-      - US_09 7
-      - "[10-10]-🇺🇦-乌克兰-2450-5.181.234.254"
-      - 🇺🇸 美国_1006054
-      - 🇺🇸 美国_1010055
-      - mianfeifq |US_45.79.31.246_1008cc3f-368
-      - 🇺🇸 美国_1010562
-      - mianfeifq |US_45.79.31.246_1008cc3f-368 2
-      - 🇺🇸 美国_1010562 2
-      - 🇺🇸 美国_1010055 2
-      - US_09 8
-      - 🇺🇸 美国_1010112 2
-      - 🇺🇸 _US_美国
-      - 🇺🇸 美国_1010612
-      - 🇺🇸 美国_1010604 2
-      - US_1229 | 7.67Mb
-      - 🇺🇸 _US_美国 2
-      - 🇺🇸 US【付费推荐：wxfz.ml】
-      - 🇺🇸 _US_美国 3
-      - 白嫖-0446
-      - 🇺🇸 _US_美国 4
-      - mianfeifq |_AzadNet_7
-      - 🇺🇸 _US_美国 5
-      - 🇺🇸 US 8 → openitsub.com
-      - 🇺🇸 美国_1006055
-      - 🇺🇸 _US_美国_9
-      - 🇺🇸 美国 035
-      - 🇺🇸 美国 064
-      - 🇺🇸 美国 068
-      - 🇺🇸 :美国-ss-107.182.177.136:256-被墙-直连-解锁美国地区NF非自制剧
-      - 🇳🇱 +NL+38
-      - 巴林(TG频道:@kxswa)
-      - 🇺🇸 美国_1010093
-      - 🇺🇸 美国_1010618
-      - 🇺🇸 美国_1010604 3
-      - mianfeifq |US_45.79.31.246_1008cc3f-368 3
-      - 🇺🇸 _US_美国 6
-      - 🇺🇸 美国_1010118
-      - mianfeifq |_AzadNet_7 2
-      - Relay_ | 8.99Mb
-      - 🇺🇸 :美国-ss-107.182.177.136:256-被墙-直连-解锁美国地区NF非自制剧 2
-      - 🇺🇸 美国_1010093 2
-      - 🇺🇸 youtube-bai-piao-wang-zhe-usa.98848.xyz_vmess_ws
-      - 🇺🇸 _US_美国 7
-      - 🇺🇸 美国_1010112 3
-      - TG@hkaa0 009
-      - mianfeifq |US_45.79.88.215_10088df1-365
       - 🇺🇸 美国_1010057
-      - 🇺🇸 US 787
-      - 巴林(TG频道:@kxswa) 2
-      - 🇺🇸 _US_美国 8
-      - 🇺🇸 :美国-ss-107.182.177.136:256-被墙-直连-解锁美国地区NF非自制剧 3
-      - 🇺🇸 _US_美国 9
-      - 🇺🇸 美国 026
-      - 未知_1010079
-      - 🇺🇸 美国 035 2
-      - 🇺🇸 美国_1010606
-      - 🇺🇸 US 5 → openitsub.com
-      - 🇺🇸 _US_美国 10
-      - mianfeifq |_AzadNet_7 3
-      - 🇺🇸 美国_1010618 2
-      - 🇺🇸 美国_1010069
-      - 🇺🇸 _US_美国 11
-      - 🇺🇸 美国_1010030
-      - 🇺🇸 美国_10061867
-      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶IT7网络 37
-      - 🇺🇸 US【付费推荐：wxfz.ml】 2
-      - US_13
-      - 🇺🇸 美国 041
-      - 🇺🇸 github.com/freefq - 美国  19
-      - 🇺🇸 youtube-bai-piao-wang-zhe-usa.98848.xyz_vmess_ws 2
-      - 🇺🇸 美国_1010164
-      - 未知_1010003
-      - 🇺🇸 美国_1010069 2
-      - 🇺🇸 美国_1010060
-      - 🇺🇸 美国_1010647
+      - mianfeifq |US_45.79.88.215_10088df1-365
+      - mianfeifq |US_45.79.88.215_10088df1-365 2
       - 🇺🇸 美国_1010563
-      - 未知_1010058
-      - 🇬🇧 [10-11]-🇬🇧-英国-1002-78.129.253.9
-      - 🇺🇸 _US_美国 12
+      - 🇺🇸 美国_1006256
+      - 🇺🇸 美国 037
+      - mianfeifq |US_35.89.213.183_1009d64f-272
+      - 🇺🇸 美国 032
+      - 🇺🇸 US 9 → openitsub.com
+      - mianfeifq+314
+      - 🇺🇸 美国_1010563 2
+      - 🇺🇸 美国_1010611
+      - 白嫖-008
+      - US_13
+      - 🇺🇸 美国_1010060
+      - 🇺🇸 美国_1010120
+      - 🇺🇸 美国 021
+      - 白嫖-008 2
+      - 🇺🇸 v2rayfree.eu.org - 美国加利福尼亚州洛杉矶IT7网络 32
+      - "|22.95Mb"
+      - 🇺🇸 美国 013
+      - 白嫖-008 3
+      - 🇺🇸 美国_1010057 2
+      - 🇺🇸 :美国-ss-107.182.177.136:256-被墙-直连-解锁美国地区NF非自制剧
+      - 🇺🇸 _US_美国_7
+      - 🇺🇸 美国_1010563 3
+      - 🇺🇸 :美国-ss-107.182.177.136:256-被墙-直连-解锁美国地区NF非自制剧 2
+      - 🇺🇸 美国 036
+      - 🇺🇸 美国 055
+      - "|22.95Mb 2"
+      - 🇺🇸 :美国-ss-107.182.177.136:256-被墙-直连-解锁美国地区NF非自制剧 3
+      - 🇺🇸 _US_美国
+      - 🇺🇸 美国_1010060 2
+      - 白嫖-008 4
+      - 🇺🇸 _US_美国 2
       - 🇺🇸 美国_1010058
-      - 🇺🇸 _US_美国 13
-      - 🇺🇸 US【付费推荐：wxfz.ml】 3
-      - 🇺🇸 github.com/freefq - 美国  19 2
-      - 🇬🇧 GB 41
+      - _AzadNet_7
+      - 🇺🇸 美国_1010162
+      - 🇺🇸 美国_1010093
+      - 🇺🇸 美国_1006060
+      - US_09
+      - 🇺🇸 美国_1010618
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
+      - mianfeifq |US_45.79.88.215_10088df1-365 3
+      - 🇺🇸 _US_美国 3
+      - 🇺🇸 github.com/freefq - 美国  19
+      - mianfeifq |_AzadNet_7
+      - 🇺🇸 美国_1010618 2
+      - 🇺🇸 美国 053
+      - mianfeifq |US_45.79.31.246_1008cc3f-368
+      - 🇺🇸 美国_1010055
+      - 🇺🇸 _US_美国 4
+      - mianfeifq |US_45.79.88.215_10088df1-365 4
+      - 🇺🇸 美国_1010562
+      - 🇺🇸 _US_美国 5
+      - 🇺🇸 美国 061
+      - 🇺🇸 _US_美国 6
+      - 🇺🇸 美国_1010060 3
+      - mianfeifq+314 2
+      - 🇺🇸 _US_美国 7
+      - 🇺🇸 美国_1010093 2
+      - 🇺🇸 github.com/freefq - 美国  10
+      - 巴林(TG频道:@kxswa)
+      - 🇺🇸 :美国-ss-107.182.177.136:256-被墙-直连-解锁美国地区NF非自制剧 4
+      - 🇺🇸 US 19 → openitsub.com
+      - 🇺🇸 美国_1010564
+      - 🇺🇸 美国_1010055 2
+      - mianfeifq |US_45.79.31.246_1008cc3f-368 2
+      - 白嫖-013
+      - 🇺🇸 美国_1006060 2
+      - 🇺🇸 US 605
+      - 🇺🇸 US 1 → openitsub.com
+      - 🇺🇸 美国_1010562 2
+      - 🇺🇸 美国 023
+      - 🇺🇸 美国 035
+      - 🇺🇸 US【付费推荐：wxfz.ml】
+      - 🇺🇸 _US_美国 8
+      - 🇺🇸 美国_10061868
       - BH 1 → openitsub.com
+      - 🇺🇸 :美国-ss-107.182.177.136:256-被墙-直连-解锁美国地区NF非自制剧 5
+      - 巴林(TG频道:@kxswa) 2
+      - US_64.112.42.53_101055b7-104
+      - US_23.247.137.70_10118241-323
+      - 🇺🇸 US【付费推荐：wxfz.ml】 2
+      - 🇺🇸 美国 041
+      - 🇺🇸 _US_美国 9
+      - 🇺🇸 美国_1010612
+      - 🇺🇸 美国_1010612 2
+      - 🇺🇸 美国 011
+      - 🇺🇸 美国_1010057 3
+      - mianfeifq |US_35.89.213.183_1009d64f-272 2
+      - mianfeifq |_AzadNet_7 2
+      - 🇺🇸 美国_1010605
+      - 🇺🇸 美国_1010069
+      - 🇺🇸 _US_美国 10
+      - 🇺🇸 美国 026
+      - 🇺🇸 美国_1010119
+      - BH 1 → openitsub.com 2
+      - 🇺🇸 美国_1010069 2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -752,105 +751,105 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸 美国_1010112
-      - 🇺🇸 美国_1010604
-      - 🇺🇸 US 609
-      - 🇺🇸 US 609 2
-      - US_09
-      - 🇺🇸 美国_1006432
-      - 🇺🇸 美国 047
-      - 🇺🇸 US 609 3
-      - US_09 2
-      - US_09 3
-      - US_09 4
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
-      - US_09 5
-      - US_09 6
-      - US_09 7
-      - "[10-10]-🇺🇦-乌克兰-2450-5.181.234.254"
-      - 🇺🇸 美国_1006054
-      - 🇺🇸 美国_1010055
-      - mianfeifq |US_45.79.31.246_1008cc3f-368
-      - 🇺🇸 美国_1010562
-      - mianfeifq |US_45.79.31.246_1008cc3f-368 2
-      - 🇺🇸 美国_1010562 2
-      - 🇺🇸 美国_1010055 2
-      - US_09 8
-      - 🇺🇸 美国_1010112 2
-      - 🇺🇸 _US_美国
-      - 🇺🇸 美国_1010612
-      - 🇺🇸 美国_1010604 2
-      - US_1229 | 7.67Mb
-      - 🇺🇸 _US_美国 2
-      - 🇺🇸 US【付费推荐：wxfz.ml】
-      - 🇺🇸 _US_美国 3
-      - 白嫖-0446
-      - 🇺🇸 _US_美国 4
-      - mianfeifq |_AzadNet_7
-      - 🇺🇸 _US_美国 5
-      - 🇺🇸 US 8 → openitsub.com
-      - 🇺🇸 美国_1006055
-      - 🇺🇸 _US_美国_9
-      - 🇺🇸 美国 035
-      - 🇺🇸 美国 064
-      - 🇺🇸 美国 068
-      - 🇺🇸 :美国-ss-107.182.177.136:256-被墙-直连-解锁美国地区NF非自制剧
-      - 🇳🇱 +NL+38
-      - 巴林(TG频道:@kxswa)
-      - 🇺🇸 美国_1010093
-      - 🇺🇸 美国_1010618
-      - 🇺🇸 美国_1010604 3
-      - mianfeifq |US_45.79.31.246_1008cc3f-368 3
-      - 🇺🇸 _US_美国 6
-      - 🇺🇸 美国_1010118
-      - mianfeifq |_AzadNet_7 2
-      - Relay_ | 8.99Mb
-      - 🇺🇸 :美国-ss-107.182.177.136:256-被墙-直连-解锁美国地区NF非自制剧 2
-      - 🇺🇸 美国_1010093 2
-      - 🇺🇸 youtube-bai-piao-wang-zhe-usa.98848.xyz_vmess_ws
-      - 🇺🇸 _US_美国 7
-      - 🇺🇸 美国_1010112 3
-      - TG@hkaa0 009
-      - mianfeifq |US_45.79.88.215_10088df1-365
       - 🇺🇸 美国_1010057
-      - 🇺🇸 US 787
-      - 巴林(TG频道:@kxswa) 2
-      - 🇺🇸 _US_美国 8
-      - 🇺🇸 :美国-ss-107.182.177.136:256-被墙-直连-解锁美国地区NF非自制剧 3
-      - 🇺🇸 _US_美国 9
-      - 🇺🇸 美国 026
-      - 未知_1010079
-      - 🇺🇸 美国 035 2
-      - 🇺🇸 美国_1010606
-      - 🇺🇸 US 5 → openitsub.com
-      - 🇺🇸 _US_美国 10
-      - mianfeifq |_AzadNet_7 3
-      - 🇺🇸 美国_1010618 2
-      - 🇺🇸 美国_1010069
-      - 🇺🇸 _US_美国 11
-      - 🇺🇸 美国_1010030
-      - 🇺🇸 美国_10061867
-      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶IT7网络 37
-      - 🇺🇸 US【付费推荐：wxfz.ml】 2
-      - US_13
-      - 🇺🇸 美国 041
-      - 🇺🇸 github.com/freefq - 美国  19
-      - 🇺🇸 youtube-bai-piao-wang-zhe-usa.98848.xyz_vmess_ws 2
-      - 🇺🇸 美国_1010164
-      - 未知_1010003
-      - 🇺🇸 美国_1010069 2
-      - 🇺🇸 美国_1010060
-      - 🇺🇸 美国_1010647
+      - mianfeifq |US_45.79.88.215_10088df1-365
+      - mianfeifq |US_45.79.88.215_10088df1-365 2
       - 🇺🇸 美国_1010563
-      - 未知_1010058
-      - 🇬🇧 [10-11]-🇬🇧-英国-1002-78.129.253.9
-      - 🇺🇸 _US_美国 12
+      - 🇺🇸 美国_1006256
+      - 🇺🇸 美国 037
+      - mianfeifq |US_35.89.213.183_1009d64f-272
+      - 🇺🇸 美国 032
+      - 🇺🇸 US 9 → openitsub.com
+      - mianfeifq+314
+      - 🇺🇸 美国_1010563 2
+      - 🇺🇸 美国_1010611
+      - 白嫖-008
+      - US_13
+      - 🇺🇸 美国_1010060
+      - 🇺🇸 美国_1010120
+      - 🇺🇸 美国 021
+      - 白嫖-008 2
+      - 🇺🇸 v2rayfree.eu.org - 美国加利福尼亚州洛杉矶IT7网络 32
+      - "|22.95Mb"
+      - 🇺🇸 美国 013
+      - 白嫖-008 3
+      - 🇺🇸 美国_1010057 2
+      - 🇺🇸 :美国-ss-107.182.177.136:256-被墙-直连-解锁美国地区NF非自制剧
+      - 🇺🇸 _US_美国_7
+      - 🇺🇸 美国_1010563 3
+      - 🇺🇸 :美国-ss-107.182.177.136:256-被墙-直连-解锁美国地区NF非自制剧 2
+      - 🇺🇸 美国 036
+      - 🇺🇸 美国 055
+      - "|22.95Mb 2"
+      - 🇺🇸 :美国-ss-107.182.177.136:256-被墙-直连-解锁美国地区NF非自制剧 3
+      - 🇺🇸 _US_美国
+      - 🇺🇸 美国_1010060 2
+      - 白嫖-008 4
+      - 🇺🇸 _US_美国 2
       - 🇺🇸 美国_1010058
-      - 🇺🇸 _US_美国 13
-      - 🇺🇸 US【付费推荐：wxfz.ml】 3
-      - 🇺🇸 github.com/freefq - 美国  19 2
-      - 🇬🇧 GB 41
+      - _AzadNet_7
+      - 🇺🇸 美国_1010162
+      - 🇺🇸 美国_1010093
+      - 🇺🇸 美国_1006060
+      - US_09
+      - 🇺🇸 美国_1010618
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
+      - mianfeifq |US_45.79.88.215_10088df1-365 3
+      - 🇺🇸 _US_美国 3
+      - 🇺🇸 github.com/freefq - 美国  19
+      - mianfeifq |_AzadNet_7
+      - 🇺🇸 美国_1010618 2
+      - 🇺🇸 美国 053
+      - mianfeifq |US_45.79.31.246_1008cc3f-368
+      - 🇺🇸 美国_1010055
+      - 🇺🇸 _US_美国 4
+      - mianfeifq |US_45.79.88.215_10088df1-365 4
+      - 🇺🇸 美国_1010562
+      - 🇺🇸 _US_美国 5
+      - 🇺🇸 美国 061
+      - 🇺🇸 _US_美国 6
+      - 🇺🇸 美国_1010060 3
+      - mianfeifq+314 2
+      - 🇺🇸 _US_美国 7
+      - 🇺🇸 美国_1010093 2
+      - 🇺🇸 github.com/freefq - 美国  10
+      - 巴林(TG频道:@kxswa)
+      - 🇺🇸 :美国-ss-107.182.177.136:256-被墙-直连-解锁美国地区NF非自制剧 4
+      - 🇺🇸 US 19 → openitsub.com
+      - 🇺🇸 美国_1010564
+      - 🇺🇸 美国_1010055 2
+      - mianfeifq |US_45.79.31.246_1008cc3f-368 2
+      - 白嫖-013
+      - 🇺🇸 美国_1006060 2
+      - 🇺🇸 US 605
+      - 🇺🇸 US 1 → openitsub.com
+      - 🇺🇸 美国_1010562 2
+      - 🇺🇸 美国 023
+      - 🇺🇸 美国 035
+      - 🇺🇸 US【付费推荐：wxfz.ml】
+      - 🇺🇸 _US_美国 8
+      - 🇺🇸 美国_10061868
       - BH 1 → openitsub.com
+      - 🇺🇸 :美国-ss-107.182.177.136:256-被墙-直连-解锁美国地区NF非自制剧 5
+      - 巴林(TG频道:@kxswa) 2
+      - US_64.112.42.53_101055b7-104
+      - US_23.247.137.70_10118241-323
+      - 🇺🇸 US【付费推荐：wxfz.ml】 2
+      - 🇺🇸 美国 041
+      - 🇺🇸 _US_美国 9
+      - 🇺🇸 美国_1010612
+      - 🇺🇸 美国_1010612 2
+      - 🇺🇸 美国 011
+      - 🇺🇸 美国_1010057 3
+      - mianfeifq |US_35.89.213.183_1009d64f-272 2
+      - mianfeifq |_AzadNet_7 2
+      - 🇺🇸 美国_1010605
+      - 🇺🇸 美国_1010069
+      - 🇺🇸 _US_美国 10
+      - 🇺🇸 美国 026
+      - 🇺🇸 美国_1010119
+      - BH 1 → openitsub.com 2
+      - 🇺🇸 美国_1010069 2
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
