@@ -4,9 +4,9 @@ def output(output_file='./Eternity',output_range=99):
     output_list = []
     with open('./config.json', 'r', encoding='utf-8') as f:
         config = json.load(f)
-        output_range = config['outputRange']
+        output_range = config['output_range']
         if ',' in output_range:
-            output_range = {'begin': int(output_range.split(',',output_range)[0]),'end': int(output_range.split(',',output_range)[1])}
+            output_range = {'begin': int(output_range.split(',',1)[0]),'end': int(output_range.split(',',1)[1])}
         else:
             output_range = {'begin': 0, 'end': int(output_range)}
     while os.path.isfile('./out.json')==False:
