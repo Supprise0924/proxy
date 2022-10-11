@@ -41,6 +41,6 @@ if __name__ == '__main__':
         os.system('./lite --config ./config.json --test \"https://raw.githubusercontent.com/alanbobs999/TopFreeProxies/master/Eternity.yml\"')
     elif os.name == 'nt':
         os.system('lite.exe --config ./config.json --test \"https://raw.githubusercontent.com/alanbobs999/TopFreeProxies/master/Eternity.yml\"')
-    output(args.target,int(args.range))
+    output(args.target,args.range)
 
     os.chdir(work_dir)
