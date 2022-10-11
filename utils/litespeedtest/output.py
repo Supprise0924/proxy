@@ -38,9 +38,9 @@ if __name__ == '__main__':
     os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
     if os.name == 'posix':
-        os.system('./lite --config ./config.json --test \"https://raw.githubusercontent.com/alanbobs999/TopFreeProxies/master/Eternity.yml\"')
+        os.system('./lite --config ./config.json --test \"Eternity\"')
     elif os.name == 'nt':
-        os.system('lite.exe --config ./config.json --test \"https://raw.githubusercontent.com/alanbobs999/TopFreeProxies/master/Eternity.yml\"')
+        os.system('.\lite.exe --config ./config.json --test \"Eternity\"')
     output(args.target,args.range)
 
     os.chdir(work_dir)
