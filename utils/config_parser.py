@@ -3,7 +3,7 @@
 import configparser, json
 
 config_file = './utils/config.ini'
-external_config = {'litespeedtest': './utils/litespeedtest/config.json', 'subconverter': './utils/subconverter/generate.ini'}
+external_config = {'speedtest': './utils/litespeedtest/config.json', 'subconverter': './utils/subconverter/generate.ini'}
 
 config = configparser.ConfigParser()
 config.read(config_file)
@@ -13,16 +13,16 @@ def configparse(section):
         return config['common']
     elif section == 'subconverter':
         return config['subconverter']
-    elif section == 'litespeedtest':
-        return config['litespeedtest']
+    elif section == 'speedtest':
+        return config['speedtest']
 
 def externalhandler():
-    with open(external_config['litespeedtest'], 'r', encoding='utf-8') as f:
+    with open(external_config['speedtest'], 'r', encoding='utf-8') as f:
         lite_config = json.load(f)
-        for key in config['litespeedtest']:
+        for key in config['speedtest']:
             if isinstance(lite_config[key],int):
-                lite_config[key] = config['litespeedtest'].getint(key)
+                lite_config[key] = config['speedtest'].getint(key)
             else:
-                lite_config[key] = config['litespeedtest'].get(key)
-    with open(external_config['litespeedtest'], 'w', encoding='utf-8') as f:
+                lite_config[key] = config['speedtest'].get(key)
+    with open(external_config['speedtest'], 'w', encoding='utf-8') as f:
         f.write(json.dumps(lite_config, sort_keys=False, indent=4, ensure_ascii=False))
