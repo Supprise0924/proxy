@@ -30,5 +30,6 @@ if __name__ == '__main__':
     if configparse('common').getboolean('speedtest_enabled'):
         share_file = configparse('common')['share_file']
         share_file_clash = configparse('common')['share_file_clash']
-        os.system(f'proxychains python3 ./utils/litespeedtest/output.py --target \"../../{share_file}\" --num 99')
+        range = configparse('speedtest')['output_range']
+        os.system(f'proxychains python3 ./utils/litespeedtest/output.py --target \"../../{share_file}\" --range \"{range}\"')
         os.system(f'python3 ./utils/sub_convert.py --subscription \"{share_file}\" --target \"clash\" --output \"../../{share_file_clash}\"')

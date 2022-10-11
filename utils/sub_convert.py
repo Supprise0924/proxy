@@ -610,7 +610,7 @@ if __name__ == '__main__':
         if os.name == 'posix':
             os.system(f'./subconverter -g --artifact \"{target}\"')
         elif os.name == 'nt':
-            os.system(f'subconverter.exe -g --artifact \"{target}\"')
+            os.system(f'.\subconverter.exe -g --artifact \"{target}\"')
     with open(f'./temp', 'r', encoding= 'utf-8') as temp_file:
         temp = ''
         while True:
