@@ -5,745 +5,747 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇺🇸 美国 018, server: 116.fastea.top, port: 53316, type: trojan, password: 3f29ee90-8567-4671-8d99-9875874e472f, sni: eksrda.meijireform.com, skip-cert-verify: true}
+  - {name: "🇯🇵 [09-26]|openrunner|日本(JP)Japan/Tokyo_16", server: jgwdj3.gaox.ml, port: 443, type: trojan, password: da777aae-defb-41d0-a183-2c27da2b4677, sni: n2.gladns.com, skip-cert-verify: true}
+  - {name: 🇯🇵 日本_1010151, server: 138.2.15.23, port: 46370, type: vmess, uuid: 998151e5-0bc5-4377-e390-c41bb26fdd0c, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 US 5 → openitsub.com, server: www.sxsy88.tk, port: 44150, type: trojan, password: zFyLKH62WN, sni: eksrda.meijireform.com, skip-cert-verify: true}
+  - {name: KR_146.56.155.70_10118241-103, server: 146.56.155.70, port: 33449, type: vmess, uuid: e115ada7-9b19-4df9-c58a-cadd4540ec13, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 美国 026, server: www.sxsy88.tk, port: 44150, type: trojan, password: zFyLKH62WN, sni: jp-bgp.speedaccelerate.com, skip-cert-verify: true}
   - {name: KR_146.56.155.70_101183e6-199, server: 146.56.155.70, port: 18050, type: vmess, uuid: f9771c19-c91c-41b5-9064-8768b51cec6d, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇨🇳 CN 105 → openitsub.com, server: shcuac.aag436.ccddn4.icu, port: 4989, type: trojan, password: 5bc96fd6-8432-31b2-9524-9910eabaa4aa, sni: gzhkhkt.cc.tjcct.xyz, skip-cert-verify: true}
-  - {name: 🇷🇺 _RU_俄罗斯联邦, server: ru-ss.superyuluo1.asia, port: 1038, type: ss, cipher: chacha20-ietf-poly1305, password: 7b30dbe2-5fd9-4f87-a733-facef379632b}
-  - {name: 🇯🇵 JP 105, server: 146.56.155.70, port: 18050, type: vmess, uuid: f9771c19-c91c-41b5-9064-8768b51cec6d, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 :美国-ss-162.251.61.221:802-被墙-直连-解锁美国地区NF非自制剧, server: 162.251.61.221, port: 802, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: 🇺🇸 US 589, server: 168.138.207.66, port: 21365, type: vmess, uuid: 905f99b1-e7ba-45e0-ae4d-b0ffdf0ad245, alterId: 0, cipher: auto, tls: false}
-  - {name: CN_139.227.50.179_101183e6-345, server: shcuac.aag436.ccddn4.icu, port: 4989, type: trojan, password: 5bc96fd6-8432-31b2-9524-9910eabaa4aa, sni: flowery.meijireform.com, skip-cert-verify: true}
-  - {name: 🇺🇸 美国 026, server: www.sxsy88.tk, port: 44150, type: trojan, password: zFyLKH62WN, sni: eksrda.meijireform.com, skip-cert-verify: true}
-  - {name: 🇯🇵 JP 日本(youtube阿伟科技), server: 172.64.144.192, port: 443, type: vmess, uuid: 921b2665-0e7d-4dac-dfdb-891ab392bdec, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: jp2.mochen1314.ga}}}
-  - {name: 🇯🇵 中转+🇯🇵+JP+34+TG:@nodpai, server: shcuac.aag436.ccddn4.icu, port: 65521, type: trojan, password: b473e4c5-0ae7-31e5-98fb-1aac5701f9e7, sni: dl.shcujpntt2.cc.tjcct.xyz, skip-cert-verify: true}
-  - {name: JP_138.2.8.227_101183e6-77, server: 138.2.8.227, port: 59442, type: vmess, uuid: 6fd042fa-e864-4a95-85bc-6f590a03d34a, alterId: 0, cipher: auto, tls: false}
-  - {name: CN_139.227.50.179_101183e6-334, server: shcuac.aag436.ccddn4.icu, port: 65524, type: trojan, password: f818af82-bd17-35ea-8272-5088e3a5cd76, sni: flowery.meijireform.com, skip-cert-verify: true}
-  - {name: aaa 314, server: 152.70.235.207, port: 35412, type: vmess, uuid: 70d95308-2a61-4f93-f139-9103d0587fd9, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇨🇳 CN 14 → openitsub.com, server: cn-sh.sasg4e.ccddn4.icu, port: 65525, type: trojan, password: 5bc96fd6-8432-31b2-9524-9910eabaa4aa, sni: dl.shcuhkt4.cc.tjcct.xyz, skip-cert-verify: true}
+  - {name: 🇺🇸 美国 027, server: www.sxsy88.tk, port: 44150, type: trojan, password: zFyLKH62WN, sni: wel-jp.qchwnd.moe, skip-cert-verify: true}
   - {name: "|50.34Mb", server: www.sxsy88.tk, port: 44150, type: trojan, password: zFyLKH62WN, sni: 112.fastea.top, skip-cert-verify: true}
-  - {name: 🇺🇸 US 2 → openitsub.com, server: www.sxsy88.tk, port: 44150, type: trojan, password: zFyLKH62WN, sni: wel-jp.qchwnd.moe, skip-cert-verify: true}
-  - {name: 🇨🇳 CN 42 → openitsub.com, server: cn-sh.sasg4e.ccddn4.icu, port: 4901, type: trojan, password: b473e4c5-0ae7-31e5-98fb-1aac5701f9e7, sni: dl.shcujpntt6.cc.tjcct.xyz, skip-cert-verify: true}
-  - {name: 🇯🇵 中转+🇯🇵+JP+30+TG:@airproxies, server: cn-sh.sasg4e.ccddn4.icu, port: 65520, type: trojan, password: 5bc96fd6-8432-31b2-9524-9910eabaa4aa, sni: dl.shcujpntt4.cc.tjcct.xyz, skip-cert-verify: true}
+  - {name: 🇺🇸 美国_1010091, server: 135.148.47.240, port: 80, type: vmess, uuid: fd4fa030-b8f1-424b-a780-578dbb59f950, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /vmess, headers: {Host: us-v.sshmax.xyz}}}
+  - {name: 未知_1010058, server: 141.101.114.20, port: 443, type: vmess, uuid: 07a63fe3-8a46-4f89-b548-9151c61b9dc8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: v2ray1.zhujicn2.com}}}
   - {name: 🇨🇳 +CN+68, server: shcuac.aag436.ccddn4.icu, port: 65525, type: trojan, password: b473e4c5-0ae7-31e5-98fb-1aac5701f9e7, sni: dl.gdcmhkbgp.cc.tjcct.xyz, skip-cert-verify: true}
-  - {name: 🇨🇳 +CN+60, server: shcuac.aag436.ccddn4.icu, port: 65521, type: trojan, password: 5bc96fd6-8432-31b2-9524-9910eabaa4aa, sni: zj.ecvvvw.cn, skip-cert-verify: true}
-  - {name: 🇨🇳 CN 22 → openitsub.com, server: shcuac.aag436.ccddn4.icu, port: 4532, type: trojan, password: 5bc96fd6-8432-31b2-9524-9910eabaa4aa, sni: dl.shcuhkbn.cc.tjcct.xyz, skip-cert-verify: true}
-  - {name: 🇰🇷 KR-3.35.136.153-010, server: 3.35.136.153, port: 43632, type: vmess, uuid: 1d2978ba-30ba-4b64-8699-9ba6ba3cd4e8, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇨🇳 CN 44 → openitsub.com, server: cn-sh.sasg4e.ccddn4.icu, port: 65523, type: trojan, password: 5bc96fd6-8432-31b2-9524-9910eabaa4aa, sni: dl.shcujpntt5.cc.tjcct.xyz, skip-cert-verify: true}
-  - {name: 🇸🇬 +TG频道:@kxswa+|+新加坡+02, server: zj.ecvvvw.cn, port: 48002, type: trojan, password: c58b5a1f-af92-3108-997e-ca513b1c9747, sni: zj.ecvvvw.cn, skip-cert-verify: true}
-  - {name: 🇷🇺 RU 俄罗斯(youtube阿伟科技), server: shopify.com, port: 2086, type: vmess, uuid: 734b21f2-4ab0-478d-d919-a478a56f1dce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /aries, headers: {Host: justhost.cloudflare.quest}}}
-  - {name: 🇨🇳 CN 46 → openitsub.com, server: shcuac.aag436.ccddn4.icu, port: 4988, type: trojan, password: 5bc96fd6-8432-31b2-9524-9910eabaa4aa, sni: dl.shcujpntt.cc.tjcct.xyz, skip-cert-verify: true}
-  - {name: 🇨🇳 CN 48 → openitsub.com, server: cn-sh.sasg4e.ccddn4.icu, port: 65521, type: trojan, password: f818af82-bd17-35ea-8272-5088e3a5cd76, sni: dl.shcuhkt2.cc.tjcct.xyz, skip-cert-verify: true}
-  - {name: 🇯🇵 中转+🇯🇵+JP+32+TG:@airproxies, server: cn-sh.sasg4e.ccddn4.icu, port: 65523, type: trojan, password: 5bc96fd6-8432-31b2-9524-9910eabaa4aa, sni: dl.shcujpntt5.cc.tjcct.xyz, skip-cert-verify: true}
-  - {name: 🇯🇵 中转+🇯🇵+JP+36+TG:@airproxies, server: cn-sh.sasg4e.ccddn4.icu, port: 4901, type: trojan, password: 5bc96fd6-8432-31b2-9524-9910eabaa4aa, sni: dl.shcujpntt6.cc.tjcct.xyz, skip-cert-verify: true}
+  - {name: 🇰🇷 韩国_1010012, server: m4.40010010.xyz, port: 37121, type: vmess, uuid: 575e4d92-1056-44c2-8cac-75ef1c859ad5, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇨🇳 CN 78 → openitsub.com, server: shcuac.aag436.ccddn4.icu, port: 65525, type: trojan, password: b473e4c5-0ae7-31e5-98fb-1aac5701f9e7, sni: dl.shsgaws.cc.tjcct.xyz, skip-cert-verify: true}
+  - {name: 🇨🇳 CN 22 → openitsub.com, server: cn-sh.sasg4e.ccddn4.icu, port: 65521, type: trojan, password: b473e4c5-0ae7-31e5-98fb-1aac5701f9e7, sni: download.windowsupdate.com, skip-cert-verify: true}
   - {name: 🇺🇸 :美国-ss-162.251.61.221:804-被墙-直连-解锁美国地区NF非自制剧, server: 162.251.61.221, port: 804, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: 🇭🇰 中转+🇭🇰+HK+84+TG:@airproxies, server: shcuac.aag436.ccddn4.icu, port: 65526, type: trojan, password: 5bc96fd6-8432-31b2-9524-9910eabaa4aa, sni: dl.shcuhkt3.cc.tjcct.xyz, skip-cert-verify: true}
-  - {name: 🇨🇳 +CN+75, server: shcuac.aag436.ccddn4.icu, port: 4988, type: trojan, password: 5bc96fd6-8432-31b2-9524-9910eabaa4aa, sni: jp-bgp.speedaccelerate.com, skip-cert-verify: true}
-  - {name: _null_null, server: 146.19.230.241, port: 443, type: trojan, password: xxoo, sni: 112.fastea.top, skip-cert-verify: true}
-  - {name: 🇺🇸 +US+619, server: www.sxsy88.tk, port: 44150, type: trojan, password: zFyLKH62WN, sni: ru.p1.gay, skip-cert-verify: true}
-  - {name: 🇷🇺 _RU_俄罗斯联邦 2, server: ru-ss.superyuluo1.asia, port: 1038, type: ss, cipher: chacha20-ietf-poly1305, password: 7b30dbe2-5fd9-4f87-a733-facef379632b}
-  - {name: 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧, server: 185.162.126.217, port: 50004, type: ss, cipher: aes-256-cfb, password: !<str> 4415934295}
-  - {name: 🇺🇸 github.com/freefq - 美国CloudFlare节点 25, server: 172.64.144.100, port: 443, type: vmess, uuid: 6e9217de-ad7e-4a67-bd17-a6dca951733b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: lg3.zhujicn2.com}}}
-  - {name: 🇺🇸 美国 029, server: www.sxsy88.tk, port: 44150, type: trojan, password: zFyLKH62WN, sni: wel-jp.qchwnd.moe, skip-cert-verify: true}
-  - {name: 45.77.48.44:8099, server: 45.77.48.44, port: 8099, type: ss, cipher: aes-256-cfb, password: eIW0Dnk69454e6nSwuspv9DmS201tQ0D}
-  - {name: 🇭🇰 mianfeifq |🇨🇳+HK+17, server: 103.177.248.160, port: 12425, type: trojan, password: 7rfcbuZdkU, sni: dauwxncawx.vzwzasc.cn, skip-cert-verify: true}
-  - {name: CN_211.99.96.117_101183e6-319, server: 211.99.96.117, port: 65025, type: trojan, password: 5bc96fd6-8432-31b2-9524-9910eabaa4aa, sni: wel-jp.qchwnd.moe, skip-cert-verify: true}
-  - {name: 🇭🇰 _HK_香港, server: 43.229.153.148, port: 50418, type: trojan, password: 5d1b3b0a-de2a-4731-938d-4c7e15f034c1, sni: 112.fastea.top, skip-cert-verify: true}
-  - {name: 🇳🇱 荷兰 002, server: 194.26.213.155, port: 50000, type: ss, cipher: aes-256-cfb, password: !<str> 3135771619}
-  - {name: 🇨🇳 CN 72 → openitsub.com, server: 116.129.253.134, port: 3381, type: trojan, password: d02058f4f819dced, sni: ctldl.windowsupdate.com, skip-cert-verify: true}
-  - {name: "|71.07Mb", server: 43.229.153.148, port: 50418, type: trojan, password: 5d1b3b0a-de2a-4731-938d-4c7e15f034c1, sni: 112.fastea.top, skip-cert-verify: true}
-  - {name: 🇨🇳 CN 71 → openitsub.com, server: 116.129.253.134, port: 3381, type: trojan, password: 6222266fcd4ed224, sni: ctldl.windowsupdate.com, skip-cert-verify: true}
-  - {name: 🇺🇸 US 1 → openitsub.com, server: 159.223.89.239, port: 443, type: trojan, password: bb5b1337-fa9e-4e00-b8c6-1110e626171d, sni: wel-jp.qchwnd.moe, skip-cert-verify: true}
-  - {name: 999, server: sg-01.tiktokcdn.top, port: 443, type: trojan, password: bb5b1337-fa9e-4e00-b8c6-1110e626171d, sni: sni=jpa.jiashumao.net, skip-cert-verify: true}
-  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:), server: 152.69.197.60, port: 1069, type: vmess, uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 美国 021, server: sg-01.tiktokcdn.top, port: 443, type: trojan, password: bb5b1337-fa9e-4e00-b8c6-1110e626171d, sni: eksrda.meijireform.com, skip-cert-verify: true}
-  - {name: 🇨🇳 CN 32 → openitsub.com, server: 116.129.254.45, port: 11979, type: ss, cipher: chacha20-ietf, password: NQNpFv}
-  - {name: 未知_1010035, server: sg.prpr.link, port: 443, type: vmess, uuid: cea42161-bddc-4230-a9b9-e43187967ffa, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /Telegram/ShareCentrePro/mknnix, headers: {Host: sg.prpr.link}}}
-  - {name: 🇨🇳 CN 51 → openitsub.com, server: 116.129.254.7, port: 4570, type: trojan, password: b473e4c5-0ae7-31e5-98fb-1aac5701f9e7, sni: hnjpntt2.cc.tjcct.xyz, skip-cert-verify: true}
-  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 2, server: 152.69.197.60, port: 1069, type: vmess, uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 美国 034, server: sg-01.tiktokcdn.top, port: 443, type: trojan, password: bb5b1337-fa9e-4e00-b8c6-1110e626171d, sni: dl.gdcmhkbgp.cc.tjcct.xyz, skip-cert-verify: true}
-  - {name: 🇦🇺 AU 澳大利亚(youtube阿伟科技), server: vau1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /chat, headers: {Host: vau1.0bad.com}}}
-  - {name: 🇦🇺 澳大利亚_1010003, server: au.vmess1.xservs.xyz, port: 443, type: vmess, uuid: e5b69de1-1d2b-43dd-8237-50c811fdc9e2, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /vmess, headers: {Host: au.vmess1.xservs.xyz}}}
-  - {name: 🇯🇵 +TG频道:@kxswa+|+日本+02, server: zj.ecvvvw.cn, port: 46001, type: trojan, password: c58b5a1f-af92-3108-997e-ca513b1c9747, sni: zj.ecvvvw.cn, skip-cert-verify: true}
-  - {name: 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧 2, server: 185.162.126.217, port: 50004, type: ss, cipher: aes-256-cfb, password: !<str> 4415934295}
-  - {name: 🇦🇺 澳大利亚_1010005, server: vau1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /chat, headers: {Host: vau1.0bad.com}}}
-  - {name: "| 1.79Mb", server: vau1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /chat, headers: {Host: vau1.0bad.com}}}
+  - {name: 🇦🇺 AU 7, server: 129.154.57.134, port: 26282, type: vmess, uuid: cabbdf5d-3cca-4605-ba1c-c89a7d5b4c07, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 美国 071, server: ee.cloudflare.quest, port: 80, type: vmess, uuid: f9247df4-02d5-4b31-acc5-4022652c5953, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /aries, headers: {Host: ee.cloudflare.quest}}}
+  - {name: 🇺🇸 :美国-ss-162.251.61.221:800-被墙-直连-解锁美国地区NF非自制剧, server: 162.251.61.221, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇰🇷 KR-3.35.136.153-010, server: 3.35.136.153, port: 43632, type: vmess, uuid: 1d2978ba-30ba-4b64-8699-9ba6ba3cd4e8, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇨🇳 CN 53 → openitsub.com, server: cn-sh.sasg4e.ccddn4.icu, port: 4901, type: trojan, password: b473e4c5-0ae7-31e5-98fb-1aac5701f9e7, sni: download.windowsupdate.com, skip-cert-verify: true}
+  - {name: 🇯🇵 中转+🇯🇵+JP+34+TG:@nodpai, server: shcuac.aag436.ccddn4.icu, port: 65521, type: trojan, password: b473e4c5-0ae7-31e5-98fb-1aac5701f9e7, sni: dl.shcujpntt2.cc.tjcct.xyz, skip-cert-verify: true}
+  - {name: aaa 314, server: 152.70.235.207, port: 35412, type: vmess, uuid: 70d95308-2a61-4f93-f139-9103d0587fd9, alterId: 0, cipher: auto, tls: false}
   - {name: 🇺🇸 :美国-ss-162.251.61.221:804-被墙-直连-解锁美国地区NF非自制剧 2, server: 162.251.61.221, port: 804, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: 🇨🇳 CN 77 → openitsub.com, server: 116.129.253.138, port: 21072, type: ss, cipher: aes-256-gcm, password: 6LsAQVWwqjW0xGfI}
+  - {name: 🇭🇰 +HK+9+TG:@nodpai+(Beta), server: realhk-1.tiktokcdn.sbs, port: 12425, type: trojan, password: 7rfcbuZdkU, sni: hk1.kp1a-ls9a-426a-x45g.paolu.pics, skip-cert-verify: true}
+  - {name: 🇯🇵 日本_1010033, server: 168.138.207.66, port: 21365, type: vmess, uuid: 905f99b1-e7ba-45e0-ae4d-b0ffdf0ad245, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇨🇳 CN 3 → openitsub.com, server: 116.129.254.35, port: 11979, type: ss, cipher: chacha20-ietf, password: NQNpFv}
+  - {name: 🇺🇸 US 589, server: 168.138.207.66, port: 21365, type: vmess, uuid: 905f99b1-e7ba-45e0-ae4d-b0ffdf0ad245, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇯🇵 JP 4 → openitsub.com, server: 113.fastea.top, port: 53313, type: trojan, password: e27cce7a-617d-48cb-b628-e9717be9c175, sni: wel-jp.qchwnd.moe, skip-cert-verify: true}
+  - {name: HK_228 |71.07Mb, server: 43.229.153.148, port: 50418, type: trojan, password: 5d1b3b0a-de2a-4731-938d-4c7e15f034c1, sni: 112.fastea.top, skip-cert-verify: true}
+  - {name: mianfeifq+215, server: 159.223.89.239, port: 443, type: trojan, password: bb5b1337-fa9e-4e00-b8c6-1110e626171d, sni: wel-jp.qchwnd.moe, skip-cert-verify: true}
+  - {name: 🇺🇸 美国 034, server: sg-01.tiktokcdn.top, port: 443, type: trojan, password: bb5b1337-fa9e-4e00-b8c6-1110e626171d, sni: dl.gdcmhkbgp.cc.tjcct.xyz, skip-cert-verify: true}
+  - {name: 🇺🇸 美国 030, server: sg-01.tiktokcdn.top, port: 443, type: trojan, password: bb5b1337-fa9e-4e00-b8c6-1110e626171d, sni: wel-jp.qchwnd.moe, skip-cert-verify: true}
+  - {name: 🇺🇸 US 3 → openitsub.com, server: 159.223.89.239, port: 443, type: trojan, password: bb5b1337-fa9e-4e00-b8c6-1110e626171d, sni: eksrda.meijireform.com, skip-cert-verify: true}
   - {name: "|301.90Mb", server: sg-01.tiktokcdn.top, port: 443, type: trojan, password: bb5b1337-fa9e-4e00-b8c6-1110e626171d, sni: 112.fastea.top, skip-cert-verify: true}
-  - {name: 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧 3, server: 185.162.126.217, port: 50004, type: ss, cipher: aes-256-cfb, password: !<str> 4415934295}
-  - {name: 🇯🇵 +TG频道:@kxswa+|+日本+01, server: zj.ecvvvw.cn, port: 46000, type: trojan, password: c58b5a1f-af92-3108-997e-ca513b1c9747, sni: zj.ecvvvw.cn, skip-cert-verify: true}
+  - {name: 999, server: sg-01.tiktokcdn.top, port: 443, type: trojan, password: bb5b1337-fa9e-4e00-b8c6-1110e626171d, sni: sni=jpa.jiashumao.net, skip-cert-verify: true}
+  - {name: 🇭🇰 _HK_香港, server: 43.229.153.148, port: 50418, type: trojan, password: 5d1b3b0a-de2a-4731-938d-4c7e15f034c1, sni: 112.fastea.top, skip-cert-verify: true}
+  - {name: 🇦🇺 AU 1 → openitsub.com, server: jgwxn3.gaox.ml, port: 443, type: trojan, password: cb43b7c2-b744-41c5-bcc2-fd7467b332cf, sni: d76bb35696.wns.windows.com, skip-cert-verify: true}
+  - {name: 🇭🇰 HK+香港(youtube科技)_2, server: az200-1.cloudfree.eu.org, port: 56944, type: trojan, password: aziywZJM, sni: dl.gdcmhinet3.cc.tjcct.xyz, skip-cert-verify: true}
+  - {name: 🇯🇵 日本_1010153, server: 138.2.44.211, port: 20081, type: vmess, uuid: 593b8525-0c48-4b0f-d9af-2d73a9148973, alterId: 64, cipher: auto, tls: false}
+  - {name: 🇯🇵 日本_1010012, server: 152.69.197.60, port: 1069, type: vmess, uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf, alterId: 0, cipher: auto, tls: false}
   - {name: 🇦🇺 澳大利亚_1010006, server: vau1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /chat, headers: {Host: vau1.0bad.com}}}
+  - {name: 🇺🇸 US 859, server: 152.69.197.60, port: 1069, type: vmess, uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇭🇰 HK 1 → openitsub.com, server: 43.229.153.148, port: 50418, type: trojan, password: 5d1b3b0a-de2a-4731-938d-4c7e15f034c1, sni: gbo02.vsvideo.shop, skip-cert-verify: true}
+  - {name: 🇯🇵 github.com/freefq - 日本  48, server: 146.56.40.117, port: 27675, type: vmess, uuid: 053ca0f4-057e-493d-ad30-5ba51f00f59c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 146.56.40.117}}}
+  - {name: 🇯🇵 日本_1010024, server: 152.69.197.60, port: 1069, type: vmess, uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇨🇳 CN 78 → openitsub.com 2, server: 116.129.254.7, port: 4570, type: trojan, password: b473e4c5-0ae7-31e5-98fb-1aac5701f9e7, sni: hnjpntt2.cc.tjcct.xyz, skip-cert-verify: true}
+  - {name: 🇦🇺 澳大利亚_1010006 2, server: vau1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /chat, headers: {Host: vau1.0bad.com}}}
+  - {name: 🇨🇳 +CN+16, server: 211.99.96.117, port: 65303, type: trojan, password: b473e4c5-0ae7-31e5-98fb-1aac5701f9e7, sni: dl.shcuhkt3.cc.tjcct.xyz, skip-cert-verify: true}
+  - {name: 🇨🇳 CN 76 → openitsub.com, server: 116.129.254.35, port: 11979, type: ss, cipher: chacha20-ietf, password: NQNpFv}
+  - {name: 🇯🇵 日本_1010012 2, server: 152.69.197.60, port: 1069, type: vmess, uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 US 859 2, server: 152.69.197.60, port: 1069, type: vmess, uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇦🇺 澳大利亚_1010005, server: vau1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /chat, headers: {Host: vau1.0bad.com}}}
+  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:), server: 152.69.197.60, port: 1069, type: vmess, uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇭🇰 mianfeifq |🇨🇳+HK+17, server: 103.177.248.160, port: 12425, type: trojan, password: 7rfcbuZdkU, sni: dauwxncawx.vzwzasc.cn, skip-cert-verify: true}
+  - {name: "| 1.79Mb", server: vau1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /chat, headers: {Host: vau1.0bad.com}}}
+  - {name: 🇦🇺 澳大利亚_1010003, server: au.vmess1.xservs.xyz, port: 443, type: vmess, uuid: e5b69de1-1d2b-43dd-8237-50c811fdc9e2, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /vmess, headers: {Host: au.vmess1.xservs.xyz}}}
+  - {name: "🇭🇰 [BGP-GSLB]香港•BGP", server: 16.163.226.1, port: 2053, type: trojan, password: 39f71286-da06-4de4-81ba-5559b9b8b74b, sni: wel-jp.qchwnd.moe, skip-cert-verify: true}
+  - {name: "🇺🇸 [BGP-GSLB]美国1•0.8x", server: 16.163.226.1, port: 2053, type: trojan, password: 39f71286-da06-4de4-81ba-5559b9b8b74b, sni: wel-jp.qchwnd.moe, skip-cert-verify: true}
+  - {name: 45.77.48.44:8099, server: 45.77.48.44, port: 8099, type: ss, cipher: aes-256-cfb, password: eIW0Dnk69454e6nSwuspv9DmS201tQ0D}
+  - {name: 🇺🇸 -美国-au.vmess1.xservs.xyz, server: au.vmess1.xservs.xyz, port: 443, type: vmess, uuid: e5b69de1-1d2b-43dd-8237-50c811fdc9e2, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /vmess, headers: {Host: au.vmess1.xservs.xyz}}}
   - {name: mianfeifq+189, server: realhk-1.tiktokcdn.sbs, port: 12425, type: trojan, password: 7rfcbuZdkU, sni: flowery.meijireform.com, skip-cert-verify: true}
   - {name: mianfeifq+256, server: 103.177.248.160, port: 12425, type: trojan, password: 7rfcbuZdkU, sni: gbo02.vsvideo.shop, skip-cert-verify: true}
-  - {name: 🇦🇺 澳大利亚 001, server: vau1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /chat, headers: {Host: vau1.0bad.com}}}
-  - {name: 🇨🇳 CN 31 → openitsub.com, server: 116.129.254.35, port: 11979, type: ss, cipher: chacha20-ietf, password: NQNpFv}
-  - {name: 🇯🇵 日本_1010024, server: 152.69.197.60, port: 1069, type: vmess, uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇨🇳 CN 78 → openitsub.com, server: 116.129.254.7, port: 21072, type: ss, cipher: aes-256-gcm, password: 6LsAQVWwqjW0xGfI}
-  - {name: 🇭🇰 +HK+9+TG:@nodpai+(Beta), server: realhk-1.tiktokcdn.sbs, port: 12425, type: trojan, password: 7rfcbuZdkU, sni: hk1.kp1a-ls9a-426a-x45g.paolu.pics, skip-cert-verify: true}
   - {name: 45.77.48.44:8099 2, server: 45.77.48.44, port: 8099, type: ss, cipher: aes-256-cfb, password: eIW0Dnk69454e6nSwuspv9DmS201tQ0D}
-  - {name: 🇭🇰 中转+🇭🇰+HK+44+TG:@nodpai, server: 120.241.126.83, port: 65211, type: trojan, password: 5bc96fd6-8432-31b2-9524-9910eabaa4aa, sni: gghkntt.cc.tjcct.xyz, skip-cert-verify: true}
-  - {name: 🇺🇸 US 6 → openitsub.com, server: www.sxsy88.tk, port: 44150, type: trojan, password: zFyLKH62WN, sni: hk-01.nodemao.com, skip-cert-verify: true}
+  - {name: 🇦🇺 澳大利亚 004, server: jgwxn4.gaox.ml, port: 443, type: trojan, password: e8c1ab3c-89b3-4933-92df-682e6dce7819, sni: eksrda.meijireform.com, skip-cert-verify: true}
+  - {name: 🇨🇳 CN 16 → openitsub.com, server: 116.129.254.35, port: 21072, type: ss, cipher: aes-256-gcm, password: 6LsAQVWwqjW0xGfI}
   - {name: 🇦🇺 澳大利亚_1010005 2, server: vau1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /chat, headers: {Host: vau1.0bad.com}}}
-  - {name: 🇨🇳 CN 86 → openitsub.com, server: 116.129.254.35, port: 12144, type: ss, cipher: aes-128-ctr, password: Taessica1026}
-  - {name: 🇺🇸 美国 034 2, server: us.kapok.buzz, port: 443, type: vmess, uuid: eb4550a1-bd63-4f9c-b4b6-fdd24b440728, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /SCP-914, headers: {Host: us.kapok.buzz}}}
-  - {name: 🇨🇳 CN 49 → openitsub.com, server: 116.129.253.138, port: 12144, type: ss, cipher: aes-128-ctr, password: Taessica1026}
-  - {name: Relay_Relay_ |301.90Mb, server: sg-01.tiktokcdn.top, port: 443, type: trojan, password: bb5b1337-fa9e-4e00-b8c6-1110e626171d, sni: 112.fastea.top, skip-cert-verify: true}
-  - {name: "|25.48Mb", server: au01.xiaoqi99.cf, port: 63632, type: vmess, uuid: 92c0cfd0-bb9f-4258-bd0c-8000aa1a1d62, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: au01.xiaoqi99.cf}}}
-  - {name: Relay_ |50.15Mb, server: jgwxn3.gaox.ml, port: 443, type: trojan, password: cb43b7c2-b744-41c5-bcc2-fd7467b332cf, sni: 112.fastea.top, skip-cert-verify: true}
-  - {name: 🇵🇹 葡萄牙(TG频道:@kxswa), server: 185.113.140.247, port: 50000, type: ss, cipher: aes-256-cfb, password: !<str> 3135771619}
-  - {name: 🇦🇺 +AU+8, server: jgwxn3.gaox.ml, port: 443, type: trojan, password: cb43b7c2-b744-41c5-bcc2-fd7467b332cf, sni: wel-jp.qchwnd.moe, skip-cert-verify: true}
-  - {name: GH, server: 118.140.206.169, port: 443, type: trojan, password: !<str> 666888, sni: sdhawuyfkjuwx.vzwzasc.cn, skip-cert-verify: true}
-  - {name: 未知_1010057, server: sg.prpr.link, port: 443, type: vmess, uuid: cea42161-bddc-4230-a9b9-e43187967ffa, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /Telegram/ShareCentrePro/mknnix, headers: {Host: sg.prpr.link}}}
+  - {name: PT_【付费推荐：wxfz.ml】, server: 185.113.140.247, port: 50000, type: ss, cipher: aes-256-cfb, password: !<str> 3135771619}
+  - {name: Relay_Relay_ | 1.79Mb, server: vau1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /chat, headers: {Host: vau1.0bad.com}}}
+  - {name: 🇨🇳 CN 15 → openitsub.com, server: 116.129.253.138, port: 21072, type: ss, cipher: aes-256-gcm, password: 6LsAQVWwqjW0xGfI}
+  - {name: 🇺🇸 US-150.230.41.9-62, server: 150.230.41.9, port: 23292, type: vmess, uuid: 956c6c2f-bf54-4b87-fafd-4b767ca12750, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇦🇺 澳大利亚 001, server: vau1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /chat, headers: {Host: vau1.0bad.com}}}
+  - {name: "@SSRSUB-V07-付费推荐:suo.yt/ssrsub", server: 172.64.153.150, port: 443, type: vmess, uuid: bf4619e4-01dc-48ca-be08-0976b54968ce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: lg5.zhujicn2.com}}}
+  - {name: 🇨🇳 CN 45 → openitsub.com, server: 116.129.253.138, port: 21072, type: ss, cipher: aes-256-gcm, password: 6LsAQVWwqjW0xGfI}
+  - {name: 🇯🇵 日本_1010034, server: 140.83.57.80, port: 49840, type: vmess, uuid: 2969ad1b-9787-4927-94e6-22f597618de0, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇦🇺 AU 澳大利亚(youtube阿伟科技), server: vau1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /chat, headers: {Host: vau1.0bad.com}}}
   - {name: 白嫖-0313, server: 118.140.206.169, port: 443, type: trojan, password: !<str> 666888, sni: linus.sbs, skip-cert-verify: true}
-  - {name: 🇨🇳 CN 79 → openitsub.com, server: 120.241.126.83, port: 65210, type: trojan, password: b473e4c5-0ae7-31e5-98fb-1aac5701f9e7, sni: gztwkbt.cc.tjcct.xyz, skip-cert-verify: true}
-  - {name: CN_211.99.96.117_101183e6-343, server: 211.99.96.117, port: 65022, type: trojan, password: f818af82-bd17-35ea-8272-5088e3a5cd76, sni: dl.shcujpntt2.cc.tjcct.xyz, skip-cert-verify: true}
-  - {name: 🇪🇪 github.com/freefq - 爱沙尼亚  24, server: ee.oppo.quest, port: 80, type: vmess, uuid: f9247df4-02d5-4b31-acc5-4022652c5953, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /aries, headers: {Host: ee.oppo.quest}}}
-  - {name: 🇦🇺 澳大利亚_1010006 2, server: vau1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /chat, headers: {Host: vau1.0bad.com}}}
-  - {name: 🇨🇳 CN 74 → openitsub.com, server: 211.99.96.117, port: 65022, type: trojan, password: f818af82-bd17-35ea-8272-5088e3a5cd76, sni: dl.sg6.cc.tjcct.xyz, skip-cert-verify: true}
-  - {name: 🇭🇰 中转+🇭🇰+HK+11+TG:@airproxies, server: 14.29.147.58, port: 10246, type: trojan, password: 289xWT, sni: ctldl.windowsupdate.com, skip-cert-verify: true}
-  - {name: 🇨🇳 CN 8 → openitsub.com, server: 14.29.147.58, port: 10246, type: trojan, password: PGp7fn, sni: ctldl.windowsupdate.com, skip-cert-verify: true}
-  - {name: CN_139.227.50.179_101183e6-346, server: shcuac.aag436.ccddn4.icu, port: 65522, type: trojan, password: 5bc96fd6-8432-31b2-9524-9910eabaa4aa, sni: dl.gdcmhinet3.cc.tjcct.xyz, skip-cert-verify: true}
-  - {name: 🇨🇳 CN 34 → openitsub.com, server: 120.241.126.83, port: 65208, type: trojan, password: f818af82-bd17-35ea-8272-5088e3a5cd76, sni: dl.gdcmhinet3.cc.tjcct.xyz, skip-cert-verify: true}
+  - {name: 🇦🇺 澳大利亚 003, server: au01.xiaoqi99.cf, port: 63632, type: vmess, uuid: 92c0cfd0-bb9f-4258-bd0c-8000aa1a1d62, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: au01.xiaoqi99.cf}}}
+  - {name: 🇦🇺 澳大利亚 002, server: vau1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /chat, headers: {Host: vau1.0bad.com}}}
+  - {name: "|25.48Mb", server: au01.xiaoqi99.cf, port: 63632, type: vmess, uuid: 92c0cfd0-bb9f-4258-bd0c-8000aa1a1d62, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: au01.xiaoqi99.cf}}}
+  - {name: 🇨🇳 CN 2 → openitsub.com, server: 116.129.254.35, port: 21072, type: ss, cipher: aes-256-gcm, password: 6LsAQVWwqjW0xGfI}
+  - {name: GH, server: 118.140.206.169, port: 443, type: trojan, password: !<str> 666888, sni: dl.sg7.cc.tjcct.xyz, skip-cert-verify: true}
+  - {name: 🇨🇳 CN 20 → openitsub.com, server: 116.129.254.35, port: 12144, type: ss, cipher: aes-128-ctr, password: Taessica1026}
+  - {name: 🇦🇺 澳大利亚 006, server: 140.83.57.80, port: 49840, type: vmess, uuid: 2969ad1b-9787-4927-94e6-22f597618de0, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 美国 038, server: sg.prpr.link, port: 443, type: vmess, uuid: cea42161-bddc-4230-a9b9-e43187967ffa, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /Telegram/ShareCentrePro/mknnix, headers: {Host: sg.prpr.link}}}
+  - {name: 🇨🇳 CN 67 → openitsub.com, server: 120.241.126.83, port: 65201, type: trojan, password: b473e4c5-0ae7-31e5-98fb-1aac5701f9e7, sni: gzhkntt.cc.tjcct.xyz, skip-cert-verify: true}
+  - {name: GH 2, server: 118.140.206.169, port: 443, type: trojan, password: !<str> 666888, sni: wel-jp.qchwnd.moe, skip-cert-verify: true}
+  - {name: 🇺🇸 -美国-172.64.144.192, server: 172.64.144.192, port: 443, type: vmess, uuid: 921b2665-0e7d-4dac-dfdb-891ab392bdec, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: jp2.mochen1314.ga}}}
+  - {name: 🇺🇸 美国 046, server: sg.prpr.link, port: 443, type: vmess, uuid: cea42161-bddc-4230-a9b9-e43187967ffa, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /Telegram/ShareCentrePro/mknnix, headers: {Host: sg.prpr.link}}}
+  - {name: 未知_1010057, server: sg.prpr.link, port: 443, type: vmess, uuid: cea42161-bddc-4230-a9b9-e43187967ffa, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /Telegram/ShareCentrePro/mknnix, headers: {Host: sg.prpr.link}}}
+  - {name: 🇺🇸 _US_美国, server: 152.69.195.171, port: 55555, type: vmess, uuid: b86d95da-b843-4804-8443-d849d3207076, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇨🇳 CN 25 → openitsub.com, server: 211.99.96.117, port: 65301, type: trojan, password: b473e4c5-0ae7-31e5-98fb-1aac5701f9e7, sni: download.windowsupdate.com, skip-cert-verify: true}
+  - {name: 未知_1010035, server: sg.prpr.link, port: 443, type: vmess, uuid: cea42161-bddc-4230-a9b9-e43187967ffa, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /Telegram/ShareCentrePro/mknnix, headers: {Host: sg.prpr.link}}}
+  - {name: 🇨🇳 CN 1 → openitsub.com, server: 120.241.126.83, port: 65207, type: trojan, password: b473e4c5-0ae7-31e5-98fb-1aac5701f9e7, sni: d76bb35696.wns.windows.com, skip-cert-verify: true}
+  - {name: 🇯🇵 JP 日本(youtube阿伟科技), server: 172.64.144.192, port: 443, type: vmess, uuid: 921b2665-0e7d-4dac-dfdb-891ab392bdec, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: jp2.mochen1314.ga}}}
+  - {name: 🇺🇸 美国 029, server: b-t.us.hyperlinkvpn.xyz, port: 50500, type: trojan, password: dacbc926-ea36-4be2-9f52-f343d353a2de, sni: wel-jp.qchwnd.moe, skip-cert-verify: true}
+  - {name: 🇭🇰 中转+🇭🇰+HK+40+TG:@airproxies, server: 120.241.126.83, port: 65201, type: trojan, password: b473e4c5-0ae7-31e5-98fb-1aac5701f9e7, sni: gzhkntt.cc.tjcct.xyz, skip-cert-verify: true}
+  - {name: 🇨🇳 CN 33 → openitsub.com, server: 120.241.126.83, port: 65208, type: trojan, password: b473e4c5-0ae7-31e5-98fb-1aac5701f9e7, sni: download.windowsupdate.com, skip-cert-verify: true}
   - {name: CN_120.241.126.83_101183e6-284, server: 120.241.126.83, port: 65212, type: trojan, password: b473e4c5-0ae7-31e5-98fb-1aac5701f9e7, sni: dl.shcujpntt5.cc.tjcct.xyz, skip-cert-verify: true}
+  - {name: CN_120.241.126.83_101183e6-361, server: 120.241.126.83, port: 65206, type: trojan, password: b473e4c5-0ae7-31e5-98fb-1aac5701f9e7, sni: dl.sghgc2.cc.tjcct.xyz, skip-cert-verify: true}
+  - {name: 🇻🇳 VN 越南(youtube阿伟科技), server: shopify.com, port: 2086, type: vmess, uuid: dc8b64db-eb6d-4bdf-98b2-31615319bea8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /aries, headers: {Host: vn.cloudflare.quest}}}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸 美国 018
-      - KR_146.56.155.70_101183e6-199
-      - 🇨🇳 CN 105 → openitsub.com
-      - 🇷🇺 _RU_俄罗斯联邦
-      - 🇯🇵 JP 105
-      - 🇺🇸 :美国-ss-162.251.61.221:802-被墙-直连-解锁美国地区NF非自制剧
-      - 🇺🇸 US 589
-      - CN_139.227.50.179_101183e6-345
+      - 🇯🇵 [09-26]|openrunner|日本(JP)Japan/Tokyo_16
+      - 🇯🇵 日本_1010151
+      - 🇺🇸 US 5 → openitsub.com
+      - KR_146.56.155.70_10118241-103
       - 🇺🇸 美国 026
-      - 🇯🇵 JP 日本(youtube阿伟科技)
-      - 🇯🇵 中转+🇯🇵+JP+34+TG:@nodpai
-      - JP_138.2.8.227_101183e6-77
-      - CN_139.227.50.179_101183e6-334
-      - aaa 314
-      - 🇨🇳 CN 14 → openitsub.com
+      - KR_146.56.155.70_101183e6-199
+      - 🇺🇸 美国 027
       - "|50.34Mb"
-      - 🇺🇸 US 2 → openitsub.com
-      - 🇨🇳 CN 42 → openitsub.com
-      - 🇯🇵 中转+🇯🇵+JP+30+TG:@airproxies
+      - 🇺🇸 美国_1010091
+      - 未知_1010058
       - 🇨🇳 +CN+68
-      - 🇨🇳 +CN+60
+      - 🇰🇷 韩国_1010012
+      - 🇨🇳 CN 78 → openitsub.com
       - 🇨🇳 CN 22 → openitsub.com
-      - 🇰🇷 KR-3.35.136.153-010
-      - 🇨🇳 CN 44 → openitsub.com
-      - 🇸🇬 +TG频道:@kxswa+|+新加坡+02
-      - 🇷🇺 RU 俄罗斯(youtube阿伟科技)
-      - 🇨🇳 CN 46 → openitsub.com
-      - 🇨🇳 CN 48 → openitsub.com
-      - 🇯🇵 中转+🇯🇵+JP+32+TG:@airproxies
-      - 🇯🇵 中转+🇯🇵+JP+36+TG:@airproxies
       - 🇺🇸 :美国-ss-162.251.61.221:804-被墙-直连-解锁美国地区NF非自制剧
-      - 🇭🇰 中转+🇭🇰+HK+84+TG:@airproxies
-      - 🇨🇳 +CN+75
-      - _null_null
-      - 🇺🇸 +US+619
-      - 🇷🇺 _RU_俄罗斯联邦 2
-      - 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 25
-      - 🇺🇸 美国 029
-      - 45.77.48.44:8099
-      - 🇭🇰 mianfeifq |🇨🇳+HK+17
-      - CN_211.99.96.117_101183e6-319
-      - 🇭🇰 _HK_香港
-      - 🇳🇱 荷兰 002
-      - 🇨🇳 CN 72 → openitsub.com
-      - "|71.07Mb"
-      - 🇨🇳 CN 71 → openitsub.com
-      - 🇺🇸 US 1 → openitsub.com
-      - 999
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
-      - 🇺🇸 美国 021
-      - 🇨🇳 CN 32 → openitsub.com
-      - 未知_1010035
-      - 🇨🇳 CN 51 → openitsub.com
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 2
-      - 🇺🇸 美国 034
-      - 🇦🇺 AU 澳大利亚(youtube阿伟科技)
-      - 🇦🇺 澳大利亚_1010003
-      - 🇯🇵 +TG频道:@kxswa+|+日本+02
-      - 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧 2
-      - 🇦🇺 澳大利亚_1010005
-      - "| 1.79Mb"
+      - 🇦🇺 AU 7
+      - 🇺🇸 美国 071
+      - 🇺🇸 :美国-ss-162.251.61.221:800-被墙-直连-解锁美国地区NF非自制剧
+      - 🇰🇷 KR-3.35.136.153-010
+      - 🇨🇳 CN 53 → openitsub.com
+      - 🇯🇵 中转+🇯🇵+JP+34+TG:@nodpai
+      - aaa 314
       - 🇺🇸 :美国-ss-162.251.61.221:804-被墙-直连-解锁美国地区NF非自制剧 2
-      - 🇨🇳 CN 77 → openitsub.com
+      - 🇭🇰 +HK+9+TG:@nodpai+(Beta)
+      - 🇯🇵 日本_1010033
+      - 🇨🇳 CN 3 → openitsub.com
+      - 🇺🇸 US 589
+      - 🇯🇵 JP 4 → openitsub.com
+      - HK_228 |71.07Mb
+      - mianfeifq+215
+      - 🇺🇸 美国 034
+      - 🇺🇸 美国 030
+      - 🇺🇸 US 3 → openitsub.com
       - "|301.90Mb"
-      - 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧 3
-      - 🇯🇵 +TG频道:@kxswa+|+日本+01
+      - 999
+      - 🇭🇰 _HK_香港
+      - 🇦🇺 AU 1 → openitsub.com
+      - 🇭🇰 HK+香港(youtube科技)_2
+      - 🇯🇵 日本_1010153
+      - 🇯🇵 日本_1010012
       - 🇦🇺 澳大利亚_1010006
+      - 🇺🇸 US 859
+      - 🇭🇰 HK 1 → openitsub.com
+      - 🇯🇵 github.com/freefq - 日本  48
+      - 🇯🇵 日本_1010024
+      - 🇨🇳 CN 78 → openitsub.com 2
+      - 🇦🇺 澳大利亚_1010006 2
+      - 🇨🇳 +CN+16
+      - 🇨🇳 CN 76 → openitsub.com
+      - 🇯🇵 日本_1010012 2
+      - 🇺🇸 US 859 2
+      - 🇦🇺 澳大利亚_1010005
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
+      - 🇭🇰 mianfeifq |🇨🇳+HK+17
+      - "| 1.79Mb"
+      - 🇦🇺 澳大利亚_1010003
+      - 🇭🇰 [BGP-GSLB]香港•BGP
+      - 🇺🇸 [BGP-GSLB]美国1•0.8x
+      - 45.77.48.44:8099
+      - 🇺🇸 -美国-au.vmess1.xservs.xyz
       - mianfeifq+189
       - mianfeifq+256
-      - 🇦🇺 澳大利亚 001
-      - 🇨🇳 CN 31 → openitsub.com
-      - 🇯🇵 日本_1010024
-      - 🇨🇳 CN 78 → openitsub.com
-      - 🇭🇰 +HK+9+TG:@nodpai+(Beta)
       - 45.77.48.44:8099 2
-      - 🇭🇰 中转+🇭🇰+HK+44+TG:@nodpai
-      - 🇺🇸 US 6 → openitsub.com
+      - 🇦🇺 澳大利亚 004
+      - 🇨🇳 CN 16 → openitsub.com
       - 🇦🇺 澳大利亚_1010005 2
-      - 🇨🇳 CN 86 → openitsub.com
-      - 🇺🇸 美国 034 2
-      - 🇨🇳 CN 49 → openitsub.com
-      - Relay_Relay_ |301.90Mb
-      - "|25.48Mb"
-      - Relay_ |50.15Mb
-      - 🇵🇹 葡萄牙(TG频道:@kxswa)
-      - 🇦🇺 +AU+8
-      - GH
-      - 未知_1010057
+      - PT_【付费推荐：wxfz.ml】
+      - Relay_Relay_ | 1.79Mb
+      - 🇨🇳 CN 15 → openitsub.com
+      - 🇺🇸 US-150.230.41.9-62
+      - 🇦🇺 澳大利亚 001
+      - "@SSRSUB-V07-付费推荐:suo.yt/ssrsub"
+      - 🇨🇳 CN 45 → openitsub.com
+      - 🇯🇵 日本_1010034
+      - 🇦🇺 AU 澳大利亚(youtube阿伟科技)
       - 白嫖-0313
-      - 🇨🇳 CN 79 → openitsub.com
-      - CN_211.99.96.117_101183e6-343
-      - 🇪🇪 github.com/freefq - 爱沙尼亚  24
-      - 🇦🇺 澳大利亚_1010006 2
-      - 🇨🇳 CN 74 → openitsub.com
-      - 🇭🇰 中转+🇭🇰+HK+11+TG:@airproxies
-      - 🇨🇳 CN 8 → openitsub.com
-      - CN_139.227.50.179_101183e6-346
-      - 🇨🇳 CN 34 → openitsub.com
+      - 🇦🇺 澳大利亚 003
+      - 🇦🇺 澳大利亚 002
+      - "|25.48Mb"
+      - 🇨🇳 CN 2 → openitsub.com
+      - GH
+      - 🇨🇳 CN 20 → openitsub.com
+      - 🇦🇺 澳大利亚 006
+      - 🇺🇸 美国 038
+      - 🇨🇳 CN 67 → openitsub.com
+      - GH 2
+      - 🇺🇸 -美国-172.64.144.192
+      - 🇺🇸 美国 046
+      - 未知_1010057
+      - 🇺🇸 _US_美国
+      - 🇨🇳 CN 25 → openitsub.com
+      - 未知_1010035
+      - 🇨🇳 CN 1 → openitsub.com
+      - 🇯🇵 JP 日本(youtube阿伟科技)
+      - 🇺🇸 美国 029
+      - 🇭🇰 中转+🇭🇰+HK+40+TG:@airproxies
+      - 🇨🇳 CN 33 → openitsub.com
       - CN_120.241.126.83_101183e6-284
+      - CN_120.241.126.83_101183e6-361
+      - 🇻🇳 VN 越南(youtube阿伟科技)
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇺🇸 美国 018
-      - KR_146.56.155.70_101183e6-199
-      - 🇨🇳 CN 105 → openitsub.com
-      - 🇷🇺 _RU_俄罗斯联邦
-      - 🇯🇵 JP 105
-      - 🇺🇸 :美国-ss-162.251.61.221:802-被墙-直连-解锁美国地区NF非自制剧
-      - 🇺🇸 US 589
-      - CN_139.227.50.179_101183e6-345
+      - 🇯🇵 [09-26]|openrunner|日本(JP)Japan/Tokyo_16
+      - 🇯🇵 日本_1010151
+      - 🇺🇸 US 5 → openitsub.com
+      - KR_146.56.155.70_10118241-103
       - 🇺🇸 美国 026
-      - 🇯🇵 JP 日本(youtube阿伟科技)
-      - 🇯🇵 中转+🇯🇵+JP+34+TG:@nodpai
-      - JP_138.2.8.227_101183e6-77
-      - CN_139.227.50.179_101183e6-334
-      - aaa 314
-      - 🇨🇳 CN 14 → openitsub.com
+      - KR_146.56.155.70_101183e6-199
+      - 🇺🇸 美国 027
       - "|50.34Mb"
-      - 🇺🇸 US 2 → openitsub.com
-      - 🇨🇳 CN 42 → openitsub.com
-      - 🇯🇵 中转+🇯🇵+JP+30+TG:@airproxies
+      - 🇺🇸 美国_1010091
+      - 未知_1010058
       - 🇨🇳 +CN+68
-      - 🇨🇳 +CN+60
+      - 🇰🇷 韩国_1010012
+      - 🇨🇳 CN 78 → openitsub.com
       - 🇨🇳 CN 22 → openitsub.com
-      - 🇰🇷 KR-3.35.136.153-010
-      - 🇨🇳 CN 44 → openitsub.com
-      - 🇸🇬 +TG频道:@kxswa+|+新加坡+02
-      - 🇷🇺 RU 俄罗斯(youtube阿伟科技)
-      - 🇨🇳 CN 46 → openitsub.com
-      - 🇨🇳 CN 48 → openitsub.com
-      - 🇯🇵 中转+🇯🇵+JP+32+TG:@airproxies
-      - 🇯🇵 中转+🇯🇵+JP+36+TG:@airproxies
       - 🇺🇸 :美国-ss-162.251.61.221:804-被墙-直连-解锁美国地区NF非自制剧
-      - 🇭🇰 中转+🇭🇰+HK+84+TG:@airproxies
-      - 🇨🇳 +CN+75
-      - _null_null
-      - 🇺🇸 +US+619
-      - 🇷🇺 _RU_俄罗斯联邦 2
-      - 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 25
-      - 🇺🇸 美国 029
-      - 45.77.48.44:8099
-      - 🇭🇰 mianfeifq |🇨🇳+HK+17
-      - CN_211.99.96.117_101183e6-319
-      - 🇭🇰 _HK_香港
-      - 🇳🇱 荷兰 002
-      - 🇨🇳 CN 72 → openitsub.com
-      - "|71.07Mb"
-      - 🇨🇳 CN 71 → openitsub.com
-      - 🇺🇸 US 1 → openitsub.com
-      - 999
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
-      - 🇺🇸 美国 021
-      - 🇨🇳 CN 32 → openitsub.com
-      - 未知_1010035
-      - 🇨🇳 CN 51 → openitsub.com
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 2
-      - 🇺🇸 美国 034
-      - 🇦🇺 AU 澳大利亚(youtube阿伟科技)
-      - 🇦🇺 澳大利亚_1010003
-      - 🇯🇵 +TG频道:@kxswa+|+日本+02
-      - 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧 2
-      - 🇦🇺 澳大利亚_1010005
-      - "| 1.79Mb"
+      - 🇦🇺 AU 7
+      - 🇺🇸 美国 071
+      - 🇺🇸 :美国-ss-162.251.61.221:800-被墙-直连-解锁美国地区NF非自制剧
+      - 🇰🇷 KR-3.35.136.153-010
+      - 🇨🇳 CN 53 → openitsub.com
+      - 🇯🇵 中转+🇯🇵+JP+34+TG:@nodpai
+      - aaa 314
       - 🇺🇸 :美国-ss-162.251.61.221:804-被墙-直连-解锁美国地区NF非自制剧 2
-      - 🇨🇳 CN 77 → openitsub.com
+      - 🇭🇰 +HK+9+TG:@nodpai+(Beta)
+      - 🇯🇵 日本_1010033
+      - 🇨🇳 CN 3 → openitsub.com
+      - 🇺🇸 US 589
+      - 🇯🇵 JP 4 → openitsub.com
+      - HK_228 |71.07Mb
+      - mianfeifq+215
+      - 🇺🇸 美国 034
+      - 🇺🇸 美国 030
+      - 🇺🇸 US 3 → openitsub.com
       - "|301.90Mb"
-      - 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧 3
-      - 🇯🇵 +TG频道:@kxswa+|+日本+01
+      - 999
+      - 🇭🇰 _HK_香港
+      - 🇦🇺 AU 1 → openitsub.com
+      - 🇭🇰 HK+香港(youtube科技)_2
+      - 🇯🇵 日本_1010153
+      - 🇯🇵 日本_1010012
       - 🇦🇺 澳大利亚_1010006
+      - 🇺🇸 US 859
+      - 🇭🇰 HK 1 → openitsub.com
+      - 🇯🇵 github.com/freefq - 日本  48
+      - 🇯🇵 日本_1010024
+      - 🇨🇳 CN 78 → openitsub.com 2
+      - 🇦🇺 澳大利亚_1010006 2
+      - 🇨🇳 +CN+16
+      - 🇨🇳 CN 76 → openitsub.com
+      - 🇯🇵 日本_1010012 2
+      - 🇺🇸 US 859 2
+      - 🇦🇺 澳大利亚_1010005
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
+      - 🇭🇰 mianfeifq |🇨🇳+HK+17
+      - "| 1.79Mb"
+      - 🇦🇺 澳大利亚_1010003
+      - 🇭🇰 [BGP-GSLB]香港•BGP
+      - 🇺🇸 [BGP-GSLB]美国1•0.8x
+      - 45.77.48.44:8099
+      - 🇺🇸 -美国-au.vmess1.xservs.xyz
       - mianfeifq+189
       - mianfeifq+256
-      - 🇦🇺 澳大利亚 001
-      - 🇨🇳 CN 31 → openitsub.com
-      - 🇯🇵 日本_1010024
-      - 🇨🇳 CN 78 → openitsub.com
-      - 🇭🇰 +HK+9+TG:@nodpai+(Beta)
       - 45.77.48.44:8099 2
-      - 🇭🇰 中转+🇭🇰+HK+44+TG:@nodpai
-      - 🇺🇸 US 6 → openitsub.com
+      - 🇦🇺 澳大利亚 004
+      - 🇨🇳 CN 16 → openitsub.com
       - 🇦🇺 澳大利亚_1010005 2
-      - 🇨🇳 CN 86 → openitsub.com
-      - 🇺🇸 美国 034 2
-      - 🇨🇳 CN 49 → openitsub.com
-      - Relay_Relay_ |301.90Mb
-      - "|25.48Mb"
-      - Relay_ |50.15Mb
-      - 🇵🇹 葡萄牙(TG频道:@kxswa)
-      - 🇦🇺 +AU+8
-      - GH
-      - 未知_1010057
+      - PT_【付费推荐：wxfz.ml】
+      - Relay_Relay_ | 1.79Mb
+      - 🇨🇳 CN 15 → openitsub.com
+      - 🇺🇸 US-150.230.41.9-62
+      - 🇦🇺 澳大利亚 001
+      - "@SSRSUB-V07-付费推荐:suo.yt/ssrsub"
+      - 🇨🇳 CN 45 → openitsub.com
+      - 🇯🇵 日本_1010034
+      - 🇦🇺 AU 澳大利亚(youtube阿伟科技)
       - 白嫖-0313
-      - 🇨🇳 CN 79 → openitsub.com
-      - CN_211.99.96.117_101183e6-343
-      - 🇪🇪 github.com/freefq - 爱沙尼亚  24
-      - 🇦🇺 澳大利亚_1010006 2
-      - 🇨🇳 CN 74 → openitsub.com
-      - 🇭🇰 中转+🇭🇰+HK+11+TG:@airproxies
-      - 🇨🇳 CN 8 → openitsub.com
-      - CN_139.227.50.179_101183e6-346
-      - 🇨🇳 CN 34 → openitsub.com
+      - 🇦🇺 澳大利亚 003
+      - 🇦🇺 澳大利亚 002
+      - "|25.48Mb"
+      - 🇨🇳 CN 2 → openitsub.com
+      - GH
+      - 🇨🇳 CN 20 → openitsub.com
+      - 🇦🇺 澳大利亚 006
+      - 🇺🇸 美国 038
+      - 🇨🇳 CN 67 → openitsub.com
+      - GH 2
+      - 🇺🇸 -美国-172.64.144.192
+      - 🇺🇸 美国 046
+      - 未知_1010057
+      - 🇺🇸 _US_美国
+      - 🇨🇳 CN 25 → openitsub.com
+      - 未知_1010035
+      - 🇨🇳 CN 1 → openitsub.com
+      - 🇯🇵 JP 日本(youtube阿伟科技)
+      - 🇺🇸 美国 029
+      - 🇭🇰 中转+🇭🇰+HK+40+TG:@airproxies
+      - 🇨🇳 CN 33 → openitsub.com
       - CN_120.241.126.83_101183e6-284
+      - CN_120.241.126.83_101183e6-361
+      - 🇻🇳 VN 越南(youtube阿伟科技)
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇺🇸 美国 018
-      - KR_146.56.155.70_101183e6-199
-      - 🇨🇳 CN 105 → openitsub.com
-      - 🇷🇺 _RU_俄罗斯联邦
-      - 🇯🇵 JP 105
-      - 🇺🇸 :美国-ss-162.251.61.221:802-被墙-直连-解锁美国地区NF非自制剧
-      - 🇺🇸 US 589
-      - CN_139.227.50.179_101183e6-345
+      - 🇯🇵 [09-26]|openrunner|日本(JP)Japan/Tokyo_16
+      - 🇯🇵 日本_1010151
+      - 🇺🇸 US 5 → openitsub.com
+      - KR_146.56.155.70_10118241-103
       - 🇺🇸 美国 026
-      - 🇯🇵 JP 日本(youtube阿伟科技)
-      - 🇯🇵 中转+🇯🇵+JP+34+TG:@nodpai
-      - JP_138.2.8.227_101183e6-77
-      - CN_139.227.50.179_101183e6-334
-      - aaa 314
-      - 🇨🇳 CN 14 → openitsub.com
+      - KR_146.56.155.70_101183e6-199
+      - 🇺🇸 美国 027
       - "|50.34Mb"
-      - 🇺🇸 US 2 → openitsub.com
-      - 🇨🇳 CN 42 → openitsub.com
-      - 🇯🇵 中转+🇯🇵+JP+30+TG:@airproxies
+      - 🇺🇸 美国_1010091
+      - 未知_1010058
       - 🇨🇳 +CN+68
-      - 🇨🇳 +CN+60
+      - 🇰🇷 韩国_1010012
+      - 🇨🇳 CN 78 → openitsub.com
       - 🇨🇳 CN 22 → openitsub.com
-      - 🇰🇷 KR-3.35.136.153-010
-      - 🇨🇳 CN 44 → openitsub.com
-      - 🇸🇬 +TG频道:@kxswa+|+新加坡+02
-      - 🇷🇺 RU 俄罗斯(youtube阿伟科技)
-      - 🇨🇳 CN 46 → openitsub.com
-      - 🇨🇳 CN 48 → openitsub.com
-      - 🇯🇵 中转+🇯🇵+JP+32+TG:@airproxies
-      - 🇯🇵 中转+🇯🇵+JP+36+TG:@airproxies
       - 🇺🇸 :美国-ss-162.251.61.221:804-被墙-直连-解锁美国地区NF非自制剧
-      - 🇭🇰 中转+🇭🇰+HK+84+TG:@airproxies
-      - 🇨🇳 +CN+75
-      - _null_null
-      - 🇺🇸 +US+619
-      - 🇷🇺 _RU_俄罗斯联邦 2
-      - 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 25
-      - 🇺🇸 美国 029
-      - 45.77.48.44:8099
-      - 🇭🇰 mianfeifq |🇨🇳+HK+17
-      - CN_211.99.96.117_101183e6-319
-      - 🇭🇰 _HK_香港
-      - 🇳🇱 荷兰 002
-      - 🇨🇳 CN 72 → openitsub.com
-      - "|71.07Mb"
-      - 🇨🇳 CN 71 → openitsub.com
-      - 🇺🇸 US 1 → openitsub.com
-      - 999
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
-      - 🇺🇸 美国 021
-      - 🇨🇳 CN 32 → openitsub.com
-      - 未知_1010035
-      - 🇨🇳 CN 51 → openitsub.com
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 2
-      - 🇺🇸 美国 034
-      - 🇦🇺 AU 澳大利亚(youtube阿伟科技)
-      - 🇦🇺 澳大利亚_1010003
-      - 🇯🇵 +TG频道:@kxswa+|+日本+02
-      - 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧 2
-      - 🇦🇺 澳大利亚_1010005
-      - "| 1.79Mb"
+      - 🇦🇺 AU 7
+      - 🇺🇸 美国 071
+      - 🇺🇸 :美国-ss-162.251.61.221:800-被墙-直连-解锁美国地区NF非自制剧
+      - 🇰🇷 KR-3.35.136.153-010
+      - 🇨🇳 CN 53 → openitsub.com
+      - 🇯🇵 中转+🇯🇵+JP+34+TG:@nodpai
+      - aaa 314
       - 🇺🇸 :美国-ss-162.251.61.221:804-被墙-直连-解锁美国地区NF非自制剧 2
-      - 🇨🇳 CN 77 → openitsub.com
+      - 🇭🇰 +HK+9+TG:@nodpai+(Beta)
+      - 🇯🇵 日本_1010033
+      - 🇨🇳 CN 3 → openitsub.com
+      - 🇺🇸 US 589
+      - 🇯🇵 JP 4 → openitsub.com
+      - HK_228 |71.07Mb
+      - mianfeifq+215
+      - 🇺🇸 美国 034
+      - 🇺🇸 美国 030
+      - 🇺🇸 US 3 → openitsub.com
       - "|301.90Mb"
-      - 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧 3
-      - 🇯🇵 +TG频道:@kxswa+|+日本+01
+      - 999
+      - 🇭🇰 _HK_香港
+      - 🇦🇺 AU 1 → openitsub.com
+      - 🇭🇰 HK+香港(youtube科技)_2
+      - 🇯🇵 日本_1010153
+      - 🇯🇵 日本_1010012
       - 🇦🇺 澳大利亚_1010006
+      - 🇺🇸 US 859
+      - 🇭🇰 HK 1 → openitsub.com
+      - 🇯🇵 github.com/freefq - 日本  48
+      - 🇯🇵 日本_1010024
+      - 🇨🇳 CN 78 → openitsub.com 2
+      - 🇦🇺 澳大利亚_1010006 2
+      - 🇨🇳 +CN+16
+      - 🇨🇳 CN 76 → openitsub.com
+      - 🇯🇵 日本_1010012 2
+      - 🇺🇸 US 859 2
+      - 🇦🇺 澳大利亚_1010005
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
+      - 🇭🇰 mianfeifq |🇨🇳+HK+17
+      - "| 1.79Mb"
+      - 🇦🇺 澳大利亚_1010003
+      - 🇭🇰 [BGP-GSLB]香港•BGP
+      - 🇺🇸 [BGP-GSLB]美国1•0.8x
+      - 45.77.48.44:8099
+      - 🇺🇸 -美国-au.vmess1.xservs.xyz
       - mianfeifq+189
       - mianfeifq+256
-      - 🇦🇺 澳大利亚 001
-      - 🇨🇳 CN 31 → openitsub.com
-      - 🇯🇵 日本_1010024
-      - 🇨🇳 CN 78 → openitsub.com
-      - 🇭🇰 +HK+9+TG:@nodpai+(Beta)
       - 45.77.48.44:8099 2
-      - 🇭🇰 中转+🇭🇰+HK+44+TG:@nodpai
-      - 🇺🇸 US 6 → openitsub.com
+      - 🇦🇺 澳大利亚 004
+      - 🇨🇳 CN 16 → openitsub.com
       - 🇦🇺 澳大利亚_1010005 2
-      - 🇨🇳 CN 86 → openitsub.com
-      - 🇺🇸 美国 034 2
-      - 🇨🇳 CN 49 → openitsub.com
-      - Relay_Relay_ |301.90Mb
-      - "|25.48Mb"
-      - Relay_ |50.15Mb
-      - 🇵🇹 葡萄牙(TG频道:@kxswa)
-      - 🇦🇺 +AU+8
-      - GH
-      - 未知_1010057
+      - PT_【付费推荐：wxfz.ml】
+      - Relay_Relay_ | 1.79Mb
+      - 🇨🇳 CN 15 → openitsub.com
+      - 🇺🇸 US-150.230.41.9-62
+      - 🇦🇺 澳大利亚 001
+      - "@SSRSUB-V07-付费推荐:suo.yt/ssrsub"
+      - 🇨🇳 CN 45 → openitsub.com
+      - 🇯🇵 日本_1010034
+      - 🇦🇺 AU 澳大利亚(youtube阿伟科技)
       - 白嫖-0313
-      - 🇨🇳 CN 79 → openitsub.com
-      - CN_211.99.96.117_101183e6-343
-      - 🇪🇪 github.com/freefq - 爱沙尼亚  24
-      - 🇦🇺 澳大利亚_1010006 2
-      - 🇨🇳 CN 74 → openitsub.com
-      - 🇭🇰 中转+🇭🇰+HK+11+TG:@airproxies
-      - 🇨🇳 CN 8 → openitsub.com
-      - CN_139.227.50.179_101183e6-346
-      - 🇨🇳 CN 34 → openitsub.com
+      - 🇦🇺 澳大利亚 003
+      - 🇦🇺 澳大利亚 002
+      - "|25.48Mb"
+      - 🇨🇳 CN 2 → openitsub.com
+      - GH
+      - 🇨🇳 CN 20 → openitsub.com
+      - 🇦🇺 澳大利亚 006
+      - 🇺🇸 美国 038
+      - 🇨🇳 CN 67 → openitsub.com
+      - GH 2
+      - 🇺🇸 -美国-172.64.144.192
+      - 🇺🇸 美国 046
+      - 未知_1010057
+      - 🇺🇸 _US_美国
+      - 🇨🇳 CN 25 → openitsub.com
+      - 未知_1010035
+      - 🇨🇳 CN 1 → openitsub.com
+      - 🇯🇵 JP 日本(youtube阿伟科技)
+      - 🇺🇸 美国 029
+      - 🇭🇰 中转+🇭🇰+HK+40+TG:@airproxies
+      - 🇨🇳 CN 33 → openitsub.com
       - CN_120.241.126.83_101183e6-284
+      - CN_120.241.126.83_101183e6-361
+      - 🇻🇳 VN 越南(youtube阿伟科技)
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
       - 🇭🇰 _HK_香港
+      - 🇭🇰 HK+香港(youtube科技)_2
+      - 🇭🇰 [BGP-GSLB]香港•BGP
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇺🇸 美国 018
-      - KR_146.56.155.70_101183e6-199
-      - 🇨🇳 CN 105 → openitsub.com
-      - 🇷🇺 _RU_俄罗斯联邦
-      - 🇯🇵 JP 105
-      - 🇺🇸 :美国-ss-162.251.61.221:802-被墙-直连-解锁美国地区NF非自制剧
-      - 🇺🇸 US 589
-      - CN_139.227.50.179_101183e6-345
+      - 🇯🇵 [09-26]|openrunner|日本(JP)Japan/Tokyo_16
+      - 🇯🇵 日本_1010151
+      - 🇺🇸 US 5 → openitsub.com
+      - KR_146.56.155.70_10118241-103
       - 🇺🇸 美国 026
-      - 🇯🇵 JP 日本(youtube阿伟科技)
-      - 🇯🇵 中转+🇯🇵+JP+34+TG:@nodpai
-      - JP_138.2.8.227_101183e6-77
-      - CN_139.227.50.179_101183e6-334
-      - aaa 314
-      - 🇨🇳 CN 14 → openitsub.com
+      - KR_146.56.155.70_101183e6-199
+      - 🇺🇸 美国 027
       - "|50.34Mb"
-      - 🇺🇸 US 2 → openitsub.com
-      - 🇨🇳 CN 42 → openitsub.com
-      - 🇯🇵 中转+🇯🇵+JP+30+TG:@airproxies
+      - 🇺🇸 美国_1010091
+      - 未知_1010058
       - 🇨🇳 +CN+68
-      - 🇨🇳 +CN+60
+      - 🇰🇷 韩国_1010012
+      - 🇨🇳 CN 78 → openitsub.com
       - 🇨🇳 CN 22 → openitsub.com
-      - 🇰🇷 KR-3.35.136.153-010
-      - 🇨🇳 CN 44 → openitsub.com
-      - 🇸🇬 +TG频道:@kxswa+|+新加坡+02
-      - 🇷🇺 RU 俄罗斯(youtube阿伟科技)
-      - 🇨🇳 CN 46 → openitsub.com
-      - 🇨🇳 CN 48 → openitsub.com
-      - 🇯🇵 中转+🇯🇵+JP+32+TG:@airproxies
-      - 🇯🇵 中转+🇯🇵+JP+36+TG:@airproxies
       - 🇺🇸 :美国-ss-162.251.61.221:804-被墙-直连-解锁美国地区NF非自制剧
-      - 🇭🇰 中转+🇭🇰+HK+84+TG:@airproxies
-      - 🇨🇳 +CN+75
-      - _null_null
-      - 🇺🇸 +US+619
-      - 🇷🇺 _RU_俄罗斯联邦 2
-      - 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 25
-      - 🇺🇸 美国 029
-      - 45.77.48.44:8099
-      - 🇭🇰 mianfeifq |🇨🇳+HK+17
-      - CN_211.99.96.117_101183e6-319
-      - 🇭🇰 _HK_香港
-      - 🇳🇱 荷兰 002
-      - 🇨🇳 CN 72 → openitsub.com
-      - "|71.07Mb"
-      - 🇨🇳 CN 71 → openitsub.com
-      - 🇺🇸 US 1 → openitsub.com
-      - 999
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
-      - 🇺🇸 美国 021
-      - 🇨🇳 CN 32 → openitsub.com
-      - 未知_1010035
-      - 🇨🇳 CN 51 → openitsub.com
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 2
-      - 🇺🇸 美国 034
-      - 🇦🇺 AU 澳大利亚(youtube阿伟科技)
-      - 🇦🇺 澳大利亚_1010003
-      - 🇯🇵 +TG频道:@kxswa+|+日本+02
-      - 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧 2
-      - 🇦🇺 澳大利亚_1010005
-      - "| 1.79Mb"
+      - 🇦🇺 AU 7
+      - 🇺🇸 美国 071
+      - 🇺🇸 :美国-ss-162.251.61.221:800-被墙-直连-解锁美国地区NF非自制剧
+      - 🇰🇷 KR-3.35.136.153-010
+      - 🇨🇳 CN 53 → openitsub.com
+      - 🇯🇵 中转+🇯🇵+JP+34+TG:@nodpai
+      - aaa 314
       - 🇺🇸 :美国-ss-162.251.61.221:804-被墙-直连-解锁美国地区NF非自制剧 2
-      - 🇨🇳 CN 77 → openitsub.com
+      - 🇭🇰 +HK+9+TG:@nodpai+(Beta)
+      - 🇯🇵 日本_1010033
+      - 🇨🇳 CN 3 → openitsub.com
+      - 🇺🇸 US 589
+      - 🇯🇵 JP 4 → openitsub.com
+      - HK_228 |71.07Mb
+      - mianfeifq+215
+      - 🇺🇸 美国 034
+      - 🇺🇸 美国 030
+      - 🇺🇸 US 3 → openitsub.com
       - "|301.90Mb"
-      - 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧 3
-      - 🇯🇵 +TG频道:@kxswa+|+日本+01
+      - 999
+      - 🇭🇰 _HK_香港
+      - 🇦🇺 AU 1 → openitsub.com
+      - 🇭🇰 HK+香港(youtube科技)_2
+      - 🇯🇵 日本_1010153
+      - 🇯🇵 日本_1010012
       - 🇦🇺 澳大利亚_1010006
+      - 🇺🇸 US 859
+      - 🇭🇰 HK 1 → openitsub.com
+      - 🇯🇵 github.com/freefq - 日本  48
+      - 🇯🇵 日本_1010024
+      - 🇨🇳 CN 78 → openitsub.com 2
+      - 🇦🇺 澳大利亚_1010006 2
+      - 🇨🇳 +CN+16
+      - 🇨🇳 CN 76 → openitsub.com
+      - 🇯🇵 日本_1010012 2
+      - 🇺🇸 US 859 2
+      - 🇦🇺 澳大利亚_1010005
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
+      - 🇭🇰 mianfeifq |🇨🇳+HK+17
+      - "| 1.79Mb"
+      - 🇦🇺 澳大利亚_1010003
+      - 🇭🇰 [BGP-GSLB]香港•BGP
+      - 🇺🇸 [BGP-GSLB]美国1•0.8x
+      - 45.77.48.44:8099
+      - 🇺🇸 -美国-au.vmess1.xservs.xyz
       - mianfeifq+189
       - mianfeifq+256
-      - 🇦🇺 澳大利亚 001
-      - 🇨🇳 CN 31 → openitsub.com
-      - 🇯🇵 日本_1010024
-      - 🇨🇳 CN 78 → openitsub.com
-      - 🇭🇰 +HK+9+TG:@nodpai+(Beta)
       - 45.77.48.44:8099 2
-      - 🇭🇰 中转+🇭🇰+HK+44+TG:@nodpai
-      - 🇺🇸 US 6 → openitsub.com
+      - 🇦🇺 澳大利亚 004
+      - 🇨🇳 CN 16 → openitsub.com
       - 🇦🇺 澳大利亚_1010005 2
-      - 🇨🇳 CN 86 → openitsub.com
-      - 🇺🇸 美国 034 2
-      - 🇨🇳 CN 49 → openitsub.com
-      - Relay_Relay_ |301.90Mb
-      - "|25.48Mb"
-      - Relay_ |50.15Mb
-      - 🇵🇹 葡萄牙(TG频道:@kxswa)
-      - 🇦🇺 +AU+8
-      - GH
-      - 未知_1010057
+      - PT_【付费推荐：wxfz.ml】
+      - Relay_Relay_ | 1.79Mb
+      - 🇨🇳 CN 15 → openitsub.com
+      - 🇺🇸 US-150.230.41.9-62
+      - 🇦🇺 澳大利亚 001
+      - "@SSRSUB-V07-付费推荐:suo.yt/ssrsub"
+      - 🇨🇳 CN 45 → openitsub.com
+      - 🇯🇵 日本_1010034
+      - 🇦🇺 AU 澳大利亚(youtube阿伟科技)
       - 白嫖-0313
-      - 🇨🇳 CN 79 → openitsub.com
-      - CN_211.99.96.117_101183e6-343
-      - 🇪🇪 github.com/freefq - 爱沙尼亚  24
-      - 🇦🇺 澳大利亚_1010006 2
-      - 🇨🇳 CN 74 → openitsub.com
-      - 🇭🇰 中转+🇭🇰+HK+11+TG:@airproxies
-      - 🇨🇳 CN 8 → openitsub.com
-      - CN_139.227.50.179_101183e6-346
-      - 🇨🇳 CN 34 → openitsub.com
+      - 🇦🇺 澳大利亚 003
+      - 🇦🇺 澳大利亚 002
+      - "|25.48Mb"
+      - 🇨🇳 CN 2 → openitsub.com
+      - GH
+      - 🇨🇳 CN 20 → openitsub.com
+      - 🇦🇺 澳大利亚 006
+      - 🇺🇸 美国 038
+      - 🇨🇳 CN 67 → openitsub.com
+      - GH 2
+      - 🇺🇸 -美国-172.64.144.192
+      - 🇺🇸 美国 046
+      - 未知_1010057
+      - 🇺🇸 _US_美国
+      - 🇨🇳 CN 25 → openitsub.com
+      - 未知_1010035
+      - 🇨🇳 CN 1 → openitsub.com
+      - 🇯🇵 JP 日本(youtube阿伟科技)
+      - 🇺🇸 美国 029
+      - 🇭🇰 中转+🇭🇰+HK+40+TG:@airproxies
+      - 🇨🇳 CN 33 → openitsub.com
       - CN_120.241.126.83_101183e6-284
+      - CN_120.241.126.83_101183e6-361
+      - 🇻🇳 VN 越南(youtube阿伟科技)
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇺🇸 美国 018
-      - KR_146.56.155.70_101183e6-199
-      - 🇨🇳 CN 105 → openitsub.com
-      - 🇷🇺 _RU_俄罗斯联邦
-      - 🇯🇵 JP 105
-      - 🇺🇸 :美国-ss-162.251.61.221:802-被墙-直连-解锁美国地区NF非自制剧
-      - 🇺🇸 US 589
-      - CN_139.227.50.179_101183e6-345
+      - 🇯🇵 [09-26]|openrunner|日本(JP)Japan/Tokyo_16
+      - 🇯🇵 日本_1010151
+      - 🇺🇸 US 5 → openitsub.com
+      - KR_146.56.155.70_10118241-103
       - 🇺🇸 美国 026
-      - 🇯🇵 JP 日本(youtube阿伟科技)
-      - 🇯🇵 中转+🇯🇵+JP+34+TG:@nodpai
-      - JP_138.2.8.227_101183e6-77
-      - CN_139.227.50.179_101183e6-334
-      - aaa 314
-      - 🇨🇳 CN 14 → openitsub.com
+      - KR_146.56.155.70_101183e6-199
+      - 🇺🇸 美国 027
       - "|50.34Mb"
-      - 🇺🇸 US 2 → openitsub.com
-      - 🇨🇳 CN 42 → openitsub.com
-      - 🇯🇵 中转+🇯🇵+JP+30+TG:@airproxies
+      - 🇺🇸 美国_1010091
+      - 未知_1010058
       - 🇨🇳 +CN+68
-      - 🇨🇳 +CN+60
+      - 🇰🇷 韩国_1010012
+      - 🇨🇳 CN 78 → openitsub.com
       - 🇨🇳 CN 22 → openitsub.com
-      - 🇰🇷 KR-3.35.136.153-010
-      - 🇨🇳 CN 44 → openitsub.com
-      - 🇸🇬 +TG频道:@kxswa+|+新加坡+02
-      - 🇷🇺 RU 俄罗斯(youtube阿伟科技)
-      - 🇨🇳 CN 46 → openitsub.com
-      - 🇨🇳 CN 48 → openitsub.com
-      - 🇯🇵 中转+🇯🇵+JP+32+TG:@airproxies
-      - 🇯🇵 中转+🇯🇵+JP+36+TG:@airproxies
       - 🇺🇸 :美国-ss-162.251.61.221:804-被墙-直连-解锁美国地区NF非自制剧
-      - 🇭🇰 中转+🇭🇰+HK+84+TG:@airproxies
-      - 🇨🇳 +CN+75
-      - _null_null
-      - 🇺🇸 +US+619
-      - 🇷🇺 _RU_俄罗斯联邦 2
-      - 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 25
-      - 🇺🇸 美国 029
-      - 45.77.48.44:8099
-      - 🇭🇰 mianfeifq |🇨🇳+HK+17
-      - CN_211.99.96.117_101183e6-319
-      - 🇭🇰 _HK_香港
-      - 🇳🇱 荷兰 002
-      - 🇨🇳 CN 72 → openitsub.com
-      - "|71.07Mb"
-      - 🇨🇳 CN 71 → openitsub.com
-      - 🇺🇸 US 1 → openitsub.com
-      - 999
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
-      - 🇺🇸 美国 021
-      - 🇨🇳 CN 32 → openitsub.com
-      - 未知_1010035
-      - 🇨🇳 CN 51 → openitsub.com
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 2
-      - 🇺🇸 美国 034
-      - 🇦🇺 AU 澳大利亚(youtube阿伟科技)
-      - 🇦🇺 澳大利亚_1010003
-      - 🇯🇵 +TG频道:@kxswa+|+日本+02
-      - 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧 2
-      - 🇦🇺 澳大利亚_1010005
-      - "| 1.79Mb"
+      - 🇦🇺 AU 7
+      - 🇺🇸 美国 071
+      - 🇺🇸 :美国-ss-162.251.61.221:800-被墙-直连-解锁美国地区NF非自制剧
+      - 🇰🇷 KR-3.35.136.153-010
+      - 🇨🇳 CN 53 → openitsub.com
+      - 🇯🇵 中转+🇯🇵+JP+34+TG:@nodpai
+      - aaa 314
       - 🇺🇸 :美国-ss-162.251.61.221:804-被墙-直连-解锁美国地区NF非自制剧 2
-      - 🇨🇳 CN 77 → openitsub.com
+      - 🇭🇰 +HK+9+TG:@nodpai+(Beta)
+      - 🇯🇵 日本_1010033
+      - 🇨🇳 CN 3 → openitsub.com
+      - 🇺🇸 US 589
+      - 🇯🇵 JP 4 → openitsub.com
+      - HK_228 |71.07Mb
+      - mianfeifq+215
+      - 🇺🇸 美国 034
+      - 🇺🇸 美国 030
+      - 🇺🇸 US 3 → openitsub.com
       - "|301.90Mb"
-      - 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧 3
-      - 🇯🇵 +TG频道:@kxswa+|+日本+01
+      - 999
+      - 🇭🇰 _HK_香港
+      - 🇦🇺 AU 1 → openitsub.com
+      - 🇭🇰 HK+香港(youtube科技)_2
+      - 🇯🇵 日本_1010153
+      - 🇯🇵 日本_1010012
       - 🇦🇺 澳大利亚_1010006
+      - 🇺🇸 US 859
+      - 🇭🇰 HK 1 → openitsub.com
+      - 🇯🇵 github.com/freefq - 日本  48
+      - 🇯🇵 日本_1010024
+      - 🇨🇳 CN 78 → openitsub.com 2
+      - 🇦🇺 澳大利亚_1010006 2
+      - 🇨🇳 +CN+16
+      - 🇨🇳 CN 76 → openitsub.com
+      - 🇯🇵 日本_1010012 2
+      - 🇺🇸 US 859 2
+      - 🇦🇺 澳大利亚_1010005
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
+      - 🇭🇰 mianfeifq |🇨🇳+HK+17
+      - "| 1.79Mb"
+      - 🇦🇺 澳大利亚_1010003
+      - 🇭🇰 [BGP-GSLB]香港•BGP
+      - 🇺🇸 [BGP-GSLB]美国1•0.8x
+      - 45.77.48.44:8099
+      - 🇺🇸 -美国-au.vmess1.xservs.xyz
       - mianfeifq+189
       - mianfeifq+256
-      - 🇦🇺 澳大利亚 001
-      - 🇨🇳 CN 31 → openitsub.com
-      - 🇯🇵 日本_1010024
-      - 🇨🇳 CN 78 → openitsub.com
-      - 🇭🇰 +HK+9+TG:@nodpai+(Beta)
       - 45.77.48.44:8099 2
-      - 🇭🇰 中转+🇭🇰+HK+44+TG:@nodpai
-      - 🇺🇸 US 6 → openitsub.com
+      - 🇦🇺 澳大利亚 004
+      - 🇨🇳 CN 16 → openitsub.com
       - 🇦🇺 澳大利亚_1010005 2
-      - 🇨🇳 CN 86 → openitsub.com
-      - 🇺🇸 美国 034 2
-      - 🇨🇳 CN 49 → openitsub.com
-      - Relay_Relay_ |301.90Mb
-      - "|25.48Mb"
-      - Relay_ |50.15Mb
-      - 🇵🇹 葡萄牙(TG频道:@kxswa)
-      - 🇦🇺 +AU+8
-      - GH
-      - 未知_1010057
+      - PT_【付费推荐：wxfz.ml】
+      - Relay_Relay_ | 1.79Mb
+      - 🇨🇳 CN 15 → openitsub.com
+      - 🇺🇸 US-150.230.41.9-62
+      - 🇦🇺 澳大利亚 001
+      - "@SSRSUB-V07-付费推荐:suo.yt/ssrsub"
+      - 🇨🇳 CN 45 → openitsub.com
+      - 🇯🇵 日本_1010034
+      - 🇦🇺 AU 澳大利亚(youtube阿伟科技)
       - 白嫖-0313
-      - 🇨🇳 CN 79 → openitsub.com
-      - CN_211.99.96.117_101183e6-343
-      - 🇪🇪 github.com/freefq - 爱沙尼亚  24
-      - 🇦🇺 澳大利亚_1010006 2
-      - 🇨🇳 CN 74 → openitsub.com
-      - 🇭🇰 中转+🇭🇰+HK+11+TG:@airproxies
-      - 🇨🇳 CN 8 → openitsub.com
-      - CN_139.227.50.179_101183e6-346
-      - 🇨🇳 CN 34 → openitsub.com
+      - 🇦🇺 澳大利亚 003
+      - 🇦🇺 澳大利亚 002
+      - "|25.48Mb"
+      - 🇨🇳 CN 2 → openitsub.com
+      - GH
+      - 🇨🇳 CN 20 → openitsub.com
+      - 🇦🇺 澳大利亚 006
+      - 🇺🇸 美国 038
+      - 🇨🇳 CN 67 → openitsub.com
+      - GH 2
+      - 🇺🇸 -美国-172.64.144.192
+      - 🇺🇸 美国 046
+      - 未知_1010057
+      - 🇺🇸 _US_美国
+      - 🇨🇳 CN 25 → openitsub.com
+      - 未知_1010035
+      - 🇨🇳 CN 1 → openitsub.com
+      - 🇯🇵 JP 日本(youtube阿伟科技)
+      - 🇺🇸 美国 029
+      - 🇭🇰 中转+🇭🇰+HK+40+TG:@airproxies
+      - 🇨🇳 CN 33 → openitsub.com
       - CN_120.241.126.83_101183e6-284
+      - CN_120.241.126.83_101183e6-361
+      - 🇻🇳 VN 越南(youtube阿伟科技)
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸 美国 018
-      - KR_146.56.155.70_101183e6-199
-      - 🇨🇳 CN 105 → openitsub.com
-      - 🇷🇺 _RU_俄罗斯联邦
-      - 🇯🇵 JP 105
-      - 🇺🇸 :美国-ss-162.251.61.221:802-被墙-直连-解锁美国地区NF非自制剧
-      - 🇺🇸 US 589
-      - CN_139.227.50.179_101183e6-345
+      - 🇯🇵 [09-26]|openrunner|日本(JP)Japan/Tokyo_16
+      - 🇯🇵 日本_1010151
+      - 🇺🇸 US 5 → openitsub.com
+      - KR_146.56.155.70_10118241-103
       - 🇺🇸 美国 026
-      - 🇯🇵 JP 日本(youtube阿伟科技)
-      - 🇯🇵 中转+🇯🇵+JP+34+TG:@nodpai
-      - JP_138.2.8.227_101183e6-77
-      - CN_139.227.50.179_101183e6-334
-      - aaa 314
-      - 🇨🇳 CN 14 → openitsub.com
+      - KR_146.56.155.70_101183e6-199
+      - 🇺🇸 美国 027
       - "|50.34Mb"
-      - 🇺🇸 US 2 → openitsub.com
-      - 🇨🇳 CN 42 → openitsub.com
-      - 🇯🇵 中转+🇯🇵+JP+30+TG:@airproxies
+      - 🇺🇸 美国_1010091
+      - 未知_1010058
       - 🇨🇳 +CN+68
-      - 🇨🇳 +CN+60
+      - 🇰🇷 韩国_1010012
+      - 🇨🇳 CN 78 → openitsub.com
       - 🇨🇳 CN 22 → openitsub.com
-      - 🇰🇷 KR-3.35.136.153-010
-      - 🇨🇳 CN 44 → openitsub.com
-      - 🇸🇬 +TG频道:@kxswa+|+新加坡+02
-      - 🇷🇺 RU 俄罗斯(youtube阿伟科技)
-      - 🇨🇳 CN 46 → openitsub.com
-      - 🇨🇳 CN 48 → openitsub.com
-      - 🇯🇵 中转+🇯🇵+JP+32+TG:@airproxies
-      - 🇯🇵 中转+🇯🇵+JP+36+TG:@airproxies
       - 🇺🇸 :美国-ss-162.251.61.221:804-被墙-直连-解锁美国地区NF非自制剧
-      - 🇭🇰 中转+🇭🇰+HK+84+TG:@airproxies
-      - 🇨🇳 +CN+75
-      - _null_null
-      - 🇺🇸 +US+619
-      - 🇷🇺 _RU_俄罗斯联邦 2
-      - 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 25
-      - 🇺🇸 美国 029
-      - 45.77.48.44:8099
-      - 🇭🇰 mianfeifq |🇨🇳+HK+17
-      - CN_211.99.96.117_101183e6-319
-      - 🇭🇰 _HK_香港
-      - 🇳🇱 荷兰 002
-      - 🇨🇳 CN 72 → openitsub.com
-      - "|71.07Mb"
-      - 🇨🇳 CN 71 → openitsub.com
-      - 🇺🇸 US 1 → openitsub.com
-      - 999
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
-      - 🇺🇸 美国 021
-      - 🇨🇳 CN 32 → openitsub.com
-      - 未知_1010035
-      - 🇨🇳 CN 51 → openitsub.com
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 2
-      - 🇺🇸 美国 034
-      - 🇦🇺 AU 澳大利亚(youtube阿伟科技)
-      - 🇦🇺 澳大利亚_1010003
-      - 🇯🇵 +TG频道:@kxswa+|+日本+02
-      - 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧 2
-      - 🇦🇺 澳大利亚_1010005
-      - "| 1.79Mb"
+      - 🇦🇺 AU 7
+      - 🇺🇸 美国 071
+      - 🇺🇸 :美国-ss-162.251.61.221:800-被墙-直连-解锁美国地区NF非自制剧
+      - 🇰🇷 KR-3.35.136.153-010
+      - 🇨🇳 CN 53 → openitsub.com
+      - 🇯🇵 中转+🇯🇵+JP+34+TG:@nodpai
+      - aaa 314
       - 🇺🇸 :美国-ss-162.251.61.221:804-被墙-直连-解锁美国地区NF非自制剧 2
-      - 🇨🇳 CN 77 → openitsub.com
+      - 🇭🇰 +HK+9+TG:@nodpai+(Beta)
+      - 🇯🇵 日本_1010033
+      - 🇨🇳 CN 3 → openitsub.com
+      - 🇺🇸 US 589
+      - 🇯🇵 JP 4 → openitsub.com
+      - HK_228 |71.07Mb
+      - mianfeifq+215
+      - 🇺🇸 美国 034
+      - 🇺🇸 美国 030
+      - 🇺🇸 US 3 → openitsub.com
       - "|301.90Mb"
-      - 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧 3
-      - 🇯🇵 +TG频道:@kxswa+|+日本+01
+      - 999
+      - 🇭🇰 _HK_香港
+      - 🇦🇺 AU 1 → openitsub.com
+      - 🇭🇰 HK+香港(youtube科技)_2
+      - 🇯🇵 日本_1010153
+      - 🇯🇵 日本_1010012
       - 🇦🇺 澳大利亚_1010006
+      - 🇺🇸 US 859
+      - 🇭🇰 HK 1 → openitsub.com
+      - 🇯🇵 github.com/freefq - 日本  48
+      - 🇯🇵 日本_1010024
+      - 🇨🇳 CN 78 → openitsub.com 2
+      - 🇦🇺 澳大利亚_1010006 2
+      - 🇨🇳 +CN+16
+      - 🇨🇳 CN 76 → openitsub.com
+      - 🇯🇵 日本_1010012 2
+      - 🇺🇸 US 859 2
+      - 🇦🇺 澳大利亚_1010005
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
+      - 🇭🇰 mianfeifq |🇨🇳+HK+17
+      - "| 1.79Mb"
+      - 🇦🇺 澳大利亚_1010003
+      - 🇭🇰 [BGP-GSLB]香港•BGP
+      - 🇺🇸 [BGP-GSLB]美国1•0.8x
+      - 45.77.48.44:8099
+      - 🇺🇸 -美国-au.vmess1.xservs.xyz
       - mianfeifq+189
       - mianfeifq+256
-      - 🇦🇺 澳大利亚 001
-      - 🇨🇳 CN 31 → openitsub.com
-      - 🇯🇵 日本_1010024
-      - 🇨🇳 CN 78 → openitsub.com
-      - 🇭🇰 +HK+9+TG:@nodpai+(Beta)
       - 45.77.48.44:8099 2
-      - 🇭🇰 中转+🇭🇰+HK+44+TG:@nodpai
-      - 🇺🇸 US 6 → openitsub.com
+      - 🇦🇺 澳大利亚 004
+      - 🇨🇳 CN 16 → openitsub.com
       - 🇦🇺 澳大利亚_1010005 2
-      - 🇨🇳 CN 86 → openitsub.com
-      - 🇺🇸 美国 034 2
-      - 🇨🇳 CN 49 → openitsub.com
-      - Relay_Relay_ |301.90Mb
-      - "|25.48Mb"
-      - Relay_ |50.15Mb
-      - 🇵🇹 葡萄牙(TG频道:@kxswa)
-      - 🇦🇺 +AU+8
-      - GH
-      - 未知_1010057
+      - PT_【付费推荐：wxfz.ml】
+      - Relay_Relay_ | 1.79Mb
+      - 🇨🇳 CN 15 → openitsub.com
+      - 🇺🇸 US-150.230.41.9-62
+      - 🇦🇺 澳大利亚 001
+      - "@SSRSUB-V07-付费推荐:suo.yt/ssrsub"
+      - 🇨🇳 CN 45 → openitsub.com
+      - 🇯🇵 日本_1010034
+      - 🇦🇺 AU 澳大利亚(youtube阿伟科技)
       - 白嫖-0313
-      - 🇨🇳 CN 79 → openitsub.com
-      - CN_211.99.96.117_101183e6-343
-      - 🇪🇪 github.com/freefq - 爱沙尼亚  24
-      - 🇦🇺 澳大利亚_1010006 2
-      - 🇨🇳 CN 74 → openitsub.com
-      - 🇭🇰 中转+🇭🇰+HK+11+TG:@airproxies
-      - 🇨🇳 CN 8 → openitsub.com
-      - CN_139.227.50.179_101183e6-346
-      - 🇨🇳 CN 34 → openitsub.com
+      - 🇦🇺 澳大利亚 003
+      - 🇦🇺 澳大利亚 002
+      - "|25.48Mb"
+      - 🇨🇳 CN 2 → openitsub.com
+      - GH
+      - 🇨🇳 CN 20 → openitsub.com
+      - 🇦🇺 澳大利亚 006
+      - 🇺🇸 美国 038
+      - 🇨🇳 CN 67 → openitsub.com
+      - GH 2
+      - 🇺🇸 -美国-172.64.144.192
+      - 🇺🇸 美国 046
+      - 未知_1010057
+      - 🇺🇸 _US_美国
+      - 🇨🇳 CN 25 → openitsub.com
+      - 未知_1010035
+      - 🇨🇳 CN 1 → openitsub.com
+      - 🇯🇵 JP 日本(youtube阿伟科技)
+      - 🇺🇸 美国 029
+      - 🇭🇰 中转+🇭🇰+HK+40+TG:@airproxies
+      - 🇨🇳 CN 33 → openitsub.com
       - CN_120.241.126.83_101183e6-284
+      - CN_120.241.126.83_101183e6-361
+      - 🇻🇳 VN 越南(youtube阿伟科技)
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -759,106 +761,106 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇺🇸 美国 018
-      - KR_146.56.155.70_101183e6-199
-      - 🇨🇳 CN 105 → openitsub.com
-      - 🇷🇺 _RU_俄罗斯联邦
-      - 🇯🇵 JP 105
-      - 🇺🇸 :美国-ss-162.251.61.221:802-被墙-直连-解锁美国地区NF非自制剧
-      - 🇺🇸 US 589
-      - CN_139.227.50.179_101183e6-345
+      - 🇯🇵 [09-26]|openrunner|日本(JP)Japan/Tokyo_16
+      - 🇯🇵 日本_1010151
+      - 🇺🇸 US 5 → openitsub.com
+      - KR_146.56.155.70_10118241-103
       - 🇺🇸 美国 026
-      - 🇯🇵 JP 日本(youtube阿伟科技)
-      - 🇯🇵 中转+🇯🇵+JP+34+TG:@nodpai
-      - JP_138.2.8.227_101183e6-77
-      - CN_139.227.50.179_101183e6-334
-      - aaa 314
-      - 🇨🇳 CN 14 → openitsub.com
+      - KR_146.56.155.70_101183e6-199
+      - 🇺🇸 美国 027
       - "|50.34Mb"
-      - 🇺🇸 US 2 → openitsub.com
-      - 🇨🇳 CN 42 → openitsub.com
-      - 🇯🇵 中转+🇯🇵+JP+30+TG:@airproxies
+      - 🇺🇸 美国_1010091
+      - 未知_1010058
       - 🇨🇳 +CN+68
-      - 🇨🇳 +CN+60
+      - 🇰🇷 韩国_1010012
+      - 🇨🇳 CN 78 → openitsub.com
       - 🇨🇳 CN 22 → openitsub.com
-      - 🇰🇷 KR-3.35.136.153-010
-      - 🇨🇳 CN 44 → openitsub.com
-      - 🇸🇬 +TG频道:@kxswa+|+新加坡+02
-      - 🇷🇺 RU 俄罗斯(youtube阿伟科技)
-      - 🇨🇳 CN 46 → openitsub.com
-      - 🇨🇳 CN 48 → openitsub.com
-      - 🇯🇵 中转+🇯🇵+JP+32+TG:@airproxies
-      - 🇯🇵 中转+🇯🇵+JP+36+TG:@airproxies
       - 🇺🇸 :美国-ss-162.251.61.221:804-被墙-直连-解锁美国地区NF非自制剧
-      - 🇭🇰 中转+🇭🇰+HK+84+TG:@airproxies
-      - 🇨🇳 +CN+75
-      - _null_null
-      - 🇺🇸 +US+619
-      - 🇷🇺 _RU_俄罗斯联邦 2
-      - 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 25
-      - 🇺🇸 美国 029
-      - 45.77.48.44:8099
-      - 🇭🇰 mianfeifq |🇨🇳+HK+17
-      - CN_211.99.96.117_101183e6-319
-      - 🇭🇰 _HK_香港
-      - 🇳🇱 荷兰 002
-      - 🇨🇳 CN 72 → openitsub.com
-      - "|71.07Mb"
-      - 🇨🇳 CN 71 → openitsub.com
-      - 🇺🇸 US 1 → openitsub.com
-      - 999
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
-      - 🇺🇸 美国 021
-      - 🇨🇳 CN 32 → openitsub.com
-      - 未知_1010035
-      - 🇨🇳 CN 51 → openitsub.com
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 2
-      - 🇺🇸 美国 034
-      - 🇦🇺 AU 澳大利亚(youtube阿伟科技)
-      - 🇦🇺 澳大利亚_1010003
-      - 🇯🇵 +TG频道:@kxswa+|+日本+02
-      - 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧 2
-      - 🇦🇺 澳大利亚_1010005
-      - "| 1.79Mb"
+      - 🇦🇺 AU 7
+      - 🇺🇸 美国 071
+      - 🇺🇸 :美国-ss-162.251.61.221:800-被墙-直连-解锁美国地区NF非自制剧
+      - 🇰🇷 KR-3.35.136.153-010
+      - 🇨🇳 CN 53 → openitsub.com
+      - 🇯🇵 中转+🇯🇵+JP+34+TG:@nodpai
+      - aaa 314
       - 🇺🇸 :美国-ss-162.251.61.221:804-被墙-直连-解锁美国地区NF非自制剧 2
-      - 🇨🇳 CN 77 → openitsub.com
+      - 🇭🇰 +HK+9+TG:@nodpai+(Beta)
+      - 🇯🇵 日本_1010033
+      - 🇨🇳 CN 3 → openitsub.com
+      - 🇺🇸 US 589
+      - 🇯🇵 JP 4 → openitsub.com
+      - HK_228 |71.07Mb
+      - mianfeifq+215
+      - 🇺🇸 美国 034
+      - 🇺🇸 美国 030
+      - 🇺🇸 US 3 → openitsub.com
       - "|301.90Mb"
-      - 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧 3
-      - 🇯🇵 +TG频道:@kxswa+|+日本+01
+      - 999
+      - 🇭🇰 _HK_香港
+      - 🇦🇺 AU 1 → openitsub.com
+      - 🇭🇰 HK+香港(youtube科技)_2
+      - 🇯🇵 日本_1010153
+      - 🇯🇵 日本_1010012
       - 🇦🇺 澳大利亚_1010006
+      - 🇺🇸 US 859
+      - 🇭🇰 HK 1 → openitsub.com
+      - 🇯🇵 github.com/freefq - 日本  48
+      - 🇯🇵 日本_1010024
+      - 🇨🇳 CN 78 → openitsub.com 2
+      - 🇦🇺 澳大利亚_1010006 2
+      - 🇨🇳 +CN+16
+      - 🇨🇳 CN 76 → openitsub.com
+      - 🇯🇵 日本_1010012 2
+      - 🇺🇸 US 859 2
+      - 🇦🇺 澳大利亚_1010005
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
+      - 🇭🇰 mianfeifq |🇨🇳+HK+17
+      - "| 1.79Mb"
+      - 🇦🇺 澳大利亚_1010003
+      - 🇭🇰 [BGP-GSLB]香港•BGP
+      - 🇺🇸 [BGP-GSLB]美国1•0.8x
+      - 45.77.48.44:8099
+      - 🇺🇸 -美国-au.vmess1.xservs.xyz
       - mianfeifq+189
       - mianfeifq+256
-      - 🇦🇺 澳大利亚 001
-      - 🇨🇳 CN 31 → openitsub.com
-      - 🇯🇵 日本_1010024
-      - 🇨🇳 CN 78 → openitsub.com
-      - 🇭🇰 +HK+9+TG:@nodpai+(Beta)
       - 45.77.48.44:8099 2
-      - 🇭🇰 中转+🇭🇰+HK+44+TG:@nodpai
-      - 🇺🇸 US 6 → openitsub.com
+      - 🇦🇺 澳大利亚 004
+      - 🇨🇳 CN 16 → openitsub.com
       - 🇦🇺 澳大利亚_1010005 2
-      - 🇨🇳 CN 86 → openitsub.com
-      - 🇺🇸 美国 034 2
-      - 🇨🇳 CN 49 → openitsub.com
-      - Relay_Relay_ |301.90Mb
-      - "|25.48Mb"
-      - Relay_ |50.15Mb
-      - 🇵🇹 葡萄牙(TG频道:@kxswa)
-      - 🇦🇺 +AU+8
-      - GH
-      - 未知_1010057
+      - PT_【付费推荐：wxfz.ml】
+      - Relay_Relay_ | 1.79Mb
+      - 🇨🇳 CN 15 → openitsub.com
+      - 🇺🇸 US-150.230.41.9-62
+      - 🇦🇺 澳大利亚 001
+      - "@SSRSUB-V07-付费推荐:suo.yt/ssrsub"
+      - 🇨🇳 CN 45 → openitsub.com
+      - 🇯🇵 日本_1010034
+      - 🇦🇺 AU 澳大利亚(youtube阿伟科技)
       - 白嫖-0313
-      - 🇨🇳 CN 79 → openitsub.com
-      - CN_211.99.96.117_101183e6-343
-      - 🇪🇪 github.com/freefq - 爱沙尼亚  24
-      - 🇦🇺 澳大利亚_1010006 2
-      - 🇨🇳 CN 74 → openitsub.com
-      - 🇭🇰 中转+🇭🇰+HK+11+TG:@airproxies
-      - 🇨🇳 CN 8 → openitsub.com
-      - CN_139.227.50.179_101183e6-346
-      - 🇨🇳 CN 34 → openitsub.com
+      - 🇦🇺 澳大利亚 003
+      - 🇦🇺 澳大利亚 002
+      - "|25.48Mb"
+      - 🇨🇳 CN 2 → openitsub.com
+      - GH
+      - 🇨🇳 CN 20 → openitsub.com
+      - 🇦🇺 澳大利亚 006
+      - 🇺🇸 美国 038
+      - 🇨🇳 CN 67 → openitsub.com
+      - GH 2
+      - 🇺🇸 -美国-172.64.144.192
+      - 🇺🇸 美国 046
+      - 未知_1010057
+      - 🇺🇸 _US_美国
+      - 🇨🇳 CN 25 → openitsub.com
+      - 未知_1010035
+      - 🇨🇳 CN 1 → openitsub.com
+      - 🇯🇵 JP 日本(youtube阿伟科技)
+      - 🇺🇸 美国 029
+      - 🇭🇰 中转+🇭🇰+HK+40+TG:@airproxies
+      - 🇨🇳 CN 33 → openitsub.com
       - CN_120.241.126.83_101183e6-284
+      - CN_120.241.126.83_101183e6-361
+      - 🇻🇳 VN 越南(youtube阿伟科技)
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
