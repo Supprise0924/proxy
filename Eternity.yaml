@@ -5,758 +5,767 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: "🇭🇰 [香港MS1]广港AGA加速 TV", server: hk-ms1.iqdnsio.co, port: 31111, type: vmess, uuid: fbb2cc06-b018-4ad0-bb27-baa4a834807f, alterId: 0, cipher: auto, tls: false}
-  - {name: mianfeifq+248, server: realhk-1.tiktokcdn.sbs, port: 12425, type: trojan, password: 7rfcbuZdkU, sni: dl.shcujpntt6.cc.tjcct.xyz, skip-cert-verify: true}
-  - {name: mianfeifq+248 2, server: realhk-1.tiktokcdn.sbs, port: 12425, type: trojan, password: 7rfcbuZdkU, sni: 1009jp.tfzhc.top, skip-cert-verify: true}
-  - {name: 🇦🇺 澳大利亚_1012004, server: vau1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /chat, headers: {Host: vau1.0bad.com}}}
-  - {name: 🇦🇺 澳大利亚_1012001, server: vau1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /chat, headers: {Host: vau1.0bad.com}}}
-  - {name: 🇦🇺 澳大利亚_1012003, server: vau1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /chat, headers: {Host: vau1.0bad.com}}}
-  - {name: 🇭🇰 香港(TG频道:@kxswa), server: sg.pannode.top, port: 80, type: vmess, uuid: bae86d97-31e2-4736-ba23-219aa7bb32eb, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/wroot-sg?ed=2048", headers: {Host: tms.dingtalk.com}}}
-  - {name: 🇺🇸 github.com/freefq - 美国CloudFlare节点 50, server: cf.naixii.top, port: 443, type: vmess, uuid: 3fad3b4c-8691-42f2-a46d-9875cacaeeb2, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /b472f/, headers: {Host: linode.sharecentre.xyz}}}
-  - {name: 未知_1012744, server: sg.prpr.link, port: 443, type: vmess, uuid: cea42161-bddc-4230-a9b9-e43187967ffa, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /Telegram/ShareCentrePro/mknnix, headers: {Host: sg.prpr.link}}}
-  - {name: 🇺🇸 美国 018, server: 152.69.195.171, port: 55555, type: vmess, uuid: b86d95da-b843-4804-8443-d849d3207076, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇭🇰 香港_1012134, server: az.hk2.ecydns.com, port: 443, type: vmess, uuid: eb214ac5-ff99-30b0-8f46-c4958074c1f6, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /ecy, headers: {Host: az.hk2.ecydns.com}}}
-  - {name: 🇭🇰 香港_1012144, server: az.hk.ecydns.com, port: 443, type: vmess, uuid: eb214ac5-ff99-30b0-8f46-c4958074c1f6, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /ecy, headers: {Host: az.hk.ecydns.com}}}
-  - {name: 🇯🇵 JP【付费推荐：wxfz.gq】, server: 168.138.44.176, port: 443, type: trojan, password: 8d2d5953-d649-4034-94f2-72f2df2623da, sni: linus.sbs, skip-cert-verify: true}
-  - {name: 🇺🇸 _US_美国_5_6@19, server: 138.2.45.243, port: 443, type: trojan, password: c19d1432-8b3e-4818-8837-3d160cf65908, sni: sg-relay.iqyun.zone, skip-cert-verify: true}
-  - {name: 🇺🇸 Relay_Relay_Relay_Relay_Relay_🇺🇸US-🇺🇸US_1206🇺🇸US |21.45Mb, server: jgwdb2.gaox.ml, port: 443, type: trojan, password: c19d1432-8b3e-4818-8837-3d160cf65908, sni: hk.vc2.hyperlinkvpn.xyz, skip-cert-verify: true}
-  - {name: 🇸🇬 Relay_Relay_Relay_Relay_Relay_Relay_Relay_🇸🇬SG-🇯🇵JP_568🇸🇬SG |49.20Mb, server: 8.209.252.35, port: 443, type: vmess, uuid: 3706161f-3ee3-48e5-bfcf-0d856cc6f0ab, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /down, headers: {Host: js.adbse.xyz}}}
-  - {name: "🇭🇰 [香港7-2]MS+三网CN2GIA入口+TV+超大带宽低延迟节点", server: hk-ms4.iqdnsio.co, port: 6056, type: ss, cipher: aes-256-gcm, password: fbb2cc06-b018-4ad0-bb27-baa4a834807f}
-  - {name: 🇬🇧 英国_1012003, server: vuk2.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /chat, headers: {Host: vuk2.0bad.com}}}
-  - {name: 🇺🇸 美国 033, server: jgwdb2.gaox.ml, port: 443, type: trojan, password: c19d1432-8b3e-4818-8837-3d160cf65908, sni: flowery.meijireform.com, skip-cert-verify: true}
-  - {name: 🇭🇰 香港_1012131, server: dmit.hk.ecydns.com, port: 443, type: vmess, uuid: eb214ac5-ff99-30b0-8f46-c4958074c1f6, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /ecy, headers: {Host: dmit.hk.ecydns.com}}}
-  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:), server: 152.69.197.60, port: 1069, type: vmess, uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇭🇰 -香港-az.hk2.ecydns.com, server: az.hk2.ecydns.com, port: 443, type: vmess, uuid: eb214ac5-ff99-30b0-8f46-c4958074c1f6, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /ecy, headers: {Host: az.hk2.ecydns.com}}}
-  - {name: 🇯🇵 日本 010, server: 168.138.44.176, port: 443, type: trojan, password: 8d2d5953-d649-4034-94f2-72f2df2623da, sni: content-provider5.cdn-delivery.akamaicd.com, skip-cert-verify: true}
-  - {name: 🇺🇸 US 11 → openitsub.com, server: 168.138.44.176, port: 443, type: trojan, password: 8d2d5953-d649-4034-94f2-72f2df2623da, sni: wel-hgc.qchwnd.moe, skip-cert-verify: true}
-  - {name: 🇵🇭 2.23|PH菲律宾youtube科技, server: 16.163.226.1, port: 2053, type: trojan, password: 39f71286-da06-4de4-81ba-5559b9b8b74b, sni: wel-ph.qchwnd.moe, skip-cert-verify: true}
-  - {name: "🇯🇵 [09-26]|openrunner|日本(JP)Japan/Osaka_9", server: jgwdb2.gaox.ml, port: 443, type: trojan, password: c19d1432-8b3e-4818-8837-3d160cf65908, sni: n2.gladns.com, skip-cert-verify: true}
-  - {name: 🇯🇵 日本 010 2, server: jgwdb3.gaox.ml, port: 443, type: trojan, password: 8d2d5953-d649-4034-94f2-72f2df2623da, sni: wel-jp.qchwnd.moe, skip-cert-verify: true}
-  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 2, server: 152.69.197.60, port: 1069, type: vmess, uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇬🇧 英国_1012050, server: vuk2.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /chat, headers: {Host: vuk2.0bad.com}}}
-  - {name: 🇺🇸 _US_美国, server: 152.69.195.171, port: 55555, type: vmess, uuid: b86d95da-b843-4804-8443-d849d3207076, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇭🇰 +HK+10, server: 118.140.206.169, port: 443, type: trojan, password: !<str> 666888, sni: linus.sbs, skip-cert-verify: true}
-  - {name: 🇺🇸 _US_美国 2, server: 152.69.195.171, port: 55555, type: vmess, uuid: b86d95da-b843-4804-8443-d849d3207076, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇦🇺 AU【付费推荐：wxfz.gq】, server: 152.67.98.30, port: 443, type: trojan, password: e8c1ab3c-89b3-4933-92df-682e6dce7819, sni: 112.fastea.top, skip-cert-verify: true}
-  - {name: 🇯🇵 _JP_日本, server: jgwdb3.gaox.ml, port: 443, type: trojan, password: 8d2d5953-d649-4034-94f2-72f2df2623da, sni: trs06.bolab.net, skip-cert-verify: true}
-  - {name: 🇦🇺 澳大利亚 004, server: jgwxn4.gaox.ml, port: 443, type: trojan, password: e8c1ab3c-89b3-4933-92df-682e6dce7819, sni: content-provider5.cdn-delivery.akamaicd.com, skip-cert-verify: true}
-  - {name: 【付费推荐：wxfz.gq】, server: shopify.com, port: 2086, type: vmess, uuid: dc8b64db-eb6d-4bdf-98b2-31615319bea8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /aries, headers: {Host: vn.cloudflare.quest}}}
-  - {name: 🇺🇸 +US+369, server: jgwdb2.gaox.ml, port: 443, type: trojan, password: c19d1432-8b3e-4818-8837-3d160cf65908, sni: hk.vc2.hyperlinkvpn.xyz, skip-cert-verify: true}
-  - {name: 🇺🇸 美国_10121236, server: 172.64.153.100, port: 443, type: vmess, uuid: 6e9217de-ad7e-4a67-bd17-a6dca951733b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: lg3.zhujicn2.com}}}
-  - {name: 未知_1012653, server: 198.41.212.20, port: 443, type: vmess, uuid: a5ba8b2b-8fc5-4521-a35e-9281be61c1c3, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: lg1.zhujicn2.com}}}
-  - {name: 【付费推荐：wxfz.gq】 2, server: shopify.com, port: 2086, type: vmess, uuid: dc8b64db-eb6d-4bdf-98b2-31615319bea8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /aries, headers: {Host: vn.cloudflare.quest}}}
-  - {name: 🇭🇰 香港_1012044, server: bgp.hk.ecydns.com, port: 443, type: vmess, uuid: eb214ac5-ff99-30b0-8f46-c4958074c1f6, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /ecy, headers: {Host: bgp.hk.ecydns.com}}}
-  - {name: 🇯🇵 日本_1012144, server: 152.69.195.171, port: 55555, type: vmess, uuid: b86d95da-b843-4804-8443-d849d3207076, alterId: 0, cipher: auto, tls: false}
+  - {name: US_10, server: 138.2.15.23, port: 46370, type: vmess, uuid: 998151e5-0bc5-4377-e390-c41bb26fdd0c, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 美国 040, server: 150.230.217.213, port: 443, type: trojan, password: c09eb137-bf68-4658-84e0-102d94b74168, sni: flowery.meijireform.com, skip-cert-verify: true}
+  - {name: "|47.18Mb", server: www.sxsy88.tk, port: 44150, type: trojan, password: zFyLKH62WN, sni: hk.vc2.hyperlinkvpn.xyz, skip-cert-verify: true}
+  - {name: 🇺🇸 :美国-ss-162.251.61.221:802-被墙-直连-解锁美国地区NF非自制剧, server: 162.251.61.221, port: 802, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇺🇸 +US+380, server: jgwdj3.gaox.ml, port: 443, type: trojan, password: da777aae-defb-41d0-a183-2c27da2b4677, sni: dl.sg7.cc.tjcct.xyz, skip-cert-verify: true}
+  - {name: "🇯🇵 [日本9]NTT+杭州BGP入口+TV", server: jp-az.uuuglass.co, port: 29999, type: trojan, password: fbb2cc06-b018-4ad0-bb27-baa4a834807f, sni: jp-ln.uuuglass.co, skip-cert-verify: true}
+  - {name: 🇧🇷 巴西 001, server: 168.138.207.66, port: 21365, type: vmess, uuid: 905f99b1-e7ba-45e0-ae4d-b0ffdf0ad245, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 美国 026, server: 150.230.96.103, port: 443, type: trojan, password: da777aae-defb-41d0-a183-2c27da2b4677, sni: dl.shcujpntt6.cc.tjcct.xyz, skip-cert-verify: true}
+  - {name: 🇺🇸 美国 031, server: www.sxsy88.tk, port: 44150, type: trojan, password: zFyLKH62WN, sni: hk.vc2.hyperlinkvpn.xyz, skip-cert-verify: true}
+  - {name: JP_138.2.8.227_1012a0e8-91, server: 138.2.8.227, port: 44150, type: trojan, password: zFyLKH62WN, sni: dl.bgp8.cc.tjcct.xyz, skip-cert-verify: true}
+  - {name: "|TG频道@baipiaoeverything|13", server: 138.2.8.227, port: 59442, type: vmess, uuid: 6fd042fa-e864-4a95-85bc-6f590a03d34a, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 美国_10121306, server: PL.nexitally.xyz, port: 443, type: vmess, uuid: 54c6c823-4957-4c6c-b10c-359bc51f7cc3, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /a54e284cb6/, headers: {Host: PL.nexitally.xyz}}}
+  - {name: 🇺🇸 美国_1012061, server: PL.nexitally.xyz, port: 443, type: vmess, uuid: 54c6c823-4957-4c6c-b10c-359bc51f7cc3, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /a54e284cb6/, headers: {Host: PL.nexitally.xyz}}}
+  - {name: 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧, server: 185.162.126.217, port: 50004, type: ss, cipher: aes-256-cfb, password: !<str> 4415934295}
+  - {name: 🇺🇸 美国 038, server: www.sxsy88.tk, port: 44150, type: trojan, password: zFyLKH62WN, sni: flowery.meijireform.com, skip-cert-verify: true}
   - {name: 🇺🇸 美国(欢迎订阅Youtube元亨利贞)_11, server: sg.prpr.link, port: 443, type: vmess, uuid: cea42161-bddc-4230-a9b9-e43187967ffa, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /Telegram/ShareCentrePro/mknnix, headers: {Host: sg.prpr.link}}}
-  - {name: 🇯🇵 日本_1012155, server: 152.69.195.171, port: 55555, type: vmess, uuid: b86d95da-b843-4804-8443-d849d3207076, alterId: 0, cipher: auto, tls: false}
-  - {name: "🇩🇪 [德国-希腊1]BGP入口 TV", server: de-of.uuuglass.co, port: 27777, type: vmess, uuid: fbb2cc06-b018-4ad0-bb27-baa4a834807f, alterId: 0, cipher: auto, tls: false}
-  - {name: 未知_1012102, server: shopify.com, port: 2086, type: vmess, uuid: dc8b64db-eb6d-4bdf-98b2-31615319bea8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /aries, headers: {Host: vn.cloudflare.quest}}}
-  - {name: "🇯🇵 上海联通转日本NTT6[Trojan][倍率:0.8]", server: cn-sh.sasg4e.ccddn4.icu, port: 4901, type: trojan, password: 48ec30c1-2a35-370a-a6c6-edf228fa9e3c, sni: dl.shcujpntt6.cc.tjcct.xyz, skip-cert-verify: true}
-  - {name: 白嫖-118, server: vde1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /chat, headers: {Host: vde1.0bad.com}}}
-  - {name: 🇩🇪 德国(欢迎订阅Youtube元亨利贞), server: vde2.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /chat, headers: {Host: vde2.0bad.com}}}
-  - {name: 🇺🇸 github.com/freefq - 美国  25, server: 152.69.195.171, port: 55555, type: vmess, uuid: b86d95da-b843-4804-8443-d849d3207076, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 US【付费推荐：wxfz.gq】, server: vde2.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /chat, headers: {Host: vde2.0bad.com}}}
-  - {name: 🇯🇵 日本_1012138, server: 152.69.195.171, port: 55555, type: vmess, uuid: b86d95da-b843-4804-8443-d849d3207076, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 美国_1012705, server: 172.64.154.150, port: 443, type: vmess, uuid: bf4619e4-01dc-48ca-be08-0976b54968ce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: lg5.zhujicn2.com}}}
-  - {name: 🇭🇰 香港_1012149, server: az.hk2.ecydns.com, port: 443, type: vmess, uuid: eb214ac5-ff99-30b0-8f46-c4958074c1f6, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /ecy, headers: {Host: az.hk2.ecydns.com}}}
-  - {name: "🇭🇰 深港专线转香港BGP8[M][Trojan][倍率:2.5]", server: 211.99.96.117, port: 65110, type: trojan, password: 48ec30c1-2a35-370a-a6c6-edf228fa9e3c, sni: dl.bgp8.cc.tjcct.xyz, skip-cert-verify: true}
+  - {name: 🇺🇸 github.com/freefq - 美国CloudFlare节点 32, server: sg.prpr.link, port: 443, type: vmess, uuid: cea42161-bddc-4230-a9b9-e43187967ffa, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /Telegram/ShareCentrePro/mknnix, headers: {Host: sg.prpr.link}}}
+  - {name: 🇺🇸 US【付费推荐：wxfz.gq】, server: agroup.node2.v.nodelist-gfwairport.download, port: 50001, type: vmess, uuid: ddea4d6b-52f9-4901-8dd6-49bd2e09f2ac, alterId: 0, cipher: auto, tls: false}
+  - {name: "🇨🇳 [台湾1]新北 安徽BGP入口 TV", server: tw-sc.uuuglass.co, port: 52222, type: vmess, uuid: fbb2cc06-b018-4ad0-bb27-baa4a834807f, alterId: 0, cipher: auto, tls: false}
+  - {name: 未知_1012744, server: sg.prpr.link, port: 443, type: vmess, uuid: cea42161-bddc-4230-a9b9-e43187967ffa, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /Telegram/ShareCentrePro/mknnix, headers: {Host: sg.prpr.link}}}
+  - {name: 🇰🇷 韩国_1012116, server: hanguob.yongyevpn.com, port: 43632, type: vmess, uuid: 1d2978ba-30ba-4b64-8699-9ba6ba3cd4e8, alterId: 0, cipher: auto, tls: false}
   - {name: 🇺🇸 美国_1012025, server: PL.nexitally.xyz, port: 443, type: vmess, uuid: 54c6c823-4957-4c6c-b10c-359bc51f7cc3, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /a54e284cb6/, headers: {Host: PL.nexitally.xyz}}}
-  - {name: 🇺🇸 美国 030, server: 150.230.249.42, port: 443, type: trojan, password: 0Y9gOHSdRt, sni: wel-jp.qchwnd.moe, skip-cert-verify: true}
-  - {name: "🇨🇭 [瑞士1]BGP入口 隐私保护 TV", server: ch-mb.uuuglass.co, port: 22222, type: vmess, uuid: fbb2cc06-b018-4ad0-bb27-baa4a834807f, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 美国 051, server: 172.64.153.200, port: 443, type: vmess, uuid: a8030afd-812a-4afe-a766-9c76ff3eddd4, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: lg4.zhujicn2.com}}}
-  - {name: 🇸🇬 新加坡_1012080, server: hk-2-tunnel.pannode.top, port: 80, type: vmess, uuid: bae86d97-31e2-4736-ba23-219aa7bb32eb, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}}
-  - {name: 🇸🇬 SG-54.254.210.226-085, server: hk-6.pannode.top, port: 80, type: vmess, uuid: bae86d97-31e2-4736-ba23-219aa7bb32eb, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}}
-  - {name: 🇸🇬 新加坡_1012068, server: hk-i-tunnel.pannode.top, port: 80, type: vmess, uuid: bae86d97-31e2-4736-ba23-219aa7bb32eb, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}}
-  - {name: 🇸🇬 更新于10/13/00:55, server: hk-test-tunnel.pannode.top, port: 80, type: vmess, uuid: bae86d97-31e2-4736-ba23-219aa7bb32eb, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}}
-  - {name: 🇺🇸 美国 034, server: sg-01.tiktokcdn.top, port: 443, type: trojan, password: bb5b1337-fa9e-4e00-b8c6-1110e626171d, sni: dl.gdcmhkbgp.cc.tjcct.xyz, skip-cert-verify: true}
-  - {name: 🇺🇸 v2rayfree.eu.org - 美国CloudFlare公司CDN节点 25, server: PL.nexitally.xyz, port: 443, type: vmess, uuid: 54c6c823-4957-4c6c-b10c-359bc51f7cc3, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /a54e284cb6/, headers: {Host: PL.nexitally.xyz}}}
-  - {name: 🇸🇬 新加坡(TG频道:@kxswa), server: hk-6.pannode.top, port: 80, type: vmess, uuid: bae86d97-31e2-4736-ba23-219aa7bb32eb, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}}
-  - {name: 🇸🇬 SG-54.169.194.53-089, server: hk-iii-tunnel.pannode.top, port: 80, type: vmess, uuid: bae86d97-31e2-4736-ba23-219aa7bb32eb, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}}
-  - {name: 🇸🇬 新加坡(TG频道:@kxswa) 2, server: hk-2-tunnel.pannode.top, port: 80, type: vmess, uuid: bae86d97-31e2-4736-ba23-219aa7bb32eb, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}}
-  - {name: "🇭🇰 广东移动转香港BGP2[M][Trojan][倍率:0.8]", server: 120.241.126.83, port: 65206, type: trojan, password: 48ec30c1-2a35-370a-a6c6-edf228fa9e3c, sni: dl.hncmhkbgp.cc.tjcct.xyz, skip-cert-verify: true}
-  - {name: 🇸🇬 新加坡_1012070, server: hk-test-tunnel.pannode.top, port: 80, type: vmess, uuid: bae86d97-31e2-4736-ba23-219aa7bb32eb, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}}
-  - {name: 🇸🇬 新加坡(TG频道:@kxswa) 3, server: hk-v.pannode.top, port: 80, type: vmess, uuid: bae86d97-31e2-4736-ba23-219aa7bb32eb, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}}
-  - {name: "|234.03Mb", server: sg-01.tiktokcdn.top, port: 443, type: trojan, password: bb5b1337-fa9e-4e00-b8c6-1110e626171d, sni: hk.vc2.hyperlinkvpn.xyz, skip-cert-verify: true}
-  - {name: 🇸🇬 新加坡_1012079, server: hk-vi.pannode.top, port: 80, type: vmess, uuid: bae86d97-31e2-4736-ba23-219aa7bb32eb, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}}
-  - {name: 🇸🇬 新加坡(TG频道:@kxswa) 4, server: hk-i-tunnel.pannode.top, port: 80, type: vmess, uuid: bae86d97-31e2-4736-ba23-219aa7bb32eb, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}}
-  - {name: 🇸🇬 新加坡(TG频道:@kxswa) 5, server: hk-i.pannode.top, port: 80, type: vmess, uuid: bae86d97-31e2-4736-ba23-219aa7bb32eb, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}}
-  - {name: 🇸🇬 SG-13.214.113.190-079, server: hk-i.pannode.top, port: 80, type: vmess, uuid: bae86d97-31e2-4736-ba23-219aa7bb32eb, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}}
-  - {name: 🇸🇬 新加坡(TG频道:@kxswa) 6, server: hk-iii-tunnel.pannode.top, port: 80, type: vmess, uuid: bae86d97-31e2-4736-ba23-219aa7bb32eb, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}}
-  - {name: 🇸🇬 SG-18.142.185.137-004, server: 18.142.185.137, port: 43632, type: vmess, uuid: 1d2978ba-30ba-4b64-8699-9ba6ba3cd4e8, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇸🇬 新加坡(TG频道:@kxswa) 7, server: hk-4.pannode.top, port: 80, type: vmess, uuid: bae86d97-31e2-4736-ba23-219aa7bb32eb, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}}
-  - {name: 🇸🇬 SG-18.142.185.137-004 2, server: 18.142.185.137, port: 43632, type: vmess, uuid: 1d2978ba-30ba-4b64-8699-9ba6ba3cd4e8, alterId: 0, cipher: auto, tls: false}
-  - {name: SG_159.223.89.239_1012b7e8-72, server: 159.223.89.239, port: 443, type: trojan, password: bb5b1337-fa9e-4e00-b8c6-1110e626171d, sni: wel-ph.qchwnd.moe, skip-cert-verify: true}
-  - {name: 🇭🇰 香港-3|1G|80端口, server: hk-3-tunnel.pannode.top, port: 80, type: vmess, uuid: bae86d97-31e2-4736-ba23-219aa7bb32eb, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}}
-  - {name: 🇺🇸 Relay_Relay_Relay_Relay_Relay_Relay_🇺🇸US-🇺🇸US_1207🇺🇸US |234.03Mb, server: sg-01.tiktokcdn.top, port: 443, type: trojan, password: bb5b1337-fa9e-4e00-b8c6-1110e626171d, sni: hk.vc2.hyperlinkvpn.xyz, skip-cert-verify: true}
-  - {name: 🇸🇬 新加坡(TG频道:@kxswa) 8, server: hk-3-tunnel.pannode.top, port: 80, type: vmess, uuid: bae86d97-31e2-4736-ba23-219aa7bb32eb, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}}
+  - {name: 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧 2, server: 185.162.126.217, port: 50004, type: ss, cipher: aes-256-cfb, password: !<str> 4415934295}
+  - {name: 🇺🇸 美国(TG频道:@kxswa), server: 45.11.92.100, port: 8848, type: trojan, password: aa12A45bbutassOAm96ahzNlGY, sni: 921tw.tfzhc.top, skip-cert-verify: true}
   - {name: (TG频道:@kxswa), server: shopify.com, port: 80, type: vmess, uuid: 2508cb1d-bd54-47c0-aead-1b8f55090427, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /aries, headers: {Host: scw.cloudflare.quest}}}
+  - {name: 🇯🇵 JP【付费推荐：wxfz.gq】, server: 8.209.220.34, port: 80, type: vmess, uuid: 74758f06-f4b9-4ef1-a86c-f0a0cc82109f, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /aries, headers: {Host: lux.justu.ml}}}
+  - {name: 🇰🇷 韩国_1012010, server: 3.39.222.36, port: 43632, type: vmess, uuid: 1d2978ba-30ba-4b64-8699-9ba6ba3cd4e8, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇰🇷 韩国_1012115, server: 3.39.222.36, port: 43632, type: vmess, uuid: 1d2978ba-30ba-4b64-8699-9ba6ba3cd4e8, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇭🇰 香港_1012044, server: bgp.hk.ecydns.com, port: 443, type: vmess, uuid: eb214ac5-ff99-30b0-8f46-c4958074c1f6, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /ecy, headers: {Host: bgp.hk.ecydns.com}}}
+  - {name: IR【付费推荐：wxfz.gq】, server: MahsaProxyTelegramChannel.way-of-freedom.com, port: 80, type: vmess, uuid: b831381d-6324-4d53-ad4f-8cda48b30811, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /graphql, headers: {Host: MahsaProxyTelegramChannel.way-of-freedom.com}}}
+  - {name: 🇺🇸 US-trojan, server: 45.11.92.100, port: 8848, type: trojan, password: aa12A45bbutassOAm96ahzNlGY, sni: 45.11.92.100, skip-cert-verify: true}
+  - {name: aaa 190, server: 198.41.212.20, port: 443, type: vmess, uuid: a5ba8b2b-8fc5-4521-a35e-9281be61c1c3, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: lg1.zhujicn2.com}}}
+  - {name: 🇮🇷 伊朗_1012012, server: MahsaProxyTelegramChannel.way-of-freedom.com, port: 80, type: vmess, uuid: b831381d-6324-4d53-ad4f-8cda48b30811, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /graphql, headers: {Host: MahsaProxyTelegramChannel.way-of-freedom.com}}}
+  - {name: 🇭🇰 香港_1012044 2, server: bgp.hk.ecydns.com, port: 443, type: vmess, uuid: eb214ac5-ff99-30b0-8f46-c4958074c1f6, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /ecy, headers: {Host: bgp.hk.ecydns.com}}}
+  - {name: 🇮🇷 伊朗(TG频道:@kxswa), server: MahsaProxyTelegramChannel.way-of-freedom.com, port: 80, type: vmess, uuid: b831381d-6324-4d53-ad4f-8cda48b30811, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /graphql, headers: {Host: MahsaProxyTelegramChannel.way-of-freedom.com}}}
+  - {name: 🇮🇷 伊朗_1012013, server: MahsaProxyTelegramChannel.way-of-freedom.com, port: 80, type: vmess, uuid: b831381d-6324-4d53-ad4f-8cda48b30811, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /graphql, headers: {Host: MahsaProxyTelegramChannel.way-of-freedom.com}}}
+  - {name: "🇭🇰 [香港企宽2]香港BGP+TV", server: hk-satellite.iqyun.zone, port: 12225, type: trojan, password: fbb2cc06-b018-4ad0-bb27-baa4a834807f, sni: hk-wtt.uuuglass.co, skip-cert-verify: true}
+  - {name: mianfeifq+253, server: 103.177.248.160, port: 12425, type: trojan, password: 7rfcbuZdkU, sni: dl.bgp3.cc.tjcct.xyz, skip-cert-verify: true}
+  - {name: 🇦🇺 澳大利亚_1012001, server: vau1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /chat, headers: {Host: vau1.0bad.com}}}
+  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:), server: bgp.hk.ecydns.com, port: 443, type: vmess, uuid: eb214ac5-ff99-30b0-8f46-c4958074c1f6, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /ecy, headers: {Host: bgp.hk.ecydns.com}}}
+  - {name: mianfeifq+248, server: realhk-1.tiktokcdn.sbs, port: 12425, type: trojan, password: 7rfcbuZdkU, sni: dl.shcujpntt6.cc.tjcct.xyz, skip-cert-verify: true}
+  - {name: 🇭🇰 香港_1012130, server: cn-i.pannode.top, port: 80, type: vmess, uuid: bae86d97-31e2-4736-ba23-219aa7bb32eb, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}}
+  - {name: 🇭🇰 香港_1012198, server: sg.pannode.top, port: 80, type: vmess, uuid: bae86d97-31e2-4736-ba23-219aa7bb32eb, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/wroot-sg?ed=2048", headers: {Host: tms.dingtalk.com}}}
+  - {name: 🇭🇰 +HK+10, server: 118.140.206.169, port: 443, type: trojan, password: !<str> 666888, sni: linus.sbs, skip-cert-verify: true}
+  - {name: 🇦🇺 澳大利亚_1012001 2, server: vau1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /chat, headers: {Host: vau1.0bad.com}}}
+  - {name: 🇭🇰 github.com/freefq - 香港特别行政区 7, server: hk-ms4.iqdnsio.co, port: 6056, type: ss, cipher: aes-256-gcm, password: fbb2cc06-b018-4ad0-bb27-baa4a834807f}
+  - {name: 🇸🇬 v2rayfree.eu.org - 澳大利亚新南威尔士州悉尼Linode数据中心 28, server: vau1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /chat, headers: {Host: vau1.0bad.com}}}
+  - {name: 45.77.48.44:8099, server: 45.77.48.44, port: 8099, type: ss, cipher: aes-256-cfb, password: eIW0Dnk69454e6nSwuspv9DmS201tQ0D}
+  - {name: 🇰🇷 KR-52.79.126.165-007, server: hanguoa.yongyevpn.com, port: 43632, type: vmess, uuid: 1d2978ba-30ba-4b64-8699-9ba6ba3cd4e8, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇭🇰 +HK+10 2, server: 118.140.206.169, port: 443, type: trojan, password: !<str> 666888, sni: linus.sbs, skip-cert-verify: true}
+  - {name: 🇭🇰 香港(TG频道:@kxswa), server: sg.pannode.top, port: 80, type: vmess, uuid: bae86d97-31e2-4736-ba23-219aa7bb32eb, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/wroot-sg?ed=2048", headers: {Host: tms.dingtalk.com}}}
+  - {name: 🇦🇺 澳大利亚_1012003, server: vau1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /chat, headers: {Host: vau1.0bad.com}}}
+  - {name: 🇭🇰 香港_1012149, server: az.hk2.ecydns.com, port: 443, type: vmess, uuid: eb214ac5-ff99-30b0-8f46-c4958074c1f6, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /ecy, headers: {Host: az.hk2.ecydns.com}}}
+  - {name: 🇭🇰 香港_1012149 2, server: az.hk2.ecydns.com, port: 443, type: vmess, uuid: eb214ac5-ff99-30b0-8f46-c4958074c1f6, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /ecy, headers: {Host: az.hk2.ecydns.com}}}
+  - {name: 未知_1012744 2, server: sg.prpr.link, port: 443, type: vmess, uuid: cea42161-bddc-4230-a9b9-e43187967ffa, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /Telegram/ShareCentrePro/mknnix, headers: {Host: sg.prpr.link}}}
+  - {name: 🇦🇺 澳大利亚_1012003 2, server: vau1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /chat, headers: {Host: vau1.0bad.com}}}
+  - {name: 🇺🇸 美国(欢迎订阅Youtube元亨利贞)_11 2, server: sg.prpr.link, port: 443, type: vmess, uuid: cea42161-bddc-4230-a9b9-e43187967ffa, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /Telegram/ShareCentrePro/mknnix, headers: {Host: sg.prpr.link}}}
+  - {name: 🇺🇸 github.com/freefq - 美国Microsoft数据中心 4, server: cn-ii.pannode.top, port: 80, type: vmess, uuid: bae86d97-31e2-4736-ba23-219aa7bb32eb, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}}
+  - {name: 🇸🇬 github.com/freefq - 澳大利亚新南威尔士州悉尼Linode数据中心 33, server: vau1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /chat, headers: {Host: vau1.0bad.com}}}
+  - {name: 🇭🇰 -香港-az.hk2.ecydns.com, server: az.hk2.ecydns.com, port: 443, type: vmess, uuid: eb214ac5-ff99-30b0-8f46-c4958074c1f6, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /ecy, headers: {Host: az.hk2.ecydns.com}}}
+  - {name: 🇭🇰 香港_1012131, server: dmit.hk.ecydns.com, port: 443, type: vmess, uuid: eb214ac5-ff99-30b0-8f46-c4958074c1f6, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /ecy, headers: {Host: dmit.hk.ecydns.com}}}
+  - {name: 🇦🇺 澳大利亚_1012004, server: vau1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /chat, headers: {Host: vau1.0bad.com}}}
+  - {name: aaa 268, server: vau1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /chat, headers: {Host: vau1.0bad.com}}}
+  - {name: 🇦🇺 澳大利亚_1012071, server: vau1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /chat, headers: {Host: vau1.0bad.com}}}
+  - {name: _CN_中国->🇧🇭_BH_巴林, server: 116.129.253.134, port: 3381, type: trojan, password: d02058f4f819dced, sni: sni=hnyd.52147.top, skip-cert-verify: true}
+  - {name: 🇦🇺 澳大利亚_1012072, server: vau1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /chat, headers: {Host: vau1.0bad.com}}}
+  - {name: 🇭🇰 香港_1012134, server: az.hk2.ecydns.com, port: 443, type: vmess, uuid: eb214ac5-ff99-30b0-8f46-c4958074c1f6, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /ecy, headers: {Host: az.hk2.ecydns.com}}}
+  - {name: 🇦🇺 澳大利亚_1012004 2, server: vau1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /chat, headers: {Host: vau1.0bad.com}}}
+  - {name: 🇦🇺 _AU_澳大利亚_2, server: 152.67.98.30, port: 443, type: trojan, password: e8c1ab3c-89b3-4933-92df-682e6dce7819, sni: 924hk02.tfzhc.top, skip-cert-verify: true}
+  - {name: "🇭🇰 [香港MS1]广港AGA加速 TV", server: hk-ms1.iqdnsio.co, port: 31111, type: vmess, uuid: fbb2cc06-b018-4ad0-bb27-baa4a834807f, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇭🇰 香港_1012131 2, server: dmit.hk.ecydns.com, port: 443, type: vmess, uuid: eb214ac5-ff99-30b0-8f46-c4958074c1f6, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /ecy, headers: {Host: dmit.hk.ecydns.com}}}
+  - {name: 🇭🇰 香港_1012134 2, server: az.hk2.ecydns.com, port: 443, type: vmess, uuid: eb214ac5-ff99-30b0-8f46-c4958074c1f6, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /ecy, headers: {Host: az.hk2.ecydns.com}}}
+  - {name: 🇺🇸 美国_10121231, server: 172.64.154.200, port: 443, type: vmess, uuid: a8030afd-812a-4afe-a766-9c76ff3eddd4, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: lg4.zhujicn2.com}}}
+  - {name: 🇨🇳 CN【付费推荐：wxfz.gq】, server: 116.129.253.134, port: 3381, type: trojan, password: 6222266fcd4ed224, sni: ctldl.windowsupdate.com, skip-cert-verify: true}
+  - {name: 🇺🇸 :美国-ss-162.251.61.221:802-被墙-直连-解锁美国地区NF非自制剧 2, server: 162.251.61.221, port: 802, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: "|234.03Mb", server: sg-01.tiktokcdn.top, port: 443, type: trojan, password: bb5b1337-fa9e-4e00-b8c6-1110e626171d, sni: hk.vc2.hyperlinkvpn.xyz, skip-cert-verify: true}
+  - {name: 🇦🇺 澳大利亚 004, server: jgwxn4.gaox.ml, port: 443, type: trojan, password: e8c1ab3c-89b3-4933-92df-682e6dce7819, sni: content-provider5.cdn-delivery.akamaicd.com, skip-cert-verify: true}
+  - {name: 🇭🇰 香港_1012144, server: az.hk.ecydns.com, port: 443, type: vmess, uuid: eb214ac5-ff99-30b0-8f46-c4958074c1f6, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /ecy, headers: {Host: az.hk.ecydns.com}}}
+  - {name: 🇭🇰 HK-104.208.116.187-101, server: cn-i.pannode.top, port: 80, type: vmess, uuid: bae86d97-31e2-4736-ba23-219aa7bb32eb, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}}
+  - {name: 🇭🇰 香港_1012144 2, server: az.hk.ecydns.com, port: 443, type: vmess, uuid: eb214ac5-ff99-30b0-8f46-c4958074c1f6, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /ecy, headers: {Host: az.hk.ecydns.com}}}
   - {name: 999, server: sg-01.tiktokcdn.top, port: 443, type: trojan, password: bb5b1337-fa9e-4e00-b8c6-1110e626171d, sni: sni=huayun.xyz, skip-cert-verify: true}
-  - {name: 🇸🇬 SG-13.214.200.19-084, server: hk-5.pannode.top, port: 80, type: vmess, uuid: bae86d97-31e2-4736-ba23-219aa7bb32eb, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}}
-  - {name: 🇸🇬 新加坡(TG频道:@kxswa) 9, server: sg-ovh1.v2-ray.com, port: 443, type: vmess, uuid: a9481600-ef36-402a-a0e5-5547bfd7b87c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /fastssh/fghhh/634197c4cdf81/, headers: {Host: sg-ovh1.v2-ray.com}}}
-  - {name: 🇺🇸 美国 027, server: sg-01.tiktokcdn.top, port: 443, type: trojan, password: bb5b1337-fa9e-4e00-b8c6-1110e626171d, sni: wel-jp.qchwnd.moe, skip-cert-verify: true}
-  - {name: "🇯🇵 广东移动转日本NTT[Trojan][倍率:0.8]", server: 120.241.126.83, port: 65200, type: trojan, password: 48ec30c1-2a35-370a-a6c6-edf228fa9e3c, sni: ggjpntt.cc.tjcct.xyz, skip-cert-verify: true}
-  - {name: 🇸🇬 新加坡(TG频道:@kxswa) 10, server: sg-ovh1.v2-ray.com, port: 80, type: vmess, uuid: a9481600-ef36-402a-a0e5-5547bfd7b87c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /fastssh/fghhh/634197c4cdf81/, headers: {Host: sg-ovh1.v2-ray.com}}}
-  - {name: 🇸🇬 SG-52.221.3.189-104, server: hk-test-tunnel.pannode.top, port: 80, type: vmess, uuid: bae86d97-31e2-4736-ba23-219aa7bb32eb, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}}
-  - {name: 🇭🇰 香港-1|1G|80端口, server: hk-1-tunnel.pannode.top, port: 80, type: vmess, uuid: bae86d97-31e2-4736-ba23-219aa7bb32eb, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}}
-  - {name: 🇸🇬 github.com/freefq - 新加坡OVH 11, server: sg-ovh1.v2-ray.com, port: 80, type: vmess, uuid: a9481600-ef36-402a-a0e5-5547bfd7b87c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /fastssh/fghhh/634197c4cdf81/, headers: {Host: sg-ovh1.v2-ray.com}}}
-  - {name: 🇸🇬 新加坡(TG频道:@kxswa) 11, server: hk-vi.pannode.top, port: 80, type: vmess, uuid: bae86d97-31e2-4736-ba23-219aa7bb32eb, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/wroot?ed=2048", headers: {Host: tms.dingtalk.com}}}
+  - {name: 🇭🇰 github.com/freefq - 香港特别行政区 7 2, server: hk-ms4.iqdnsio.co, port: 6056, type: ss, cipher: aes-256-gcm, password: fbb2cc06-b018-4ad0-bb27-baa4a834807f}
+  - {name: 🇦🇺 AU【付费推荐：wxfz.gq】, server: 152.67.98.30, port: 443, type: trojan, password: e8c1ab3c-89b3-4933-92df-682e6dce7819, sni: 112.fastea.top, skip-cert-verify: true}
+  - {name: 🇺🇸 美国 034, server: sg-01.tiktokcdn.top, port: 443, type: trojan, password: bb5b1337-fa9e-4e00-b8c6-1110e626171d, sni: dl.gdcmhkbgp.cc.tjcct.xyz, skip-cert-verify: true}
+  - {name: 🇭🇰 HK【付费推荐：wxfz.gq】, server: 118.140.206.169, port: 443, type: trojan, password: !<str> 666888, sni: ctldl.windowsupdate.com, skip-cert-verify: true}
+  - {name: "🇭🇰 [10-13]-🇭🇰-香港-034-hk-ms4.iqdnsio.co", server: hk-ms4.iqdnsio.co, port: 6056, type: ss, cipher: aes-256-gcm, password: fbb2cc06-b018-4ad0-bb27-baa4a834807f}
+  - {name: mianfeifq+279, server: 116.fastea.top, port: 53316, type: trojan, password: 3f29ee90-8567-4671-8d99-9875874e472f, sni: dl.sg6.cc.tjcct.xyz, skip-cert-verify: true}
+  - {name: SG_159.223.89.239_1012b7e8-72, server: 159.223.89.239, port: 443, type: trojan, password: bb5b1337-fa9e-4e00-b8c6-1110e626171d, sni: wel-ph.qchwnd.moe, skip-cert-verify: true}
+  - {name: 🇺🇸 Relay_Relay_Relay_Relay_Relay_Relay_🇺🇸US-🇺🇸US_1207🇺🇸US |234.03Mb, server: sg-01.tiktokcdn.top, port: 443, type: trojan, password: bb5b1337-fa9e-4e00-b8c6-1110e626171d, sni: hk.vc2.hyperlinkvpn.xyz, skip-cert-verify: true}
+  - {name: 🇺🇸 美国(TG频道:@kxswa) 2, server: 172.64.144.100, port: 443, type: vmess, uuid: 6e9217de-ad7e-4a67-bd17-a6dca951733b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: lg3.zhujicn2.com}}}
+  - {name: "🇭🇰 [香港MS1]广港AGA加速 TV 2", server: hk-ms1.iqdnsio.co, port: 31111, type: vmess, uuid: fbb2cc06-b018-4ad0-bb27-baa4a834807f, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇯🇵 日本_1012145, server: 8.209.220.34, port: 80, type: vmess, uuid: 74758f06-f4b9-4ef1-a86c-f0a0cc82109f, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /aries, headers: {Host: lux.justu.ml}}}
+  - {name: 🇺🇸 美国_10121205, server: us6b31-node.aiqiche123.com, port: 8190, type: vmess, uuid: a90597c1-bab3-4217-ad6f-0838675c8653, alterId: 10, cipher: auto, tls: false}
+  - {name: "🇭🇰 [香港7-2]MS+三网CN2GIA入口+TV+超大带宽低延迟节点", server: hk-ms4.iqdnsio.co, port: 6056, type: ss, cipher: aes-256-gcm, password: fbb2cc06-b018-4ad0-bb27-baa4a834807f}
   - {name: SG_159.223.89.239_1012b7e8-72 2, server: 159.223.89.239, port: 443, type: trojan, password: bb5b1337-fa9e-4e00-b8c6-1110e626171d, sni: linus.sbs, skip-cert-verify: true}
-  - {name: "🇯🇵 上海联通转日本NTT5[Trojan][倍率:0.8]", server: cn-sh.sasg4e.ccddn4.icu, port: 65523, type: trojan, password: 48ec30c1-2a35-370a-a6c6-edf228fa9e3c, sni: dl.shcujpntt5.cc.tjcct.xyz, skip-cert-verify: true}
-  - {name: aaa 193, server: xinjiapoa.yongyevpn.com, port: 43632, type: vmess, uuid: 1d2978ba-30ba-4b64-8699-9ba6ba3cd4e8, alterId: 0, cipher: auto, tls: false}
-  - {name: aaa 193 2, server: xinjiapoa.yongyevpn.com, port: 43632, type: vmess, uuid: 1d2978ba-30ba-4b64-8699-9ba6ba3cd4e8, alterId: 0, cipher: auto, tls: false}
-  - {name: "🇭🇰 广州移动转香港NTT2[Trojan][倍率:0.8]", server: 120.241.126.83, port: 65201, type: trojan, password: 48ec30c1-2a35-370a-a6c6-edf228fa9e3c, sni: gzhkntt.cc.tjcct.xyz, skip-cert-verify: true}
+  - {name: "|234.03Mb 2", server: sg-01.tiktokcdn.top, port: 443, type: trojan, password: bb5b1337-fa9e-4e00-b8c6-1110e626171d, sni: hk.vc2.hyperlinkvpn.xyz, skip-cert-verify: true}
+  - {name: 🇺🇸 :美国-ss-162.251.61.221:805-被墙-直连-解锁美国地区NF非自制剧, server: 162.251.61.221, port: 805, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: SG_159.223.89.239_1012b7e8-72 3, server: 159.223.89.239, port: 443, type: trojan, password: bb5b1337-fa9e-4e00-b8c6-1110e626171d, sni: wel-ph.qchwnd.moe, skip-cert-verify: true}
+  - {name: 🇺🇸 github.com/freefq - 美国Microsoft数据中心 5, server: hk-ms1.iqdnsio.co, port: 31111, type: vmess, uuid: fbb2cc06-b018-4ad0-bb27-baa4a834807f, alterId: 0, cipher: auto, tls: false}
+  - {name: "🇭🇰 [香港7-2]MS+三网CN2GIA入口+TV+超大带宽低延迟节点 2", server: hk-ms4.iqdnsio.co, port: 6056, type: ss, cipher: aes-256-gcm, password: fbb2cc06-b018-4ad0-bb27-baa4a834807f}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇭🇰 [香港MS1]广港AGA加速 TV
-      - mianfeifq+248
-      - mianfeifq+248 2
-      - 🇦🇺 澳大利亚_1012004
-      - 🇦🇺 澳大利亚_1012001
-      - 🇦🇺 澳大利亚_1012003
-      - 🇭🇰 香港(TG频道:@kxswa)
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 50
-      - 未知_1012744
-      - 🇺🇸 美国 018
-      - 🇭🇰 香港_1012134
-      - 🇭🇰 香港_1012144
-      - 🇯🇵 JP【付费推荐：wxfz.gq】
-      - 🇺🇸 _US_美国_5_6@19
-      - 🇺🇸 Relay_Relay_Relay_Relay_Relay_🇺🇸US-🇺🇸US_1206🇺🇸US |21.45Mb
-      - 🇸🇬 Relay_Relay_Relay_Relay_Relay_Relay_Relay_🇸🇬SG-🇯🇵JP_568🇸🇬SG |49.20Mb
-      - 🇭🇰 [香港7-2]MS+三网CN2GIA入口+TV+超大带宽低延迟节点
-      - 🇬🇧 英国_1012003
-      - 🇺🇸 美国 033
-      - 🇭🇰 香港_1012131
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
-      - 🇭🇰 -香港-az.hk2.ecydns.com
-      - 🇯🇵 日本 010
-      - 🇺🇸 US 11 → openitsub.com
-      - 🇵🇭 2.23|PH菲律宾youtube科技
-      - 🇯🇵 [09-26]|openrunner|日本(JP)Japan/Osaka_9
-      - 🇯🇵 日本 010 2
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 2
-      - 🇬🇧 英国_1012050
-      - 🇺🇸 _US_美国
-      - 🇭🇰 +HK+10
-      - 🇺🇸 _US_美国 2
-      - 🇦🇺 AU【付费推荐：wxfz.gq】
-      - 🇯🇵 _JP_日本
-      - 🇦🇺 澳大利亚 004
-      - 【付费推荐：wxfz.gq】
-      - 🇺🇸 +US+369
-      - 🇺🇸 美国_10121236
-      - 未知_1012653
-      - 【付费推荐：wxfz.gq】 2
-      - 🇭🇰 香港_1012044
-      - 🇯🇵 日本_1012144
+      - US_10
+      - 🇺🇸 美国 040
+      - "|47.18Mb"
+      - 🇺🇸 :美国-ss-162.251.61.221:802-被墙-直连-解锁美国地区NF非自制剧
+      - 🇺🇸 +US+380
+      - 🇯🇵 [日本9]NTT+杭州BGP入口+TV
+      - 🇧🇷 巴西 001
+      - 🇺🇸 美国 026
+      - 🇺🇸 美国 031
+      - JP_138.2.8.227_1012a0e8-91
+      - "|TG频道@baipiaoeverything|13"
+      - 🇺🇸 美国_10121306
+      - 🇺🇸 美国_1012061
+      - 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧
+      - 🇺🇸 美国 038
       - 🇺🇸 美国(欢迎订阅Youtube元亨利贞)_11
-      - 🇯🇵 日本_1012155
-      - 🇩🇪 [德国-希腊1]BGP入口 TV
-      - 未知_1012102
-      - 🇯🇵 上海联通转日本NTT6[Trojan][倍率:0.8]
-      - 白嫖-118
-      - 🇩🇪 德国(欢迎订阅Youtube元亨利贞)
-      - 🇺🇸 github.com/freefq - 美国  25
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 32
       - 🇺🇸 US【付费推荐：wxfz.gq】
-      - 🇯🇵 日本_1012138
-      - 🇺🇸 美国_1012705
-      - 🇭🇰 香港_1012149
-      - 🇭🇰 深港专线转香港BGP8[M][Trojan][倍率:2.5]
+      - 🇨🇳 [台湾1]新北 安徽BGP入口 TV
+      - 未知_1012744
+      - 🇰🇷 韩国_1012116
       - 🇺🇸 美国_1012025
-      - 🇺🇸 美国 030
-      - 🇨🇭 [瑞士1]BGP入口 隐私保护 TV
-      - 🇺🇸 美国 051
-      - 🇸🇬 新加坡_1012080
-      - 🇸🇬 SG-54.254.210.226-085
-      - 🇸🇬 新加坡_1012068
-      - 🇸🇬 更新于10/13/00:55
-      - 🇺🇸 美国 034
-      - 🇺🇸 v2rayfree.eu.org - 美国CloudFlare公司CDN节点 25
-      - 🇸🇬 新加坡(TG频道:@kxswa)
-      - 🇸🇬 SG-54.169.194.53-089
-      - 🇸🇬 新加坡(TG频道:@kxswa) 2
-      - 🇭🇰 广东移动转香港BGP2[M][Trojan][倍率:0.8]
-      - 🇸🇬 新加坡_1012070
-      - 🇸🇬 新加坡(TG频道:@kxswa) 3
-      - "|234.03Mb"
-      - 🇸🇬 新加坡_1012079
-      - 🇸🇬 新加坡(TG频道:@kxswa) 4
-      - 🇸🇬 新加坡(TG频道:@kxswa) 5
-      - 🇸🇬 SG-13.214.113.190-079
-      - 🇸🇬 新加坡(TG频道:@kxswa) 6
-      - 🇸🇬 SG-18.142.185.137-004
-      - 🇸🇬 新加坡(TG频道:@kxswa) 7
-      - 🇸🇬 SG-18.142.185.137-004 2
-      - SG_159.223.89.239_1012b7e8-72
-      - 🇭🇰 香港-3|1G|80端口
-      - 🇺🇸 Relay_Relay_Relay_Relay_Relay_Relay_🇺🇸US-🇺🇸US_1207🇺🇸US |234.03Mb
-      - 🇸🇬 新加坡(TG频道:@kxswa) 8
+      - 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧 2
+      - 🇺🇸 美国(TG频道:@kxswa)
       - (TG频道:@kxswa)
+      - 🇯🇵 JP【付费推荐：wxfz.gq】
+      - 🇰🇷 韩国_1012010
+      - 🇰🇷 韩国_1012115
+      - 🇭🇰 香港_1012044
+      - IR【付费推荐：wxfz.gq】
+      - 🇺🇸 US-trojan
+      - aaa 190
+      - 🇮🇷 伊朗_1012012
+      - 🇭🇰 香港_1012044 2
+      - 🇮🇷 伊朗(TG频道:@kxswa)
+      - 🇮🇷 伊朗_1012013
+      - 🇭🇰 [香港企宽2]香港BGP+TV
+      - mianfeifq+253
+      - 🇦🇺 澳大利亚_1012001
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
+      - mianfeifq+248
+      - 🇭🇰 香港_1012130
+      - 🇭🇰 香港_1012198
+      - 🇭🇰 +HK+10
+      - 🇦🇺 澳大利亚_1012001 2
+      - 🇭🇰 github.com/freefq - 香港特别行政区 7
+      - 🇸🇬 v2rayfree.eu.org - 澳大利亚新南威尔士州悉尼Linode数据中心 28
+      - 45.77.48.44:8099
+      - 🇰🇷 KR-52.79.126.165-007
+      - 🇭🇰 +HK+10 2
+      - 🇭🇰 香港(TG频道:@kxswa)
+      - 🇦🇺 澳大利亚_1012003
+      - 🇭🇰 香港_1012149
+      - 🇭🇰 香港_1012149 2
+      - 未知_1012744 2
+      - 🇦🇺 澳大利亚_1012003 2
+      - 🇺🇸 美国(欢迎订阅Youtube元亨利贞)_11 2
+      - 🇺🇸 github.com/freefq - 美国Microsoft数据中心 4
+      - 🇸🇬 github.com/freefq - 澳大利亚新南威尔士州悉尼Linode数据中心 33
+      - 🇭🇰 -香港-az.hk2.ecydns.com
+      - 🇭🇰 香港_1012131
+      - 🇦🇺 澳大利亚_1012004
+      - aaa 268
+      - 🇦🇺 澳大利亚_1012071
+      - _CN_中国->🇧🇭_BH_巴林
+      - 🇦🇺 澳大利亚_1012072
+      - 🇭🇰 香港_1012134
+      - 🇦🇺 澳大利亚_1012004 2
+      - 🇦🇺 _AU_澳大利亚_2
+      - 🇭🇰 [香港MS1]广港AGA加速 TV
+      - 🇭🇰 香港_1012131 2
+      - 🇭🇰 香港_1012134 2
+      - 🇺🇸 美国_10121231
+      - 🇨🇳 CN【付费推荐：wxfz.gq】
+      - 🇺🇸 :美国-ss-162.251.61.221:802-被墙-直连-解锁美国地区NF非自制剧 2
+      - "|234.03Mb"
+      - 🇦🇺 澳大利亚 004
+      - 🇭🇰 香港_1012144
+      - 🇭🇰 HK-104.208.116.187-101
+      - 🇭🇰 香港_1012144 2
       - 999
-      - 🇸🇬 SG-13.214.200.19-084
-      - 🇸🇬 新加坡(TG频道:@kxswa) 9
-      - 🇺🇸 美国 027
-      - 🇯🇵 广东移动转日本NTT[Trojan][倍率:0.8]
-      - 🇸🇬 新加坡(TG频道:@kxswa) 10
-      - 🇸🇬 SG-52.221.3.189-104
-      - 🇭🇰 香港-1|1G|80端口
-      - 🇸🇬 github.com/freefq - 新加坡OVH 11
-      - 🇸🇬 新加坡(TG频道:@kxswa) 11
+      - 🇭🇰 github.com/freefq - 香港特别行政区 7 2
+      - 🇦🇺 AU【付费推荐：wxfz.gq】
+      - 🇺🇸 美国 034
+      - 🇭🇰 HK【付费推荐：wxfz.gq】
+      - 🇭🇰 [10-13]-🇭🇰-香港-034-hk-ms4.iqdnsio.co
+      - mianfeifq+279
+      - SG_159.223.89.239_1012b7e8-72
+      - 🇺🇸 Relay_Relay_Relay_Relay_Relay_Relay_🇺🇸US-🇺🇸US_1207🇺🇸US |234.03Mb
+      - 🇺🇸 美国(TG频道:@kxswa) 2
+      - 🇭🇰 [香港MS1]广港AGA加速 TV 2
+      - 🇯🇵 日本_1012145
+      - 🇺🇸 美国_10121205
+      - 🇭🇰 [香港7-2]MS+三网CN2GIA入口+TV+超大带宽低延迟节点
       - SG_159.223.89.239_1012b7e8-72 2
-      - 🇯🇵 上海联通转日本NTT5[Trojan][倍率:0.8]
-      - aaa 193
-      - aaa 193 2
-      - 🇭🇰 广州移动转香港NTT2[Trojan][倍率:0.8]
+      - "|234.03Mb 2"
+      - 🇺🇸 :美国-ss-162.251.61.221:805-被墙-直连-解锁美国地区NF非自制剧
+      - SG_159.223.89.239_1012b7e8-72 3
+      - 🇺🇸 github.com/freefq - 美国Microsoft数据中心 5
+      - 🇭🇰 [香港7-2]MS+三网CN2GIA入口+TV+超大带宽低延迟节点 2
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇭🇰 [香港MS1]广港AGA加速 TV
-      - mianfeifq+248
-      - mianfeifq+248 2
-      - 🇦🇺 澳大利亚_1012004
-      - 🇦🇺 澳大利亚_1012001
-      - 🇦🇺 澳大利亚_1012003
-      - 🇭🇰 香港(TG频道:@kxswa)
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 50
-      - 未知_1012744
-      - 🇺🇸 美国 018
-      - 🇭🇰 香港_1012134
-      - 🇭🇰 香港_1012144
-      - 🇯🇵 JP【付费推荐：wxfz.gq】
-      - 🇺🇸 _US_美国_5_6@19
-      - 🇺🇸 Relay_Relay_Relay_Relay_Relay_🇺🇸US-🇺🇸US_1206🇺🇸US |21.45Mb
-      - 🇸🇬 Relay_Relay_Relay_Relay_Relay_Relay_Relay_🇸🇬SG-🇯🇵JP_568🇸🇬SG |49.20Mb
-      - 🇭🇰 [香港7-2]MS+三网CN2GIA入口+TV+超大带宽低延迟节点
-      - 🇬🇧 英国_1012003
-      - 🇺🇸 美国 033
-      - 🇭🇰 香港_1012131
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
-      - 🇭🇰 -香港-az.hk2.ecydns.com
-      - 🇯🇵 日本 010
-      - 🇺🇸 US 11 → openitsub.com
-      - 🇵🇭 2.23|PH菲律宾youtube科技
-      - 🇯🇵 [09-26]|openrunner|日本(JP)Japan/Osaka_9
-      - 🇯🇵 日本 010 2
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 2
-      - 🇬🇧 英国_1012050
-      - 🇺🇸 _US_美国
-      - 🇭🇰 +HK+10
-      - 🇺🇸 _US_美国 2
-      - 🇦🇺 AU【付费推荐：wxfz.gq】
-      - 🇯🇵 _JP_日本
-      - 🇦🇺 澳大利亚 004
-      - 【付费推荐：wxfz.gq】
-      - 🇺🇸 +US+369
-      - 🇺🇸 美国_10121236
-      - 未知_1012653
-      - 【付费推荐：wxfz.gq】 2
-      - 🇭🇰 香港_1012044
-      - 🇯🇵 日本_1012144
+      - US_10
+      - 🇺🇸 美国 040
+      - "|47.18Mb"
+      - 🇺🇸 :美国-ss-162.251.61.221:802-被墙-直连-解锁美国地区NF非自制剧
+      - 🇺🇸 +US+380
+      - 🇯🇵 [日本9]NTT+杭州BGP入口+TV
+      - 🇧🇷 巴西 001
+      - 🇺🇸 美国 026
+      - 🇺🇸 美国 031
+      - JP_138.2.8.227_1012a0e8-91
+      - "|TG频道@baipiaoeverything|13"
+      - 🇺🇸 美国_10121306
+      - 🇺🇸 美国_1012061
+      - 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧
+      - 🇺🇸 美国 038
       - 🇺🇸 美国(欢迎订阅Youtube元亨利贞)_11
-      - 🇯🇵 日本_1012155
-      - 🇩🇪 [德国-希腊1]BGP入口 TV
-      - 未知_1012102
-      - 🇯🇵 上海联通转日本NTT6[Trojan][倍率:0.8]
-      - 白嫖-118
-      - 🇩🇪 德国(欢迎订阅Youtube元亨利贞)
-      - 🇺🇸 github.com/freefq - 美国  25
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 32
       - 🇺🇸 US【付费推荐：wxfz.gq】
-      - 🇯🇵 日本_1012138
-      - 🇺🇸 美国_1012705
-      - 🇭🇰 香港_1012149
-      - 🇭🇰 深港专线转香港BGP8[M][Trojan][倍率:2.5]
+      - 🇨🇳 [台湾1]新北 安徽BGP入口 TV
+      - 未知_1012744
+      - 🇰🇷 韩国_1012116
       - 🇺🇸 美国_1012025
-      - 🇺🇸 美国 030
-      - 🇨🇭 [瑞士1]BGP入口 隐私保护 TV
-      - 🇺🇸 美国 051
-      - 🇸🇬 新加坡_1012080
-      - 🇸🇬 SG-54.254.210.226-085
-      - 🇸🇬 新加坡_1012068
-      - 🇸🇬 更新于10/13/00:55
-      - 🇺🇸 美国 034
-      - 🇺🇸 v2rayfree.eu.org - 美国CloudFlare公司CDN节点 25
-      - 🇸🇬 新加坡(TG频道:@kxswa)
-      - 🇸🇬 SG-54.169.194.53-089
-      - 🇸🇬 新加坡(TG频道:@kxswa) 2
-      - 🇭🇰 广东移动转香港BGP2[M][Trojan][倍率:0.8]
-      - 🇸🇬 新加坡_1012070
-      - 🇸🇬 新加坡(TG频道:@kxswa) 3
-      - "|234.03Mb"
-      - 🇸🇬 新加坡_1012079
-      - 🇸🇬 新加坡(TG频道:@kxswa) 4
-      - 🇸🇬 新加坡(TG频道:@kxswa) 5
-      - 🇸🇬 SG-13.214.113.190-079
-      - 🇸🇬 新加坡(TG频道:@kxswa) 6
-      - 🇸🇬 SG-18.142.185.137-004
-      - 🇸🇬 新加坡(TG频道:@kxswa) 7
-      - 🇸🇬 SG-18.142.185.137-004 2
-      - SG_159.223.89.239_1012b7e8-72
-      - 🇭🇰 香港-3|1G|80端口
-      - 🇺🇸 Relay_Relay_Relay_Relay_Relay_Relay_🇺🇸US-🇺🇸US_1207🇺🇸US |234.03Mb
-      - 🇸🇬 新加坡(TG频道:@kxswa) 8
+      - 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧 2
+      - 🇺🇸 美国(TG频道:@kxswa)
       - (TG频道:@kxswa)
+      - 🇯🇵 JP【付费推荐：wxfz.gq】
+      - 🇰🇷 韩国_1012010
+      - 🇰🇷 韩国_1012115
+      - 🇭🇰 香港_1012044
+      - IR【付费推荐：wxfz.gq】
+      - 🇺🇸 US-trojan
+      - aaa 190
+      - 🇮🇷 伊朗_1012012
+      - 🇭🇰 香港_1012044 2
+      - 🇮🇷 伊朗(TG频道:@kxswa)
+      - 🇮🇷 伊朗_1012013
+      - 🇭🇰 [香港企宽2]香港BGP+TV
+      - mianfeifq+253
+      - 🇦🇺 澳大利亚_1012001
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
+      - mianfeifq+248
+      - 🇭🇰 香港_1012130
+      - 🇭🇰 香港_1012198
+      - 🇭🇰 +HK+10
+      - 🇦🇺 澳大利亚_1012001 2
+      - 🇭🇰 github.com/freefq - 香港特别行政区 7
+      - 🇸🇬 v2rayfree.eu.org - 澳大利亚新南威尔士州悉尼Linode数据中心 28
+      - 45.77.48.44:8099
+      - 🇰🇷 KR-52.79.126.165-007
+      - 🇭🇰 +HK+10 2
+      - 🇭🇰 香港(TG频道:@kxswa)
+      - 🇦🇺 澳大利亚_1012003
+      - 🇭🇰 香港_1012149
+      - 🇭🇰 香港_1012149 2
+      - 未知_1012744 2
+      - 🇦🇺 澳大利亚_1012003 2
+      - 🇺🇸 美国(欢迎订阅Youtube元亨利贞)_11 2
+      - 🇺🇸 github.com/freefq - 美国Microsoft数据中心 4
+      - 🇸🇬 github.com/freefq - 澳大利亚新南威尔士州悉尼Linode数据中心 33
+      - 🇭🇰 -香港-az.hk2.ecydns.com
+      - 🇭🇰 香港_1012131
+      - 🇦🇺 澳大利亚_1012004
+      - aaa 268
+      - 🇦🇺 澳大利亚_1012071
+      - _CN_中国->🇧🇭_BH_巴林
+      - 🇦🇺 澳大利亚_1012072
+      - 🇭🇰 香港_1012134
+      - 🇦🇺 澳大利亚_1012004 2
+      - 🇦🇺 _AU_澳大利亚_2
+      - 🇭🇰 [香港MS1]广港AGA加速 TV
+      - 🇭🇰 香港_1012131 2
+      - 🇭🇰 香港_1012134 2
+      - 🇺🇸 美国_10121231
+      - 🇨🇳 CN【付费推荐：wxfz.gq】
+      - 🇺🇸 :美国-ss-162.251.61.221:802-被墙-直连-解锁美国地区NF非自制剧 2
+      - "|234.03Mb"
+      - 🇦🇺 澳大利亚 004
+      - 🇭🇰 香港_1012144
+      - 🇭🇰 HK-104.208.116.187-101
+      - 🇭🇰 香港_1012144 2
       - 999
-      - 🇸🇬 SG-13.214.200.19-084
-      - 🇸🇬 新加坡(TG频道:@kxswa) 9
-      - 🇺🇸 美国 027
-      - 🇯🇵 广东移动转日本NTT[Trojan][倍率:0.8]
-      - 🇸🇬 新加坡(TG频道:@kxswa) 10
-      - 🇸🇬 SG-52.221.3.189-104
-      - 🇭🇰 香港-1|1G|80端口
-      - 🇸🇬 github.com/freefq - 新加坡OVH 11
-      - 🇸🇬 新加坡(TG频道:@kxswa) 11
+      - 🇭🇰 github.com/freefq - 香港特别行政区 7 2
+      - 🇦🇺 AU【付费推荐：wxfz.gq】
+      - 🇺🇸 美国 034
+      - 🇭🇰 HK【付费推荐：wxfz.gq】
+      - 🇭🇰 [10-13]-🇭🇰-香港-034-hk-ms4.iqdnsio.co
+      - mianfeifq+279
+      - SG_159.223.89.239_1012b7e8-72
+      - 🇺🇸 Relay_Relay_Relay_Relay_Relay_Relay_🇺🇸US-🇺🇸US_1207🇺🇸US |234.03Mb
+      - 🇺🇸 美国(TG频道:@kxswa) 2
+      - 🇭🇰 [香港MS1]广港AGA加速 TV 2
+      - 🇯🇵 日本_1012145
+      - 🇺🇸 美国_10121205
+      - 🇭🇰 [香港7-2]MS+三网CN2GIA入口+TV+超大带宽低延迟节点
       - SG_159.223.89.239_1012b7e8-72 2
-      - 🇯🇵 上海联通转日本NTT5[Trojan][倍率:0.8]
-      - aaa 193
-      - aaa 193 2
-      - 🇭🇰 广州移动转香港NTT2[Trojan][倍率:0.8]
+      - "|234.03Mb 2"
+      - 🇺🇸 :美国-ss-162.251.61.221:805-被墙-直连-解锁美国地区NF非自制剧
+      - SG_159.223.89.239_1012b7e8-72 3
+      - 🇺🇸 github.com/freefq - 美国Microsoft数据中心 5
+      - 🇭🇰 [香港7-2]MS+三网CN2GIA入口+TV+超大带宽低延迟节点 2
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇭🇰 [香港MS1]广港AGA加速 TV
-      - mianfeifq+248
-      - mianfeifq+248 2
-      - 🇦🇺 澳大利亚_1012004
-      - 🇦🇺 澳大利亚_1012001
-      - 🇦🇺 澳大利亚_1012003
-      - 🇭🇰 香港(TG频道:@kxswa)
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 50
-      - 未知_1012744
-      - 🇺🇸 美国 018
-      - 🇭🇰 香港_1012134
-      - 🇭🇰 香港_1012144
-      - 🇯🇵 JP【付费推荐：wxfz.gq】
-      - 🇺🇸 _US_美国_5_6@19
-      - 🇺🇸 Relay_Relay_Relay_Relay_Relay_🇺🇸US-🇺🇸US_1206🇺🇸US |21.45Mb
-      - 🇸🇬 Relay_Relay_Relay_Relay_Relay_Relay_Relay_🇸🇬SG-🇯🇵JP_568🇸🇬SG |49.20Mb
-      - 🇭🇰 [香港7-2]MS+三网CN2GIA入口+TV+超大带宽低延迟节点
-      - 🇬🇧 英国_1012003
-      - 🇺🇸 美国 033
-      - 🇭🇰 香港_1012131
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
-      - 🇭🇰 -香港-az.hk2.ecydns.com
-      - 🇯🇵 日本 010
-      - 🇺🇸 US 11 → openitsub.com
-      - 🇵🇭 2.23|PH菲律宾youtube科技
-      - 🇯🇵 [09-26]|openrunner|日本(JP)Japan/Osaka_9
-      - 🇯🇵 日本 010 2
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 2
-      - 🇬🇧 英国_1012050
-      - 🇺🇸 _US_美国
-      - 🇭🇰 +HK+10
-      - 🇺🇸 _US_美国 2
-      - 🇦🇺 AU【付费推荐：wxfz.gq】
-      - 🇯🇵 _JP_日本
-      - 🇦🇺 澳大利亚 004
-      - 【付费推荐：wxfz.gq】
-      - 🇺🇸 +US+369
-      - 🇺🇸 美国_10121236
-      - 未知_1012653
-      - 【付费推荐：wxfz.gq】 2
-      - 🇭🇰 香港_1012044
-      - 🇯🇵 日本_1012144
+      - US_10
+      - 🇺🇸 美国 040
+      - "|47.18Mb"
+      - 🇺🇸 :美国-ss-162.251.61.221:802-被墙-直连-解锁美国地区NF非自制剧
+      - 🇺🇸 +US+380
+      - 🇯🇵 [日本9]NTT+杭州BGP入口+TV
+      - 🇧🇷 巴西 001
+      - 🇺🇸 美国 026
+      - 🇺🇸 美国 031
+      - JP_138.2.8.227_1012a0e8-91
+      - "|TG频道@baipiaoeverything|13"
+      - 🇺🇸 美国_10121306
+      - 🇺🇸 美国_1012061
+      - 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧
+      - 🇺🇸 美国 038
       - 🇺🇸 美国(欢迎订阅Youtube元亨利贞)_11
-      - 🇯🇵 日本_1012155
-      - 🇩🇪 [德国-希腊1]BGP入口 TV
-      - 未知_1012102
-      - 🇯🇵 上海联通转日本NTT6[Trojan][倍率:0.8]
-      - 白嫖-118
-      - 🇩🇪 德国(欢迎订阅Youtube元亨利贞)
-      - 🇺🇸 github.com/freefq - 美国  25
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 32
       - 🇺🇸 US【付费推荐：wxfz.gq】
-      - 🇯🇵 日本_1012138
-      - 🇺🇸 美国_1012705
-      - 🇭🇰 香港_1012149
-      - 🇭🇰 深港专线转香港BGP8[M][Trojan][倍率:2.5]
+      - 🇨🇳 [台湾1]新北 安徽BGP入口 TV
+      - 未知_1012744
+      - 🇰🇷 韩国_1012116
       - 🇺🇸 美国_1012025
-      - 🇺🇸 美国 030
-      - 🇨🇭 [瑞士1]BGP入口 隐私保护 TV
-      - 🇺🇸 美国 051
-      - 🇸🇬 新加坡_1012080
-      - 🇸🇬 SG-54.254.210.226-085
-      - 🇸🇬 新加坡_1012068
-      - 🇸🇬 更新于10/13/00:55
-      - 🇺🇸 美国 034
-      - 🇺🇸 v2rayfree.eu.org - 美国CloudFlare公司CDN节点 25
-      - 🇸🇬 新加坡(TG频道:@kxswa)
-      - 🇸🇬 SG-54.169.194.53-089
-      - 🇸🇬 新加坡(TG频道:@kxswa) 2
-      - 🇭🇰 广东移动转香港BGP2[M][Trojan][倍率:0.8]
-      - 🇸🇬 新加坡_1012070
-      - 🇸🇬 新加坡(TG频道:@kxswa) 3
-      - "|234.03Mb"
-      - 🇸🇬 新加坡_1012079
-      - 🇸🇬 新加坡(TG频道:@kxswa) 4
-      - 🇸🇬 新加坡(TG频道:@kxswa) 5
-      - 🇸🇬 SG-13.214.113.190-079
-      - 🇸🇬 新加坡(TG频道:@kxswa) 6
-      - 🇸🇬 SG-18.142.185.137-004
-      - 🇸🇬 新加坡(TG频道:@kxswa) 7
-      - 🇸🇬 SG-18.142.185.137-004 2
-      - SG_159.223.89.239_1012b7e8-72
-      - 🇭🇰 香港-3|1G|80端口
-      - 🇺🇸 Relay_Relay_Relay_Relay_Relay_Relay_🇺🇸US-🇺🇸US_1207🇺🇸US |234.03Mb
-      - 🇸🇬 新加坡(TG频道:@kxswa) 8
+      - 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧 2
+      - 🇺🇸 美国(TG频道:@kxswa)
       - (TG频道:@kxswa)
+      - 🇯🇵 JP【付费推荐：wxfz.gq】
+      - 🇰🇷 韩国_1012010
+      - 🇰🇷 韩国_1012115
+      - 🇭🇰 香港_1012044
+      - IR【付费推荐：wxfz.gq】
+      - 🇺🇸 US-trojan
+      - aaa 190
+      - 🇮🇷 伊朗_1012012
+      - 🇭🇰 香港_1012044 2
+      - 🇮🇷 伊朗(TG频道:@kxswa)
+      - 🇮🇷 伊朗_1012013
+      - 🇭🇰 [香港企宽2]香港BGP+TV
+      - mianfeifq+253
+      - 🇦🇺 澳大利亚_1012001
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
+      - mianfeifq+248
+      - 🇭🇰 香港_1012130
+      - 🇭🇰 香港_1012198
+      - 🇭🇰 +HK+10
+      - 🇦🇺 澳大利亚_1012001 2
+      - 🇭🇰 github.com/freefq - 香港特别行政区 7
+      - 🇸🇬 v2rayfree.eu.org - 澳大利亚新南威尔士州悉尼Linode数据中心 28
+      - 45.77.48.44:8099
+      - 🇰🇷 KR-52.79.126.165-007
+      - 🇭🇰 +HK+10 2
+      - 🇭🇰 香港(TG频道:@kxswa)
+      - 🇦🇺 澳大利亚_1012003
+      - 🇭🇰 香港_1012149
+      - 🇭🇰 香港_1012149 2
+      - 未知_1012744 2
+      - 🇦🇺 澳大利亚_1012003 2
+      - 🇺🇸 美国(欢迎订阅Youtube元亨利贞)_11 2
+      - 🇺🇸 github.com/freefq - 美国Microsoft数据中心 4
+      - 🇸🇬 github.com/freefq - 澳大利亚新南威尔士州悉尼Linode数据中心 33
+      - 🇭🇰 -香港-az.hk2.ecydns.com
+      - 🇭🇰 香港_1012131
+      - 🇦🇺 澳大利亚_1012004
+      - aaa 268
+      - 🇦🇺 澳大利亚_1012071
+      - _CN_中国->🇧🇭_BH_巴林
+      - 🇦🇺 澳大利亚_1012072
+      - 🇭🇰 香港_1012134
+      - 🇦🇺 澳大利亚_1012004 2
+      - 🇦🇺 _AU_澳大利亚_2
+      - 🇭🇰 [香港MS1]广港AGA加速 TV
+      - 🇭🇰 香港_1012131 2
+      - 🇭🇰 香港_1012134 2
+      - 🇺🇸 美国_10121231
+      - 🇨🇳 CN【付费推荐：wxfz.gq】
+      - 🇺🇸 :美国-ss-162.251.61.221:802-被墙-直连-解锁美国地区NF非自制剧 2
+      - "|234.03Mb"
+      - 🇦🇺 澳大利亚 004
+      - 🇭🇰 香港_1012144
+      - 🇭🇰 HK-104.208.116.187-101
+      - 🇭🇰 香港_1012144 2
       - 999
-      - 🇸🇬 SG-13.214.200.19-084
-      - 🇸🇬 新加坡(TG频道:@kxswa) 9
-      - 🇺🇸 美国 027
-      - 🇯🇵 广东移动转日本NTT[Trojan][倍率:0.8]
-      - 🇸🇬 新加坡(TG频道:@kxswa) 10
-      - 🇸🇬 SG-52.221.3.189-104
-      - 🇭🇰 香港-1|1G|80端口
-      - 🇸🇬 github.com/freefq - 新加坡OVH 11
-      - 🇸🇬 新加坡(TG频道:@kxswa) 11
+      - 🇭🇰 github.com/freefq - 香港特别行政区 7 2
+      - 🇦🇺 AU【付费推荐：wxfz.gq】
+      - 🇺🇸 美国 034
+      - 🇭🇰 HK【付费推荐：wxfz.gq】
+      - 🇭🇰 [10-13]-🇭🇰-香港-034-hk-ms4.iqdnsio.co
+      - mianfeifq+279
+      - SG_159.223.89.239_1012b7e8-72
+      - 🇺🇸 Relay_Relay_Relay_Relay_Relay_Relay_🇺🇸US-🇺🇸US_1207🇺🇸US |234.03Mb
+      - 🇺🇸 美国(TG频道:@kxswa) 2
+      - 🇭🇰 [香港MS1]广港AGA加速 TV 2
+      - 🇯🇵 日本_1012145
+      - 🇺🇸 美国_10121205
+      - 🇭🇰 [香港7-2]MS+三网CN2GIA入口+TV+超大带宽低延迟节点
       - SG_159.223.89.239_1012b7e8-72 2
-      - 🇯🇵 上海联通转日本NTT5[Trojan][倍率:0.8]
-      - aaa 193
-      - aaa 193 2
-      - 🇭🇰 广州移动转香港NTT2[Trojan][倍率:0.8]
+      - "|234.03Mb 2"
+      - 🇺🇸 :美国-ss-162.251.61.221:805-被墙-直连-解锁美国地区NF非自制剧
+      - SG_159.223.89.239_1012b7e8-72 3
+      - 🇺🇸 github.com/freefq - 美国Microsoft数据中心 5
+      - 🇭🇰 [香港7-2]MS+三网CN2GIA入口+TV+超大带宽低延迟节点 2
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
-      - 🇭🇰 [香港MS1]广港AGA加速 TV
-      - 🇭🇰 香港(TG频道:@kxswa)
-      - 🇭🇰 香港_1012134
-      - 🇭🇰 香港_1012144
-      - 🇭🇰 [香港7-2]MS+三网CN2GIA入口+TV+超大带宽低延迟节点
-      - 🇭🇰 香港_1012131
-      - 🇭🇰 -香港-az.hk2.ecydns.com
+      - 🇨🇳 [台湾1]新北 安徽BGP入口 TV
       - 🇭🇰 香港_1012044
+      - 🇭🇰 香港_1012044 2
+      - 🇭🇰 [香港企宽2]香港BGP+TV
+      - 🇭🇰 香港_1012130
+      - 🇭🇰 香港_1012198
+      - 🇭🇰 github.com/freefq - 香港特别行政区 7
+      - 🇭🇰 香港(TG频道:@kxswa)
       - 🇭🇰 香港_1012149
-      - 🇭🇰 深港专线转香港BGP8[M][Trojan][倍率:2.5]
-      - 🇭🇰 广东移动转香港BGP2[M][Trojan][倍率:0.8]
-      - 🇭🇰 香港-3|1G|80端口
-      - 🇭🇰 香港-1|1G|80端口
-      - 🇭🇰 广州移动转香港NTT2[Trojan][倍率:0.8]
+      - 🇭🇰 香港_1012149 2
+      - 🇭🇰 -香港-az.hk2.ecydns.com
+      - 🇭🇰 香港_1012131
+      - 🇭🇰 香港_1012134
+      - 🇭🇰 [香港MS1]广港AGA加速 TV
+      - 🇭🇰 香港_1012131 2
+      - 🇭🇰 香港_1012134 2
+      - 🇭🇰 香港_1012144
+      - 🇭🇰 香港_1012144 2
+      - 🇭🇰 github.com/freefq - 香港特别行政区 7 2
+      - 🇭🇰 [10-13]-🇭🇰-香港-034-hk-ms4.iqdnsio.co
+      - 🇭🇰 [香港MS1]广港AGA加速 TV 2
+      - 🇭🇰 [香港7-2]MS+三网CN2GIA入口+TV+超大带宽低延迟节点
+      - 🇭🇰 [香港7-2]MS+三网CN2GIA入口+TV+超大带宽低延迟节点 2
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇭🇰 [香港MS1]广港AGA加速 TV
-      - mianfeifq+248
-      - mianfeifq+248 2
-      - 🇦🇺 澳大利亚_1012004
-      - 🇦🇺 澳大利亚_1012001
-      - 🇦🇺 澳大利亚_1012003
-      - 🇭🇰 香港(TG频道:@kxswa)
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 50
-      - 未知_1012744
-      - 🇺🇸 美国 018
-      - 🇭🇰 香港_1012134
-      - 🇭🇰 香港_1012144
-      - 🇯🇵 JP【付费推荐：wxfz.gq】
-      - 🇺🇸 _US_美国_5_6@19
-      - 🇺🇸 Relay_Relay_Relay_Relay_Relay_🇺🇸US-🇺🇸US_1206🇺🇸US |21.45Mb
-      - 🇸🇬 Relay_Relay_Relay_Relay_Relay_Relay_Relay_🇸🇬SG-🇯🇵JP_568🇸🇬SG |49.20Mb
-      - 🇭🇰 [香港7-2]MS+三网CN2GIA入口+TV+超大带宽低延迟节点
-      - 🇬🇧 英国_1012003
-      - 🇺🇸 美国 033
-      - 🇭🇰 香港_1012131
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
-      - 🇭🇰 -香港-az.hk2.ecydns.com
-      - 🇯🇵 日本 010
-      - 🇺🇸 US 11 → openitsub.com
-      - 🇵🇭 2.23|PH菲律宾youtube科技
-      - 🇯🇵 [09-26]|openrunner|日本(JP)Japan/Osaka_9
-      - 🇯🇵 日本 010 2
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 2
-      - 🇬🇧 英国_1012050
-      - 🇺🇸 _US_美国
-      - 🇭🇰 +HK+10
-      - 🇺🇸 _US_美国 2
-      - 🇦🇺 AU【付费推荐：wxfz.gq】
-      - 🇯🇵 _JP_日本
-      - 🇦🇺 澳大利亚 004
-      - 【付费推荐：wxfz.gq】
-      - 🇺🇸 +US+369
-      - 🇺🇸 美国_10121236
-      - 未知_1012653
-      - 【付费推荐：wxfz.gq】 2
-      - 🇭🇰 香港_1012044
-      - 🇯🇵 日本_1012144
+      - US_10
+      - 🇺🇸 美国 040
+      - "|47.18Mb"
+      - 🇺🇸 :美国-ss-162.251.61.221:802-被墙-直连-解锁美国地区NF非自制剧
+      - 🇺🇸 +US+380
+      - 🇯🇵 [日本9]NTT+杭州BGP入口+TV
+      - 🇧🇷 巴西 001
+      - 🇺🇸 美国 026
+      - 🇺🇸 美国 031
+      - JP_138.2.8.227_1012a0e8-91
+      - "|TG频道@baipiaoeverything|13"
+      - 🇺🇸 美国_10121306
+      - 🇺🇸 美国_1012061
+      - 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧
+      - 🇺🇸 美国 038
       - 🇺🇸 美国(欢迎订阅Youtube元亨利贞)_11
-      - 🇯🇵 日本_1012155
-      - 🇩🇪 [德国-希腊1]BGP入口 TV
-      - 未知_1012102
-      - 🇯🇵 上海联通转日本NTT6[Trojan][倍率:0.8]
-      - 白嫖-118
-      - 🇩🇪 德国(欢迎订阅Youtube元亨利贞)
-      - 🇺🇸 github.com/freefq - 美国  25
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 32
       - 🇺🇸 US【付费推荐：wxfz.gq】
-      - 🇯🇵 日本_1012138
-      - 🇺🇸 美国_1012705
-      - 🇭🇰 香港_1012149
-      - 🇭🇰 深港专线转香港BGP8[M][Trojan][倍率:2.5]
+      - 🇨🇳 [台湾1]新北 安徽BGP入口 TV
+      - 未知_1012744
+      - 🇰🇷 韩国_1012116
       - 🇺🇸 美国_1012025
-      - 🇺🇸 美国 030
-      - 🇨🇭 [瑞士1]BGP入口 隐私保护 TV
-      - 🇺🇸 美国 051
-      - 🇸🇬 新加坡_1012080
-      - 🇸🇬 SG-54.254.210.226-085
-      - 🇸🇬 新加坡_1012068
-      - 🇸🇬 更新于10/13/00:55
-      - 🇺🇸 美国 034
-      - 🇺🇸 v2rayfree.eu.org - 美国CloudFlare公司CDN节点 25
-      - 🇸🇬 新加坡(TG频道:@kxswa)
-      - 🇸🇬 SG-54.169.194.53-089
-      - 🇸🇬 新加坡(TG频道:@kxswa) 2
-      - 🇭🇰 广东移动转香港BGP2[M][Trojan][倍率:0.8]
-      - 🇸🇬 新加坡_1012070
-      - 🇸🇬 新加坡(TG频道:@kxswa) 3
-      - "|234.03Mb"
-      - 🇸🇬 新加坡_1012079
-      - 🇸🇬 新加坡(TG频道:@kxswa) 4
-      - 🇸🇬 新加坡(TG频道:@kxswa) 5
-      - 🇸🇬 SG-13.214.113.190-079
-      - 🇸🇬 新加坡(TG频道:@kxswa) 6
-      - 🇸🇬 SG-18.142.185.137-004
-      - 🇸🇬 新加坡(TG频道:@kxswa) 7
-      - 🇸🇬 SG-18.142.185.137-004 2
-      - SG_159.223.89.239_1012b7e8-72
-      - 🇭🇰 香港-3|1G|80端口
-      - 🇺🇸 Relay_Relay_Relay_Relay_Relay_Relay_🇺🇸US-🇺🇸US_1207🇺🇸US |234.03Mb
-      - 🇸🇬 新加坡(TG频道:@kxswa) 8
+      - 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧 2
+      - 🇺🇸 美国(TG频道:@kxswa)
       - (TG频道:@kxswa)
+      - 🇯🇵 JP【付费推荐：wxfz.gq】
+      - 🇰🇷 韩国_1012010
+      - 🇰🇷 韩国_1012115
+      - 🇭🇰 香港_1012044
+      - IR【付费推荐：wxfz.gq】
+      - 🇺🇸 US-trojan
+      - aaa 190
+      - 🇮🇷 伊朗_1012012
+      - 🇭🇰 香港_1012044 2
+      - 🇮🇷 伊朗(TG频道:@kxswa)
+      - 🇮🇷 伊朗_1012013
+      - 🇭🇰 [香港企宽2]香港BGP+TV
+      - mianfeifq+253
+      - 🇦🇺 澳大利亚_1012001
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
+      - mianfeifq+248
+      - 🇭🇰 香港_1012130
+      - 🇭🇰 香港_1012198
+      - 🇭🇰 +HK+10
+      - 🇦🇺 澳大利亚_1012001 2
+      - 🇭🇰 github.com/freefq - 香港特别行政区 7
+      - 🇸🇬 v2rayfree.eu.org - 澳大利亚新南威尔士州悉尼Linode数据中心 28
+      - 45.77.48.44:8099
+      - 🇰🇷 KR-52.79.126.165-007
+      - 🇭🇰 +HK+10 2
+      - 🇭🇰 香港(TG频道:@kxswa)
+      - 🇦🇺 澳大利亚_1012003
+      - 🇭🇰 香港_1012149
+      - 🇭🇰 香港_1012149 2
+      - 未知_1012744 2
+      - 🇦🇺 澳大利亚_1012003 2
+      - 🇺🇸 美国(欢迎订阅Youtube元亨利贞)_11 2
+      - 🇺🇸 github.com/freefq - 美国Microsoft数据中心 4
+      - 🇸🇬 github.com/freefq - 澳大利亚新南威尔士州悉尼Linode数据中心 33
+      - 🇭🇰 -香港-az.hk2.ecydns.com
+      - 🇭🇰 香港_1012131
+      - 🇦🇺 澳大利亚_1012004
+      - aaa 268
+      - 🇦🇺 澳大利亚_1012071
+      - _CN_中国->🇧🇭_BH_巴林
+      - 🇦🇺 澳大利亚_1012072
+      - 🇭🇰 香港_1012134
+      - 🇦🇺 澳大利亚_1012004 2
+      - 🇦🇺 _AU_澳大利亚_2
+      - 🇭🇰 [香港MS1]广港AGA加速 TV
+      - 🇭🇰 香港_1012131 2
+      - 🇭🇰 香港_1012134 2
+      - 🇺🇸 美国_10121231
+      - 🇨🇳 CN【付费推荐：wxfz.gq】
+      - 🇺🇸 :美国-ss-162.251.61.221:802-被墙-直连-解锁美国地区NF非自制剧 2
+      - "|234.03Mb"
+      - 🇦🇺 澳大利亚 004
+      - 🇭🇰 香港_1012144
+      - 🇭🇰 HK-104.208.116.187-101
+      - 🇭🇰 香港_1012144 2
       - 999
-      - 🇸🇬 SG-13.214.200.19-084
-      - 🇸🇬 新加坡(TG频道:@kxswa) 9
-      - 🇺🇸 美国 027
-      - 🇯🇵 广东移动转日本NTT[Trojan][倍率:0.8]
-      - 🇸🇬 新加坡(TG频道:@kxswa) 10
-      - 🇸🇬 SG-52.221.3.189-104
-      - 🇭🇰 香港-1|1G|80端口
-      - 🇸🇬 github.com/freefq - 新加坡OVH 11
-      - 🇸🇬 新加坡(TG频道:@kxswa) 11
+      - 🇭🇰 github.com/freefq - 香港特别行政区 7 2
+      - 🇦🇺 AU【付费推荐：wxfz.gq】
+      - 🇺🇸 美国 034
+      - 🇭🇰 HK【付费推荐：wxfz.gq】
+      - 🇭🇰 [10-13]-🇭🇰-香港-034-hk-ms4.iqdnsio.co
+      - mianfeifq+279
+      - SG_159.223.89.239_1012b7e8-72
+      - 🇺🇸 Relay_Relay_Relay_Relay_Relay_Relay_🇺🇸US-🇺🇸US_1207🇺🇸US |234.03Mb
+      - 🇺🇸 美国(TG频道:@kxswa) 2
+      - 🇭🇰 [香港MS1]广港AGA加速 TV 2
+      - 🇯🇵 日本_1012145
+      - 🇺🇸 美国_10121205
+      - 🇭🇰 [香港7-2]MS+三网CN2GIA入口+TV+超大带宽低延迟节点
       - SG_159.223.89.239_1012b7e8-72 2
-      - 🇯🇵 上海联通转日本NTT5[Trojan][倍率:0.8]
-      - aaa 193
-      - aaa 193 2
-      - 🇭🇰 广州移动转香港NTT2[Trojan][倍率:0.8]
+      - "|234.03Mb 2"
+      - 🇺🇸 :美国-ss-162.251.61.221:805-被墙-直连-解锁美国地区NF非自制剧
+      - SG_159.223.89.239_1012b7e8-72 3
+      - 🇺🇸 github.com/freefq - 美国Microsoft数据中心 5
+      - 🇭🇰 [香港7-2]MS+三网CN2GIA入口+TV+超大带宽低延迟节点 2
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇭🇰 [香港MS1]广港AGA加速 TV
-      - mianfeifq+248
-      - mianfeifq+248 2
-      - 🇦🇺 澳大利亚_1012004
-      - 🇦🇺 澳大利亚_1012001
-      - 🇦🇺 澳大利亚_1012003
-      - 🇭🇰 香港(TG频道:@kxswa)
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 50
-      - 未知_1012744
-      - 🇺🇸 美国 018
-      - 🇭🇰 香港_1012134
-      - 🇭🇰 香港_1012144
-      - 🇯🇵 JP【付费推荐：wxfz.gq】
-      - 🇺🇸 _US_美国_5_6@19
-      - 🇺🇸 Relay_Relay_Relay_Relay_Relay_🇺🇸US-🇺🇸US_1206🇺🇸US |21.45Mb
-      - 🇸🇬 Relay_Relay_Relay_Relay_Relay_Relay_Relay_🇸🇬SG-🇯🇵JP_568🇸🇬SG |49.20Mb
-      - 🇭🇰 [香港7-2]MS+三网CN2GIA入口+TV+超大带宽低延迟节点
-      - 🇬🇧 英国_1012003
-      - 🇺🇸 美国 033
-      - 🇭🇰 香港_1012131
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
-      - 🇭🇰 -香港-az.hk2.ecydns.com
-      - 🇯🇵 日本 010
-      - 🇺🇸 US 11 → openitsub.com
-      - 🇵🇭 2.23|PH菲律宾youtube科技
-      - 🇯🇵 [09-26]|openrunner|日本(JP)Japan/Osaka_9
-      - 🇯🇵 日本 010 2
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 2
-      - 🇬🇧 英国_1012050
-      - 🇺🇸 _US_美国
-      - 🇭🇰 +HK+10
-      - 🇺🇸 _US_美国 2
-      - 🇦🇺 AU【付费推荐：wxfz.gq】
-      - 🇯🇵 _JP_日本
-      - 🇦🇺 澳大利亚 004
-      - 【付费推荐：wxfz.gq】
-      - 🇺🇸 +US+369
-      - 🇺🇸 美国_10121236
-      - 未知_1012653
-      - 【付费推荐：wxfz.gq】 2
-      - 🇭🇰 香港_1012044
-      - 🇯🇵 日本_1012144
+      - US_10
+      - 🇺🇸 美国 040
+      - "|47.18Mb"
+      - 🇺🇸 :美国-ss-162.251.61.221:802-被墙-直连-解锁美国地区NF非自制剧
+      - 🇺🇸 +US+380
+      - 🇯🇵 [日本9]NTT+杭州BGP入口+TV
+      - 🇧🇷 巴西 001
+      - 🇺🇸 美国 026
+      - 🇺🇸 美国 031
+      - JP_138.2.8.227_1012a0e8-91
+      - "|TG频道@baipiaoeverything|13"
+      - 🇺🇸 美国_10121306
+      - 🇺🇸 美国_1012061
+      - 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧
+      - 🇺🇸 美国 038
       - 🇺🇸 美国(欢迎订阅Youtube元亨利贞)_11
-      - 🇯🇵 日本_1012155
-      - 🇩🇪 [德国-希腊1]BGP入口 TV
-      - 未知_1012102
-      - 🇯🇵 上海联通转日本NTT6[Trojan][倍率:0.8]
-      - 白嫖-118
-      - 🇩🇪 德国(欢迎订阅Youtube元亨利贞)
-      - 🇺🇸 github.com/freefq - 美国  25
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 32
       - 🇺🇸 US【付费推荐：wxfz.gq】
-      - 🇯🇵 日本_1012138
-      - 🇺🇸 美国_1012705
-      - 🇭🇰 香港_1012149
-      - 🇭🇰 深港专线转香港BGP8[M][Trojan][倍率:2.5]
+      - 🇨🇳 [台湾1]新北 安徽BGP入口 TV
+      - 未知_1012744
+      - 🇰🇷 韩国_1012116
       - 🇺🇸 美国_1012025
-      - 🇺🇸 美国 030
-      - 🇨🇭 [瑞士1]BGP入口 隐私保护 TV
-      - 🇺🇸 美国 051
-      - 🇸🇬 新加坡_1012080
-      - 🇸🇬 SG-54.254.210.226-085
-      - 🇸🇬 新加坡_1012068
-      - 🇸🇬 更新于10/13/00:55
-      - 🇺🇸 美国 034
-      - 🇺🇸 v2rayfree.eu.org - 美国CloudFlare公司CDN节点 25
-      - 🇸🇬 新加坡(TG频道:@kxswa)
-      - 🇸🇬 SG-54.169.194.53-089
-      - 🇸🇬 新加坡(TG频道:@kxswa) 2
-      - 🇭🇰 广东移动转香港BGP2[M][Trojan][倍率:0.8]
-      - 🇸🇬 新加坡_1012070
-      - 🇸🇬 新加坡(TG频道:@kxswa) 3
-      - "|234.03Mb"
-      - 🇸🇬 新加坡_1012079
-      - 🇸🇬 新加坡(TG频道:@kxswa) 4
-      - 🇸🇬 新加坡(TG频道:@kxswa) 5
-      - 🇸🇬 SG-13.214.113.190-079
-      - 🇸🇬 新加坡(TG频道:@kxswa) 6
-      - 🇸🇬 SG-18.142.185.137-004
-      - 🇸🇬 新加坡(TG频道:@kxswa) 7
-      - 🇸🇬 SG-18.142.185.137-004 2
-      - SG_159.223.89.239_1012b7e8-72
-      - 🇭🇰 香港-3|1G|80端口
-      - 🇺🇸 Relay_Relay_Relay_Relay_Relay_Relay_🇺🇸US-🇺🇸US_1207🇺🇸US |234.03Mb
-      - 🇸🇬 新加坡(TG频道:@kxswa) 8
+      - 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧 2
+      - 🇺🇸 美国(TG频道:@kxswa)
       - (TG频道:@kxswa)
+      - 🇯🇵 JP【付费推荐：wxfz.gq】
+      - 🇰🇷 韩国_1012010
+      - 🇰🇷 韩国_1012115
+      - 🇭🇰 香港_1012044
+      - IR【付费推荐：wxfz.gq】
+      - 🇺🇸 US-trojan
+      - aaa 190
+      - 🇮🇷 伊朗_1012012
+      - 🇭🇰 香港_1012044 2
+      - 🇮🇷 伊朗(TG频道:@kxswa)
+      - 🇮🇷 伊朗_1012013
+      - 🇭🇰 [香港企宽2]香港BGP+TV
+      - mianfeifq+253
+      - 🇦🇺 澳大利亚_1012001
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
+      - mianfeifq+248
+      - 🇭🇰 香港_1012130
+      - 🇭🇰 香港_1012198
+      - 🇭🇰 +HK+10
+      - 🇦🇺 澳大利亚_1012001 2
+      - 🇭🇰 github.com/freefq - 香港特别行政区 7
+      - 🇸🇬 v2rayfree.eu.org - 澳大利亚新南威尔士州悉尼Linode数据中心 28
+      - 45.77.48.44:8099
+      - 🇰🇷 KR-52.79.126.165-007
+      - 🇭🇰 +HK+10 2
+      - 🇭🇰 香港(TG频道:@kxswa)
+      - 🇦🇺 澳大利亚_1012003
+      - 🇭🇰 香港_1012149
+      - 🇭🇰 香港_1012149 2
+      - 未知_1012744 2
+      - 🇦🇺 澳大利亚_1012003 2
+      - 🇺🇸 美国(欢迎订阅Youtube元亨利贞)_11 2
+      - 🇺🇸 github.com/freefq - 美国Microsoft数据中心 4
+      - 🇸🇬 github.com/freefq - 澳大利亚新南威尔士州悉尼Linode数据中心 33
+      - 🇭🇰 -香港-az.hk2.ecydns.com
+      - 🇭🇰 香港_1012131
+      - 🇦🇺 澳大利亚_1012004
+      - aaa 268
+      - 🇦🇺 澳大利亚_1012071
+      - _CN_中国->🇧🇭_BH_巴林
+      - 🇦🇺 澳大利亚_1012072
+      - 🇭🇰 香港_1012134
+      - 🇦🇺 澳大利亚_1012004 2
+      - 🇦🇺 _AU_澳大利亚_2
+      - 🇭🇰 [香港MS1]广港AGA加速 TV
+      - 🇭🇰 香港_1012131 2
+      - 🇭🇰 香港_1012134 2
+      - 🇺🇸 美国_10121231
+      - 🇨🇳 CN【付费推荐：wxfz.gq】
+      - 🇺🇸 :美国-ss-162.251.61.221:802-被墙-直连-解锁美国地区NF非自制剧 2
+      - "|234.03Mb"
+      - 🇦🇺 澳大利亚 004
+      - 🇭🇰 香港_1012144
+      - 🇭🇰 HK-104.208.116.187-101
+      - 🇭🇰 香港_1012144 2
       - 999
-      - 🇸🇬 SG-13.214.200.19-084
-      - 🇸🇬 新加坡(TG频道:@kxswa) 9
-      - 🇺🇸 美国 027
-      - 🇯🇵 广东移动转日本NTT[Trojan][倍率:0.8]
-      - 🇸🇬 新加坡(TG频道:@kxswa) 10
-      - 🇸🇬 SG-52.221.3.189-104
-      - 🇭🇰 香港-1|1G|80端口
-      - 🇸🇬 github.com/freefq - 新加坡OVH 11
-      - 🇸🇬 新加坡(TG频道:@kxswa) 11
+      - 🇭🇰 github.com/freefq - 香港特别行政区 7 2
+      - 🇦🇺 AU【付费推荐：wxfz.gq】
+      - 🇺🇸 美国 034
+      - 🇭🇰 HK【付费推荐：wxfz.gq】
+      - 🇭🇰 [10-13]-🇭🇰-香港-034-hk-ms4.iqdnsio.co
+      - mianfeifq+279
+      - SG_159.223.89.239_1012b7e8-72
+      - 🇺🇸 Relay_Relay_Relay_Relay_Relay_Relay_🇺🇸US-🇺🇸US_1207🇺🇸US |234.03Mb
+      - 🇺🇸 美国(TG频道:@kxswa) 2
+      - 🇭🇰 [香港MS1]广港AGA加速 TV 2
+      - 🇯🇵 日本_1012145
+      - 🇺🇸 美国_10121205
+      - 🇭🇰 [香港7-2]MS+三网CN2GIA入口+TV+超大带宽低延迟节点
       - SG_159.223.89.239_1012b7e8-72 2
-      - 🇯🇵 上海联通转日本NTT5[Trojan][倍率:0.8]
-      - aaa 193
-      - aaa 193 2
-      - 🇭🇰 广州移动转香港NTT2[Trojan][倍率:0.8]
+      - "|234.03Mb 2"
+      - 🇺🇸 :美国-ss-162.251.61.221:805-被墙-直连-解锁美国地区NF非自制剧
+      - SG_159.223.89.239_1012b7e8-72 3
+      - 🇺🇸 github.com/freefq - 美国Microsoft数据中心 5
+      - 🇭🇰 [香港7-2]MS+三网CN2GIA入口+TV+超大带宽低延迟节点 2
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇭🇰 [香港MS1]广港AGA加速 TV
-      - mianfeifq+248
-      - mianfeifq+248 2
-      - 🇦🇺 澳大利亚_1012004
-      - 🇦🇺 澳大利亚_1012001
-      - 🇦🇺 澳大利亚_1012003
-      - 🇭🇰 香港(TG频道:@kxswa)
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 50
-      - 未知_1012744
-      - 🇺🇸 美国 018
-      - 🇭🇰 香港_1012134
-      - 🇭🇰 香港_1012144
-      - 🇯🇵 JP【付费推荐：wxfz.gq】
-      - 🇺🇸 _US_美国_5_6@19
-      - 🇺🇸 Relay_Relay_Relay_Relay_Relay_🇺🇸US-🇺🇸US_1206🇺🇸US |21.45Mb
-      - 🇸🇬 Relay_Relay_Relay_Relay_Relay_Relay_Relay_🇸🇬SG-🇯🇵JP_568🇸🇬SG |49.20Mb
-      - 🇭🇰 [香港7-2]MS+三网CN2GIA入口+TV+超大带宽低延迟节点
-      - 🇬🇧 英国_1012003
-      - 🇺🇸 美国 033
-      - 🇭🇰 香港_1012131
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
-      - 🇭🇰 -香港-az.hk2.ecydns.com
-      - 🇯🇵 日本 010
-      - 🇺🇸 US 11 → openitsub.com
-      - 🇵🇭 2.23|PH菲律宾youtube科技
-      - 🇯🇵 [09-26]|openrunner|日本(JP)Japan/Osaka_9
-      - 🇯🇵 日本 010 2
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 2
-      - 🇬🇧 英国_1012050
-      - 🇺🇸 _US_美国
-      - 🇭🇰 +HK+10
-      - 🇺🇸 _US_美国 2
-      - 🇦🇺 AU【付费推荐：wxfz.gq】
-      - 🇯🇵 _JP_日本
-      - 🇦🇺 澳大利亚 004
-      - 【付费推荐：wxfz.gq】
-      - 🇺🇸 +US+369
-      - 🇺🇸 美国_10121236
-      - 未知_1012653
-      - 【付费推荐：wxfz.gq】 2
-      - 🇭🇰 香港_1012044
-      - 🇯🇵 日本_1012144
+      - US_10
+      - 🇺🇸 美国 040
+      - "|47.18Mb"
+      - 🇺🇸 :美国-ss-162.251.61.221:802-被墙-直连-解锁美国地区NF非自制剧
+      - 🇺🇸 +US+380
+      - 🇯🇵 [日本9]NTT+杭州BGP入口+TV
+      - 🇧🇷 巴西 001
+      - 🇺🇸 美国 026
+      - 🇺🇸 美国 031
+      - JP_138.2.8.227_1012a0e8-91
+      - "|TG频道@baipiaoeverything|13"
+      - 🇺🇸 美国_10121306
+      - 🇺🇸 美国_1012061
+      - 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧
+      - 🇺🇸 美国 038
       - 🇺🇸 美国(欢迎订阅Youtube元亨利贞)_11
-      - 🇯🇵 日本_1012155
-      - 🇩🇪 [德国-希腊1]BGP入口 TV
-      - 未知_1012102
-      - 🇯🇵 上海联通转日本NTT6[Trojan][倍率:0.8]
-      - 白嫖-118
-      - 🇩🇪 德国(欢迎订阅Youtube元亨利贞)
-      - 🇺🇸 github.com/freefq - 美国  25
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 32
       - 🇺🇸 US【付费推荐：wxfz.gq】
-      - 🇯🇵 日本_1012138
-      - 🇺🇸 美国_1012705
-      - 🇭🇰 香港_1012149
-      - 🇭🇰 深港专线转香港BGP8[M][Trojan][倍率:2.5]
+      - 🇨🇳 [台湾1]新北 安徽BGP入口 TV
+      - 未知_1012744
+      - 🇰🇷 韩国_1012116
       - 🇺🇸 美国_1012025
-      - 🇺🇸 美国 030
-      - 🇨🇭 [瑞士1]BGP入口 隐私保护 TV
-      - 🇺🇸 美国 051
-      - 🇸🇬 新加坡_1012080
-      - 🇸🇬 SG-54.254.210.226-085
-      - 🇸🇬 新加坡_1012068
-      - 🇸🇬 更新于10/13/00:55
-      - 🇺🇸 美国 034
-      - 🇺🇸 v2rayfree.eu.org - 美国CloudFlare公司CDN节点 25
-      - 🇸🇬 新加坡(TG频道:@kxswa)
-      - 🇸🇬 SG-54.169.194.53-089
-      - 🇸🇬 新加坡(TG频道:@kxswa) 2
-      - 🇭🇰 广东移动转香港BGP2[M][Trojan][倍率:0.8]
-      - 🇸🇬 新加坡_1012070
-      - 🇸🇬 新加坡(TG频道:@kxswa) 3
-      - "|234.03Mb"
-      - 🇸🇬 新加坡_1012079
-      - 🇸🇬 新加坡(TG频道:@kxswa) 4
-      - 🇸🇬 新加坡(TG频道:@kxswa) 5
-      - 🇸🇬 SG-13.214.113.190-079
-      - 🇸🇬 新加坡(TG频道:@kxswa) 6
-      - 🇸🇬 SG-18.142.185.137-004
-      - 🇸🇬 新加坡(TG频道:@kxswa) 7
-      - 🇸🇬 SG-18.142.185.137-004 2
-      - SG_159.223.89.239_1012b7e8-72
-      - 🇭🇰 香港-3|1G|80端口
-      - 🇺🇸 Relay_Relay_Relay_Relay_Relay_Relay_🇺🇸US-🇺🇸US_1207🇺🇸US |234.03Mb
-      - 🇸🇬 新加坡(TG频道:@kxswa) 8
+      - 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧 2
+      - 🇺🇸 美国(TG频道:@kxswa)
       - (TG频道:@kxswa)
+      - 🇯🇵 JP【付费推荐：wxfz.gq】
+      - 🇰🇷 韩国_1012010
+      - 🇰🇷 韩国_1012115
+      - 🇭🇰 香港_1012044
+      - IR【付费推荐：wxfz.gq】
+      - 🇺🇸 US-trojan
+      - aaa 190
+      - 🇮🇷 伊朗_1012012
+      - 🇭🇰 香港_1012044 2
+      - 🇮🇷 伊朗(TG频道:@kxswa)
+      - 🇮🇷 伊朗_1012013
+      - 🇭🇰 [香港企宽2]香港BGP+TV
+      - mianfeifq+253
+      - 🇦🇺 澳大利亚_1012001
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
+      - mianfeifq+248
+      - 🇭🇰 香港_1012130
+      - 🇭🇰 香港_1012198
+      - 🇭🇰 +HK+10
+      - 🇦🇺 澳大利亚_1012001 2
+      - 🇭🇰 github.com/freefq - 香港特别行政区 7
+      - 🇸🇬 v2rayfree.eu.org - 澳大利亚新南威尔士州悉尼Linode数据中心 28
+      - 45.77.48.44:8099
+      - 🇰🇷 KR-52.79.126.165-007
+      - 🇭🇰 +HK+10 2
+      - 🇭🇰 香港(TG频道:@kxswa)
+      - 🇦🇺 澳大利亚_1012003
+      - 🇭🇰 香港_1012149
+      - 🇭🇰 香港_1012149 2
+      - 未知_1012744 2
+      - 🇦🇺 澳大利亚_1012003 2
+      - 🇺🇸 美国(欢迎订阅Youtube元亨利贞)_11 2
+      - 🇺🇸 github.com/freefq - 美国Microsoft数据中心 4
+      - 🇸🇬 github.com/freefq - 澳大利亚新南威尔士州悉尼Linode数据中心 33
+      - 🇭🇰 -香港-az.hk2.ecydns.com
+      - 🇭🇰 香港_1012131
+      - 🇦🇺 澳大利亚_1012004
+      - aaa 268
+      - 🇦🇺 澳大利亚_1012071
+      - _CN_中国->🇧🇭_BH_巴林
+      - 🇦🇺 澳大利亚_1012072
+      - 🇭🇰 香港_1012134
+      - 🇦🇺 澳大利亚_1012004 2
+      - 🇦🇺 _AU_澳大利亚_2
+      - 🇭🇰 [香港MS1]广港AGA加速 TV
+      - 🇭🇰 香港_1012131 2
+      - 🇭🇰 香港_1012134 2
+      - 🇺🇸 美国_10121231
+      - 🇨🇳 CN【付费推荐：wxfz.gq】
+      - 🇺🇸 :美国-ss-162.251.61.221:802-被墙-直连-解锁美国地区NF非自制剧 2
+      - "|234.03Mb"
+      - 🇦🇺 澳大利亚 004
+      - 🇭🇰 香港_1012144
+      - 🇭🇰 HK-104.208.116.187-101
+      - 🇭🇰 香港_1012144 2
       - 999
-      - 🇸🇬 SG-13.214.200.19-084
-      - 🇸🇬 新加坡(TG频道:@kxswa) 9
-      - 🇺🇸 美国 027
-      - 🇯🇵 广东移动转日本NTT[Trojan][倍率:0.8]
-      - 🇸🇬 新加坡(TG频道:@kxswa) 10
-      - 🇸🇬 SG-52.221.3.189-104
-      - 🇭🇰 香港-1|1G|80端口
-      - 🇸🇬 github.com/freefq - 新加坡OVH 11
-      - 🇸🇬 新加坡(TG频道:@kxswa) 11
+      - 🇭🇰 github.com/freefq - 香港特别行政区 7 2
+      - 🇦🇺 AU【付费推荐：wxfz.gq】
+      - 🇺🇸 美国 034
+      - 🇭🇰 HK【付费推荐：wxfz.gq】
+      - 🇭🇰 [10-13]-🇭🇰-香港-034-hk-ms4.iqdnsio.co
+      - mianfeifq+279
+      - SG_159.223.89.239_1012b7e8-72
+      - 🇺🇸 Relay_Relay_Relay_Relay_Relay_Relay_🇺🇸US-🇺🇸US_1207🇺🇸US |234.03Mb
+      - 🇺🇸 美国(TG频道:@kxswa) 2
+      - 🇭🇰 [香港MS1]广港AGA加速 TV 2
+      - 🇯🇵 日本_1012145
+      - 🇺🇸 美国_10121205
+      - 🇭🇰 [香港7-2]MS+三网CN2GIA入口+TV+超大带宽低延迟节点
       - SG_159.223.89.239_1012b7e8-72 2
-      - 🇯🇵 上海联通转日本NTT5[Trojan][倍率:0.8]
-      - aaa 193
-      - aaa 193 2
-      - 🇭🇰 广州移动转香港NTT2[Trojan][倍率:0.8]
+      - "|234.03Mb 2"
+      - 🇺🇸 :美国-ss-162.251.61.221:805-被墙-直连-解锁美国地区NF非自制剧
+      - SG_159.223.89.239_1012b7e8-72 3
+      - 🇺🇸 github.com/freefq - 美国Microsoft数据中心 5
+      - 🇭🇰 [香港7-2]MS+三网CN2GIA入口+TV+超大带宽低延迟节点 2
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -772,106 +781,106 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇭🇰 [香港MS1]广港AGA加速 TV
-      - mianfeifq+248
-      - mianfeifq+248 2
-      - 🇦🇺 澳大利亚_1012004
-      - 🇦🇺 澳大利亚_1012001
-      - 🇦🇺 澳大利亚_1012003
-      - 🇭🇰 香港(TG频道:@kxswa)
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 50
-      - 未知_1012744
-      - 🇺🇸 美国 018
-      - 🇭🇰 香港_1012134
-      - 🇭🇰 香港_1012144
-      - 🇯🇵 JP【付费推荐：wxfz.gq】
-      - 🇺🇸 _US_美国_5_6@19
-      - 🇺🇸 Relay_Relay_Relay_Relay_Relay_🇺🇸US-🇺🇸US_1206🇺🇸US |21.45Mb
-      - 🇸🇬 Relay_Relay_Relay_Relay_Relay_Relay_Relay_🇸🇬SG-🇯🇵JP_568🇸🇬SG |49.20Mb
-      - 🇭🇰 [香港7-2]MS+三网CN2GIA入口+TV+超大带宽低延迟节点
-      - 🇬🇧 英国_1012003
-      - 🇺🇸 美国 033
-      - 🇭🇰 香港_1012131
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
-      - 🇭🇰 -香港-az.hk2.ecydns.com
-      - 🇯🇵 日本 010
-      - 🇺🇸 US 11 → openitsub.com
-      - 🇵🇭 2.23|PH菲律宾youtube科技
-      - 🇯🇵 [09-26]|openrunner|日本(JP)Japan/Osaka_9
-      - 🇯🇵 日本 010 2
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 2
-      - 🇬🇧 英国_1012050
-      - 🇺🇸 _US_美国
-      - 🇭🇰 +HK+10
-      - 🇺🇸 _US_美国 2
-      - 🇦🇺 AU【付费推荐：wxfz.gq】
-      - 🇯🇵 _JP_日本
-      - 🇦🇺 澳大利亚 004
-      - 【付费推荐：wxfz.gq】
-      - 🇺🇸 +US+369
-      - 🇺🇸 美国_10121236
-      - 未知_1012653
-      - 【付费推荐：wxfz.gq】 2
-      - 🇭🇰 香港_1012044
-      - 🇯🇵 日本_1012144
+      - US_10
+      - 🇺🇸 美国 040
+      - "|47.18Mb"
+      - 🇺🇸 :美国-ss-162.251.61.221:802-被墙-直连-解锁美国地区NF非自制剧
+      - 🇺🇸 +US+380
+      - 🇯🇵 [日本9]NTT+杭州BGP入口+TV
+      - 🇧🇷 巴西 001
+      - 🇺🇸 美国 026
+      - 🇺🇸 美国 031
+      - JP_138.2.8.227_1012a0e8-91
+      - "|TG频道@baipiaoeverything|13"
+      - 🇺🇸 美国_10121306
+      - 🇺🇸 美国_1012061
+      - 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧
+      - 🇺🇸 美国 038
       - 🇺🇸 美国(欢迎订阅Youtube元亨利贞)_11
-      - 🇯🇵 日本_1012155
-      - 🇩🇪 [德国-希腊1]BGP入口 TV
-      - 未知_1012102
-      - 🇯🇵 上海联通转日本NTT6[Trojan][倍率:0.8]
-      - 白嫖-118
-      - 🇩🇪 德国(欢迎订阅Youtube元亨利贞)
-      - 🇺🇸 github.com/freefq - 美国  25
+      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 32
       - 🇺🇸 US【付费推荐：wxfz.gq】
-      - 🇯🇵 日本_1012138
-      - 🇺🇸 美国_1012705
-      - 🇭🇰 香港_1012149
-      - 🇭🇰 深港专线转香港BGP8[M][Trojan][倍率:2.5]
+      - 🇨🇳 [台湾1]新北 安徽BGP入口 TV
+      - 未知_1012744
+      - 🇰🇷 韩国_1012116
       - 🇺🇸 美国_1012025
-      - 🇺🇸 美国 030
-      - 🇨🇭 [瑞士1]BGP入口 隐私保护 TV
-      - 🇺🇸 美国 051
-      - 🇸🇬 新加坡_1012080
-      - 🇸🇬 SG-54.254.210.226-085
-      - 🇸🇬 新加坡_1012068
-      - 🇸🇬 更新于10/13/00:55
-      - 🇺🇸 美国 034
-      - 🇺🇸 v2rayfree.eu.org - 美国CloudFlare公司CDN节点 25
-      - 🇸🇬 新加坡(TG频道:@kxswa)
-      - 🇸🇬 SG-54.169.194.53-089
-      - 🇸🇬 新加坡(TG频道:@kxswa) 2
-      - 🇭🇰 广东移动转香港BGP2[M][Trojan][倍率:0.8]
-      - 🇸🇬 新加坡_1012070
-      - 🇸🇬 新加坡(TG频道:@kxswa) 3
-      - "|234.03Mb"
-      - 🇸🇬 新加坡_1012079
-      - 🇸🇬 新加坡(TG频道:@kxswa) 4
-      - 🇸🇬 新加坡(TG频道:@kxswa) 5
-      - 🇸🇬 SG-13.214.113.190-079
-      - 🇸🇬 新加坡(TG频道:@kxswa) 6
-      - 🇸🇬 SG-18.142.185.137-004
-      - 🇸🇬 新加坡(TG频道:@kxswa) 7
-      - 🇸🇬 SG-18.142.185.137-004 2
-      - SG_159.223.89.239_1012b7e8-72
-      - 🇭🇰 香港-3|1G|80端口
-      - 🇺🇸 Relay_Relay_Relay_Relay_Relay_Relay_🇺🇸US-🇺🇸US_1207🇺🇸US |234.03Mb
-      - 🇸🇬 新加坡(TG频道:@kxswa) 8
+      - 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧 2
+      - 🇺🇸 美国(TG频道:@kxswa)
       - (TG频道:@kxswa)
+      - 🇯🇵 JP【付费推荐：wxfz.gq】
+      - 🇰🇷 韩国_1012010
+      - 🇰🇷 韩国_1012115
+      - 🇭🇰 香港_1012044
+      - IR【付费推荐：wxfz.gq】
+      - 🇺🇸 US-trojan
+      - aaa 190
+      - 🇮🇷 伊朗_1012012
+      - 🇭🇰 香港_1012044 2
+      - 🇮🇷 伊朗(TG频道:@kxswa)
+      - 🇮🇷 伊朗_1012013
+      - 🇭🇰 [香港企宽2]香港BGP+TV
+      - mianfeifq+253
+      - 🇦🇺 澳大利亚_1012001
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
+      - mianfeifq+248
+      - 🇭🇰 香港_1012130
+      - 🇭🇰 香港_1012198
+      - 🇭🇰 +HK+10
+      - 🇦🇺 澳大利亚_1012001 2
+      - 🇭🇰 github.com/freefq - 香港特别行政区 7
+      - 🇸🇬 v2rayfree.eu.org - 澳大利亚新南威尔士州悉尼Linode数据中心 28
+      - 45.77.48.44:8099
+      - 🇰🇷 KR-52.79.126.165-007
+      - 🇭🇰 +HK+10 2
+      - 🇭🇰 香港(TG频道:@kxswa)
+      - 🇦🇺 澳大利亚_1012003
+      - 🇭🇰 香港_1012149
+      - 🇭🇰 香港_1012149 2
+      - 未知_1012744 2
+      - 🇦🇺 澳大利亚_1012003 2
+      - 🇺🇸 美国(欢迎订阅Youtube元亨利贞)_11 2
+      - 🇺🇸 github.com/freefq - 美国Microsoft数据中心 4
+      - 🇸🇬 github.com/freefq - 澳大利亚新南威尔士州悉尼Linode数据中心 33
+      - 🇭🇰 -香港-az.hk2.ecydns.com
+      - 🇭🇰 香港_1012131
+      - 🇦🇺 澳大利亚_1012004
+      - aaa 268
+      - 🇦🇺 澳大利亚_1012071
+      - _CN_中国->🇧🇭_BH_巴林
+      - 🇦🇺 澳大利亚_1012072
+      - 🇭🇰 香港_1012134
+      - 🇦🇺 澳大利亚_1012004 2
+      - 🇦🇺 _AU_澳大利亚_2
+      - 🇭🇰 [香港MS1]广港AGA加速 TV
+      - 🇭🇰 香港_1012131 2
+      - 🇭🇰 香港_1012134 2
+      - 🇺🇸 美国_10121231
+      - 🇨🇳 CN【付费推荐：wxfz.gq】
+      - 🇺🇸 :美国-ss-162.251.61.221:802-被墙-直连-解锁美国地区NF非自制剧 2
+      - "|234.03Mb"
+      - 🇦🇺 澳大利亚 004
+      - 🇭🇰 香港_1012144
+      - 🇭🇰 HK-104.208.116.187-101
+      - 🇭🇰 香港_1012144 2
       - 999
-      - 🇸🇬 SG-13.214.200.19-084
-      - 🇸🇬 新加坡(TG频道:@kxswa) 9
-      - 🇺🇸 美国 027
-      - 🇯🇵 广东移动转日本NTT[Trojan][倍率:0.8]
-      - 🇸🇬 新加坡(TG频道:@kxswa) 10
-      - 🇸🇬 SG-52.221.3.189-104
-      - 🇭🇰 香港-1|1G|80端口
-      - 🇸🇬 github.com/freefq - 新加坡OVH 11
-      - 🇸🇬 新加坡(TG频道:@kxswa) 11
+      - 🇭🇰 github.com/freefq - 香港特别行政区 7 2
+      - 🇦🇺 AU【付费推荐：wxfz.gq】
+      - 🇺🇸 美国 034
+      - 🇭🇰 HK【付费推荐：wxfz.gq】
+      - 🇭🇰 [10-13]-🇭🇰-香港-034-hk-ms4.iqdnsio.co
+      - mianfeifq+279
+      - SG_159.223.89.239_1012b7e8-72
+      - 🇺🇸 Relay_Relay_Relay_Relay_Relay_Relay_🇺🇸US-🇺🇸US_1207🇺🇸US |234.03Mb
+      - 🇺🇸 美国(TG频道:@kxswa) 2
+      - 🇭🇰 [香港MS1]广港AGA加速 TV 2
+      - 🇯🇵 日本_1012145
+      - 🇺🇸 美国_10121205
+      - 🇭🇰 [香港7-2]MS+三网CN2GIA入口+TV+超大带宽低延迟节点
       - SG_159.223.89.239_1012b7e8-72 2
-      - 🇯🇵 上海联通转日本NTT5[Trojan][倍率:0.8]
-      - aaa 193
-      - aaa 193 2
-      - 🇭🇰 广州移动转香港NTT2[Trojan][倍率:0.8]
+      - "|234.03Mb 2"
+      - 🇺🇸 :美国-ss-162.251.61.221:805-被墙-直连-解锁美国地区NF非自制剧
+      - SG_159.223.89.239_1012b7e8-72 3
+      - 🇺🇸 github.com/freefq - 美国Microsoft数据中心 5
+      - 🇭🇰 [香港7-2]MS+三网CN2GIA入口+TV+超大带宽低延迟节点 2
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
