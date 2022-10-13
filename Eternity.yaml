@@ -5,747 +5,746 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇸🇬 SG 74, server: vsg1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /chat, headers: {Host: vsg1.0bad.com}}}
-  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:), server: PL.nexitally.xyz, port: 443, type: vmess, uuid: 54c6c823-4957-4c6c-b10c-359bc51f7cc3, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /a54e284cb6/, headers: {Host: PL.nexitally.xyz}}}
-  - {name: 🇸🇬 SG 74 2, server: vsg1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /chat, headers: {Host: vsg1.0bad.com}}}
-  - {name: 🇺🇸 v2rayfree.eu.org - 美国CloudFlare公司CDN节点 25, server: PL.nexitally.xyz, port: 443, type: vmess, uuid: 54c6c823-4957-4c6c-b10c-359bc51f7cc3, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /a54e284cb6/, headers: {Host: PL.nexitally.xyz}}}
-  - {name: 【付费推荐：wxfz.ml】, server: 141.101.114.20, port: 443, type: vmess, uuid: 07a63fe3-8a46-4f89-b548-9151c61b9dc8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: v2ray1.zhujicn2.com}}}
-  - {name: 🇺🇸 美国_1012007, server: 172.64.153.150, port: 443, type: vmess, uuid: bf4619e4-01dc-48ca-be08-0976b54968ce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: lg5.zhujicn2.com}}}
-  - {name: 🇭🇰 香港_1012041, server: fullaccesstohongkongnet.azurewebsites.net, port: 443, type: vmess, uuid: 274f11c6-f69b-40b9-8966-f39e06e97be7, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /ws, headers: {Host: fullaccesstohongkongnet.azurewebsites.net}}}
-  - {name: 🇺🇸 美国 032, server: 150.230.249.42, port: 443, type: trojan, password: 0Y9gOHSdRt, sni: content-provider5.cdn-delivery.akamaicd.com, skip-cert-verify: true}
-  - {name: 🇸🇬 v2rayfree.eu.org - 新加坡OVH 19, server: sg-ovh1.v2-ray.com, port: 80, type: vmess, uuid: a9481600-ef36-402a-a0e5-5547bfd7b87c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /fastssh/fghhh/634197c4cdf81/, headers: {Host: sg-ovh1.v2-ray.com}}}
-  - {name: 🇺🇸 :加拿大-ss-38.64.138.53:1035-被墙-直连-解锁美国地区NF非自制剧, server: 38.64.138.53, port: 1035, type: ss, cipher: chacha20-ietf-poly1305, password: )1N1E6v0SU_rGTpg}
-  - {name: 🇸🇬 新加坡 003, server: sg-ovh1.v2-ray.com, port: 80, type: vmess, uuid: a9481600-ef36-402a-a0e5-5547bfd7b87c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /fastssh/fghhh/634197c4cdf81/, headers: {Host: "%7B%22Host%22:%22sg-ovh1.v2-ray.com%22%7D"}}}
-  - {name: 🇺🇸 :美国-ss-162.251.61.221:812-被墙-直连-解锁美国地区NF非自制剧, server: 162.251.61.221, port: 812, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: "|44.01Mb", server: 150.230.249.42, port: 443, type: trojan, password: 0Y9gOHSdRt, sni: hk.vc2.hyperlinkvpn.xyz, skip-cert-verify: true}
-  - {name: 🇨🇳 CN【付费推荐：wxfz.ml】, server: sg16.nachoneko.shop, port: 18428, type: ss, cipher: rc4-md5, password: weqPfW}
-  - {name: 🇸🇬 SG【付费推荐：wxfz.ml】, server: sg-ovh1.v2-ray.com, port: 80, type: vmess, uuid: a9481600-ef36-402a-a0e5-5547bfd7b87c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /fastssh/fghhh/634197c4cdf81/, headers: {Host: sg-ovh1.v2-ray.com}}}
-  - {name: aaa 58, server: 172.64.153.150, port: 443, type: vmess, uuid: bf4619e4-01dc-48ca-be08-0976b54968ce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: lg5.zhujicn2.com}}}
-  - {name: 未知_1012018, server: 141.101.115.2, port: 443, type: vmess, uuid: a5ba8b2b-8fc5-4521-a35e-9281be61c1c3, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: lg1.zhujicn2.com}}}
-  - {name: 🇮🇳 印度+003, server: jgwhdlb1.gaox.ml, port: 443, type: trojan, password: e05c749b-7c6b-41b8-9c71-9dcf685edf4a, sni: 1002hk1326.tfzhc.top, skip-cert-verify: true}
-  - {name: "|11.68Mb", server: jgwhdlb1.gaox.ml, port: 443, type: trojan, password: e05c749b-7c6b-41b8-9c71-9dcf685edf4a, sni: hk.vc2.hyperlinkvpn.xyz, skip-cert-verify: true}
-  - {name: 🇺🇸 github.com/freefq - 美国CloudFlare节点 16, server: sg.prpr.link, port: 443, type: vmess, uuid: cea42161-bddc-4230-a9b9-e43187967ffa, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /Telegram/ShareCentrePro/mknnix, headers: {Host: sg.prpr.link}}}
-  - {name: 未知_1012649, server: 141.101.114.2, port: 443, type: vmess, uuid: 105c635f-918d-4b2a-8c9d-d5426e94eb4b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: lg2.zhujicn2.com}}}
-  - {name: 🇸🇬 SG 74 3, server: vsg1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /chat, headers: {Host: vsg1.0bad.com}}}
-  - {name: 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧, server: 185.162.126.217, port: 50004, type: ss, cipher: aes-256-cfb, password: !<str> 4415934295}
+  - {name: 🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 19, server: do-sg-01.vvsoga.net, port: 1234, type: trojan, password: 469eb2d7-c86c-3484-ba85-4f26f0645b9b, sni: n2.gladns.com, skip-cert-verify: true}
   - {name: 🇺🇸 US 6 → openitsub.com, server: 152.67.160.174, port: 443, type: trojan, password: 54080134-2cba-4535-8599-95650bd9aa54, sni: 45.11.92.100, skip-cert-verify: true}
-  - {name: 🇺🇸 美国 042, server: 198.41.212.30, port: 443, type: vmess, uuid: 105c635f-918d-4b2a-8c9d-d5426e94eb4b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: lg2.zhujicn2.com}}}
-  - {name: 🇨🇳 CN【付费推荐：wxfz.ml】 2, server: hgc05.nachoneko.shop, port: 18428, type: ss, cipher: rc4-md5, password: weqPfW}
-  - {name: 🇺🇸 :美国-ss-162.251.61.221:804-被墙-直连-解锁美国地区NF非自制剧, server: 162.251.61.221, port: 804, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 2, server: 196.247.59.154, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: 🇺🇸 美国_10121245, server: 172.64.155.100, port: 443, type: vmess, uuid: 6e9217de-ad7e-4a67-bd17-a6dca951733b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: lg3.zhujicn2.com}}}
-  - {name: 🇳🇱 荷兰_1012225, server: 188.114.96.7, port: 443, type: vmess, uuid: db5d1aa3-908b-44d1-be0a-4e6a8d4e4cda, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /go, headers: {Host: us02.gogogoo.cyou}}}
-  - {name: 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧 2, server: 185.162.126.217, port: 50004, type: ss, cipher: aes-256-cfb, password: !<str> 4415934295}
-  - {name: aaa 248, server: mahsaproxychannel.way-of-freedom.com, port: 80, type: vmess, uuid: b831381d-6324-4d53-ad4f-8cda48b30811, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /graphql, headers: {Host: mahsaproxychannel.way-of-freedom.com}}}
-  - {name: 🇮🇷 伊朗_1012012, server: MahsaProxyTelegramChannel.way-of-freedom.com, port: 80, type: vmess, uuid: b831381d-6324-4d53-ad4f-8cda48b30811, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /graphql, headers: {Host: MahsaProxyTelegramChannel.way-of-freedom.com}}}
-  - {name: 🇺🇸 2.26| httpsgithubcomAlvin9999newpacwiki clash ip6 洛杉矶1CDN, server: 141.101.115.150, port: 443, type: vmess, uuid: bf4619e4-01dc-48ca-be08-0976b54968ce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: lg5.zhujicn2.com}}}
-  - {name: 🇺🇸 github.com/freefq - 美国  4, server: mahsaproxychannel.way-of-freedom.com, port: 80, type: vmess, uuid: b831381d-6324-4d53-ad4f-8cda48b30811, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /graphql, headers: {Host: mahsaproxychannel.way-of-freedom.com}}}
-  - {name: IR【付费推荐：wxfz.ml】, server: MahsaProxyTelegramChannel.way-of-freedom.com, port: 80, type: vmess, uuid: b831381d-6324-4d53-ad4f-8cda48b30811, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /graphql, headers: {Host: MahsaProxyTelegramChannel.way-of-freedom.com}}}
-  - {name: 🇮🇷 伊朗_1012011, server: mahsaproxychannel.way-of-freedom.com, port: 80, type: vmess, uuid: b831381d-6324-4d53-ad4f-8cda48b30811, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /graphql, headers: {Host: mahsaproxychannel.way-of-freedom.com}}}
-  - {name: 🇮🇷 伊朗_1012013, server: MahsaProxyTelegramChannel.way-of-freedom.com, port: 80, type: vmess, uuid: b831381d-6324-4d53-ad4f-8cda48b30811, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /graphql, headers: {Host: MahsaProxyTelegramChannel.way-of-freedom.com}}}
-  - {name: 🇺🇸 美国 001, server: mahsaproxychannel.way-of-freedom.com, port: 80, type: vmess, uuid: b831381d-6324-4d53-ad4f-8cda48b30811, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /graphql, headers: {Host: mahsaproxychannel.way-of-freedom.com}}}
-  - {name: IR【付费推荐：wxfz.ml】 2, server: mahsaproxychannel.way-of-freedom.com, port: 80, type: vmess, uuid: b831381d-6324-4d53-ad4f-8cda48b30811, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /graphql, headers: {Host: mahsaproxychannel.way-of-freedom.com}}}
-  - {name: 🇮🇷 伊朗_1012001, server: mahsaproxychannel.way-of-freedom.com, port: 80, type: vmess, uuid: b831381d-6324-4d53-ad4f-8cda48b30811, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /graphql, headers: {Host: mahsaproxychannel.way-of-freedom.com}}}
-  - {name: 🇮🇷 伊朗_1012011 2, server: mahsaproxychannel.way-of-freedom.com, port: 80, type: vmess, uuid: b831381d-6324-4d53-ad4f-8cda48b30811, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /graphql, headers: {Host: mahsaproxychannel.way-of-freedom.com}}}
-  - {name: "", server: mahsaproxychannel.way-of-freedom.com, port: 80, type: vmess, uuid: b831381d-6324-4d53-ad4f-8cda48b30811, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /graphql, headers: {Host: mahsaproxychannel.way-of-freedom.com}}}
-  - {name: 🇺🇸 :美国-ss-162.251.61.221:805-被墙-直连-解锁美国地区NF非自制剧, server: 162.251.61.221, port: 805, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: 🇺🇸 github.com/freefq - 美国CloudFlare节点 26, server: 172.64.153.150, port: 443, type: vmess, uuid: bf4619e4-01dc-48ca-be08-0976b54968ce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: lg5.zhujicn2.com}}}
-  - {name: 🇺🇸 美国_10121239, server: 172.64.144.100, port: 443, type: vmess, uuid: 6e9217de-ad7e-4a67-bd17-a6dca951733b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: lg3.zhujicn2.com}}}
-  - {name: mianfeifq+14, server: 45.11.92.100, port: 8848, type: trojan, password: aa12A45bbutassOAm96ahzNlGY, sni: 1002hk1326.tfzhc.top, skip-cert-verify: true}
-  - {name: mianfeifq+307, server: 45.79.141.128, port: 53316, type: trojan, password: 3f29ee90-8567-4671-8d99-9875874e472f, sni: trs11.bolab.net, skip-cert-verify: true}
-  - {name: 🇰🇷 韩国_1012089, server: fullaccesstokoreannetsubnode1.azurewebsites.net, port: 443, type: vmess, uuid: 274f11c6-f69b-40b9-8966-f39e06e97be7, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /ws, headers: {Host: fullaccesstokoreannetsubnode1.azurewebsites.net}}}
-  - {name: 🇫🇷 FR 法国(youtube阿伟科技), server: 141.101.115.200, port: 443, type: vmess, uuid: 94887268-f3cb-48be-ade3-87d42faae3e4, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /ray, headers: {Host: m5.v2rayfree1.xyz}}}
-  - {name: 🇰🇷 -韩国-fullaccesstokoreannetsubnode1.azurewebsites.net, server: fullaccesstokoreannetsubnode1.azurewebsites.net, port: 443, type: vmess, uuid: 274f11c6-f69b-40b9-8966-f39e06e97be7, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /ws, headers: {Host: fullaccesstokoreannetsubnode1.azurewebsites.net}}}
-  - {name: 🇸🇬 github.com/freefq - 新加坡OVH 8, server: 139.99.91.95, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 32, cipher: auto, tls: false}
-  - {name: 🇯🇵 _JP_日本, server: trs06.bolab.net, port: 443, type: trojan, password: 7a566d21dfcd0f12490275fd3dd3cfc4, sni: ukt1.sshocean.net, skip-cert-verify: true}
-  - {name: 🇸🇬 新加坡(TG频道:@kxswa), server: 13.212.58.232, port: 443, type: vmess, uuid: 9bd937e3-9c36-485a-8273-c3bcb170eafc, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 13.212.58.232}}}
-  - {name: 🇯🇵 _JP_日本_3, server: trs06.bolab.net, port: 443, type: trojan, password: 7a566d21dfcd0f12490275fd3dd3cfc4, sni: n2.gladns.com, skip-cert-verify: true}
-  - {name: 🇺🇸 -美国-141.101.115.200, server: 141.101.115.200, port: 443, type: vmess, uuid: 94887268-f3cb-48be-ade3-87d42faae3e4, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /ray, headers: {Host: m5.v2rayfree1.xyz}}}
-  - {name: 🇭🇰 香港 油尖旺御金·国峯 環球全域電訊 C05, server: hgc05.nachoneko.shop, port: 18428, type: ss, cipher: rc4-md5, password: weqPfW}
+  - {name: 🇸🇬 SG 1 → openitsub.com, server: do-sg-01.vvsoga.net, port: 1234, type: trojan, password: 469eb2d7-c86c-3484-ba85-4f26f0645b9b, sni: jgwdj3.gaox.ml, skip-cert-verify: true}
+  - {name: 🇯🇵 _JP_日本_3, server: trs06.bolab.net, port: 443, type: trojan, password: 7a566d21dfcd0f12490275fd3dd3cfc4, sni: jgwdj3.gaox.ml, skip-cert-verify: true}
+  - {name: 🇸🇬 v2rayfree.eu.org - 新加坡OVH 19, server: sg-ovh1.v2-ray.com, port: 80, type: vmess, uuid: a9481600-ef36-402a-a0e5-5547bfd7b87c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /fastssh/fghhh/634197c4cdf81/, headers: {Host: sg-ovh1.v2-ray.com}}}
+  - {name: 🇭🇰 香港_1012041, server: fullaccesstohongkongnet.azurewebsites.net, port: 443, type: vmess, uuid: 274f11c6-f69b-40b9-8966-f39e06e97be7, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /ws, headers: {Host: fullaccesstohongkongnet.azurewebsites.net}}}
+  - {name: 🇮🇳 印度 001, server: 152.67.160.174, port: 443, type: trojan, password: 54080134-2cba-4535-8599-95650bd9aa54, sni: jgwdj3.gaox.ml, skip-cert-verify: true}
+  - {name: 🇸🇬 SG【付费推荐：wxfz.ml】, server: sg-ovh1.v2-ray.com, port: 80, type: vmess, uuid: a9481600-ef36-402a-a0e5-5547bfd7b87c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /fastssh/fghhh/634197c4cdf81/, headers: {Host: sg-ovh1.v2-ray.com}}}
+  - {name: 🇺🇸 v2rayfree.eu.org - 美国CloudFlare公司CDN节点 25, server: PL.nexitally.xyz, port: 443, type: vmess, uuid: 54c6c823-4957-4c6c-b10c-359bc51f7cc3, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /a54e284cb6/, headers: {Host: PL.nexitally.xyz}}}
+  - {name: 🇸🇬 github.com/freefq - 新加坡OVH 20, server: sg-ovh1.v2-ray.com, port: 80, type: vmess, uuid: a9481600-ef36-402a-a0e5-5547bfd7b87c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /fastssh/fghhh/634197c4cdf81/, headers: {Host: sg-ovh1.v2-ray.com}}}
+  - {name: 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧, server: 185.162.126.217, port: 50004, type: ss, cipher: aes-256-cfb, password: !<str> 4415934295}
+  - {name: aaa 212, server: 139.99.91.95, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 32, cipher: auto, tls: false}
+  - {name: 🇺🇸 美国_10121231, server: 172.64.154.200, port: 443, type: vmess, uuid: a8030afd-812a-4afe-a766-9c76ff3eddd4, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: lg4.zhujicn2.com}}}
+  - {name: 🇸🇬 v2rayfree.eu.org - 新加坡OVH 19 2, server: sg-ovh1.v2-ray.com, port: 80, type: vmess, uuid: a9481600-ef36-402a-a0e5-5547bfd7b87c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /fastssh/fghhh/634197c4cdf81/, headers: {Host: sg-ovh1.v2-ray.com}}}
+  - {name: 🇸🇬 新加坡 003, server: sg-ovh1.v2-ray.com, port: 80, type: vmess, uuid: a9481600-ef36-402a-a0e5-5547bfd7b87c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /fastssh/fghhh/634197c4cdf81/, headers: {Host: "%7B%22Host%22:%22sg-ovh1.v2-ray.com%22%7D"}}}
   - {name: 🇯🇵 日本 015, server: trs06.bolab.net, port: 443, type: trojan, password: 7a566d21dfcd0f12490275fd3dd3cfc4, sni: 45.11.92.100, skip-cert-verify: true}
-  - {name: 🇺🇸 美国_10121298, server: 172.64.144.154, port: 443, type: vmess, uuid: 94887268-f3cb-48be-ade3-87d42faae3e4, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /ray, headers: {Host: m5.v2rayfree1.xyz}}}
-  - {name: 🇯🇵 JP【付费推荐：wxfz.ml】, server: trs09.bolab.net, port: 443, type: trojan, password: 7a566d21dfcd0f12490275fd3dd3cfc4, sni: trs09.bolab.net, skip-cert-verify: true}
-  - {name: 🇺🇸 US 美国(youtube阿伟科技), server: 141.101.114.150, port: 443, type: vmess, uuid: bf4619e4-01dc-48ca-be08-0976b54968ce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: lg5.zhujicn2.com}}}
-  - {name: 白嫖-184, server: 185.225.69.134, port: 45081, type: vmess, uuid: 3c3bfd75-dc30-4e76-8940-47e1137e21f9, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇭🇰 中国-香港 IEPL Equinix HK8 C 06 1Gbps HBO TVB, server: sg16.nachoneko.shop, port: 18428, type: ss, cipher: rc4-md5, password: weqPfW}
-  - {name: _油管：全网最强白嫖, server: 138.68.248.130, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: Ultr@r00t_2017}
-  - {name: 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧 3, server: 185.162.126.217, port: 50004, type: ss, cipher: aes-256-cfb, password: !<str> 4415934295}
-  - {name: 🇺🇸 美国_10121277, server: 172.64.153.200, port: 443, type: vmess, uuid: a8030afd-812a-4afe-a766-9c76ff3eddd4, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: lg4.zhujicn2.com}}}
-  - {name: 🇺🇸 :美国-ss-162.251.61.221:800-被墙-直连-解锁美国地区NF非自制剧, server: 162.251.61.221, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: 未知_1012099, server: 141.101.114.150, port: 443, type: vmess, uuid: bf4619e4-01dc-48ca-be08-0976b54968ce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: lg5.zhujicn2.com}}}
-  - {name: 白嫖-184 2, server: 185.225.69.134, port: 45081, type: vmess, uuid: 3c3bfd75-dc30-4e76-8940-47e1137e21f9, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 美国_10121228, server: 172.64.153.150, port: 443, type: vmess, uuid: bf4619e4-01dc-48ca-be08-0976b54968ce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: lg5.zhujicn2.com}}}
-  - {name: mianfeifq+199, server: 133.18.200.127, port: 443, type: trojan, password: 7a566d21dfcd0f12490275fd3dd3cfc4, sni: jgwdj4.gaox.ml, skip-cert-verify: true}
-  - {name: 🇺🇸 :美国-ss-162.251.61.221:812-被墙-直连-解锁美国地区NF非自制剧 2, server: 162.251.61.221, port: 812, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: 🇺🇸 :美国-ss-162.251.61.221:800-被墙-直连-解锁美国地区NF非自制剧 2, server: 162.251.61.221, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: 🇺🇸 :美国-ss-138.68.248.130:811-被墙-直连-解锁美国地区NF非自制剧, server: 138.68.248.130, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: Ultr@r00t_2017}
-  - {name: 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧 4, server: 185.162.126.217, port: 50004, type: ss, cipher: aes-256-cfb, password: !<str> 4415934295}
-  - {name: 🇮🇱 :以色列-ss-31.133.100.49:50004-被墙-直连-解锁以色列地区NF非自制剧, server: 31.133.100.49, port: 50004, type: ss, cipher: aes-256-cfb, password: !<str> 4415934295}
-  - {name: 🇯🇵 JP 1 → openitsub.com, server: trs01.bolab.net, port: 443, type: trojan, password: 7a566d21dfcd0f12490275fd3dd3cfc4, sni: content-provider5.cdn-delivery.akamaicd.com, skip-cert-verify: true}
-  - {name: 未知_1012013, server: 141.101.115.150, port: 443, type: vmess, uuid: bf4619e4-01dc-48ca-be08-0976b54968ce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: lg5.zhujicn2.com}}}
-  - {name: 🇮🇱 :以色列-ss-185.162.125.91:50004-被墙-直连-解锁以色列地区NF非自制剧, server: 185.162.125.91, port: 50004, type: ss, cipher: aes-256-cfb, password: !<str> 4415934295}
-  - {name: 未知_1012102, server: shopify.com, port: 2086, type: vmess, uuid: dc8b64db-eb6d-4bdf-98b2-31615319bea8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /aries, headers: {Host: vn.cloudflare.quest}}}
-  - {name: 🇯🇵 日本 004, server: trs01.bolab.net, port: 443, type: trojan, password: 7a566d21dfcd0f12490275fd3dd3cfc4, sni: jgwdj3.gaox.ml, skip-cert-verify: true}
-  - {name: 🇯🇵 日本 010, server: trs02.bolab.net, port: 443, type: trojan, password: 7a566d21dfcd0f12490275fd3dd3cfc4, sni: jgwdj3.gaox.ml, skip-cert-verify: true}
-  - {name: "| 7.56Mb", server: 138.124.183.216, port: 443, type: trojan, password: xxoo, sni: hk.vc2.hyperlinkvpn.xyz, skip-cert-verify: true}
-  - {name: 未知_1012693, server: sg.prpr.link, port: 443, type: vmess, uuid: cea42161-bddc-4230-a9b9-e43187967ffa, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /Telegram/ShareCentrePro/mknnix, headers: {Host: sg.prpr.link}}}
-  - {name: 🇪🇺 欧洲(欢迎订阅Youtube破解资源君), server: 51.77.53.200, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 213.183.53.200:9070, server: 213.183.53.200, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH}
-  - {name: 213.183.53.200:9070 2, server: 213.183.53.200, port: 9070, type: ss, cipher: aes-256-cfb, password: bf7v334KKDV3YDhH}
-  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 3, server: 167.88.61.175, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 4, server: 145.239.1.100, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
-  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 5, server: 38.114.114.67, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
-  - {name: ZZ_21, server: 169.197.143.232, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 6, server: 145.239.1.100, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 7, server: 38.75.136.21, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 8, server: 145.239.1.100, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇯🇵 日本 004 2, server: trs01.bolab.net, port: 443, type: trojan, password: 7a566d21dfcd0f12490275fd3dd3cfc4, sni: jgwdj3.gaox.ml, skip-cert-verify: true}
-  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 9, server: 38.68.134.85, port: 6679, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
-  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 10, server: 149.202.82.172, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 🇺🇸 :美国-ss-167.88.62.68:8881-被墙-直连-解锁美国地区NF非自制剧, server: 167.88.62.68, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
   - {name: 🇨🇦 CA 2 → openitsub.com, server: sg-ovh1.v2-ray.com, port: 80, type: vmess, uuid: a9481600-ef36-402a-a0e5-5547bfd7b87c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /fastssh/fghhh/634197c4cdf81/, headers: {Host: "%7B%22Host%22:%22sg-ovh1.v2-ray.com%22%7D"}}}
-  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 11, server: 38.68.134.85, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 未知_1012653, server: 198.41.212.20, port: 443, type: vmess, uuid: a5ba8b2b-8fc5-4521-a35e-9281be61c1c3, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: lg1.zhujicn2.com}}}
+  - {name: 🇸🇬 SG 74, server: vsg1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /chat, headers: {Host: vsg1.0bad.com}}}
+  - {name: 🇺🇸 :美国-ss-162.251.61.221:802-被墙-直连-解锁美国地区NF非自制剧, server: 162.251.61.221, port: 802, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇺🇸 :美国-ss-162.251.61.221:800-被墙-直连-解锁美国地区NF非自制剧, server: 162.251.61.221, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇸🇬 SG 74 2, server: vsg1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /chat, headers: {Host: vsg1.0bad.com}}}
+  - {name: 🇺🇸 美国_1012074, server: us.kapok.buzz, port: 443, type: vmess, uuid: eb4550a1-bd63-4f9c-b4b6-fdd24b440728, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /SCP-914, headers: {Host: us.kapok.buzz}}}
+  - {name: 🇯🇵 日本 015 2, server: trs06.bolab.net, port: 443, type: trojan, password: 7a566d21dfcd0f12490275fd3dd3cfc4, sni: 45.11.92.100, skip-cert-verify: true}
+  - {name: 🇸🇬 SG 74 3, server: vsg1.0bad.com, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /chat, headers: {Host: vsg1.0bad.com}}}
+  - {name: 未知_1012007, server: 141.101.114.150, port: 443, type: vmess, uuid: bf4619e4-01dc-48ca-be08-0976b54968ce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: lg5.zhujicn2.com}}}
+  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:), server: sg-ovh1.v2-ray.com, port: 80, type: vmess, uuid: a9481600-ef36-402a-a0e5-5547bfd7b87c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /fastssh/fghhh/634197c4cdf81/, headers: {Host: sg-ovh1.v2-ray.com}}}
+  - {name: 🇸🇬 SG【付费推荐：wxfz.ml】 2, server: sg-ovh1.v2-ray.com, port: 80, type: vmess, uuid: a9481600-ef36-402a-a0e5-5547bfd7b87c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /fastssh/fghhh/634197c4cdf81/, headers: {Host: sg-ovh1.v2-ray.com}}}
+  - {name: 🇸🇬 新加坡 003 2, server: sg-ovh1.v2-ray.com, port: 80, type: vmess, uuid: a9481600-ef36-402a-a0e5-5547bfd7b87c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /fastssh/fghhh/634197c4cdf81/, headers: {Host: "%7B%22Host%22:%22sg-ovh1.v2-ray.com%22%7D"}}}
+  - {name: 流媒体|41, server: 141.101.114.2, port: 443, type: vmess, uuid: 105c635f-918d-4b2a-8c9d-d5426e94eb4b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: lg2.zhujicn2.com}}}
+  - {name: 🇪🇺 欧洲(油管:破解资源君2.0) 25, server: 198.41.212.30, port: 443, type: vmess, uuid: 105c635f-918d-4b2a-8c9d-d5426e94eb4b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: lg2.zhujicn2.com}}}
+  - {name: 【付费推荐：wxfz.ml】, server: shopify.com, port: 2086, type: vmess, uuid: dc8b64db-eb6d-4bdf-98b2-31615319bea8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /aries, headers: {Host: vn.cloudflare.quest}}}
+  - {name: 🇺🇸 US【付费推荐：wxfz.ml】, server: 172.64.154.150, port: 443, type: vmess, uuid: bf4619e4-01dc-48ca-be08-0976b54968ce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: lg5.zhujicn2.com}}}
+  - {name: "|24.35Mb", server: 67.21.72.44, port: 443, type: vmess, uuid: 2566d00f-218c-48f7-9a36-13d3d6f1a724, alterId: 64, cipher: auto, tls: false, network: ws, ws-opts: {path: /path/120208301422, headers: {Host: www.48816626.xyz}}}
+  - {name: "", server: mahsaproxychannel.way-of-freedom.com, port: 80, type: vmess, uuid: b831381d-6324-4d53-ad4f-8cda48b30811, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /graphql, headers: {Host: mahsaproxychannel.way-of-freedom.com}}}
+  - {name: 🇺🇸 :美国-ss-138.68.248.130:811-被墙-直连-解锁美国地区NF非自制剧, server: 138.68.248.130, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: Ultr@r00t_2017}
+  - {name: _油管：全网最强白嫖, server: 138.68.248.130, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: Ultr@r00t_2017}
+  - {name: 🇺🇸 :美国-ss-138.68.248.130:811-被墙-直连-解锁美国地区NF非自制剧 2, server: 138.68.248.130, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: Ultr@r00t_2017}
+  - {name: _油管：全网最强白嫖 2, server: 138.68.248.130, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: Ultr@r00t_2017}
+  - {name: 🇺🇸 美国 017, server: 67.21.72.44, port: 443, type: vmess, uuid: 2566d00f-218c-48f7-9a36-13d3d6f1a724, alterId: 64, cipher: auto, tls: false, network: ws, ws-opts: {path: /path/120208301422, headers: {Host: www.48816626.xyz}}}
+  - {name: 🇺🇸 :美国-ss-138.68.248.130:811-被墙-直连-解锁美国地区NF非自制剧 3, server: 138.68.248.130, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: Ultr@r00t_2017}
+  - {name: 未知_1012684, server: shopify.com, port: 80, type: vmess, uuid: 24aadf9f-23a7-48fa-a090-e22bac60ab29, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /aries, headers: {Host: ru.cloudflare.quest}}}
+  - {name: 🇺🇸 :美国-ss-162.251.61.221:800-被墙-直连-解锁美国地区NF非自制剧 2, server: 162.251.61.221, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: mianfeifq+199, server: 133.18.200.127, port: 443, type: trojan, password: 7a566d21dfcd0f12490275fd3dd3cfc4, sni: jgwdj4.gaox.ml, skip-cert-verify: true}
+  - {name: 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶SharkTech数据中心 4, server: 67.21.72.44, port: 443, type: vmess, uuid: 2566d00f-218c-48f7-9a36-13d3d6f1a724, alterId: 64, cipher: auto, tls: false, network: ws, ws-opts: {path: /path/120208301422, headers: {Host: www.48816626.xyz}}}
+  - {name: 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧 2, server: 185.162.126.217, port: 50004, type: ss, cipher: aes-256-cfb, password: !<str> 4415934295}
+  - {name: 🇮🇱 :以色列-ss-31.133.100.49:50004-被墙-直连-解锁以色列地区NF非自制剧, server: 31.133.100.49, port: 50004, type: ss, cipher: aes-256-cfb, password: !<str> 4415934295}
+  - {name: 🇨🇳 CN【付费推荐：wxfz.ml】, server: hgc05.nachoneko.shop, port: 18428, type: ss, cipher: rc4-md5, password: weqPfW}
+  - {name: mianfeifq+199 2, server: 133.18.200.127, port: 443, type: trojan, password: 7a566d21dfcd0f12490275fd3dd3cfc4, sni: jgwdj4.gaox.ml, skip-cert-verify: true}
+  - {name: 🇯🇵 日本 004, server: trs01.bolab.net, port: 443, type: trojan, password: 7a566d21dfcd0f12490275fd3dd3cfc4, sni: jgwdj3.gaox.ml, skip-cert-verify: true}
+  - {name: 白嫖-184, server: 185.225.69.134, port: 45081, type: vmess, uuid: 3c3bfd75-dc30-4e76-8940-47e1137e21f9, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇭🇰 香港 油尖旺御金·国峯 環球全域電訊 C05, server: hgc05.nachoneko.shop, port: 18428, type: ss, cipher: rc4-md5, password: weqPfW}
+  - {name: 🇨🇳 CN【付费推荐：wxfz.ml】 2, server: hgc05.nachoneko.shop, port: 18428, type: ss, cipher: rc4-md5, password: weqPfW}
+  - {name: 🇯🇵 日本 010, server: trs02.bolab.net, port: 443, type: trojan, password: 7a566d21dfcd0f12490275fd3dd3cfc4, sni: jgwdj3.gaox.ml, skip-cert-verify: true}
+  - {name: 🇺🇸 美国_1012248, server: 67.21.72.44, port: 443, type: vmess, uuid: 2566d00f-218c-48f7-9a36-13d3d6f1a724, alterId: 64, cipher: auto, tls: false, network: ws, ws-opts: {path: /path/120208301422, headers: {Host: www.48816626.xyz}}}
+  - {name: 🇮🇱 :以色列-ss-185.162.125.91:50004-被墙-直连-解锁以色列地区NF非自制剧, server: 185.162.125.91, port: 50004, type: ss, cipher: aes-256-cfb, password: !<str> 4415934295}
+  - {name: 🇺🇸 US【付费推荐：wxfz.ml】 2, server: 67.21.72.44, port: 443, type: vmess, uuid: 2566d00f-218c-48f7-9a36-13d3d6f1a724, alterId: 64, cipher: auto, tls: false, network: ws, ws-opts: {path: /path/120208301422, headers: {Host: www.48816626.xyz}}}
+  - {name: 🇺🇸 :美国-ss-167.88.62.68:8881-被墙-直连-解锁美国地区NF非自制剧, server: 167.88.62.68, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+  - {name: 🇺🇸 :美国-ss-167.88.63.99:2376-被墙-直连-解锁美国地区NF非自制剧, server: 167.88.63.99, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇺🇸 :美国-ss-167.88.62.68:4444-被墙-直连-解锁美国地区NF非自制剧, server: 167.88.62.68, port: 4444, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
+  - {name: 🇺🇸 :美国-ss-167.88.62.68:5600-被墙-直连-解锁美国地区NF非自制剧, server: 167.88.62.68, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: mianfeifq+253, server: 103.177.248.160, port: 12425, type: trojan, password: 7rfcbuZdkU, sni: jgwdj3.gaox.ml, skip-cert-verify: true}
+  - {name: 🇺🇸 :美国-ss-167.88.63.99:2375-被墙-直连-解锁美国地区NF非自制剧, server: 167.88.63.99, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇺🇸 :美国-ss-167.88.62.68:8881-被墙-直连-解锁美国地区NF非自制剧 2, server: 167.88.62.68, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+  - {name: 🇺🇸 :美国-ss-167.88.62.68:8881-被墙-直连-解锁美国地区NF非自制剧 3, server: 167.88.62.68, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+  - {name: 🇺🇸 :美国-ss-167.88.62.68:9102-被墙-直连-解锁美国地区NF非自制剧, server: 167.88.62.68, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
+  - {name: 🇺🇸 :美国-ss-167.88.63.99:2376-被墙-直连-解锁美国地区NF非自制剧 2, server: 167.88.63.99, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇺🇸 :美国-ss-167.88.62.68:8000-被墙-直连-解锁美国地区NF非自制剧, server: 167.88.62.68, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 🇺🇸 :美国-ss-167.88.62.68:8000-被墙-直连-解锁美国地区NF非自制剧 2, server: 167.88.62.68, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 🇺🇸 :美国-ss-167.88.62.68:5600-被墙-直连-解锁美国地区NF非自制剧 2, server: 167.88.62.68, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 2, server: 134.195.196.149, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇯🇵 JP 2 → openitsub.com, server: trs02.bolab.net, port: 443, type: trojan, password: 7a566d21dfcd0f12490275fd3dd3cfc4, sni: golang.protocolbuffer.com, skip-cert-verify: true}
+  - {name: 未知_1012017, server: 198.41.212.150, port: 443, type: vmess, uuid: bf4619e4-01dc-48ca-be08-0976b54968ce, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: lg5.zhujicn2.com}}}
+  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 3, server: 38.114.114.67, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+  - {name: 🇮🇱 :以色列-ss-31.133.100.49:50004-被墙-直连-解锁以色列地区NF非自制剧 2, server: 31.133.100.49, port: 50004, type: ss, cipher: aes-256-cfb, password: !<str> 4415934295}
+  - {name: 🇺🇸 :美国-ss-162.251.61.221:805-被墙-直连-解锁美国地区NF非自制剧, server: 162.251.61.221, port: 805, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 4, server: 38.114.114.67, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+  - {name: "🇺🇸 [09-26]|openrunner|美国(US)USA/Dallas_39", server: 38.68.135.19, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 5, server: hk-v2.superyuluo.asia, port: 30001, type: vmess, uuid: 7b30dbe2-5fd9-4f87-a733-facef379632b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: hk-v2.superyuluo.asia}}}
+  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 6, server: 167.88.61.175, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 7, server: 167.88.61.175, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 🇺🇸 :美国-ss-167.88.63.99:7306-被墙-直连-解锁美国地区NF非自制剧, server: 167.88.63.99, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: mianfeifq+283, server: 54.178.46.155, port: 43857, type: trojan, password: P9qGW38zz7, sni: jgwdj3.gaox.ml, skip-cert-verify: true}
+  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 8, server: 145.239.1.100, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 9, server: 38.143.66.99, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 10, server: 149.202.82.172, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 11, server: 149.202.82.172, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 🇺🇸 美国_1012008, server: 172.64.155.200, port: 443, type: vmess, uuid: a8030afd-812a-4afe-a766-9c76ff3eddd4, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: lg4.zhujicn2.com}}}
+  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 12, server: 149.202.82.172, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
+  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 13, server: 145.239.1.100, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 14, server: 195.154.200.150, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 15, server: 38.143.66.99, port: 8118, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 16, server: 145.239.1.100, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+  - {name: 🇺🇸 :美国-ss-167.88.62.68:4444-被墙-直连-解锁美国地区NF非自制剧 2, server: 167.88.62.68, port: 4444, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
+  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 17, server: 145.239.1.100, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: ZZ_21, server: 169.197.143.232, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 18, server: 145.239.1.100, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 19, server: 145.239.1.100, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 20, server: 38.75.136.21, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: "| 7.56Mb", server: 138.124.183.216, port: 443, type: trojan, password: xxoo, sni: hk.vc2.hyperlinkvpn.xyz, skip-cert-verify: true}
 proxy-groups:
   - name: 🔰 节点选择
     type: select
     proxies:
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇸🇬 SG 74
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
-      - 🇸🇬 SG 74 2
-      - 🇺🇸 v2rayfree.eu.org - 美国CloudFlare公司CDN节点 25
-      - 【付费推荐：wxfz.ml】
-      - 🇺🇸 美国_1012007
-      - 🇭🇰 香港_1012041
-      - 🇺🇸 美国 032
-      - 🇸🇬 v2rayfree.eu.org - 新加坡OVH 19
-      - 🇺🇸 :加拿大-ss-38.64.138.53:1035-被墙-直连-解锁美国地区NF非自制剧
-      - 🇸🇬 新加坡 003
-      - 🇺🇸 :美国-ss-162.251.61.221:812-被墙-直连-解锁美国地区NF非自制剧
-      - "|44.01Mb"
-      - 🇨🇳 CN【付费推荐：wxfz.ml】
-      - 🇸🇬 SG【付费推荐：wxfz.ml】
-      - aaa 58
-      - 未知_1012018
-      - 🇮🇳 印度+003
-      - "|11.68Mb"
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 16
-      - 未知_1012649
-      - 🇸🇬 SG 74 3
-      - 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧
+      - 🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 19
       - 🇺🇸 US 6 → openitsub.com
-      - 🇺🇸 美国 042
-      - 🇨🇳 CN【付费推荐：wxfz.ml】 2
-      - 🇺🇸 :美国-ss-162.251.61.221:804-被墙-直连-解锁美国地区NF非自制剧
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 2
-      - 🇺🇸 美国_10121245
-      - 🇳🇱 荷兰_1012225
-      - 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧 2
-      - aaa 248
-      - 🇮🇷 伊朗_1012012
-      - 🇺🇸 2.26| httpsgithubcomAlvin9999newpacwiki clash ip6 洛杉矶1CDN
-      - 🇺🇸 github.com/freefq - 美国  4
-      - IR【付费推荐：wxfz.ml】
-      - 🇮🇷 伊朗_1012011
-      - 🇮🇷 伊朗_1012013
-      - 🇺🇸 美国 001
-      - IR【付费推荐：wxfz.ml】 2
-      - 🇮🇷 伊朗_1012001
-      - 🇮🇷 伊朗_1012011 2
-      - ""
-      - 🇺🇸 :美国-ss-162.251.61.221:805-被墙-直连-解锁美国地区NF非自制剧
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 26
-      - 🇺🇸 美国_10121239
-      - mianfeifq+14
-      - mianfeifq+307
-      - 🇰🇷 韩国_1012089
-      - 🇫🇷 FR 法国(youtube阿伟科技)
-      - 🇰🇷 -韩国-fullaccesstokoreannetsubnode1.azurewebsites.net
-      - 🇸🇬 github.com/freefq - 新加坡OVH 8
-      - 🇯🇵 _JP_日本
-      - 🇸🇬 新加坡(TG频道:@kxswa)
+      - 🇸🇬 SG 1 → openitsub.com
       - 🇯🇵 _JP_日本_3
-      - 🇺🇸 -美国-141.101.115.200
-      - 🇭🇰 香港 油尖旺御金·国峯 環球全域電訊 C05
+      - 🇸🇬 v2rayfree.eu.org - 新加坡OVH 19
+      - 🇭🇰 香港_1012041
+      - 🇮🇳 印度 001
+      - 🇸🇬 SG【付费推荐：wxfz.ml】
+      - 🇺🇸 v2rayfree.eu.org - 美国CloudFlare公司CDN节点 25
+      - 🇸🇬 github.com/freefq - 新加坡OVH 20
+      - 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧
+      - aaa 212
+      - 🇺🇸 美国_10121231
+      - 🇸🇬 v2rayfree.eu.org - 新加坡OVH 19 2
+      - 🇸🇬 新加坡 003
       - 🇯🇵 日本 015
-      - 🇺🇸 美国_10121298
-      - 🇯🇵 JP【付费推荐：wxfz.ml】
-      - 🇺🇸 US 美国(youtube阿伟科技)
-      - 白嫖-184
-      - 🇭🇰 中国-香港 IEPL Equinix HK8 C 06 1Gbps HBO TVB
-      - _油管：全网最强白嫖
-      - 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧 3
-      - 🇺🇸 美国_10121277
+      - 🇨🇦 CA 2 → openitsub.com
+      - 未知_1012653
+      - 🇸🇬 SG 74
+      - 🇺🇸 :美国-ss-162.251.61.221:802-被墙-直连-解锁美国地区NF非自制剧
       - 🇺🇸 :美国-ss-162.251.61.221:800-被墙-直连-解锁美国地区NF非自制剧
-      - 未知_1012099
-      - 白嫖-184 2
-      - 🇺🇸 美国_10121228
-      - mianfeifq+199
-      - 🇺🇸 :美国-ss-162.251.61.221:812-被墙-直连-解锁美国地区NF非自制剧 2
-      - 🇺🇸 :美国-ss-162.251.61.221:800-被墙-直连-解锁美国地区NF非自制剧 2
+      - 🇸🇬 SG 74 2
+      - 🇺🇸 美国_1012074
+      - 🇯🇵 日本 015 2
+      - 🇸🇬 SG 74 3
+      - 未知_1012007
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
+      - 🇸🇬 SG【付费推荐：wxfz.ml】 2
+      - 🇸🇬 新加坡 003 2
+      - 流媒体|41
+      - 🇪🇺 欧洲(油管:破解资源君2.0) 25
+      - 【付费推荐：wxfz.ml】
+      - 🇺🇸 US【付费推荐：wxfz.ml】
+      - "|24.35Mb"
+      - ""
       - 🇺🇸 :美国-ss-138.68.248.130:811-被墙-直连-解锁美国地区NF非自制剧
-      - 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧 4
+      - _油管：全网最强白嫖
+      - 🇺🇸 :美国-ss-138.68.248.130:811-被墙-直连-解锁美国地区NF非自制剧 2
+      - _油管：全网最强白嫖 2
+      - 🇺🇸 美国 017
+      - 🇺🇸 :美国-ss-138.68.248.130:811-被墙-直连-解锁美国地区NF非自制剧 3
+      - 未知_1012684
+      - 🇺🇸 :美国-ss-162.251.61.221:800-被墙-直连-解锁美国地区NF非自制剧 2
+      - mianfeifq+199
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶SharkTech数据中心 4
+      - 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧 2
       - 🇮🇱 :以色列-ss-31.133.100.49:50004-被墙-直连-解锁以色列地区NF非自制剧
-      - 🇯🇵 JP 1 → openitsub.com
-      - 未知_1012013
-      - 🇮🇱 :以色列-ss-185.162.125.91:50004-被墙-直连-解锁以色列地区NF非自制剧
-      - 未知_1012102
+      - 🇨🇳 CN【付费推荐：wxfz.ml】
+      - mianfeifq+199 2
       - 🇯🇵 日本 004
+      - 白嫖-184
+      - 🇭🇰 香港 油尖旺御金·国峯 環球全域電訊 C05
+      - 🇨🇳 CN【付费推荐：wxfz.ml】 2
       - 🇯🇵 日本 010
-      - "| 7.56Mb"
-      - 未知_1012693
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君)
-      - 213.183.53.200:9070
-      - 213.183.53.200:9070 2
+      - 🇺🇸 美国_1012248
+      - 🇮🇱 :以色列-ss-185.162.125.91:50004-被墙-直连-解锁以色列地区NF非自制剧
+      - 🇺🇸 US【付费推荐：wxfz.ml】 2
+      - 🇺🇸 :美国-ss-167.88.62.68:8881-被墙-直连-解锁美国地区NF非自制剧
+      - 🇺🇸 :美国-ss-167.88.63.99:2376-被墙-直连-解锁美国地区NF非自制剧
+      - 🇺🇸 :美国-ss-167.88.62.68:4444-被墙-直连-解锁美国地区NF非自制剧
+      - 🇺🇸 :美国-ss-167.88.62.68:5600-被墙-直连-解锁美国地区NF非自制剧
+      - mianfeifq+253
+      - 🇺🇸 :美国-ss-167.88.63.99:2375-被墙-直连-解锁美国地区NF非自制剧
+      - 🇺🇸 :美国-ss-167.88.62.68:8881-被墙-直连-解锁美国地区NF非自制剧 2
+      - 🇺🇸 :美国-ss-167.88.62.68:8881-被墙-直连-解锁美国地区NF非自制剧 3
+      - 🇺🇸 :美国-ss-167.88.62.68:9102-被墙-直连-解锁美国地区NF非自制剧
+      - 🇺🇸 :美国-ss-167.88.63.99:2376-被墙-直连-解锁美国地区NF非自制剧 2
+      - 🇺🇸 :美国-ss-167.88.62.68:8000-被墙-直连-解锁美国地区NF非自制剧
+      - 🇺🇸 :美国-ss-167.88.62.68:8000-被墙-直连-解锁美国地区NF非自制剧 2
+      - 🇺🇸 :美国-ss-167.88.62.68:5600-被墙-直连-解锁美国地区NF非自制剧 2
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 2
+      - 🇯🇵 JP 2 → openitsub.com
+      - 未知_1012017
       - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 3
+      - 🇮🇱 :以色列-ss-31.133.100.49:50004-被墙-直连-解锁以色列地区NF非自制剧 2
+      - 🇺🇸 :美国-ss-162.251.61.221:805-被墙-直连-解锁美国地区NF非自制剧
       - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 4
+      - 🇺🇸 [09-26]|openrunner|美国(US)USA/Dallas_39
       - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 5
-      - ZZ_21
       - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 6
       - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 7
+      - 🇺🇸 :美国-ss-167.88.63.99:7306-被墙-直连-解锁美国地区NF非自制剧
+      - mianfeifq+283
       - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 8
-      - 🇯🇵 日本 004 2
       - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 9
       - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 10
-      - 🇺🇸 :美国-ss-167.88.62.68:8881-被墙-直连-解锁美国地区NF非自制剧
-      - 🇨🇦 CA 2 → openitsub.com
       - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 11
+      - 🇺🇸 美国_1012008
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 12
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 13
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 14
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 15
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 16
+      - 🇺🇸 :美国-ss-167.88.62.68:4444-被墙-直连-解锁美国地区NF非自制剧 2
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 17
+      - ZZ_21
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 18
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 19
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 20
+      - "| 7.56Mb"
   - name: ♻️ 自动选择
     type: url-test
     url: http://www.gstatic.com/generate_204
     interval: 300
     proxies:
-      - 🇸🇬 SG 74
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
-      - 🇸🇬 SG 74 2
-      - 🇺🇸 v2rayfree.eu.org - 美国CloudFlare公司CDN节点 25
-      - 【付费推荐：wxfz.ml】
-      - 🇺🇸 美国_1012007
-      - 🇭🇰 香港_1012041
-      - 🇺🇸 美国 032
-      - 🇸🇬 v2rayfree.eu.org - 新加坡OVH 19
-      - 🇺🇸 :加拿大-ss-38.64.138.53:1035-被墙-直连-解锁美国地区NF非自制剧
-      - 🇸🇬 新加坡 003
-      - 🇺🇸 :美国-ss-162.251.61.221:812-被墙-直连-解锁美国地区NF非自制剧
-      - "|44.01Mb"
-      - 🇨🇳 CN【付费推荐：wxfz.ml】
-      - 🇸🇬 SG【付费推荐：wxfz.ml】
-      - aaa 58
-      - 未知_1012018
-      - 🇮🇳 印度+003
-      - "|11.68Mb"
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 16
-      - 未知_1012649
-      - 🇸🇬 SG 74 3
-      - 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧
+      - 🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 19
       - 🇺🇸 US 6 → openitsub.com
-      - 🇺🇸 美国 042
-      - 🇨🇳 CN【付费推荐：wxfz.ml】 2
-      - 🇺🇸 :美国-ss-162.251.61.221:804-被墙-直连-解锁美国地区NF非自制剧
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 2
-      - 🇺🇸 美国_10121245
-      - 🇳🇱 荷兰_1012225
-      - 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧 2
-      - aaa 248
-      - 🇮🇷 伊朗_1012012
-      - 🇺🇸 2.26| httpsgithubcomAlvin9999newpacwiki clash ip6 洛杉矶1CDN
-      - 🇺🇸 github.com/freefq - 美国  4
-      - IR【付费推荐：wxfz.ml】
-      - 🇮🇷 伊朗_1012011
-      - 🇮🇷 伊朗_1012013
-      - 🇺🇸 美国 001
-      - IR【付费推荐：wxfz.ml】 2
-      - 🇮🇷 伊朗_1012001
-      - 🇮🇷 伊朗_1012011 2
-      - ""
-      - 🇺🇸 :美国-ss-162.251.61.221:805-被墙-直连-解锁美国地区NF非自制剧
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 26
-      - 🇺🇸 美国_10121239
-      - mianfeifq+14
-      - mianfeifq+307
-      - 🇰🇷 韩国_1012089
-      - 🇫🇷 FR 法国(youtube阿伟科技)
-      - 🇰🇷 -韩国-fullaccesstokoreannetsubnode1.azurewebsites.net
-      - 🇸🇬 github.com/freefq - 新加坡OVH 8
-      - 🇯🇵 _JP_日本
-      - 🇸🇬 新加坡(TG频道:@kxswa)
+      - 🇸🇬 SG 1 → openitsub.com
       - 🇯🇵 _JP_日本_3
-      - 🇺🇸 -美国-141.101.115.200
-      - 🇭🇰 香港 油尖旺御金·国峯 環球全域電訊 C05
+      - 🇸🇬 v2rayfree.eu.org - 新加坡OVH 19
+      - 🇭🇰 香港_1012041
+      - 🇮🇳 印度 001
+      - 🇸🇬 SG【付费推荐：wxfz.ml】
+      - 🇺🇸 v2rayfree.eu.org - 美国CloudFlare公司CDN节点 25
+      - 🇸🇬 github.com/freefq - 新加坡OVH 20
+      - 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧
+      - aaa 212
+      - 🇺🇸 美国_10121231
+      - 🇸🇬 v2rayfree.eu.org - 新加坡OVH 19 2
+      - 🇸🇬 新加坡 003
       - 🇯🇵 日本 015
-      - 🇺🇸 美国_10121298
-      - 🇯🇵 JP【付费推荐：wxfz.ml】
-      - 🇺🇸 US 美国(youtube阿伟科技)
-      - 白嫖-184
-      - 🇭🇰 中国-香港 IEPL Equinix HK8 C 06 1Gbps HBO TVB
-      - _油管：全网最强白嫖
-      - 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧 3
-      - 🇺🇸 美国_10121277
+      - 🇨🇦 CA 2 → openitsub.com
+      - 未知_1012653
+      - 🇸🇬 SG 74
+      - 🇺🇸 :美国-ss-162.251.61.221:802-被墙-直连-解锁美国地区NF非自制剧
       - 🇺🇸 :美国-ss-162.251.61.221:800-被墙-直连-解锁美国地区NF非自制剧
-      - 未知_1012099
-      - 白嫖-184 2
-      - 🇺🇸 美国_10121228
-      - mianfeifq+199
-      - 🇺🇸 :美国-ss-162.251.61.221:812-被墙-直连-解锁美国地区NF非自制剧 2
-      - 🇺🇸 :美国-ss-162.251.61.221:800-被墙-直连-解锁美国地区NF非自制剧 2
+      - 🇸🇬 SG 74 2
+      - 🇺🇸 美国_1012074
+      - 🇯🇵 日本 015 2
+      - 🇸🇬 SG 74 3
+      - 未知_1012007
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
+      - 🇸🇬 SG【付费推荐：wxfz.ml】 2
+      - 🇸🇬 新加坡 003 2
+      - 流媒体|41
+      - 🇪🇺 欧洲(油管:破解资源君2.0) 25
+      - 【付费推荐：wxfz.ml】
+      - 🇺🇸 US【付费推荐：wxfz.ml】
+      - "|24.35Mb"
+      - ""
       - 🇺🇸 :美国-ss-138.68.248.130:811-被墙-直连-解锁美国地区NF非自制剧
-      - 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧 4
+      - _油管：全网最强白嫖
+      - 🇺🇸 :美国-ss-138.68.248.130:811-被墙-直连-解锁美国地区NF非自制剧 2
+      - _油管：全网最强白嫖 2
+      - 🇺🇸 美国 017
+      - 🇺🇸 :美国-ss-138.68.248.130:811-被墙-直连-解锁美国地区NF非自制剧 3
+      - 未知_1012684
+      - 🇺🇸 :美国-ss-162.251.61.221:800-被墙-直连-解锁美国地区NF非自制剧 2
+      - mianfeifq+199
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶SharkTech数据中心 4
+      - 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧 2
       - 🇮🇱 :以色列-ss-31.133.100.49:50004-被墙-直连-解锁以色列地区NF非自制剧
-      - 🇯🇵 JP 1 → openitsub.com
-      - 未知_1012013
-      - 🇮🇱 :以色列-ss-185.162.125.91:50004-被墙-直连-解锁以色列地区NF非自制剧
-      - 未知_1012102
+      - 🇨🇳 CN【付费推荐：wxfz.ml】
+      - mianfeifq+199 2
       - 🇯🇵 日本 004
+      - 白嫖-184
+      - 🇭🇰 香港 油尖旺御金·国峯 環球全域電訊 C05
+      - 🇨🇳 CN【付费推荐：wxfz.ml】 2
       - 🇯🇵 日本 010
-      - "| 7.56Mb"
-      - 未知_1012693
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君)
-      - 213.183.53.200:9070
-      - 213.183.53.200:9070 2
+      - 🇺🇸 美国_1012248
+      - 🇮🇱 :以色列-ss-185.162.125.91:50004-被墙-直连-解锁以色列地区NF非自制剧
+      - 🇺🇸 US【付费推荐：wxfz.ml】 2
+      - 🇺🇸 :美国-ss-167.88.62.68:8881-被墙-直连-解锁美国地区NF非自制剧
+      - 🇺🇸 :美国-ss-167.88.63.99:2376-被墙-直连-解锁美国地区NF非自制剧
+      - 🇺🇸 :美国-ss-167.88.62.68:4444-被墙-直连-解锁美国地区NF非自制剧
+      - 🇺🇸 :美国-ss-167.88.62.68:5600-被墙-直连-解锁美国地区NF非自制剧
+      - mianfeifq+253
+      - 🇺🇸 :美国-ss-167.88.63.99:2375-被墙-直连-解锁美国地区NF非自制剧
+      - 🇺🇸 :美国-ss-167.88.62.68:8881-被墙-直连-解锁美国地区NF非自制剧 2
+      - 🇺🇸 :美国-ss-167.88.62.68:8881-被墙-直连-解锁美国地区NF非自制剧 3
+      - 🇺🇸 :美国-ss-167.88.62.68:9102-被墙-直连-解锁美国地区NF非自制剧
+      - 🇺🇸 :美国-ss-167.88.63.99:2376-被墙-直连-解锁美国地区NF非自制剧 2
+      - 🇺🇸 :美国-ss-167.88.62.68:8000-被墙-直连-解锁美国地区NF非自制剧
+      - 🇺🇸 :美国-ss-167.88.62.68:8000-被墙-直连-解锁美国地区NF非自制剧 2
+      - 🇺🇸 :美国-ss-167.88.62.68:5600-被墙-直连-解锁美国地区NF非自制剧 2
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 2
+      - 🇯🇵 JP 2 → openitsub.com
+      - 未知_1012017
       - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 3
+      - 🇮🇱 :以色列-ss-31.133.100.49:50004-被墙-直连-解锁以色列地区NF非自制剧 2
+      - 🇺🇸 :美国-ss-162.251.61.221:805-被墙-直连-解锁美国地区NF非自制剧
       - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 4
+      - 🇺🇸 [09-26]|openrunner|美国(US)USA/Dallas_39
       - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 5
-      - ZZ_21
       - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 6
       - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 7
+      - 🇺🇸 :美国-ss-167.88.63.99:7306-被墙-直连-解锁美国地区NF非自制剧
+      - mianfeifq+283
       - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 8
-      - 🇯🇵 日本 004 2
       - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 9
       - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 10
-      - 🇺🇸 :美国-ss-167.88.62.68:8881-被墙-直连-解锁美国地区NF非自制剧
-      - 🇨🇦 CA 2 → openitsub.com
       - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 11
+      - 🇺🇸 美国_1012008
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 12
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 13
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 14
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 15
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 16
+      - 🇺🇸 :美国-ss-167.88.62.68:4444-被墙-直连-解锁美国地区NF非自制剧 2
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 17
+      - ZZ_21
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 18
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 19
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 20
+      - "| 7.56Mb"
   - name: 🌍 国外媒体
     type: select
     proxies:
       - 🔰 节点选择
       - ♻️ 自动选择
       - 🎯 全球直连
-      - 🇸🇬 SG 74
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
-      - 🇸🇬 SG 74 2
-      - 🇺🇸 v2rayfree.eu.org - 美国CloudFlare公司CDN节点 25
-      - 【付费推荐：wxfz.ml】
-      - 🇺🇸 美国_1012007
-      - 🇭🇰 香港_1012041
-      - 🇺🇸 美国 032
-      - 🇸🇬 v2rayfree.eu.org - 新加坡OVH 19
-      - 🇺🇸 :加拿大-ss-38.64.138.53:1035-被墙-直连-解锁美国地区NF非自制剧
-      - 🇸🇬 新加坡 003
-      - 🇺🇸 :美国-ss-162.251.61.221:812-被墙-直连-解锁美国地区NF非自制剧
-      - "|44.01Mb"
-      - 🇨🇳 CN【付费推荐：wxfz.ml】
-      - 🇸🇬 SG【付费推荐：wxfz.ml】
-      - aaa 58
-      - 未知_1012018
-      - 🇮🇳 印度+003
-      - "|11.68Mb"
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 16
-      - 未知_1012649
-      - 🇸🇬 SG 74 3
-      - 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧
+      - 🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 19
       - 🇺🇸 US 6 → openitsub.com
-      - 🇺🇸 美国 042
-      - 🇨🇳 CN【付费推荐：wxfz.ml】 2
-      - 🇺🇸 :美国-ss-162.251.61.221:804-被墙-直连-解锁美国地区NF非自制剧
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 2
-      - 🇺🇸 美国_10121245
-      - 🇳🇱 荷兰_1012225
-      - 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧 2
-      - aaa 248
-      - 🇮🇷 伊朗_1012012
-      - 🇺🇸 2.26| httpsgithubcomAlvin9999newpacwiki clash ip6 洛杉矶1CDN
-      - 🇺🇸 github.com/freefq - 美国  4
-      - IR【付费推荐：wxfz.ml】
-      - 🇮🇷 伊朗_1012011
-      - 🇮🇷 伊朗_1012013
-      - 🇺🇸 美国 001
-      - IR【付费推荐：wxfz.ml】 2
-      - 🇮🇷 伊朗_1012001
-      - 🇮🇷 伊朗_1012011 2
-      - ""
-      - 🇺🇸 :美国-ss-162.251.61.221:805-被墙-直连-解锁美国地区NF非自制剧
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 26
-      - 🇺🇸 美国_10121239
-      - mianfeifq+14
-      - mianfeifq+307
-      - 🇰🇷 韩国_1012089
-      - 🇫🇷 FR 法国(youtube阿伟科技)
-      - 🇰🇷 -韩国-fullaccesstokoreannetsubnode1.azurewebsites.net
-      - 🇸🇬 github.com/freefq - 新加坡OVH 8
-      - 🇯🇵 _JP_日本
-      - 🇸🇬 新加坡(TG频道:@kxswa)
+      - 🇸🇬 SG 1 → openitsub.com
       - 🇯🇵 _JP_日本_3
-      - 🇺🇸 -美国-141.101.115.200
-      - 🇭🇰 香港 油尖旺御金·国峯 環球全域電訊 C05
+      - 🇸🇬 v2rayfree.eu.org - 新加坡OVH 19
+      - 🇭🇰 香港_1012041
+      - 🇮🇳 印度 001
+      - 🇸🇬 SG【付费推荐：wxfz.ml】
+      - 🇺🇸 v2rayfree.eu.org - 美国CloudFlare公司CDN节点 25
+      - 🇸🇬 github.com/freefq - 新加坡OVH 20
+      - 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧
+      - aaa 212
+      - 🇺🇸 美国_10121231
+      - 🇸🇬 v2rayfree.eu.org - 新加坡OVH 19 2
+      - 🇸🇬 新加坡 003
       - 🇯🇵 日本 015
-      - 🇺🇸 美国_10121298
-      - 🇯🇵 JP【付费推荐：wxfz.ml】
-      - 🇺🇸 US 美国(youtube阿伟科技)
-      - 白嫖-184
-      - 🇭🇰 中国-香港 IEPL Equinix HK8 C 06 1Gbps HBO TVB
-      - _油管：全网最强白嫖
-      - 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧 3
-      - 🇺🇸 美国_10121277
+      - 🇨🇦 CA 2 → openitsub.com
+      - 未知_1012653
+      - 🇸🇬 SG 74
+      - 🇺🇸 :美国-ss-162.251.61.221:802-被墙-直连-解锁美国地区NF非自制剧
       - 🇺🇸 :美国-ss-162.251.61.221:800-被墙-直连-解锁美国地区NF非自制剧
-      - 未知_1012099
-      - 白嫖-184 2
-      - 🇺🇸 美国_10121228
-      - mianfeifq+199
-      - 🇺🇸 :美国-ss-162.251.61.221:812-被墙-直连-解锁美国地区NF非自制剧 2
-      - 🇺🇸 :美国-ss-162.251.61.221:800-被墙-直连-解锁美国地区NF非自制剧 2
+      - 🇸🇬 SG 74 2
+      - 🇺🇸 美国_1012074
+      - 🇯🇵 日本 015 2
+      - 🇸🇬 SG 74 3
+      - 未知_1012007
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
+      - 🇸🇬 SG【付费推荐：wxfz.ml】 2
+      - 🇸🇬 新加坡 003 2
+      - 流媒体|41
+      - 🇪🇺 欧洲(油管:破解资源君2.0) 25
+      - 【付费推荐：wxfz.ml】
+      - 🇺🇸 US【付费推荐：wxfz.ml】
+      - "|24.35Mb"
+      - ""
       - 🇺🇸 :美国-ss-138.68.248.130:811-被墙-直连-解锁美国地区NF非自制剧
-      - 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧 4
+      - _油管：全网最强白嫖
+      - 🇺🇸 :美国-ss-138.68.248.130:811-被墙-直连-解锁美国地区NF非自制剧 2
+      - _油管：全网最强白嫖 2
+      - 🇺🇸 美国 017
+      - 🇺🇸 :美国-ss-138.68.248.130:811-被墙-直连-解锁美国地区NF非自制剧 3
+      - 未知_1012684
+      - 🇺🇸 :美国-ss-162.251.61.221:800-被墙-直连-解锁美国地区NF非自制剧 2
+      - mianfeifq+199
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶SharkTech数据中心 4
+      - 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧 2
       - 🇮🇱 :以色列-ss-31.133.100.49:50004-被墙-直连-解锁以色列地区NF非自制剧
-      - 🇯🇵 JP 1 → openitsub.com
-      - 未知_1012013
-      - 🇮🇱 :以色列-ss-185.162.125.91:50004-被墙-直连-解锁以色列地区NF非自制剧
-      - 未知_1012102
+      - 🇨🇳 CN【付费推荐：wxfz.ml】
+      - mianfeifq+199 2
       - 🇯🇵 日本 004
+      - 白嫖-184
+      - 🇭🇰 香港 油尖旺御金·国峯 環球全域電訊 C05
+      - 🇨🇳 CN【付费推荐：wxfz.ml】 2
       - 🇯🇵 日本 010
-      - "| 7.56Mb"
-      - 未知_1012693
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君)
-      - 213.183.53.200:9070
-      - 213.183.53.200:9070 2
+      - 🇺🇸 美国_1012248
+      - 🇮🇱 :以色列-ss-185.162.125.91:50004-被墙-直连-解锁以色列地区NF非自制剧
+      - 🇺🇸 US【付费推荐：wxfz.ml】 2
+      - 🇺🇸 :美国-ss-167.88.62.68:8881-被墙-直连-解锁美国地区NF非自制剧
+      - 🇺🇸 :美国-ss-167.88.63.99:2376-被墙-直连-解锁美国地区NF非自制剧
+      - 🇺🇸 :美国-ss-167.88.62.68:4444-被墙-直连-解锁美国地区NF非自制剧
+      - 🇺🇸 :美国-ss-167.88.62.68:5600-被墙-直连-解锁美国地区NF非自制剧
+      - mianfeifq+253
+      - 🇺🇸 :美国-ss-167.88.63.99:2375-被墙-直连-解锁美国地区NF非自制剧
+      - 🇺🇸 :美国-ss-167.88.62.68:8881-被墙-直连-解锁美国地区NF非自制剧 2
+      - 🇺🇸 :美国-ss-167.88.62.68:8881-被墙-直连-解锁美国地区NF非自制剧 3
+      - 🇺🇸 :美国-ss-167.88.62.68:9102-被墙-直连-解锁美国地区NF非自制剧
+      - 🇺🇸 :美国-ss-167.88.63.99:2376-被墙-直连-解锁美国地区NF非自制剧 2
+      - 🇺🇸 :美国-ss-167.88.62.68:8000-被墙-直连-解锁美国地区NF非自制剧
+      - 🇺🇸 :美国-ss-167.88.62.68:8000-被墙-直连-解锁美国地区NF非自制剧 2
+      - 🇺🇸 :美国-ss-167.88.62.68:5600-被墙-直连-解锁美国地区NF非自制剧 2
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 2
+      - 🇯🇵 JP 2 → openitsub.com
+      - 未知_1012017
       - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 3
+      - 🇮🇱 :以色列-ss-31.133.100.49:50004-被墙-直连-解锁以色列地区NF非自制剧 2
+      - 🇺🇸 :美国-ss-162.251.61.221:805-被墙-直连-解锁美国地区NF非自制剧
       - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 4
+      - 🇺🇸 [09-26]|openrunner|美国(US)USA/Dallas_39
       - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 5
-      - ZZ_21
       - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 6
       - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 7
+      - 🇺🇸 :美国-ss-167.88.63.99:7306-被墙-直连-解锁美国地区NF非自制剧
+      - mianfeifq+283
       - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 8
-      - 🇯🇵 日本 004 2
       - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 9
       - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 10
-      - 🇺🇸 :美国-ss-167.88.62.68:8881-被墙-直连-解锁美国地区NF非自制剧
-      - 🇨🇦 CA 2 → openitsub.com
       - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 11
+      - 🇺🇸 美国_1012008
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 12
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 13
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 14
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 15
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 16
+      - 🇺🇸 :美国-ss-167.88.62.68:4444-被墙-直连-解锁美国地区NF非自制剧 2
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 17
+      - ZZ_21
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 18
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 19
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 20
+      - "| 7.56Mb"
   - name: 🌏 国内媒体
     type: select
     proxies:
       - 🎯 全球直连
       - 🇭🇰 香港_1012041
       - 🇭🇰 香港 油尖旺御金·国峯 環球全域電訊 C05
-      - 🇭🇰 中国-香港 IEPL Equinix HK8 C 06 1Gbps HBO TVB
       - 🔰 节点选择
   - name: Ⓜ️ 微软服务
     type: select
     proxies:
       - 🎯 全球直连
       - 🔰 节点选择
-      - 🇸🇬 SG 74
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
-      - 🇸🇬 SG 74 2
-      - 🇺🇸 v2rayfree.eu.org - 美国CloudFlare公司CDN节点 25
-      - 【付费推荐：wxfz.ml】
-      - 🇺🇸 美国_1012007
-      - 🇭🇰 香港_1012041
-      - 🇺🇸 美国 032
-      - 🇸🇬 v2rayfree.eu.org - 新加坡OVH 19
-      - 🇺🇸 :加拿大-ss-38.64.138.53:1035-被墙-直连-解锁美国地区NF非自制剧
-      - 🇸🇬 新加坡 003
-      - 🇺🇸 :美国-ss-162.251.61.221:812-被墙-直连-解锁美国地区NF非自制剧
-      - "|44.01Mb"
-      - 🇨🇳 CN【付费推荐：wxfz.ml】
-      - 🇸🇬 SG【付费推荐：wxfz.ml】
-      - aaa 58
-      - 未知_1012018
-      - 🇮🇳 印度+003
-      - "|11.68Mb"
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 16
-      - 未知_1012649
-      - 🇸🇬 SG 74 3
-      - 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧
+      - 🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 19
       - 🇺🇸 US 6 → openitsub.com
-      - 🇺🇸 美国 042
-      - 🇨🇳 CN【付费推荐：wxfz.ml】 2
-      - 🇺🇸 :美国-ss-162.251.61.221:804-被墙-直连-解锁美国地区NF非自制剧
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 2
-      - 🇺🇸 美国_10121245
-      - 🇳🇱 荷兰_1012225
-      - 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧 2
-      - aaa 248
-      - 🇮🇷 伊朗_1012012
-      - 🇺🇸 2.26| httpsgithubcomAlvin9999newpacwiki clash ip6 洛杉矶1CDN
-      - 🇺🇸 github.com/freefq - 美国  4
-      - IR【付费推荐：wxfz.ml】
-      - 🇮🇷 伊朗_1012011
-      - 🇮🇷 伊朗_1012013
-      - 🇺🇸 美国 001
-      - IR【付费推荐：wxfz.ml】 2
-      - 🇮🇷 伊朗_1012001
-      - 🇮🇷 伊朗_1012011 2
-      - ""
-      - 🇺🇸 :美国-ss-162.251.61.221:805-被墙-直连-解锁美国地区NF非自制剧
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 26
-      - 🇺🇸 美国_10121239
-      - mianfeifq+14
-      - mianfeifq+307
-      - 🇰🇷 韩国_1012089
-      - 🇫🇷 FR 法国(youtube阿伟科技)
-      - 🇰🇷 -韩国-fullaccesstokoreannetsubnode1.azurewebsites.net
-      - 🇸🇬 github.com/freefq - 新加坡OVH 8
-      - 🇯🇵 _JP_日本
-      - 🇸🇬 新加坡(TG频道:@kxswa)
+      - 🇸🇬 SG 1 → openitsub.com
       - 🇯🇵 _JP_日本_3
-      - 🇺🇸 -美国-141.101.115.200
-      - 🇭🇰 香港 油尖旺御金·国峯 環球全域電訊 C05
+      - 🇸🇬 v2rayfree.eu.org - 新加坡OVH 19
+      - 🇭🇰 香港_1012041
+      - 🇮🇳 印度 001
+      - 🇸🇬 SG【付费推荐：wxfz.ml】
+      - 🇺🇸 v2rayfree.eu.org - 美国CloudFlare公司CDN节点 25
+      - 🇸🇬 github.com/freefq - 新加坡OVH 20
+      - 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧
+      - aaa 212
+      - 🇺🇸 美国_10121231
+      - 🇸🇬 v2rayfree.eu.org - 新加坡OVH 19 2
+      - 🇸🇬 新加坡 003
       - 🇯🇵 日本 015
-      - 🇺🇸 美国_10121298
-      - 🇯🇵 JP【付费推荐：wxfz.ml】
-      - 🇺🇸 US 美国(youtube阿伟科技)
-      - 白嫖-184
-      - 🇭🇰 中国-香港 IEPL Equinix HK8 C 06 1Gbps HBO TVB
-      - _油管：全网最强白嫖
-      - 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧 3
-      - 🇺🇸 美国_10121277
+      - 🇨🇦 CA 2 → openitsub.com
+      - 未知_1012653
+      - 🇸🇬 SG 74
+      - 🇺🇸 :美国-ss-162.251.61.221:802-被墙-直连-解锁美国地区NF非自制剧
       - 🇺🇸 :美国-ss-162.251.61.221:800-被墙-直连-解锁美国地区NF非自制剧
-      - 未知_1012099
-      - 白嫖-184 2
-      - 🇺🇸 美国_10121228
-      - mianfeifq+199
-      - 🇺🇸 :美国-ss-162.251.61.221:812-被墙-直连-解锁美国地区NF非自制剧 2
-      - 🇺🇸 :美国-ss-162.251.61.221:800-被墙-直连-解锁美国地区NF非自制剧 2
+      - 🇸🇬 SG 74 2
+      - 🇺🇸 美国_1012074
+      - 🇯🇵 日本 015 2
+      - 🇸🇬 SG 74 3
+      - 未知_1012007
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
+      - 🇸🇬 SG【付费推荐：wxfz.ml】 2
+      - 🇸🇬 新加坡 003 2
+      - 流媒体|41
+      - 🇪🇺 欧洲(油管:破解资源君2.0) 25
+      - 【付费推荐：wxfz.ml】
+      - 🇺🇸 US【付费推荐：wxfz.ml】
+      - "|24.35Mb"
+      - ""
       - 🇺🇸 :美国-ss-138.68.248.130:811-被墙-直连-解锁美国地区NF非自制剧
-      - 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧 4
+      - _油管：全网最强白嫖
+      - 🇺🇸 :美国-ss-138.68.248.130:811-被墙-直连-解锁美国地区NF非自制剧 2
+      - _油管：全网最强白嫖 2
+      - 🇺🇸 美国 017
+      - 🇺🇸 :美国-ss-138.68.248.130:811-被墙-直连-解锁美国地区NF非自制剧 3
+      - 未知_1012684
+      - 🇺🇸 :美国-ss-162.251.61.221:800-被墙-直连-解锁美国地区NF非自制剧 2
+      - mianfeifq+199
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶SharkTech数据中心 4
+      - 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧 2
       - 🇮🇱 :以色列-ss-31.133.100.49:50004-被墙-直连-解锁以色列地区NF非自制剧
-      - 🇯🇵 JP 1 → openitsub.com
-      - 未知_1012013
-      - 🇮🇱 :以色列-ss-185.162.125.91:50004-被墙-直连-解锁以色列地区NF非自制剧
-      - 未知_1012102
+      - 🇨🇳 CN【付费推荐：wxfz.ml】
+      - mianfeifq+199 2
       - 🇯🇵 日本 004
+      - 白嫖-184
+      - 🇭🇰 香港 油尖旺御金·国峯 環球全域電訊 C05
+      - 🇨🇳 CN【付费推荐：wxfz.ml】 2
       - 🇯🇵 日本 010
-      - "| 7.56Mb"
-      - 未知_1012693
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君)
-      - 213.183.53.200:9070
-      - 213.183.53.200:9070 2
+      - 🇺🇸 美国_1012248
+      - 🇮🇱 :以色列-ss-185.162.125.91:50004-被墙-直连-解锁以色列地区NF非自制剧
+      - 🇺🇸 US【付费推荐：wxfz.ml】 2
+      - 🇺🇸 :美国-ss-167.88.62.68:8881-被墙-直连-解锁美国地区NF非自制剧
+      - 🇺🇸 :美国-ss-167.88.63.99:2376-被墙-直连-解锁美国地区NF非自制剧
+      - 🇺🇸 :美国-ss-167.88.62.68:4444-被墙-直连-解锁美国地区NF非自制剧
+      - 🇺🇸 :美国-ss-167.88.62.68:5600-被墙-直连-解锁美国地区NF非自制剧
+      - mianfeifq+253
+      - 🇺🇸 :美国-ss-167.88.63.99:2375-被墙-直连-解锁美国地区NF非自制剧
+      - 🇺🇸 :美国-ss-167.88.62.68:8881-被墙-直连-解锁美国地区NF非自制剧 2
+      - 🇺🇸 :美国-ss-167.88.62.68:8881-被墙-直连-解锁美国地区NF非自制剧 3
+      - 🇺🇸 :美国-ss-167.88.62.68:9102-被墙-直连-解锁美国地区NF非自制剧
+      - 🇺🇸 :美国-ss-167.88.63.99:2376-被墙-直连-解锁美国地区NF非自制剧 2
+      - 🇺🇸 :美国-ss-167.88.62.68:8000-被墙-直连-解锁美国地区NF非自制剧
+      - 🇺🇸 :美国-ss-167.88.62.68:8000-被墙-直连-解锁美国地区NF非自制剧 2
+      - 🇺🇸 :美国-ss-167.88.62.68:5600-被墙-直连-解锁美国地区NF非自制剧 2
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 2
+      - 🇯🇵 JP 2 → openitsub.com
+      - 未知_1012017
       - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 3
+      - 🇮🇱 :以色列-ss-31.133.100.49:50004-被墙-直连-解锁以色列地区NF非自制剧 2
+      - 🇺🇸 :美国-ss-162.251.61.221:805-被墙-直连-解锁美国地区NF非自制剧
       - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 4
+      - 🇺🇸 [09-26]|openrunner|美国(US)USA/Dallas_39
       - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 5
-      - ZZ_21
       - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 6
       - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 7
+      - 🇺🇸 :美国-ss-167.88.63.99:7306-被墙-直连-解锁美国地区NF非自制剧
+      - mianfeifq+283
       - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 8
-      - 🇯🇵 日本 004 2
       - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 9
       - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 10
-      - 🇺🇸 :美国-ss-167.88.62.68:8881-被墙-直连-解锁美国地区NF非自制剧
-      - 🇨🇦 CA 2 → openitsub.com
       - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 11
+      - 🇺🇸 美国_1012008
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 12
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 13
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 14
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 15
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 16
+      - 🇺🇸 :美国-ss-167.88.62.68:4444-被墙-直连-解锁美国地区NF非自制剧 2
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 17
+      - ZZ_21
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 18
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 19
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 20
+      - "| 7.56Mb"
   - name: 📲 电报信息
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
-      - 🇸🇬 SG 74
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
-      - 🇸🇬 SG 74 2
-      - 🇺🇸 v2rayfree.eu.org - 美国CloudFlare公司CDN节点 25
-      - 【付费推荐：wxfz.ml】
-      - 🇺🇸 美国_1012007
-      - 🇭🇰 香港_1012041
-      - 🇺🇸 美国 032
-      - 🇸🇬 v2rayfree.eu.org - 新加坡OVH 19
-      - 🇺🇸 :加拿大-ss-38.64.138.53:1035-被墙-直连-解锁美国地区NF非自制剧
-      - 🇸🇬 新加坡 003
-      - 🇺🇸 :美国-ss-162.251.61.221:812-被墙-直连-解锁美国地区NF非自制剧
-      - "|44.01Mb"
-      - 🇨🇳 CN【付费推荐：wxfz.ml】
-      - 🇸🇬 SG【付费推荐：wxfz.ml】
-      - aaa 58
-      - 未知_1012018
-      - 🇮🇳 印度+003
-      - "|11.68Mb"
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 16
-      - 未知_1012649
-      - 🇸🇬 SG 74 3
-      - 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧
+      - 🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 19
       - 🇺🇸 US 6 → openitsub.com
-      - 🇺🇸 美国 042
-      - 🇨🇳 CN【付费推荐：wxfz.ml】 2
-      - 🇺🇸 :美国-ss-162.251.61.221:804-被墙-直连-解锁美国地区NF非自制剧
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 2
-      - 🇺🇸 美国_10121245
-      - 🇳🇱 荷兰_1012225
-      - 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧 2
-      - aaa 248
-      - 🇮🇷 伊朗_1012012
-      - 🇺🇸 2.26| httpsgithubcomAlvin9999newpacwiki clash ip6 洛杉矶1CDN
-      - 🇺🇸 github.com/freefq - 美国  4
-      - IR【付费推荐：wxfz.ml】
-      - 🇮🇷 伊朗_1012011
-      - 🇮🇷 伊朗_1012013
-      - 🇺🇸 美国 001
-      - IR【付费推荐：wxfz.ml】 2
-      - 🇮🇷 伊朗_1012001
-      - 🇮🇷 伊朗_1012011 2
-      - ""
-      - 🇺🇸 :美国-ss-162.251.61.221:805-被墙-直连-解锁美国地区NF非自制剧
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 26
-      - 🇺🇸 美国_10121239
-      - mianfeifq+14
-      - mianfeifq+307
-      - 🇰🇷 韩国_1012089
-      - 🇫🇷 FR 法国(youtube阿伟科技)
-      - 🇰🇷 -韩国-fullaccesstokoreannetsubnode1.azurewebsites.net
-      - 🇸🇬 github.com/freefq - 新加坡OVH 8
-      - 🇯🇵 _JP_日本
-      - 🇸🇬 新加坡(TG频道:@kxswa)
+      - 🇸🇬 SG 1 → openitsub.com
       - 🇯🇵 _JP_日本_3
-      - 🇺🇸 -美国-141.101.115.200
-      - 🇭🇰 香港 油尖旺御金·国峯 環球全域電訊 C05
+      - 🇸🇬 v2rayfree.eu.org - 新加坡OVH 19
+      - 🇭🇰 香港_1012041
+      - 🇮🇳 印度 001
+      - 🇸🇬 SG【付费推荐：wxfz.ml】
+      - 🇺🇸 v2rayfree.eu.org - 美国CloudFlare公司CDN节点 25
+      - 🇸🇬 github.com/freefq - 新加坡OVH 20
+      - 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧
+      - aaa 212
+      - 🇺🇸 美国_10121231
+      - 🇸🇬 v2rayfree.eu.org - 新加坡OVH 19 2
+      - 🇸🇬 新加坡 003
       - 🇯🇵 日本 015
-      - 🇺🇸 美国_10121298
-      - 🇯🇵 JP【付费推荐：wxfz.ml】
-      - 🇺🇸 US 美国(youtube阿伟科技)
-      - 白嫖-184
-      - 🇭🇰 中国-香港 IEPL Equinix HK8 C 06 1Gbps HBO TVB
-      - _油管：全网最强白嫖
-      - 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧 3
-      - 🇺🇸 美国_10121277
+      - 🇨🇦 CA 2 → openitsub.com
+      - 未知_1012653
+      - 🇸🇬 SG 74
+      - 🇺🇸 :美国-ss-162.251.61.221:802-被墙-直连-解锁美国地区NF非自制剧
       - 🇺🇸 :美国-ss-162.251.61.221:800-被墙-直连-解锁美国地区NF非自制剧
-      - 未知_1012099
-      - 白嫖-184 2
-      - 🇺🇸 美国_10121228
-      - mianfeifq+199
-      - 🇺🇸 :美国-ss-162.251.61.221:812-被墙-直连-解锁美国地区NF非自制剧 2
-      - 🇺🇸 :美国-ss-162.251.61.221:800-被墙-直连-解锁美国地区NF非自制剧 2
+      - 🇸🇬 SG 74 2
+      - 🇺🇸 美国_1012074
+      - 🇯🇵 日本 015 2
+      - 🇸🇬 SG 74 3
+      - 未知_1012007
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
+      - 🇸🇬 SG【付费推荐：wxfz.ml】 2
+      - 🇸🇬 新加坡 003 2
+      - 流媒体|41
+      - 🇪🇺 欧洲(油管:破解资源君2.0) 25
+      - 【付费推荐：wxfz.ml】
+      - 🇺🇸 US【付费推荐：wxfz.ml】
+      - "|24.35Mb"
+      - ""
       - 🇺🇸 :美国-ss-138.68.248.130:811-被墙-直连-解锁美国地区NF非自制剧
-      - 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧 4
+      - _油管：全网最强白嫖
+      - 🇺🇸 :美国-ss-138.68.248.130:811-被墙-直连-解锁美国地区NF非自制剧 2
+      - _油管：全网最强白嫖 2
+      - 🇺🇸 美国 017
+      - 🇺🇸 :美国-ss-138.68.248.130:811-被墙-直连-解锁美国地区NF非自制剧 3
+      - 未知_1012684
+      - 🇺🇸 :美国-ss-162.251.61.221:800-被墙-直连-解锁美国地区NF非自制剧 2
+      - mianfeifq+199
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶SharkTech数据中心 4
+      - 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧 2
       - 🇮🇱 :以色列-ss-31.133.100.49:50004-被墙-直连-解锁以色列地区NF非自制剧
-      - 🇯🇵 JP 1 → openitsub.com
-      - 未知_1012013
-      - 🇮🇱 :以色列-ss-185.162.125.91:50004-被墙-直连-解锁以色列地区NF非自制剧
-      - 未知_1012102
+      - 🇨🇳 CN【付费推荐：wxfz.ml】
+      - mianfeifq+199 2
       - 🇯🇵 日本 004
+      - 白嫖-184
+      - 🇭🇰 香港 油尖旺御金·国峯 環球全域電訊 C05
+      - 🇨🇳 CN【付费推荐：wxfz.ml】 2
       - 🇯🇵 日本 010
-      - "| 7.56Mb"
-      - 未知_1012693
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君)
-      - 213.183.53.200:9070
-      - 213.183.53.200:9070 2
+      - 🇺🇸 美国_1012248
+      - 🇮🇱 :以色列-ss-185.162.125.91:50004-被墙-直连-解锁以色列地区NF非自制剧
+      - 🇺🇸 US【付费推荐：wxfz.ml】 2
+      - 🇺🇸 :美国-ss-167.88.62.68:8881-被墙-直连-解锁美国地区NF非自制剧
+      - 🇺🇸 :美国-ss-167.88.63.99:2376-被墙-直连-解锁美国地区NF非自制剧
+      - 🇺🇸 :美国-ss-167.88.62.68:4444-被墙-直连-解锁美国地区NF非自制剧
+      - 🇺🇸 :美国-ss-167.88.62.68:5600-被墙-直连-解锁美国地区NF非自制剧
+      - mianfeifq+253
+      - 🇺🇸 :美国-ss-167.88.63.99:2375-被墙-直连-解锁美国地区NF非自制剧
+      - 🇺🇸 :美国-ss-167.88.62.68:8881-被墙-直连-解锁美国地区NF非自制剧 2
+      - 🇺🇸 :美国-ss-167.88.62.68:8881-被墙-直连-解锁美国地区NF非自制剧 3
+      - 🇺🇸 :美国-ss-167.88.62.68:9102-被墙-直连-解锁美国地区NF非自制剧
+      - 🇺🇸 :美国-ss-167.88.63.99:2376-被墙-直连-解锁美国地区NF非自制剧 2
+      - 🇺🇸 :美国-ss-167.88.62.68:8000-被墙-直连-解锁美国地区NF非自制剧
+      - 🇺🇸 :美国-ss-167.88.62.68:8000-被墙-直连-解锁美国地区NF非自制剧 2
+      - 🇺🇸 :美国-ss-167.88.62.68:5600-被墙-直连-解锁美国地区NF非自制剧 2
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 2
+      - 🇯🇵 JP 2 → openitsub.com
+      - 未知_1012017
       - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 3
+      - 🇮🇱 :以色列-ss-31.133.100.49:50004-被墙-直连-解锁以色列地区NF非自制剧 2
+      - 🇺🇸 :美国-ss-162.251.61.221:805-被墙-直连-解锁美国地区NF非自制剧
       - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 4
+      - 🇺🇸 [09-26]|openrunner|美国(US)USA/Dallas_39
       - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 5
-      - ZZ_21
       - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 6
       - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 7
+      - 🇺🇸 :美国-ss-167.88.63.99:7306-被墙-直连-解锁美国地区NF非自制剧
+      - mianfeifq+283
       - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 8
-      - 🇯🇵 日本 004 2
       - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 9
       - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 10
-      - 🇺🇸 :美国-ss-167.88.62.68:8881-被墙-直连-解锁美国地区NF非自制剧
-      - 🇨🇦 CA 2 → openitsub.com
       - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 11
+      - 🇺🇸 美国_1012008
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 12
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 13
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 14
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 15
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 16
+      - 🇺🇸 :美国-ss-167.88.62.68:4444-被墙-直连-解锁美国地区NF非自制剧 2
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 17
+      - ZZ_21
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 18
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 19
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 20
+      - "| 7.56Mb"
   - name: 🍎 苹果服务
     type: select
     proxies:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇸🇬 SG 74
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
-      - 🇸🇬 SG 74 2
-      - 🇺🇸 v2rayfree.eu.org - 美国CloudFlare公司CDN节点 25
-      - 【付费推荐：wxfz.ml】
-      - 🇺🇸 美国_1012007
-      - 🇭🇰 香港_1012041
-      - 🇺🇸 美国 032
-      - 🇸🇬 v2rayfree.eu.org - 新加坡OVH 19
-      - 🇺🇸 :加拿大-ss-38.64.138.53:1035-被墙-直连-解锁美国地区NF非自制剧
-      - 🇸🇬 新加坡 003
-      - 🇺🇸 :美国-ss-162.251.61.221:812-被墙-直连-解锁美国地区NF非自制剧
-      - "|44.01Mb"
-      - 🇨🇳 CN【付费推荐：wxfz.ml】
-      - 🇸🇬 SG【付费推荐：wxfz.ml】
-      - aaa 58
-      - 未知_1012018
-      - 🇮🇳 印度+003
-      - "|11.68Mb"
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 16
-      - 未知_1012649
-      - 🇸🇬 SG 74 3
-      - 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧
+      - 🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 19
       - 🇺🇸 US 6 → openitsub.com
-      - 🇺🇸 美国 042
-      - 🇨🇳 CN【付费推荐：wxfz.ml】 2
-      - 🇺🇸 :美国-ss-162.251.61.221:804-被墙-直连-解锁美国地区NF非自制剧
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 2
-      - 🇺🇸 美国_10121245
-      - 🇳🇱 荷兰_1012225
-      - 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧 2
-      - aaa 248
-      - 🇮🇷 伊朗_1012012
-      - 🇺🇸 2.26| httpsgithubcomAlvin9999newpacwiki clash ip6 洛杉矶1CDN
-      - 🇺🇸 github.com/freefq - 美国  4
-      - IR【付费推荐：wxfz.ml】
-      - 🇮🇷 伊朗_1012011
-      - 🇮🇷 伊朗_1012013
-      - 🇺🇸 美国 001
-      - IR【付费推荐：wxfz.ml】 2
-      - 🇮🇷 伊朗_1012001
-      - 🇮🇷 伊朗_1012011 2
-      - ""
-      - 🇺🇸 :美国-ss-162.251.61.221:805-被墙-直连-解锁美国地区NF非自制剧
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 26
-      - 🇺🇸 美国_10121239
-      - mianfeifq+14
-      - mianfeifq+307
-      - 🇰🇷 韩国_1012089
-      - 🇫🇷 FR 法国(youtube阿伟科技)
-      - 🇰🇷 -韩国-fullaccesstokoreannetsubnode1.azurewebsites.net
-      - 🇸🇬 github.com/freefq - 新加坡OVH 8
-      - 🇯🇵 _JP_日本
-      - 🇸🇬 新加坡(TG频道:@kxswa)
+      - 🇸🇬 SG 1 → openitsub.com
       - 🇯🇵 _JP_日本_3
-      - 🇺🇸 -美国-141.101.115.200
-      - 🇭🇰 香港 油尖旺御金·国峯 環球全域電訊 C05
+      - 🇸🇬 v2rayfree.eu.org - 新加坡OVH 19
+      - 🇭🇰 香港_1012041
+      - 🇮🇳 印度 001
+      - 🇸🇬 SG【付费推荐：wxfz.ml】
+      - 🇺🇸 v2rayfree.eu.org - 美国CloudFlare公司CDN节点 25
+      - 🇸🇬 github.com/freefq - 新加坡OVH 20
+      - 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧
+      - aaa 212
+      - 🇺🇸 美国_10121231
+      - 🇸🇬 v2rayfree.eu.org - 新加坡OVH 19 2
+      - 🇸🇬 新加坡 003
       - 🇯🇵 日本 015
-      - 🇺🇸 美国_10121298
-      - 🇯🇵 JP【付费推荐：wxfz.ml】
-      - 🇺🇸 US 美国(youtube阿伟科技)
-      - 白嫖-184
-      - 🇭🇰 中国-香港 IEPL Equinix HK8 C 06 1Gbps HBO TVB
-      - _油管：全网最强白嫖
-      - 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧 3
-      - 🇺🇸 美国_10121277
+      - 🇨🇦 CA 2 → openitsub.com
+      - 未知_1012653
+      - 🇸🇬 SG 74
+      - 🇺🇸 :美国-ss-162.251.61.221:802-被墙-直连-解锁美国地区NF非自制剧
       - 🇺🇸 :美国-ss-162.251.61.221:800-被墙-直连-解锁美国地区NF非自制剧
-      - 未知_1012099
-      - 白嫖-184 2
-      - 🇺🇸 美国_10121228
-      - mianfeifq+199
-      - 🇺🇸 :美国-ss-162.251.61.221:812-被墙-直连-解锁美国地区NF非自制剧 2
-      - 🇺🇸 :美国-ss-162.251.61.221:800-被墙-直连-解锁美国地区NF非自制剧 2
+      - 🇸🇬 SG 74 2
+      - 🇺🇸 美国_1012074
+      - 🇯🇵 日本 015 2
+      - 🇸🇬 SG 74 3
+      - 未知_1012007
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
+      - 🇸🇬 SG【付费推荐：wxfz.ml】 2
+      - 🇸🇬 新加坡 003 2
+      - 流媒体|41
+      - 🇪🇺 欧洲(油管:破解资源君2.0) 25
+      - 【付费推荐：wxfz.ml】
+      - 🇺🇸 US【付费推荐：wxfz.ml】
+      - "|24.35Mb"
+      - ""
       - 🇺🇸 :美国-ss-138.68.248.130:811-被墙-直连-解锁美国地区NF非自制剧
-      - 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧 4
+      - _油管：全网最强白嫖
+      - 🇺🇸 :美国-ss-138.68.248.130:811-被墙-直连-解锁美国地区NF非自制剧 2
+      - _油管：全网最强白嫖 2
+      - 🇺🇸 美国 017
+      - 🇺🇸 :美国-ss-138.68.248.130:811-被墙-直连-解锁美国地区NF非自制剧 3
+      - 未知_1012684
+      - 🇺🇸 :美国-ss-162.251.61.221:800-被墙-直连-解锁美国地区NF非自制剧 2
+      - mianfeifq+199
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶SharkTech数据中心 4
+      - 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧 2
       - 🇮🇱 :以色列-ss-31.133.100.49:50004-被墙-直连-解锁以色列地区NF非自制剧
-      - 🇯🇵 JP 1 → openitsub.com
-      - 未知_1012013
-      - 🇮🇱 :以色列-ss-185.162.125.91:50004-被墙-直连-解锁以色列地区NF非自制剧
-      - 未知_1012102
+      - 🇨🇳 CN【付费推荐：wxfz.ml】
+      - mianfeifq+199 2
       - 🇯🇵 日本 004
+      - 白嫖-184
+      - 🇭🇰 香港 油尖旺御金·国峯 環球全域電訊 C05
+      - 🇨🇳 CN【付费推荐：wxfz.ml】 2
       - 🇯🇵 日本 010
-      - "| 7.56Mb"
-      - 未知_1012693
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君)
-      - 213.183.53.200:9070
-      - 213.183.53.200:9070 2
+      - 🇺🇸 美国_1012248
+      - 🇮🇱 :以色列-ss-185.162.125.91:50004-被墙-直连-解锁以色列地区NF非自制剧
+      - 🇺🇸 US【付费推荐：wxfz.ml】 2
+      - 🇺🇸 :美国-ss-167.88.62.68:8881-被墙-直连-解锁美国地区NF非自制剧
+      - 🇺🇸 :美国-ss-167.88.63.99:2376-被墙-直连-解锁美国地区NF非自制剧
+      - 🇺🇸 :美国-ss-167.88.62.68:4444-被墙-直连-解锁美国地区NF非自制剧
+      - 🇺🇸 :美国-ss-167.88.62.68:5600-被墙-直连-解锁美国地区NF非自制剧
+      - mianfeifq+253
+      - 🇺🇸 :美国-ss-167.88.63.99:2375-被墙-直连-解锁美国地区NF非自制剧
+      - 🇺🇸 :美国-ss-167.88.62.68:8881-被墙-直连-解锁美国地区NF非自制剧 2
+      - 🇺🇸 :美国-ss-167.88.62.68:8881-被墙-直连-解锁美国地区NF非自制剧 3
+      - 🇺🇸 :美国-ss-167.88.62.68:9102-被墙-直连-解锁美国地区NF非自制剧
+      - 🇺🇸 :美国-ss-167.88.63.99:2376-被墙-直连-解锁美国地区NF非自制剧 2
+      - 🇺🇸 :美国-ss-167.88.62.68:8000-被墙-直连-解锁美国地区NF非自制剧
+      - 🇺🇸 :美国-ss-167.88.62.68:8000-被墙-直连-解锁美国地区NF非自制剧 2
+      - 🇺🇸 :美国-ss-167.88.62.68:5600-被墙-直连-解锁美国地区NF非自制剧 2
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 2
+      - 🇯🇵 JP 2 → openitsub.com
+      - 未知_1012017
       - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 3
+      - 🇮🇱 :以色列-ss-31.133.100.49:50004-被墙-直连-解锁以色列地区NF非自制剧 2
+      - 🇺🇸 :美国-ss-162.251.61.221:805-被墙-直连-解锁美国地区NF非自制剧
       - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 4
+      - 🇺🇸 [09-26]|openrunner|美国(US)USA/Dallas_39
       - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 5
-      - ZZ_21
       - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 6
       - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 7
+      - 🇺🇸 :美国-ss-167.88.63.99:7306-被墙-直连-解锁美国地区NF非自制剧
+      - mianfeifq+283
       - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 8
-      - 🇯🇵 日本 004 2
       - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 9
       - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 10
-      - 🇺🇸 :美国-ss-167.88.62.68:8881-被墙-直连-解锁美国地区NF非自制剧
-      - 🇨🇦 CA 2 → openitsub.com
       - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 11
+      - 🇺🇸 美国_1012008
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 12
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 13
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 14
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 15
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 16
+      - 🇺🇸 :美国-ss-167.88.62.68:4444-被墙-直连-解锁美国地区NF非自制剧 2
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 17
+      - ZZ_21
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 18
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 19
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 20
+      - "| 7.56Mb"
   - name: 🎯 全球直连
     type: select
     proxies:
@@ -761,106 +760,106 @@ proxy-groups:
       - 🔰 节点选择
       - 🎯 全球直连
       - ♻️ 自动选择
-      - 🇸🇬 SG 74
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
-      - 🇸🇬 SG 74 2
-      - 🇺🇸 v2rayfree.eu.org - 美国CloudFlare公司CDN节点 25
-      - 【付费推荐：wxfz.ml】
-      - 🇺🇸 美国_1012007
-      - 🇭🇰 香港_1012041
-      - 🇺🇸 美国 032
-      - 🇸🇬 v2rayfree.eu.org - 新加坡OVH 19
-      - 🇺🇸 :加拿大-ss-38.64.138.53:1035-被墙-直连-解锁美国地区NF非自制剧
-      - 🇸🇬 新加坡 003
-      - 🇺🇸 :美国-ss-162.251.61.221:812-被墙-直连-解锁美国地区NF非自制剧
-      - "|44.01Mb"
-      - 🇨🇳 CN【付费推荐：wxfz.ml】
-      - 🇸🇬 SG【付费推荐：wxfz.ml】
-      - aaa 58
-      - 未知_1012018
-      - 🇮🇳 印度+003
-      - "|11.68Mb"
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 16
-      - 未知_1012649
-      - 🇸🇬 SG 74 3
-      - 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧
+      - 🇸🇬 github.com/freefq - 新加坡DigitalOcean数据中心 19
       - 🇺🇸 US 6 → openitsub.com
-      - 🇺🇸 美国 042
-      - 🇨🇳 CN【付费推荐：wxfz.ml】 2
-      - 🇺🇸 :美国-ss-162.251.61.221:804-被墙-直连-解锁美国地区NF非自制剧
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 2
-      - 🇺🇸 美国_10121245
-      - 🇳🇱 荷兰_1012225
-      - 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧 2
-      - aaa 248
-      - 🇮🇷 伊朗_1012012
-      - 🇺🇸 2.26| httpsgithubcomAlvin9999newpacwiki clash ip6 洛杉矶1CDN
-      - 🇺🇸 github.com/freefq - 美国  4
-      - IR【付费推荐：wxfz.ml】
-      - 🇮🇷 伊朗_1012011
-      - 🇮🇷 伊朗_1012013
-      - 🇺🇸 美国 001
-      - IR【付费推荐：wxfz.ml】 2
-      - 🇮🇷 伊朗_1012001
-      - 🇮🇷 伊朗_1012011 2
-      - ""
-      - 🇺🇸 :美国-ss-162.251.61.221:805-被墙-直连-解锁美国地区NF非自制剧
-      - 🇺🇸 github.com/freefq - 美国CloudFlare节点 26
-      - 🇺🇸 美国_10121239
-      - mianfeifq+14
-      - mianfeifq+307
-      - 🇰🇷 韩国_1012089
-      - 🇫🇷 FR 法国(youtube阿伟科技)
-      - 🇰🇷 -韩国-fullaccesstokoreannetsubnode1.azurewebsites.net
-      - 🇸🇬 github.com/freefq - 新加坡OVH 8
-      - 🇯🇵 _JP_日本
-      - 🇸🇬 新加坡(TG频道:@kxswa)
+      - 🇸🇬 SG 1 → openitsub.com
       - 🇯🇵 _JP_日本_3
-      - 🇺🇸 -美国-141.101.115.200
-      - 🇭🇰 香港 油尖旺御金·国峯 環球全域電訊 C05
+      - 🇸🇬 v2rayfree.eu.org - 新加坡OVH 19
+      - 🇭🇰 香港_1012041
+      - 🇮🇳 印度 001
+      - 🇸🇬 SG【付费推荐：wxfz.ml】
+      - 🇺🇸 v2rayfree.eu.org - 美国CloudFlare公司CDN节点 25
+      - 🇸🇬 github.com/freefq - 新加坡OVH 20
+      - 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧
+      - aaa 212
+      - 🇺🇸 美国_10121231
+      - 🇸🇬 v2rayfree.eu.org - 新加坡OVH 19 2
+      - 🇸🇬 新加坡 003
       - 🇯🇵 日本 015
-      - 🇺🇸 美国_10121298
-      - 🇯🇵 JP【付费推荐：wxfz.ml】
-      - 🇺🇸 US 美国(youtube阿伟科技)
-      - 白嫖-184
-      - 🇭🇰 中国-香港 IEPL Equinix HK8 C 06 1Gbps HBO TVB
-      - _油管：全网最强白嫖
-      - 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧 3
-      - 🇺🇸 美国_10121277
+      - 🇨🇦 CA 2 → openitsub.com
+      - 未知_1012653
+      - 🇸🇬 SG 74
+      - 🇺🇸 :美国-ss-162.251.61.221:802-被墙-直连-解锁美国地区NF非自制剧
       - 🇺🇸 :美国-ss-162.251.61.221:800-被墙-直连-解锁美国地区NF非自制剧
-      - 未知_1012099
-      - 白嫖-184 2
-      - 🇺🇸 美国_10121228
-      - mianfeifq+199
-      - 🇺🇸 :美国-ss-162.251.61.221:812-被墙-直连-解锁美国地区NF非自制剧 2
-      - 🇺🇸 :美国-ss-162.251.61.221:800-被墙-直连-解锁美国地区NF非自制剧 2
+      - 🇸🇬 SG 74 2
+      - 🇺🇸 美国_1012074
+      - 🇯🇵 日本 015 2
+      - 🇸🇬 SG 74 3
+      - 未知_1012007
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:)
+      - 🇸🇬 SG【付费推荐：wxfz.ml】 2
+      - 🇸🇬 新加坡 003 2
+      - 流媒体|41
+      - 🇪🇺 欧洲(油管:破解资源君2.0) 25
+      - 【付费推荐：wxfz.ml】
+      - 🇺🇸 US【付费推荐：wxfz.ml】
+      - "|24.35Mb"
+      - ""
       - 🇺🇸 :美国-ss-138.68.248.130:811-被墙-直连-解锁美国地区NF非自制剧
-      - 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧 4
+      - _油管：全网最强白嫖
+      - 🇺🇸 :美国-ss-138.68.248.130:811-被墙-直连-解锁美国地区NF非自制剧 2
+      - _油管：全网最强白嫖 2
+      - 🇺🇸 美国 017
+      - 🇺🇸 :美国-ss-138.68.248.130:811-被墙-直连-解锁美国地区NF非自制剧 3
+      - 未知_1012684
+      - 🇺🇸 :美国-ss-162.251.61.221:800-被墙-直连-解锁美国地区NF非自制剧 2
+      - mianfeifq+199
+      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶SharkTech数据中心 4
+      - 🇮🇱 :以色列-ss-185.162.126.217:50004-被墙-直连-解锁以色列地区NF非自制剧 2
       - 🇮🇱 :以色列-ss-31.133.100.49:50004-被墙-直连-解锁以色列地区NF非自制剧
-      - 🇯🇵 JP 1 → openitsub.com
-      - 未知_1012013
-      - 🇮🇱 :以色列-ss-185.162.125.91:50004-被墙-直连-解锁以色列地区NF非自制剧
-      - 未知_1012102
+      - 🇨🇳 CN【付费推荐：wxfz.ml】
+      - mianfeifq+199 2
       - 🇯🇵 日本 004
+      - 白嫖-184
+      - 🇭🇰 香港 油尖旺御金·国峯 環球全域電訊 C05
+      - 🇨🇳 CN【付费推荐：wxfz.ml】 2
       - 🇯🇵 日本 010
-      - "| 7.56Mb"
-      - 未知_1012693
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君)
-      - 213.183.53.200:9070
-      - 213.183.53.200:9070 2
+      - 🇺🇸 美国_1012248
+      - 🇮🇱 :以色列-ss-185.162.125.91:50004-被墙-直连-解锁以色列地区NF非自制剧
+      - 🇺🇸 US【付费推荐：wxfz.ml】 2
+      - 🇺🇸 :美国-ss-167.88.62.68:8881-被墙-直连-解锁美国地区NF非自制剧
+      - 🇺🇸 :美国-ss-167.88.63.99:2376-被墙-直连-解锁美国地区NF非自制剧
+      - 🇺🇸 :美国-ss-167.88.62.68:4444-被墙-直连-解锁美国地区NF非自制剧
+      - 🇺🇸 :美国-ss-167.88.62.68:5600-被墙-直连-解锁美国地区NF非自制剧
+      - mianfeifq+253
+      - 🇺🇸 :美国-ss-167.88.63.99:2375-被墙-直连-解锁美国地区NF非自制剧
+      - 🇺🇸 :美国-ss-167.88.62.68:8881-被墙-直连-解锁美国地区NF非自制剧 2
+      - 🇺🇸 :美国-ss-167.88.62.68:8881-被墙-直连-解锁美国地区NF非自制剧 3
+      - 🇺🇸 :美国-ss-167.88.62.68:9102-被墙-直连-解锁美国地区NF非自制剧
+      - 🇺🇸 :美国-ss-167.88.63.99:2376-被墙-直连-解锁美国地区NF非自制剧 2
+      - 🇺🇸 :美国-ss-167.88.62.68:8000-被墙-直连-解锁美国地区NF非自制剧
+      - 🇺🇸 :美国-ss-167.88.62.68:8000-被墙-直连-解锁美国地区NF非自制剧 2
+      - 🇺🇸 :美国-ss-167.88.62.68:5600-被墙-直连-解锁美国地区NF非自制剧 2
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 2
+      - 🇯🇵 JP 2 → openitsub.com
+      - 未知_1012017
       - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 3
+      - 🇮🇱 :以色列-ss-31.133.100.49:50004-被墙-直连-解锁以色列地区NF非自制剧 2
+      - 🇺🇸 :美国-ss-162.251.61.221:805-被墙-直连-解锁美国地区NF非自制剧
       - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 4
+      - 🇺🇸 [09-26]|openrunner|美国(US)USA/Dallas_39
       - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 5
-      - ZZ_21
       - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 6
       - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 7
+      - 🇺🇸 :美国-ss-167.88.63.99:7306-被墙-直连-解锁美国地区NF非自制剧
+      - mianfeifq+283
       - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 8
-      - 🇯🇵 日本 004 2
       - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 9
       - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 10
-      - 🇺🇸 :美国-ss-167.88.62.68:8881-被墙-直连-解锁美国地区NF非自制剧
-      - 🇨🇦 CA 2 → openitsub.com
       - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 11
+      - 🇺🇸 美国_1012008
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 12
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 13
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 14
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 15
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 16
+      - 🇺🇸 :美国-ss-167.88.62.68:4444-被墙-直连-解锁美国地区NF非自制剧 2
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 17
+      - ZZ_21
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 18
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 19
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用:) 20
+      - "| 7.56Mb"
 rules:
  - DOMAIN-SUFFIX,local,🎯 全球直连
  - IP-CIDR,192.168.0.0/16,🎯 全球直连,no-resolve
