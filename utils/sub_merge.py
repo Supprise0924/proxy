@@ -2,10 +2,8 @@
 
 import json, os, time
 
-from sub_convert import config_output
-from sub_convert import format
+from subconverter import convert, base64_decode
 
-#file path: list_dir, list_file, merge_dir, update_dir, readme_file, share_file
 
 class merge():
     def __init__(self,file_dir,format_config):
@@ -17,11 +15,10 @@ class merge():
         self.share_file = file_dir['share_file']
 
         self.format_config = {
-            'duplicate_remove': format_config['duplicate_remove'], 'format_remarks': format_config['format_remarks'],
-            'include_remarks': format_config['include_remarks'], 'exclude_remarks': format_config['exclude_remarks']
+            'deduplicate': bool(format_config['deduplicate']), 'rename': format_config['rename'],
+            'include': format_config['include_remarks'], 'exclude': format_config['exclude_remarks'], 'config': format_config['config']
             }
 
-        os.chdir(os.getcwd()) # Move to working directory
         self.url_list = self.read_list()
         self.sub_merge()
         if self.readme_file != '':
@@ -50,7 +47,7 @@ class merge():
 
         content_list = []
         for index in range(len(url_list)):
-            content = config_output(url_list[index]['url'],'url')
+            content = convert(url_list[index]['url'],'url')
             ids = url_list[index]['id']
             remarks = url_list[index]['remarks']
             if content != '' and content != None:
@@ -60,14 +57,14 @@ class merge():
                 content = 'No nodes were found in url.'
                 print(f'Writing error of {remarks} to {ids:0>2d}.txt\n')
             if self.list_dir != '':
-                with open(f'{list_dir}{ids:0>2d}.txt', 'w+', encoding= 'utf-8') as file:
+                with open(f'{list_dir}{ids:0>2d}.txt', 'w', encoding= 'utf-8') as file:
                     file.write(content)
 
         print('Merging nodes...\n')
-        content_raw = config_output(''.join(content_list),'url') # https://python3-cookbook.readthedocs.io/zh_CN/latest/c02/p14_combine_and_concatenate_strings.html
-        content = content_raw
-        content_clash = config_output(content_raw,'clash_provider')
-        content_base64 = config_output(content_raw, 'base64')
+
+        content = convert(''.join(content_list),'url',self.format_config)
+        content_clash = convert(content,'clash_provider',self.format_config)
+        content_base64 = convert(content, 'base64',self.format_config)
 
         def content_write(file, output_type):
             file = open(file, 'w+', encoding = 'utf-8')
@@ -119,7 +116,7 @@ class merge():
 
                 with open(self.share_file, 'r', encoding='utf-8') as f:
                     proxies_base64 = f.read()
-                    proxies = format.base64_decode(proxies_base64)
+                    proxies = base64_decode(proxies_base64)
                     proxies = proxies.split('\n')
                     proxies = ['    '+proxy for proxy in proxies]
                     proxies = [proxy+'\n' for proxy in proxies]
@@ -192,7 +189,7 @@ class merge():
             pass
         txt_dir = self.update_dir + date + '/' + date_day + '.txt' # 生成$MM$DD.txt文件名
         file = open(txt_dir, 'w', encoding= 'utf-8')
-        file.write(format.base64_decode(sub_content))
+        file.write(base64_decode(sub_content))
         file.close()
 
 if __name__ == '__main__':
