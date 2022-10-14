@@ -1,15 +1,15 @@
 import json, base64, os
 import subprocess, argparse
 
-def speedtest(subscription,range,other_config={'concurrency': -1, 'timeout': -1}):
+def speedtest(subscription,output_range,other_config={'concurrency': -1, 'timeout': -1}):
     """Wrapper for litespeedtest.
     configurations:
         subscription: Subcription to speedtest, support local file path or url
-        range: output proxy list range. Set value to '-1' means output all the prorxies, '99' means output 0 to 99 proxies, '99,999' means output 99 to 999 proxies.
+        output_range: output proxy list range. Set value to '-1' means output all the prorxies, '99' means output 0 to 99 proxies, '99,999' means output 99 to 999 proxies.
         concurrency: The number of proxies tested in one time
         timeout: Time period that cannot connect to the tested proxy
     """
-    config = {'subscription': subscription, 'outputRange': range, 'concurrency': other_config['concurrency'], 'timeout': other_config['timeout']}
+    config = {'subscription': subscription, 'outputRange': output_range, 'concurrency': other_config['concurrency'], 'timeout': other_config['timeout']}
     
     work_dir = os.getcwd()
     os.chdir(os.path.dirname(os.path.abspath(__file__)))
