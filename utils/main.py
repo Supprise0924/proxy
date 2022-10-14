@@ -42,5 +42,5 @@ if __name__ == '__main__':
         share_file_clash = configparse('common')['share_file_clash']
         subscription = configparse('speedtest')['subscription']
         range = configparse('speedtest')['output_range']
-        os.system(f'proxychains python3 ./utils/litespeedtest/speedtest.py --subcription \"../../{subscription}\" --range \"{range}\" --path \"../../{share_file}\"')
+        os.system(f'proxychains python3 ./utils/litespeedtest/speedtest.py --subscription \"../../{subscription}\" --range \"{range}\" --path \"../../{share_file}\"')
         os.system(f'python3 ./utils/subconverter/subconvert.py --subscription \"../../{share_file}\" --target \"clash\" --output \"../../{share_file_clash}\"')
