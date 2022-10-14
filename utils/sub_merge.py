@@ -63,8 +63,8 @@ class merge():
         print('Merging nodes...\n')
 
         content = convert(''.join(content_list),'url',self.format_config)
-        content_clash = convert(content,'clash_provider',self.format_config)
-        content_base64 = convert(content, 'base64',self.format_config)
+        content_clash = convert(''.join(content_list),'clash_provider',self.format_config)
+        content_base64 = convert(''.join(content_list), 'base64',self.format_config)
 
         def content_write(file, output_type):
             file = open(file, 'w+', encoding = 'utf-8')
