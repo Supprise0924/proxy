@@ -136,27 +136,27 @@ def subconverterhandler(subscription,input_config={'target':'clash_provider','re
         except Exception:
             os.chdir(work_dir)
             return ''
-def deduplicate(clash_provider):
+def deduplicate(clash_provider): # Proxies deduplicate. If proxies have same servers that are greater than 4 then just save 4 of them, else less than 4 just save all of them.
     try:
-        proxies = yaml.safe_load(clash_provider)['proxies']
+        proxies = yaml.safe_load(clash_provider)['proxies'] # load all proxies from clash provider
 
         servers = {}
         for proxy in proxies:
-            server = proxy['server']
+            server = proxy['server'] # assign remote server
 
             if server in servers:
-                servers[server].append(proxy)
+                servers[server].append(proxy) # add proxy to its remote server list
             elif server not in servers:
-                servers[server] = [proxy]
+                servers[server] = [proxy] # init remote server list, add first proxy
 
         proxies = []
         for server in servers:
-            if len(servers[server]) > 4:
+            if len(servers[server]) > 4: # if proxy amount is greater than 4 then just add 4 proxies
                 add_list = servers[server][:4]
                 for add in add_list:
                     proxies.append(add)
             else:
-                add_list = servers[server]
+                add_list = servers[server] # if proxy amount is less than 4 then add all proxies
                 for add in add_list:
                     proxies.append(add)
 
