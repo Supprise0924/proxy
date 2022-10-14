@@ -17,6 +17,7 @@ def convert(subscription,target,other_config={'deduplicate': False, 'rename': ''
         config: output subcription config
     """
     config = {'target':target, 'deduplicate':other_config['deduplicate'], 'rename': '', 'include':other_config['include'], 'exclude':other_config['exclude'], 'config':other_config['config']}
+
     work_dir = os.getcwd()
     os.chdir(os.path.dirname(os.path.abspath(__file__)))
     if subscription[:8] == 'https://':
@@ -31,16 +32,21 @@ def convert(subscription,target,other_config={'deduplicate': False, 'rename': ''
                 else:
                     clash_provider = subconverterhandler(subscription)
         except Exception:
-            if 'proxies:' not in subscription:
-                if '://' in subscription:
-                    subscription = base64_encode(subscription)
+            try:
+                if 'proxies:' not in subscription:
+                    if '://' in subscription:
+                        subscription = base64_encode(subscription)
+                        with open('./subscription', 'w', encoding='utf-8') as f:
+                            f.write(subscription)
+                else:
                     with open('./subscription', 'w', encoding='utf-8') as f:
                         f.write(subscription)
-            else:
-                with open('./subscription', 'w', encoding='utf-8') as f:
-                    f.write(subscription)
-            clash_provider = subconverterhandler('./subscription')
-            os.remove('./subscription')
+                    clash_provider = subconverterhandler('./subscription')
+                    os.remove('./subscription')
+            except Exception:
+                print('No nodes were found in url.')
+                os.chdir(work_dir)
+                return ''
 
     if config['deduplicate']:
         clash_provider = deduplicate(clash_provider)
@@ -95,7 +101,6 @@ def subconverterhandler(subscription,input_config={'target':'clash_provider','re
     for line in logs:
         if 'Fetching node data from url' in line and '\'./temp\'' not in line:
             pre_run = True
-            print('Subconverter running log:')
             print(line[:-1])
     if pre_run == False:
         if '[INFO]' not in (logs[-3]):
@@ -109,6 +114,7 @@ def subconverterhandler(subscription,input_config={'target':'clash_provider','re
             os.chdir(work_dir)
             return ''
         except Exception:
+            os.chdir(work_dir)
             return ''
     else:
         try:
@@ -126,6 +132,7 @@ def subconverterhandler(subscription,input_config={'target':'clash_provider','re
             os.chdir(work_dir)
             return output
         except Exception:
+            os.chdir(work_dir)
             return ''
 def deduplicate(clash_provider): # WIP
     return clash_provider

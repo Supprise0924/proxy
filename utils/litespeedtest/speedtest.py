@@ -45,7 +45,7 @@ def speedtest(subscription,range,other_config={'concurrency': -1, 'timeout': -1}
     #Remove temp file
     os.remove('./out.json')
     os.chdir(work_dir)
-    
+
     output_list = []
     output_range = config['outputRange']
     if ',' in output_range:
@@ -101,13 +101,15 @@ def progressbar(current,range,desc,size=60):
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Test nodes, and output base64 subscription file.')
-    parser.add_argument('--subscription', '-s', help='Subcription url or local file path', default='../../sub/sub_merge_base64.txt')
+    parser.add_argument('--subscription', '-s', help='Subcription url or local file path', default='https://raw.githubusercontent.com/alanbobs999/TopFreeProxies/master/sub/sub_merge_base64.txt')
     parser.add_argument('--range', '-r', help='Target proxies range to output', default="99")
     parser.add_argument('--path', '-p', help='Output file path', default='./output.txt')
     args = parser.parse_args()
 
     # Write content to file(relative path to script directory)
+    work_dir = os.getcwd()
     output = speedtest(args.subscription,str(args.range))
     os.chdir(os.path.dirname(os.path.abspath(__file__)))
     with open(args.path, 'w', encoding='utf-8') as f:
         f.write(output)
+    os.chdir(work_dir)
