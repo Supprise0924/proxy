@@ -1,3 +1,1 @@
-import subconverter.subconvert
-
-subconverter = subconverter.subconvert.subconverter
+from .subconvert import convert, base64_encode, base64_decode

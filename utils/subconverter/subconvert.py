@@ -1,24 +1,57 @@
 #!/usr/bin/env python3
 
-import os, argparse, configparser
+import os, subprocess
+import argparse, configparser
 import yaml, json, base64
 import geoip2.database
 
 
-def subconverter(subcription,target,other_config={'deduplicate': False, 'rename': '', 'include': '', 'exclude': '', 'config': ''}):
+def convert(subscription,target,other_config={'deduplicate': False, 'rename': '', 'include': '', 'exclude': '', 'config': ''}):
+    """Wrapper for subconverter
+    subscription: subscription url or content string or local file path, add url support.
+    target: target subconvert configuration
+    other_config:
+        url: input subcription url or file path
+        include: include string in remark
+        exclude: exclude string in remark
+        config: output subcription config
+    """
     config = {'target':target, 'deduplicate':other_config['deduplicate'], 'rename': '', 'include':other_config['include'], 'exclude':other_config['exclude'], 'config':other_config['config']}
-    
-    clash_provider = subconverterhandler(subcription)
-    if config['deduplicate']:
-        clash_provider = node_deduplicate(clash_provider)
-
+    work_dir = os.getcwd()
     os.chdir(os.path.dirname(os.path.abspath(__file__)))
+    if subscription[:8] == 'https://':
+        clash_provider = subconverterhandler(subscription)
+    else:
+        try:
+            with open(subscription, 'r', encoding='utf-8') as f:
+                content = f.read()
+                if 'proxies:' not in content and '://' in content:
+                    subscription = content
+                    raise ValueError
+                else:
+                    clash_provider = subconverterhandler(subscription)
+        except Exception:
+            if 'proxies:' not in subscription:
+                if '://' in subscription:
+                    subscription = base64_encode(subscription)
+                    with open('./subscription', 'w', encoding='utf-8') as f:
+                        f.write(subscription)
+            else:
+                with open('./subscription', 'w', encoding='utf-8') as f:
+                    f.write(subscription)
+            clash_provider = subconverterhandler('./subscription')
+            os.remove('./subscription')
+
+    if config['deduplicate']:
+        clash_provider = deduplicate(clash_provider)
+
     with open('./temp', 'w', encoding= 'utf-8') as temp_file:
         temp_file.write(clash_provider)
     output = subconverterhandler('./temp',config)
+    os.chdir(work_dir)
     return output
 
-def subconverterhandler(subcription,input_config={'target':'clash_provider','rename':'','include':'','exclude':'','config':''}):
+def subconverterhandler(subscription,input_config={'target':'clash_provider','rename':'','include':'','exclude':'','config':''}):
     """Wrapper for subconverter(by configuration file: generate.ini)
     Target handling config parameters(parameters from https://github.com/tindy2013/subconverter/blob/master/README-cn.md#%E8%BF%9B%E9%98%B6%E9%93%BE%E6%8E%A5):
         target: target subconvert configuration
@@ -35,7 +68,7 @@ def subconverterhandler(subcription,input_config={'target':'clash_provider','ren
     configparse = configparser.ConfigParser()
     configparse.read('./generate.ini')
 
-    url = subcription
+    url = subscription
     target = input_config['target']
     rename = input_config['rename']
     include = input_config['include']
@@ -51,26 +84,50 @@ def subconverterhandler(subcription,input_config={'target':'clash_provider','ren
         configparse.write(ini,space_around_delimiters=False)
 
     if os.name == 'posix':
-        os.system(f'./subconverter-linux-amd64 -g --artifact \"{target}\"')
+        args = ['./subconverter-linux-amd64', '-g', '--artifact', target]
     elif os.name == 'nt':
-        os.system(f'.\subconverter-windows-amd64.exe -g --artifact \"{target}\"')
+        args = ['.\subconverter-windows-amd64.exe', '-g', '--artifact', target]
+    subconverter = subprocess.Popen(args,stdout=subprocess.PIPE,stderr=subprocess.STDOUT,universal_newlines=True,encoding='utf-8',bufsize=1)
+    logs = subconverter.stdout.readlines()
+    subconverter.wait()
+    # Print log
+    pre_run = False
+    for line in logs:
+        if 'Fetching node data from url' in line and '\'./temp\'' not in line:
+            pre_run = True
+            print('Subconverter running log:')
+            print(line[:-1])
+    if pre_run == False:
+        if '[INFO]' not in (logs[-3]):
+            print(logs[-2])
+        else:
+            print(logs[-3])
 
-    with open(f'./temp', 'r', encoding= 'utf-8') as temp_file:
-        output = ''
-        while True:
-            content = temp_file.read(100)
-            if not content:
-                break
-            output += content
-    if target == 'url':
-        output = base64_decode(output)
+    if subconverter.returncode != 0:
+        try:
+            os.remove('./temp')
+            os.chdir(work_dir)
+            return ''
+        except Exception:
+            return ''
+    else:
+        try:
+            with open(f'./temp', 'r', encoding= 'utf-8', errors='ignore') as temp_file:
+                output = ''
+                while True:
+                    content = temp_file.read(100)
+                    if not content:
+                        break
+                    output += content
+            if target == 'url':
+                output = base64_decode(output)
 
-    os.remove('./temp')
-    os.chdir(work_dir)
-    return output
-
-def node_deduplicate(clash_provider):
-    # WIP
+            os.remove('./temp')
+            os.chdir(work_dir)
+            return output
+        except Exception:
+            return ''
+def deduplicate(clash_provider): # WIP
     return clash_provider
 
 def base64_decode(content):
@@ -109,12 +166,14 @@ if __name__ == '__main__':
     output_dir = args.output
     deduplicate_enabled = bool(args.deduplicate)
 
-    configparse = configparser.ConfigParser()
-    configparse.read('./generate.ini')
-    config={'deduplicate': deduplicate_enabled,'rename': configparse.get(target,'rename'), 'include': configparse.get(target,'include'), 'exclude': configparse.get(target,'exclude'), 'config': configparse.get(target,'config')}
-
-    output = subconverter(subscription,target,config)
-
+    work_dir = os.getcwd()
     os.chdir(os.path.dirname(os.path.abspath(__file__)))
+    generate = configparser.ConfigParser()
+    generate.read('./generate.ini')
+    config={'deduplicate': deduplicate_enabled,'rename': generate.get(target,'rename'), 'include': generate.get(target,'include'), 'exclude': generate.get(target,'exclude'), 'config': generate.get(target,'config')}
+
+    output = convert(subscription,target,config)
+
     with open(output_dir, 'w', encoding= 'utf-8') as temp_file:
         temp_file.write(output)
+    os.chdir(work_dir)
