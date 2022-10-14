@@ -15,8 +15,8 @@ class merge():
         self.share_file = file_dir['share_file']
 
         self.format_config = {
-            'deduplicate': format_config['deduplicate'], 'rename': format_config['rename'],
-            'include_remarks': format_config['include_remarks'], 'exclude_remarks': format_config['exclude_remarks']
+            'deduplicate': bool(format_config['deduplicate']), 'rename': format_config['rename'],
+            'include': format_config['include_remarks'], 'exclude': format_config['exclude_remarks'], 'config': format_config['config']
             }
 
         self.url_list = self.read_list()
@@ -61,9 +61,10 @@ class merge():
                     file.write(content)
 
         print('Merging nodes...\n')
-        content = convert(''.join(content_list),'url')
-        content_clash = convert(content,'clash_provider')
-        content_base64 = convert(content, 'base64')
+
+        content = convert(''.join(content_list),'url',self.format_config)
+        content_clash = convert(content,'clash_provider',self.format_config)
+        content_base64 = convert(content, 'base64',self.format_config)
 
         def content_write(file, output_type):
             file = open(file, 'w+', encoding = 'utf-8')
