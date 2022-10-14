@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 
-import os, subprocess
+import os, re, subprocess
 import argparse, configparser
-import yaml, json, base64
+import base64, yaml
 import geoip2.database
 
 
@@ -136,8 +136,100 @@ def subconverterhandler(subscription,input_config={'target':'clash_provider','re
         except Exception:
             os.chdir(work_dir)
             return ''
-def deduplicate(clash_provider): # WIP
-    return clash_provider
+def deduplicate(clash_provider): # Proxies deduplicate. If proxies have same servers that are greater than 4 then just save 4 of them, else less than 4 just save all of them.
+    lines = re.split(r'\n+', clash_provider)[1:]
+    print('Starting deduplicate...')
+    print(f'Init amount: {len(lines)}')
+    try:
+        proxies = yaml.safe_load(clash_provider)['proxies'] # load all proxies from clash provider
+    except Exception:
+        il_chars = ['|', '?', '[', ']', '@', '!', '%', ':']
+
+        line_fixed = ['proxies:']
+        for line in lines:
+            try_load = 'proxies:\n' + line
+            try:
+                yaml.safe_load(try_load)
+                line_fixed.append(line)
+            except Exception:
+                value_list = re.split(r': |, ', line)
+                if len(value_list) > 6:
+                    value_list_fix = []
+                    for value in value_list:
+                        for char in il_chars:
+                            value_il = False
+                            if char in value:
+                                value_il = True
+                                break
+                        if value_il == True and ('{' not in value and '}' not in value):
+                            value = '"' + value + '"'
+                            value_list_fix.append(value)
+                        elif value_il == True and '}' in value:
+                            if '}}}' in value:
+                                host_part = value.replace('}}}','')
+                                host_value = '"'+host_part+'"}}}'
+                                value_list_fix.append(host_value)
+                            elif '}}' not in value:
+                                host_part = value.replace('}','')
+                                host_value = '"'+host_part+'"}'
+                                value_list_fix.append(host_value)
+                        else:
+                            value_list_fix.append(value)
+                        line_fix = line
+                    for index in range(len(value_list_fix)):
+                        line_fix = line_fix.replace(value_list[index], value_list_fix[index])
+                elif len(value_list) == 2:
+                    value_list_fix = []
+                    for value in value_list:
+                        for char in il_chars:
+                            value_il = False
+                            if char in value:
+                                value_il = True
+                                break
+                        if value_il == True:
+                            value = '"' + value + '"'
+                        value_list_fix.append(value)
+                    line_fix = line
+                    for index in range(len(value_list_fix)):
+                        line_fix = line_fix.replace(value_list[index], value_list_fix[index])
+                try:
+                    try_load = 'proxies:\n' + line_fix
+                    line_fixed.append(line_fix)
+                except Exception:
+                    pass
+        fix_provider = '\n'.join(line_fixed)
+        
+        try:
+            proxies = yaml.safe_load(fix_provider)['proxies']
+        except Exception:
+            print('Deduplicate failed, skip')
+            output = clash_provider
+            return output
+    
+    servers = {}
+    for proxy in proxies:
+        server = proxy['server'] # assign remote server
+
+        if server in servers:
+            servers[server].append(proxy) # add proxy to its remote server list
+        elif server not in servers:
+            servers[server] = [proxy] # init remote server list, add first proxy
+
+    proxies = []
+    for server in servers:
+        if len(servers[server]) > 3: # if proxy amount is greater than 4 then just add 4 proxies
+            add_list = servers[server][:3]
+            for add in add_list:
+                proxies.append(add)
+        else:
+            add_list = servers[server] # if proxy amount is less than 4 then add all proxies
+            for add in add_list:
+                proxies.append(add)
+    
+    print('Dedupicate success.')
+    print(f'Output amount: {len(proxies)}')
+    output = yaml.dump({'proxies': proxies}, default_flow_style=False, sort_keys=False, allow_unicode=True, indent=2)
+    return output
 
 def base64_decode(content):
     if '-' in content:
