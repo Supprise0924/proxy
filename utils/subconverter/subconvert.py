@@ -6,17 +6,17 @@ import yaml, json, base64
 import geoip2.database
 
 
-def convert(subscription,target,other_config={'deduplicate': False, 'rename': '', 'include': '', 'exclude': '', 'config': ''}):
+def convert(subscription,target,other_config={'deduplicate':False,'rename':'','include':'','exclude':'','config':''}):
     """Wrapper for subconverter
     subscription: subscription url or content string or local file path, add url support.
     target: target subconvert configuration
     other_config:
-        url: input subcription url or file path
+        deduplicate: whether to deduplicate
         include: include string in remark
         exclude: exclude string in remark
         config: output subcription config
     """
-    config = {'target':target, 'deduplicate':other_config['deduplicate'], 'rename': '', 'include':other_config['include'], 'exclude':other_config['exclude'], 'config':other_config['config']}
+    config = {'target':target,'deduplicate':other_config['deduplicate'],'rename':other_config['rename'],'include':other_config['include'],'exclude':other_config['exclude'],'config':other_config['config']}
 
     work_dir = os.getcwd()
     os.chdir(os.path.dirname(os.path.abspath(__file__)))
@@ -39,6 +39,7 @@ def convert(subscription,target,other_config={'deduplicate': False, 'rename': ''
                         with open('./subscription', 'w', encoding='utf-8') as f:
                             f.write(subscription)
                         clash_provider = subconverterhandler('./subscription')
+                        os.remove('./subscription')
                 else:
                     with open('./subscription', 'w', encoding='utf-8') as f:
                         f.write(subscription)
