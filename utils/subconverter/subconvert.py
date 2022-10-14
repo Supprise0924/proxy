@@ -136,7 +136,7 @@ def subconverterhandler(subscription,input_config={'target':'clash_provider','re
         except Exception:
             os.chdir(work_dir)
             return ''
-def deduplicate(clash_provider): # WIP
+def deduplicate(clash_provider):
     try:
         proxies = yaml.safe_load(clash_provider)['proxies']
 
@@ -151,8 +151,8 @@ def deduplicate(clash_provider): # WIP
 
         proxies = []
         for server in servers:
-            if len(servers[server]) > 3:
-                add_list = servers[server][:3]
+            if len(servers[server]) > 4:
+                add_list = servers[server][:4]
                 for add in add_list:
                     proxies.append(add)
             else:
