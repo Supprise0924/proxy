@@ -34,7 +34,7 @@ jobs:
     - name: 执行任务
       run: |
         sudo sh ./utils/scripts/set_proxy.sh
-        chmod +x ./utils/subconverter/subconverter && chmod +x ./utils/litespeedtest/lite
+        chmod +x ./utils/subconverter/subconverter-linux-amd64 && chmod +x ./utils/litespeedtest/lite-linux-amd64
         python ./utils/main.py
     - name: 提交更改
       run: |
