@@ -38,6 +38,7 @@ def convert(subscription,target,other_config={'deduplicate': False, 'rename': ''
                         subscription = base64_encode(subscription)
                         with open('./subscription', 'w', encoding='utf-8') as f:
                             f.write(subscription)
+                        clash_provider = subconverterhandler('./subscription')
                 else:
                     with open('./subscription', 'w', encoding='utf-8') as f:
                         f.write(subscription)
