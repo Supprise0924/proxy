@@ -2,7 +2,7 @@
 
 import os, subprocess
 import argparse, configparser
-import yaml, json, base64
+import yaml, base64
 import geoip2.database
 
 
@@ -137,7 +137,35 @@ def subconverterhandler(subscription,input_config={'target':'clash_provider','re
             os.chdir(work_dir)
             return ''
 def deduplicate(clash_provider): # WIP
-    return clash_provider
+    try:
+        proxies = yaml.safe_load(clash_provider)['proxies']
+
+        servers = {}
+        for proxy in proxies:
+            server = proxy['server']
+
+            if server in servers:
+                servers[server].append(proxy)
+            elif server not in servers:
+                servers[server] = [proxy]
+
+        proxies = []
+        for server in servers:
+            if len(servers[server]) > 3:
+                add_list = servers[server][:3]
+                for add in add_list:
+                    proxies.append(add)
+            else:
+                add_list = servers[server]
+                for add in add_list:
+                    proxies.append(add)
+
+        output = yaml.dump({'proxies': proxies}, default_flow_style=False, sort_keys=False, allow_unicode=True, indent=2)
+        return output
+    except Exception:
+        output = clash_provider
+        print('Deduplicate failed, skip')
+    return output
 
 def base64_decode(content):
     if '-' in content:
