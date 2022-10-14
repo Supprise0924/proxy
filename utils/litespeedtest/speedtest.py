@@ -16,7 +16,7 @@ def speedtest(subscription,range,other_config={'concurrency': -1, 'timeout': -1}
 
     confighandler(config) # Initialize configurations
     if os.name == 'posix':
-        args = ['./lite-linux-amd64.exe', '--config', './config.json', '--test', 'Eternity']
+        args = ['./lite-linux-amd64', '--config', './config.json', '--test', 'Eternity']
     elif os.name == 'nt':
         args = ['.\lite-windows-amd64.exe', '--config', './config.json', '--test', 'Eternity']
     litespeedtest = subprocess.Popen(args,stdout=subprocess.PIPE,stderr=subprocess.STDOUT,universal_newlines=True,encoding='utf-8',bufsize=1)

@@ -15,7 +15,7 @@ class merge():
         self.share_file = file_dir['share_file']
 
         self.format_config = {
-            'duplicate_remove': format_config['deduplicate'], 'rename': format_config['rename'],
+            'deduplicate': format_config['deduplicate'], 'rename': format_config['rename'],
             'include_remarks': format_config['include_remarks'], 'exclude_remarks': format_config['exclude_remarks']
             }
 
