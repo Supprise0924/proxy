@@ -255,7 +255,10 @@ if __name__ == '__main__':
     subscription = args.subscription
     target = args.target
     output_dir = args.output
-    deduplicate_enabled = bool(args.deduplicate)
+    if args.deduplicate == 'ture' or args.deduplicate == 'True':
+        deduplicate_enabled = True
+    else:
+        deduplicate_enabled = False
 
     work_dir = os.getcwd()
     os.chdir(os.path.dirname(os.path.abspath(__file__)))
