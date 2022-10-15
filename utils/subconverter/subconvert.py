@@ -59,7 +59,7 @@ def convert(subscription,target,other_config={'deduplicate':False,'rename':'','i
     os.chdir(work_dir)
     return output
 
-def subconverterhandler(subscription,input_config={'target':'clash_provider','rename':'','include':'','exclude':'','config':''}):
+def subconverterhandler(subscription,input_config={'target':'transfer','rename':'','include':'','exclude':'','config':''}):
     """Wrapper for subconverter(by configuration file: generate.ini)
     Target handling config parameters(parameters from https://github.com/tindy2013/subconverter/blob/master/README-cn.md#%E8%BF%9B%E9%98%B6%E9%93%BE%E6%8E%A5):
         target: target subconvert configuration
@@ -136,7 +136,7 @@ def subconverterhandler(subscription,input_config={'target':'clash_provider','re
         except Exception:
             os.chdir(work_dir)
             return ''
-def deduplicate(clash_provider): # Proxies deduplicate. If proxies have same servers that are greater than 4 then just save 4 of them, else less than 4 just save all of them.
+def deduplicate(clash_provider): # Proxies deduplicate. If proxies have same servers that are greater than 3 then just save 3 of them, else less than 3 just save all of them.
     lines = re.split(r'\n+', clash_provider)[1:]
     print('Starting deduplicate...')
     print(f'Init amount: {len(lines)}')
@@ -152,6 +152,7 @@ def deduplicate(clash_provider): # Proxies deduplicate. If proxies have same ser
                 yaml.safe_load(try_load)
                 line_fixed.append(line)
             except Exception:
+                line = line.replace('\'', '').replace('"', '')
                 value_list = re.split(r': |, ', line)
                 if len(value_list) > 6:
                     value_list_fix = []
@@ -178,22 +179,11 @@ def deduplicate(clash_provider): # Proxies deduplicate. If proxies have same ser
                         line_fix = line
                     for index in range(len(value_list_fix)):
                         line_fix = line_fix.replace(value_list[index], value_list_fix[index])
-                elif len(value_list) == 2:
-                    value_list_fix = []
-                    for value in value_list:
-                        for char in il_chars:
-                            value_il = False
-                            if char in value:
-                                value_il = True
-                                break
-                        if value_il == True:
-                            value = '"' + value + '"'
-                        value_list_fix.append(value)
-                    line_fix = line
-                    for index in range(len(value_list_fix)):
-                        line_fix = line_fix.replace(value_list[index], value_list_fix[index])
+                else:
+                    pass
                 try:
                     try_load = 'proxies:\n' + line_fix
+                    yaml.safe_load(try_load)
                     line_fixed.append(line_fix)
                 except Exception:
                     pass
@@ -226,7 +216,7 @@ def deduplicate(clash_provider): # Proxies deduplicate. If proxies have same ser
             for add in add_list:
                 proxies.append(add)
     
-    print('Dedupicate success.')
+    print(f'Dedupicate success, remove {len(lines)-len(proxies)} duplicate proxies')
     print(f'Output amount: {len(proxies)}')
     output = yaml.dump({'proxies': proxies}, default_flow_style=False, sort_keys=False, allow_unicode=True, indent=2)
     return output
