@@ -1,6 +1,5 @@
 #!/usr/bin/env python3
 
-
 import os, urllib
 import configparser
 
@@ -64,6 +63,6 @@ if __name__ == '__main__':
                 share_proxies.append(base64_decode(content))
         with open('./temp', 'w', encoding='utf-8') as temp_file:
             temp_file.write(''.join(share_proxies))
-        os.remove('./temp')
         os.system(f'python3 ./utils/subconverter/subconvert.py --subscription \"../../temp\" --target \"base64\" --output \"../../{share_file}\"')
         os.system(f'python3 ./utils/subconverter/subconvert.py --subscription \"../../temp\" --target \"clash\" --output \"../../{share_file_clash}\"')
+        os.remove('./temp')
