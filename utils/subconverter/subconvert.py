@@ -74,7 +74,7 @@ def subconverterhandler(subscription,input_config={'target':'transfer','rename':
     os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
     configparse = configparser.ConfigParser()
-    configparse.read('./generate.ini')
+    configparse.read('./generate.ini',encoding='utf-8')
 
     url = subscription
     target = input_config['target']
@@ -263,7 +263,7 @@ if __name__ == '__main__':
     work_dir = os.getcwd()
     os.chdir(os.path.dirname(os.path.abspath(__file__)))
     generate = configparser.ConfigParser()
-    generate.read('./generate.ini')
+    generate.read('./generate.ini',encoding='utf-8')
     config={'deduplicate': deduplicate_enabled,'rename': generate.get(target,'rename'), 'include': generate.get(target,'include'), 'exclude': generate.get(target,'exclude'), 'config': generate.get(target,'config')}
 
     output = convert(subscription,target,config)
