@@ -5,97 +5,99 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇯🇵 日本 005, server: aewfhe5z1pokrkw8bi9g08.xingbayun.buzz, port: 10001, type: trojan, password: 862e68d2-05f3-4253-9116-819623bb7335, skip-cert-verify: true}
-  - {name: 🇯🇵 github.com/freefq - 日本东京Linode数据中心 4, server: aewfhe5z1pokrkw8bi9g08.xingbayun.buzz, port: 10001, type: trojan, password: 862e68d2-05f3-4253-9116-819623bb7335, skip-cert-verify: false}
-  - {name: 🇸🇬 github.com/freefq - 新加坡OVH 8, server: 139.99.91.95, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 32, cipher: auto, tls: false}
-  - {name: 🇯🇵 JP 2 → openitsub.com, server: aewfhe5z1pokrkw8bi9g08.xingbayun.buzz, port: 10001, type: trojan, password: 862e68d2-05f3-4253-9116-819623bb7335, skip-cert-verify: true}
+  - {name: 🇯🇵 JP 16 TG@airproxies, server: 139.162.121.240, port: 10001, type: trojan, password: 862e68d2-05f3-4253-9116-819623bb7335, skip-cert-verify: true}
+  - {name: 🇯🇵 JP 2 → openitsub.com, server: aewfhe5z1pokrkw8bi9g05.xingbayun.buzz, port: 10001, type: trojan, password: 862e68d2-05f3-4253-9116-819623bb7335, skip-cert-verify: true}
+  - {name: 🇰🇷 -韩国-vm5.leifengkeji.live, server: vm5.leifengkeji.live, port: 11111, type: vmess, uuid: 752a9404-c729-485e-8ea5-acb3f4fc8180, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: vm5.leifengkeji.live}}}
+  - {name: 🇰🇷 KR-15.164.129.194-123, server: vm13.leifengkeji.live, port: 11111, type: vmess, uuid: 752a9404-c729-485e-8ea5-acb3f4fc8180, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: vm13.leifengkeji.live}}}
+  - {name: 🇰🇷 -韩国-vm13.leifengkeji.live, server: vm13.leifengkeji.live, port: 11111, type: vmess, uuid: 752a9404-c729-485e-8ea5-acb3f4fc8180, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: vm13.leifengkeji.live}}}
+  - {name: 🇰🇷 -韩国-vm8.leifengkeji.live, server: vm8.leifengkeji.live, port: 11111, type: vmess, uuid: 752a9404-c729-485e-8ea5-acb3f4fc8180, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: vm8.leifengkeji.live}}}
+  - {name: KR_129.154.57.134_1017db5e-55, server: 129.154.57.134, port: 26282, type: vmess, uuid: cabbdf5d-3cca-4605-ba1c-c89a7d5b4c07, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇯🇵 日本 002 2, server: m4.40010010.xyz, port: 37121, type: vmess, uuid: 575e4d92-1056-44c2-8cac-75ef1c859ad5, alterId: 0, cipher: auto, tls: true}
+  - {name: 🇨🇳 TW 9 TG@airproxies, server: download1tw.windowsupdate1.com, port: 28443, type: trojan, password: 6b4ced5e-835a-4a7a-9d03-6a46e94668cb, sni: mzy.hruqoaw.cn, skip-cert-verify: true}
+  - {name: KR_152.70.235.207_1017db5e-410, server: 152.70.235.207, port: 35412, type: vmess, uuid: 70d95308-2a61-4f93-f139-9103d0587fd9, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇸🇬 新加坡 001, server: 139.99.91.95, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 32, cipher: auto, tls: false}
+  - {name: 🇭🇰 HK 2 → openitsub.com, server: zf2.windowsupdate1.com, port: 30060, type: trojan, password: 6b4ced5e-835a-4a7a-9d03-6a46e94668cb, sni: mzy.hruqoaw.cn, skip-cert-verify: true}
   - {name: SG_828 |42.19Mb, server: 8.214.33.158, port: 80, type: vmess, uuid: cb81e6ab-1d83-4ac1-f0ad-ae5c2a7c29ef, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇸🇬 中国-vmess-8.214.33.15880-被墙-直连-解锁新加坡地区NF非自制剧 2, server: 8.214.33.158, port: 80, type: vmess, uuid: cb81e6ab-1d83-4ac1-f0ad-ae5c2a7c29ef, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇯🇵 日本-ss-193.38.139.204809-被墙-中转193.38.139.201-解锁日本地区NF非自制剧, server: 193.38.139.204, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: "🇭🇰 G.[限時1x]試行奈飛保證專線HK⇠廣港.IPLCIR52017", server: yqy52017.birpagi.cn, port: 52017, type: trojan, password: 45fee047-d194-37b9-a9ee-877197e98a2a, sni: cdn-debian.org, skip-cert-verify: false}
+  - {name: 🇭🇰 香港_1014248, server: asswb-1036-v2-1.hkg-d-kcd.nd.cjhh.mom, port: 888, type: vmess, uuid: caac6285-511c-4a07-b6db-edfbdcfe3889, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /je5x3pBN1vez3NQudNkB, headers: {Host: node.inforun.work}}}
+  - {name: 🇨🇳 TW 2 → openitsub.com, server: download1tw.windowsupdate1.com, port: 28443, type: trojan, password: 6b4ced5e-835a-4a7a-9d03-6a46e94668cb, sni: mzy.hruqoaw.cn, skip-cert-verify: true}
+  - {name: "🇭🇰 F.[限時1x]試行奈飛保證專線HK⇠廣港.IPLCIR52018", server: yqy52018.birpagi.cn, port: 52018, type: trojan, password: 45fee047-d194-37b9-a9ee-877197e98a2a, sni: cdn-debian.org, skip-cert-verify: false}
   - {name: 🇯🇵 日本-ss-193.38.139.204806-被墙-中转193.38.139.201-解锁日本地区NF非自制剧 2, server: 193.38.139.204, port: 806, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: 🇯🇵 日本-ss-193.38.139.203809-被墙-中转193.38.139.201-解锁日本地区NF非自制剧, server: 193.38.139.203, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: 🇯🇵 日本-ss-193.38.139.203807-被墙-中转193.38.139.201-解锁日本地区NF非自制剧, server: 193.38.139.203, port: 807, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: "🇸🇬 [10-18]-🇸🇬-新加坡-644-81.90.189.41", server: 81.90.189.41, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: 🇯🇵 日本-ss-193.38.139.204806-被墙-中转193.38.139.201-解锁日本地区NF非自制剧, server: 193.38.139.204, port: 806, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
   - {name: 🇯🇵 日本-ss-193.38.139.203803-被墙-中转193.38.139.201-解锁日本地区NF非自制剧, server: 193.38.139.203, port: 803, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: SG_139.99.90.122_1017cd9c-75, server: 139.99.90.122, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 32, cipher: auto, tls: false}
-  - {name: 🇸🇬 _SG_新加坡_2, server: 81.90.189.41, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: _KR_wmt(10.16)_26, server: clash6-3.ssrfree6.xyz, port: 44004, type: ssr, cipher: dummy, password: dongtaiwang.com, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
-  - {name: 🇸🇬 _SG_新加坡_1, server: 81.90.189.41, port: 801, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: 🇸🇬 新加坡 002, server: 139.99.90.122, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 32, cipher: auto, tls: false}
+  - {name: 🇯🇵 日本-ss-193.38.139.204809-被墙-中转193.38.139.201-解锁日本地区NF非自制剧, server: 193.38.139.204, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇯🇵 日本-ss-193.38.139.203807-被墙-中转193.38.139.201-解锁日本地区NF非自制剧, server: 193.38.139.203, port: 807, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇯🇵 日本-ss-193.38.139.203809-被墙-中转193.38.139.201-解锁日本地区NF非自制剧, server: 193.38.139.203, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇯🇵 日本-ss-193.38.139.204806-被墙-中转193.38.139.201-解锁日本地区NF非自制剧, server: 193.38.139.204, port: 806, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
   - {name: 🇸🇬 中国-vmess-8.214.33.15880-被墙-直连-解锁新加坡地区NF非自制剧, server: 8.214.33.158, port: 80, type: vmess, uuid: cb81e6ab-1d83-4ac1-f0ad-ae5c2a7c29ef, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇯🇵 _JP_日本 2 2, server: nice-jp03.tiktokcdn.buzz, port: 43857, type: trojan, password: P9qGW38zz7, skip-cert-verify: false}
-  - {name: 🇯🇵 JP【付费推荐：wxfz.ml】 3, server: 54.178.46.155, port: 43857, type: trojan, password: P9qGW38zz7, skip-cert-verify: true}
-  - {name: 🇭🇰 HK 1 → openitsub.com, server: download1hkt.windowsupdate1.com, port: 28443, type: trojan, password: 6b4ced5e-835a-4a7a-9d03-6a46e94668cb, sni: mzy.hruqoaw.cn, skip-cert-verify: true}
-  - {name: 🇸🇬 新加坡 013, server: 18.143.159.173, port: 443, type: vmess, uuid: 371307ac-b758-44de-a4cf-e3189d91cd4c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 18.143.159.173}}}
-  - {name: 🇸🇬 github.com/freefq - 新加坡Amazon数据中心 1 2, server: 54.151.172.209, port: 443, type: vmess, uuid: 371307ac-b758-44de-a4cf-e3189d91cd4c, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇸🇬 SG-20.24.13.180-095, server: zf1.windowsupdate1.com, port: 30050, type: trojan, password: 6b4ced5e-835a-4a7a-9d03-6a46e94668cb, sni: mzy.hruqoaw.cn, skip-cert-verify: true}
-  - {name: 🇯🇵 JP 6 → openitsub.com, server: kr1.api-aws.com, port: 443, type: trojan, password: 036ba5aa-fcb7-4e6f-95b5-a857cb354aa8, skip-cert-verify: true}
-  - {name: 🇯🇵 日本-ss-45.66.134.176807-被墙-中转185.168.20.250-解锁日本地区NF非自制剧, server: 45.66.134.176, port: 807, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇰🇷 2.32| 韩国1014028, server: 121.0.97.47, port: 44004, type: ssr, cipher: dummy, password: dongtaiwang.com, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocol-param: ":��\x13#\x12�\x02��#�\x03\x03#�\x17���\x16���\x13��ד��\x12�%����\x17�����", obfs-param: ""}
+  - {name: 🇰🇷 2.77| 韩国1014029, server: clash6-3.ssrfree6.xyz, port: 44004, type: ssr, cipher: dummy, password: dongtaiwang.com, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocol-param: ":���\x17��\x12��", obfs-param: ""}
+  - {name: 🇸🇬 _SG_新加坡_1, server: 81.90.189.41, port: 801, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: "🇸🇬 [10-18]-🇸🇬-新加坡-418-81.90.189.41", server: 81.90.189.41, port: 801, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇸🇬 _SG_新加坡_2, server: 81.90.189.41, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: SG_139.99.90.122_1017db5e-54, server: 139.99.90.122, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 32, cipher: auto, tls: false}
+  - {name: 🇸🇬 中国-vmess-8.214.33.15880-被墙-直连-解锁新加坡地区NF非自制剧 2, server: 8.214.33.158, port: 80, type: vmess, uuid: cb81e6ab-1d83-4ac1-f0ad-ae5c2a7c29ef, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇸🇬 新加坡 002, server: 139.99.90.122, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 32, cipher: auto, tls: false}
+  - {name: 🇸🇬 SG 15 TG@airproxies, server: 91.243.81.42, port: 28443, type: trojan, password: 6b4ced5e-835a-4a7a-9d03-6a46e94668cb, sni: mzy.hruqoaw.cn, skip-cert-verify: true}
+  - {name: 🇭🇰 HK 3 → openitsub.com, server: zf2.windowsupdate1.com, port: 30040, type: trojan, password: 6b4ced5e-835a-4a7a-9d03-6a46e94668cb, sni: mzy.hruqoaw.cn, skip-cert-verify: true}
+  - {name: 🇯🇵 日本_1014219, server: 172.105.239.237, port: 443, type: vmess, uuid: 3706161f-3ee3-48e5-bfcf-0d856cc6f0ab, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /down, headers: {Host: js.adbse.xyz}}}
+  - {name: 🇯🇵 日本 014, server: 13.114.31.49, port: 443, type: vmess, uuid: 371307ac-b758-44de-a4cf-e3189d91cd4c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 13.114.31.49}}}
+  - {name: 🇯🇵 -日本-13.114.31.49, server: 13.114.31.49, port: 443, type: vmess, uuid: 371307ac-b758-44de-a4cf-e3189d91cd4c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 13.114.31.49}}}
+  - {name: 🇭🇰 HK 4 → openitsub.com, server: zf2.windowsupdate1.com, port: 30050, type: trojan, password: 6b4ced5e-835a-4a7a-9d03-6a46e94668cb, sni: mzy.hruqoaw.cn, skip-cert-verify: true}
   - {name: 🇯🇵 日本-ss-45.66.134.176811-被墙-中转185.168.20.250-解锁日本地区NF非自制剧, server: 45.66.134.176, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇯🇵 日本-ss-45.66.134.176807-被墙-中转185.168.20.250-解锁日本地区NF非自制剧, server: 45.66.134.176, port: 807, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
   - {name: 🇯🇵 日本-ss-45.66.134.176806-被墙-中转185.168.20.250-解锁日本地区NF非自制剧, server: 45.66.134.176, port: 806, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: 🇭🇰 HK 6 → openitsub.com, server: zf2.windowsupdate1.com, port: 30050, type: trojan, password: 6b4ced5e-835a-4a7a-9d03-6a46e94668cb, sni: mzy.hruqoaw.cn, skip-cert-verify: true}
-  - {name: HK_217, server: 23.91.100.243, port: 30862, type: vmess, uuid: 3b0f44e4-dd11-429d-c80f-615b10595db9, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇯🇵 -日本-104.233.228.136, server: 104.233.228.136, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: www.67815682.xyz}}}
-  - {name: 🇰🇷 韩国_1014135, server: chess.magicefire.com, port: 443, type: vmess, uuid: 9aa80017-3427-4165-a522-f5f9a11330d0, alterId: 0, cipher: auto, tls: true}
-  - {name: 🇰🇷 KR【付费推荐：wxfz.ml】, server: kr1.api-aws.com, port: 443, type: trojan, password: 881091b5-4172-4329-a0e7-17fca1e72292, skip-cert-verify: true}
-  - {name: 🇯🇵 日本 008, server: jgw2.gaox.ml, port: 443, type: trojan, password: f2117e99-9b6e-47fd-b0a9-634a0b15b998, skip-cert-verify: false}
-  - {name: 🇰🇷 KR【付费推荐：wxfz.ml】 2, server: 146.56.189.146, port: 443, type: trojan, password: f2117e99-9b6e-47fd-b0a9-634a0b15b998, skip-cert-verify: true}
+  - {name: 🇯🇵 日本(TG频道@kxswa) 3, server: 13.114.31.49, port: 443, type: vmess, uuid: 371307ac-b758-44de-a4cf-e3189d91cd4c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 13.114.31.49}}}
+  - {name: 2.80|JP12, server: jp-am48-6.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: eAokbaDN6, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
   - {name: 🇰🇷 韩国 AWS1000M 2号, server: hg1.xbywwcp.us, port: 80, type: vmess, uuid: e3dcfe09-bda5-35db-a717-0f6e5bc2f4cb, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /by.xbygood.xyz, headers: {Host: a.189.cn}}}
-  - {name: 🇭🇰 香港 04丨1x HK, server: sg.iamnotagoodman.com, port: 443, type: trojan, password: 4f8c0e41-dbdb-40f1-99cb-2c2a0b909b52, skip-cert-verify: true}
-  - {name: 🇨🇳 github.com/freefq - 浙江省台州市移动 33, server: ecdyd-1049-v2-7.hkg-r-kcd-c.ap.cjhh.beauty, port: 29938, type: vmess, uuid: caac6285-511c-4a07-b6db-edfbdcfe3889, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /je5x3pBN1vez3NQudNkB, headers: {Host: s3.cjhh.beauty}}}
-  - {name: 🇸🇬 新加坡_1014002, server: 54.151.172.209, port: 443, type: vmess, uuid: 20a1e3d1-9fb0-4f09-8bc9-b75ec31a1858, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇸🇬 新加坡_1014003, server: 54.151.172.209, port: 443, type: vmess, uuid: 20a1e3d1-9fb0-4f09-8bc9-b75ec31a1858, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇸🇬 -新加坡-52.221.212.115, server: 52.221.212.115, port: 43632, type: vmess, uuid: 1d2978ba-30ba-4b64-8699-9ba6ba3cd4e8, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇸🇬 github.com/freefq - 新加坡Amazon数据中心 1, server: 52.221.212.115, port: 43632, type: vmess, uuid: 1d2978ba-30ba-4b64-8699-9ba6ba3cd4e8, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇭🇰 香港_1014003, server: az.hk01.paopaocloud.cyou, port: 10010, type: vmess, uuid: d8c5b486-84bb-3887-a1d9-07455ea608f2, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /v2ray, headers: {Host: paopao.v2.az01.paopaocloud.cyou}}}
-  - {name: 🇺🇸 加拿大-ss-38.64.138.531035-被墙-直连-解锁美国地区NF非自制剧, server: 38.64.138.53, port: 1035, type: ss, cipher: chacha20-ietf-poly1305, password: )1N1E6v0SU_rGTpg}
-  - {name: 🇺🇸 美国-ss-138.68.248.130811-被墙-直连-解锁美国地区NF非自制剧 2, server: 138.68.248.130, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: Ultr@r00t_2017}
-  - {name: "🇺🇸 [10-18]-🇺🇸-美国-1086-38.107.226.238", server: 38.107.226.238, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: "🇺🇸 [10-18]-🇺🇸-美国-1096-38.91.107.37", server: 38.91.107.37, port: 7001, type: ss, cipher: aes-256-gcm, password: RexnBgU7EV5ADxG}
-  - {name: "🇨🇦 [10-18]-🇨🇦-加拿大蒙特利尔-1224-134.195.196.107", server: 134.195.196.107, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 🇺🇸 美国(欢迎订阅Youtube破解资源君) 43, server: 38.107.226.146, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: 🇨🇦 加拿大(欢迎订阅Youtube破解资源君) 5, server: 134.195.198.95, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: "🇺🇸 [10-18]-🇺🇸-美国-500-38.114.114.19", server: 38.114.114.19, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: "🇺🇸 [10-18]-🇺🇸-美国-770-172.99.190.149", server: 172.99.190.149, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇺🇸 美国-ss-167.88.63.997307-被墙-直连-解锁美国地区NF非自制剧, server: 167.88.63.99, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: "🇨🇦 [10-18]-🇨🇦-加拿大-740-142.202.48.52", server: 142.202.48.52, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: "🇺🇸 [10-18]-🇺🇸-美国-738-172.99.188.71", server: 172.99.188.71, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
-  - {name: "🇨🇦 [10-18]-🇨🇦-加拿大-510-38.64.138.145", server: 38.64.138.145, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: 🇯🇵 _JP_日本 7, server: jp-am48-6.eqnode.net, port: 8081, type: ssr, cipher: aes-256-cfb, password: eAokbaDN6, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "��#:��\x1c�~������ͽ�\x1f�\x1b{���@...:?\t�˫", obfs-param: ""}
+  - {name: US_129.159.41.233_1017db5e-3052, server: 129.159.41.233, port: 32586, type: vmess, uuid: 341a9182-c423-499c-c46e-d17838b29037, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 美国-ss-162.251.61.221805-被墙-直连-解锁美国地区NF非自制剧, server: 162.251.61.221, port: 805, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
   - {name: 🇺🇸 美国 050, server: 3.36.118.249, port: 443, type: vmess, uuid: 371307ac-b758-44de-a4cf-e3189d91cd4c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 3.36.118.249}}}
-  - {name: 🇺🇸 github.com/freefq - 美国麻省理工学院 2, server: 18.143.159.173, port: 443, type: vmess, uuid: 371307ac-b758-44de-a4cf-e3189d91cd4c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: "🇺🇸 [10-18]-🇺🇸-美国-778-38.75.137.9", server: 38.75.137.9, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: "🇺🇸 [10-18]-🇺🇸-美国-486-172.99.190.39", server: 172.99.190.39, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: "🇺🇸 [10-18]-🇺🇸-美国-426-172.99.190.61", server: 172.99.190.61, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: "🇺🇸 [10-18]-🇺🇸-美国-1126-38.68.135.18", server: 38.68.135.18, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 🇨🇦 CA 1 → openitsub.com, server: 149.56.141.11, port: 443, type: trojan, password: 67960bfb-00de-4a6b-9a7a-e74fc9e8b158, skip-cert-verify: true}
-  - {name: 🇺🇸 美国_1014417, server: 172.64.155.30, port: 2053, type: vmess, uuid: 8afc6cdf-4f0a-4725-a44c-5dacdc2b2784, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: haxeu2.zikkcc.ga}}}
   - {name: 🇺🇸 -美国-3.36.118.249, server: 3.36.118.249, port: 443, type: vmess, uuid: 371307ac-b758-44de-a4cf-e3189d91cd4c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 3.36.118.249}}}
-  - {name: 🇺🇸 github.com/freefq - 美国惠普HP 8, server: aewfhe5z1pokrkw8bi9g03.xingbayun.buzz, port: 10001, type: trojan, password: 862e68d2-05f3-4253-9116-819623bb7335, skip-cert-verify: false}
-  - {name: "|27.08Mb", server: 138.2.44.211, port: 20081, type: vmess, uuid: 593b8525-0c48-4b0f-d9af-2d73a9148973, alterId: 64, cipher: auto, tls: false}
-  - {name: Relay_ | 8.14Mb, server: us6b31-node.aiqiche123.com, port: 8190, type: vmess, uuid: a90597c1-bab3-4217-ad6f-0838675c8653, alterId: 10, cipher: auto, tls: true}
+  - {name: 🇺🇸 美国 006, server: 152.70.235.207, port: 35412, type: vmess, uuid: 70d95308-2a61-4f93-f139-9103d0587fd9, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 美国(欢迎订阅Youtube破解资源君) 43, server: 38.107.226.146, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: "🇺🇸 [10-18]-🇺🇸-美国-370-38.86.135.27", server: 38.86.135.27, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+  - {name: 🇺🇸 美国-ss-167.88.63.998090-被墙-直连-解锁美国地区NF非自制剧, server: 167.88.63.99, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇨🇦 加拿大(欢迎订阅Youtube破解资源君) 5, server: 134.195.198.95, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: "🇨🇦 [10-18]-🇨🇦-加拿大-926-38.111.114.246", server: 38.111.114.246, port: 9102, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
+  - {name: "🇨🇦 [10-18]-🇨🇦-加拿大蒙特利尔-726-134.195.196.107", server: 134.195.196.107, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: "🇺🇸 [10-18]-🇺🇸-美国-846-38.68.135.239", server: 38.68.135.239, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: 🇺🇸 美国(欢迎订阅Youtube破解资源君) 32, server: 167.88.63.82, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: "🇺🇸 [09-26]|openrunner|美国(US)USA/Dallas_39", server: 38.68.135.19, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: 🇺🇸 美国-ss-167.88.63.997307-被墙-直连-解锁美国地区NF非自制剧, server: 167.88.63.99, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇺🇸 美国-ss-167.88.63.992375-被墙-直连-解锁美国地区NF非自制剧, server: 167.88.63.99, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇺🇸 美国 034 2, server: Shopify.com, port: 2086, type: vmess, uuid: 24aadf9f-23a7-48fa-a090-e22bac60ab29, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /aries, headers: {Host: ru.cloudflare.quest}}}
+  - {name: 🇺🇸 美国-ss-167.88.62.688881-被墙-直连-解锁美国地区NF非自制剧, server: 167.88.62.68, port: 8881, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+  - {name: 🇺🇸 美国-ss-167.88.62.688000-被墙-直连-解锁美国地区NF非自制剧, server: 167.88.62.68, port: 8000, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
+  - {name: "🇺🇸 [10-18]-🇺🇸-美国-1060-172.99.190.87", server: 172.99.190.87, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
+  - {name: "🇺🇸 [10-18]-🇺🇸-美国-730-172.99.190.149", server: 172.99.190.149, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 美国-ss-167.88.62.685600-被墙-直连-解锁美国地区NF非自制剧, server: 167.88.62.68, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
+  - {name: "🇺🇸 [10-18]-🇺🇸-美国-372-172.99.188.71", server: 172.99.188.71, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+  - {name: 🇫🇷 FR【付费推荐：wxfz.ml】 2, server: 138.124.183.216, port: 443, type: trojan, password: xxoo, sni: content-provider12.cdn-delivery.akamaicd.com, skip-cert-verify: true}
+  - {name: "|18.61Mb", server: 129.159.41.233, port: 32586, type: vmess, uuid: 341a9182-c423-499c-c46e-d17838b29037, alterId: 0, cipher: auto, tls: false}
+  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 73, server: hg1.leifengkeji.live, port: 6666, type: trojan, password: 752a9404-c729-485e-8ea5-acb3f4fc8180, skip-cert-verify: false}
   - {name: "|14.99Mb", server: 168.138.207.66, port: 21365, type: vmess, uuid: 905f99b1-e7ba-45e0-ae4d-b0ffdf0ad245, alterId: 0, cipher: auto, tls: false}
   - {name: 🇧🇷 巴西 002, server: 168.138.207.66, port: 21365, type: vmess, uuid: 905f99b1-e7ba-45e0-ae4d-b0ffdf0ad245, alterId: 0, cipher: auto, tls: false}
   - {name: 白嫖-029, server: 168.138.207.66, port: 21365, type: vmess, uuid: 905f99b1-e7ba-45e0-ae4d-b0ffdf0ad245, alterId: 0, cipher: auto, tls: false}
+  - {name: "| 6.03Mb", server: 152.70.235.207, port: 35412, type: vmess, uuid: 70d95308-2a61-4f93-f139-9103d0587fd9, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇸🇬 更新于10/18/0007, server: 3.36.118.249, port: 443, type: vmess, uuid: 371307ac-b758-44de-a4cf-e3189d91cd4c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 3.36.118.249}}}
+  - {name: "|27.08Mb 2", server: 138.2.44.211, port: 20081, type: vmess, uuid: 593b8525-0c48-4b0f-d9af-2d73a9148973, alterId: 64, cipher: auto, tls: false}
+  - {name: 未知_1014720, server: us03.gogogoo.cyou, port: 443, type: vmess, uuid: db5d1aa3-908b-44d1-be0a-4e6a8d4e4cda, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /go, headers: {Host: us03.gogogoo.cyou}}}
+  - {name: "|94.51Mb", server: 139.99.91.95, port: 443, type: vmess, uuid: c0156451-4efb-45e2-84fc-8d315c4650db, alterId: 32, cipher: auto, tls: false}
+  - {name: 🇩🇪 德国_1014044, server: arvancloud.com, port: 80, type: vmess, uuid: b831381d-6324-4d53-ad4f-8cda48b30811, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /graphql, headers: {Host: mahsaproxy.com}}}
+  - {name: 🇩🇪 德国_1014002, server: arvancloud.com, port: 80, type: vmess, uuid: b831381d-6324-4d53-ad4f-8cda48b30811, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /graphql, headers: {Host: mahsaproxy.com}}}
+  - {name: 🇩🇪 DE 1 → openitsub.com, server: 80.78.132.177, port: 28443, type: trojan, password: 6b4ced5e-835a-4a7a-9d03-6a46e94668cb, sni: mzy.hruqoaw.cn, skip-cert-verify: true}
+  - {name: 🇭🇺 匈牙利 001, server: 185.225.69.134, port: 45081, type: vmess, uuid: 3c3bfd75-dc30-4e76-8940-47e1137e21f9, alterId: 0, cipher: auto, tls: false}
+  - {name: 213.183.53.1779003, server: 213.183.53.177, port: 9003, type: ss, cipher: aes-256-cfb, password: JdmRK9gMEqFgs8nP}
   - {name: _油管：全网最强白嫖 119, server: 138.68.248.130, port: 811, type: ss, cipher: chacha20-ietf-poly1305, password: Ultr@r00t_2017}
-  - {name: "[10-18]-🇺🇦-乌克兰-1222-193.108.117.24", server: 193.108.117.24, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
-  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 53, server: 38.68.134.85, port: 5600, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 60, server: 167.88.63.79, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 35, server: 38.114.114.19, port: 443, type: ss, cipher: aes-256-gcm, password: pKEW8JPByTVTLtM}
-  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 89, server: 149.202.82.172, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
-  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 45, server: 38.114.114.67, port: 6697, type: ss, cipher: aes-256-gcm, password: TEzjfAYq2IjtuoS}
-  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 72, server: 145.239.1.100, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 57, server: 134.195.196.149, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 63, server: 38.75.136.21, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 117, server: 167.88.61.175, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 123, server: 38.114.114.19, port: 5601, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: "🇫🇷 [10-18]-🇫🇷-法国-498-149.202.82.172", server: 149.202.82.172, port: 8888, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 31, server: 145.239.1.100, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 83, server: 145.239.1.100, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
-  - {name: ZZ_21, server: 169.197.143.232, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: "🇸🇪 [10-18]-🇸🇪-瑞典-416-167.88.61.14", server: 167.88.61.14, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
-  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 76, server: 149.202.82.172, port: 8080, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: "🇬🇪 [10-18]-🇦🇶-格鲁吉亚-776-188.93.88.84", server: 188.93.88.84, port: 45601, type: ss, cipher: aes-256-gcm, password: FvLxzZWqU0}
+  - {name: "🇬🇧 [10-18]-🇬🇧-英国-942-195.12.49.82", server: 195.12.49.82, port: 812, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: "🇫🇷 [10-18]-🇫🇷-法国-420-51.159.30.61", server: 51.159.30.61, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: "🇷🇴 [10-18]-🇷🇴-罗马尼亚-570-193.176.86.190", server: 193.176.86.190, port: 806, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: "🇩🇪 [10-18]-🇩🇪-德国-748-185.104.184.78", server: 185.104.184.78, port: 808, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇫🇷 法国(欢迎订阅Youtube破解资源君) 10, server: 51.159.30.61, port: 800, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 23, server: 38.121.43.71, port: 8882, type: ss, cipher: aes-256-gcm, password: kDWvXYZoTBcGkC4}
+  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 84, server: 38.121.43.71, port: 8119, type: ss, cipher: aes-256-gcm, password: cdBIDV42DCwnfIN}
+  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 60 2, server: 167.88.63.79, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -111,97 +113,99 @@ proxy-groups:
   - name: 🤘 手动选择
     type: select
     proxies:
-      - 🇯🇵 日本 005
-      - 🇯🇵 github.com/freefq - 日本东京Linode数据中心 4
-      - 🇸🇬 github.com/freefq - 新加坡OVH 8
+      - 🇯🇵 JP 16 TG@airproxies
       - 🇯🇵 JP 2 → openitsub.com
+      - 🇰🇷 -韩国-vm5.leifengkeji.live
+      - 🇰🇷 KR-15.164.129.194-123
+      - 🇰🇷 -韩国-vm13.leifengkeji.live
+      - 🇰🇷 -韩国-vm8.leifengkeji.live
+      - KR_129.154.57.134_1017db5e-55
+      - 🇯🇵 日本 002 2
+      - 🇨🇳 TW 9 TG@airproxies
+      - KR_152.70.235.207_1017db5e-410
+      - 🇸🇬 新加坡 001
+      - 🇭🇰 HK 2 → openitsub.com
       - SG_828 |42.19Mb
-      - 🇸🇬 中国-vmess-8.214.33.15880-被墙-直连-解锁新加坡地区NF非自制剧 2
-      - 🇯🇵 日本-ss-193.38.139.204809-被墙-中转193.38.139.201-解锁日本地区NF非自制剧
+      - 🇭🇰 G.[限時1x]試行奈飛保證專線HK⇠廣港.IPLCIR52017
+      - 🇭🇰 香港_1014248
+      - 🇨🇳 TW 2 → openitsub.com
+      - 🇭🇰 F.[限時1x]試行奈飛保證專線HK⇠廣港.IPLCIR52018
       - 🇯🇵 日本-ss-193.38.139.204806-被墙-中转193.38.139.201-解锁日本地区NF非自制剧 2
-      - 🇯🇵 日本-ss-193.38.139.203809-被墙-中转193.38.139.201-解锁日本地区NF非自制剧
-      - 🇯🇵 日本-ss-193.38.139.203807-被墙-中转193.38.139.201-解锁日本地区NF非自制剧
-      - 🇸🇬 [10-18]-🇸🇬-新加坡-644-81.90.189.41
-      - 🇯🇵 日本-ss-193.38.139.204806-被墙-中转193.38.139.201-解锁日本地区NF非自制剧
       - 🇯🇵 日本-ss-193.38.139.203803-被墙-中转193.38.139.201-解锁日本地区NF非自制剧
-      - SG_139.99.90.122_1017cd9c-75
-      - 🇸🇬 _SG_新加坡_2
-      - _KR_wmt(10.16)_26
-      - 🇸🇬 _SG_新加坡_1
-      - 🇸🇬 新加坡 002
+      - 🇯🇵 日本-ss-193.38.139.204809-被墙-中转193.38.139.201-解锁日本地区NF非自制剧
+      - 🇯🇵 日本-ss-193.38.139.203807-被墙-中转193.38.139.201-解锁日本地区NF非自制剧
+      - 🇯🇵 日本-ss-193.38.139.203809-被墙-中转193.38.139.201-解锁日本地区NF非自制剧
+      - 🇯🇵 日本-ss-193.38.139.204806-被墙-中转193.38.139.201-解锁日本地区NF非自制剧
       - 🇸🇬 中国-vmess-8.214.33.15880-被墙-直连-解锁新加坡地区NF非自制剧
-      - 🇯🇵 _JP_日本 2 2
-      - 🇯🇵 JP【付费推荐：wxfz.ml】 3
-      - 🇭🇰 HK 1 → openitsub.com
-      - 🇸🇬 新加坡 013
-      - 🇸🇬 github.com/freefq - 新加坡Amazon数据中心 1 2
-      - 🇸🇬 SG-20.24.13.180-095
-      - 🇯🇵 JP 6 → openitsub.com
-      - 🇯🇵 日本-ss-45.66.134.176807-被墙-中转185.168.20.250-解锁日本地区NF非自制剧
+      - 🇰🇷 2.32| 韩国1014028
+      - 🇰🇷 2.77| 韩国1014029
+      - 🇸🇬 _SG_新加坡_1
+      - 🇸🇬 [10-18]-🇸🇬-新加坡-418-81.90.189.41
+      - 🇸🇬 _SG_新加坡_2
+      - SG_139.99.90.122_1017db5e-54
+      - 🇸🇬 中国-vmess-8.214.33.15880-被墙-直连-解锁新加坡地区NF非自制剧 2
+      - 🇸🇬 新加坡 002
+      - 🇸🇬 SG 15 TG@airproxies
+      - 🇭🇰 HK 3 → openitsub.com
+      - 🇯🇵 日本_1014219
+      - 🇯🇵 日本 014
+      - 🇯🇵 -日本-13.114.31.49
+      - 🇭🇰 HK 4 → openitsub.com
       - 🇯🇵 日本-ss-45.66.134.176811-被墙-中转185.168.20.250-解锁日本地区NF非自制剧
+      - 🇯🇵 日本-ss-45.66.134.176807-被墙-中转185.168.20.250-解锁日本地区NF非自制剧
       - 🇯🇵 日本-ss-45.66.134.176806-被墙-中转185.168.20.250-解锁日本地区NF非自制剧
-      - 🇭🇰 HK 6 → openitsub.com
-      - HK_217
-      - 🇯🇵 -日本-104.233.228.136
-      - 🇰🇷 韩国_1014135
-      - 🇰🇷 KR【付费推荐：wxfz.ml】
-      - 🇯🇵 日本 008
-      - 🇰🇷 KR【付费推荐：wxfz.ml】 2
+      - 🇯🇵 日本(TG频道@kxswa) 3
+      - 2.80|JP12
       - 🇰🇷 韩国 AWS1000M 2号
-      - 🇭🇰 香港 04丨1x HK
-      - 🇨🇳 github.com/freefq - 浙江省台州市移动 33
-      - 🇸🇬 新加坡_1014002
-      - 🇸🇬 新加坡_1014003
-      - 🇸🇬 -新加坡-52.221.212.115
-      - 🇸🇬 github.com/freefq - 新加坡Amazon数据中心 1
-      - 🇭🇰 香港_1014003
-      - 🇺🇸 加拿大-ss-38.64.138.531035-被墙-直连-解锁美国地区NF非自制剧
-      - 🇺🇸 美国-ss-138.68.248.130811-被墙-直连-解锁美国地区NF非自制剧 2
-      - 🇺🇸 [10-18]-🇺🇸-美国-1086-38.107.226.238
-      - 🇺🇸 [10-18]-🇺🇸-美国-1096-38.91.107.37
-      - 🇨🇦 [10-18]-🇨🇦-加拿大蒙特利尔-1224-134.195.196.107
-      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 43
-      - 🇨🇦 加拿大(欢迎订阅Youtube破解资源君) 5
-      - 🇺🇸 [10-18]-🇺🇸-美国-500-38.114.114.19
-      - 🇺🇸 [10-18]-🇺🇸-美国-770-172.99.190.149
-      - 🇺🇸 美国-ss-167.88.63.997307-被墙-直连-解锁美国地区NF非自制剧
-      - 🇨🇦 [10-18]-🇨🇦-加拿大-740-142.202.48.52
-      - 🇺🇸 [10-18]-🇺🇸-美国-738-172.99.188.71
-      - 🇨🇦 [10-18]-🇨🇦-加拿大-510-38.64.138.145
+      - 🇯🇵 _JP_日本 7
+      - US_129.159.41.233_1017db5e-3052
+      - 🇺🇸 美国-ss-162.251.61.221805-被墙-直连-解锁美国地区NF非自制剧
       - 🇺🇸 美国 050
-      - 🇺🇸 github.com/freefq - 美国麻省理工学院 2
-      - 🇺🇸 [10-18]-🇺🇸-美国-778-38.75.137.9
-      - 🇺🇸 [10-18]-🇺🇸-美国-486-172.99.190.39
-      - 🇺🇸 [10-18]-🇺🇸-美国-426-172.99.190.61
-      - 🇺🇸 [10-18]-🇺🇸-美国-1126-38.68.135.18
-      - 🇨🇦 CA 1 → openitsub.com
-      - 🇺🇸 美国_1014417
       - 🇺🇸 -美国-3.36.118.249
-      - 🇺🇸 github.com/freefq - 美国惠普HP 8
-      - "|27.08Mb"
-      - Relay_ | 8.14Mb
+      - 🇺🇸 美国 006
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 43
+      - 🇺🇸 [10-18]-🇺🇸-美国-370-38.86.135.27
+      - 🇺🇸 美国-ss-167.88.63.998090-被墙-直连-解锁美国地区NF非自制剧
+      - 🇨🇦 加拿大(欢迎订阅Youtube破解资源君) 5
+      - 🇨🇦 [10-18]-🇨🇦-加拿大-926-38.111.114.246
+      - 🇨🇦 [10-18]-🇨🇦-加拿大蒙特利尔-726-134.195.196.107
+      - 🇺🇸 [10-18]-🇺🇸-美国-846-38.68.135.239
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 32
+      - 🇺🇸 [09-26]|openrunner|美国(US)USA/Dallas_39
+      - 🇺🇸 美国-ss-167.88.63.997307-被墙-直连-解锁美国地区NF非自制剧
+      - 🇺🇸 美国-ss-167.88.63.992375-被墙-直连-解锁美国地区NF非自制剧
+      - 🇺🇸 美国 034 2
+      - 🇺🇸 美国-ss-167.88.62.688881-被墙-直连-解锁美国地区NF非自制剧
+      - 🇺🇸 美国-ss-167.88.62.688000-被墙-直连-解锁美国地区NF非自制剧
+      - 🇺🇸 [10-18]-🇺🇸-美国-1060-172.99.190.87
+      - 🇺🇸 [10-18]-🇺🇸-美国-730-172.99.190.149
+      - 🇺🇸 美国-ss-167.88.62.685600-被墙-直连-解锁美国地区NF非自制剧
+      - 🇺🇸 [10-18]-🇺🇸-美国-372-172.99.188.71
+      - 🇫🇷 FR【付费推荐：wxfz.ml】 2
+      - "|18.61Mb"
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 73
       - "|14.99Mb"
       - 🇧🇷 巴西 002
       - 白嫖-029
+      - "| 6.03Mb"
+      - 🇸🇬 更新于10/18/0007
+      - "|27.08Mb 2"
+      - 未知_1014720
+      - "|94.51Mb"
+      - 🇩🇪 德国_1014044
+      - 🇩🇪 德国_1014002
+      - 🇩🇪 DE 1 → openitsub.com
+      - 🇭🇺 匈牙利 001
+      - 213.183.53.1779003
       - _油管：全网最强白嫖 119
-      - "[10-18]-🇺🇦-乌克兰-1222-193.108.117.24"
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 53
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 60
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 35
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 89
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 45
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 72
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 57
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 63
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 117
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 123
-      - 🇫🇷 [10-18]-🇫🇷-法国-498-149.202.82.172
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 31
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 83
-      - ZZ_21
-      - 🇸🇪 [10-18]-🇸🇪-瑞典-416-167.88.61.14
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 76
-      - 🇬🇪 [10-18]-🇦🇶-格鲁吉亚-776-188.93.88.84
+      - 🇬🇧 [10-18]-🇬🇧-英国-942-195.12.49.82
+      - 🇫🇷 [10-18]-🇫🇷-法国-420-51.159.30.61
+      - 🇷🇴 [10-18]-🇷🇴-罗马尼亚-570-193.176.86.190
+      - 🇩🇪 [10-18]-🇩🇪-德国-748-185.104.184.78
+      - 🇫🇷 法国(欢迎订阅Youtube破解资源君) 10
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 23
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 84
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 60 2
   - name: 📺 国外媒体
     type: select
     proxies:
@@ -257,400 +261,409 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - 🇯🇵 日本 005
-      - 🇯🇵 github.com/freefq - 日本东京Linode数据中心 4
-      - 🇸🇬 github.com/freefq - 新加坡OVH 8
+      - 🇯🇵 JP 16 TG@airproxies
       - 🇯🇵 JP 2 → openitsub.com
+      - 🇰🇷 -韩国-vm5.leifengkeji.live
+      - 🇰🇷 KR-15.164.129.194-123
+      - 🇰🇷 -韩国-vm13.leifengkeji.live
+      - 🇰🇷 -韩国-vm8.leifengkeji.live
+      - KR_129.154.57.134_1017db5e-55
+      - 🇯🇵 日本 002 2
+      - 🇨🇳 TW 9 TG@airproxies
+      - KR_152.70.235.207_1017db5e-410
+      - 🇸🇬 新加坡 001
+      - 🇭🇰 HK 2 → openitsub.com
       - SG_828 |42.19Mb
-      - 🇸🇬 中国-vmess-8.214.33.15880-被墙-直连-解锁新加坡地区NF非自制剧 2
-      - 🇯🇵 日本-ss-193.38.139.204809-被墙-中转193.38.139.201-解锁日本地区NF非自制剧
+      - 🇭🇰 G.[限時1x]試行奈飛保證專線HK⇠廣港.IPLCIR52017
+      - 🇭🇰 香港_1014248
+      - 🇨🇳 TW 2 → openitsub.com
+      - 🇭🇰 F.[限時1x]試行奈飛保證專線HK⇠廣港.IPLCIR52018
       - 🇯🇵 日本-ss-193.38.139.204806-被墙-中转193.38.139.201-解锁日本地区NF非自制剧 2
-      - 🇯🇵 日本-ss-193.38.139.203809-被墙-中转193.38.139.201-解锁日本地区NF非自制剧
-      - 🇯🇵 日本-ss-193.38.139.203807-被墙-中转193.38.139.201-解锁日本地区NF非自制剧
-      - 🇸🇬 [10-18]-🇸🇬-新加坡-644-81.90.189.41
-      - 🇯🇵 日本-ss-193.38.139.204806-被墙-中转193.38.139.201-解锁日本地区NF非自制剧
       - 🇯🇵 日本-ss-193.38.139.203803-被墙-中转193.38.139.201-解锁日本地区NF非自制剧
-      - SG_139.99.90.122_1017cd9c-75
-      - 🇸🇬 _SG_新加坡_2
-      - _KR_wmt(10.16)_26
-      - 🇸🇬 _SG_新加坡_1
-      - 🇸🇬 新加坡 002
+      - 🇯🇵 日本-ss-193.38.139.204809-被墙-中转193.38.139.201-解锁日本地区NF非自制剧
+      - 🇯🇵 日本-ss-193.38.139.203807-被墙-中转193.38.139.201-解锁日本地区NF非自制剧
+      - 🇯🇵 日本-ss-193.38.139.203809-被墙-中转193.38.139.201-解锁日本地区NF非自制剧
+      - 🇯🇵 日本-ss-193.38.139.204806-被墙-中转193.38.139.201-解锁日本地区NF非自制剧
       - 🇸🇬 中国-vmess-8.214.33.15880-被墙-直连-解锁新加坡地区NF非自制剧
-      - 🇯🇵 _JP_日本 2 2
-      - 🇯🇵 JP【付费推荐：wxfz.ml】 3
-      - 🇭🇰 HK 1 → openitsub.com
-      - 🇸🇬 新加坡 013
-      - 🇸🇬 github.com/freefq - 新加坡Amazon数据中心 1 2
-      - 🇸🇬 SG-20.24.13.180-095
-      - 🇯🇵 JP 6 → openitsub.com
-      - 🇯🇵 日本-ss-45.66.134.176807-被墙-中转185.168.20.250-解锁日本地区NF非自制剧
+      - 🇰🇷 2.32| 韩国1014028
+      - 🇰🇷 2.77| 韩国1014029
+      - 🇸🇬 _SG_新加坡_1
+      - 🇸🇬 [10-18]-🇸🇬-新加坡-418-81.90.189.41
+      - 🇸🇬 _SG_新加坡_2
+      - SG_139.99.90.122_1017db5e-54
+      - 🇸🇬 中国-vmess-8.214.33.15880-被墙-直连-解锁新加坡地区NF非自制剧 2
+      - 🇸🇬 新加坡 002
+      - 🇸🇬 SG 15 TG@airproxies
+      - 🇭🇰 HK 3 → openitsub.com
+      - 🇯🇵 日本_1014219
+      - 🇯🇵 日本 014
+      - 🇯🇵 -日本-13.114.31.49
+      - 🇭🇰 HK 4 → openitsub.com
       - 🇯🇵 日本-ss-45.66.134.176811-被墙-中转185.168.20.250-解锁日本地区NF非自制剧
+      - 🇯🇵 日本-ss-45.66.134.176807-被墙-中转185.168.20.250-解锁日本地区NF非自制剧
       - 🇯🇵 日本-ss-45.66.134.176806-被墙-中转185.168.20.250-解锁日本地区NF非自制剧
-      - 🇭🇰 HK 6 → openitsub.com
-      - HK_217
-      - 🇯🇵 -日本-104.233.228.136
-      - 🇰🇷 韩国_1014135
-      - 🇰🇷 KR【付费推荐：wxfz.ml】
-      - 🇯🇵 日本 008
-      - 🇰🇷 KR【付费推荐：wxfz.ml】 2
+      - 🇯🇵 日本(TG频道@kxswa) 3
+      - 2.80|JP12
       - 🇰🇷 韩国 AWS1000M 2号
-      - 🇭🇰 香港 04丨1x HK
-      - 🇨🇳 github.com/freefq - 浙江省台州市移动 33
-      - 🇸🇬 新加坡_1014002
-      - 🇸🇬 新加坡_1014003
-      - 🇸🇬 -新加坡-52.221.212.115
-      - 🇸🇬 github.com/freefq - 新加坡Amazon数据中心 1
-      - 🇭🇰 香港_1014003
-      - 🇺🇸 加拿大-ss-38.64.138.531035-被墙-直连-解锁美国地区NF非自制剧
-      - 🇺🇸 美国-ss-138.68.248.130811-被墙-直连-解锁美国地区NF非自制剧 2
-      - 🇺🇸 [10-18]-🇺🇸-美国-1086-38.107.226.238
-      - 🇺🇸 [10-18]-🇺🇸-美国-1096-38.91.107.37
-      - 🇨🇦 [10-18]-🇨🇦-加拿大蒙特利尔-1224-134.195.196.107
-      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 43
-      - 🇨🇦 加拿大(欢迎订阅Youtube破解资源君) 5
-      - 🇺🇸 [10-18]-🇺🇸-美国-500-38.114.114.19
-      - 🇺🇸 [10-18]-🇺🇸-美国-770-172.99.190.149
-      - 🇺🇸 美国-ss-167.88.63.997307-被墙-直连-解锁美国地区NF非自制剧
-      - 🇨🇦 [10-18]-🇨🇦-加拿大-740-142.202.48.52
-      - 🇺🇸 [10-18]-🇺🇸-美国-738-172.99.188.71
-      - 🇨🇦 [10-18]-🇨🇦-加拿大-510-38.64.138.145
+      - 🇯🇵 _JP_日本 7
+      - US_129.159.41.233_1017db5e-3052
+      - 🇺🇸 美国-ss-162.251.61.221805-被墙-直连-解锁美国地区NF非自制剧
       - 🇺🇸 美国 050
-      - 🇺🇸 github.com/freefq - 美国麻省理工学院 2
-      - 🇺🇸 [10-18]-🇺🇸-美国-778-38.75.137.9
-      - 🇺🇸 [10-18]-🇺🇸-美国-486-172.99.190.39
-      - 🇺🇸 [10-18]-🇺🇸-美国-426-172.99.190.61
-      - 🇺🇸 [10-18]-🇺🇸-美国-1126-38.68.135.18
-      - 🇨🇦 CA 1 → openitsub.com
-      - 🇺🇸 美国_1014417
       - 🇺🇸 -美国-3.36.118.249
-      - 🇺🇸 github.com/freefq - 美国惠普HP 8
-      - "|27.08Mb"
-      - Relay_ | 8.14Mb
+      - 🇺🇸 美国 006
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 43
+      - 🇺🇸 [10-18]-🇺🇸-美国-370-38.86.135.27
+      - 🇺🇸 美国-ss-167.88.63.998090-被墙-直连-解锁美国地区NF非自制剧
+      - 🇨🇦 加拿大(欢迎订阅Youtube破解资源君) 5
+      - 🇨🇦 [10-18]-🇨🇦-加拿大-926-38.111.114.246
+      - 🇨🇦 [10-18]-🇨🇦-加拿大蒙特利尔-726-134.195.196.107
+      - 🇺🇸 [10-18]-🇺🇸-美国-846-38.68.135.239
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 32
+      - 🇺🇸 [09-26]|openrunner|美国(US)USA/Dallas_39
+      - 🇺🇸 美国-ss-167.88.63.997307-被墙-直连-解锁美国地区NF非自制剧
+      - 🇺🇸 美国-ss-167.88.63.992375-被墙-直连-解锁美国地区NF非自制剧
+      - 🇺🇸 美国 034 2
+      - 🇺🇸 美国-ss-167.88.62.688881-被墙-直连-解锁美国地区NF非自制剧
+      - 🇺🇸 美国-ss-167.88.62.688000-被墙-直连-解锁美国地区NF非自制剧
+      - 🇺🇸 [10-18]-🇺🇸-美国-1060-172.99.190.87
+      - 🇺🇸 [10-18]-🇺🇸-美国-730-172.99.190.149
+      - 🇺🇸 美国-ss-167.88.62.685600-被墙-直连-解锁美国地区NF非自制剧
+      - 🇺🇸 [10-18]-🇺🇸-美国-372-172.99.188.71
+      - 🇫🇷 FR【付费推荐：wxfz.ml】 2
+      - "|18.61Mb"
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 73
       - "|14.99Mb"
       - 🇧🇷 巴西 002
       - 白嫖-029
+      - "| 6.03Mb"
+      - 🇸🇬 更新于10/18/0007
+      - "|27.08Mb 2"
+      - 未知_1014720
+      - "|94.51Mb"
+      - 🇩🇪 德国_1014044
+      - 🇩🇪 德国_1014002
+      - 🇩🇪 DE 1 → openitsub.com
+      - 🇭🇺 匈牙利 001
+      - 213.183.53.1779003
       - _油管：全网最强白嫖 119
-      - "[10-18]-🇺🇦-乌克兰-1222-193.108.117.24"
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 53
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 60
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 35
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 89
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 45
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 72
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 57
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 63
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 117
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 123
-      - 🇫🇷 [10-18]-🇫🇷-法国-498-149.202.82.172
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 31
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 83
-      - ZZ_21
-      - 🇸🇪 [10-18]-🇸🇪-瑞典-416-167.88.61.14
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 76
-      - 🇬🇪 [10-18]-🇦🇶-格鲁吉亚-776-188.93.88.84
+      - 🇬🇧 [10-18]-🇬🇧-英国-942-195.12.49.82
+      - 🇫🇷 [10-18]-🇫🇷-法国-420-51.159.30.61
+      - 🇷🇴 [10-18]-🇷🇴-罗马尼亚-570-193.176.86.190
+      - 🇩🇪 [10-18]-🇩🇪-德国-748-185.104.184.78
+      - 🇫🇷 法国(欢迎订阅Youtube破解资源君) 10
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 23
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 84
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 60 2
   - name: ⚡ 故障转移
     type: fallback
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇯🇵 日本 005
-      - 🇯🇵 github.com/freefq - 日本东京Linode数据中心 4
-      - 🇸🇬 github.com/freefq - 新加坡OVH 8
+      - 🇯🇵 JP 16 TG@airproxies
       - 🇯🇵 JP 2 → openitsub.com
+      - 🇰🇷 -韩国-vm5.leifengkeji.live
+      - 🇰🇷 KR-15.164.129.194-123
+      - 🇰🇷 -韩国-vm13.leifengkeji.live
+      - 🇰🇷 -韩国-vm8.leifengkeji.live
+      - KR_129.154.57.134_1017db5e-55
+      - 🇯🇵 日本 002 2
+      - 🇨🇳 TW 9 TG@airproxies
+      - KR_152.70.235.207_1017db5e-410
+      - 🇸🇬 新加坡 001
+      - 🇭🇰 HK 2 → openitsub.com
       - SG_828 |42.19Mb
-      - 🇸🇬 中国-vmess-8.214.33.15880-被墙-直连-解锁新加坡地区NF非自制剧 2
-      - 🇯🇵 日本-ss-193.38.139.204809-被墙-中转193.38.139.201-解锁日本地区NF非自制剧
+      - 🇭🇰 G.[限時1x]試行奈飛保證專線HK⇠廣港.IPLCIR52017
+      - 🇭🇰 香港_1014248
+      - 🇨🇳 TW 2 → openitsub.com
+      - 🇭🇰 F.[限時1x]試行奈飛保證專線HK⇠廣港.IPLCIR52018
       - 🇯🇵 日本-ss-193.38.139.204806-被墙-中转193.38.139.201-解锁日本地区NF非自制剧 2
-      - 🇯🇵 日本-ss-193.38.139.203809-被墙-中转193.38.139.201-解锁日本地区NF非自制剧
-      - 🇯🇵 日本-ss-193.38.139.203807-被墙-中转193.38.139.201-解锁日本地区NF非自制剧
-      - 🇸🇬 [10-18]-🇸🇬-新加坡-644-81.90.189.41
-      - 🇯🇵 日本-ss-193.38.139.204806-被墙-中转193.38.139.201-解锁日本地区NF非自制剧
       - 🇯🇵 日本-ss-193.38.139.203803-被墙-中转193.38.139.201-解锁日本地区NF非自制剧
-      - SG_139.99.90.122_1017cd9c-75
-      - 🇸🇬 _SG_新加坡_2
-      - _KR_wmt(10.16)_26
-      - 🇸🇬 _SG_新加坡_1
-      - 🇸🇬 新加坡 002
+      - 🇯🇵 日本-ss-193.38.139.204809-被墙-中转193.38.139.201-解锁日本地区NF非自制剧
+      - 🇯🇵 日本-ss-193.38.139.203807-被墙-中转193.38.139.201-解锁日本地区NF非自制剧
+      - 🇯🇵 日本-ss-193.38.139.203809-被墙-中转193.38.139.201-解锁日本地区NF非自制剧
+      - 🇯🇵 日本-ss-193.38.139.204806-被墙-中转193.38.139.201-解锁日本地区NF非自制剧
       - 🇸🇬 中国-vmess-8.214.33.15880-被墙-直连-解锁新加坡地区NF非自制剧
-      - 🇯🇵 _JP_日本 2 2
-      - 🇯🇵 JP【付费推荐：wxfz.ml】 3
-      - 🇭🇰 HK 1 → openitsub.com
-      - 🇸🇬 新加坡 013
-      - 🇸🇬 github.com/freefq - 新加坡Amazon数据中心 1 2
-      - 🇸🇬 SG-20.24.13.180-095
-      - 🇯🇵 JP 6 → openitsub.com
-      - 🇯🇵 日本-ss-45.66.134.176807-被墙-中转185.168.20.250-解锁日本地区NF非自制剧
+      - 🇰🇷 2.32| 韩国1014028
+      - 🇰🇷 2.77| 韩国1014029
+      - 🇸🇬 _SG_新加坡_1
+      - 🇸🇬 [10-18]-🇸🇬-新加坡-418-81.90.189.41
+      - 🇸🇬 _SG_新加坡_2
+      - SG_139.99.90.122_1017db5e-54
+      - 🇸🇬 中国-vmess-8.214.33.15880-被墙-直连-解锁新加坡地区NF非自制剧 2
+      - 🇸🇬 新加坡 002
+      - 🇸🇬 SG 15 TG@airproxies
+      - 🇭🇰 HK 3 → openitsub.com
+      - 🇯🇵 日本_1014219
+      - 🇯🇵 日本 014
+      - 🇯🇵 -日本-13.114.31.49
+      - 🇭🇰 HK 4 → openitsub.com
       - 🇯🇵 日本-ss-45.66.134.176811-被墙-中转185.168.20.250-解锁日本地区NF非自制剧
+      - 🇯🇵 日本-ss-45.66.134.176807-被墙-中转185.168.20.250-解锁日本地区NF非自制剧
       - 🇯🇵 日本-ss-45.66.134.176806-被墙-中转185.168.20.250-解锁日本地区NF非自制剧
-      - 🇭🇰 HK 6 → openitsub.com
-      - HK_217
-      - 🇯🇵 -日本-104.233.228.136
-      - 🇰🇷 韩国_1014135
-      - 🇰🇷 KR【付费推荐：wxfz.ml】
-      - 🇯🇵 日本 008
-      - 🇰🇷 KR【付费推荐：wxfz.ml】 2
+      - 🇯🇵 日本(TG频道@kxswa) 3
+      - 2.80|JP12
       - 🇰🇷 韩国 AWS1000M 2号
-      - 🇭🇰 香港 04丨1x HK
-      - 🇨🇳 github.com/freefq - 浙江省台州市移动 33
-      - 🇸🇬 新加坡_1014002
-      - 🇸🇬 新加坡_1014003
-      - 🇸🇬 -新加坡-52.221.212.115
-      - 🇸🇬 github.com/freefq - 新加坡Amazon数据中心 1
-      - 🇭🇰 香港_1014003
-      - 🇺🇸 加拿大-ss-38.64.138.531035-被墙-直连-解锁美国地区NF非自制剧
-      - 🇺🇸 美国-ss-138.68.248.130811-被墙-直连-解锁美国地区NF非自制剧 2
-      - 🇺🇸 [10-18]-🇺🇸-美国-1086-38.107.226.238
-      - 🇺🇸 [10-18]-🇺🇸-美国-1096-38.91.107.37
-      - 🇨🇦 [10-18]-🇨🇦-加拿大蒙特利尔-1224-134.195.196.107
-      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 43
-      - 🇨🇦 加拿大(欢迎订阅Youtube破解资源君) 5
-      - 🇺🇸 [10-18]-🇺🇸-美国-500-38.114.114.19
-      - 🇺🇸 [10-18]-🇺🇸-美国-770-172.99.190.149
-      - 🇺🇸 美国-ss-167.88.63.997307-被墙-直连-解锁美国地区NF非自制剧
-      - 🇨🇦 [10-18]-🇨🇦-加拿大-740-142.202.48.52
-      - 🇺🇸 [10-18]-🇺🇸-美国-738-172.99.188.71
-      - 🇨🇦 [10-18]-🇨🇦-加拿大-510-38.64.138.145
+      - 🇯🇵 _JP_日本 7
+      - US_129.159.41.233_1017db5e-3052
+      - 🇺🇸 美国-ss-162.251.61.221805-被墙-直连-解锁美国地区NF非自制剧
       - 🇺🇸 美国 050
-      - 🇺🇸 github.com/freefq - 美国麻省理工学院 2
-      - 🇺🇸 [10-18]-🇺🇸-美国-778-38.75.137.9
-      - 🇺🇸 [10-18]-🇺🇸-美国-486-172.99.190.39
-      - 🇺🇸 [10-18]-🇺🇸-美国-426-172.99.190.61
-      - 🇺🇸 [10-18]-🇺🇸-美国-1126-38.68.135.18
-      - 🇨🇦 CA 1 → openitsub.com
-      - 🇺🇸 美国_1014417
       - 🇺🇸 -美国-3.36.118.249
-      - 🇺🇸 github.com/freefq - 美国惠普HP 8
-      - "|27.08Mb"
-      - Relay_ | 8.14Mb
+      - 🇺🇸 美国 006
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 43
+      - 🇺🇸 [10-18]-🇺🇸-美国-370-38.86.135.27
+      - 🇺🇸 美国-ss-167.88.63.998090-被墙-直连-解锁美国地区NF非自制剧
+      - 🇨🇦 加拿大(欢迎订阅Youtube破解资源君) 5
+      - 🇨🇦 [10-18]-🇨🇦-加拿大-926-38.111.114.246
+      - 🇨🇦 [10-18]-🇨🇦-加拿大蒙特利尔-726-134.195.196.107
+      - 🇺🇸 [10-18]-🇺🇸-美国-846-38.68.135.239
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 32
+      - 🇺🇸 [09-26]|openrunner|美国(US)USA/Dallas_39
+      - 🇺🇸 美国-ss-167.88.63.997307-被墙-直连-解锁美国地区NF非自制剧
+      - 🇺🇸 美国-ss-167.88.63.992375-被墙-直连-解锁美国地区NF非自制剧
+      - 🇺🇸 美国 034 2
+      - 🇺🇸 美国-ss-167.88.62.688881-被墙-直连-解锁美国地区NF非自制剧
+      - 🇺🇸 美国-ss-167.88.62.688000-被墙-直连-解锁美国地区NF非自制剧
+      - 🇺🇸 [10-18]-🇺🇸-美国-1060-172.99.190.87
+      - 🇺🇸 [10-18]-🇺🇸-美国-730-172.99.190.149
+      - 🇺🇸 美国-ss-167.88.62.685600-被墙-直连-解锁美国地区NF非自制剧
+      - 🇺🇸 [10-18]-🇺🇸-美国-372-172.99.188.71
+      - 🇫🇷 FR【付费推荐：wxfz.ml】 2
+      - "|18.61Mb"
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 73
       - "|14.99Mb"
       - 🇧🇷 巴西 002
       - 白嫖-029
+      - "| 6.03Mb"
+      - 🇸🇬 更新于10/18/0007
+      - "|27.08Mb 2"
+      - 未知_1014720
+      - "|94.51Mb"
+      - 🇩🇪 德国_1014044
+      - 🇩🇪 德国_1014002
+      - 🇩🇪 DE 1 → openitsub.com
+      - 🇭🇺 匈牙利 001
+      - 213.183.53.1779003
       - _油管：全网最强白嫖 119
-      - "[10-18]-🇺🇦-乌克兰-1222-193.108.117.24"
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 53
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 60
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 35
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 89
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 45
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 72
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 57
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 63
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 117
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 123
-      - 🇫🇷 [10-18]-🇫🇷-法国-498-149.202.82.172
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 31
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 83
-      - ZZ_21
-      - 🇸🇪 [10-18]-🇸🇪-瑞典-416-167.88.61.14
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 76
-      - 🇬🇪 [10-18]-🇦🇶-格鲁吉亚-776-188.93.88.84
+      - 🇬🇧 [10-18]-🇬🇧-英国-942-195.12.49.82
+      - 🇫🇷 [10-18]-🇫🇷-法国-420-51.159.30.61
+      - 🇷🇴 [10-18]-🇷🇴-罗马尼亚-570-193.176.86.190
+      - 🇩🇪 [10-18]-🇩🇪-德国-748-185.104.184.78
+      - 🇫🇷 法国(欢迎订阅Youtube破解资源君) 10
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 23
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 84
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 60 2
   - name: 🌎 北美地区
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
-      - 🇺🇸 加拿大-ss-38.64.138.531035-被墙-直连-解锁美国地区NF非自制剧
-      - 🇺🇸 美国-ss-138.68.248.130811-被墙-直连-解锁美国地区NF非自制剧 2
-      - 🇺🇸 [10-18]-🇺🇸-美国-1086-38.107.226.238
-      - 🇺🇸 [10-18]-🇺🇸-美国-1096-38.91.107.37
-      - 🇨🇦 [10-18]-🇨🇦-加拿大蒙特利尔-1224-134.195.196.107
-      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 43
-      - 🇨🇦 加拿大(欢迎订阅Youtube破解资源君) 5
-      - 🇺🇸 [10-18]-🇺🇸-美国-500-38.114.114.19
-      - 🇺🇸 [10-18]-🇺🇸-美国-770-172.99.190.149
-      - 🇺🇸 美国-ss-167.88.63.997307-被墙-直连-解锁美国地区NF非自制剧
-      - 🇨🇦 [10-18]-🇨🇦-加拿大-740-142.202.48.52
-      - 🇺🇸 [10-18]-🇺🇸-美国-738-172.99.188.71
-      - 🇨🇦 [10-18]-🇨🇦-加拿大-510-38.64.138.145
+      - US_129.159.41.233_1017db5e-3052
+      - 🇺🇸 美国-ss-162.251.61.221805-被墙-直连-解锁美国地区NF非自制剧
       - 🇺🇸 美国 050
-      - 🇺🇸 github.com/freefq - 美国麻省理工学院 2
-      - 🇺🇸 [10-18]-🇺🇸-美国-778-38.75.137.9
-      - 🇺🇸 [10-18]-🇺🇸-美国-486-172.99.190.39
-      - 🇺🇸 [10-18]-🇺🇸-美国-426-172.99.190.61
-      - 🇺🇸 [10-18]-🇺🇸-美国-1126-38.68.135.18
-      - 🇨🇦 CA 1 → openitsub.com
-      - 🇺🇸 美国_1014417
       - 🇺🇸 -美国-3.36.118.249
-      - 🇺🇸 github.com/freefq - 美国惠普HP 8
+      - 🇺🇸 美国 006
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 43
+      - 🇺🇸 [10-18]-🇺🇸-美国-370-38.86.135.27
+      - 🇺🇸 美国-ss-167.88.63.998090-被墙-直连-解锁美国地区NF非自制剧
+      - 🇨🇦 加拿大(欢迎订阅Youtube破解资源君) 5
+      - 🇨🇦 [10-18]-🇨🇦-加拿大-926-38.111.114.246
+      - 🇨🇦 [10-18]-🇨🇦-加拿大蒙特利尔-726-134.195.196.107
+      - 🇺🇸 [10-18]-🇺🇸-美国-846-38.68.135.239
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 32
+      - 🇺🇸 [09-26]|openrunner|美国(US)USA/Dallas_39
+      - 🇺🇸 美国-ss-167.88.63.997307-被墙-直连-解锁美国地区NF非自制剧
+      - 🇺🇸 美国-ss-167.88.63.992375-被墙-直连-解锁美国地区NF非自制剧
+      - 🇺🇸 美国 034 2
+      - 🇺🇸 美国-ss-167.88.62.688881-被墙-直连-解锁美国地区NF非自制剧
+      - 🇺🇸 美国-ss-167.88.62.688000-被墙-直连-解锁美国地区NF非自制剧
+      - 🇺🇸 [10-18]-🇺🇸-美国-1060-172.99.190.87
+      - 🇺🇸 [10-18]-🇺🇸-美国-730-172.99.190.149
+      - 🇺🇸 美国-ss-167.88.62.685600-被墙-直连-解锁美国地区NF非自制剧
+      - 🇺🇸 [10-18]-🇺🇸-美国-372-172.99.188.71
   - name: 🌏 东亚地区
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
-      - 🇯🇵 日本 005
-      - 🇯🇵 github.com/freefq - 日本东京Linode数据中心 4
-      - 🇸🇬 github.com/freefq - 新加坡OVH 8
+      - 🇯🇵 JP 16 TG@airproxies
       - 🇯🇵 JP 2 → openitsub.com
+      - 🇰🇷 -韩国-vm5.leifengkeji.live
+      - 🇰🇷 KR-15.164.129.194-123
+      - 🇰🇷 -韩国-vm13.leifengkeji.live
+      - 🇰🇷 -韩国-vm8.leifengkeji.live
+      - KR_129.154.57.134_1017db5e-55
+      - 🇯🇵 日本 002 2
+      - 🇨🇳 TW 9 TG@airproxies
+      - KR_152.70.235.207_1017db5e-410
+      - 🇸🇬 新加坡 001
+      - 🇭🇰 HK 2 → openitsub.com
       - SG_828 |42.19Mb
-      - 🇸🇬 中国-vmess-8.214.33.15880-被墙-直连-解锁新加坡地区NF非自制剧 2
-      - 🇯🇵 日本-ss-193.38.139.204809-被墙-中转193.38.139.201-解锁日本地区NF非自制剧
+      - 🇭🇰 G.[限時1x]試行奈飛保證專線HK⇠廣港.IPLCIR52017
+      - 🇭🇰 香港_1014248
+      - 🇨🇳 TW 2 → openitsub.com
+      - 🇭🇰 F.[限時1x]試行奈飛保證專線HK⇠廣港.IPLCIR52018
       - 🇯🇵 日本-ss-193.38.139.204806-被墙-中转193.38.139.201-解锁日本地区NF非自制剧 2
-      - 🇯🇵 日本-ss-193.38.139.203809-被墙-中转193.38.139.201-解锁日本地区NF非自制剧
-      - 🇯🇵 日本-ss-193.38.139.203807-被墙-中转193.38.139.201-解锁日本地区NF非自制剧
-      - 🇸🇬 [10-18]-🇸🇬-新加坡-644-81.90.189.41
-      - 🇯🇵 日本-ss-193.38.139.204806-被墙-中转193.38.139.201-解锁日本地区NF非自制剧
       - 🇯🇵 日本-ss-193.38.139.203803-被墙-中转193.38.139.201-解锁日本地区NF非自制剧
-      - SG_139.99.90.122_1017cd9c-75
-      - 🇸🇬 _SG_新加坡_2
-      - _KR_wmt(10.16)_26
-      - 🇸🇬 _SG_新加坡_1
-      - 🇸🇬 新加坡 002
+      - 🇯🇵 日本-ss-193.38.139.204809-被墙-中转193.38.139.201-解锁日本地区NF非自制剧
+      - 🇯🇵 日本-ss-193.38.139.203807-被墙-中转193.38.139.201-解锁日本地区NF非自制剧
+      - 🇯🇵 日本-ss-193.38.139.203809-被墙-中转193.38.139.201-解锁日本地区NF非自制剧
+      - 🇯🇵 日本-ss-193.38.139.204806-被墙-中转193.38.139.201-解锁日本地区NF非自制剧
       - 🇸🇬 中国-vmess-8.214.33.15880-被墙-直连-解锁新加坡地区NF非自制剧
-      - 🇯🇵 _JP_日本 2 2
-      - 🇯🇵 JP【付费推荐：wxfz.ml】 3
-      - 🇭🇰 HK 1 → openitsub.com
-      - 🇸🇬 新加坡 013
-      - 🇸🇬 github.com/freefq - 新加坡Amazon数据中心 1 2
-      - 🇸🇬 SG-20.24.13.180-095
-      - 🇯🇵 JP 6 → openitsub.com
-      - 🇯🇵 日本-ss-45.66.134.176807-被墙-中转185.168.20.250-解锁日本地区NF非自制剧
+      - 🇰🇷 2.32| 韩国1014028
+      - 🇰🇷 2.77| 韩国1014029
+      - 🇸🇬 _SG_新加坡_1
+      - 🇸🇬 [10-18]-🇸🇬-新加坡-418-81.90.189.41
+      - 🇸🇬 _SG_新加坡_2
+      - SG_139.99.90.122_1017db5e-54
+      - 🇸🇬 中国-vmess-8.214.33.15880-被墙-直连-解锁新加坡地区NF非自制剧 2
+      - 🇸🇬 新加坡 002
+      - 🇸🇬 SG 15 TG@airproxies
+      - 🇭🇰 HK 3 → openitsub.com
+      - 🇯🇵 日本_1014219
+      - 🇯🇵 日本 014
+      - 🇯🇵 -日本-13.114.31.49
+      - 🇭🇰 HK 4 → openitsub.com
       - 🇯🇵 日本-ss-45.66.134.176811-被墙-中转185.168.20.250-解锁日本地区NF非自制剧
+      - 🇯🇵 日本-ss-45.66.134.176807-被墙-中转185.168.20.250-解锁日本地区NF非自制剧
       - 🇯🇵 日本-ss-45.66.134.176806-被墙-中转185.168.20.250-解锁日本地区NF非自制剧
-      - 🇭🇰 HK 6 → openitsub.com
-      - HK_217
-      - 🇯🇵 -日本-104.233.228.136
-      - 🇰🇷 韩国_1014135
-      - 🇰🇷 KR【付费推荐：wxfz.ml】
-      - 🇯🇵 日本 008
-      - 🇰🇷 KR【付费推荐：wxfz.ml】 2
+      - 🇯🇵 日本(TG频道@kxswa) 3
+      - 2.80|JP12
       - 🇰🇷 韩国 AWS1000M 2号
-      - 🇭🇰 香港 04丨1x HK
-      - 🇨🇳 github.com/freefq - 浙江省台州市移动 33
-      - 🇸🇬 新加坡_1014002
-      - 🇸🇬 新加坡_1014003
-      - 🇸🇬 -新加坡-52.221.212.115
-      - 🇸🇬 github.com/freefq - 新加坡Amazon数据中心 1
-      - 🇭🇰 香港_1014003
+      - 🇯🇵 _JP_日本 7
   - name: 🌍 其它地区
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
-      - "|27.08Mb"
-      - Relay_ | 8.14Mb
+      - 🇫🇷 FR【付费推荐：wxfz.ml】 2
+      - "|18.61Mb"
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 73
       - "|14.99Mb"
       - 🇧🇷 巴西 002
       - 白嫖-029
+      - "| 6.03Mb"
+      - 🇸🇬 更新于10/18/0007
+      - "|27.08Mb 2"
+      - 未知_1014720
+      - "|94.51Mb"
+      - 🇩🇪 德国_1014044
+      - 🇩🇪 德国_1014002
+      - 🇩🇪 DE 1 → openitsub.com
+      - 🇭🇺 匈牙利 001
+      - 213.183.53.1779003
       - _油管：全网最强白嫖 119
-      - "[10-18]-🇺🇦-乌克兰-1222-193.108.117.24"
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 53
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 60
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 35
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 89
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 45
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 72
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 57
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 63
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 117
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 123
-      - 🇫🇷 [10-18]-🇫🇷-法国-498-149.202.82.172
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 31
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 83
-      - ZZ_21
-      - 🇸🇪 [10-18]-🇸🇪-瑞典-416-167.88.61.14
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 76
-      - 🇬🇪 [10-18]-🇦🇶-格鲁吉亚-776-188.93.88.84
+      - 🇬🇧 [10-18]-🇬🇧-英国-942-195.12.49.82
+      - 🇫🇷 [10-18]-🇫🇷-法国-420-51.159.30.61
+      - 🇷🇴 [10-18]-🇷🇴-罗马尼亚-570-193.176.86.190
+      - 🇩🇪 [10-18]-🇩🇪-德国-748-185.104.184.78
+      - 🇫🇷 法国(欢迎订阅Youtube破解资源君) 10
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 23
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 84
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 60 2
   - name: 美国
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
-      - 🇺🇸 加拿大-ss-38.64.138.531035-被墙-直连-解锁美国地区NF非自制剧
-      - 🇺🇸 美国-ss-138.68.248.130811-被墙-直连-解锁美国地区NF非自制剧 2
-      - 🇺🇸 [10-18]-🇺🇸-美国-1086-38.107.226.238
-      - 🇺🇸 [10-18]-🇺🇸-美国-1096-38.91.107.37
-      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 43
-      - 🇺🇸 [10-18]-🇺🇸-美国-500-38.114.114.19
-      - 🇺🇸 [10-18]-🇺🇸-美国-770-172.99.190.149
-      - 🇺🇸 美国-ss-167.88.63.997307-被墙-直连-解锁美国地区NF非自制剧
-      - 🇺🇸 [10-18]-🇺🇸-美国-738-172.99.188.71
+      - US_129.159.41.233_1017db5e-3052
+      - 🇺🇸 美国-ss-162.251.61.221805-被墙-直连-解锁美国地区NF非自制剧
       - 🇺🇸 美国 050
-      - 🇺🇸 github.com/freefq - 美国麻省理工学院 2
-      - 🇺🇸 [10-18]-🇺🇸-美国-778-38.75.137.9
-      - 🇺🇸 [10-18]-🇺🇸-美国-486-172.99.190.39
-      - 🇺🇸 [10-18]-🇺🇸-美国-426-172.99.190.61
-      - 🇺🇸 [10-18]-🇺🇸-美国-1126-38.68.135.18
-      - 🇺🇸 美国_1014417
       - 🇺🇸 -美国-3.36.118.249
-      - 🇺🇸 github.com/freefq - 美国惠普HP 8
+      - 🇺🇸 美国 006
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 43
+      - 🇺🇸 [10-18]-🇺🇸-美国-370-38.86.135.27
+      - 🇺🇸 美国-ss-167.88.63.998090-被墙-直连-解锁美国地区NF非自制剧
+      - 🇺🇸 [10-18]-🇺🇸-美国-846-38.68.135.239
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 32
+      - 🇺🇸 [09-26]|openrunner|美国(US)USA/Dallas_39
+      - 🇺🇸 美国-ss-167.88.63.997307-被墙-直连-解锁美国地区NF非自制剧
+      - 🇺🇸 美国-ss-167.88.63.992375-被墙-直连-解锁美国地区NF非自制剧
+      - 🇺🇸 美国 034 2
+      - 🇺🇸 美国-ss-167.88.62.688881-被墙-直连-解锁美国地区NF非自制剧
+      - 🇺🇸 美国-ss-167.88.62.688000-被墙-直连-解锁美国地区NF非自制剧
+      - 🇺🇸 [10-18]-🇺🇸-美国-1060-172.99.190.87
+      - 🇺🇸 [10-18]-🇺🇸-美国-730-172.99.190.149
+      - 🇺🇸 美国-ss-167.88.62.685600-被墙-直连-解锁美国地区NF非自制剧
+      - 🇺🇸 [10-18]-🇺🇸-美国-372-172.99.188.71
   - name: 香港
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
-      - 🇭🇰 HK 1 → openitsub.com
-      - 🇭🇰 HK 6 → openitsub.com
-      - HK_217
-      - 🇭🇰 香港 04丨1x HK
-      - 🇭🇰 香港_1014003
+      - 🇭🇰 HK 2 → openitsub.com
+      - 🇭🇰 G.[限時1x]試行奈飛保證專線HK⇠廣港.IPLCIR52017
+      - 🇭🇰 香港_1014248
+      - 🇭🇰 F.[限時1x]試行奈飛保證專線HK⇠廣港.IPLCIR52018
+      - 🇭🇰 HK 3 → openitsub.com
+      - 🇭🇰 HK 4 → openitsub.com
   - name: 狮城
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
-      - 🇸🇬 github.com/freefq - 新加坡OVH 8
+      - 🇸🇬 新加坡 001
       - SG_828 |42.19Mb
-      - 🇸🇬 中国-vmess-8.214.33.15880-被墙-直连-解锁新加坡地区NF非自制剧 2
-      - 🇸🇬 [10-18]-🇸🇬-新加坡-644-81.90.189.41
-      - SG_139.99.90.122_1017cd9c-75
-      - 🇸🇬 _SG_新加坡_2
-      - 🇸🇬 _SG_新加坡_1
-      - 🇸🇬 新加坡 002
       - 🇸🇬 中国-vmess-8.214.33.15880-被墙-直连-解锁新加坡地区NF非自制剧
-      - 🇸🇬 新加坡 013
-      - 🇸🇬 github.com/freefq - 新加坡Amazon数据中心 1 2
-      - 🇸🇬 SG-20.24.13.180-095
-      - 🇸🇬 新加坡_1014002
-      - 🇸🇬 新加坡_1014003
-      - 🇸🇬 -新加坡-52.221.212.115
-      - 🇸🇬 github.com/freefq - 新加坡Amazon数据中心 1
+      - 🇸🇬 _SG_新加坡_1
+      - 🇸🇬 [10-18]-🇸🇬-新加坡-418-81.90.189.41
+      - 🇸🇬 _SG_新加坡_2
+      - SG_139.99.90.122_1017db5e-54
+      - 🇸🇬 中国-vmess-8.214.33.15880-被墙-直连-解锁新加坡地区NF非自制剧 2
+      - 🇸🇬 新加坡 002
+      - 🇸🇬 SG 15 TG@airproxies
   - name: 日本
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
-      - 🇯🇵 日本 005
-      - 🇯🇵 github.com/freefq - 日本东京Linode数据中心 4
+      - 🇯🇵 JP 16 TG@airproxies
       - 🇯🇵 JP 2 → openitsub.com
-      - 🇯🇵 日本-ss-193.38.139.204809-被墙-中转193.38.139.201-解锁日本地区NF非自制剧
+      - 🇯🇵 日本 002 2
       - 🇯🇵 日本-ss-193.38.139.204806-被墙-中转193.38.139.201-解锁日本地区NF非自制剧 2
-      - 🇯🇵 日本-ss-193.38.139.203809-被墙-中转193.38.139.201-解锁日本地区NF非自制剧
-      - 🇯🇵 日本-ss-193.38.139.203807-被墙-中转193.38.139.201-解锁日本地区NF非自制剧
-      - 🇯🇵 日本-ss-193.38.139.204806-被墙-中转193.38.139.201-解锁日本地区NF非自制剧
       - 🇯🇵 日本-ss-193.38.139.203803-被墙-中转193.38.139.201-解锁日本地区NF非自制剧
-      - 🇯🇵 _JP_日本 2 2
-      - 🇯🇵 JP【付费推荐：wxfz.ml】 3
-      - 🇯🇵 JP 6 → openitsub.com
-      - 🇯🇵 日本-ss-45.66.134.176807-被墙-中转185.168.20.250-解锁日本地区NF非自制剧
+      - 🇯🇵 日本-ss-193.38.139.204809-被墙-中转193.38.139.201-解锁日本地区NF非自制剧
+      - 🇯🇵 日本-ss-193.38.139.203807-被墙-中转193.38.139.201-解锁日本地区NF非自制剧
+      - 🇯🇵 日本-ss-193.38.139.203809-被墙-中转193.38.139.201-解锁日本地区NF非自制剧
+      - 🇯🇵 日本-ss-193.38.139.204806-被墙-中转193.38.139.201-解锁日本地区NF非自制剧
+      - 🇯🇵 日本_1014219
+      - 🇯🇵 日本 014
+      - 🇯🇵 -日本-13.114.31.49
       - 🇯🇵 日本-ss-45.66.134.176811-被墙-中转185.168.20.250-解锁日本地区NF非自制剧
+      - 🇯🇵 日本-ss-45.66.134.176807-被墙-中转185.168.20.250-解锁日本地区NF非自制剧
       - 🇯🇵 日本-ss-45.66.134.176806-被墙-中转185.168.20.250-解锁日本地区NF非自制剧
-      - 🇯🇵 -日本-104.233.228.136
-      - 🇯🇵 日本 008
+      - 🇯🇵 日本(TG频道@kxswa) 3
+      - 2.80|JP12
+      - 🇯🇵 _JP_日本 7
   - name: 台湾
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
-      - 🇨🇳 github.com/freefq - 浙江省台州市移动 33
+      - 🇨🇳 TW 9 TG@airproxies
+      - 🇨🇳 TW 2 → openitsub.com
   - name: 韩国
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
-      - _KR_wmt(10.16)_26
-      - 🇰🇷 韩国_1014135
-      - 🇰🇷 KR【付费推荐：wxfz.ml】
-      - 🇰🇷 KR【付费推荐：wxfz.ml】 2
+      - 🇰🇷 -韩国-vm5.leifengkeji.live
+      - 🇰🇷 KR-15.164.129.194-123
+      - 🇰🇷 -韩国-vm13.leifengkeji.live
+      - 🇰🇷 -韩国-vm8.leifengkeji.live
+      - KR_129.154.57.134_1017db5e-55
+      - KR_152.70.235.207_1017db5e-410
+      - 🇰🇷 2.32| 韩国1014028
+      - 🇰🇷 2.77| 韩国1014029
       - 🇰🇷 韩国 AWS1000M 2号
 rules:
  - DOMAIN,instant.arubanetworks.com,DIRECT
