@@ -57,6 +57,7 @@ jobs:
     name: Commit & Push
     needs: main
     runs-on: ubuntu-lasest
+    steps:
     - name: 提交更改
       run: |
         git config --local user.email "actions@github.com"
