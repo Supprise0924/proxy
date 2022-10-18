@@ -11,16 +11,26 @@ on:
 
 jobs:
   setup:
-    name: Setup Environment
+    name: Setup Python
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+        cache: 'pip'
+    - name: Install dependencies
+      run: pip install -r ./utils/requirements.txt
+    - name: Set timezone
+      run: sudo timedatectl set-timezone 'Asia/Shanghai'
+
+  main:
+    name: Merge & speedtest
+    needs: setup
     runs-on: ubuntu-latest
     steps:
     - name: 迁出代码
       uses: actions/checkout@v3
-    - name: 安装Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.x'
-        cache: 'pip'
     - name: 加载缓存
       uses: actions/cache@v3
       with:
@@ -28,37 +38,14 @@ jobs:
         key: ${{ runner.os }}-pip-${{ hashFiles('**/run_in_Actions/requirements.txt') }}
         restore-keys: |
           ${{ runner.os }}-pip-
-    - name: 设置时区
-      run: sudo timedatectl set-timezone 'Asia/Shanghai'
-    - name: 安装依赖
-      run: |
-        pip install -r ./utils/requirements.txt
-
-  clash:
-    name: Setup Clash
-    needs: setup
-    runs-on: ubuntu-latest
-    steps:
     - name: Start Clash proxy environment
       run: |
         sudo sh ./utils/scripts/set_proxy.sh
-
-  main:
-    name: Merge & Speedtest
-    needs: clash
-    runs-on: ubuntu-lasest
-    steps:
-    - name: 执行任务
+    - name: Merge & speedtest
       run: |
         chmod +x ./utils/subconverter/subconverter-linux-amd64 && chmod +x ./utils/litespeedtest/lite-linux-amd64
         python ./utils/main.py
-
-  push:
-    name: Commit & Push
-    needs: main
-    runs-on: ubuntu-lasest
-    steps:
-    - name: 提交更改
+    - name: Commit change
       run: |
         git config --local user.email "actions@github.com"
         git config --local user.name "GitHub Actions"
@@ -69,7 +56,7 @@ jobs:
         git add ./Eternity.yaml
         git add README.md
         git commit -m "$(date '+%Y-%m-%d %H:%M:%S')合并节点"
-    - name: 推送更改
+    - name: Push
       uses:  ad-m/github-push-action@master
       with:
         branch: master
