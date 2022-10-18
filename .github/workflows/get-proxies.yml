@@ -10,8 +10,8 @@ on:
     - cron: '0 0-23/3 * * *'
 
 jobs:
-  setup:
-    name: Setup Python
+  main:
+    name: Merge & speedtest
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
@@ -19,25 +19,16 @@ jobs:
       with:
         python-version: '3.x'
         cache: 'pip'
-    - name: Install dependencies
-      run: pip install -r ./utils/requirements.txt
-    - name: Set timezone
-      run: sudo timedatectl set-timezone 'Asia/Shanghai'
-
-  main:
-    name: Merge & speedtest
-    needs: setup
-    runs-on: ubuntu-latest
-    steps:
-    - name: 迁出代码
-      uses: actions/checkout@v3
-    - name: 加载缓存
-      uses: actions/cache@v3
+    - uses: actions/cache@v3
       with:
         path: ~/.cache/pip
         key: ${{ runner.os }}-pip-${{ hashFiles('**/run_in_Actions/requirements.txt') }}
         restore-keys: |
           ${{ runner.os }}-pip-
+    - name: Set timezone
+      run: sudo timedatectl set-timezone 'Asia/Shanghai'
+    - name: Install dependencies
+      run: pip install -r ./utils/requirements.txt
     - name: Start Clash proxy environment
       run: |
         sudo sh ./utils/scripts/set_proxy.sh
