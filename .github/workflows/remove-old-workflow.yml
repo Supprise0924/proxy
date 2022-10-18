@@ -19,6 +19,7 @@ on:
 
 jobs:
   del_runs:
+    name: Delete old runs
     runs-on: ubuntu-latest
     steps:
       - name: Delete workflow runs
