@@ -17,9 +17,10 @@ def convert(subscription,target,other_config={'deduplicate':False,'rename':'','i
         config: output subcription config
     """
     config = {'target':target,'deduplicate':other_config['deduplicate'],'rename':other_config['rename'],'include':other_config['include'],'exclude':other_config['exclude'],'config':other_config['config']}
-
+    
     work_dir = os.getcwd()
     os.chdir(os.path.dirname(os.path.abspath(__file__)))
+
     if subscription[:8] == 'https://':
         clash_provider = subconverterhandler(subscription)
     else:
@@ -75,7 +76,7 @@ def subconverterhandler(subscription,input_config={'target':'transfer','rename':
 
     configparse = configparser.ConfigParser()
     configparse.read('./generate.ini',encoding='utf-8')
-
+    
     url = subscription
     target = input_config['target']
     rename = input_config['rename']
@@ -87,6 +88,10 @@ def subconverterhandler(subscription,input_config={'target':'transfer','rename':
     configparse.set(target,'include',include)
     configparse.set(target,'exclude',exclude)
     configparse.set(target,'config',config)
+
+    origin_configparse = configparser.ConfigParser()
+    origin_configparse.read('./generate.ini',encoding='utf-8')
+    origin_config = {'url':origin_configparse[target]['url'],'rename':origin_configparse[target]['rename'],'include':origin_configparse[target]['include'],'exclude':origin_configparse[target]['exclude'],'config':origin_configparse[target]['config']}
 
     with open('./generate.ini', 'w', encoding='utf-8') as ini:
         configparse.write(ini,space_around_delimiters=False)
@@ -113,11 +118,9 @@ def subconverterhandler(subscription,input_config={'target':'transfer','rename':
     if subconverter.returncode != 0:
         try:
             os.remove('./temp')
-            os.chdir(work_dir)
-            return ''
+            output = ''
         except Exception:
-            os.chdir(work_dir)
-            return ''
+            output = ''
     else:
         try:
             with open(f'./temp', 'r', encoding= 'utf-8', errors='ignore') as temp_file:
@@ -129,13 +132,20 @@ def subconverterhandler(subscription,input_config={'target':'transfer','rename':
                     output += content
             if target == 'url':
                 output = base64_decode(output)
-
             os.remove('./temp')
-            os.chdir(work_dir)
-            return output
         except Exception:
-            os.chdir(work_dir)
-            return ''
+            output = ''
+
+    origin_configparse.set(target,'url',origin_config['url'])
+    origin_configparse.set(target,'rename',origin_config['rename'])
+    origin_configparse.set(target,'include',origin_config['include'])
+    origin_configparse.set(target,'exclude',origin_config['exclude'])
+    origin_configparse.set(target,'config',origin_config['config'])
+    with open('./generate.ini', 'w', encoding='utf-8') as ini:
+        origin_configparse.write(ini,space_around_delimiters=False)
+
+    os.chdir(work_dir)
+    return output
 def deduplicate(clash_provider): # Proxies deduplicate. If proxies have same servers that are greater than 3 then just save 3 of them, else less than 3 just save all of them.
     lines = re.split(r'\n+', clash_provider)[1:]
     print('Starting deduplicate...')
