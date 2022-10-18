@@ -47,6 +47,7 @@ jobs:
     name: Merge & Speedtest
     needs: clash
     runs-on: ubuntu-lasest
+    steps:
     - name: 执行任务
       run: |
         chmod +x ./utils/subconverter/subconverter-linux-amd64 && chmod +x ./utils/litespeedtest/lite-linux-amd64
