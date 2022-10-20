@@ -5,98 +5,99 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇰🇷 韩国_1020167, server: vm12.leifengkeji.live, port: 11111, type: vmess, uuid: 752a9404-c729-485e-8ea5-acb3f4fc8180, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: vm12.leifengkeji.live}}}
-  - {name: 🇯🇵 -日本-vm12.leifengkeji.live, server: vm12.leifengkeji.live, port: 11111, type: vmess, uuid: 752a9404-c729-485e-8ea5-acb3f4fc8180, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: vm12.leifengkeji.live}}}
-  - {name: "🇯🇵 [09-26]|openrunner|日本(JP)Japan/Tokyo_16", server: jgwdj3.gaox.ml, port: 443, type: trojan, password: da777aae-defb-41d0-a183-2c27da2b4677, skip-cert-verify: true}
-  - {name: 🇭🇰 HK 1 → openitsub.com, server: polo01.kctr2038.icu, port: 443, type: trojan, password: 88939272-790a-441f-b12b-8ce531aca810, skip-cert-verify: true}
-  - {name: 🇸🇬 -新加坡-sg02.xiaoqi99.cf, server: sg02.xiaoqi99.cf, port: 63632, type: vmess, uuid: 49166929-020e-4ef0-97e7-7989ce92fc69, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: sg02.xiaoqi99.cf}}}
-  - {name: 🇸🇬 新加坡_1020210, server: 139.162.10.125, port: 63632, type: vmess, uuid: 49166929-020e-4ef0-97e7-7989ce92fc69, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇭🇰 github.com/freefq - 香港阿里云 1, server: 47.87.149.164, port: 443, type: vmess, uuid: 5282f68b-14ca-4325-a630-d911abf59c54, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇭🇰 -香港-47.87.149.164, server: 47.87.149.164, port: 443, type: vmess, uuid: 5282f68b-14ca-4325-a630-d911abf59c54, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
   - {name: HK_217 2, server: 23.91.100.243, port: 30862, type: vmess, uuid: 3b0f44e4-dd11-429d-c80f-615b10595db9, alterId: 0, cipher: auto, tls: false}
-  - {name: HK_251, server: 128.1.134.126, port: 6666, type: vmess, uuid: 7fb3b571-cda8-40f6-c9e6-db9765ea8faa, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇭🇰 香港_1020444, server: 1063975e-d559-89b3-5d40-2faae0a79030.cnnic.rip, port: 443, type: vmess, uuid: 6b468d94-f14a-4109-88d7-e23587536eca, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 1063975e-d559-89b3-5d40-2faae0a79030.cnnic.rip}}}
-  - {name: "🇭🇰 [10-20]-🇭🇰-香港-436-84.17.35.103", server: 84.17.35.103, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
-  - {name: 🇭🇰 香港(欢迎订阅Youtube破解资源君) 8, server: 2.jp.zz.xxxxx.x-t-fuckword.network, port: 36671, type: trojan, password: 5f97472b-b910-32fd-bbd2-403f0c6c5ae0, sni: 2.jp.ld.xxxxx.x-t-fuckword.link, skip-cert-verify: false}
+  - {name: 🇯🇵 github.com/freefq - 日本  48, server: 146.56.40.117, port: 27675, type: vmess, uuid: 053ca0f4-057e-493d-ad30-5ba51f00f59c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
   - {name: 🇭🇰 香港(欢迎订阅Youtube破解资源君) 8 2, server: 2.jp.zz.xxxxx.x-t-fuckword.network, port: 36671, type: trojan, password: 5f97472b-b910-32fd-bbd2-403f0c6c5ae0, sni: 2.jp.ld.xxxxx.x-t-fuckword.link, skip-cert-verify: false}
   - {name: 🇭🇰 香港(欢迎订阅Youtube破解资源君) 8 2 2, server: 2.jp.zz.xxxxx.x-t-fuckword.network, port: 36671, type: trojan, password: 5f97472b-b910-32fd-bbd2-403f0c6c5ae0, sni: 2.jp.ld.xxxxx.x-t-fuckword.link, skip-cert-verify: false}
   - {name: 🇸🇬 新加坡(欢迎订阅Youtube破解资源君) 6, server: 89.187.163.197, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
   - {name: 🇸🇬 新加坡(欢迎订阅Youtube破解资源君) 6 2, server: 89.187.163.197, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
   - {name: 🇸🇬 新加坡(欢迎订阅Youtube破解资源君) 6 2 2, server: 89.187.163.197, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
   - {name: 🇸🇬 新加坡(欢迎订阅Youtube破解资源君) 7, server: 54.251.230.216, port: 18332, type: ss, cipher: chacha20-ietf-poly1305, password: Z3YS0KxB8u5jgp736e834y3DaXwSOYzxlFDFqpNCaalDA9CEIRceZOCAnR2yTS}
-  - {name: "🇸🇬 [10-20]-🇸🇬-新加坡-880-54.251.230.216", server: 54.251.230.216, port: 18332, type: ss, cipher: chacha20-ietf-poly1305, password: Z3YS0KxB8u5jgp736e834y3DaXwSOYzxlFDFqpNCaalDA9CEIRceZOCAnR2yTS}
+  - {name: "🇸🇬 [10-20]-🇸🇬-新加坡-3500-54.251.230.216", server: 54.251.230.216, port: 18332, type: ss, cipher: chacha20-ietf-poly1305, password: Z3YS0KxB8u5jgp736e834y3DaXwSOYzxlFDFqpNCaalDA9CEIRceZOCAnR2yTS}
   - {name: 🇸🇬 新加坡(欢迎订阅Youtube破解资源君) 7 2, server: 54.251.230.216, port: 18332, type: ss, cipher: chacha20-ietf-poly1305, password: Z3YS0KxB8u5jgp736e834y3DaXwSOYzxlFDFqpNCaalDA9CEIRceZOCAnR2yTS}
-  - {name: "🇭🇰 [10-20]-🇭🇰-香港-502-84.17.35.103", server: 84.17.35.103, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
-  - {name: 🇭🇰 香港(快嘴科技kkzui.com) 2, server: hk.tiktokcdn.sbs, port: 47228, type: trojan, password: 1145141919810GenshinMinecraftTelegramC1oudFlare1145141919810Telegram, skip-cert-verify: false}
-  - {name: 🇭🇰 香港(快嘴科技kkzui.com), server: hk.tiktokcdn.sbs, port: 47228, type: trojan, password: 1145141919810GenshinMinecraftTelegramC1oudFlare1145141919810Telegram, skip-cert-verify: false}
-  - {name: 🇸🇬 新加坡(欢迎订阅Youtube破解资源君) 4, server: 89.187.163.215, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: 🇨🇳 github.com/freefq - 浙江省台州市移动 18, server: ecdyd-1049-v2-7.hkg-r-kcd-c.ap.cjhh.beauty, port: 29938, type: vmess, uuid: caac6285-511c-4a07-b6db-edfbdcfe3889, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /je5x3pBN1vez3NQudNkB, headers: {Host: s3.cjhh.beauty}}}
+  - {name: 🇭🇰 HK 1 → openitsub.com, server: polo01.kctr2038.icu, port: 443, type: trojan, password: 88939272-790a-441f-b12b-8ce531aca810, skip-cert-verify: true}
+  - {name: 🇸🇬 新加坡(欢迎订阅Youtube破解资源君) 5, server: 89.187.163.217, port: 49653, type: ss, cipher: aes-256-gcm, password: Y9GcTPemHMKEkrfGQPJqFDNr}
   - {name: 🇰🇷 -韩国-www.apulnion.com, server: www.apulnion.com, port: 443, type: vmess, uuid: 7b8c370d-8610-4988-b0a7-cde74aa0713b, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: www.apulnion.com}}}
   - {name: 🇰🇷 -韩国-www.apulnion.com 2, server: www.apulnion.com, port: 443, type: vmess, uuid: 7b8c370d-8610-4988-b0a7-cde74aa0713b, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: www.apulnion.com}}}
-  - {name: 🇸🇬 新加坡 003, server: digitalocean.kinhproxy.com, port: 443, type: trojan, password: DigitalOcean, skip-cert-verify: false}
-  - {name: 🇸🇬 SG【付费推荐：https//goo.gs/vip】 4, server: digitalocean.kinhproxy.com, port: 443, type: trojan, password: DigitalOcean, sni: digitalocean.kinhproxy.com, skip-cert-verify: true}
-  - {name: 🇸🇬 新加坡_1020012, server: m3.pianyijc.top, port: 31212, type: vmess, uuid: 6b855dbd-3f5a-4a8b-8338-73ab337eb8e6, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /sometimesnaive, headers: {Host: m3.pianyijc.top}}}
-  - {name: 🇭🇰 香港_1020428, server: 1063975e-d559-89b3-5d40-2faae0a79030.cnnic.rip, port: 80, type: vmess, uuid: 6b468d94-f14a-4109-88d7-e23587536eca, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 1063975e-d559-89b3-5d40-2faae0a79030.cnnic.rip}}}
   - {name: "🇸🇬 [10-20]-🇸🇬-新加坡-510-89.187.163.215", server: 89.187.163.215, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
-  - {name: 🇨🇳 github.com/freefq - 台湾省花莲县中华电信 30, server: 36.227.229.227, port: 39999, type: vmess, uuid: 67c50f6a-816d-3555-89b4-19dd29608f8b, alterId: 0, cipher: auto, tls: true}
-  - {name: 🇨🇳 -台湾花莲县-36.227.229.227, server: 36.227.229.227, port: 39999, type: vmess, uuid: 67c50f6a-816d-3555-89b4-19dd29608f8b, alterId: 0, cipher: auto, tls: true}
-  - {name: 🇨🇳 -日本-shouer.azzhuangaping.tw, server: shouer.azzhuangaping.tw, port: 80, type: vmess, uuid: 70de4924-d1ac-3482-a494-577b4ccc9b1d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /adobe, headers: {Host: shouer.azzhuangaping.tw}}}
-  - {name: 🇰🇷 韩国_1020006, server: shouer.azzhuangaping.tw, port: 80, type: vmess, uuid: 70de4924-d1ac-3482-a494-577b4ccc9b1d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /adobe, headers: {Host: shouer.azzhuangaping.tw}}}
-  - {name: 🇭🇰 香港_1020010, server: 20.239.65.134, port: 80, type: vmess, uuid: d41c193f-52ca-3ef9-9cf5-e7d50330f26e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/ws?ed=2048"}}
-  - {name: 🇸🇬 -新加坡-139.162.14.93, server: 139.162.14.93, port: 443, type: vmess, uuid: 927094d3-d678-4763-8591-e240d0bcae87, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: 139.162.14.93}}}
-  - {name: 🇯🇵 日本_1020279, server: 8.209.218.195, port: 443, type: vmess, uuid: f6d7b072-de00-45dc-9e24-49f8cf43530d, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /linod, headers: {Host: 8.209.218.195}}}
-  - {name: 🇯🇵 github.com/freefq - 日本东京都品川区Linode数据中心 1, server: aewfhe5z1pokrkw8bi9g05.xingbayun.buzz, port: 10001, type: trojan, password: 862e68d2-05f3-4253-9116-819623bb7335, skip-cert-verify: false}
-  - {name: 🇯🇵 日本 010, server: aewfhe5z1pokrkw8bi9g05.xingbayun.buzz, port: 10001, type: trojan, password: 862e68d2-05f3-4253-9116-819623bb7335, sni: aewfhe5z1pokrkw8bi9g05.xingbayun.buzz, skip-cert-verify: true}
-  - {name: 🇯🇵 日本(TG频道@kxswa) 2 2, server: aewfhe5z1pokrkw8bi9g05.xingbayun.buzz, port: 10001, type: trojan, password: 862e68d2-05f3-4253-9116-819623bb7335, sni: aewfhe5z1pokrkw8bi9g05.xingbayun.buzz, skip-cert-verify: true}
-  - {name: 🇯🇵 github.com/freefq - 日本东京Linode数据中心 6, server: aewfhe5z1pokrkw8bi9g08.xingbayun.buzz, port: 10001, type: trojan, password: 862e68d2-05f3-4253-9116-819623bb7335, skip-cert-verify: false}
-  - {name: 🇯🇵 日本(TG频道@kxswa), server: aewfhe5z1pokrkw8bi9g08.xingbayun.buzz, port: 10001, type: trojan, password: 862e68d2-05f3-4253-9116-819623bb7335, sni: aewfhe5z1pokrkw8bi9g08.xingbayun.buzz, skip-cert-verify: true}
-  - {name: 🇯🇵 JP 1, server: aewfhe5z1pokrkw8bi9g08.xingbayun.buzz, port: 10001, type: trojan, password: 862e68d2-05f3-4253-9116-819623bb7335, skip-cert-verify: true}
-  - {name: 🇺🇸 -美国-tr.33yun.xyz, server: tr.33yun.xyz, port: 33003, type: vmess, uuid: 62b12463-1c73-40ed-adff-724756b9a6f0, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶DDOSing Network 16, server: polo01.kctr2038.icu, port: 443, type: trojan, password: 88939272-790a-441f-b12b-8ce531aca810, skip-cert-verify: false}
-  - {name: 🇺🇸 -美国-141.101.115.120, server: 141.101.115.120, port: 443, type: vmess, uuid: 33aa57df-1c93-4318-9fce-e850437ee781, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: lg1.cfcdn3.xyz}}}
-  - {name: 🇨🇦 github.com/freefq - 加拿大  28, server: 165.154.243.161, port: 443, type: vmess, uuid: 5282f68b-14ca-4325-a630-d911abf59c54, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 17, server: ee.cloudflare.quest, port: 80, type: vmess, uuid: f9247df4-02d5-4b31-acc5-4022652c5953, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /aries, headers: {Host: ee.cloudflare.quest}}}
-  - {name: 🇺🇸 -美国-20.239.65.134, server: 20.239.65.134, port: 80, type: vmess, uuid: d41c193f-52ca-3ef9-9cf5-e7d50330f26e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/ws?ed=2048", headers: {Host: YouTube-aweikeji}}}
-  - {name: 🇺🇸 github.com/freefq - 美国Microsoft数据中心 1, server: 20.239.65.134, port: 80, type: vmess, uuid: d41c193f-52ca-3ef9-9cf5-e7d50330f26e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: YouTube-aweikeji}}}
-  - {name: 🇨🇦 加拿大(欢迎订阅Youtube破解资源君) 11, server: 198.57.27.218, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇨🇦 加拿大(欢迎订阅Youtube破解资源君) 12, server: 91.245.254.43, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
-  - {name: 🇺🇸 -美国-150.230.35.180, server: 150.230.35.180, port: 80, type: vmess, uuid: e10b4091-91f0-424b-8da0-686d6a9b8047, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇺🇸 美国_10201530, server: 150.230.35.180, port: 80, type: vmess, uuid: e10b4091-91f0-424b-8da0-686d6a9b8047, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇺🇸 美国(欢迎订阅Youtube破解资源君) 34, server: 148.72.174.46, port: 46642, type: ss, cipher: aes-256-gcm, password: gYL83DQWXuDbxmZAVVtUTXaK}
-  - {name: 🇺🇸 美国(欢迎订阅Youtube破解资源君) 36, server: 185.242.5.157, port: 48938, type: ss, cipher: aes-256-gcm, password: 4ejJ8n5ddLuYDUHGXJre2ufJ}
-  - {name: 🇺🇸 美国(欢迎订阅Youtube破解资源君) 37, server: 167.88.63.89, port: 8091, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: 🇨🇦 加拿大(欢迎订阅Youtube破解资源君) 13, server: 139.28.218.93, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
-  - {name: 🇨🇦 加拿大(欢迎订阅Youtube破解资源君) 14, server: 91.245.254.21, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: 🇸🇬 新加坡(欢迎订阅Youtube破解资源君) 4 2, server: 89.187.163.215, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 🇸🇬 新加坡(欢迎订阅Youtube破解资源君) 4, server: 89.187.163.215, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 🇭🇰 香港(欢迎订阅Youtube破解资源君) 8, server: 2.jp.zz.xxxxx.x-t-fuckword.network, port: 36671, type: trojan, password: 5f97472b-b910-32fd-bbd2-403f0c6c5ae0, sni: 2.jp.ld.xxxxx.x-t-fuckword.link, skip-cert-verify: false}
+  - {name: "🇭🇰 [10-20]-🇭🇰-香港-502-84.17.35.103", server: 84.17.35.103, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
+  - {name: 🇨🇳 github.com/freefq - 浙江省台州市移动 14, server: ecdyd-1049-v2-7.hkg-r-kcd-c.ap.cjhh.beauty, port: 29938, type: vmess, uuid: caac6285-511c-4a07-b6db-edfbdcfe3889, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /je5x3pBN1vez3NQudNkB, headers: {Host: s3.cjhh.beauty}}}
+  - {name: 🇨🇳 github.com/freefq - 浙江省台州市移动 18, server: ecdyd-1049-v2-7.hkg-r-kcd-c.ap.cjhh.beauty, port: 29938, type: vmess, uuid: caac6285-511c-4a07-b6db-edfbdcfe3889, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /je5x3pBN1vez3NQudNkB, headers: {Host: s3.cjhh.beauty}}}
+  - {name: 🇯🇵 日本-ss-193.38.139.203807-被墙-中转193.38.139.201-解锁日本地区NF非自制剧, server: 193.38.139.203, port: 807, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇯🇵 日本-ss-193.38.139.203809-被墙-中转193.38.139.201-解锁日本地区NF非自制剧, server: 193.38.139.203, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇯🇵 日本-ss-193.38.139.203803-被墙-中转193.38.139.201-解锁日本地区NF非自制剧, server: 193.38.139.203, port: 803, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇯🇵 日本-ss-193.38.139.204806-被墙-中转193.38.139.201-解锁日本地区NF非自制剧, server: 193.38.139.204, port: 806, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇯🇵 日本-ss-193.38.139.204809-被墙-中转193.38.139.201-解锁日本地区NF非自制剧, server: 193.38.139.204, port: 809, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇯🇵 日本-ss-193.38.139.204806-被墙-中转193.38.139.201-解锁日本地区NF非自制剧 2, server: 193.38.139.204, port: 806, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇯🇵 日本-ss-52.197.66.243443-被墙-直连-解锁日本地区NF非自制剧, server: 52.197.66.243, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 🇯🇵 日本-ss-52.197.66.243443-被墙-直连-解锁日本地区NF非自制剧 2, server: 52.197.66.243, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 🇯🇵 日本-vmess-146.56.40.11727675-被墙-直连-解锁韩国地区NF非自制剧, server: 146.56.40.117, port: 27675, type: vmess, uuid: 053ca0f4-057e-493d-ad30-5ba51f00f59c, alterId: 4, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇯🇵 日本-vmess-146.56.40.11727675-被墙-直连-解锁韩国地区NF非自制剧 2, server: 146.56.40.117, port: 27675, type: vmess, uuid: 053ca0f4-057e-493d-ad30-5ba51f00f59c, alterId: 4, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: "🇭🇰 [10-20]-🇭🇰-香港-436-84.17.35.103", server: 84.17.35.103, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
+  - {name: 🇸🇬 美国-vmess-ca.0112233.xyz8443-被墙-中转199.87.210.186-解锁新加坡地区NF非自制剧, server: ca.0112233.xyz, port: 8443, type: vmess, uuid: c3000e9d-bee7-4fdb-b312-dd07030f325d, alterId: 4, cipher: auto, tls: true, network: ws, ws-opts: {path: /home, headers: {Host: ca.0112233.xyz}}}
+  - {name: 🇸🇬 美国-vmess-ca.0112233.xyz8443-被墙-中转199.87.210.186-解锁新加坡地区NF非自制剧 2, server: ca.0112233.xyz, port: 8443, type: vmess, uuid: c3000e9d-bee7-4fdb-b312-dd07030f325d, alterId: 4, cipher: auto, tls: true, network: ws, ws-opts: {path: /home, headers: {Host: ca.0112233.xyz}}}
+  - {name: 🇯🇵 美国-vmess-jparm.fineyoo.cf443-被墙-中转152.70.81.66-解锁日本地区NF非自制剧, server: jparm.fineyoo.cf, port: 443, type: vmess, uuid: bd5ee249-fe7b-4669-a6d9-b3f5eecb98e6, alterId: 4, cipher: auto, tls: true, network: ws, ws-opts: {path: /123, headers: {Host: jparm.fineyoo.cf}}}
+  - {name: 🇯🇵 美国-vmess-jparm.fineyoo.cf443-被墙-中转152.70.81.66-解锁日本地区NF非自制剧 2, server: jparm.fineyoo.cf, port: 443, type: vmess, uuid: bd5ee249-fe7b-4669-a6d9-b3f5eecb98e6, alterId: 4, cipher: auto, tls: true, network: ws, ws-opts: {path: /123, headers: {Host: jparm.fineyoo.cf}}}
+  - {name: 🇯🇵 美国-vmess-jparm.fineyoo.ml443-被墙-中转138.2.33.90-解锁日本地区NF非自制剧, server: jparm.fineyoo.ml, port: 443, type: vmess, uuid: 10ba478e-9de1-4aa9-c09e-7707025334d3, alterId: 4, cipher: auto, tls: true, network: ws, ws-opts: {path: /123, headers: {Host: jparm.fineyoo.ml}}}
+  - {name: 🇯🇵 美国-vmess-jparm.fineyoo.ml443-被墙-中转138.2.33.90-解锁日本地区NF非自制剧 2, server: jparm.fineyoo.ml, port: 443, type: vmess, uuid: 10ba478e-9de1-4aa9-c09e-7707025334d3, alterId: 4, cipher: auto, tls: true, network: ws, ws-opts: {path: /123, headers: {Host: jparm.fineyoo.ml}}}
+  - {name: 🇯🇵 美国-vmess-jpamd.fineyoo.ml443-被墙-中转138.2.33.102-解锁日本地区NF非自制剧, server: jpamd.fineyoo.ml, port: 443, type: vmess, uuid: 35e5e2ea-1372-4745-dff8-fb2bd11016c4, alterId: 4, cipher: auto, tls: true, network: ws, ws-opts: {path: /123, headers: {Host: jpamd.fineyoo.ml}}}
+  - {name: 🇯🇵 美国-vmess-jpamd.fineyoo.ml443-被墙-中转138.2.33.102-解锁日本地区NF非自制剧 2, server: jpamd.fineyoo.ml, port: 443, type: vmess, uuid: 35e5e2ea-1372-4745-dff8-fb2bd11016c4, alterId: 4, cipher: auto, tls: true, network: ws, ws-opts: {path: /123, headers: {Host: jpamd.fineyoo.ml}}}
+  - {name: 🇰🇷 美国-vmess-amdkr.ptuu.ga443-被墙-中转152.69.229.222-解锁韩国地区NF非自制剧, server: amdkr.ptuu.ga, port: 443, type: vmess, uuid: a612b67f-a79b-4a71-a82b-a46906752023, alterId: 4, cipher: auto, tls: true, network: ws, ws-opts: {path: /408, headers: {Host: amdkr.ptuu.ga}}}
+  - {name: 🇰🇷 美国-vmess-amdkr.ptuu.ga443-被墙-中转152.69.229.222-解锁韩国地区NF非自制剧 2, server: amdkr.ptuu.ga, port: 443, type: vmess, uuid: a612b67f-a79b-4a71-a82b-a46906752023, alterId: 4, cipher: auto, tls: true, network: ws, ws-opts: {path: /408, headers: {Host: amdkr.ptuu.ga}}}
+  - {name: 🇰🇷 美国-vmess-amdkr.ptuu.ml443-被墙-中转146.56.96.75-解锁韩国地区NF非自制剧, server: amdkr.ptuu.ml, port: 443, type: vmess, uuid: e2cdc305-dda7-465e-b675-ba0468d2a8b3, alterId: 4, cipher: auto, tls: true, network: ws, ws-opts: {path: /987, headers: {Host: amdkr.ptuu.ml}}}
+  - {name: 🇺🇸 美国_1020801, server: 13.124.153.191, port: 80, type: vmess, uuid: 28844a22-3686-3bdd-8f4e-7f5e77dd850f, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /by.xbygood.xyz}}
   - {name: 🇨🇦 加拿大(欢迎订阅Youtube破解资源君) 15, server: 91.245.254.75, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
-  - {name: 🇺🇸 美国(欢迎订阅Youtube破解资源君) 38, server: 172.99.190.246, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇺🇸 美国(欢迎订阅Youtube破解资源君) 38 2, server: 172.99.190.246, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
   - {name: 🇨🇦 加拿大(欢迎订阅Youtube破解资源君) 16, server: 91.245.254.27, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: 🇨🇦 加拿大(欢迎订阅Youtube破解资源君) 16 2, server: 91.245.254.27, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
   - {name: "🇺🇸 [10-20]-🇺🇸-美国-890-209.216.92.212", server: 209.216.92.212, port: 47121, type: ss, cipher: aes-256-gcm, password: CTK8GXFQgKYQErrghPJfZ6tk}
   - {name: 🇺🇸 美国(欢迎订阅Youtube破解资源君) 39, server: 37.19.199.209, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
-  - {name: 🇺🇸 美国(欢迎订阅Youtube破解资源君) 26, server: 138.199.40.167, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: 🇺🇸 美国(欢迎订阅Youtube破解资源君) 39 2, server: 37.19.199.209, port: 34815, type: ss, cipher: aes-256-gcm, password: LkFAzkzXkSCRYa2CsRdL8cGb}
+  - {name: 🇨🇦 加拿大(欢迎订阅Youtube破解资源君) 14 2, server: 91.245.254.21, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
   - {name: 🇺🇸 美国(欢迎订阅Youtube破解资源君) 41, server: 172.99.190.35, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: "🇺🇸 美国(欢迎订阅Youtube破解资源君) 44trojan//88939272-790a-441f-b12b-8ce531aca810@polo01.kctr2038.icu443?allowInsecure=0#这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 5", server: 172.99.190.35, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 126, server: 38.143.66.99, port: 5001, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 102, server: shouer.azzhuangaping.tw, port: 80, type: vmess, uuid: 70de4924-d1ac-3482-a494-577b4ccc9b1d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /adobe, headers: {Host: shouer.azzhuangaping.tw}}}
-  - {name: mianfeifq 236, server: 103.177.248.160, port: 12425, type: trojan, password: 7rfcbuZdkU, skip-cert-verify: true}
-  - {name: 🇮🇩 印度尼西亚_1020010, server: 103.150.86.9, port: 80, type: vmess, uuid: 6211eb8a-e5ca-40f3-980f-a7ae6e95e5cb, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /vmess}}
-  - {name: _03, server: 128.1.134.126, port: 6666, type: vmess, uuid: 7fb3b571-cda8-40f6-c9e6-db9765ea8faa, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 美国(欢迎订阅Youtube破解资源君) 44, server: 172.99.190.35, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇺🇸 美国(欢迎订阅Youtube破解资源君) 41 2, server: 172.99.190.35, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇺🇸 美国(欢迎订阅Youtube破解资源君) 42, server: 192.154.248.179, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+  - {name: 🇨🇦 加拿大(欢迎订阅Youtube破解资源君) 18, server: 72.140.224.197, port: 802, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇺🇸 美国(欢迎订阅Youtube破解资源君) 43, server: 84.17.35.103, port: 31572, type: ss, cipher: aes-256-gcm, password: n8w4StnbVD9dmXYn4Ajt87EA}
+  - {name: 🇨🇦 加拿大(欢迎订阅Youtube破解资源君) 19, server: 134.195.198.195, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇺🇸 美国(欢迎订阅Youtube破解资源君) 45, server: 198.147.22.147, port: 38620, type: ss, cipher: aes-256-gcm, password: Kquv5UhvZXNMemAQy8DxZ7qn}
+  - {name: 🇺🇸 美国(欢迎订阅Youtube破解资源君) 46, server: 198.147.22.213, port: 33992, type: ss, cipher: aes-256-gcm, password: 8n6pwAcrrv2pj6tFY2p3TbQ6}
+  - {name: 🇨🇦 加拿大(欢迎订阅Youtube破解资源君) 20, server: 198.57.27.241, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇨🇦 加拿大(欢迎订阅Youtube破解资源君) 21, server: 198.57.27.247, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: 🇺🇸 美国(欢迎订阅Youtube破解资源君) 47, server: 66.115.177.156, port: 38620, type: ss, cipher: aes-256-gcm, password: Kquv5UhvZXNMemAQy8DxZ7qn}
+  - {name: 🇺🇸 美国(欢迎订阅Youtube破解资源君) 48, server: 66.115.182.77, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+  - {name: 🇺🇸 美国(欢迎订阅Youtube破解资源君) 49, server: 172.99.190.230, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: "🇺🇸 美国(欢迎订阅Youtube破解资源君) 50trojan//3a2c0c6c-9ee5-c05f-c951-fcd73831983e@kr05.wangxd.life3052?allowInsecure=0#这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 118", server: 172.107.233.230, port: 2376, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: Relay_ |34.20Mb, server: kr05.wangxd.life, port: 3052, type: trojan, password: 3a2c0c6c-9ee5-c05f-c951-fcd73831983e, skip-cert-verify: false}
+  - {name: 🇬🇷 -希腊-144.24.96.247, server: 144.24.96.247, port: 80, type: vmess, uuid: fa0702f4-8ec9-48e5-9b53-a0afb7c3717e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: v11-xg.ixigua.com}}}
+  - {name: 🇮🇳 印度_1020017, server: 144.24.96.247, port: 80, type: vmess, uuid: fa0702f4-8ec9-48e5-9b53-a0afb7c3717e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: v11-xg.ixigua.com}}}
+  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 117, server: 167.88.63.79, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
   - {name: _02, server: 23.91.100.243, port: 30862, type: vmess, uuid: 3b0f44e4-dd11-429d-c80f-615b10595db9, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 79, server: 148.72.171.180, port: 48794, type: ss, cipher: aes-256-gcm, password: r9Q3adc3ru9sfBDPEj4yp6U6}
-  - {name: "🇷🇴 [10-20]-🇷🇴-罗马尼亚-1050-91.245.254.43", server: 91.245.254.43, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
-  - {name: 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 80, server: 150.230.35.180, port: 80, type: vmess, uuid: e10b4091-91f0-424b-8da0-686d6a9b8047, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 81, server: 45.12.223.195, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
-  - {name: "[10-20]-🇦🇶-欧盟-892-45.12.223.195", server: 45.12.223.195, port: 49339, type: ss, cipher: aes-256-gcm, password: suucSeVLmt6PQKAP77NtGw9x}
-  - {name: 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 82, server: 194.150.167.42, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
-  - {name: 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 83, server: 148.72.174.48, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
-  - {name: 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 84, server: 134.195.196.165, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇬🇧 -英国-193.123.92.160, server: 193.123.92.160, port: 80, type: vmess, uuid: e10b4091-91f0-424b-8da0-686d6a9b8047, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 84 2, server: 134.195.196.165, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
   - {name: 罗马(欢迎订阅Youtube破解资源君) 9, server: 86.106.137.147, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 罗马(欢迎订阅Youtube破解资源君) 9 2, server: 86.106.137.147, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
   - {name: "🇷🇴 [10-20]-🇷🇴-罗马尼亚-504-91.245.254.27", server: 91.245.254.27, port: 50168, type: ss, cipher: aes-256-gcm, password: WCuz7yrfZSCQQXSNrtGPz2HT}
+  - {name: 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 83 2, server: 148.72.174.48, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
+  - {name: 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 83, server: 148.72.174.48, port: 40093, type: ss, cipher: aes-256-gcm, password: x23Z4LGkGDkThZ9Kaz4DURQp}
   - {name: 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 85, server: 209.216.92.212, port: 47121, type: ss, cipher: aes-256-gcm, password: CTK8GXFQgKYQErrghPJfZ6tk}
+  - {name: 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 85 2, server: 209.216.92.212, port: 47121, type: ss, cipher: aes-256-gcm, password: CTK8GXFQgKYQErrghPJfZ6tk}
   - {name: 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 86, server: 134.195.196.71, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
   - {name: 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 86 2, server: 134.195.196.71, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 86 2 2, server: 134.195.196.71, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
   - {name: 🇫🇷 法国(欢迎订阅Youtube破解资源君) 16, server: 185.166.84.83, port: 37473, type: ss, cipher: aes-256-gcm, password: enctdKyJfSu76VqznKwTt6Ap}
   - {name: 🇫🇷 法国(欢迎订阅Youtube破解资源君) 16 2, server: 185.166.84.83, port: 37473, type: ss, cipher: aes-256-gcm, password: enctdKyJfSu76VqznKwTt6Ap}
   - {name: 🇫🇷 法国(欢迎订阅Youtube破解资源君) 16 2 2, server: 185.166.84.83, port: 37473, type: ss, cipher: aes-256-gcm, password: enctdKyJfSu76VqznKwTt6Ap}
   - {name: 🇫🇷 法国(欢迎订阅Youtube破解资源君) 17, server: 185.166.84.31, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
   - {name: 🇫🇷 法国(欢迎订阅Youtube破解资源君) 17 2, server: 185.166.84.31, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 🇫🇷 法国(欢迎订阅Youtube破解资源君) 17 2 2, server: 185.166.84.31, port: 39772, type: ss, cipher: aes-256-gcm, password: CUndSZnYsPKcu6Kj8THVMBHD}
+  - {name: 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 88, server: 134.195.196.110, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -112,98 +113,108 @@ proxy-groups:
   - name: 🤘 手动选择
     type: select
     proxies:
-      - 🇰🇷 韩国_1020167
-      - 🇯🇵 -日本-vm12.leifengkeji.live
-      - 🇯🇵 [09-26]|openrunner|日本(JP)Japan/Tokyo_16
-      - 🇭🇰 HK 1 → openitsub.com
-      - 🇸🇬 -新加坡-sg02.xiaoqi99.cf
-      - 🇸🇬 新加坡_1020210
+      - 🇭🇰 github.com/freefq - 香港阿里云 1
+      - 🇭🇰 -香港-47.87.149.164
       - HK_217 2
-      - HK_251
-      - 🇭🇰 香港_1020444
-      - 🇭🇰 [10-20]-🇭🇰-香港-436-84.17.35.103
-      - 🇭🇰 香港(欢迎订阅Youtube破解资源君) 8
+      - 🇯🇵 github.com/freefq - 日本  48
       - 🇭🇰 香港(欢迎订阅Youtube破解资源君) 8 2
       - 🇭🇰 香港(欢迎订阅Youtube破解资源君) 8 2 2
       - 🇸🇬 新加坡(欢迎订阅Youtube破解资源君) 6
       - 🇸🇬 新加坡(欢迎订阅Youtube破解资源君) 6 2
       - 🇸🇬 新加坡(欢迎订阅Youtube破解资源君) 6 2 2
       - 🇸🇬 新加坡(欢迎订阅Youtube破解资源君) 7
-      - 🇸🇬 [10-20]-🇸🇬-新加坡-880-54.251.230.216
+      - 🇸🇬 [10-20]-🇸🇬-新加坡-3500-54.251.230.216
       - 🇸🇬 新加坡(欢迎订阅Youtube破解资源君) 7 2
-      - 🇭🇰 [10-20]-🇭🇰-香港-502-84.17.35.103
-      - 🇭🇰 香港(快嘴科技kkzui.com) 2
-      - 🇭🇰 香港(快嘴科技kkzui.com)
-      - 🇸🇬 新加坡(欢迎订阅Youtube破解资源君) 4
-      - 🇨🇳 github.com/freefq - 浙江省台州市移动 18
+      - 🇭🇰 HK 1 → openitsub.com
+      - 🇸🇬 新加坡(欢迎订阅Youtube破解资源君) 5
       - 🇰🇷 -韩国-www.apulnion.com
       - 🇰🇷 -韩国-www.apulnion.com 2
-      - 🇸🇬 新加坡 003
-      - 🇸🇬 SG【付费推荐：https//goo.gs/vip】 4
-      - 🇸🇬 新加坡_1020012
-      - 🇭🇰 香港_1020428
       - 🇸🇬 [10-20]-🇸🇬-新加坡-510-89.187.163.215
-      - 🇨🇳 github.com/freefq - 台湾省花莲县中华电信 30
-      - 🇨🇳 -台湾花莲县-36.227.229.227
-      - 🇨🇳 -日本-shouer.azzhuangaping.tw
-      - 🇰🇷 韩国_1020006
-      - 🇭🇰 香港_1020010
-      - 🇸🇬 -新加坡-139.162.14.93
-      - 🇯🇵 日本_1020279
-      - 🇯🇵 github.com/freefq - 日本东京都品川区Linode数据中心 1
-      - 🇯🇵 日本 010
-      - 🇯🇵 日本(TG频道@kxswa) 2 2
-      - 🇯🇵 github.com/freefq - 日本东京Linode数据中心 6
-      - 🇯🇵 日本(TG频道@kxswa)
-      - 🇯🇵 JP 1
-      - 🇺🇸 -美国-tr.33yun.xyz
-      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶DDOSing Network 16
-      - 🇺🇸 -美国-141.101.115.120
-      - 🇨🇦 github.com/freefq - 加拿大  28
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 17
-      - 🇺🇸 -美国-20.239.65.134
-      - 🇺🇸 github.com/freefq - 美国Microsoft数据中心 1
-      - 🇨🇦 加拿大(欢迎订阅Youtube破解资源君) 11
-      - 🇨🇦 加拿大(欢迎订阅Youtube破解资源君) 12
-      - 🇺🇸 -美国-150.230.35.180
-      - 🇺🇸 美国_10201530
-      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 34
-      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 36
-      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 37
-      - 🇨🇦 加拿大(欢迎订阅Youtube破解资源君) 13
-      - 🇨🇦 加拿大(欢迎订阅Youtube破解资源君) 14
+      - 🇸🇬 新加坡(欢迎订阅Youtube破解资源君) 4 2
+      - 🇸🇬 新加坡(欢迎订阅Youtube破解资源君) 4
+      - 🇭🇰 香港(欢迎订阅Youtube破解资源君) 8
+      - 🇭🇰 [10-20]-🇭🇰-香港-502-84.17.35.103
+      - 🇨🇳 github.com/freefq - 浙江省台州市移动 14
+      - 🇨🇳 github.com/freefq - 浙江省台州市移动 18
+      - 🇯🇵 日本-ss-193.38.139.203807-被墙-中转193.38.139.201-解锁日本地区NF非自制剧
+      - 🇯🇵 日本-ss-193.38.139.203809-被墙-中转193.38.139.201-解锁日本地区NF非自制剧
+      - 🇯🇵 日本-ss-193.38.139.203803-被墙-中转193.38.139.201-解锁日本地区NF非自制剧
+      - 🇯🇵 日本-ss-193.38.139.204806-被墙-中转193.38.139.201-解锁日本地区NF非自制剧
+      - 🇯🇵 日本-ss-193.38.139.204809-被墙-中转193.38.139.201-解锁日本地区NF非自制剧
+      - 🇯🇵 日本-ss-193.38.139.204806-被墙-中转193.38.139.201-解锁日本地区NF非自制剧 2
+      - 🇯🇵 日本-ss-52.197.66.243443-被墙-直连-解锁日本地区NF非自制剧
+      - 🇯🇵 日本-ss-52.197.66.243443-被墙-直连-解锁日本地区NF非自制剧 2
+      - 🇯🇵 日本-vmess-146.56.40.11727675-被墙-直连-解锁韩国地区NF非自制剧
+      - 🇯🇵 日本-vmess-146.56.40.11727675-被墙-直连-解锁韩国地区NF非自制剧 2
+      - 🇭🇰 [10-20]-🇭🇰-香港-436-84.17.35.103
+      - 🇸🇬 美国-vmess-ca.0112233.xyz8443-被墙-中转199.87.210.186-解锁新加坡地区NF非自制剧
+      - 🇸🇬 美国-vmess-ca.0112233.xyz8443-被墙-中转199.87.210.186-解锁新加坡地区NF非自制剧 2
+      - 🇯🇵 美国-vmess-jparm.fineyoo.cf443-被墙-中转152.70.81.66-解锁日本地区NF非自制剧
+      - 🇯🇵 美国-vmess-jparm.fineyoo.cf443-被墙-中转152.70.81.66-解锁日本地区NF非自制剧 2
+      - 🇯🇵 美国-vmess-jparm.fineyoo.ml443-被墙-中转138.2.33.90-解锁日本地区NF非自制剧
+      - 🇯🇵 美国-vmess-jparm.fineyoo.ml443-被墙-中转138.2.33.90-解锁日本地区NF非自制剧 2
+      - 🇯🇵 美国-vmess-jpamd.fineyoo.ml443-被墙-中转138.2.33.102-解锁日本地区NF非自制剧
+      - 🇯🇵 美国-vmess-jpamd.fineyoo.ml443-被墙-中转138.2.33.102-解锁日本地区NF非自制剧 2
+      - 🇰🇷 美国-vmess-amdkr.ptuu.ga443-被墙-中转152.69.229.222-解锁韩国地区NF非自制剧
+      - 🇰🇷 美国-vmess-amdkr.ptuu.ga443-被墙-中转152.69.229.222-解锁韩国地区NF非自制剧 2
+      - 🇰🇷 美国-vmess-amdkr.ptuu.ml443-被墙-中转146.56.96.75-解锁韩国地区NF非自制剧
+      - 🇺🇸 美国_1020801
       - 🇨🇦 加拿大(欢迎订阅Youtube破解资源君) 15
-      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 38
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 38 2
       - 🇨🇦 加拿大(欢迎订阅Youtube破解资源君) 16
+      - 🇨🇦 加拿大(欢迎订阅Youtube破解资源君) 16 2
       - 🇺🇸 [10-20]-🇺🇸-美国-890-209.216.92.212
       - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 39
-      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 26
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 39 2
+      - 🇨🇦 加拿大(欢迎订阅Youtube破解资源君) 14 2
       - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 41
-      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 44trojan//88939272-790a-441f-b12b-8ce531aca810@polo01.kctr2038.icu443?allowInsecure=0#这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 5
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 126
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 102
-      - mianfeifq 236
-      - 🇮🇩 印度尼西亚_1020010
-      - _03
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 44
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 41 2
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 42
+      - 🇨🇦 加拿大(欢迎订阅Youtube破解资源君) 18
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 43
+      - 🇨🇦 加拿大(欢迎订阅Youtube破解资源君) 19
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 45
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 46
+      - 🇨🇦 加拿大(欢迎订阅Youtube破解资源君) 20
+      - 🇨🇦 加拿大(欢迎订阅Youtube破解资源君) 21
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 47
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 48
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 49
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 50trojan//3a2c0c6c-9ee5-c05f-c951-fcd73831983e@kr05.wangxd.life3052?allowInsecure=0#这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 118
+      - Relay_ |34.20Mb
+      - 🇬🇷 -希腊-144.24.96.247
+      - 🇮🇳 印度_1020017
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 117
       - _02
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 79
-      - 🇷🇴 [10-20]-🇷🇴-罗马尼亚-1050-91.245.254.43
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 80
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 81
-      - "[10-20]-🇦🇶-欧盟-892-45.12.223.195"
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 82
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 83
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 84
+      - 🇬🇧 -英国-193.123.92.160
+      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 84 2
       - 罗马(欢迎订阅Youtube破解资源君) 9
+      - 罗马(欢迎订阅Youtube破解资源君) 9 2
       - 🇷🇴 [10-20]-🇷🇴-罗马尼亚-504-91.245.254.27
+      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 83 2
+      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 83
       - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 85
+      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 85 2
       - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 86
       - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 86 2
+      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 86 2 2
       - 🇫🇷 法国(欢迎订阅Youtube破解资源君) 16
       - 🇫🇷 法国(欢迎订阅Youtube破解资源君) 16 2
       - 🇫🇷 法国(欢迎订阅Youtube破解资源君) 16 2 2
       - 🇫🇷 法国(欢迎订阅Youtube破解资源君) 17
       - 🇫🇷 法国(欢迎订阅Youtube破解资源君) 17 2
+      - 🇫🇷 法国(欢迎订阅Youtube破解资源君) 17 2 2
+      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 88
+  - name: 🏳️‍🌈 国家选择
+    type: select
+    proxies:
+      - 美国
+      - 香港
+      - 狮城
+      - 日本
+      - 台湾
+      - 韩国
   - name: 📺 国外媒体
     type: select
     proxies:
@@ -225,21 +236,6 @@ proxy-groups:
       - 🚀 节点选择
       - 🏳️‍🌈 国家选择
       - DIRECT
-  - name: 🧱 国内网站
-    type: select
-    proxies:
-      - 🚀 节点选择
-      - 🏳️‍🌈 国家选择
-      - DIRECT
-  - name: 🏳️‍🌈 国家选择
-    type: select
-    proxies:
-      - 美国
-      - 香港
-      - 狮城
-      - 日本
-      - 台湾
-      - 韩国
   - name: 🐟 漏网之鱼
     type: select
     proxies:
@@ -248,10 +244,11 @@ proxy-groups:
       - 🌏 东亚地区
       - 🌍 其它地区
       - DIRECT
-  - name: 🆎 广告拦截
+  - name: 🧱 国内网站
     type: select
     proxies:
-      - REJECT
+      - 🚀 节点选择
+      - 🏳️‍🌈 国家选择
       - DIRECT
   - name: ♻️ 自动选择
     type: url-test
@@ -259,403 +256,430 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - 🇰🇷 韩国_1020167
-      - 🇯🇵 -日本-vm12.leifengkeji.live
-      - 🇯🇵 [09-26]|openrunner|日本(JP)Japan/Tokyo_16
-      - 🇭🇰 HK 1 → openitsub.com
-      - 🇸🇬 -新加坡-sg02.xiaoqi99.cf
-      - 🇸🇬 新加坡_1020210
+      - 🇭🇰 github.com/freefq - 香港阿里云 1
+      - 🇭🇰 -香港-47.87.149.164
       - HK_217 2
-      - HK_251
-      - 🇭🇰 香港_1020444
-      - 🇭🇰 [10-20]-🇭🇰-香港-436-84.17.35.103
-      - 🇭🇰 香港(欢迎订阅Youtube破解资源君) 8
+      - 🇯🇵 github.com/freefq - 日本  48
       - 🇭🇰 香港(欢迎订阅Youtube破解资源君) 8 2
       - 🇭🇰 香港(欢迎订阅Youtube破解资源君) 8 2 2
       - 🇸🇬 新加坡(欢迎订阅Youtube破解资源君) 6
       - 🇸🇬 新加坡(欢迎订阅Youtube破解资源君) 6 2
       - 🇸🇬 新加坡(欢迎订阅Youtube破解资源君) 6 2 2
       - 🇸🇬 新加坡(欢迎订阅Youtube破解资源君) 7
-      - 🇸🇬 [10-20]-🇸🇬-新加坡-880-54.251.230.216
+      - 🇸🇬 [10-20]-🇸🇬-新加坡-3500-54.251.230.216
       - 🇸🇬 新加坡(欢迎订阅Youtube破解资源君) 7 2
-      - 🇭🇰 [10-20]-🇭🇰-香港-502-84.17.35.103
-      - 🇭🇰 香港(快嘴科技kkzui.com) 2
-      - 🇭🇰 香港(快嘴科技kkzui.com)
-      - 🇸🇬 新加坡(欢迎订阅Youtube破解资源君) 4
-      - 🇨🇳 github.com/freefq - 浙江省台州市移动 18
+      - 🇭🇰 HK 1 → openitsub.com
+      - 🇸🇬 新加坡(欢迎订阅Youtube破解资源君) 5
       - 🇰🇷 -韩国-www.apulnion.com
       - 🇰🇷 -韩国-www.apulnion.com 2
-      - 🇸🇬 新加坡 003
-      - 🇸🇬 SG【付费推荐：https//goo.gs/vip】 4
-      - 🇸🇬 新加坡_1020012
-      - 🇭🇰 香港_1020428
       - 🇸🇬 [10-20]-🇸🇬-新加坡-510-89.187.163.215
-      - 🇨🇳 github.com/freefq - 台湾省花莲县中华电信 30
-      - 🇨🇳 -台湾花莲县-36.227.229.227
-      - 🇨🇳 -日本-shouer.azzhuangaping.tw
-      - 🇰🇷 韩国_1020006
-      - 🇭🇰 香港_1020010
-      - 🇸🇬 -新加坡-139.162.14.93
-      - 🇯🇵 日本_1020279
-      - 🇯🇵 github.com/freefq - 日本东京都品川区Linode数据中心 1
-      - 🇯🇵 日本 010
-      - 🇯🇵 日本(TG频道@kxswa) 2 2
-      - 🇯🇵 github.com/freefq - 日本东京Linode数据中心 6
-      - 🇯🇵 日本(TG频道@kxswa)
-      - 🇯🇵 JP 1
-      - 🇺🇸 -美国-tr.33yun.xyz
-      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶DDOSing Network 16
-      - 🇺🇸 -美国-141.101.115.120
-      - 🇨🇦 github.com/freefq - 加拿大  28
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 17
-      - 🇺🇸 -美国-20.239.65.134
-      - 🇺🇸 github.com/freefq - 美国Microsoft数据中心 1
-      - 🇨🇦 加拿大(欢迎订阅Youtube破解资源君) 11
-      - 🇨🇦 加拿大(欢迎订阅Youtube破解资源君) 12
-      - 🇺🇸 -美国-150.230.35.180
-      - 🇺🇸 美国_10201530
-      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 34
-      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 36
-      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 37
-      - 🇨🇦 加拿大(欢迎订阅Youtube破解资源君) 13
-      - 🇨🇦 加拿大(欢迎订阅Youtube破解资源君) 14
+      - 🇸🇬 新加坡(欢迎订阅Youtube破解资源君) 4 2
+      - 🇸🇬 新加坡(欢迎订阅Youtube破解资源君) 4
+      - 🇭🇰 香港(欢迎订阅Youtube破解资源君) 8
+      - 🇭🇰 [10-20]-🇭🇰-香港-502-84.17.35.103
+      - 🇨🇳 github.com/freefq - 浙江省台州市移动 14
+      - 🇨🇳 github.com/freefq - 浙江省台州市移动 18
+      - 🇯🇵 日本-ss-193.38.139.203807-被墙-中转193.38.139.201-解锁日本地区NF非自制剧
+      - 🇯🇵 日本-ss-193.38.139.203809-被墙-中转193.38.139.201-解锁日本地区NF非自制剧
+      - 🇯🇵 日本-ss-193.38.139.203803-被墙-中转193.38.139.201-解锁日本地区NF非自制剧
+      - 🇯🇵 日本-ss-193.38.139.204806-被墙-中转193.38.139.201-解锁日本地区NF非自制剧
+      - 🇯🇵 日本-ss-193.38.139.204809-被墙-中转193.38.139.201-解锁日本地区NF非自制剧
+      - 🇯🇵 日本-ss-193.38.139.204806-被墙-中转193.38.139.201-解锁日本地区NF非自制剧 2
+      - 🇯🇵 日本-ss-52.197.66.243443-被墙-直连-解锁日本地区NF非自制剧
+      - 🇯🇵 日本-ss-52.197.66.243443-被墙-直连-解锁日本地区NF非自制剧 2
+      - 🇯🇵 日本-vmess-146.56.40.11727675-被墙-直连-解锁韩国地区NF非自制剧
+      - 🇯🇵 日本-vmess-146.56.40.11727675-被墙-直连-解锁韩国地区NF非自制剧 2
+      - 🇭🇰 [10-20]-🇭🇰-香港-436-84.17.35.103
+      - 🇸🇬 美国-vmess-ca.0112233.xyz8443-被墙-中转199.87.210.186-解锁新加坡地区NF非自制剧
+      - 🇸🇬 美国-vmess-ca.0112233.xyz8443-被墙-中转199.87.210.186-解锁新加坡地区NF非自制剧 2
+      - 🇯🇵 美国-vmess-jparm.fineyoo.cf443-被墙-中转152.70.81.66-解锁日本地区NF非自制剧
+      - 🇯🇵 美国-vmess-jparm.fineyoo.cf443-被墙-中转152.70.81.66-解锁日本地区NF非自制剧 2
+      - 🇯🇵 美国-vmess-jparm.fineyoo.ml443-被墙-中转138.2.33.90-解锁日本地区NF非自制剧
+      - 🇯🇵 美国-vmess-jparm.fineyoo.ml443-被墙-中转138.2.33.90-解锁日本地区NF非自制剧 2
+      - 🇯🇵 美国-vmess-jpamd.fineyoo.ml443-被墙-中转138.2.33.102-解锁日本地区NF非自制剧
+      - 🇯🇵 美国-vmess-jpamd.fineyoo.ml443-被墙-中转138.2.33.102-解锁日本地区NF非自制剧 2
+      - 🇰🇷 美国-vmess-amdkr.ptuu.ga443-被墙-中转152.69.229.222-解锁韩国地区NF非自制剧
+      - 🇰🇷 美国-vmess-amdkr.ptuu.ga443-被墙-中转152.69.229.222-解锁韩国地区NF非自制剧 2
+      - 🇰🇷 美国-vmess-amdkr.ptuu.ml443-被墙-中转146.56.96.75-解锁韩国地区NF非自制剧
+      - 🇺🇸 美国_1020801
       - 🇨🇦 加拿大(欢迎订阅Youtube破解资源君) 15
-      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 38
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 38 2
       - 🇨🇦 加拿大(欢迎订阅Youtube破解资源君) 16
+      - 🇨🇦 加拿大(欢迎订阅Youtube破解资源君) 16 2
       - 🇺🇸 [10-20]-🇺🇸-美国-890-209.216.92.212
       - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 39
-      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 26
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 39 2
+      - 🇨🇦 加拿大(欢迎订阅Youtube破解资源君) 14 2
       - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 41
-      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 44trojan//88939272-790a-441f-b12b-8ce531aca810@polo01.kctr2038.icu443?allowInsecure=0#这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 5
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 126
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 102
-      - mianfeifq 236
-      - 🇮🇩 印度尼西亚_1020010
-      - _03
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 44
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 41 2
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 42
+      - 🇨🇦 加拿大(欢迎订阅Youtube破解资源君) 18
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 43
+      - 🇨🇦 加拿大(欢迎订阅Youtube破解资源君) 19
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 45
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 46
+      - 🇨🇦 加拿大(欢迎订阅Youtube破解资源君) 20
+      - 🇨🇦 加拿大(欢迎订阅Youtube破解资源君) 21
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 47
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 48
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 49
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 50trojan//3a2c0c6c-9ee5-c05f-c951-fcd73831983e@kr05.wangxd.life3052?allowInsecure=0#这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 118
+      - Relay_ |34.20Mb
+      - 🇬🇷 -希腊-144.24.96.247
+      - 🇮🇳 印度_1020017
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 117
       - _02
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 79
-      - 🇷🇴 [10-20]-🇷🇴-罗马尼亚-1050-91.245.254.43
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 80
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 81
-      - "[10-20]-🇦🇶-欧盟-892-45.12.223.195"
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 82
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 83
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 84
+      - 🇬🇧 -英国-193.123.92.160
+      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 84 2
       - 罗马(欢迎订阅Youtube破解资源君) 9
+      - 罗马(欢迎订阅Youtube破解资源君) 9 2
       - 🇷🇴 [10-20]-🇷🇴-罗马尼亚-504-91.245.254.27
+      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 83 2
+      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 83
       - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 85
+      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 85 2
       - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 86
       - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 86 2
+      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 86 2 2
       - 🇫🇷 法国(欢迎订阅Youtube破解资源君) 16
       - 🇫🇷 法国(欢迎订阅Youtube破解资源君) 16 2
       - 🇫🇷 法国(欢迎订阅Youtube破解资源君) 16 2 2
       - 🇫🇷 法国(欢迎订阅Youtube破解资源君) 17
       - 🇫🇷 法国(欢迎订阅Youtube破解资源君) 17 2
+      - 🇫🇷 法国(欢迎订阅Youtube破解资源君) 17 2 2
+      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 88
   - name: ⚡ 故障转移
     type: fallback
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇰🇷 韩国_1020167
-      - 🇯🇵 -日本-vm12.leifengkeji.live
-      - 🇯🇵 [09-26]|openrunner|日本(JP)Japan/Tokyo_16
-      - 🇭🇰 HK 1 → openitsub.com
-      - 🇸🇬 -新加坡-sg02.xiaoqi99.cf
-      - 🇸🇬 新加坡_1020210
+      - 🇭🇰 github.com/freefq - 香港阿里云 1
+      - 🇭🇰 -香港-47.87.149.164
       - HK_217 2
-      - HK_251
-      - 🇭🇰 香港_1020444
-      - 🇭🇰 [10-20]-🇭🇰-香港-436-84.17.35.103
-      - 🇭🇰 香港(欢迎订阅Youtube破解资源君) 8
+      - 🇯🇵 github.com/freefq - 日本  48
       - 🇭🇰 香港(欢迎订阅Youtube破解资源君) 8 2
       - 🇭🇰 香港(欢迎订阅Youtube破解资源君) 8 2 2
       - 🇸🇬 新加坡(欢迎订阅Youtube破解资源君) 6
       - 🇸🇬 新加坡(欢迎订阅Youtube破解资源君) 6 2
       - 🇸🇬 新加坡(欢迎订阅Youtube破解资源君) 6 2 2
       - 🇸🇬 新加坡(欢迎订阅Youtube破解资源君) 7
-      - 🇸🇬 [10-20]-🇸🇬-新加坡-880-54.251.230.216
+      - 🇸🇬 [10-20]-🇸🇬-新加坡-3500-54.251.230.216
       - 🇸🇬 新加坡(欢迎订阅Youtube破解资源君) 7 2
-      - 🇭🇰 [10-20]-🇭🇰-香港-502-84.17.35.103
-      - 🇭🇰 香港(快嘴科技kkzui.com) 2
-      - 🇭🇰 香港(快嘴科技kkzui.com)
-      - 🇸🇬 新加坡(欢迎订阅Youtube破解资源君) 4
-      - 🇨🇳 github.com/freefq - 浙江省台州市移动 18
+      - 🇭🇰 HK 1 → openitsub.com
+      - 🇸🇬 新加坡(欢迎订阅Youtube破解资源君) 5
       - 🇰🇷 -韩国-www.apulnion.com
       - 🇰🇷 -韩国-www.apulnion.com 2
-      - 🇸🇬 新加坡 003
-      - 🇸🇬 SG【付费推荐：https//goo.gs/vip】 4
-      - 🇸🇬 新加坡_1020012
-      - 🇭🇰 香港_1020428
       - 🇸🇬 [10-20]-🇸🇬-新加坡-510-89.187.163.215
-      - 🇨🇳 github.com/freefq - 台湾省花莲县中华电信 30
-      - 🇨🇳 -台湾花莲县-36.227.229.227
-      - 🇨🇳 -日本-shouer.azzhuangaping.tw
-      - 🇰🇷 韩国_1020006
-      - 🇭🇰 香港_1020010
-      - 🇸🇬 -新加坡-139.162.14.93
-      - 🇯🇵 日本_1020279
-      - 🇯🇵 github.com/freefq - 日本东京都品川区Linode数据中心 1
-      - 🇯🇵 日本 010
-      - 🇯🇵 日本(TG频道@kxswa) 2 2
-      - 🇯🇵 github.com/freefq - 日本东京Linode数据中心 6
-      - 🇯🇵 日本(TG频道@kxswa)
-      - 🇯🇵 JP 1
-      - 🇺🇸 -美国-tr.33yun.xyz
-      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶DDOSing Network 16
-      - 🇺🇸 -美国-141.101.115.120
-      - 🇨🇦 github.com/freefq - 加拿大  28
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 17
-      - 🇺🇸 -美国-20.239.65.134
-      - 🇺🇸 github.com/freefq - 美国Microsoft数据中心 1
-      - 🇨🇦 加拿大(欢迎订阅Youtube破解资源君) 11
-      - 🇨🇦 加拿大(欢迎订阅Youtube破解资源君) 12
-      - 🇺🇸 -美国-150.230.35.180
-      - 🇺🇸 美国_10201530
-      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 34
-      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 36
-      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 37
-      - 🇨🇦 加拿大(欢迎订阅Youtube破解资源君) 13
-      - 🇨🇦 加拿大(欢迎订阅Youtube破解资源君) 14
+      - 🇸🇬 新加坡(欢迎订阅Youtube破解资源君) 4 2
+      - 🇸🇬 新加坡(欢迎订阅Youtube破解资源君) 4
+      - 🇭🇰 香港(欢迎订阅Youtube破解资源君) 8
+      - 🇭🇰 [10-20]-🇭🇰-香港-502-84.17.35.103
+      - 🇨🇳 github.com/freefq - 浙江省台州市移动 14
+      - 🇨🇳 github.com/freefq - 浙江省台州市移动 18
+      - 🇯🇵 日本-ss-193.38.139.203807-被墙-中转193.38.139.201-解锁日本地区NF非自制剧
+      - 🇯🇵 日本-ss-193.38.139.203809-被墙-中转193.38.139.201-解锁日本地区NF非自制剧
+      - 🇯🇵 日本-ss-193.38.139.203803-被墙-中转193.38.139.201-解锁日本地区NF非自制剧
+      - 🇯🇵 日本-ss-193.38.139.204806-被墙-中转193.38.139.201-解锁日本地区NF非自制剧
+      - 🇯🇵 日本-ss-193.38.139.204809-被墙-中转193.38.139.201-解锁日本地区NF非自制剧
+      - 🇯🇵 日本-ss-193.38.139.204806-被墙-中转193.38.139.201-解锁日本地区NF非自制剧 2
+      - 🇯🇵 日本-ss-52.197.66.243443-被墙-直连-解锁日本地区NF非自制剧
+      - 🇯🇵 日本-ss-52.197.66.243443-被墙-直连-解锁日本地区NF非自制剧 2
+      - 🇯🇵 日本-vmess-146.56.40.11727675-被墙-直连-解锁韩国地区NF非自制剧
+      - 🇯🇵 日本-vmess-146.56.40.11727675-被墙-直连-解锁韩国地区NF非自制剧 2
+      - 🇭🇰 [10-20]-🇭🇰-香港-436-84.17.35.103
+      - 🇸🇬 美国-vmess-ca.0112233.xyz8443-被墙-中转199.87.210.186-解锁新加坡地区NF非自制剧
+      - 🇸🇬 美国-vmess-ca.0112233.xyz8443-被墙-中转199.87.210.186-解锁新加坡地区NF非自制剧 2
+      - 🇯🇵 美国-vmess-jparm.fineyoo.cf443-被墙-中转152.70.81.66-解锁日本地区NF非自制剧
+      - 🇯🇵 美国-vmess-jparm.fineyoo.cf443-被墙-中转152.70.81.66-解锁日本地区NF非自制剧 2
+      - 🇯🇵 美国-vmess-jparm.fineyoo.ml443-被墙-中转138.2.33.90-解锁日本地区NF非自制剧
+      - 🇯🇵 美国-vmess-jparm.fineyoo.ml443-被墙-中转138.2.33.90-解锁日本地区NF非自制剧 2
+      - 🇯🇵 美国-vmess-jpamd.fineyoo.ml443-被墙-中转138.2.33.102-解锁日本地区NF非自制剧
+      - 🇯🇵 美国-vmess-jpamd.fineyoo.ml443-被墙-中转138.2.33.102-解锁日本地区NF非自制剧 2
+      - 🇰🇷 美国-vmess-amdkr.ptuu.ga443-被墙-中转152.69.229.222-解锁韩国地区NF非自制剧
+      - 🇰🇷 美国-vmess-amdkr.ptuu.ga443-被墙-中转152.69.229.222-解锁韩国地区NF非自制剧 2
+      - 🇰🇷 美国-vmess-amdkr.ptuu.ml443-被墙-中转146.56.96.75-解锁韩国地区NF非自制剧
+      - 🇺🇸 美国_1020801
       - 🇨🇦 加拿大(欢迎订阅Youtube破解资源君) 15
-      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 38
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 38 2
       - 🇨🇦 加拿大(欢迎订阅Youtube破解资源君) 16
+      - 🇨🇦 加拿大(欢迎订阅Youtube破解资源君) 16 2
       - 🇺🇸 [10-20]-🇺🇸-美国-890-209.216.92.212
       - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 39
-      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 26
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 39 2
+      - 🇨🇦 加拿大(欢迎订阅Youtube破解资源君) 14 2
       - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 41
-      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 44trojan//88939272-790a-441f-b12b-8ce531aca810@polo01.kctr2038.icu443?allowInsecure=0#这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 5
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 126
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 102
-      - mianfeifq 236
-      - 🇮🇩 印度尼西亚_1020010
-      - _03
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 44
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 41 2
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 42
+      - 🇨🇦 加拿大(欢迎订阅Youtube破解资源君) 18
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 43
+      - 🇨🇦 加拿大(欢迎订阅Youtube破解资源君) 19
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 45
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 46
+      - 🇨🇦 加拿大(欢迎订阅Youtube破解资源君) 20
+      - 🇨🇦 加拿大(欢迎订阅Youtube破解资源君) 21
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 47
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 48
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 49
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 50trojan//3a2c0c6c-9ee5-c05f-c951-fcd73831983e@kr05.wangxd.life3052?allowInsecure=0#这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 118
+      - Relay_ |34.20Mb
+      - 🇬🇷 -希腊-144.24.96.247
+      - 🇮🇳 印度_1020017
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 117
       - _02
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 79
-      - 🇷🇴 [10-20]-🇷🇴-罗马尼亚-1050-91.245.254.43
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 80
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 81
-      - "[10-20]-🇦🇶-欧盟-892-45.12.223.195"
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 82
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 83
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 84
+      - 🇬🇧 -英国-193.123.92.160
+      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 84 2
       - 罗马(欢迎订阅Youtube破解资源君) 9
+      - 罗马(欢迎订阅Youtube破解资源君) 9 2
       - 🇷🇴 [10-20]-🇷🇴-罗马尼亚-504-91.245.254.27
+      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 83 2
+      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 83
       - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 85
+      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 85 2
       - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 86
       - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 86 2
+      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 86 2 2
       - 🇫🇷 法国(欢迎订阅Youtube破解资源君) 16
       - 🇫🇷 法国(欢迎订阅Youtube破解资源君) 16 2
       - 🇫🇷 法国(欢迎订阅Youtube破解资源君) 16 2 2
       - 🇫🇷 法国(欢迎订阅Youtube破解资源君) 17
       - 🇫🇷 法国(欢迎订阅Youtube破解资源君) 17 2
+      - 🇫🇷 法国(欢迎订阅Youtube破解资源君) 17 2 2
+      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 88
   - name: 🌎 北美地区
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
-      - 🇺🇸 -美国-tr.33yun.xyz
-      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶DDOSing Network 16
-      - 🇺🇸 -美国-141.101.115.120
-      - 🇨🇦 github.com/freefq - 加拿大  28
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 17
-      - 🇺🇸 -美国-20.239.65.134
-      - 🇺🇸 github.com/freefq - 美国Microsoft数据中心 1
-      - 🇨🇦 加拿大(欢迎订阅Youtube破解资源君) 11
-      - 🇨🇦 加拿大(欢迎订阅Youtube破解资源君) 12
-      - 🇺🇸 -美国-150.230.35.180
-      - 🇺🇸 美国_10201530
-      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 34
-      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 36
-      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 37
-      - 🇨🇦 加拿大(欢迎订阅Youtube破解资源君) 13
-      - 🇨🇦 加拿大(欢迎订阅Youtube破解资源君) 14
+      - 🇸🇬 美国-vmess-ca.0112233.xyz8443-被墙-中转199.87.210.186-解锁新加坡地区NF非自制剧
+      - 🇸🇬 美国-vmess-ca.0112233.xyz8443-被墙-中转199.87.210.186-解锁新加坡地区NF非自制剧 2
+      - 🇯🇵 美国-vmess-jparm.fineyoo.cf443-被墙-中转152.70.81.66-解锁日本地区NF非自制剧
+      - 🇯🇵 美国-vmess-jparm.fineyoo.cf443-被墙-中转152.70.81.66-解锁日本地区NF非自制剧 2
+      - 🇯🇵 美国-vmess-jparm.fineyoo.ml443-被墙-中转138.2.33.90-解锁日本地区NF非自制剧
+      - 🇯🇵 美国-vmess-jparm.fineyoo.ml443-被墙-中转138.2.33.90-解锁日本地区NF非自制剧 2
+      - 🇯🇵 美国-vmess-jpamd.fineyoo.ml443-被墙-中转138.2.33.102-解锁日本地区NF非自制剧
+      - 🇯🇵 美国-vmess-jpamd.fineyoo.ml443-被墙-中转138.2.33.102-解锁日本地区NF非自制剧 2
+      - 🇰🇷 美国-vmess-amdkr.ptuu.ga443-被墙-中转152.69.229.222-解锁韩国地区NF非自制剧
+      - 🇰🇷 美国-vmess-amdkr.ptuu.ga443-被墙-中转152.69.229.222-解锁韩国地区NF非自制剧 2
+      - 🇰🇷 美国-vmess-amdkr.ptuu.ml443-被墙-中转146.56.96.75-解锁韩国地区NF非自制剧
+      - 🇺🇸 美国_1020801
       - 🇨🇦 加拿大(欢迎订阅Youtube破解资源君) 15
-      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 38
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 38 2
       - 🇨🇦 加拿大(欢迎订阅Youtube破解资源君) 16
+      - 🇨🇦 加拿大(欢迎订阅Youtube破解资源君) 16 2
       - 🇺🇸 [10-20]-🇺🇸-美国-890-209.216.92.212
       - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 39
-      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 26
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 39 2
+      - 🇨🇦 加拿大(欢迎订阅Youtube破解资源君) 14 2
       - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 41
-      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 44trojan//88939272-790a-441f-b12b-8ce531aca810@polo01.kctr2038.icu443?allowInsecure=0#这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 5
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 44
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 41 2
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 42
+      - 🇨🇦 加拿大(欢迎订阅Youtube破解资源君) 18
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 43
+      - 🇨🇦 加拿大(欢迎订阅Youtube破解资源君) 19
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 45
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 46
+      - 🇨🇦 加拿大(欢迎订阅Youtube破解资源君) 20
+      - 🇨🇦 加拿大(欢迎订阅Youtube破解资源君) 21
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 47
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 48
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 49
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 50trojan//3a2c0c6c-9ee5-c05f-c951-fcd73831983e@kr05.wangxd.life3052?allowInsecure=0#这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 118
   - name: 🌏 东亚地区
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
-      - 🇰🇷 韩国_1020167
-      - 🇯🇵 -日本-vm12.leifengkeji.live
-      - 🇯🇵 [09-26]|openrunner|日本(JP)Japan/Tokyo_16
-      - 🇭🇰 HK 1 → openitsub.com
-      - 🇸🇬 -新加坡-sg02.xiaoqi99.cf
-      - 🇸🇬 新加坡_1020210
+      - 🇭🇰 github.com/freefq - 香港阿里云 1
+      - 🇭🇰 -香港-47.87.149.164
       - HK_217 2
-      - HK_251
-      - 🇭🇰 香港_1020444
-      - 🇭🇰 [10-20]-🇭🇰-香港-436-84.17.35.103
-      - 🇭🇰 香港(欢迎订阅Youtube破解资源君) 8
+      - 🇯🇵 github.com/freefq - 日本  48
       - 🇭🇰 香港(欢迎订阅Youtube破解资源君) 8 2
       - 🇭🇰 香港(欢迎订阅Youtube破解资源君) 8 2 2
       - 🇸🇬 新加坡(欢迎订阅Youtube破解资源君) 6
       - 🇸🇬 新加坡(欢迎订阅Youtube破解资源君) 6 2
       - 🇸🇬 新加坡(欢迎订阅Youtube破解资源君) 6 2 2
       - 🇸🇬 新加坡(欢迎订阅Youtube破解资源君) 7
-      - 🇸🇬 [10-20]-🇸🇬-新加坡-880-54.251.230.216
+      - 🇸🇬 [10-20]-🇸🇬-新加坡-3500-54.251.230.216
       - 🇸🇬 新加坡(欢迎订阅Youtube破解资源君) 7 2
-      - 🇭🇰 [10-20]-🇭🇰-香港-502-84.17.35.103
-      - 🇭🇰 香港(快嘴科技kkzui.com) 2
-      - 🇭🇰 香港(快嘴科技kkzui.com)
-      - 🇸🇬 新加坡(欢迎订阅Youtube破解资源君) 4
-      - 🇨🇳 github.com/freefq - 浙江省台州市移动 18
+      - 🇭🇰 HK 1 → openitsub.com
+      - 🇸🇬 新加坡(欢迎订阅Youtube破解资源君) 5
       - 🇰🇷 -韩国-www.apulnion.com
       - 🇰🇷 -韩国-www.apulnion.com 2
-      - 🇸🇬 新加坡 003
-      - 🇸🇬 SG【付费推荐：https//goo.gs/vip】 4
-      - 🇸🇬 新加坡_1020012
-      - 🇭🇰 香港_1020428
       - 🇸🇬 [10-20]-🇸🇬-新加坡-510-89.187.163.215
-      - 🇨🇳 github.com/freefq - 台湾省花莲县中华电信 30
-      - 🇨🇳 -台湾花莲县-36.227.229.227
-      - 🇨🇳 -日本-shouer.azzhuangaping.tw
-      - 🇰🇷 韩国_1020006
-      - 🇭🇰 香港_1020010
-      - 🇸🇬 -新加坡-139.162.14.93
-      - 🇯🇵 日本_1020279
-      - 🇯🇵 github.com/freefq - 日本东京都品川区Linode数据中心 1
-      - 🇯🇵 日本 010
-      - 🇯🇵 日本(TG频道@kxswa) 2 2
-      - 🇯🇵 github.com/freefq - 日本东京Linode数据中心 6
-      - 🇯🇵 日本(TG频道@kxswa)
-      - 🇯🇵 JP 1
+      - 🇸🇬 新加坡(欢迎订阅Youtube破解资源君) 4 2
+      - 🇸🇬 新加坡(欢迎订阅Youtube破解资源君) 4
+      - 🇭🇰 香港(欢迎订阅Youtube破解资源君) 8
+      - 🇭🇰 [10-20]-🇭🇰-香港-502-84.17.35.103
+      - 🇨🇳 github.com/freefq - 浙江省台州市移动 14
+      - 🇨🇳 github.com/freefq - 浙江省台州市移动 18
+      - 🇯🇵 日本-ss-193.38.139.203807-被墙-中转193.38.139.201-解锁日本地区NF非自制剧
+      - 🇯🇵 日本-ss-193.38.139.203809-被墙-中转193.38.139.201-解锁日本地区NF非自制剧
+      - 🇯🇵 日本-ss-193.38.139.203803-被墙-中转193.38.139.201-解锁日本地区NF非自制剧
+      - 🇯🇵 日本-ss-193.38.139.204806-被墙-中转193.38.139.201-解锁日本地区NF非自制剧
+      - 🇯🇵 日本-ss-193.38.139.204809-被墙-中转193.38.139.201-解锁日本地区NF非自制剧
+      - 🇯🇵 日本-ss-193.38.139.204806-被墙-中转193.38.139.201-解锁日本地区NF非自制剧 2
+      - 🇯🇵 日本-ss-52.197.66.243443-被墙-直连-解锁日本地区NF非自制剧
+      - 🇯🇵 日本-ss-52.197.66.243443-被墙-直连-解锁日本地区NF非自制剧 2
+      - 🇯🇵 日本-vmess-146.56.40.11727675-被墙-直连-解锁韩国地区NF非自制剧
+      - 🇯🇵 日本-vmess-146.56.40.11727675-被墙-直连-解锁韩国地区NF非自制剧 2
+      - 🇭🇰 [10-20]-🇭🇰-香港-436-84.17.35.103
+      - 🇸🇬 美国-vmess-ca.0112233.xyz8443-被墙-中转199.87.210.186-解锁新加坡地区NF非自制剧
+      - 🇸🇬 美国-vmess-ca.0112233.xyz8443-被墙-中转199.87.210.186-解锁新加坡地区NF非自制剧 2
+      - 🇯🇵 美国-vmess-jparm.fineyoo.cf443-被墙-中转152.70.81.66-解锁日本地区NF非自制剧
+      - 🇯🇵 美国-vmess-jparm.fineyoo.cf443-被墙-中转152.70.81.66-解锁日本地区NF非自制剧 2
+      - 🇯🇵 美国-vmess-jparm.fineyoo.ml443-被墙-中转138.2.33.90-解锁日本地区NF非自制剧
+      - 🇯🇵 美国-vmess-jparm.fineyoo.ml443-被墙-中转138.2.33.90-解锁日本地区NF非自制剧 2
+      - 🇯🇵 美国-vmess-jpamd.fineyoo.ml443-被墙-中转138.2.33.102-解锁日本地区NF非自制剧
+      - 🇯🇵 美国-vmess-jpamd.fineyoo.ml443-被墙-中转138.2.33.102-解锁日本地区NF非自制剧 2
+      - 🇰🇷 美国-vmess-amdkr.ptuu.ga443-被墙-中转152.69.229.222-解锁韩国地区NF非自制剧
+      - 🇰🇷 美国-vmess-amdkr.ptuu.ga443-被墙-中转152.69.229.222-解锁韩国地区NF非自制剧 2
+      - 🇰🇷 美国-vmess-amdkr.ptuu.ml443-被墙-中转146.56.96.75-解锁韩国地区NF非自制剧
   - name: 🌍 其它地区
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 126
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 102
-      - mianfeifq 236
-      - 🇮🇩 印度尼西亚_1020010
-      - _03
+      - Relay_ |34.20Mb
+      - 🇬🇷 -希腊-144.24.96.247
+      - 🇮🇳 印度_1020017
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 117
       - _02
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 79
-      - 🇷🇴 [10-20]-🇷🇴-罗马尼亚-1050-91.245.254.43
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 80
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 81
-      - "[10-20]-🇦🇶-欧盟-892-45.12.223.195"
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 82
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 83
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 84
+      - 🇬🇧 -英国-193.123.92.160
+      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 84 2
       - 罗马(欢迎订阅Youtube破解资源君) 9
+      - 罗马(欢迎订阅Youtube破解资源君) 9 2
       - 🇷🇴 [10-20]-🇷🇴-罗马尼亚-504-91.245.254.27
+      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 83 2
+      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 83
       - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 85
+      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 85 2
       - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 86
       - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 86 2
+      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 86 2 2
       - 🇫🇷 法国(欢迎订阅Youtube破解资源君) 16
       - 🇫🇷 法国(欢迎订阅Youtube破解资源君) 16 2
       - 🇫🇷 法国(欢迎订阅Youtube破解资源君) 16 2 2
       - 🇫🇷 法国(欢迎订阅Youtube破解资源君) 17
       - 🇫🇷 法国(欢迎订阅Youtube破解资源君) 17 2
+      - 🇫🇷 法国(欢迎订阅Youtube破解资源君) 17 2 2
+      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 88
   - name: 美国
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
-      - 🇺🇸 -美国-tr.33yun.xyz
-      - 🇺🇸 github.com/freefq - 美国加利福尼亚州洛杉矶DDOSing Network 16
-      - 🇺🇸 -美国-141.101.115.120
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 17
-      - 🇺🇸 -美国-20.239.65.134
-      - 🇺🇸 github.com/freefq - 美国Microsoft数据中心 1
-      - 🇺🇸 -美国-150.230.35.180
-      - 🇺🇸 美国_10201530
-      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 34
-      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 36
-      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 37
-      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 38
+      - 🇸🇬 美国-vmess-ca.0112233.xyz8443-被墙-中转199.87.210.186-解锁新加坡地区NF非自制剧
+      - 🇸🇬 美国-vmess-ca.0112233.xyz8443-被墙-中转199.87.210.186-解锁新加坡地区NF非自制剧 2
+      - 🇯🇵 美国-vmess-jparm.fineyoo.cf443-被墙-中转152.70.81.66-解锁日本地区NF非自制剧
+      - 🇯🇵 美国-vmess-jparm.fineyoo.cf443-被墙-中转152.70.81.66-解锁日本地区NF非自制剧 2
+      - 🇯🇵 美国-vmess-jparm.fineyoo.ml443-被墙-中转138.2.33.90-解锁日本地区NF非自制剧
+      - 🇯🇵 美国-vmess-jparm.fineyoo.ml443-被墙-中转138.2.33.90-解锁日本地区NF非自制剧 2
+      - 🇯🇵 美国-vmess-jpamd.fineyoo.ml443-被墙-中转138.2.33.102-解锁日本地区NF非自制剧
+      - 🇯🇵 美国-vmess-jpamd.fineyoo.ml443-被墙-中转138.2.33.102-解锁日本地区NF非自制剧 2
+      - 🇰🇷 美国-vmess-amdkr.ptuu.ga443-被墙-中转152.69.229.222-解锁韩国地区NF非自制剧
+      - 🇰🇷 美国-vmess-amdkr.ptuu.ga443-被墙-中转152.69.229.222-解锁韩国地区NF非自制剧 2
+      - 🇰🇷 美国-vmess-amdkr.ptuu.ml443-被墙-中转146.56.96.75-解锁韩国地区NF非自制剧
+      - 🇺🇸 美国_1020801
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 38 2
       - 🇺🇸 [10-20]-🇺🇸-美国-890-209.216.92.212
       - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 39
-      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 26
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 39 2
       - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 41
-      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 44trojan//88939272-790a-441f-b12b-8ce531aca810@polo01.kctr2038.icu443?allowInsecure=0#这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 5
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 44
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 41 2
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 42
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 43
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 45
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 46
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 47
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 48
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 49
+      - 🇺🇸 美国(欢迎订阅Youtube破解资源君) 50trojan//3a2c0c6c-9ee5-c05f-c951-fcd73831983e@kr05.wangxd.life3052?allowInsecure=0#这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 118
   - name: 香港
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
-      - 🇭🇰 HK 1 → openitsub.com
+      - 🇭🇰 github.com/freefq - 香港阿里云 1
+      - 🇭🇰 -香港-47.87.149.164
       - HK_217 2
-      - HK_251
-      - 🇭🇰 香港_1020444
-      - 🇭🇰 [10-20]-🇭🇰-香港-436-84.17.35.103
-      - 🇭🇰 香港(欢迎订阅Youtube破解资源君) 8
       - 🇭🇰 香港(欢迎订阅Youtube破解资源君) 8 2
       - 🇭🇰 香港(欢迎订阅Youtube破解资源君) 8 2 2
+      - 🇭🇰 HK 1 → openitsub.com
+      - 🇭🇰 香港(欢迎订阅Youtube破解资源君) 8
       - 🇭🇰 [10-20]-🇭🇰-香港-502-84.17.35.103
-      - 🇭🇰 香港(快嘴科技kkzui.com) 2
-      - 🇭🇰 香港(快嘴科技kkzui.com)
-      - 🇭🇰 香港_1020428
-      - 🇭🇰 香港_1020010
+      - 🇭🇰 [10-20]-🇭🇰-香港-436-84.17.35.103
   - name: 狮城
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
-      - 🇸🇬 -新加坡-sg02.xiaoqi99.cf
-      - 🇸🇬 新加坡_1020210
       - 🇸🇬 新加坡(欢迎订阅Youtube破解资源君) 6
       - 🇸🇬 新加坡(欢迎订阅Youtube破解资源君) 6 2
       - 🇸🇬 新加坡(欢迎订阅Youtube破解资源君) 6 2 2
       - 🇸🇬 新加坡(欢迎订阅Youtube破解资源君) 7
-      - 🇸🇬 [10-20]-🇸🇬-新加坡-880-54.251.230.216
+      - 🇸🇬 [10-20]-🇸🇬-新加坡-3500-54.251.230.216
       - 🇸🇬 新加坡(欢迎订阅Youtube破解资源君) 7 2
-      - 🇸🇬 新加坡(欢迎订阅Youtube破解资源君) 4
-      - 🇸🇬 新加坡 003
-      - 🇸🇬 SG【付费推荐：https//goo.gs/vip】 4
-      - 🇸🇬 新加坡_1020012
+      - 🇸🇬 新加坡(欢迎订阅Youtube破解资源君) 5
       - 🇸🇬 [10-20]-🇸🇬-新加坡-510-89.187.163.215
-      - 🇸🇬 -新加坡-139.162.14.93
+      - 🇸🇬 新加坡(欢迎订阅Youtube破解资源君) 4 2
+      - 🇸🇬 新加坡(欢迎订阅Youtube破解资源君) 4
+      - 🇸🇬 美国-vmess-ca.0112233.xyz8443-被墙-中转199.87.210.186-解锁新加坡地区NF非自制剧
+      - 🇸🇬 美国-vmess-ca.0112233.xyz8443-被墙-中转199.87.210.186-解锁新加坡地区NF非自制剧 2
   - name: 日本
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
-      - 🇯🇵 -日本-vm12.leifengkeji.live
-      - 🇯🇵 [09-26]|openrunner|日本(JP)Japan/Tokyo_16
-      - 🇨🇳 -日本-shouer.azzhuangaping.tw
-      - 🇯🇵 日本_1020279
-      - 🇯🇵 github.com/freefq - 日本东京都品川区Linode数据中心 1
-      - 🇯🇵 日本 010
-      - 🇯🇵 日本(TG频道@kxswa) 2 2
-      - 🇯🇵 github.com/freefq - 日本东京Linode数据中心 6
-      - 🇯🇵 日本(TG频道@kxswa)
-      - 🇯🇵 JP 1
+      - 🇯🇵 github.com/freefq - 日本  48
+      - 🇯🇵 日本-ss-193.38.139.203807-被墙-中转193.38.139.201-解锁日本地区NF非自制剧
+      - 🇯🇵 日本-ss-193.38.139.203809-被墙-中转193.38.139.201-解锁日本地区NF非自制剧
+      - 🇯🇵 日本-ss-193.38.139.203803-被墙-中转193.38.139.201-解锁日本地区NF非自制剧
+      - 🇯🇵 日本-ss-193.38.139.204806-被墙-中转193.38.139.201-解锁日本地区NF非自制剧
+      - 🇯🇵 日本-ss-193.38.139.204809-被墙-中转193.38.139.201-解锁日本地区NF非自制剧
+      - 🇯🇵 日本-ss-193.38.139.204806-被墙-中转193.38.139.201-解锁日本地区NF非自制剧 2
+      - 🇯🇵 日本-ss-52.197.66.243443-被墙-直连-解锁日本地区NF非自制剧
+      - 🇯🇵 日本-ss-52.197.66.243443-被墙-直连-解锁日本地区NF非自制剧 2
+      - 🇯🇵 日本-vmess-146.56.40.11727675-被墙-直连-解锁韩国地区NF非自制剧
+      - 🇯🇵 日本-vmess-146.56.40.11727675-被墙-直连-解锁韩国地区NF非自制剧 2
+      - 🇯🇵 美国-vmess-jparm.fineyoo.cf443-被墙-中转152.70.81.66-解锁日本地区NF非自制剧
+      - 🇯🇵 美国-vmess-jparm.fineyoo.cf443-被墙-中转152.70.81.66-解锁日本地区NF非自制剧 2
+      - 🇯🇵 美国-vmess-jparm.fineyoo.ml443-被墙-中转138.2.33.90-解锁日本地区NF非自制剧
+      - 🇯🇵 美国-vmess-jparm.fineyoo.ml443-被墙-中转138.2.33.90-解锁日本地区NF非自制剧 2
+      - 🇯🇵 美国-vmess-jpamd.fineyoo.ml443-被墙-中转138.2.33.102-解锁日本地区NF非自制剧
+      - 🇯🇵 美国-vmess-jpamd.fineyoo.ml443-被墙-中转138.2.33.102-解锁日本地区NF非自制剧 2
   - name: 台湾
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
+      - 🇨🇳 github.com/freefq - 浙江省台州市移动 14
       - 🇨🇳 github.com/freefq - 浙江省台州市移动 18
-      - 🇨🇳 github.com/freefq - 台湾省花莲县中华电信 30
-      - 🇨🇳 -台湾花莲县-36.227.229.227
   - name: 韩国
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
-      - 🇰🇷 韩国_1020167
       - 🇰🇷 -韩国-www.apulnion.com
       - 🇰🇷 -韩国-www.apulnion.com 2
-      - 🇰🇷 韩国_1020006
+      - 🇯🇵 日本-vmess-146.56.40.11727675-被墙-直连-解锁韩国地区NF非自制剧
+      - 🇯🇵 日本-vmess-146.56.40.11727675-被墙-直连-解锁韩国地区NF非自制剧 2
+      - 🇰🇷 美国-vmess-amdkr.ptuu.ga443-被墙-中转152.69.229.222-解锁韩国地区NF非自制剧
+      - 🇰🇷 美国-vmess-amdkr.ptuu.ga443-被墙-中转152.69.229.222-解锁韩国地区NF非自制剧 2
+      - 🇰🇷 美国-vmess-amdkr.ptuu.ml443-被墙-中转146.56.96.75-解锁韩国地区NF非自制剧
 rules:
  - DOMAIN,instant.arubanetworks.com,DIRECT
  - DOMAIN,router.asus.com,DIRECT
@@ -3891,6 +3915,7 @@ rules:
  - IP-CIDR6,2620:120:e000::/40,📺 国外媒体,no-resolve
  - IP-CIDR6,2a00:86c0::/32,📺 国外媒体,no-resolve
  - IP-CIDR6,2a03:5640::/32,📺 国外媒体,no-resolve
+ - GEOIP,CN,🧱 国内网站
  - DOMAIN,analytics.strava.com,🧱 国内网站
  - DOMAIN,blzddist1-a.akamaihd.net,🧱 国内网站
  - DOMAIN,cdn.angruo.com,🧱 国内网站
@@ -41833,5 +41858,4 @@ rules:
  - IP-CIDR6,2001:b28:f23f::/48,🚀 节点选择,no-resolve
  - IP-CIDR6,2a0a:f280::/32,🚀 节点选择,no-resolve
  - PROCESS-NAME,lookupviewservice,🚀 节点选择
- - GEOIP,CN,🧱 国内网站
  - MATCH,🐟 漏网之鱼
