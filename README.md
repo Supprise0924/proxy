@@ -137,7 +137,7 @@
 
 ### 所有节点
 合并节点总数: `4306`
-[节点链接](https://raw.githubusercontent.com/alanbobs999/TopFreeProxies/master/sub/sub_merge.txt)
+[节点链接](https://raw.githubusercontent.com/alanbobs999/TopFreeProxies/master/sub/sub_merge_base64.txt)
 
 ### 节点来源
 - [pojiezhiyuanjun/freev2](https://github.com/pojiezhiyuanjun/freev2), 节点数量: `261`
@@ -202,7 +202,7 @@
 - [大迅云](https://daxun.club/#/register?code=JPmAFPav)
   - 最低月付 5¥50G, 12¥200G, 购买 12¥ 及以上套餐免费领取奈飞 + 迪士尼 Plus 共享号
   - 原生IP负载均衡，流媒体解锁晚高峰油管秒开，主打性价比，有试用
-- [阿伟云](https://awslcn.xyz/#/register?code=8C18uZwl)
+- [阿伟云](https://awcloud.cc/#/register?code=8C18uZwl)
   - 最低月付 1¥ 起, 9.99¥100G
   - 无带宽速率限制，有流媒体解锁，香港 BGP 中继线路
 
