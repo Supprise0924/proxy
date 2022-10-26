@@ -22,23 +22,23 @@ def speedtest(subscription,output_range,other_config={'concurrency': -1, 'timeou
     litespeedtest = subprocess.Popen(args,stdout=subprocess.PIPE,stderr=subprocess.STDOUT,universal_newlines=True,encoding='utf-8',bufsize=1)
 
     # Progress bar
-    max_node = 0
+    max_node = 1
     current_node = 0
     for line in iter(litespeedtest.stdout.readline, ''):
         try:
             info = json.loads(line[19:])
-            if int(info['servers'][len(info['servers'])-1]['id']) > max_node:
-                max_node = int(info['servers'][len(info['servers'])-1]['id'])
-        except Exception:
-            pass
-        try:
-            info = json.loads(line[19:])
-            if int(info['id']) > current_node and info['servers'] == None:
-                current_node = int(info['id'])
+            try:
+                if int(info['servers'][len(info['servers'])-1]['id'])+1 > max_node:
+                    max_node = int(info['servers'][len(info['servers'])-1]['id'])+1
+            except Exception:
+                pass            
+            if info['info'] == 'endone':
+                current_node += 1
         except Exception:
             pass
         #print(f'{current_node}/{max_node}', end='\r')
         progressbar(current_node, max_node, desc='Litespeedtest running progress')
+
     # Generate proxies list
     with open('./out.json', 'r', encoding='utf-8') as f:
         proxies_all = json.load(f)
