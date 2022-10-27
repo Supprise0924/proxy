@@ -7,7 +7,7 @@ import socket
 import geoip2.database
 
 
-def convert(subscription,target,other_config):
+def convert(subscription,target,other_config={}):
     """Wrapper for subconverter
     subscription: subscription url or content string or local file path, add url support.
     target: target subconvert configuration
