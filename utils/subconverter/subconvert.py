@@ -147,7 +147,7 @@ def subconverterhandler(subscription,input_config={'target':'transfer','rename':
 
     os.chdir(work_dir)
     return output
-def deduplicate(clash_provider): # Proxies deduplicate. If proxies have same servers that are greater than 3 then just save 3 of them, else less than 3 just save all of them.
+def deduplicate(clash_provider,keep_nodes=1): # Proxies deduplicate. If proxies with the same servers are greater than keep_nodes, they will not be added.
     lines = re.split(r'\n+', clash_provider)[1:]
     print('Starting deduplicate...')
     print(f'Init amount: {len(lines)}')
@@ -224,7 +224,6 @@ def deduplicate(clash_provider): # Proxies deduplicate. If proxies have same ser
             servers[ip] = [proxy] # init remote server list, add first proxy
 
     proxies = []
-    keep_nodes = 1
     for server in servers:
         # if len(servers[server]) > 3: # if proxy amount is greater than 4 then just add 4 proxies
         #     add_list = servers[server][:3]
