@@ -3,20 +3,29 @@
 import os, re, subprocess
 import argparse, configparser
 import base64, yaml
+import socket
 import geoip2.database
 
 
-def convert(subscription,target,other_config={'deduplicate':False,'rename':'','include':'','exclude':'','config':''}):
+def convert(subscription,target,other_config={}):
     """Wrapper for subconverter
     subscription: subscription url or content string or local file path, add url support.
     target: target subconvert configuration
     other_config:
         deduplicate: whether to deduplicate
+        keep_nodes: amounts of nodes to keep when they are deduplicated
         include: include string in remark
         exclude: exclude string in remark
         config: output subcription config
     """
-    config = {'target':target,'deduplicate':other_config['deduplicate'],'rename':other_config['rename'],'include':other_config['include'],'exclude':other_config['exclude'],'config':other_config['config']}
+
+    default_config = {
+        'target': target,
+        'deduplicate':False,'keep_nodes':1,
+        'rename':'','include':'','exclude':'','config':''
+    }
+    default_config.update(other_config)
+    config = default_config
     
     work_dir = os.getcwd()
     os.chdir(os.path.dirname(os.path.abspath(__file__)))
@@ -52,7 +61,7 @@ def convert(subscription,target,other_config={'deduplicate':False,'rename':'','i
                 return ''
 
     if config['deduplicate']:
-        clash_provider = deduplicate(clash_provider)
+        clash_provider = deduplicate(clash_provider,config['keep_nodes'])
 
     with open('./temp', 'w', encoding= 'utf-8') as temp_file:
         temp_file.write(clash_provider)
@@ -146,7 +155,7 @@ def subconverterhandler(subscription,input_config={'target':'transfer','rename':
 
     os.chdir(work_dir)
     return output
-def deduplicate(clash_provider): # Proxies deduplicate. If proxies have same servers that are greater than 3 then just save 3 of them, else less than 3 just save all of them.
+def deduplicate(clash_provider,keep_nodes=1): # Proxies deduplicate. If proxies with the same servers are greater than keep_nodes, they will not be added.
     lines = re.split(r'\n+', clash_provider)[1:]
     print('Starting deduplicate...')
     print(f'Init amount: {len(lines)}')
@@ -209,25 +218,38 @@ def deduplicate(clash_provider): # Proxies deduplicate. If proxies have same ser
     servers = {}
     for proxy in proxies:
         server = proxy['server'] # assign remote server
+        if server.replace('.','').isdigit():
+            ip = server
+        else:
+            try:
+                ip = socket.gethostbyname(server)
+            except Exception:
+                ip = server
 
-        if server in servers:
-            servers[server].append(proxy) # add proxy to its remote server list
+        if ip in servers:
+            servers[ip].append(proxy) # add proxy to its remote server list
         elif server not in servers:
-            servers[server] = [proxy] # init remote server list, add first proxy
+            servers[ip] = [proxy] # init remote server list, add first proxy
 
     proxies = []
     for server in servers:
-        if len(servers[server]) > 3: # if proxy amount is greater than 4 then just add 4 proxies
-            add_list = servers[server][:3]
-            for add in add_list:
-                proxies.append(add)
-        else:
-            add_list = servers[server] # if proxy amount is less than 4 then add all proxies
-            for add in add_list:
-                proxies.append(add)
-    
+        # if len(servers[server]) > 3: # if proxy amount is greater than 4 then just add 4 proxies
+        #     add_list = servers[server][:3]
+        #     for add in add_list:
+        #         proxies.append(add)
+        # else:
+        #     add_list = servers[server] # if proxy amount is less than 4 then add all proxies
+        #     for add in add_list:
+        #         proxies.append(add)
+        try:
+            add_list = servers[server][:keep_nodes]
+        except Exception:
+            add_list = servers[server]
+        for x in add_list:
+            proxies.append(x)
     print(f'Dedupicate success, remove {len(lines)-len(proxies)} duplicate proxies')
     print(f'Output amount: {len(proxies)}')
+
     output = yaml.dump({'proxies': proxies}, default_flow_style=False, sort_keys=False, allow_unicode=True, indent=2)
     return output
 
@@ -260,21 +282,23 @@ if __name__ == '__main__':
     parser.add_argument('--target', '-t', help='Target convert format, support base64, clash, clash_provider, quanx.', default='clash')
     parser.add_argument('--output', '-o', help='Target path to output, default value is the Subconverter root directionary.', default='./Eternity.yaml')
     parser.add_argument('--deduplicate', '-d', help='Whether to deduplicate proxies, default value is False.', default=False)
+    parser.add_argument('--keep', '-k', help='Amounts of nodes to keep when deduplicated.', default=1)
     args = parser.parse_args()
 
     subscription = args.subscription
     target = args.target
     output_dir = args.output
-    if args.deduplicate == 'ture' or args.deduplicate == 'True':
+    if args.deduplicate == 'true' or args.deduplicate == 'True':
         deduplicate_enabled = True
     else:
         deduplicate_enabled = False
+    keep_nodes = int(args.keep)
 
     work_dir = os.getcwd()
     os.chdir(os.path.dirname(os.path.abspath(__file__)))
     generate = configparser.ConfigParser()
     generate.read('./generate.ini',encoding='utf-8')
-    config={'deduplicate': deduplicate_enabled,'rename': generate.get(target,'rename'), 'include': generate.get(target,'include'), 'exclude': generate.get(target,'exclude'), 'config': generate.get(target,'config')}
+    config={'deduplicate': deduplicate_enabled,'keep_nodes': keep_nodes,'rename': generate.get(target,'rename'), 'include': generate.get(target,'include'), 'exclude': generate.get(target,'exclude'), 'config': generate.get(target,'config')}
 
     output = convert(subscription,target,config)
 
