@@ -7,18 +7,25 @@ import socket
 import geoip2.database
 
 
-def convert(subscription,target,other_config={'deduplicate':False,'deduplicate_keep_nodes':1,'rename':'','include':'','exclude':'','config':''}):
+def convert(subscription,target,other_config):
     """Wrapper for subconverter
     subscription: subscription url or content string or local file path, add url support.
     target: target subconvert configuration
     other_config:
         deduplicate: whether to deduplicate
-        deduplicate_keep_nodes: amounts of nodes to keep when they are deduplicated
+        keep_nodes: amounts of nodes to keep when they are deduplicated
         include: include string in remark
         exclude: exclude string in remark
         config: output subcription config
     """
-    config = {'target':target,'deduplicate':other_config['deduplicate'],'keep_nodes':other_config['deduplicate_keep_nodes'],'rename':other_config['rename'],'include':other_config['include'],'exclude':other_config['exclude'],'config':other_config['config']}
+
+    default_config = {
+        'target': target,
+        'deduplicate':False,'keep_nodes':1,
+        'rename':'','include':'','exclude':'','config':''
+    }
+    default_config.update(other_config)
+    config = default_config
     
     work_dir = os.getcwd()
     os.chdir(os.path.dirname(os.path.abspath(__file__)))
@@ -291,7 +298,7 @@ if __name__ == '__main__':
     os.chdir(os.path.dirname(os.path.abspath(__file__)))
     generate = configparser.ConfigParser()
     generate.read('./generate.ini',encoding='utf-8')
-    config={'deduplicate': deduplicate_enabled,'deduplicate_keep_nodes': keep_nodes,'rename': generate.get(target,'rename'), 'include': generate.get(target,'include'), 'exclude': generate.get(target,'exclude'), 'config': generate.get(target,'config')}
+    config={'deduplicate': deduplicate_enabled,'keep_nodes': keep_nodes,'rename': generate.get(target,'rename'), 'include': generate.get(target,'include'), 'exclude': generate.get(target,'exclude'), 'config': generate.get(target,'config')}
 
     output = convert(subscription,target,config)
 
