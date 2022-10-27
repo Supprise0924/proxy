@@ -3,6 +3,7 @@
 import os, re, subprocess
 import argparse, configparser
 import base64, yaml
+import socket
 import geoip2.database
 
 
@@ -209,25 +210,39 @@ def deduplicate(clash_provider): # Proxies deduplicate. If proxies have same ser
     servers = {}
     for proxy in proxies:
         server = proxy['server'] # assign remote server
+        if server.replace('.','').isdigit():
+            ip = server
+        else:
+            try:
+                ip = socket.gethostbyname(server)
+            except Exception:
+                ip = server
 
-        if server in servers:
-            servers[server].append(proxy) # add proxy to its remote server list
+        if ip in servers:
+            servers[ip].append(proxy) # add proxy to its remote server list
         elif server not in servers:
-            servers[server] = [proxy] # init remote server list, add first proxy
+            servers[ip] = [proxy] # init remote server list, add first proxy
 
     proxies = []
+    keep_nodes = 1
     for server in servers:
-        if len(servers[server]) > 3: # if proxy amount is greater than 4 then just add 4 proxies
-            add_list = servers[server][:3]
-            for add in add_list:
-                proxies.append(add)
-        else:
-            add_list = servers[server] # if proxy amount is less than 4 then add all proxies
-            for add in add_list:
-                proxies.append(add)
-    
+        # if len(servers[server]) > 3: # if proxy amount is greater than 4 then just add 4 proxies
+        #     add_list = servers[server][:3]
+        #     for add in add_list:
+        #         proxies.append(add)
+        # else:
+        #     add_list = servers[server] # if proxy amount is less than 4 then add all proxies
+        #     for add in add_list:
+        #         proxies.append(add)
+        try:
+            add_list = servers[server][:keep_nodes]
+        except Exception:
+            add_list = servers[server]
+        for x in add_list:
+            proxies.append(x)
     print(f'Dedupicate success, remove {len(lines)-len(proxies)} duplicate proxies')
     print(f'Output amount: {len(proxies)}')
+
     output = yaml.dump({'proxies': proxies}, default_flow_style=False, sort_keys=False, allow_unicode=True, indent=2)
     return output
 
@@ -265,7 +280,7 @@ if __name__ == '__main__':
     subscription = args.subscription
     target = args.target
     output_dir = args.output
-    if args.deduplicate == 'ture' or args.deduplicate == 'True':
+    if args.deduplicate == 'true' or args.deduplicate == 'True':
         deduplicate_enabled = True
     else:
         deduplicate_enabled = False
