@@ -7,17 +7,18 @@ import socket
 import geoip2.database
 
 
-def convert(subscription,target,other_config={'deduplicate':False,'rename':'','include':'','exclude':'','config':''}):
+def convert(subscription,target,other_config={'deduplicate':False,'deduplicate_keep_nodes':1,'rename':'','include':'','exclude':'','config':''}):
     """Wrapper for subconverter
     subscription: subscription url or content string or local file path, add url support.
     target: target subconvert configuration
     other_config:
         deduplicate: whether to deduplicate
+        deduplicate_keep_nodes: amounts of nodes to keep when they are deduplicated
         include: include string in remark
         exclude: exclude string in remark
         config: output subcription config
     """
-    config = {'target':target,'deduplicate':other_config['deduplicate'],'rename':other_config['rename'],'include':other_config['include'],'exclude':other_config['exclude'],'config':other_config['config']}
+    config = {'target':target,'deduplicate':other_config['deduplicate'],'keep_nodes':other_config['deduplicate_keep_nodes'],'rename':other_config['rename'],'include':other_config['include'],'exclude':other_config['exclude'],'config':other_config['config']}
     
     work_dir = os.getcwd()
     os.chdir(os.path.dirname(os.path.abspath(__file__)))
@@ -53,7 +54,7 @@ def convert(subscription,target,other_config={'deduplicate':False,'rename':'','i
                 return ''
 
     if config['deduplicate']:
-        clash_provider = deduplicate(clash_provider)
+        clash_provider = deduplicate(clash_provider,config['keep_nodes'])
 
     with open('./temp', 'w', encoding= 'utf-8') as temp_file:
         temp_file.write(clash_provider)
@@ -274,6 +275,7 @@ if __name__ == '__main__':
     parser.add_argument('--target', '-t', help='Target convert format, support base64, clash, clash_provider, quanx.', default='clash')
     parser.add_argument('--output', '-o', help='Target path to output, default value is the Subconverter root directionary.', default='./Eternity.yaml')
     parser.add_argument('--deduplicate', '-d', help='Whether to deduplicate proxies, default value is False.', default=False)
+    parser.add_argument('--keep', '-k', help='Amounts of nodes to keep when deduplicated.', default=1)
     args = parser.parse_args()
 
     subscription = args.subscription
@@ -283,12 +285,13 @@ if __name__ == '__main__':
         deduplicate_enabled = True
     else:
         deduplicate_enabled = False
+    keep_nodes = int(args.keep)
 
     work_dir = os.getcwd()
     os.chdir(os.path.dirname(os.path.abspath(__file__)))
     generate = configparser.ConfigParser()
     generate.read('./generate.ini',encoding='utf-8')
-    config={'deduplicate': deduplicate_enabled,'rename': generate.get(target,'rename'), 'include': generate.get(target,'include'), 'exclude': generate.get(target,'exclude'), 'config': generate.get(target,'config')}
+    config={'deduplicate': deduplicate_enabled,'deduplicate_keep_nodes': keep_nodes,'rename': generate.get(target,'rename'), 'include': generate.get(target,'include'), 'exclude': generate.get(target,'exclude'), 'config': generate.get(target,'config')}
 
     output = convert(subscription,target,config)
 
