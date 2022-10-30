@@ -5,99 +5,97 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇯🇵 日本_1028130, server: 18.183.155.102, port: 80, type: vmess, uuid: fec544c5-6ec4-45d8-8878-17f799e77e96, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇸🇬 新加坡_1028060, server: 13.214.32.25, port: 80, type: vmess, uuid: fec544c5-6ec4-45d8-8878-17f799e77e96, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇯🇵 日本_1028033, server: aeadjpaes01.xn--z4q48lcvp.com, port: 80, type: vmess, uuid: 3e820eb0-3f06-4337-a4fc-0c3c7c0d3b4d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /images, headers: {Host: shoutingtoutiao3.10010.com}}}
-  - {name: 🇯🇵 -日本-47.91.23.182, server: 47.91.23.182, port: 443, type: vmess, uuid: 572126f8-5301-83c2-0a26-c30ced3db7c4, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /wmzmvws, headers: {Host: goodfamily19.site}}}
-  - {name: 🇸🇬 新加坡_1028293, server: 8.219.176.218, port: 443, type: vmess, uuid: 0479eb9d-999d-4bff-ae3f-4f7cc440ce46, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: v2ray2.ssr-free2.xyz}}}
+  - {name: 🇯🇵 日本_1028144, server: 35.79.225.254, port: 80, type: vmess, uuid: fec544c5-6ec4-45d8-8878-17f799e77e96, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: "🇯🇵 [09-26]|openrunner|日本(JP)Japan/Tokyo_16", server: jgwdj3.gaox.ml, port: 443, type: trojan, password: da777aae-defb-41d0-a183-2c27da2b4677, skip-cert-verify: true}
   - {name: 🇨🇳 台湾_1028100, server: 220.130.80.179, port: 443, type: vmess, uuid: ceb8a7f4-a45b-48a7-8f8e-ca7124a5ebee, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /howdy, headers: {Host: v2ray2.udpgw.com}}}
-  - {name: 🇯🇵 -日本东京都东京-168.138.207.66, server: 168.138.207.66, port: 443, type: vmess, uuid: 905f99b1-e7ba-45e0-ae4d-b0ffdf0ad245, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇯🇵 -日本-00000000000000000000000000000000000000000000000000000000000003a.rui77.com, server: 00000000000000000000000000000000000000000000000000000000000003a.rui77.com, port: 443, type: vmess, uuid: 0f1df3fb-4dc5-4558-9bde-4f703c864a78, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇯🇵 -日本东京-109.166.38.54, server: 109.166.38.54, port: 443, type: vmess, uuid: b8aaa6e1-f0b3-b9ec-3dfc-bb226c167b33, alterId: 0, cipher: auto, tls: true}
+  - {name: 🇯🇵 -日本东京-52.199.209.73, server: 52.199.209.73, port: 443, type: vmess, uuid: fec544c5-6ec4-45d8-8878-17f799e77e96, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
   - {name: 🇯🇵 -日本-00000000000000000000000000000000000000000000000000000000000024a.rui77.com, server: 00000000000000000000000000000000000000000000000000000000000024a.rui77.com, port: 443, type: vmess, uuid: 0f1df3fb-4dc5-4558-9bde-4f703c864a78, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 00000000000000000000000000000000000000000000000000000000000024a.rui77.com}}}
-  - {name: 🇯🇵 -日本-00000000000000000000000000000000000000000000000000000000000023a.rui77.com, server: 00000000000000000000000000000000000000000000000000000000000023a.rui77.com, port: 443, type: vmess, uuid: 0f1df3fb-4dc5-4558-9bde-4f703c864a78, alterId: 0, cipher: auto, tls: false}
   - {name: 🇯🇵 -日本-00000000000000000000000000000000000000000000000000000000000037a.rui77.com, server: 00000000000000000000000000000000000000000000000000000000000037a.rui77.com, port: 443, type: vmess, uuid: a72e790f-e18a-43b0-a7a7-bcc33f144092, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇯🇵 -日本-140.238.48.194, server: 140.238.48.194, port: 443, type: vmess, uuid: 24f1dfad-1267-4297-8e88-0e9b8ef47e47, alterId: 0, cipher: auto, tls: false}
   - {name: 🇯🇵 -日本-146.56.133.109, server: 146.56.133.109, port: 443, type: vmess, uuid: 575e4d92-1056-44c2-8cac-75ef1c859ad5, alterId: 0, cipher: auto, tls: true}
-  - {name: 🇯🇵 -日本-146.56.155.70, server: 146.56.155.70, port: 443, type: vmess, uuid: f9771c19-c91c-41b5-9064-8768b51cec6d, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇯🇵 -日本-146.56.166.153, server: 146.56.166.153, port: 443, type: vmess, uuid: acc94bf4-94c1-4a08-8b79-9be2b76499b6, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /2yevws, headers: {Host: cc.1808.cf}}}
-  - {name: 🇯🇵 -日本-172.104.125.96, server: 172.104.125.96, port: 443, type: vmess, uuid: db95a78c-daed-4439-a0ef-1180ac2f6666, alterId: 0, cipher: auto, tls: false}
   - {name: 🇯🇵 -日本-172.105.239.35, server: 172.105.239.35, port: 443, type: vmess, uuid: b92d31f6-6d92-44c7-8ca8-fe7860fb7487, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇯🇵 -日本-1260eea.td.glados-config.net, server: 1260eea.td.glados-config.net, port: 443, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /t, headers: {Host: 1260eea.td.glados-config.net}}}
-  - {name: 🇯🇵 -日本-139.162.70.196, server: 139.162.70.196, port: 443, type: vmess, uuid: 7f67fb11-832d-3492-adfe-63e0cceafbe0, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇯🇵 -日本-18.182.50.27, server: 18.182.50.27, port: 443, type: vmess, uuid: fec544c5-6ec4-45d8-8878-17f799e77e96, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
   - {name: 🇯🇵 -日本-35.77.223.19, server: 35.77.223.19, port: 443, type: vmess, uuid: fec544c5-6ec4-45d8-8878-17f799e77e96, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇯🇵 -日本-35.79.220.83, server: 35.79.220.83, port: 443, type: vmess, uuid: 5f7e80d2-8115-4597-92e0-f85f3bc972fe, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 35.79.220.83}}}
   - {name: 🇯🇵 -日本-47.74.19.41, server: 47.74.19.41, port: 443, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: intrepid.moss.network}}}
-  - {name: 🇯🇵 -日本-47.74.32.51, server: 47.74.32.51, port: 443, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: intrepid.moss.network}}}
+  - {name: 🇯🇵 -日本-47.74.33.226, server: 47.74.33.226, port: 443, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: intrepid.moss.network}}}
+  - {name: 🇯🇵 -日本-47.74.43.158, server: 47.74.43.158, port: 443, type: vmess, uuid: fc9c12e0-f4f2-4fc4-a30e-fc488bac7121, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /v2ray}}
   - {name: 🇯🇵 -日本-47.91.17.249, server: 47.91.17.249, port: 443, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: intrepid.moss.network}}}
-  - {name: 🇯🇵 -日本东京-v26.idcloudhost.de, server: v26.idcloudhost.de, port: 443, type: vmess, uuid: 00974d71-032f-4f5c-941b-612fb426252a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: v26.idcloudhost.de}}}
-  - {name: 🇯🇵 -日本-52.246.168.230, server: 52.246.168.230, port: 443, type: vmess, uuid: 527ee22c-7e5b-41d7-b683-75d9eda5dd0e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇯🇵 -日本-m2.pianyijc.top, server: m2.pianyijc.top, port: 443, type: vmess, uuid: 6b855dbd-3f5a-4a8b-8338-73ab337eb8e6, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /sometimesnaive, headers: {Host: m2.pianyijc.top}}}
-  - {name: 🇯🇵 -日本-awskr.mayiyun.shop, server: awskr.mayiyun.shop, port: 443, type: vmess, uuid: 6fe3cc99-5c4a-44f6-9d79-f6035193dc67, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: a.189.cn}}}
+  - {name: 🇯🇵 -日本-47.91.11.23, server: 47.91.11.23, port: 443, type: vmess, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /ray, headers: {Host: lg30.cfcdn3.xyz}}}
+  - {name: 🇯🇵 -日本-54.199.24.57, server: 54.199.24.57, port: 443, type: vmess, uuid: 94673e19-11fa-4370-8583-989e9eb1a710, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /images, headers: {Host: shoutingtoutiao3.10010.com}}}
+  - {name: 🇯🇵 -日本-agroup.node1.v.nodelist-gfwairport.download, server: agroup.node1.v.nodelist-gfwairport.download, port: 443, type: vmess, uuid: ddea4d6b-52f9-4901-8dd6-49bd2e09f2ac, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇯🇵 -日本-agroup.node2.v.nodelist-gfwairport.download, server: agroup.node2.v.nodelist-gfwairport.download, port: 443, type: vmess, uuid: ddea4d6b-52f9-4901-8dd6-49bd2e09f2ac, alterId: 0, cipher: auto, tls: false}
   - {name: 🇯🇵 -日本-bgroup.node1.v.nodelist-gfwairport.download, server: bgroup.node1.v.nodelist-gfwairport.download, port: 443, type: vmess, uuid: 1bb6757a-01cc-4fa8-a832-57022e79f1f7, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: bgroup.node1.v.nodelist-gfwairport.download}}}
-  - {name: 🇯🇵 -日本-jp04-vm0.entry.rwesdhytjuftyhdafsdgfrh.club, server: jp04-vm0.entry.rwesdhytjuftyhdafsdgfrh.club, port: 443, type: vmess, uuid: c498879d-8a73-3baf-a4f4-a0f38b75949c, alterId: 1, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: jp04-vm0.entry.rwesdhytjuftyhdafsdgfrh.club}}}
-  - {name: 🇯🇵 -日本-jp1.wanss.win, server: jp1.wanss.win, port: 443, type: vmess, uuid: 48C166B2-BFC2-512E-4D67-47C2F7B2CE5C, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: jp1.wanss.win}}}
-  - {name: 🇯🇵 -日本-jp1.wumaojichang.ml, server: jp1.wumaojichang.ml, port: 443, type: vmess, uuid: 583f3d43-503f-41a8-b616-5d42e4b6f0f7, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: baidu.com}}}
-  - {name: 🇯🇵 -日本-jpgithub.edgehelper.com, server: jpgithub.edgehelper.com, port: 443, type: vmess, uuid: d8860258-4ce1-4412-9ede-ecfd8d827ca4, alterId: 2, cipher: auto, tls: true}
-  - {name: 🇯🇵 -日本-jpz5.1yuanfly.live, server: jpz5.1yuanfly.live, port: 443, type: vmess, uuid: 3af423a0-60fa-3b9c-a551-521fa11a16d3, alterId: 0, cipher: auto, tls: true}
-  - {name: 🇯🇵 -日本-kr.idcloudhost.de, server: kr.idcloudhost.de, port: 443, type: vmess, uuid: 8658971e-d905-46a4-b290-fee3007cab8b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: kr.idcloudhost.de}}}
-  - {name: 🇯🇵 -日本-qwrwa.cloudfast.cc, server: qwrwa.cloudfast.cc, port: 443, type: vmess, uuid: efd30354-baf5-4508-afa0-91ef8e59c5ec, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: qwrwa.cloudfast.cc}}}
-  - {name: 🇯🇵 -日本-urgjp.hotfun.buzz, server: urgjp.hotfun.buzz, port: 443, type: vmess, uuid: e1f80416-5394-4fcd-af80-12ef9799a92c, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /hootfun, headers: {Host: urgjp.hotfun.buzz}}}
-  - {name: 🇯🇵 -日本-v6.heduian.online, server: v6.heduian.online, port: 443, type: vmess, uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /oooo, headers: {Host: v6.heduian.online}}}
+  - {name: 🇯🇵 -日本-bgroup.node4.v.nodelist-gfwairport.download, server: bgroup.node4.v.nodelist-gfwairport.download, port: 443, type: vmess, uuid: 1bb6757a-01cc-4fa8-a832-57022e79f1f7, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: bgroup.node4.v.nodelist-gfwairport.download}}}
+  - {name: 🇯🇵 -日本-f08.hotland.site, server: f08.hotland.site, port: 443, type: vmess, uuid: 114db87c-2245-4842-b6d1-bbd7ec1b96b9, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: f08.hotland.site}}}
+  - {name: 🇯🇵 -日本-janpanbpjcyos.loseyourip.com, server: janpanbpjcyos.loseyourip.com, port: 443, type: vmess, uuid: dcec9778-3e07-4800-824e-5bccb04bc2b8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /images, headers: {Host: janpanbpjcyos.loseyourip.com}}}
+  - {name: 🇯🇵 -日本-jptws.hotfun.buzz, server: jptws.hotfun.buzz, port: 443, type: vmess, uuid: e1f80416-5394-4fcd-af80-12ef9799a92c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hootfun, headers: {Host: jptws.hotfun.buzz}}}
+  - {name: 🇯🇵 -日本-jpz2.1yuanfly.live, server: jpz2.1yuanfly.live, port: 443, type: vmess, uuid: 3af423a0-60fa-3b9c-a551-521fa11a16d3, alterId: 0, cipher: auto, tls: true}
   - {name: 🇯🇵 -日本-zfsp1.mayiyun.shop, server: zfsp1.mayiyun.shop, port: 443, type: vmess, uuid: 6fe3cc99-5c4a-44f6-9d79-f6035193dc67, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: a.189.cn}}}
-  - {name: 🇭🇰 -香港-00000000000000000000000000000000000000000000000000000000000031a.rui77.com, server: 00000000000000000000000000000000000000000000000000000000000031a.rui77.com, port: 443, type: vmess, uuid: a72e790f-e18a-43b0-a7a7-bcc33f144092, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇭🇰 -香港-18.166.58.46, server: 18.166.58.46, port: 443, type: vmess, uuid: 37f49293-69e2-4b64-85fe-76cd0d1ef343, alterId: 1, cipher: auto, tls: false}
+  - {name: 🇭🇰 -香港-159.100.206.88, server: 159.100.206.88, port: 443, type: vmess, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /ray, headers: {Host: lg30.cfcdn3.xyz}}}
+  - {name: 🇭🇰 -香港-165.154.5.235, server: 165.154.5.235, port: 443, type: vmess, uuid: 0eb9d2fa-17d1-4276-af80-15323dc1dca5, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
   - {name: 🇭🇰 -香港-104.208.90.221, server: 104.208.90.221, port: 443, type: vmess, uuid: f7763543-b805-47c8-9e35-70bfc888dd31, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /1, headers: {Host: www.goole.com}}}
-  - {name: 🇭🇰 -香港-203.184.132.247, server: 203.184.132.247, port: 443, type: vmess, uuid: b315a93b-cec1-34cb-a658-be53ffda7cd8, alterId: 1, cipher: auto, tls: true, network: ws, ws-opts: {path: /situ-hgc2, headers: {Host: pp1.zhengzhongfeizhu.xyz}}}
-  - {name: 🇭🇰 -香港-23.91.100.243, server: 23.91.100.243, port: 443, type: vmess, uuid: 3b0f44e4-dd11-429d-c80f-615b10595db9, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇭🇰 -香港-47.242.51.205, server: 47.242.51.205, port: 443, type: vmess, uuid: b2720223-3eb6-4d26-860c-a891e02045bc, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: arm1dj.qiancheng.ml}}}
+  - {name: 🇭🇰 -香港-104.208.97.117, server: 104.208.97.117, port: 443, type: vmess, uuid: fec544c5-6ec4-45d8-8878-17f799e77e96, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: shoutingtoutiao3.10010.com}}}
   - {name: 🇭🇰 -香港-47.242.104.161, server: 47.242.104.161, port: 443, type: vmess, uuid: 4a1eaf72-a555-4737-bb09-8c388c118c5e, alterId: 0, cipher: auto, tls: false, network: http, http-opts: {method: GET, path: [/], headers: {Host: [47.242.104.161]}}}
+  - {name: 🇭🇰 -香港-47.242.18.21, server: 47.242.18.21, port: 443, type: vmess, uuid: 4e390bc8-a22a-49e0-a538-d1b6da917677, alterId: 0, cipher: auto, tls: false, network: http, http-opts: {method: GET, path: [/], headers: {Host: [47.242.18.21]}}}
+  - {name: 🇭🇰 -香港-47.243.62.222, server: 47.243.62.222, port: 443, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: intrepid.moss.network}}}
+  - {name: 🇭🇰 -香港-47.243.92.11, server: 47.243.92.11, port: 443, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: intrepid.moss.network}}}
+  - {name: 🇭🇰 -香港-47.243.124.141, server: 47.243.124.141, port: 443, type: vmess, uuid: a50b1dc4-03ce-44d8-a5c4-f4753c57884e, alterId: 0, cipher: auto, tls: false, network: http, http-opts: {method: GET, path: [/], headers: {Host: [47.243.124.141]}}}
+  - {name: 🇭🇰 -香港-47.243.131.231, server: 47.243.131.231, port: 443, type: vmess, uuid: df206563-b36c-4999-8764-c3e21a931b9e, alterId: 0, cipher: auto, tls: false, network: http, http-opts: {method: GET, path: [/], headers: {Host: [47.243.131.231]}}}
+  - {name: 🇭🇰 -香港-47.243.136.17, server: 47.243.136.17, port: 443, type: vmess, uuid: abb92d0b-5613-48ae-9564-03fda7830a96, alterId: 0, cipher: auto, tls: false, network: http, http-opts: {method: GET, path: [/], headers: {Host: [47.243.136.17]}}}
+  - {name: 🇭🇰 -香港-47.87.166.143, server: 47.87.166.143, port: 443, type: vmess, uuid: 2F094845-E2BD-EBF7-DEB7-995992436FAF, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇭🇰 -香港-625hk03.fx6688.top, server: 625hk03.fx6688.top, port: 443, type: vmess, uuid: 7f4ff2e1-c08f-35bd-afe7-4a6a386907aa, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇭🇰 -香港-7.kkyun.cyou, server: 7.kkyun.cyou, port: 443, type: vmess, uuid: 88024fb9-5f24-3b62-bc7c-5c5f0fdb58e1, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 7.kkyun.cyou}}}
+  - {name: 🇭🇰 -香港-8.210.159.196, server: 8.210.159.196, port: 443, type: vmess, uuid: ad1454a4-c9e2-4836-c98d-66e3646c2aa4, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /aries, headers: {Host: uk.cloudflare.quest}}}
+  - {name: 🇭🇰 -香港-azhk.333210.xyz, server: azhk.333210.xyz, port: 443, type: vmess, uuid: fbf7a58f-d025-4e27-b2c7-a79e35654c58, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /bby, headers: {Host: down.dingtalk.com}}}
+  - {name: 🇭🇰 -香港-hk-02.proxyvip.top, server: hk-02.proxyvip.top, port: 443, type: vmess, uuid: ac4cc225-f73a-488d-8371-7fadb201dffb, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: hk-02.proxyvip.top}}}
   - {name: 🇺🇸 -北美地区-435e40f.u2.glados-config.net, server: 435e40f.u2.glados-config.net, port: 443, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/t?ed=2048", headers: {Host: tls.apple.com}}}
-  - {name: 🇺🇸 -美国加利福尼亚州硅谷-43.153.4.246, server: 43.153.4.246, port: 443, type: vmess, uuid: b2720223-3eb6-4d26-860c-a891e02045bc, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: arm1dj.qiancheng.ml}}}
   - {name: 🇺🇸 -美国加利福尼亚州硅谷-tx-xg-2.ienai.xin, server: tx-xg-2.ienai.xin, port: 443, type: vmess, uuid: 03b188df-f7be-4038-8bc3-ffd2edb2b56a, alterId: 0, cipher: auto, tls: true}
-  - {name: 🇺🇸 -美国加利福尼亚州硅谷-tchk1.zhangxuan.best, server: tchk1.zhangxuan.best, port: 443, type: vmess, uuid: 7f67fb11-832d-3492-adfe-63e0cceafbe0, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: tchk1.zhangxuan.best}}}
-  - {name: 🇺🇸 -美国加利福尼亚州硅谷-tchk2.zhangxuan.best, server: tchk2.zhangxuan.best, port: 443, type: vmess, uuid: 7f67fb11-832d-3492-adfe-63e0cceafbe0, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: tchk2.zhangxuan.best}}}
   - {name: 🇺🇸 -美国加利福尼亚州硅谷-tchk3.zhangxuan.best, server: tchk3.zhangxuan.best, port: 443, type: vmess, uuid: 7f67fb11-832d-3492-adfe-63e0cceafbe0, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: tchk3.zhangxuan.best}}}
-  - {name: 🇺🇸 -美国加利福尼亚州洛杉矶-us-ca1.qwqjsq.top, server: us-ca1.qwqjsq.top, port: 443, type: vmess, uuid: b0543a3b-d690-3ed9-9a81-f24f852e74f7, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hls/cctv5phd.m3u8, headers: {Host: aweikeji-YouTube-TG}}}
+  - {name: 🇺🇸 -美国加利福尼亚州洛杉矶-41.216.177.148, server: 41.216.177.148, port: 443, type: vmess, uuid: 422e667b-954d-4daa-9dc1-5f08f9b479fc, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /vmess, headers: {Host: Titiitguuv}}}
+  - {name: 🇺🇸 -美国加利福尼亚州洛杉矶-us1.lolvps.xyz, server: us1.lolvps.xyz, port: 443, type: vmess, uuid: 95886c76-9207-48bd-9e64-d1422e75ad89, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /AY920UMR, headers: {Host: us1.lolvps.xyz}}}
   - {name: 🇺🇸 -美国弗吉尼亚州文特山农场-us-lb.sshkit.org, server: us-lb.sshkit.org, port: 443, type: vmess, uuid: 6fea1649-425b-4092-bf53-29792152c925, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /sshkit/Variu88/634dab7abadf1/, headers: {Host: zoom.us}}}
-  - {name: 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000001a.rui77.com, server: 00000000000000000000000000000000000000000000000000000000000001a.rui77.com, port: 443, type: vmess, uuid: a72e790f-e18a-43b0-a7a7-bcc33f144092, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 00000000000000000000000000000000000000000000000000000000000001a.rui77.com}}}
-  - {name: 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000013a.rui77.com, server: 00000000000000000000000000000000000000000000000000000000000013a.rui77.com, port: 443, type: vmess, uuid: 439f8ee0-f5a2-41c8-8167-895295033a10, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 -美国弗吉尼亚州文特山农场-usv-4.openv2ray.com, server: usv-4.openv2ray.com, port: 443, type: vmess, uuid: a40d34c6-b77c-4648-9210-3e8d2f4226b5, alterId: 16, cipher: auto, tls: false, network: ws, ws-opts: {path: "/opentunnel?user=opentunnel.net-arty98", headers: {Host: usv-4.openv2ray.com}}}
+  - {name: 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000028a.rui77.com, server: 00000000000000000000000000000000000000000000000000000000000028a.rui77.com, port: 443, type: vmess, uuid: 0f1df3fb-4dc5-4558-9bde-4f703c864a78, alterId: 0, cipher: auto, tls: false}
   - {name: 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000022a.rui77.com, server: 00000000000000000000000000000000000000000000000000000000000022a.rui77.com, port: 443, type: vmess, uuid: a72e790f-e18a-43b0-a7a7-bcc33f144092, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000035a.rui77.com, server: 00000000000000000000000000000000000000000000000000000000000035a.rui77.com, port: 443, type: vmess, uuid: a72e790f-e18a-43b0-a7a7-bcc33f144092, alterId: 0, cipher: auto, tls: false}
   - {name: 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000039a.rui77.com, server: 00000000000000000000000000000000000000000000000000000000000039a.rui77.com, port: 443, type: vmess, uuid: edc9e8a8-518e-425a-8184-e55d16d844b2, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 -美国-15.235.163.180, server: 15.235.163.180, port: 443, type: vmess, uuid: 78f936d1-8a72-4b7c-aafa-c8284e15ccaa, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /sshocean}}
-  - {name: 🇺🇸 -美国-152.67.196.3, server: 152.67.196.3, port: 443, type: vmess, uuid: 0b7175a0-f97c-43d9-83aa-284ddd2be488, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇺🇸 -美国-141.193.213.21, server: 141.193.213.21, port: 443, type: vmess, uuid: 3890505d-a496-4418-91a1-742faa2b0ac7, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /vpnneo, headers: {Host: 141.193.213.21}}}
+  - {name: 🇺🇸 -美国-144.202.127.206, server: 144.202.127.206, port: 443, type: vmess, uuid: 7f67fb11-832d-3492-adfe-63e0cceafbe0, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇺🇸 -美国-150.230.41.9, server: 150.230.41.9, port: 443, type: vmess, uuid: 956c6c2f-bf54-4b87-fafd-4b767ca12750, alterId: 0, cipher: auto, tls: false}
   - {name: 🇺🇸 -美国-152.67.207.69, server: 152.67.207.69, port: 443, type: vmess, uuid: 58cba904-206e-3e03-b61e-e2fa60cede05, alterId: 0, cipher: auto, tls: false}
   - {name: 🇺🇸 -美国-152.67.255.210, server: 152.67.255.210, port: 443, type: vmess, uuid: fa0702f4-8ec9-48e5-9b53-a0afb7c3717e, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 -美国-152.70.88.47, server: 152.70.88.47, port: 443, type: vmess, uuid: 9eaabb90-c98b-4fa3-9890-8622d53c878c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇨🇦 -加拿大-331tw.fans8.xyz, server: 331tw.fans8.xyz, port: 443, type: vmess, uuid: 7f4ff2e1-c08f-35bd-afe7-4a6a386907aa, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /ray, headers: {Host: 331tw.fans8.xyz}}}
   - {name: 🇺🇸 -美国-159.27.90.254, server: 159.27.90.254, port: 443, type: vmess, uuid: 352ba93c-fd92-3055-ad10-b3599ff2802f, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /mugua}}
-  - {name: 🇺🇸 -美国-168.119.174.242, server: 168.119.174.242, port: 443, type: vmess, uuid: 2827aa96-4018-11ed-9359-13a8d17b47f9, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /vmess, headers: {Host: www.google.com}}}
   - {name: 🇺🇸 -美国-168.138.40.254, server: 168.138.40.254, port: 443, type: vmess, uuid: 3e80dfb4-fd96-4040-bdec-e79ed3a7d0dc, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 -美国-172.64.147.224, server: 172.64.147.224, port: 443, type: vmess, uuid: 20000000-0000-0000-0000-000000000020, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /20, headers: {Host: dosg.cdn.securevpn.cc}}}
+  - {name: 🇺🇸 -美国-172.64.155.30, server: 172.64.155.30, port: 443, type: vmess, uuid: 8afc6cdf-4f0a-4725-a44c-5dacdc2b2784, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇺🇸 -美国-172.64.156.14, server: 172.64.156.14, port: 443, type: vmess, uuid: 18ac29c1-273b-4068-c40b-742d51409595, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /kdws, headers: {Host: hoot.ml}}}
   - {name: 🇺🇸 -美国-172.66.40.4, server: 172.66.40.4, port: 443, type: vmess, uuid: 201912af-46f5-4e65-96be-03899d9ae0d9, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /CW6MDigV/, headers: {Host: 172.66.40.4}}}
   - {name: 🇺🇸 -美国-172.67.154.11, server: 172.67.154.11, port: 443, type: vmess, uuid: 60b698c1-2d98-426e-d53e-0b5febe988f9, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /@airproxies}}
-  - {name: 🇺🇸 -美国-172.67.206.208, server: 172.67.206.208, port: 443, type: vmess, uuid: 275d9aa8-b271-43d1-b1cf-1f3e6e881047, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/guolicheng/de?ed=2048", headers: {Host: de.guolicheng.cyou}}}
-  - {name: 🇩🇪 -德国-47.254.128.86, server: 47.254.128.86, port: 443, type: vmess, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /ray, headers: {Host: lg30.cfcdn3.xyz}}}
-  - {name: 🇦🇺 -澳大利亚-139.99.236.163, server: 139.99.236.163, port: 443, type: vmess, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /ray, headers: {Host: lg30.cfcdn3.xyz}}}
-  - {name: 🇩🇪 -德国-47.254.132.62, server: 47.254.132.62, port: 443, type: vmess, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /ray, headers: {Host: lg30.cfcdn3.xyz}}}
-  - {name: 🇩🇪 -德国-47.254.155.106, server: 47.254.155.106, port: 443, type: vmess, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /ray, headers: {Host: lg30.cfcdn3.xyz}}}
-  - {name: 🇮🇩 印度尼西亚_1028003, server: id-lb.vhax.net, port: 80, type: vmess, uuid: 6fea1649-425b-4092-bf53-29792152c925, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /sshkit/Arsham85231/6347d08022b91/, headers: {Host: id-lb.vhax.net}}}
-  - {name: 🇩🇪 -德国-47.254.149.0, server: 47.254.149.0, port: 443, type: vmess, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /ray, headers: {Host: lg30.cfcdn3.xyz}}}
-  - {name: 🇩🇪 -德国-47.254.132.101, server: 47.254.132.101, port: 443, type: vmess, uuid: 91646f9a-b4e9-4aca-bfe3-8892b3e58fe7, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /ray, headers: {Host: lg30.cfcdn3.xyz}}}
-  - {name: -亚太地区-103.159.132.102, server: 103.159.132.102, port: 443, type: vmess, uuid: c11236af-56a6-49b3-c1b9-7b54ac3acb42, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇭🇺 -匈牙利-185.225.69.134, server: 185.225.69.134, port: 443, type: vmess, uuid: 3c3bfd75-dc30-4e76-8940-47e1137e21f9, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇹🇷 -土耳其-tr1.vpnjantit.com, server: tr1.vpnjantit.com, port: 443, type: vmess, uuid: 845d2770-3f8f-11ed-8d5d-8f6262e50718, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: tr1.vpnjantit.com}}}
-  - {name: -天津市-42.81.8.1, server: 42.81.8.1, port: 443, type: vmess, uuid: 1f927b64-9024-4650-b0eb-094280addf11, alterId: 1, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 006.cdn.8x.cx.hit.edu.cn}}}
-  - {name: -本机地址-435e40f.t1.glados-config.net, server: 435e40f.t1.glados-config.net, port: 443, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/t?ed=2048", headers: {Host: tls.apple.com}}}
-  - {name: -本机地址-V104.bgpnet.top, server: V104.bgpnet.top, port: 443, type: vmess, uuid: ef361c83-8b89-3950-9c9b-6ccc177e6285, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /admin, headers: {Host: V104.bgpnet.top}}}
-  - {name: -本机地址-dlszl.hotfun.buzz, server: dlszl.hotfun.buzz, port: 443, type: vmess, uuid: 6eaf2625-6e24-4c4f-8670-440f40e3b8c9, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /hoot, headers: {Host: dlszl.hotfun.buzz}}}
-  - {name: -本机地址-jplin005.xmrth-node.xyz, server: jplin005.xmrth-node.xyz, port: 443, type: vmess, uuid: 60517dbb-a465-32c6-87e7-2a457663de53, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /index, headers: {Host: www.baidu.com}}}
-  - {name: -本机地址-www.xt000.xyz, server: www.xt000.xyz, port: 443, type: vmess, uuid: 80782eff-e3fe-fc69-37cd-7efd760adf91, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /gceevws, headers: {Host: www.xt000.xyz}}}
-  - {name: -欧盟-shs.p1.gay, server: shs.p1.gay, port: 443, type: vmess, uuid: e1f80416-5394-4fcd-af80-12ef9799a92c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: shs.p1.gay}}}
-  - {name: 🇵🇭 -菲律宾-ph1.vpnjantit.com, server: ph1.vpnjantit.com, port: 443, type: vmess, uuid: fc2bf970-451b-11ed-a0ce-038d15ca0d7b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: ph1.vpnjantit.com}}}
-  - {name: 🇵🇭 -菲律宾-ph5.vpnjantit.com, server: ph5.vpnjantit.com, port: 443, type: vmess, uuid: 80cb1890-451d-11ed-ac38-6373e608187f, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: ph5.vpnjantit.com}}}
-  - {name: 🇵🇭 -菲律宾-premiph.vpnjantit.com, server: premiph.vpnjantit.com, port: 443, type: vmess, uuid: baa5643c-451b-11ed-893a-e3d88b9f9f7f, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: premiph.vpnjantit.com}}}
-  - {name: 🇻🇳 -越南-hcmn3.sos4g.xyz, server: hcmn3.sos4g.xyz, port: 443, type: vmess, uuid: 88feb3a4-8dd9-4001-91d6-9cceabca5a4b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /sos4g.xyz, headers: {Host: hcmn3.sos4g.xyz}}}
-  - {name: -非洲地区-102.37.157.62, server: 102.37.157.62, port: 443, type: vmess, uuid: d6783caf-ac05-4b79-9b6a-d2db93d44b43, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 102.37.157.62}}}
-  - {name: -黎巴嫩-46.20.109.23, server: 46.20.109.23, port: 443, type: vmess, uuid: 5f7e80d2-8115-4597-92e0-f85f3bc972fe, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: 46.20.109.23}}}
+  - {name: -亚太地区-103.166.140.104, server: 103.166.140.104, port: 443, type: vmess, uuid: a479fc02-07c5-4864-8564-c4f147dfa488, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: frontier-i18n.tiktokv.com}}}
+  - {name: -亚太地区-103.186.148.113, server: 103.186.148.113, port: 443, type: vmess, uuid: 67468d89-cf87-443c-baca-49f1e73b5991, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shopvpn.net}}
+  - {name: -亚太地区-103.186.148.94, server: 103.186.148.94, port: 443, type: vmess, uuid: a479fc02-07c5-4864-8564-c4f147dfa488, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 103.186.148.94}}}
+  - {name: -亚太地区-103.186.149.242, server: 103.186.149.242, port: 443, type: vmess, uuid: a479fc02-07c5-4864-8564-c4f147dfa488, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /shopvpn.net}}
+  - {name: -亚太地区-435e40f.h2.glados-config.net, server: 435e40f.h2.glados-config.net, port: 443, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/t?ed=2048", headers: {Host: tls.apple.com}}}
+  - {name: -亚太地区-435e40f.h3.glados-config.net, server: 435e40f.h3.glados-config.net, port: 443, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/t?ed=2048", headers: {Host: tls.apple.com}}}
+  - {name: -亚太地区-vn1.v2-ray.com, server: vn1.v2-ray.com, port: 443, type: vmess, uuid: fbf78c1f-6f42-45e0-a1a9-67de703b90f8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /fastssh/ghhgjkl/6348c03c0d17d/, headers: {Host: vn1.v2-ray.com}}}
+  - {name: -亚太地区-vn1.v2rayserv.com, server: vn1.v2rayserv.com, port: 443, type: vmess, uuid: a94966a1-2225-422b-b756-dd4b4d6b974b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /sshocean, headers: {Host: vn1.v2rayserv.com}}}
+  - {name: 🇺🇸 -亚太地区-xg1.xbywwcp.us, server: xg1.xbywwcp.us, port: 443, type: vmess, uuid: 328f686c-6b2b-3c40-b677-ed769728dcc0, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /by.xbygood.xyz, headers: {Host: xg1.xbywwcp.us}}}
   - {name: 🇺🇸 -亚太地区-yn.xbywwcp.us, server: yn.xbywwcp.us, port: 443, type: vmess, uuid: 99e2f539-700f-3947-b31a-4c9d912ff5fa, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /by.xbygood.xyz, headers: {Host: yn.xbywwcp.us}}}
+  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 80, server: 167.99.192.30, port: 3567, type: ss, cipher: chacha20-ietf-poly1305, password: HGBdOKdcIer5}
+  - {name: -宁夏固原市-36.103.232.160, server: 36.103.232.160, port: 443, type: vmess, uuid: bdf34515-b909-4a92-ad16-90c96f2aea56, alterId: 1, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: cdn002.cloudfront.rui77.com}}}
+  - {name: -本机地址-435e40f.v3.glados-config.net, server: 435e40f.v3.glados-config.net, port: 443, type: vmess, uuid: 57e0cb4d-eae5-48ec-8091-149dc2b309e0, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: "/t?ed=2048", headers: {Host: tls.apple.com}}}
+  - {name: -本机地址-V309.bgpnet.top, server: V309.bgpnet.top, port: 443, type: vmess, uuid: ef361c83-8b89-3950-9c9b-6ccc177e6285, alterId: 0, cipher: auto, tls: false}
+  - {name: -本机地址-hkaz6.xmrth-node.xyz, server: hkaz6.xmrth-node.xyz, port: 443, type: vmess, uuid: 60517dbb-a465-32c6-87e7-2a457663de53, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /index, headers: {Host: www.baidu.com}}}
+  - {name: -本机地址-hkaz7.xmrth-node.xyz, server: hkaz7.xmrth-node.xyz, port: 443, type: vmess, uuid: 60517dbb-a465-32c6-87e7-2a457663de53, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /index, headers: {Host: www.baidu.com}}}
+  - {name: -本机地址-jp02.henet.cyou, server: jp02.henet.cyou, port: 443, type: vmess, uuid: 279e0915-b0ce-49c7-a4df-39f9232d2034, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /live, headers: {Host: cctv.com}}}
+  - {name: -本机地址-jpaws002.xmrth-node.xyz, server: jpaws002.xmrth-node.xyz, port: 443, type: vmess, uuid: 60517dbb-a465-32c6-87e7-2a457663de53, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /index, headers: {Host: www.baidu.com}}}
+  - {name: -本机地址-jpaz2.xmrth-node.xyz, server: jpaz2.xmrth-node.xyz, port: 443, type: vmess, uuid: 60517dbb-a465-32c6-87e7-2a457663de53, alterId: 2, cipher: auto, tls: false, network: ws, ws-opts: {path: /index, headers: {Host: www.baidu.com}}}
+  - {name: -本机地址-www.xt000.xyz, server: www.xt000.xyz, port: 443, type: vmess, uuid: 80782eff-e3fe-fc69-37cd-7efd760adf91, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /gceevws, headers: {Host: www.xt000.xyz}}}
+  - {name: 🇻🇳 -越南-0001.hcm.genzpn.com, server: 0001.hcm.genzpn.com, port: 443, type: vmess, uuid: 4f4418cd-385c-4203-a323-1b4d2be8e495, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: dl.ops.kgvn.garenanow.com.akamaized.net}}}
+  - {name: 🇻🇳 -越南-hn2.vpngiare.net, server: hn2.vpngiare.net, port: 443, type: vmess, uuid: 813204f5-b7f3-48a9-8628-d650aa4de2d7, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /vpngiare.net, headers: {Host: vpngiare.tiktok.com}}}
+  - {name: -黎巴嫩-46.20.109.23, server: 46.20.109.23, port: 443, type: vmess, uuid: 5f7e80d2-8115-4597-92e0-f85f3bc972fe, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /cctv13/hd.m3u8, headers: {Host: 46.20.109.23}}}
+  - {name: 🇫🇷 -法国-fr.xlkjjs.top, server: fr.xlkjjs.top, port: 443, type: vmess, uuid: 0a6b7226-2f9c-393c-bc94-5a34859250c0, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: fr.xlkjjs.top}}}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -113,99 +111,97 @@ proxy-groups:
   - name: 🤘 手动选择
     type: select
     proxies:
-      - 🇯🇵 日本_1028130
-      - 🇸🇬 新加坡_1028060
-      - 🇯🇵 日本_1028033
-      - 🇯🇵 -日本-47.91.23.182
-      - 🇸🇬 新加坡_1028293
+      - 🇯🇵 日本_1028144
+      - 🇯🇵 [09-26]|openrunner|日本(JP)Japan/Tokyo_16
       - 🇨🇳 台湾_1028100
-      - 🇯🇵 -日本东京都东京-168.138.207.66
-      - 🇯🇵 -日本-00000000000000000000000000000000000000000000000000000000000003a.rui77.com
+      - 🇯🇵 -日本东京-109.166.38.54
+      - 🇯🇵 -日本东京-52.199.209.73
       - 🇯🇵 -日本-00000000000000000000000000000000000000000000000000000000000024a.rui77.com
-      - 🇯🇵 -日本-00000000000000000000000000000000000000000000000000000000000023a.rui77.com
       - 🇯🇵 -日本-00000000000000000000000000000000000000000000000000000000000037a.rui77.com
+      - 🇯🇵 -日本-140.238.48.194
       - 🇯🇵 -日本-146.56.133.109
-      - 🇯🇵 -日本-146.56.155.70
-      - 🇯🇵 -日本-146.56.166.153
-      - 🇯🇵 -日本-172.104.125.96
       - 🇯🇵 -日本-172.105.239.35
-      - 🇯🇵 -日本-1260eea.td.glados-config.net
-      - 🇯🇵 -日本-139.162.70.196
+      - 🇯🇵 -日本-18.182.50.27
       - 🇯🇵 -日本-35.77.223.19
-      - 🇯🇵 -日本-35.79.220.83
       - 🇯🇵 -日本-47.74.19.41
-      - 🇯🇵 -日本-47.74.32.51
+      - 🇯🇵 -日本-47.74.33.226
+      - 🇯🇵 -日本-47.74.43.158
       - 🇯🇵 -日本-47.91.17.249
-      - 🇯🇵 -日本东京-v26.idcloudhost.de
-      - 🇯🇵 -日本-52.246.168.230
-      - 🇯🇵 -日本-m2.pianyijc.top
-      - 🇯🇵 -日本-awskr.mayiyun.shop
+      - 🇯🇵 -日本-47.91.11.23
+      - 🇯🇵 -日本-54.199.24.57
+      - 🇯🇵 -日本-agroup.node1.v.nodelist-gfwairport.download
+      - 🇯🇵 -日本-agroup.node2.v.nodelist-gfwairport.download
       - 🇯🇵 -日本-bgroup.node1.v.nodelist-gfwairport.download
-      - 🇯🇵 -日本-jp04-vm0.entry.rwesdhytjuftyhdafsdgfrh.club
-      - 🇯🇵 -日本-jp1.wanss.win
-      - 🇯🇵 -日本-jp1.wumaojichang.ml
-      - 🇯🇵 -日本-jpgithub.edgehelper.com
-      - 🇯🇵 -日本-jpz5.1yuanfly.live
-      - 🇯🇵 -日本-kr.idcloudhost.de
-      - 🇯🇵 -日本-qwrwa.cloudfast.cc
-      - 🇯🇵 -日本-urgjp.hotfun.buzz
-      - 🇯🇵 -日本-v6.heduian.online
+      - 🇯🇵 -日本-bgroup.node4.v.nodelist-gfwairport.download
+      - 🇯🇵 -日本-f08.hotland.site
+      - 🇯🇵 -日本-janpanbpjcyos.loseyourip.com
+      - 🇯🇵 -日本-jptws.hotfun.buzz
+      - 🇯🇵 -日本-jpz2.1yuanfly.live
       - 🇯🇵 -日本-zfsp1.mayiyun.shop
-      - 🇭🇰 -香港-00000000000000000000000000000000000000000000000000000000000031a.rui77.com
-      - 🇭🇰 -香港-18.166.58.46
+      - 🇭🇰 -香港-159.100.206.88
+      - 🇭🇰 -香港-165.154.5.235
       - 🇭🇰 -香港-104.208.90.221
-      - 🇭🇰 -香港-203.184.132.247
-      - 🇭🇰 -香港-23.91.100.243
-      - 🇭🇰 -香港-47.242.51.205
+      - 🇭🇰 -香港-104.208.97.117
       - 🇭🇰 -香港-47.242.104.161
+      - 🇭🇰 -香港-47.242.18.21
+      - 🇭🇰 -香港-47.243.62.222
+      - 🇭🇰 -香港-47.243.92.11
+      - 🇭🇰 -香港-47.243.124.141
+      - 🇭🇰 -香港-47.243.131.231
+      - 🇭🇰 -香港-47.243.136.17
+      - 🇭🇰 -香港-47.87.166.143
+      - 🇭🇰 -香港-625hk03.fx6688.top
+      - 🇭🇰 -香港-7.kkyun.cyou
+      - 🇭🇰 -香港-8.210.159.196
+      - 🇭🇰 -香港-azhk.333210.xyz
+      - 🇭🇰 -香港-hk-02.proxyvip.top
       - 🇺🇸 -北美地区-435e40f.u2.glados-config.net
-      - 🇺🇸 -美国加利福尼亚州硅谷-43.153.4.246
       - 🇺🇸 -美国加利福尼亚州硅谷-tx-xg-2.ienai.xin
-      - 🇺🇸 -美国加利福尼亚州硅谷-tchk1.zhangxuan.best
-      - 🇺🇸 -美国加利福尼亚州硅谷-tchk2.zhangxuan.best
       - 🇺🇸 -美国加利福尼亚州硅谷-tchk3.zhangxuan.best
-      - 🇺🇸 -美国加利福尼亚州洛杉矶-us-ca1.qwqjsq.top
+      - 🇺🇸 -美国加利福尼亚州洛杉矶-41.216.177.148
+      - 🇺🇸 -美国加利福尼亚州洛杉矶-us1.lolvps.xyz
       - 🇺🇸 -美国弗吉尼亚州文特山农场-us-lb.sshkit.org
-      - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000001a.rui77.com
-      - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000013a.rui77.com
+      - 🇺🇸 -美国弗吉尼亚州文特山农场-usv-4.openv2ray.com
+      - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000028a.rui77.com
       - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000022a.rui77.com
+      - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000035a.rui77.com
       - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000039a.rui77.com
-      - 🇺🇸 -美国-15.235.163.180
-      - 🇺🇸 -美国-152.67.196.3
+      - 🇺🇸 -美国-141.193.213.21
+      - 🇺🇸 -美国-144.202.127.206
+      - 🇺🇸 -美国-150.230.41.9
       - 🇺🇸 -美国-152.67.207.69
       - 🇺🇸 -美国-152.67.255.210
-      - 🇺🇸 -美国-152.70.88.47
+      - 🇨🇦 -加拿大-331tw.fans8.xyz
       - 🇺🇸 -美国-159.27.90.254
-      - 🇺🇸 -美国-168.119.174.242
       - 🇺🇸 -美国-168.138.40.254
-      - 🇺🇸 -美国-172.64.147.224
+      - 🇺🇸 -美国-172.64.155.30
+      - 🇺🇸 -美国-172.64.156.14
       - 🇺🇸 -美国-172.66.40.4
       - 🇺🇸 -美国-172.67.154.11
-      - 🇺🇸 -美国-172.67.206.208
-      - 🇩🇪 -德国-47.254.128.86
-      - 🇦🇺 -澳大利亚-139.99.236.163
-      - 🇩🇪 -德国-47.254.132.62
-      - 🇩🇪 -德国-47.254.155.106
-      - 🇮🇩 印度尼西亚_1028003
-      - 🇩🇪 -德国-47.254.149.0
-      - 🇩🇪 -德国-47.254.132.101
-      - -亚太地区-103.159.132.102
-      - 🇭🇺 -匈牙利-185.225.69.134
-      - 🇹🇷 -土耳其-tr1.vpnjantit.com
-      - -天津市-42.81.8.1
-      - -本机地址-435e40f.t1.glados-config.net
-      - -本机地址-V104.bgpnet.top
-      - -本机地址-dlszl.hotfun.buzz
-      - -本机地址-jplin005.xmrth-node.xyz
-      - -本机地址-www.xt000.xyz
-      - -欧盟-shs.p1.gay
-      - 🇵🇭 -菲律宾-ph1.vpnjantit.com
-      - 🇵🇭 -菲律宾-ph5.vpnjantit.com
-      - 🇵🇭 -菲律宾-premiph.vpnjantit.com
-      - 🇻🇳 -越南-hcmn3.sos4g.xyz
-      - -非洲地区-102.37.157.62
-      - -黎巴嫩-46.20.109.23
+      - -亚太地区-103.166.140.104
+      - -亚太地区-103.186.148.113
+      - -亚太地区-103.186.148.94
+      - -亚太地区-103.186.149.242
+      - -亚太地区-435e40f.h2.glados-config.net
+      - -亚太地区-435e40f.h3.glados-config.net
+      - -亚太地区-vn1.v2-ray.com
+      - -亚太地区-vn1.v2rayserv.com
+      - 🇺🇸 -亚太地区-xg1.xbywwcp.us
       - 🇺🇸 -亚太地区-yn.xbywwcp.us
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 80
+      - -宁夏固原市-36.103.232.160
+      - -本机地址-435e40f.v3.glados-config.net
+      - -本机地址-V309.bgpnet.top
+      - -本机地址-hkaz6.xmrth-node.xyz
+      - -本机地址-hkaz7.xmrth-node.xyz
+      - -本机地址-jp02.henet.cyou
+      - -本机地址-jpaws002.xmrth-node.xyz
+      - -本机地址-jpaz2.xmrth-node.xyz
+      - -本机地址-www.xt000.xyz
+      - 🇻🇳 -越南-0001.hcm.genzpn.com
+      - 🇻🇳 -越南-hn2.vpngiare.net
+      - -黎巴嫩-46.20.109.23
+      - 🇫🇷 -法国-fr.xlkjjs.top
   - name: 🏳️‍🌈 国家选择
     type: select
     proxies:
@@ -256,198 +252,194 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - 🇯🇵 日本_1028130
-      - 🇸🇬 新加坡_1028060
-      - 🇯🇵 日本_1028033
-      - 🇯🇵 -日本-47.91.23.182
-      - 🇸🇬 新加坡_1028293
+      - 🇯🇵 日本_1028144
+      - 🇯🇵 [09-26]|openrunner|日本(JP)Japan/Tokyo_16
       - 🇨🇳 台湾_1028100
-      - 🇯🇵 -日本东京都东京-168.138.207.66
-      - 🇯🇵 -日本-00000000000000000000000000000000000000000000000000000000000003a.rui77.com
+      - 🇯🇵 -日本东京-109.166.38.54
+      - 🇯🇵 -日本东京-52.199.209.73
       - 🇯🇵 -日本-00000000000000000000000000000000000000000000000000000000000024a.rui77.com
-      - 🇯🇵 -日本-00000000000000000000000000000000000000000000000000000000000023a.rui77.com
       - 🇯🇵 -日本-00000000000000000000000000000000000000000000000000000000000037a.rui77.com
+      - 🇯🇵 -日本-140.238.48.194
       - 🇯🇵 -日本-146.56.133.109
-      - 🇯🇵 -日本-146.56.155.70
-      - 🇯🇵 -日本-146.56.166.153
-      - 🇯🇵 -日本-172.104.125.96
       - 🇯🇵 -日本-172.105.239.35
-      - 🇯🇵 -日本-1260eea.td.glados-config.net
-      - 🇯🇵 -日本-139.162.70.196
+      - 🇯🇵 -日本-18.182.50.27
       - 🇯🇵 -日本-35.77.223.19
-      - 🇯🇵 -日本-35.79.220.83
       - 🇯🇵 -日本-47.74.19.41
-      - 🇯🇵 -日本-47.74.32.51
+      - 🇯🇵 -日本-47.74.33.226
+      - 🇯🇵 -日本-47.74.43.158
       - 🇯🇵 -日本-47.91.17.249
-      - 🇯🇵 -日本东京-v26.idcloudhost.de
-      - 🇯🇵 -日本-52.246.168.230
-      - 🇯🇵 -日本-m2.pianyijc.top
-      - 🇯🇵 -日本-awskr.mayiyun.shop
+      - 🇯🇵 -日本-47.91.11.23
+      - 🇯🇵 -日本-54.199.24.57
+      - 🇯🇵 -日本-agroup.node1.v.nodelist-gfwairport.download
+      - 🇯🇵 -日本-agroup.node2.v.nodelist-gfwairport.download
       - 🇯🇵 -日本-bgroup.node1.v.nodelist-gfwairport.download
-      - 🇯🇵 -日本-jp04-vm0.entry.rwesdhytjuftyhdafsdgfrh.club
-      - 🇯🇵 -日本-jp1.wanss.win
-      - 🇯🇵 -日本-jp1.wumaojichang.ml
-      - 🇯🇵 -日本-jpgithub.edgehelper.com
-      - 🇯🇵 -日本-jpz5.1yuanfly.live
-      - 🇯🇵 -日本-kr.idcloudhost.de
-      - 🇯🇵 -日本-qwrwa.cloudfast.cc
-      - 🇯🇵 -日本-urgjp.hotfun.buzz
-      - 🇯🇵 -日本-v6.heduian.online
+      - 🇯🇵 -日本-bgroup.node4.v.nodelist-gfwairport.download
+      - 🇯🇵 -日本-f08.hotland.site
+      - 🇯🇵 -日本-janpanbpjcyos.loseyourip.com
+      - 🇯🇵 -日本-jptws.hotfun.buzz
+      - 🇯🇵 -日本-jpz2.1yuanfly.live
       - 🇯🇵 -日本-zfsp1.mayiyun.shop
-      - 🇭🇰 -香港-00000000000000000000000000000000000000000000000000000000000031a.rui77.com
-      - 🇭🇰 -香港-18.166.58.46
+      - 🇭🇰 -香港-159.100.206.88
+      - 🇭🇰 -香港-165.154.5.235
       - 🇭🇰 -香港-104.208.90.221
-      - 🇭🇰 -香港-203.184.132.247
-      - 🇭🇰 -香港-23.91.100.243
-      - 🇭🇰 -香港-47.242.51.205
+      - 🇭🇰 -香港-104.208.97.117
       - 🇭🇰 -香港-47.242.104.161
+      - 🇭🇰 -香港-47.242.18.21
+      - 🇭🇰 -香港-47.243.62.222
+      - 🇭🇰 -香港-47.243.92.11
+      - 🇭🇰 -香港-47.243.124.141
+      - 🇭🇰 -香港-47.243.131.231
+      - 🇭🇰 -香港-47.243.136.17
+      - 🇭🇰 -香港-47.87.166.143
+      - 🇭🇰 -香港-625hk03.fx6688.top
+      - 🇭🇰 -香港-7.kkyun.cyou
+      - 🇭🇰 -香港-8.210.159.196
+      - 🇭🇰 -香港-azhk.333210.xyz
+      - 🇭🇰 -香港-hk-02.proxyvip.top
       - 🇺🇸 -北美地区-435e40f.u2.glados-config.net
-      - 🇺🇸 -美国加利福尼亚州硅谷-43.153.4.246
       - 🇺🇸 -美国加利福尼亚州硅谷-tx-xg-2.ienai.xin
-      - 🇺🇸 -美国加利福尼亚州硅谷-tchk1.zhangxuan.best
-      - 🇺🇸 -美国加利福尼亚州硅谷-tchk2.zhangxuan.best
       - 🇺🇸 -美国加利福尼亚州硅谷-tchk3.zhangxuan.best
-      - 🇺🇸 -美国加利福尼亚州洛杉矶-us-ca1.qwqjsq.top
+      - 🇺🇸 -美国加利福尼亚州洛杉矶-41.216.177.148
+      - 🇺🇸 -美国加利福尼亚州洛杉矶-us1.lolvps.xyz
       - 🇺🇸 -美国弗吉尼亚州文特山农场-us-lb.sshkit.org
-      - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000001a.rui77.com
-      - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000013a.rui77.com
+      - 🇺🇸 -美国弗吉尼亚州文特山农场-usv-4.openv2ray.com
+      - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000028a.rui77.com
       - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000022a.rui77.com
+      - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000035a.rui77.com
       - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000039a.rui77.com
-      - 🇺🇸 -美国-15.235.163.180
-      - 🇺🇸 -美国-152.67.196.3
+      - 🇺🇸 -美国-141.193.213.21
+      - 🇺🇸 -美国-144.202.127.206
+      - 🇺🇸 -美国-150.230.41.9
       - 🇺🇸 -美国-152.67.207.69
       - 🇺🇸 -美国-152.67.255.210
-      - 🇺🇸 -美国-152.70.88.47
+      - 🇨🇦 -加拿大-331tw.fans8.xyz
       - 🇺🇸 -美国-159.27.90.254
-      - 🇺🇸 -美国-168.119.174.242
       - 🇺🇸 -美国-168.138.40.254
-      - 🇺🇸 -美国-172.64.147.224
+      - 🇺🇸 -美国-172.64.155.30
+      - 🇺🇸 -美国-172.64.156.14
       - 🇺🇸 -美国-172.66.40.4
       - 🇺🇸 -美国-172.67.154.11
-      - 🇺🇸 -美国-172.67.206.208
-      - 🇩🇪 -德国-47.254.128.86
-      - 🇦🇺 -澳大利亚-139.99.236.163
-      - 🇩🇪 -德国-47.254.132.62
-      - 🇩🇪 -德国-47.254.155.106
-      - 🇮🇩 印度尼西亚_1028003
-      - 🇩🇪 -德国-47.254.149.0
-      - 🇩🇪 -德国-47.254.132.101
-      - -亚太地区-103.159.132.102
-      - 🇭🇺 -匈牙利-185.225.69.134
-      - 🇹🇷 -土耳其-tr1.vpnjantit.com
-      - -天津市-42.81.8.1
-      - -本机地址-435e40f.t1.glados-config.net
-      - -本机地址-V104.bgpnet.top
-      - -本机地址-dlszl.hotfun.buzz
-      - -本机地址-jplin005.xmrth-node.xyz
-      - -本机地址-www.xt000.xyz
-      - -欧盟-shs.p1.gay
-      - 🇵🇭 -菲律宾-ph1.vpnjantit.com
-      - 🇵🇭 -菲律宾-ph5.vpnjantit.com
-      - 🇵🇭 -菲律宾-premiph.vpnjantit.com
-      - 🇻🇳 -越南-hcmn3.sos4g.xyz
-      - -非洲地区-102.37.157.62
-      - -黎巴嫩-46.20.109.23
+      - -亚太地区-103.166.140.104
+      - -亚太地区-103.186.148.113
+      - -亚太地区-103.186.148.94
+      - -亚太地区-103.186.149.242
+      - -亚太地区-435e40f.h2.glados-config.net
+      - -亚太地区-435e40f.h3.glados-config.net
+      - -亚太地区-vn1.v2-ray.com
+      - -亚太地区-vn1.v2rayserv.com
+      - 🇺🇸 -亚太地区-xg1.xbywwcp.us
       - 🇺🇸 -亚太地区-yn.xbywwcp.us
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 80
+      - -宁夏固原市-36.103.232.160
+      - -本机地址-435e40f.v3.glados-config.net
+      - -本机地址-V309.bgpnet.top
+      - -本机地址-hkaz6.xmrth-node.xyz
+      - -本机地址-hkaz7.xmrth-node.xyz
+      - -本机地址-jp02.henet.cyou
+      - -本机地址-jpaws002.xmrth-node.xyz
+      - -本机地址-jpaz2.xmrth-node.xyz
+      - -本机地址-www.xt000.xyz
+      - 🇻🇳 -越南-0001.hcm.genzpn.com
+      - 🇻🇳 -越南-hn2.vpngiare.net
+      - -黎巴嫩-46.20.109.23
+      - 🇫🇷 -法国-fr.xlkjjs.top
   - name: ⚡ 故障转移
     type: fallback
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇯🇵 日本_1028130
-      - 🇸🇬 新加坡_1028060
-      - 🇯🇵 日本_1028033
-      - 🇯🇵 -日本-47.91.23.182
-      - 🇸🇬 新加坡_1028293
+      - 🇯🇵 日本_1028144
+      - 🇯🇵 [09-26]|openrunner|日本(JP)Japan/Tokyo_16
       - 🇨🇳 台湾_1028100
-      - 🇯🇵 -日本东京都东京-168.138.207.66
-      - 🇯🇵 -日本-00000000000000000000000000000000000000000000000000000000000003a.rui77.com
+      - 🇯🇵 -日本东京-109.166.38.54
+      - 🇯🇵 -日本东京-52.199.209.73
       - 🇯🇵 -日本-00000000000000000000000000000000000000000000000000000000000024a.rui77.com
-      - 🇯🇵 -日本-00000000000000000000000000000000000000000000000000000000000023a.rui77.com
       - 🇯🇵 -日本-00000000000000000000000000000000000000000000000000000000000037a.rui77.com
+      - 🇯🇵 -日本-140.238.48.194
       - 🇯🇵 -日本-146.56.133.109
-      - 🇯🇵 -日本-146.56.155.70
-      - 🇯🇵 -日本-146.56.166.153
-      - 🇯🇵 -日本-172.104.125.96
       - 🇯🇵 -日本-172.105.239.35
-      - 🇯🇵 -日本-1260eea.td.glados-config.net
-      - 🇯🇵 -日本-139.162.70.196
+      - 🇯🇵 -日本-18.182.50.27
       - 🇯🇵 -日本-35.77.223.19
-      - 🇯🇵 -日本-35.79.220.83
       - 🇯🇵 -日本-47.74.19.41
-      - 🇯🇵 -日本-47.74.32.51
+      - 🇯🇵 -日本-47.74.33.226
+      - 🇯🇵 -日本-47.74.43.158
       - 🇯🇵 -日本-47.91.17.249
-      - 🇯🇵 -日本东京-v26.idcloudhost.de
-      - 🇯🇵 -日本-52.246.168.230
-      - 🇯🇵 -日本-m2.pianyijc.top
-      - 🇯🇵 -日本-awskr.mayiyun.shop
+      - 🇯🇵 -日本-47.91.11.23
+      - 🇯🇵 -日本-54.199.24.57
+      - 🇯🇵 -日本-agroup.node1.v.nodelist-gfwairport.download
+      - 🇯🇵 -日本-agroup.node2.v.nodelist-gfwairport.download
       - 🇯🇵 -日本-bgroup.node1.v.nodelist-gfwairport.download
-      - 🇯🇵 -日本-jp04-vm0.entry.rwesdhytjuftyhdafsdgfrh.club
-      - 🇯🇵 -日本-jp1.wanss.win
-      - 🇯🇵 -日本-jp1.wumaojichang.ml
-      - 🇯🇵 -日本-jpgithub.edgehelper.com
-      - 🇯🇵 -日本-jpz5.1yuanfly.live
-      - 🇯🇵 -日本-kr.idcloudhost.de
-      - 🇯🇵 -日本-qwrwa.cloudfast.cc
-      - 🇯🇵 -日本-urgjp.hotfun.buzz
-      - 🇯🇵 -日本-v6.heduian.online
+      - 🇯🇵 -日本-bgroup.node4.v.nodelist-gfwairport.download
+      - 🇯🇵 -日本-f08.hotland.site
+      - 🇯🇵 -日本-janpanbpjcyos.loseyourip.com
+      - 🇯🇵 -日本-jptws.hotfun.buzz
+      - 🇯🇵 -日本-jpz2.1yuanfly.live
       - 🇯🇵 -日本-zfsp1.mayiyun.shop
-      - 🇭🇰 -香港-00000000000000000000000000000000000000000000000000000000000031a.rui77.com
-      - 🇭🇰 -香港-18.166.58.46
+      - 🇭🇰 -香港-159.100.206.88
+      - 🇭🇰 -香港-165.154.5.235
       - 🇭🇰 -香港-104.208.90.221
-      - 🇭🇰 -香港-203.184.132.247
-      - 🇭🇰 -香港-23.91.100.243
-      - 🇭🇰 -香港-47.242.51.205
+      - 🇭🇰 -香港-104.208.97.117
       - 🇭🇰 -香港-47.242.104.161
+      - 🇭🇰 -香港-47.242.18.21
+      - 🇭🇰 -香港-47.243.62.222
+      - 🇭🇰 -香港-47.243.92.11
+      - 🇭🇰 -香港-47.243.124.141
+      - 🇭🇰 -香港-47.243.131.231
+      - 🇭🇰 -香港-47.243.136.17
+      - 🇭🇰 -香港-47.87.166.143
+      - 🇭🇰 -香港-625hk03.fx6688.top
+      - 🇭🇰 -香港-7.kkyun.cyou
+      - 🇭🇰 -香港-8.210.159.196
+      - 🇭🇰 -香港-azhk.333210.xyz
+      - 🇭🇰 -香港-hk-02.proxyvip.top
       - 🇺🇸 -北美地区-435e40f.u2.glados-config.net
-      - 🇺🇸 -美国加利福尼亚州硅谷-43.153.4.246
       - 🇺🇸 -美国加利福尼亚州硅谷-tx-xg-2.ienai.xin
-      - 🇺🇸 -美国加利福尼亚州硅谷-tchk1.zhangxuan.best
-      - 🇺🇸 -美国加利福尼亚州硅谷-tchk2.zhangxuan.best
       - 🇺🇸 -美国加利福尼亚州硅谷-tchk3.zhangxuan.best
-      - 🇺🇸 -美国加利福尼亚州洛杉矶-us-ca1.qwqjsq.top
+      - 🇺🇸 -美国加利福尼亚州洛杉矶-41.216.177.148
+      - 🇺🇸 -美国加利福尼亚州洛杉矶-us1.lolvps.xyz
       - 🇺🇸 -美国弗吉尼亚州文特山农场-us-lb.sshkit.org
-      - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000001a.rui77.com
-      - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000013a.rui77.com
+      - 🇺🇸 -美国弗吉尼亚州文特山农场-usv-4.openv2ray.com
+      - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000028a.rui77.com
       - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000022a.rui77.com
+      - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000035a.rui77.com
       - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000039a.rui77.com
-      - 🇺🇸 -美国-15.235.163.180
-      - 🇺🇸 -美国-152.67.196.3
+      - 🇺🇸 -美国-141.193.213.21
+      - 🇺🇸 -美国-144.202.127.206
+      - 🇺🇸 -美国-150.230.41.9
       - 🇺🇸 -美国-152.67.207.69
       - 🇺🇸 -美国-152.67.255.210
-      - 🇺🇸 -美国-152.70.88.47
+      - 🇨🇦 -加拿大-331tw.fans8.xyz
       - 🇺🇸 -美国-159.27.90.254
-      - 🇺🇸 -美国-168.119.174.242
       - 🇺🇸 -美国-168.138.40.254
-      - 🇺🇸 -美国-172.64.147.224
+      - 🇺🇸 -美国-172.64.155.30
+      - 🇺🇸 -美国-172.64.156.14
       - 🇺🇸 -美国-172.66.40.4
       - 🇺🇸 -美国-172.67.154.11
-      - 🇺🇸 -美国-172.67.206.208
-      - 🇩🇪 -德国-47.254.128.86
-      - 🇦🇺 -澳大利亚-139.99.236.163
-      - 🇩🇪 -德国-47.254.132.62
-      - 🇩🇪 -德国-47.254.155.106
-      - 🇮🇩 印度尼西亚_1028003
-      - 🇩🇪 -德国-47.254.149.0
-      - 🇩🇪 -德国-47.254.132.101
-      - -亚太地区-103.159.132.102
-      - 🇭🇺 -匈牙利-185.225.69.134
-      - 🇹🇷 -土耳其-tr1.vpnjantit.com
-      - -天津市-42.81.8.1
-      - -本机地址-435e40f.t1.glados-config.net
-      - -本机地址-V104.bgpnet.top
-      - -本机地址-dlszl.hotfun.buzz
-      - -本机地址-jplin005.xmrth-node.xyz
-      - -本机地址-www.xt000.xyz
-      - -欧盟-shs.p1.gay
-      - 🇵🇭 -菲律宾-ph1.vpnjantit.com
-      - 🇵🇭 -菲律宾-ph5.vpnjantit.com
-      - 🇵🇭 -菲律宾-premiph.vpnjantit.com
-      - 🇻🇳 -越南-hcmn3.sos4g.xyz
-      - -非洲地区-102.37.157.62
-      - -黎巴嫩-46.20.109.23
+      - -亚太地区-103.166.140.104
+      - -亚太地区-103.186.148.113
+      - -亚太地区-103.186.148.94
+      - -亚太地区-103.186.149.242
+      - -亚太地区-435e40f.h2.glados-config.net
+      - -亚太地区-435e40f.h3.glados-config.net
+      - -亚太地区-vn1.v2-ray.com
+      - -亚太地区-vn1.v2rayserv.com
+      - 🇺🇸 -亚太地区-xg1.xbywwcp.us
       - 🇺🇸 -亚太地区-yn.xbywwcp.us
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 80
+      - -宁夏固原市-36.103.232.160
+      - -本机地址-435e40f.v3.glados-config.net
+      - -本机地址-V309.bgpnet.top
+      - -本机地址-hkaz6.xmrth-node.xyz
+      - -本机地址-hkaz7.xmrth-node.xyz
+      - -本机地址-jp02.henet.cyou
+      - -本机地址-jpaws002.xmrth-node.xyz
+      - -本机地址-jpaz2.xmrth-node.xyz
+      - -本机地址-www.xt000.xyz
+      - 🇻🇳 -越南-0001.hcm.genzpn.com
+      - 🇻🇳 -越南-hn2.vpngiare.net
+      - -黎巴嫩-46.20.109.23
+      - 🇫🇷 -法国-fr.xlkjjs.top
   - name: 🌎 北美地区
     type: url-test
     url: https://www.google.com/generate_204
@@ -455,110 +447,108 @@ proxy-groups:
     tolerance: 100
     proxies:
       - 🇺🇸 -北美地区-435e40f.u2.glados-config.net
-      - 🇺🇸 -美国加利福尼亚州硅谷-43.153.4.246
       - 🇺🇸 -美国加利福尼亚州硅谷-tx-xg-2.ienai.xin
-      - 🇺🇸 -美国加利福尼亚州硅谷-tchk1.zhangxuan.best
-      - 🇺🇸 -美国加利福尼亚州硅谷-tchk2.zhangxuan.best
       - 🇺🇸 -美国加利福尼亚州硅谷-tchk3.zhangxuan.best
-      - 🇺🇸 -美国加利福尼亚州洛杉矶-us-ca1.qwqjsq.top
+      - 🇺🇸 -美国加利福尼亚州洛杉矶-41.216.177.148
+      - 🇺🇸 -美国加利福尼亚州洛杉矶-us1.lolvps.xyz
       - 🇺🇸 -美国弗吉尼亚州文特山农场-us-lb.sshkit.org
-      - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000001a.rui77.com
-      - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000013a.rui77.com
+      - 🇺🇸 -美国弗吉尼亚州文特山农场-usv-4.openv2ray.com
+      - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000028a.rui77.com
       - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000022a.rui77.com
+      - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000035a.rui77.com
       - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000039a.rui77.com
-      - 🇺🇸 -美国-15.235.163.180
-      - 🇺🇸 -美国-152.67.196.3
+      - 🇺🇸 -美国-141.193.213.21
+      - 🇺🇸 -美国-144.202.127.206
+      - 🇺🇸 -美国-150.230.41.9
       - 🇺🇸 -美国-152.67.207.69
       - 🇺🇸 -美国-152.67.255.210
-      - 🇺🇸 -美国-152.70.88.47
+      - 🇨🇦 -加拿大-331tw.fans8.xyz
       - 🇺🇸 -美国-159.27.90.254
-      - 🇺🇸 -美国-168.119.174.242
       - 🇺🇸 -美国-168.138.40.254
-      - 🇺🇸 -美国-172.64.147.224
+      - 🇺🇸 -美国-172.64.155.30
+      - 🇺🇸 -美国-172.64.156.14
       - 🇺🇸 -美国-172.66.40.4
       - 🇺🇸 -美国-172.67.154.11
-      - 🇺🇸 -美国-172.67.206.208
   - name: 🌏 东亚地区
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
-      - 🇯🇵 日本_1028130
-      - 🇸🇬 新加坡_1028060
-      - 🇯🇵 日本_1028033
-      - 🇯🇵 -日本-47.91.23.182
-      - 🇸🇬 新加坡_1028293
+      - 🇯🇵 日本_1028144
+      - 🇯🇵 [09-26]|openrunner|日本(JP)Japan/Tokyo_16
       - 🇨🇳 台湾_1028100
-      - 🇯🇵 -日本东京都东京-168.138.207.66
-      - 🇯🇵 -日本-00000000000000000000000000000000000000000000000000000000000003a.rui77.com
+      - 🇯🇵 -日本东京-109.166.38.54
+      - 🇯🇵 -日本东京-52.199.209.73
       - 🇯🇵 -日本-00000000000000000000000000000000000000000000000000000000000024a.rui77.com
-      - 🇯🇵 -日本-00000000000000000000000000000000000000000000000000000000000023a.rui77.com
       - 🇯🇵 -日本-00000000000000000000000000000000000000000000000000000000000037a.rui77.com
+      - 🇯🇵 -日本-140.238.48.194
       - 🇯🇵 -日本-146.56.133.109
-      - 🇯🇵 -日本-146.56.155.70
-      - 🇯🇵 -日本-146.56.166.153
-      - 🇯🇵 -日本-172.104.125.96
       - 🇯🇵 -日本-172.105.239.35
-      - 🇯🇵 -日本-1260eea.td.glados-config.net
-      - 🇯🇵 -日本-139.162.70.196
+      - 🇯🇵 -日本-18.182.50.27
       - 🇯🇵 -日本-35.77.223.19
-      - 🇯🇵 -日本-35.79.220.83
       - 🇯🇵 -日本-47.74.19.41
-      - 🇯🇵 -日本-47.74.32.51
+      - 🇯🇵 -日本-47.74.33.226
+      - 🇯🇵 -日本-47.74.43.158
       - 🇯🇵 -日本-47.91.17.249
-      - 🇯🇵 -日本东京-v26.idcloudhost.de
-      - 🇯🇵 -日本-52.246.168.230
-      - 🇯🇵 -日本-m2.pianyijc.top
-      - 🇯🇵 -日本-awskr.mayiyun.shop
+      - 🇯🇵 -日本-47.91.11.23
+      - 🇯🇵 -日本-54.199.24.57
+      - 🇯🇵 -日本-agroup.node1.v.nodelist-gfwairport.download
+      - 🇯🇵 -日本-agroup.node2.v.nodelist-gfwairport.download
       - 🇯🇵 -日本-bgroup.node1.v.nodelist-gfwairport.download
-      - 🇯🇵 -日本-jp04-vm0.entry.rwesdhytjuftyhdafsdgfrh.club
-      - 🇯🇵 -日本-jp1.wanss.win
-      - 🇯🇵 -日本-jp1.wumaojichang.ml
-      - 🇯🇵 -日本-jpgithub.edgehelper.com
-      - 🇯🇵 -日本-jpz5.1yuanfly.live
-      - 🇯🇵 -日本-kr.idcloudhost.de
-      - 🇯🇵 -日本-qwrwa.cloudfast.cc
-      - 🇯🇵 -日本-urgjp.hotfun.buzz
-      - 🇯🇵 -日本-v6.heduian.online
+      - 🇯🇵 -日本-bgroup.node4.v.nodelist-gfwairport.download
+      - 🇯🇵 -日本-f08.hotland.site
+      - 🇯🇵 -日本-janpanbpjcyos.loseyourip.com
+      - 🇯🇵 -日本-jptws.hotfun.buzz
+      - 🇯🇵 -日本-jpz2.1yuanfly.live
       - 🇯🇵 -日本-zfsp1.mayiyun.shop
-      - 🇭🇰 -香港-00000000000000000000000000000000000000000000000000000000000031a.rui77.com
-      - 🇭🇰 -香港-18.166.58.46
+      - 🇭🇰 -香港-159.100.206.88
+      - 🇭🇰 -香港-165.154.5.235
       - 🇭🇰 -香港-104.208.90.221
-      - 🇭🇰 -香港-203.184.132.247
-      - 🇭🇰 -香港-23.91.100.243
-      - 🇭🇰 -香港-47.242.51.205
+      - 🇭🇰 -香港-104.208.97.117
       - 🇭🇰 -香港-47.242.104.161
+      - 🇭🇰 -香港-47.242.18.21
+      - 🇭🇰 -香港-47.243.62.222
+      - 🇭🇰 -香港-47.243.92.11
+      - 🇭🇰 -香港-47.243.124.141
+      - 🇭🇰 -香港-47.243.131.231
+      - 🇭🇰 -香港-47.243.136.17
+      - 🇭🇰 -香港-47.87.166.143
+      - 🇭🇰 -香港-625hk03.fx6688.top
+      - 🇭🇰 -香港-7.kkyun.cyou
+      - 🇭🇰 -香港-8.210.159.196
+      - 🇭🇰 -香港-azhk.333210.xyz
+      - 🇭🇰 -香港-hk-02.proxyvip.top
   - name: 🌍 其它地区
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
-      - 🇩🇪 -德国-47.254.128.86
-      - 🇦🇺 -澳大利亚-139.99.236.163
-      - 🇩🇪 -德国-47.254.132.62
-      - 🇩🇪 -德国-47.254.155.106
-      - 🇮🇩 印度尼西亚_1028003
-      - 🇩🇪 -德国-47.254.149.0
-      - 🇩🇪 -德国-47.254.132.101
-      - -亚太地区-103.159.132.102
-      - 🇭🇺 -匈牙利-185.225.69.134
-      - 🇹🇷 -土耳其-tr1.vpnjantit.com
-      - -天津市-42.81.8.1
-      - -本机地址-435e40f.t1.glados-config.net
-      - -本机地址-V104.bgpnet.top
-      - -本机地址-dlszl.hotfun.buzz
-      - -本机地址-jplin005.xmrth-node.xyz
-      - -本机地址-www.xt000.xyz
-      - -欧盟-shs.p1.gay
-      - 🇵🇭 -菲律宾-ph1.vpnjantit.com
-      - 🇵🇭 -菲律宾-ph5.vpnjantit.com
-      - 🇵🇭 -菲律宾-premiph.vpnjantit.com
-      - 🇻🇳 -越南-hcmn3.sos4g.xyz
-      - -非洲地区-102.37.157.62
-      - -黎巴嫩-46.20.109.23
+      - -亚太地区-103.166.140.104
+      - -亚太地区-103.186.148.113
+      - -亚太地区-103.186.148.94
+      - -亚太地区-103.186.149.242
+      - -亚太地区-435e40f.h2.glados-config.net
+      - -亚太地区-435e40f.h3.glados-config.net
+      - -亚太地区-vn1.v2-ray.com
+      - -亚太地区-vn1.v2rayserv.com
+      - 🇺🇸 -亚太地区-xg1.xbywwcp.us
       - 🇺🇸 -亚太地区-yn.xbywwcp.us
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 80
+      - -宁夏固原市-36.103.232.160
+      - -本机地址-435e40f.v3.glados-config.net
+      - -本机地址-V309.bgpnet.top
+      - -本机地址-hkaz6.xmrth-node.xyz
+      - -本机地址-hkaz7.xmrth-node.xyz
+      - -本机地址-jp02.henet.cyou
+      - -本机地址-jpaws002.xmrth-node.xyz
+      - -本机地址-jpaz2.xmrth-node.xyz
+      - -本机地址-www.xt000.xyz
+      - 🇻🇳 -越南-0001.hcm.genzpn.com
+      - 🇻🇳 -越南-hn2.vpngiare.net
+      - -黎巴嫩-46.20.109.23
+      - 🇫🇷 -法国-fr.xlkjjs.top
   - name: 美国
     type: url-test
     url: https://www.google.com/generate_204
@@ -566,90 +556,88 @@ proxy-groups:
     tolerance: 100
     proxies:
       - 🇺🇸 -北美地区-435e40f.u2.glados-config.net
-      - 🇺🇸 -美国加利福尼亚州硅谷-43.153.4.246
       - 🇺🇸 -美国加利福尼亚州硅谷-tx-xg-2.ienai.xin
-      - 🇺🇸 -美国加利福尼亚州硅谷-tchk1.zhangxuan.best
-      - 🇺🇸 -美国加利福尼亚州硅谷-tchk2.zhangxuan.best
       - 🇺🇸 -美国加利福尼亚州硅谷-tchk3.zhangxuan.best
-      - 🇺🇸 -美国加利福尼亚州洛杉矶-us-ca1.qwqjsq.top
+      - 🇺🇸 -美国加利福尼亚州洛杉矶-41.216.177.148
+      - 🇺🇸 -美国加利福尼亚州洛杉矶-us1.lolvps.xyz
       - 🇺🇸 -美国弗吉尼亚州文特山农场-us-lb.sshkit.org
-      - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000001a.rui77.com
-      - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000013a.rui77.com
+      - 🇺🇸 -美国弗吉尼亚州文特山农场-usv-4.openv2ray.com
+      - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000028a.rui77.com
       - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000022a.rui77.com
+      - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000035a.rui77.com
       - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000039a.rui77.com
-      - 🇺🇸 -美国-15.235.163.180
-      - 🇺🇸 -美国-152.67.196.3
+      - 🇺🇸 -美国-141.193.213.21
+      - 🇺🇸 -美国-144.202.127.206
+      - 🇺🇸 -美国-150.230.41.9
       - 🇺🇸 -美国-152.67.207.69
       - 🇺🇸 -美国-152.67.255.210
-      - 🇺🇸 -美国-152.70.88.47
       - 🇺🇸 -美国-159.27.90.254
-      - 🇺🇸 -美国-168.119.174.242
       - 🇺🇸 -美国-168.138.40.254
-      - 🇺🇸 -美国-172.64.147.224
+      - 🇺🇸 -美国-172.64.155.30
+      - 🇺🇸 -美国-172.64.156.14
       - 🇺🇸 -美国-172.66.40.4
       - 🇺🇸 -美国-172.67.154.11
-      - 🇺🇸 -美国-172.67.206.208
   - name: 香港
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
-      - 🇭🇰 -香港-00000000000000000000000000000000000000000000000000000000000031a.rui77.com
-      - 🇭🇰 -香港-18.166.58.46
+      - 🇭🇰 -香港-159.100.206.88
+      - 🇭🇰 -香港-165.154.5.235
       - 🇭🇰 -香港-104.208.90.221
-      - 🇭🇰 -香港-203.184.132.247
-      - 🇭🇰 -香港-23.91.100.243
-      - 🇭🇰 -香港-47.242.51.205
+      - 🇭🇰 -香港-104.208.97.117
       - 🇭🇰 -香港-47.242.104.161
+      - 🇭🇰 -香港-47.242.18.21
+      - 🇭🇰 -香港-47.243.62.222
+      - 🇭🇰 -香港-47.243.92.11
+      - 🇭🇰 -香港-47.243.124.141
+      - 🇭🇰 -香港-47.243.131.231
+      - 🇭🇰 -香港-47.243.136.17
+      - 🇭🇰 -香港-47.87.166.143
+      - 🇭🇰 -香港-625hk03.fx6688.top
+      - 🇭🇰 -香港-7.kkyun.cyou
+      - 🇭🇰 -香港-8.210.159.196
+      - 🇭🇰 -香港-azhk.333210.xyz
+      - 🇭🇰 -香港-hk-02.proxyvip.top
   - name: 狮城
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
-      - 🇸🇬 新加坡_1028060
-      - 🇸🇬 新加坡_1028293
+      - DIRECT
   - name: 日本
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
-      - 🇯🇵 日本_1028130
-      - 🇯🇵 日本_1028033
-      - 🇯🇵 -日本-47.91.23.182
-      - 🇯🇵 -日本东京都东京-168.138.207.66
-      - 🇯🇵 -日本-00000000000000000000000000000000000000000000000000000000000003a.rui77.com
+      - 🇯🇵 日本_1028144
+      - 🇯🇵 [09-26]|openrunner|日本(JP)Japan/Tokyo_16
+      - 🇯🇵 -日本东京-109.166.38.54
+      - 🇯🇵 -日本东京-52.199.209.73
       - 🇯🇵 -日本-00000000000000000000000000000000000000000000000000000000000024a.rui77.com
-      - 🇯🇵 -日本-00000000000000000000000000000000000000000000000000000000000023a.rui77.com
       - 🇯🇵 -日本-00000000000000000000000000000000000000000000000000000000000037a.rui77.com
+      - 🇯🇵 -日本-140.238.48.194
       - 🇯🇵 -日本-146.56.133.109
-      - 🇯🇵 -日本-146.56.155.70
-      - 🇯🇵 -日本-146.56.166.153
-      - 🇯🇵 -日本-172.104.125.96
       - 🇯🇵 -日本-172.105.239.35
-      - 🇯🇵 -日本-1260eea.td.glados-config.net
-      - 🇯🇵 -日本-139.162.70.196
+      - 🇯🇵 -日本-18.182.50.27
       - 🇯🇵 -日本-35.77.223.19
-      - 🇯🇵 -日本-35.79.220.83
       - 🇯🇵 -日本-47.74.19.41
-      - 🇯🇵 -日本-47.74.32.51
+      - 🇯🇵 -日本-47.74.33.226
+      - 🇯🇵 -日本-47.74.43.158
       - 🇯🇵 -日本-47.91.17.249
-      - 🇯🇵 -日本东京-v26.idcloudhost.de
-      - 🇯🇵 -日本-52.246.168.230
-      - 🇯🇵 -日本-m2.pianyijc.top
-      - 🇯🇵 -日本-awskr.mayiyun.shop
+      - 🇯🇵 -日本-47.91.11.23
+      - 🇯🇵 -日本-54.199.24.57
+      - 🇯🇵 -日本-agroup.node1.v.nodelist-gfwairport.download
+      - 🇯🇵 -日本-agroup.node2.v.nodelist-gfwairport.download
       - 🇯🇵 -日本-bgroup.node1.v.nodelist-gfwairport.download
-      - 🇯🇵 -日本-jp04-vm0.entry.rwesdhytjuftyhdafsdgfrh.club
-      - 🇯🇵 -日本-jp1.wanss.win
-      - 🇯🇵 -日本-jp1.wumaojichang.ml
-      - 🇯🇵 -日本-jpgithub.edgehelper.com
-      - 🇯🇵 -日本-jpz5.1yuanfly.live
-      - 🇯🇵 -日本-kr.idcloudhost.de
-      - 🇯🇵 -日本-qwrwa.cloudfast.cc
-      - 🇯🇵 -日本-urgjp.hotfun.buzz
-      - 🇯🇵 -日本-v6.heduian.online
+      - 🇯🇵 -日本-bgroup.node4.v.nodelist-gfwairport.download
+      - 🇯🇵 -日本-f08.hotland.site
+      - 🇯🇵 -日本-janpanbpjcyos.loseyourip.com
+      - 🇯🇵 -日本-jptws.hotfun.buzz
+      - 🇯🇵 -日本-jpz2.1yuanfly.live
       - 🇯🇵 -日本-zfsp1.mayiyun.shop
   - name: 台湾
     type: url-test
