@@ -10,11 +10,11 @@ def speedtest(subscription,output_range,other_config={'concurrency': -1, 'timeou
         timeout: Time period that cannot connect to the tested proxy
     """
     default_config = {
-        'subscription': subscription, 'outputRange': output_range, 
+        'subscription': subscription, 'outputRange': output_range, 'speedtestMode': 'all',
         'concurrency': -1, 'timeout': -1
     }
-    default_config.update(other_config)
     config = default_config
+    config.update(other_config)
     
     work_dir = os.getcwd()
     os.chdir(os.path.dirname(os.path.abspath(__file__)))
@@ -82,6 +82,7 @@ def confighandler(input_config):
 
     lite_config['subscription'] = input_config['subscription']
     lite_config['outputRange'] = input_config['outputRange']
+    lite_config['speedtestMode'] = input_config['speedtestMode']
     if input_config['concurrency'] != -1:
         lite_config['concurrency'] = input_config['concurrency']
     if input_config['timeout'] != -1:
