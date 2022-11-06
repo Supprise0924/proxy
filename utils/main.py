@@ -43,11 +43,11 @@ if __name__ == '__main__':
         share_file_clash = configparse('common')['share_file_clash']
         subscription = configparse('speedtest')['subscription']
         range = configparse('speedtest')['output_range']
-        os.system(f'proxychains python3 ./utils/litespeedtest/speedtest.py --subscription \"../../{subscription}\" --range \"200,1100\" --path \"../../temp\"')
+        os.system(f'proxychains python3 ./utils/litespeedtest/speedtest.py --subscription \"../../{subscription}\" --range \"{range}\" --path \"../../temp\"')
 
-        east_asian_proxies = convert('../../temp','base64',{'deduplicate':False,'rename':'','include':'港|HK|Hong Kong|坡|SG|狮城|Singapore|日|JP|东京|大阪|埼玉|Japan|台|TW|新北|彰化|Taiwan|韩|KR|KOR|首尔|Korea','exclude':'','config':''})
-        north_america_proxies = convert('../../temp','base64',{'deduplicate':False,'rename':'','include':'美|US|United States|加拿大|CA|Canada|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥','exclude':'','config':''})
-        other_country_proxies = convert('../../temp','base64',{'deduplicate':False,'rename':'','include':'','exclude':'US|HK|SG|JP|TW|KR|美|港|坡|日|台|韩|CA|加','config':''})
+        east_asian_proxies = convert('../../temp','base64',{'deduplicate':False,'include':'港|HK|Hong Kong|坡|SG|狮城|Singapore|日|JP|东京|大阪|埼玉|Japan|台|TW|新北|彰化|Taiwan|韩|KR|KOR|首尔|Korea'})
+        north_america_proxies = convert('../../temp','base64',{'deduplicate':False,'include':'美|US|United States|加拿大|CA|Canada|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥'})
+        other_country_proxies = convert('../../temp','base64',{'deduplicate':False,'include':'','exclude':'US|HK|SG|JP|TW|KR|美|港|坡|日|台|韩|CA|加'})
         area_proxies = {
             'east_asia': [east_asian_proxies, 45],
             'north_america': [north_america_proxies, 25],
