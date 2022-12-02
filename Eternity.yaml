@@ -5,50 +5,50 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇸🇬 -新加坡-sg-am3.eqsunshine.com, server: sg-am3.eqsunshine.com, port: 32001, type: ssr, cipher: aes-256-cfb, password: 3g0dHlKME, protocol: origin, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
-  - {name: 🇸🇬 新加坡_1130334, server: 172.104.162.207, port: 29133, type: vmess, uuid: 9374ce7b-1e78-4eb0-dc5c-25c0e005e78c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /hkgzs01}}
   - {name: 🇯🇵 日本-ss-52.197.66.243443-被墙-直连-解锁日本地区NF非自制剧, server: 52.197.66.243, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
+  - {name: 🇯🇵 日本-vmess-146.56.40.11727675-被墙-直连-解锁韩国地区NF非自制剧, server: 146.56.40.117, port: 27675, type: vmess, uuid: 053ca0f4-057e-493d-ad30-5ba51f00f59c, alterId: 4, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇸🇬 美国-vmess-ca.0112233.xyz8443-被墙-中转199.87.210.186-解锁新加坡地区NF非自制剧, server: ca.0112233.xyz, port: 8443, type: vmess, uuid: c3000e9d-bee7-4fdb-b312-dd07030f325d, alterId: 4, cipher: auto, tls: true, network: ws, ws-opts: {path: /home, headers: {Host: ca.0112233.xyz}}}
   - {name: 🇸🇬 中国-vmess-8.214.33.15880-被墙-直连-解锁新加坡地区NF非自制剧, server: 8.214.33.158, port: 80, type: vmess, uuid: cb81e6ab-1d83-4ac1-f0ad-ae5c2a7c29ef, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
   - {name: 🇯🇵 美国-vmess-jparm.fineyoo.cf443-被墙-中转152.70.81.66-解锁日本地区NF非自制剧, server: jparm.fineyoo.cf, port: 443, type: vmess, uuid: bd5ee249-fe7b-4669-a6d9-b3f5eecb98e6, alterId: 4, cipher: auto, tls: true, network: ws, ws-opts: {path: /123, headers: {Host: jparm.fineyoo.cf}}}
   - {name: 🇯🇵 美国-vmess-jparm.fineyoo.ml443-被墙-中转138.2.33.90-解锁日本地区NF非自制剧, server: jparm.fineyoo.ml, port: 443, type: vmess, uuid: 10ba478e-9de1-4aa9-c09e-7707025334d3, alterId: 4, cipher: auto, tls: true, network: ws, ws-opts: {path: /123, headers: {Host: jparm.fineyoo.ml}}}
   - {name: 🇯🇵 美国-vmess-jpamd.fineyoo.ml443-被墙-中转138.2.33.102-解锁日本地区NF非自制剧, server: jpamd.fineyoo.ml, port: 443, type: vmess, uuid: 35e5e2ea-1372-4745-dff8-fb2bd11016c4, alterId: 4, cipher: auto, tls: true, network: ws, ws-opts: {path: /123, headers: {Host: jpamd.fineyoo.ml}}}
   - {name: 🇰🇷 美国-vmess-amdkr.ptuu.ga443-被墙-中转152.69.229.222-解锁韩国地区NF非自制剧, server: amdkr.ptuu.ga, port: 443, type: vmess, uuid: a612b67f-a79b-4a71-a82b-a46906752023, alterId: 4, cipher: auto, tls: true, network: ws, ws-opts: {path: /408, headers: {Host: amdkr.ptuu.ga}}}
   - {name: 🇰🇷 美国-vmess-amdkr.ptuu.ml443-被墙-中转146.56.96.75-解锁韩国地区NF非自制剧, server: amdkr.ptuu.ml, port: 443, type: vmess, uuid: e2cdc305-dda7-465e-b675-ba0468d2a8b3, alterId: 4, cipher: auto, tls: true, network: ws, ws-opts: {path: /987, headers: {Host: amdkr.ptuu.ml}}}
-  - {name: "🇸🇬 [12-02]-🇸🇬-新加坡-2340-217.197.161.109", server: 217.197.161.109, port: 801, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: "🇸🇬 [12-02]-🇸🇬-新加坡-866-217.197.161.109", server: 217.197.161.109, port: 801, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: "🇸🇬 [12-02]-🇸🇬-新加坡-1112-aws2.yydsdy.top", server: aws2.yydsdy.top, port: 20000, type: ss, cipher: chacha20-ietf-poly1305, password: Rah5vQ2A7aaH2bMb0eAwtyAfwgunvZOWiB2n25WhGmp1}
   - {name: 🇭🇰 -香港-119.237.195.230, server: 119.237.195.230, port: 543, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: "", obfs-param: ""}
-  - {name: 🇭🇰 -香港-168.70.92.12, server: 168.70.92.12, port: 443, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51809:111111, obfs-param: ""}
   - {name: 🇭🇰 -香港-42.98.27.183, server: 42.98.27.183, port: 543, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51361:67mfIToL84PnZq0d, obfs-param: ""}
-  - {name: 🇯🇵 -日本-jp.indigo.02.nekocloud.cn, server: jp.indigo.02.nekocloud.cn, port: 19059, type: ssr, cipher: aes-128-cfb, password: iluulrzviik, protocol: auth_aes128_md5, obfs: plain, protocol-param: 42613:4gvqxX, obfs-param: 2c46b42613.wns.windows.com}
-  - {name: 🇸🇬 美国-vmess-ca.0112233.xyz8443-被墙-中转199.87.210.186-解锁新加坡地区NF非自制剧, server: ca.0112233.xyz, port: 8443, type: vmess, uuid: c3000e9d-bee7-4fdb-b312-dd07030f325d, alterId: 4, cipher: auto, tls: true, network: ws, ws-opts: {path: /home, headers: {Host: ca.0112233.xyz}}}
-  - {name: 🇸🇬 -新加坡-udp-003.gito.cc, server: udp-003.gito.cc, port: 36811, type: ssr, cipher: aes-256-cfb, password: 9ifast, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: "�۹��z�\x1a���", obfs-param: �k��75��0�j�wnlog�winj�wy�r�v��om}
-  - {name: 🇸🇬 -新加坡-128.199.202.80, server: 128.199.202.80, port: 16578, type: vmess, uuid: 5a494728-342a-491c-8cd3-23f0e614cce9, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 128.199.202.80}}}
-  - {name: 🇭🇰 -香港-47.243.253.120, server: 47.243.253.120, port: 443, type: vmess, uuid: 1197321c-eb59-4159-959f-5d81f53c1792, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: h1.800876.xyz}}}
-  - {name: 🇸🇬 -新加坡-free.sg1.sfsa.cf, server: free.sg1.sfsa.cf, port: 443, type: vmess, uuid: 15f4ec32-3735-4521-acf2-f59ae7862633, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: cdimage.debian.org}}}
-  - {name: 🇭🇰 -香港-hk12.sanfen001.pics, server: hk12.sanfen001.pics, port: 443, type: vmess, uuid: 9f3f612a-2fb0-420d-830f-1a502a1db50c, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: www.microsoft.com}}}
-  - {name: 🇯🇵 -日本-jp04-vm0.entry.srthdw.art, server: jp04-vm0.entry.srthdw.art, port: 446, type: vmess, uuid: 947453fe-c8f0-3079-9e7f-2f67b78d8fe8, alterId: 1, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: YouTube-aweikeji}}}
-  - {name: 🇸🇬 -新加坡-sg5.vpnjantit.com, server: sg5.vpnjantit.com, port: 10000, type: vmess, uuid: 12f705fa-59df-11ed-86a4-af81b71ba7b8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: sg5.vpnjantit.com}}}
+  - {name: 🇯🇵 -日本-jp.indigo.02.nekocloud.cn, server: jp.indigo.02.nekocloud.cn, port: 19059, type: ssr, cipher: aes-128-cfb, password: iluulrzviik, protocol: auth_aes128_md5, obfs: plain, protocol-param: "", obfs-param: 2c46b42613.wns.windows.com}
+  - {name: 🇯🇵 -日本东京-124.156.238.155, server: 124.156.238.155, port: 443, type: vmess, uuid: 81d93f62-15a2-4994-adb9-0b5d906aac7e, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: tgunivstar.168-138-94-194.sslip.io}}}
+  - {name: 🇯🇵 -日本-18.183.218.89, server: 18.183.218.89, port: 35412, type: vmess, uuid: 10c0bf3e-9d0d-4a32-9e32-151aa8e46330, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 18.183.218.89}}}
   - {name: 🇯🇵 -日本-paopao.v2.jp05.paopaocloud.cyou, server: paopao.v2.jp05.paopaocloud.cyou, port: 3307, type: vmess, uuid: 076af6f7-7264-3d27-8156-1081d22b78ab, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: jp05.ssru4.fun}}}
-  - {name: 🇯🇵 -日本-univstar-185-160-26-114.sslip.io, server: univstar-185-160-26-114.sslip.io, port: 80, type: vmess, uuid: bdd756c4-fdc3-42dc-838f-006aef3f287c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: sg1.fuzzyng.com}}}
-  - {name: 🇸🇬 -新加坡-sg1.tejiewm.com, server: sg1.tejiewm.com, port: 8890, type: vmess, uuid: 23265a13-ef63-49d0-a1d9-9cfe4e7d5e17, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇭🇰 -香港-hk4.czs1000.com, server: hk4.czs1000.com, port: 8000, type: vmess, uuid: 23265a13-ef63-49d0-a1d9-9cfe4e7d5e17, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇭🇰 -香港-hk5.czs1000.com, server: hk5.czs1000.com, port: 8001, type: vmess, uuid: 23265a13-ef63-49d0-a1d9-9cfe4e7d5e17, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇸🇬 -新加坡-sg4.czs1000.com, server: sg4.czs1000.com, port: 5000, type: vmess, uuid: 23265a13-ef63-49d0-a1d9-9cfe4e7d5e17, alterId: 0, cipher: auto, tls: false}
   - {name: 🇯🇵 -日本-18.183.7.142, server: 18.183.7.142, port: 20312, type: vmess, uuid: 10c0bf3e-9d0d-4a32-9e32-151aa8e46330, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 18.183.7.142}}}
   - {name: 🇯🇵 -日本-jp8.tejiewm.com, server: jp8.tejiewm.com, port: 4443, type: vmess, uuid: 23265a13-ef63-49d0-a1d9-9cfe4e7d5e17, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇰🇷 -韩国首尔-193.122.113.203, server: 193.122.113.203, port: 443, type: vmess, uuid: c9d5f9f1-1bfd-4b12-97be-0fa3b05ab845, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: www.jimengsro.cf}}}
-  - {name: 🇯🇵 -日本-jp06-vm0.entry.rwesdhytjuftyhdafsdgfrh.club, server: jp06-vm0.entry.rwesdhytjuftyhdafsdgfrh.club, port: 446, type: vmess, uuid: 3566759d-f1e6-3198-bd7e-818936f07c37, alterId: 1, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: jp06-vm0.entry.rwesdhytjuftyhdafsdgfrh.club}}}
+  - {name: 🇯🇵 -日本-jp2.czs1000.com, server: jp2.czs1000.com, port: 8886, type: vmess, uuid: 23265a13-ef63-49d0-a1d9-9cfe4e7d5e17, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇰🇷 -韩国-kr2.czs1000.com, server: kr2.czs1000.com, port: 6688, type: vmess, uuid: 23265a13-ef63-49d0-a1d9-9cfe4e7d5e17, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇯🇵 -日本-jp01-vm0.entry.srthdw.art, server: jp01-vm0.entry.srthdw.art, port: 444, type: vmess, uuid: 21c670ff-c739-3072-9286-7d2a1d300fcb, alterId: 1, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: jp01-vm0.entry.srthdw.art}}}
+  - {name: 🇯🇵 -日本-jp02-vm0.entry.rwesdhytjuftyhdafsdgfrh.club, server: jp02-vm0.entry.rwesdhytjuftyhdafsdgfrh.club, port: 446, type: vmess, uuid: c498879d-8a73-3baf-a4f4-a0f38b75949c, alterId: 1, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: jp02-vm0.entry.rwesdhytjuftyhdafsdgfrh.club}}}
+  - {name: 🇯🇵 -日本-jp03-vm0.entry.rwesdhytjuftyhdafsdgfrh.club, server: jp03-vm0.entry.rwesdhytjuftyhdafsdgfrh.club, port: 446, type: vmess, uuid: c498879d-8a73-3baf-a4f4-a0f38b75949c, alterId: 1, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: jp03-vm0.entry.rwesdhytjuftyhdafsdgfrh.club}}}
+  - {name: 🇯🇵 -日本-jp06-vm0.entry.srthdw.art, server: jp06-vm0.entry.srthdw.art, port: 444, type: vmess, uuid: 1e82e707-826f-39eb-8d88-4dc0434f6f3a, alterId: 1, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: jp06-vm0.entry.srthdw.art}}}
+  - {name: 🇸🇬 -新加坡-02.SGIX.ANRUN-IX.TOP, server: 02.SGIX.ANRUN-IX.TOP, port: 11002, type: vmess, uuid: dd86a105-00c1-41ba-899c-c31aa74f4539, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇸🇬 -新加坡-04.SGIX.ANRUN-IX.TOP, server: 04.SGIX.ANRUN-IX.TOP, port: 11004, type: vmess, uuid: dd86a105-00c1-41ba-899c-c31aa74f4539, alterId: 0, cipher: auto, tls: false}
   - {name: 🇸🇬 -新加坡-05xjp.mealstream.xyz, server: 05xjp.mealstream.xyz, port: 15105, type: vmess, uuid: 8578dc92-3097-4dd5-941a-5e6ebeaa91ba, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇸🇬 -新加坡-06xjp.mealstream.xyz, server: 06xjp.mealstream.xyz, port: 15306, type: vmess, uuid: 8578dc92-3097-4dd5-941a-5e6ebeaa91ba, alterId: 0, cipher: auto, tls: true}
-  - {name: 🇸🇬 -新加坡-13.212.190.167, server: 13.212.190.167, port: 80, type: vmess, uuid: 3ce64cd6-8953-4c45-b084-54622c6d0e63, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇸🇬 -新加坡-128.199.202.80, server: 128.199.202.80, port: 16578, type: vmess, uuid: 5a494728-342a-491c-8cd3-23f0e614cce9, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 128.199.202.80}}}
   - {name: 🇸🇬 -新加坡-27xjp.mealstream.xyz, server: 27xjp.mealstream.xyz, port: 15027, type: vmess, uuid: 8578dc92-3097-4dd5-941a-5e6ebeaa91ba, alterId: 0, cipher: auto, tls: false}
   - {name: 🇸🇬 -新加坡-3.1.126.69, server: 3.1.126.69, port: 443, type: vmess, uuid: 711946c4-8f06-4583-98e5-11936799dc4b, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: live.bilibili.com}}}
   - {name: 🇸🇬 -新加坡-45.118.132.179, server: 45.118.132.179, port: 48888, type: vmess, uuid: af4d2493-9156-4514-9f6b-ee5d1a1e4713, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: www.baidu.com}}}
-  - {name: 🇸🇬 -新加坡-sg4.czs1000.com, server: sg4.czs1000.com, port: 5000, type: vmess, uuid: 23265a13-ef63-49d0-a1d9-9cfe4e7d5e17, alterId: 0, cipher: auto, tls: false}
   - {name: 🇸🇬 -新加坡-sg5.czs1000.com, server: sg5.czs1000.com, port: 5005, type: vmess, uuid: 27624f0d-c261-4fdc-b0c9-0c4037842cd8, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇸🇬 -新加坡-sg6.czs1000.com, server: sg6.czs1000.com, port: 4000, type: vmess, uuid: 27624f0d-c261-4fdc-b0c9-0c4037842cd8, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇸🇬 -新加坡-sg5.vpnjantit.com, server: sg5.vpnjantit.com, port: 10000, type: vmess, uuid: 12f705fa-59df-11ed-86a4-af81b71ba7b8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: sg5.vpnjantit.com}}}
+  - {name: 🇸🇬 -新加坡-sg6.czs1000.com, server: sg6.czs1000.com, port: 5002, type: vmess, uuid: 23265a13-ef63-49d0-a1d9-9cfe4e7d5e17, alterId: 0, cipher: auto, tls: true}
   - {name: 🇸🇬 -新加坡-sg7.czs1000.com, server: sg7.czs1000.com, port: 6688, type: vmess, uuid: 23265a13-ef63-49d0-a1d9-9cfe4e7d5e17, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇸🇬 -新加坡-sg8.czs1000.com, server: sg8.czs1000.com, port: 6687, type: vmess, uuid: 27624f0d-c261-4fdc-b0c9-0c4037842cd8, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇸🇬 -新加坡-sg8.czs1000.com, server: sg8.czs1000.com, port: 6687, type: vmess, uuid: 23265a13-ef63-49d0-a1d9-9cfe4e7d5e17, alterId: 0, cipher: auto, tls: true}
   - {name: 🇸🇬 -新加坡-sg1.sanfen001.pics, server: sg1.sanfen001.pics, port: 443, type: vmess, uuid: 9f3f612a-2fb0-420d-830f-1a502a1db50c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: www.microsoft.com}}}
+  - {name: 🇸🇬 -新加坡-sg1.tejiewm.com, server: sg1.tejiewm.com, port: 6688, type: vmess, uuid: c5a3568a-0d38-4aee-ad82-e18d794f1303, alterId: 0, cipher: auto, tls: true}
   - {name: 🇸🇬 -新加坡-sg10.czs1000.com, server: sg10.czs1000.com, port: 6699, type: vmess, uuid: 23265a13-ef63-49d0-a1d9-9cfe4e7d5e17, alterId: 0, cipher: auto, tls: true}
+  - {name: 🇸🇬 -新加坡-sg13.czs1000.com, server: sg13.czs1000.com, port: 4000, type: vmess, uuid: 27624f0d-c261-4fdc-b0c9-0c4037842cd8, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇸🇬 -新加坡-sg2.elknode.top, server: sg2.elknode.top, port: 80, type: vmess, uuid: 459270d2-e59b-3823-a170-d5202f04f29a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: data.video.qiyi.com}}}
+  - {name: 🇸🇬 -新加坡-sggs3.vpnjantit.com, server: sggs3.vpnjantit.com, port: 10000, type: vmess, uuid: a835571a-59e0-11ed-8e2c-00163e5de8a8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: sggs3.vpnjantit.com}}}
   - {name: 🇺🇸 美国-ss-35.91.237.33443-被墙-直连-解锁美国地区NF非自制剧, server: 35.91.237.33, port: 443, type: ss, cipher: aes-256-cfb, password: amazonskr05}
   - {name: 🇺🇸 美国-ss-mf01.xmss.vip18888-被墙-中转94.131.107.12-解锁美国地区NF非自制剧, server: mf01.xmss.vip, port: 18888, type: ss, cipher: chacha20-ietf-poly1305, password: 35b0f578-8961-4a2b-99a1-db9555e522e4}
   - {name: 🇸🇬 美国-vmess-ca.0112233.xyz8443-被墙-中转199.87.210.186-解锁新加坡地区NF非自制剧 2, server: ca.0112233.xyz, port: 8443, type: vmess, uuid: c3000e9d-bee7-4fdb-b312-dd07030f325d, alterId: 4, cipher: auto, tls: true, network: ws, ws-opts: {path: /home, headers: {Host: ca.0112233.xyz}}}
@@ -58,44 +58,44 @@ proxies:
   - {name: 🇯🇵 美国-vmess-jpamd.fineyoo.ml443-被墙-中转138.2.33.102-解锁日本地区NF非自制剧 2, server: jpamd.fineyoo.ml, port: 443, type: vmess, uuid: 35e5e2ea-1372-4745-dff8-fb2bd11016c4, alterId: 4, cipher: auto, tls: true, network: ws, ws-opts: {path: /123, headers: {Host: jpamd.fineyoo.ml}}}
   - {name: 🇰🇷 美国-vmess-amdkr.ptuu.ga443-被墙-中转152.69.229.222-解锁韩国地区NF非自制剧 2, server: amdkr.ptuu.ga, port: 443, type: vmess, uuid: a612b67f-a79b-4a71-a82b-a46906752023, alterId: 4, cipher: auto, tls: true, network: ws, ws-opts: {path: /408, headers: {Host: amdkr.ptuu.ga}}}
   - {name: 🇰🇷 美国-vmess-amdkr.ptuu.ml443-被墙-中转146.56.96.75-解锁韩国地区NF非自制剧 2, server: amdkr.ptuu.ml, port: 443, type: vmess, uuid: e2cdc305-dda7-465e-b675-ba0468d2a8b3, alterId: 4, cipher: auto, tls: true, network: ws, ws-opts: {path: /987, headers: {Host: amdkr.ptuu.ml}}}
-  - {name: "🇺🇸 [12-02]-🇺🇸-美国-866-155.94.238.220", server: 155.94.238.220, port: 20000, type: ss, cipher: chacha20-ietf-poly1305, password: Dwz4t1EJg0obH8oCuMjFcDheszcYC7yZXtyi6Vj6CbQk}
-  - {name: "🇺🇸 [12-02]-🇺🇸-美国-2482-45.33.93.207", server: 45.33.93.207, port: 443, type: ss, cipher: aes-256-cfb, password: 9d6cceaa373bf2c8acb22e60b6a58be6}
-  - {name: "🇨🇦 [12-02]-🇨🇦-加拿大蒙特利尔-2402-134.195.196.12", server: 134.195.196.12, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: "🇺🇸 [12-02]-🇺🇸-美国-154-38.68.135.93", server: 38.68.135.93, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: "🇨🇦 [12-02]-🇨🇦-加拿大多伦多-914-198.57.27.184", server: 198.57.27.184, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
-  - {name: "🇨🇦 [12-02]-🇨🇦-加拿大-592-142.202.48.34", server: 142.202.48.34, port: 3306, type: ss, cipher: aes-256-gcm, password: Y6R9pAtvxxzmGC}
-  - {name: "🇺🇸 [12-02]-🇺🇸-美国-630-172.99.190.90", server: 172.99.190.90, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
-  - {name: "🇨🇦 [12-02]-🇨🇦-加拿大-2180-142.202.48.105", server: 142.202.48.105, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: "🇺🇸 [12-02]-🇺🇸-美国-408-38.75.137.71", server: 38.75.137.71, port: 5003, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
+  - {name: "🇺🇸 [12-02]-🇺🇸-美国-166-155.94.238.220", server: 155.94.238.220, port: 20000, type: ss, cipher: chacha20-ietf-poly1305, password: Dwz4t1EJg0obH8oCuMjFcDheszcYC7yZXtyi6Vj6CbQk}
+  - {name: "🇨🇦 [12-02]-🇨🇦-加拿大蒙特利尔-2382-134.195.196.12", server: 134.195.196.12, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: "🇺🇸 [12-02]-🇺🇸-美国-2432-38.68.135.93", server: 38.68.135.93, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: "🇨🇦 [12-02]-🇨🇦-加拿大多伦多-2054-198.57.27.184", server: 198.57.27.184, port: 8090, type: ss, cipher: aes-256-gcm, password: PCnnH6SQSnfoS27}
+  - {name: "🇺🇸 [12-02]-🇺🇸-美国-2606-172.99.190.90", server: 172.99.190.90, port: 2375, type: ss, cipher: aes-256-gcm, password: faBAoD54k87UJG7}
+  - {name: "🇨🇦 [12-02]-🇨🇦-加拿大-2298-142.202.48.105", server: 142.202.48.105, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
   - {name: 🇺🇸 -美国-45.33.88.190, server: 45.33.88.190, port: 443, type: ss, cipher: aes-256-cfb, password: 9d6cceaa373bf2c8acb22e60b6a58be6}
-  - {name: 🇺🇸 -美国-45.79.111.214, server: 45.79.111.214, port: 443, type: ss, cipher: aes-256-cfb, password: 9d6cceaa373bf2c8acb22e60b6a58be6}
-  - {name: 🇺🇸 -美国华盛顿州西雅图-cdnssr.ssrsub.com, server: cdnssr.ssrsub.com, port: 443, type: ss, cipher: aes-256-cfb, password: cdnssr.ssrsub.com}
+  - {name: 🇺🇸 -美国-68.183.74.63, server: 68.183.74.63, port: 12928, type: ssr, cipher: aes-256-cfb, password: 4369b96, protocol: origin, obfs: http_simple, protocol-param: "", obfs-param: ""}
+  - {name: 🇺🇸 -美国-cdnssr.ssrsub.com, server: cdnssr.ssrsub.com, port: 443, type: ss, cipher: aes-256-cfb, password: cdnssr.ssrsub.com}
   - {name: 🇺🇸 -美国-nd94jsk0.0xnwy1fyrtlb.com, server: nd94jsk0.0xnwy1fyrtlb.com, port: 12106, type: ssr, cipher: aes-256-cfb, password: iuo7tbw4ks, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: e1efd28305.baidu.com}
+  - {name: 🇺🇸 -美国-sh73gxpe.0xnwy1fyrtlb.com, server: sh73gxpe.0xnwy1fyrtlb.com, port: 11115, type: ssr, cipher: aes-256-cfb, password: iuo7tbw4ks, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: e1efd28305.baidu.com}
   - {name: 🇺🇸 -美国-us.he.06.nekocloud.cn, server: us.he.06.nekocloud.cn, port: 19035, type: ssr, cipher: aes-128-cfb, password: iluulrzviik, protocol: auth_aes128_md5, obfs: plain, protocol-param: 42613:4gvqxX, obfs-param: 2c46b42613.wns.windows.com}
-  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 60, server: kz1.v2rayserv.com, port: 80, type: vmess, uuid: 2e9b8445-2eed-48e6-89f2-f8b20cbb6e33, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /sshocean, headers: {Host: kz1.v2rayserv.com}}}
-  - {name: 未知_1130033, server: 198.41.212.122, port: 443, type: vmess, uuid: fcfaec91-6096-44d8-956c-7868d9e874b1, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /ray, headers: {Host: lg1.cfcdn1.xyz}}}
-  - {name: 未知_1130013, server: 141.101.115.100, port: 443, type: vmess, uuid: 267a9f38-40d8-4ed6-ab58-cafc67e9c933, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /VHONOFZ3, headers: {Host: lg1.cfcdn2.xyz}}}
-  - {name: 未知_1130012, server: 141.101.114.100, port: 443, type: vmess, uuid: 267a9f38-40d8-4ed6-ab58-cafc67e9c933, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /VHONOFZ3, headers: {Host: lg1.cfcdn2.xyz}}}
-  - {name: 未知_1130023, server: 198.41.203.1, port: 443, type: vmess, uuid: 267a9f38-40d8-4ed6-ab58-cafc67e9c933, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /VHONOFZ3, headers: {Host: lg1.cfcdn2.xyz}}}
-  - {name: 未知_1130011, server: 198.41.203.2, port: 443, type: vmess, uuid: 176b598f-445b-41ac-9d2a-430c5c4df26a, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash1.trump2023.net}}}
-  - {name: 未知_1130007, server: 141.101.114.20, port: 443, type: vmess, uuid: 176b598f-445b-41ac-9d2a-430c5c4df26a, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash1.trump2023.net}}}
-  - {name: 🇮🇱 以色列-ss-185.162.126.21750004-被墙-直连-解锁以色列地区NF非自制剧, server: 185.162.126.217, port: 50004, type: ss, cipher: aes-256-cfb, password: "!<str>"}
-  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 65, server: 104.17.21.243, port: 443, type: vmess, uuid: 4cdb016f-f14e-30b3-97d6-453c741a5c80, alterId: 1, cipher: auto, tls: true, network: ws, ws-opts: {path: /y475, headers: {Host: 104.17.21.243}}}
-  - {name: "🇸🇪 [12-02]-🇸🇪-瑞典-464-167.88.63.74", server: 167.88.63.74, port: 5004, type: ss, cipher: aes-256-gcm, password: g5MeD6Ft3CWlJId}
-  - {name: 🇨🇳 -上海市-114.80.32.47, server: 114.80.32.47, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: "", obfs-param: ZEM1dFpTOTJjRzVvWVhR}
-  - {name: -湖南省-116.162.120.24, server: 116.162.120.24, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: "", obfs-param: ""}
-  - {name: -湖南省-116.162.120.26, server: 116.162.120.26, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: "", obfs-param: ""}
+  - {name: 🇺🇸 -美国-104.16.207.183, server: 104.16.207.183, port: 443, type: vmess, uuid: 27410ab6-c09d-4705-9f1a-00c31bbaa4bd, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hlz.loyou.me}}}
+  - {name: 🇺🇸 -美国-185.250.220.130, server: 185.250.220.130, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: www.56759072.xyz}}}
+  - {name: 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 105, server: 45.146.252.141, port: 80, type: vmess, uuid: b29defe7-36ee-47bf-b731-c4cccabc4200, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 45.146.252.141}}}
+  - {name: 🇮🇱 以色列-ss-185.162.125.9150004-被墙-直连-解锁以色列地区NF非自制剧, server: 185.162.125.91, port: 50004, type: ss, cipher: aes-256-cfb, password: "!<str>"}
+  - {name: 🇮🇱 以色列-ss-31.133.100.4950004-被墙-直连-解锁以色列地区NF非自制剧, server: 31.133.100.49, port: 50004, type: ss, cipher: aes-256-cfb, password: "!<str>"}
+  - {name: "[12-02]-🇦🇶-亚太地区-686-103.177.32.252", server: 103.177.32.252, port: 443, type: ss, cipher: chacha20-ietf-poly1305, password: 4af784ec15d1}
+  - {name: "[12-02]-🇦🇶-亚太地区-1924-103.172.116.7", server: 103.172.116.7, port: 9001, type: ss, cipher: aes-256-cfb, password: UkXRsXvR6buDMG2Y}
+  - {name: "🇸🇪 [12-02]-🇸🇪-瑞典-2040-167.88.62.34", server: 167.88.62.34, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: "🇳🇴 [12-02]-🇳🇴-挪威-1876-46.29.219.246", server: 46.29.219.246, port: 7307, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
+  - {name: 🇨🇳 -上海市-114.80.32.47, server: 114.80.32.47, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51809:111111, obfs-param: ZEM1dFpTOTJjRzVvWVhR}
+  - {name: -湖南省-116.162.120.24, server: 116.162.120.24, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: "", obfs-param: ""}
+  - {name: -湖南省-116.162.120.26, server: 116.162.120.26, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51809:111111, obfs-param: ""}
   - {name: -湖南省-116.162.120.27, server: 116.162.120.27, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: "", obfs-param: ""}
   - {name: -湖南省-116.162.120.28, server: 116.162.120.28, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 27445:jgjgjgjgjgjg, obfs-param: t.me/vpnhat}
   - {name: -湖南省-116.162.120.29, server: 116.162.120.29, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: "", obfs-param: ""}
   - {name: -湖南省-116.162.120.30, server: 116.162.120.30, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: "", obfs-param: ""}
   - {name: -湖南省-116.162.120.31, server: 116.162.120.31, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: "", obfs-param: ""}
-  - {name: -湖南省-116.162.120.43, server: 116.162.120.43, port: 564, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: "", obfs-param: ""}
-  - {name: -湖南省-116.162.120.46, server: 116.162.120.46, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51809:111111, obfs-param: ""}
-  - {name: -湖南省-116.162.120.47, server: 116.162.120.47, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 11314:antihos7, obfs-param: ""}
-  - {name: -湖南省-116.162.120.48, server: 116.162.120.48, port: 562, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51809:111111, obfs-param: ""}
-  - {name: -湖南省-116.162.120.49, server: 116.162.120.49, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 52875:Aa112211, obfs-param: dC5tZS92cG5oYXQ}
+  - {name: -湖南省-116.162.120.43, server: 116.162.120.43, port: 564, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 27445:jgjgjgjgjgjg, obfs-param: t.me/vpnhat}
+  - {name: -湖南省-116.162.120.46, server: 116.162.120.46, port: 601, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51809:111111, obfs-param: ""}
+  - {name: -湖南省-116.162.120.47, server: 116.162.120.47, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 11314:antihos7, obfs-param: dC5tZS92cG5oYXQ}
+  - {name: -湖南省-116.162.120.49, server: 116.162.120.49, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: "", obfs-param: ""}
   - {name: -湖南省-116.162.120.50, server: 116.162.120.50, port: 560, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: "", obfs-param: ""}
+  - {name: -湖南省-116.162.120.59, server: 116.162.120.59, port: 566, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51809:111111, obfs-param: ""}
+  - {name: -湖南省-116.162.120.60, server: 116.162.120.60, port: 561, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: "", obfs-param: ""}
+  - {name: 🇨🇳 -北京市-116.129.253.6, server: 116.129.253.6, port: 39439, type: ssr, cipher: chacha20-ietf, password: GhQrDS, protocol: auth_aes128_sha1, obfs: plain, protocol-param: 71002:ob1Kh6, obfs-param: t.me/vpnhat}
+  - {name: 🇩🇪 -德国-136.243.191.85, server: 136.243.191.85, port: 443, type: ssr, cipher: aes-128-ctr, password: sEscPBiAD9K$&@79, protocol: auth_aes128_md5, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: ""}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -111,50 +111,50 @@ proxy-groups:
   - name: 🤘 手动选择
     type: select
     proxies:
-      - 🇸🇬 -新加坡-sg-am3.eqsunshine.com
-      - 🇸🇬 新加坡_1130334
       - 🇯🇵 日本-ss-52.197.66.243443-被墙-直连-解锁日本地区NF非自制剧
+      - 🇯🇵 日本-vmess-146.56.40.11727675-被墙-直连-解锁韩国地区NF非自制剧
+      - 🇸🇬 美国-vmess-ca.0112233.xyz8443-被墙-中转199.87.210.186-解锁新加坡地区NF非自制剧
       - 🇸🇬 中国-vmess-8.214.33.15880-被墙-直连-解锁新加坡地区NF非自制剧
       - 🇯🇵 美国-vmess-jparm.fineyoo.cf443-被墙-中转152.70.81.66-解锁日本地区NF非自制剧
       - 🇯🇵 美国-vmess-jparm.fineyoo.ml443-被墙-中转138.2.33.90-解锁日本地区NF非自制剧
       - 🇯🇵 美国-vmess-jpamd.fineyoo.ml443-被墙-中转138.2.33.102-解锁日本地区NF非自制剧
       - 🇰🇷 美国-vmess-amdkr.ptuu.ga443-被墙-中转152.69.229.222-解锁韩国地区NF非自制剧
       - 🇰🇷 美国-vmess-amdkr.ptuu.ml443-被墙-中转146.56.96.75-解锁韩国地区NF非自制剧
-      - 🇸🇬 [12-02]-🇸🇬-新加坡-2340-217.197.161.109
+      - 🇸🇬 [12-02]-🇸🇬-新加坡-866-217.197.161.109
+      - 🇸🇬 [12-02]-🇸🇬-新加坡-1112-aws2.yydsdy.top
       - 🇭🇰 -香港-119.237.195.230
-      - 🇭🇰 -香港-168.70.92.12
       - 🇭🇰 -香港-42.98.27.183
       - 🇯🇵 -日本-jp.indigo.02.nekocloud.cn
-      - 🇸🇬 美国-vmess-ca.0112233.xyz8443-被墙-中转199.87.210.186-解锁新加坡地区NF非自制剧
-      - 🇸🇬 -新加坡-udp-003.gito.cc
-      - 🇸🇬 -新加坡-128.199.202.80
-      - 🇭🇰 -香港-47.243.253.120
-      - 🇸🇬 -新加坡-free.sg1.sfsa.cf
-      - 🇭🇰 -香港-hk12.sanfen001.pics
-      - 🇯🇵 -日本-jp04-vm0.entry.srthdw.art
-      - 🇸🇬 -新加坡-sg5.vpnjantit.com
+      - 🇯🇵 -日本东京-124.156.238.155
+      - 🇯🇵 -日本-18.183.218.89
       - 🇯🇵 -日本-paopao.v2.jp05.paopaocloud.cyou
-      - 🇯🇵 -日本-univstar-185-160-26-114.sslip.io
-      - 🇸🇬 -新加坡-sg1.tejiewm.com
-      - 🇭🇰 -香港-hk4.czs1000.com
-      - 🇭🇰 -香港-hk5.czs1000.com
+      - 🇸🇬 -新加坡-sg4.czs1000.com
       - 🇯🇵 -日本-18.183.7.142
       - 🇯🇵 -日本-jp8.tejiewm.com
-      - 🇰🇷 -韩国首尔-193.122.113.203
-      - 🇯🇵 -日本-jp06-vm0.entry.rwesdhytjuftyhdafsdgfrh.club
+      - 🇯🇵 -日本-jp2.czs1000.com
+      - 🇰🇷 -韩国-kr2.czs1000.com
+      - 🇯🇵 -日本-jp01-vm0.entry.srthdw.art
+      - 🇯🇵 -日本-jp02-vm0.entry.rwesdhytjuftyhdafsdgfrh.club
+      - 🇯🇵 -日本-jp03-vm0.entry.rwesdhytjuftyhdafsdgfrh.club
+      - 🇯🇵 -日本-jp06-vm0.entry.srthdw.art
+      - 🇸🇬 -新加坡-02.SGIX.ANRUN-IX.TOP
+      - 🇸🇬 -新加坡-04.SGIX.ANRUN-IX.TOP
       - 🇸🇬 -新加坡-05xjp.mealstream.xyz
-      - 🇸🇬 -新加坡-06xjp.mealstream.xyz
-      - 🇸🇬 -新加坡-13.212.190.167
+      - 🇸🇬 -新加坡-128.199.202.80
       - 🇸🇬 -新加坡-27xjp.mealstream.xyz
       - 🇸🇬 -新加坡-3.1.126.69
       - 🇸🇬 -新加坡-45.118.132.179
-      - 🇸🇬 -新加坡-sg4.czs1000.com
       - 🇸🇬 -新加坡-sg5.czs1000.com
+      - 🇸🇬 -新加坡-sg5.vpnjantit.com
       - 🇸🇬 -新加坡-sg6.czs1000.com
       - 🇸🇬 -新加坡-sg7.czs1000.com
       - 🇸🇬 -新加坡-sg8.czs1000.com
       - 🇸🇬 -新加坡-sg1.sanfen001.pics
+      - 🇸🇬 -新加坡-sg1.tejiewm.com
       - 🇸🇬 -新加坡-sg10.czs1000.com
+      - 🇸🇬 -新加坡-sg13.czs1000.com
+      - 🇸🇬 -新加坡-sg2.elknode.top
+      - 🇸🇬 -新加坡-sggs3.vpnjantit.com
       - 🇺🇸 美国-ss-35.91.237.33443-被墙-直连-解锁美国地区NF非自制剧
       - 🇺🇸 美国-ss-mf01.xmss.vip18888-被墙-中转94.131.107.12-解锁美国地区NF非自制剧
       - 🇸🇬 美国-vmess-ca.0112233.xyz8443-被墙-中转199.87.210.186-解锁新加坡地区NF非自制剧 2
@@ -164,30 +164,27 @@ proxy-groups:
       - 🇯🇵 美国-vmess-jpamd.fineyoo.ml443-被墙-中转138.2.33.102-解锁日本地区NF非自制剧 2
       - 🇰🇷 美国-vmess-amdkr.ptuu.ga443-被墙-中转152.69.229.222-解锁韩国地区NF非自制剧 2
       - 🇰🇷 美国-vmess-amdkr.ptuu.ml443-被墙-中转146.56.96.75-解锁韩国地区NF非自制剧 2
-      - 🇺🇸 [12-02]-🇺🇸-美国-866-155.94.238.220
-      - 🇺🇸 [12-02]-🇺🇸-美国-2482-45.33.93.207
-      - 🇨🇦 [12-02]-🇨🇦-加拿大蒙特利尔-2402-134.195.196.12
-      - 🇺🇸 [12-02]-🇺🇸-美国-154-38.68.135.93
-      - 🇨🇦 [12-02]-🇨🇦-加拿大多伦多-914-198.57.27.184
-      - 🇨🇦 [12-02]-🇨🇦-加拿大-592-142.202.48.34
-      - 🇺🇸 [12-02]-🇺🇸-美国-630-172.99.190.90
-      - 🇨🇦 [12-02]-🇨🇦-加拿大-2180-142.202.48.105
-      - 🇺🇸 [12-02]-🇺🇸-美国-408-38.75.137.71
+      - 🇺🇸 [12-02]-🇺🇸-美国-166-155.94.238.220
+      - 🇨🇦 [12-02]-🇨🇦-加拿大蒙特利尔-2382-134.195.196.12
+      - 🇺🇸 [12-02]-🇺🇸-美国-2432-38.68.135.93
+      - 🇨🇦 [12-02]-🇨🇦-加拿大多伦多-2054-198.57.27.184
+      - 🇺🇸 [12-02]-🇺🇸-美国-2606-172.99.190.90
+      - 🇨🇦 [12-02]-🇨🇦-加拿大-2298-142.202.48.105
       - 🇺🇸 -美国-45.33.88.190
-      - 🇺🇸 -美国-45.79.111.214
-      - 🇺🇸 -美国华盛顿州西雅图-cdnssr.ssrsub.com
+      - 🇺🇸 -美国-68.183.74.63
+      - 🇺🇸 -美国-cdnssr.ssrsub.com
       - 🇺🇸 -美国-nd94jsk0.0xnwy1fyrtlb.com
+      - 🇺🇸 -美国-sh73gxpe.0xnwy1fyrtlb.com
       - 🇺🇸 -美国-us.he.06.nekocloud.cn
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 60
-      - 未知_1130033
-      - 未知_1130013
-      - 未知_1130012
-      - 未知_1130023
-      - 未知_1130011
-      - 未知_1130007
-      - 🇮🇱 以色列-ss-185.162.126.21750004-被墙-直连-解锁以色列地区NF非自制剧
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 65
-      - 🇸🇪 [12-02]-🇸🇪-瑞典-464-167.88.63.74
+      - 🇺🇸 -美国-104.16.207.183
+      - 🇺🇸 -美国-185.250.220.130
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 105
+      - 🇮🇱 以色列-ss-185.162.125.9150004-被墙-直连-解锁以色列地区NF非自制剧
+      - 🇮🇱 以色列-ss-31.133.100.4950004-被墙-直连-解锁以色列地区NF非自制剧
+      - "[12-02]-🇦🇶-亚太地区-686-103.177.32.252"
+      - "[12-02]-🇦🇶-亚太地区-1924-103.172.116.7"
+      - 🇸🇪 [12-02]-🇸🇪-瑞典-2040-167.88.62.34
+      - 🇳🇴 [12-02]-🇳🇴-挪威-1876-46.29.219.246
       - 🇨🇳 -上海市-114.80.32.47
       - -湖南省-116.162.120.24
       - -湖南省-116.162.120.26
@@ -199,9 +196,12 @@ proxy-groups:
       - -湖南省-116.162.120.43
       - -湖南省-116.162.120.46
       - -湖南省-116.162.120.47
-      - -湖南省-116.162.120.48
       - -湖南省-116.162.120.49
       - -湖南省-116.162.120.50
+      - -湖南省-116.162.120.59
+      - -湖南省-116.162.120.60
+      - 🇨🇳 -北京市-116.129.253.6
+      - 🇩🇪 -德国-136.243.191.85
   - name: 🏳️‍🌈 国家选择
     type: select
     proxies:
@@ -252,50 +252,50 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - 🇸🇬 -新加坡-sg-am3.eqsunshine.com
-      - 🇸🇬 新加坡_1130334
       - 🇯🇵 日本-ss-52.197.66.243443-被墙-直连-解锁日本地区NF非自制剧
+      - 🇯🇵 日本-vmess-146.56.40.11727675-被墙-直连-解锁韩国地区NF非自制剧
+      - 🇸🇬 美国-vmess-ca.0112233.xyz8443-被墙-中转199.87.210.186-解锁新加坡地区NF非自制剧
       - 🇸🇬 中国-vmess-8.214.33.15880-被墙-直连-解锁新加坡地区NF非自制剧
       - 🇯🇵 美国-vmess-jparm.fineyoo.cf443-被墙-中转152.70.81.66-解锁日本地区NF非自制剧
       - 🇯🇵 美国-vmess-jparm.fineyoo.ml443-被墙-中转138.2.33.90-解锁日本地区NF非自制剧
       - 🇯🇵 美国-vmess-jpamd.fineyoo.ml443-被墙-中转138.2.33.102-解锁日本地区NF非自制剧
       - 🇰🇷 美国-vmess-amdkr.ptuu.ga443-被墙-中转152.69.229.222-解锁韩国地区NF非自制剧
       - 🇰🇷 美国-vmess-amdkr.ptuu.ml443-被墙-中转146.56.96.75-解锁韩国地区NF非自制剧
-      - 🇸🇬 [12-02]-🇸🇬-新加坡-2340-217.197.161.109
+      - 🇸🇬 [12-02]-🇸🇬-新加坡-866-217.197.161.109
+      - 🇸🇬 [12-02]-🇸🇬-新加坡-1112-aws2.yydsdy.top
       - 🇭🇰 -香港-119.237.195.230
-      - 🇭🇰 -香港-168.70.92.12
       - 🇭🇰 -香港-42.98.27.183
       - 🇯🇵 -日本-jp.indigo.02.nekocloud.cn
-      - 🇸🇬 美国-vmess-ca.0112233.xyz8443-被墙-中转199.87.210.186-解锁新加坡地区NF非自制剧
-      - 🇸🇬 -新加坡-udp-003.gito.cc
-      - 🇸🇬 -新加坡-128.199.202.80
-      - 🇭🇰 -香港-47.243.253.120
-      - 🇸🇬 -新加坡-free.sg1.sfsa.cf
-      - 🇭🇰 -香港-hk12.sanfen001.pics
-      - 🇯🇵 -日本-jp04-vm0.entry.srthdw.art
-      - 🇸🇬 -新加坡-sg5.vpnjantit.com
+      - 🇯🇵 -日本东京-124.156.238.155
+      - 🇯🇵 -日本-18.183.218.89
       - 🇯🇵 -日本-paopao.v2.jp05.paopaocloud.cyou
-      - 🇯🇵 -日本-univstar-185-160-26-114.sslip.io
-      - 🇸🇬 -新加坡-sg1.tejiewm.com
-      - 🇭🇰 -香港-hk4.czs1000.com
-      - 🇭🇰 -香港-hk5.czs1000.com
+      - 🇸🇬 -新加坡-sg4.czs1000.com
       - 🇯🇵 -日本-18.183.7.142
       - 🇯🇵 -日本-jp8.tejiewm.com
-      - 🇰🇷 -韩国首尔-193.122.113.203
-      - 🇯🇵 -日本-jp06-vm0.entry.rwesdhytjuftyhdafsdgfrh.club
+      - 🇯🇵 -日本-jp2.czs1000.com
+      - 🇰🇷 -韩国-kr2.czs1000.com
+      - 🇯🇵 -日本-jp01-vm0.entry.srthdw.art
+      - 🇯🇵 -日本-jp02-vm0.entry.rwesdhytjuftyhdafsdgfrh.club
+      - 🇯🇵 -日本-jp03-vm0.entry.rwesdhytjuftyhdafsdgfrh.club
+      - 🇯🇵 -日本-jp06-vm0.entry.srthdw.art
+      - 🇸🇬 -新加坡-02.SGIX.ANRUN-IX.TOP
+      - 🇸🇬 -新加坡-04.SGIX.ANRUN-IX.TOP
       - 🇸🇬 -新加坡-05xjp.mealstream.xyz
-      - 🇸🇬 -新加坡-06xjp.mealstream.xyz
-      - 🇸🇬 -新加坡-13.212.190.167
+      - 🇸🇬 -新加坡-128.199.202.80
       - 🇸🇬 -新加坡-27xjp.mealstream.xyz
       - 🇸🇬 -新加坡-3.1.126.69
       - 🇸🇬 -新加坡-45.118.132.179
-      - 🇸🇬 -新加坡-sg4.czs1000.com
       - 🇸🇬 -新加坡-sg5.czs1000.com
+      - 🇸🇬 -新加坡-sg5.vpnjantit.com
       - 🇸🇬 -新加坡-sg6.czs1000.com
       - 🇸🇬 -新加坡-sg7.czs1000.com
       - 🇸🇬 -新加坡-sg8.czs1000.com
       - 🇸🇬 -新加坡-sg1.sanfen001.pics
+      - 🇸🇬 -新加坡-sg1.tejiewm.com
       - 🇸🇬 -新加坡-sg10.czs1000.com
+      - 🇸🇬 -新加坡-sg13.czs1000.com
+      - 🇸🇬 -新加坡-sg2.elknode.top
+      - 🇸🇬 -新加坡-sggs3.vpnjantit.com
       - 🇺🇸 美国-ss-35.91.237.33443-被墙-直连-解锁美国地区NF非自制剧
       - 🇺🇸 美国-ss-mf01.xmss.vip18888-被墙-中转94.131.107.12-解锁美国地区NF非自制剧
       - 🇸🇬 美国-vmess-ca.0112233.xyz8443-被墙-中转199.87.210.186-解锁新加坡地区NF非自制剧 2
@@ -305,30 +305,27 @@ proxy-groups:
       - 🇯🇵 美国-vmess-jpamd.fineyoo.ml443-被墙-中转138.2.33.102-解锁日本地区NF非自制剧 2
       - 🇰🇷 美国-vmess-amdkr.ptuu.ga443-被墙-中转152.69.229.222-解锁韩国地区NF非自制剧 2
       - 🇰🇷 美国-vmess-amdkr.ptuu.ml443-被墙-中转146.56.96.75-解锁韩国地区NF非自制剧 2
-      - 🇺🇸 [12-02]-🇺🇸-美国-866-155.94.238.220
-      - 🇺🇸 [12-02]-🇺🇸-美国-2482-45.33.93.207
-      - 🇨🇦 [12-02]-🇨🇦-加拿大蒙特利尔-2402-134.195.196.12
-      - 🇺🇸 [12-02]-🇺🇸-美国-154-38.68.135.93
-      - 🇨🇦 [12-02]-🇨🇦-加拿大多伦多-914-198.57.27.184
-      - 🇨🇦 [12-02]-🇨🇦-加拿大-592-142.202.48.34
-      - 🇺🇸 [12-02]-🇺🇸-美国-630-172.99.190.90
-      - 🇨🇦 [12-02]-🇨🇦-加拿大-2180-142.202.48.105
-      - 🇺🇸 [12-02]-🇺🇸-美国-408-38.75.137.71
+      - 🇺🇸 [12-02]-🇺🇸-美国-166-155.94.238.220
+      - 🇨🇦 [12-02]-🇨🇦-加拿大蒙特利尔-2382-134.195.196.12
+      - 🇺🇸 [12-02]-🇺🇸-美国-2432-38.68.135.93
+      - 🇨🇦 [12-02]-🇨🇦-加拿大多伦多-2054-198.57.27.184
+      - 🇺🇸 [12-02]-🇺🇸-美国-2606-172.99.190.90
+      - 🇨🇦 [12-02]-🇨🇦-加拿大-2298-142.202.48.105
       - 🇺🇸 -美国-45.33.88.190
-      - 🇺🇸 -美国-45.79.111.214
-      - 🇺🇸 -美国华盛顿州西雅图-cdnssr.ssrsub.com
+      - 🇺🇸 -美国-68.183.74.63
+      - 🇺🇸 -美国-cdnssr.ssrsub.com
       - 🇺🇸 -美国-nd94jsk0.0xnwy1fyrtlb.com
+      - 🇺🇸 -美国-sh73gxpe.0xnwy1fyrtlb.com
       - 🇺🇸 -美国-us.he.06.nekocloud.cn
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 60
-      - 未知_1130033
-      - 未知_1130013
-      - 未知_1130012
-      - 未知_1130023
-      - 未知_1130011
-      - 未知_1130007
-      - 🇮🇱 以色列-ss-185.162.126.21750004-被墙-直连-解锁以色列地区NF非自制剧
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 65
-      - 🇸🇪 [12-02]-🇸🇪-瑞典-464-167.88.63.74
+      - 🇺🇸 -美国-104.16.207.183
+      - 🇺🇸 -美国-185.250.220.130
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 105
+      - 🇮🇱 以色列-ss-185.162.125.9150004-被墙-直连-解锁以色列地区NF非自制剧
+      - 🇮🇱 以色列-ss-31.133.100.4950004-被墙-直连-解锁以色列地区NF非自制剧
+      - "[12-02]-🇦🇶-亚太地区-686-103.177.32.252"
+      - "[12-02]-🇦🇶-亚太地区-1924-103.172.116.7"
+      - 🇸🇪 [12-02]-🇸🇪-瑞典-2040-167.88.62.34
+      - 🇳🇴 [12-02]-🇳🇴-挪威-1876-46.29.219.246
       - 🇨🇳 -上海市-114.80.32.47
       - -湖南省-116.162.120.24
       - -湖南省-116.162.120.26
@@ -340,59 +337,62 @@ proxy-groups:
       - -湖南省-116.162.120.43
       - -湖南省-116.162.120.46
       - -湖南省-116.162.120.47
-      - -湖南省-116.162.120.48
       - -湖南省-116.162.120.49
       - -湖南省-116.162.120.50
+      - -湖南省-116.162.120.59
+      - -湖南省-116.162.120.60
+      - 🇨🇳 -北京市-116.129.253.6
+      - 🇩🇪 -德国-136.243.191.85
   - name: ⚡ 故障转移
     type: fallback
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇸🇬 -新加坡-sg-am3.eqsunshine.com
-      - 🇸🇬 新加坡_1130334
       - 🇯🇵 日本-ss-52.197.66.243443-被墙-直连-解锁日本地区NF非自制剧
+      - 🇯🇵 日本-vmess-146.56.40.11727675-被墙-直连-解锁韩国地区NF非自制剧
+      - 🇸🇬 美国-vmess-ca.0112233.xyz8443-被墙-中转199.87.210.186-解锁新加坡地区NF非自制剧
       - 🇸🇬 中国-vmess-8.214.33.15880-被墙-直连-解锁新加坡地区NF非自制剧
       - 🇯🇵 美国-vmess-jparm.fineyoo.cf443-被墙-中转152.70.81.66-解锁日本地区NF非自制剧
       - 🇯🇵 美国-vmess-jparm.fineyoo.ml443-被墙-中转138.2.33.90-解锁日本地区NF非自制剧
       - 🇯🇵 美国-vmess-jpamd.fineyoo.ml443-被墙-中转138.2.33.102-解锁日本地区NF非自制剧
       - 🇰🇷 美国-vmess-amdkr.ptuu.ga443-被墙-中转152.69.229.222-解锁韩国地区NF非自制剧
       - 🇰🇷 美国-vmess-amdkr.ptuu.ml443-被墙-中转146.56.96.75-解锁韩国地区NF非自制剧
-      - 🇸🇬 [12-02]-🇸🇬-新加坡-2340-217.197.161.109
+      - 🇸🇬 [12-02]-🇸🇬-新加坡-866-217.197.161.109
+      - 🇸🇬 [12-02]-🇸🇬-新加坡-1112-aws2.yydsdy.top
       - 🇭🇰 -香港-119.237.195.230
-      - 🇭🇰 -香港-168.70.92.12
       - 🇭🇰 -香港-42.98.27.183
       - 🇯🇵 -日本-jp.indigo.02.nekocloud.cn
-      - 🇸🇬 美国-vmess-ca.0112233.xyz8443-被墙-中转199.87.210.186-解锁新加坡地区NF非自制剧
-      - 🇸🇬 -新加坡-udp-003.gito.cc
-      - 🇸🇬 -新加坡-128.199.202.80
-      - 🇭🇰 -香港-47.243.253.120
-      - 🇸🇬 -新加坡-free.sg1.sfsa.cf
-      - 🇭🇰 -香港-hk12.sanfen001.pics
-      - 🇯🇵 -日本-jp04-vm0.entry.srthdw.art
-      - 🇸🇬 -新加坡-sg5.vpnjantit.com
+      - 🇯🇵 -日本东京-124.156.238.155
+      - 🇯🇵 -日本-18.183.218.89
       - 🇯🇵 -日本-paopao.v2.jp05.paopaocloud.cyou
-      - 🇯🇵 -日本-univstar-185-160-26-114.sslip.io
-      - 🇸🇬 -新加坡-sg1.tejiewm.com
-      - 🇭🇰 -香港-hk4.czs1000.com
-      - 🇭🇰 -香港-hk5.czs1000.com
+      - 🇸🇬 -新加坡-sg4.czs1000.com
       - 🇯🇵 -日本-18.183.7.142
       - 🇯🇵 -日本-jp8.tejiewm.com
-      - 🇰🇷 -韩国首尔-193.122.113.203
-      - 🇯🇵 -日本-jp06-vm0.entry.rwesdhytjuftyhdafsdgfrh.club
+      - 🇯🇵 -日本-jp2.czs1000.com
+      - 🇰🇷 -韩国-kr2.czs1000.com
+      - 🇯🇵 -日本-jp01-vm0.entry.srthdw.art
+      - 🇯🇵 -日本-jp02-vm0.entry.rwesdhytjuftyhdafsdgfrh.club
+      - 🇯🇵 -日本-jp03-vm0.entry.rwesdhytjuftyhdafsdgfrh.club
+      - 🇯🇵 -日本-jp06-vm0.entry.srthdw.art
+      - 🇸🇬 -新加坡-02.SGIX.ANRUN-IX.TOP
+      - 🇸🇬 -新加坡-04.SGIX.ANRUN-IX.TOP
       - 🇸🇬 -新加坡-05xjp.mealstream.xyz
-      - 🇸🇬 -新加坡-06xjp.mealstream.xyz
-      - 🇸🇬 -新加坡-13.212.190.167
+      - 🇸🇬 -新加坡-128.199.202.80
       - 🇸🇬 -新加坡-27xjp.mealstream.xyz
       - 🇸🇬 -新加坡-3.1.126.69
       - 🇸🇬 -新加坡-45.118.132.179
-      - 🇸🇬 -新加坡-sg4.czs1000.com
       - 🇸🇬 -新加坡-sg5.czs1000.com
+      - 🇸🇬 -新加坡-sg5.vpnjantit.com
       - 🇸🇬 -新加坡-sg6.czs1000.com
       - 🇸🇬 -新加坡-sg7.czs1000.com
       - 🇸🇬 -新加坡-sg8.czs1000.com
       - 🇸🇬 -新加坡-sg1.sanfen001.pics
+      - 🇸🇬 -新加坡-sg1.tejiewm.com
       - 🇸🇬 -新加坡-sg10.czs1000.com
+      - 🇸🇬 -新加坡-sg13.czs1000.com
+      - 🇸🇬 -新加坡-sg2.elknode.top
+      - 🇸🇬 -新加坡-sggs3.vpnjantit.com
       - 🇺🇸 美国-ss-35.91.237.33443-被墙-直连-解锁美国地区NF非自制剧
       - 🇺🇸 美国-ss-mf01.xmss.vip18888-被墙-中转94.131.107.12-解锁美国地区NF非自制剧
       - 🇸🇬 美国-vmess-ca.0112233.xyz8443-被墙-中转199.87.210.186-解锁新加坡地区NF非自制剧 2
@@ -402,30 +402,27 @@ proxy-groups:
       - 🇯🇵 美国-vmess-jpamd.fineyoo.ml443-被墙-中转138.2.33.102-解锁日本地区NF非自制剧 2
       - 🇰🇷 美国-vmess-amdkr.ptuu.ga443-被墙-中转152.69.229.222-解锁韩国地区NF非自制剧 2
       - 🇰🇷 美国-vmess-amdkr.ptuu.ml443-被墙-中转146.56.96.75-解锁韩国地区NF非自制剧 2
-      - 🇺🇸 [12-02]-🇺🇸-美国-866-155.94.238.220
-      - 🇺🇸 [12-02]-🇺🇸-美国-2482-45.33.93.207
-      - 🇨🇦 [12-02]-🇨🇦-加拿大蒙特利尔-2402-134.195.196.12
-      - 🇺🇸 [12-02]-🇺🇸-美国-154-38.68.135.93
-      - 🇨🇦 [12-02]-🇨🇦-加拿大多伦多-914-198.57.27.184
-      - 🇨🇦 [12-02]-🇨🇦-加拿大-592-142.202.48.34
-      - 🇺🇸 [12-02]-🇺🇸-美国-630-172.99.190.90
-      - 🇨🇦 [12-02]-🇨🇦-加拿大-2180-142.202.48.105
-      - 🇺🇸 [12-02]-🇺🇸-美国-408-38.75.137.71
+      - 🇺🇸 [12-02]-🇺🇸-美国-166-155.94.238.220
+      - 🇨🇦 [12-02]-🇨🇦-加拿大蒙特利尔-2382-134.195.196.12
+      - 🇺🇸 [12-02]-🇺🇸-美国-2432-38.68.135.93
+      - 🇨🇦 [12-02]-🇨🇦-加拿大多伦多-2054-198.57.27.184
+      - 🇺🇸 [12-02]-🇺🇸-美国-2606-172.99.190.90
+      - 🇨🇦 [12-02]-🇨🇦-加拿大-2298-142.202.48.105
       - 🇺🇸 -美国-45.33.88.190
-      - 🇺🇸 -美国-45.79.111.214
-      - 🇺🇸 -美国华盛顿州西雅图-cdnssr.ssrsub.com
+      - 🇺🇸 -美国-68.183.74.63
+      - 🇺🇸 -美国-cdnssr.ssrsub.com
       - 🇺🇸 -美国-nd94jsk0.0xnwy1fyrtlb.com
+      - 🇺🇸 -美国-sh73gxpe.0xnwy1fyrtlb.com
       - 🇺🇸 -美国-us.he.06.nekocloud.cn
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 60
-      - 未知_1130033
-      - 未知_1130013
-      - 未知_1130012
-      - 未知_1130023
-      - 未知_1130011
-      - 未知_1130007
-      - 🇮🇱 以色列-ss-185.162.126.21750004-被墙-直连-解锁以色列地区NF非自制剧
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 65
-      - 🇸🇪 [12-02]-🇸🇪-瑞典-464-167.88.63.74
+      - 🇺🇸 -美国-104.16.207.183
+      - 🇺🇸 -美国-185.250.220.130
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 105
+      - 🇮🇱 以色列-ss-185.162.125.9150004-被墙-直连-解锁以色列地区NF非自制剧
+      - 🇮🇱 以色列-ss-31.133.100.4950004-被墙-直连-解锁以色列地区NF非自制剧
+      - "[12-02]-🇦🇶-亚太地区-686-103.177.32.252"
+      - "[12-02]-🇦🇶-亚太地区-1924-103.172.116.7"
+      - 🇸🇪 [12-02]-🇸🇪-瑞典-2040-167.88.62.34
+      - 🇳🇴 [12-02]-🇳🇴-挪威-1876-46.29.219.246
       - 🇨🇳 -上海市-114.80.32.47
       - -湖南省-116.162.120.24
       - -湖南省-116.162.120.26
@@ -437,21 +434,24 @@ proxy-groups:
       - -湖南省-116.162.120.43
       - -湖南省-116.162.120.46
       - -湖南省-116.162.120.47
-      - -湖南省-116.162.120.48
       - -湖南省-116.162.120.49
       - -湖南省-116.162.120.50
+      - -湖南省-116.162.120.59
+      - -湖南省-116.162.120.60
+      - 🇨🇳 -北京市-116.129.253.6
+      - 🇩🇪 -德国-136.243.191.85
   - name: 🌎 北美地区
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
+      - 🇸🇬 美国-vmess-ca.0112233.xyz8443-被墙-中转199.87.210.186-解锁新加坡地区NF非自制剧
       - 🇯🇵 美国-vmess-jparm.fineyoo.cf443-被墙-中转152.70.81.66-解锁日本地区NF非自制剧
       - 🇯🇵 美国-vmess-jparm.fineyoo.ml443-被墙-中转138.2.33.90-解锁日本地区NF非自制剧
       - 🇯🇵 美国-vmess-jpamd.fineyoo.ml443-被墙-中转138.2.33.102-解锁日本地区NF非自制剧
       - 🇰🇷 美国-vmess-amdkr.ptuu.ga443-被墙-中转152.69.229.222-解锁韩国地区NF非自制剧
       - 🇰🇷 美国-vmess-amdkr.ptuu.ml443-被墙-中转146.56.96.75-解锁韩国地区NF非自制剧
-      - 🇸🇬 美国-vmess-ca.0112233.xyz8443-被墙-中转199.87.210.186-解锁新加坡地区NF非自制剧
       - 🇺🇸 美国-ss-35.91.237.33443-被墙-直连-解锁美国地区NF非自制剧
       - 🇺🇸 美国-ss-mf01.xmss.vip18888-被墙-中转94.131.107.12-解锁美国地区NF非自制剧
       - 🇸🇬 美国-vmess-ca.0112233.xyz8443-被墙-中转199.87.210.186-解锁新加坡地区NF非自制剧 2
@@ -461,70 +461,70 @@ proxy-groups:
       - 🇯🇵 美国-vmess-jpamd.fineyoo.ml443-被墙-中转138.2.33.102-解锁日本地区NF非自制剧 2
       - 🇰🇷 美国-vmess-amdkr.ptuu.ga443-被墙-中转152.69.229.222-解锁韩国地区NF非自制剧 2
       - 🇰🇷 美国-vmess-amdkr.ptuu.ml443-被墙-中转146.56.96.75-解锁韩国地区NF非自制剧 2
-      - 🇺🇸 [12-02]-🇺🇸-美国-866-155.94.238.220
-      - 🇺🇸 [12-02]-🇺🇸-美国-2482-45.33.93.207
-      - 🇨🇦 [12-02]-🇨🇦-加拿大蒙特利尔-2402-134.195.196.12
-      - 🇺🇸 [12-02]-🇺🇸-美国-154-38.68.135.93
-      - 🇨🇦 [12-02]-🇨🇦-加拿大多伦多-914-198.57.27.184
-      - 🇨🇦 [12-02]-🇨🇦-加拿大-592-142.202.48.34
-      - 🇺🇸 [12-02]-🇺🇸-美国-630-172.99.190.90
-      - 🇨🇦 [12-02]-🇨🇦-加拿大-2180-142.202.48.105
-      - 🇺🇸 [12-02]-🇺🇸-美国-408-38.75.137.71
+      - 🇺🇸 [12-02]-🇺🇸-美国-166-155.94.238.220
+      - 🇨🇦 [12-02]-🇨🇦-加拿大蒙特利尔-2382-134.195.196.12
+      - 🇺🇸 [12-02]-🇺🇸-美国-2432-38.68.135.93
+      - 🇨🇦 [12-02]-🇨🇦-加拿大多伦多-2054-198.57.27.184
+      - 🇺🇸 [12-02]-🇺🇸-美国-2606-172.99.190.90
+      - 🇨🇦 [12-02]-🇨🇦-加拿大-2298-142.202.48.105
       - 🇺🇸 -美国-45.33.88.190
-      - 🇺🇸 -美国-45.79.111.214
-      - 🇺🇸 -美国华盛顿州西雅图-cdnssr.ssrsub.com
+      - 🇺🇸 -美国-68.183.74.63
+      - 🇺🇸 -美国-cdnssr.ssrsub.com
       - 🇺🇸 -美国-nd94jsk0.0xnwy1fyrtlb.com
+      - 🇺🇸 -美国-sh73gxpe.0xnwy1fyrtlb.com
       - 🇺🇸 -美国-us.he.06.nekocloud.cn
+      - 🇺🇸 -美国-104.16.207.183
+      - 🇺🇸 -美国-185.250.220.130
   - name: 🌏 东亚地区
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
-      - 🇸🇬 -新加坡-sg-am3.eqsunshine.com
-      - 🇸🇬 新加坡_1130334
       - 🇯🇵 日本-ss-52.197.66.243443-被墙-直连-解锁日本地区NF非自制剧
+      - 🇯🇵 日本-vmess-146.56.40.11727675-被墙-直连-解锁韩国地区NF非自制剧
+      - 🇸🇬 美国-vmess-ca.0112233.xyz8443-被墙-中转199.87.210.186-解锁新加坡地区NF非自制剧
       - 🇸🇬 中国-vmess-8.214.33.15880-被墙-直连-解锁新加坡地区NF非自制剧
       - 🇯🇵 美国-vmess-jparm.fineyoo.cf443-被墙-中转152.70.81.66-解锁日本地区NF非自制剧
       - 🇯🇵 美国-vmess-jparm.fineyoo.ml443-被墙-中转138.2.33.90-解锁日本地区NF非自制剧
       - 🇯🇵 美国-vmess-jpamd.fineyoo.ml443-被墙-中转138.2.33.102-解锁日本地区NF非自制剧
       - 🇰🇷 美国-vmess-amdkr.ptuu.ga443-被墙-中转152.69.229.222-解锁韩国地区NF非自制剧
       - 🇰🇷 美国-vmess-amdkr.ptuu.ml443-被墙-中转146.56.96.75-解锁韩国地区NF非自制剧
-      - 🇸🇬 [12-02]-🇸🇬-新加坡-2340-217.197.161.109
+      - 🇸🇬 [12-02]-🇸🇬-新加坡-866-217.197.161.109
+      - 🇸🇬 [12-02]-🇸🇬-新加坡-1112-aws2.yydsdy.top
       - 🇭🇰 -香港-119.237.195.230
-      - 🇭🇰 -香港-168.70.92.12
       - 🇭🇰 -香港-42.98.27.183
       - 🇯🇵 -日本-jp.indigo.02.nekocloud.cn
-      - 🇸🇬 美国-vmess-ca.0112233.xyz8443-被墙-中转199.87.210.186-解锁新加坡地区NF非自制剧
-      - 🇸🇬 -新加坡-udp-003.gito.cc
-      - 🇸🇬 -新加坡-128.199.202.80
-      - 🇭🇰 -香港-47.243.253.120
-      - 🇸🇬 -新加坡-free.sg1.sfsa.cf
-      - 🇭🇰 -香港-hk12.sanfen001.pics
-      - 🇯🇵 -日本-jp04-vm0.entry.srthdw.art
-      - 🇸🇬 -新加坡-sg5.vpnjantit.com
+      - 🇯🇵 -日本东京-124.156.238.155
+      - 🇯🇵 -日本-18.183.218.89
       - 🇯🇵 -日本-paopao.v2.jp05.paopaocloud.cyou
-      - 🇯🇵 -日本-univstar-185-160-26-114.sslip.io
-      - 🇸🇬 -新加坡-sg1.tejiewm.com
-      - 🇭🇰 -香港-hk4.czs1000.com
-      - 🇭🇰 -香港-hk5.czs1000.com
+      - 🇸🇬 -新加坡-sg4.czs1000.com
       - 🇯🇵 -日本-18.183.7.142
       - 🇯🇵 -日本-jp8.tejiewm.com
-      - 🇰🇷 -韩国首尔-193.122.113.203
-      - 🇯🇵 -日本-jp06-vm0.entry.rwesdhytjuftyhdafsdgfrh.club
+      - 🇯🇵 -日本-jp2.czs1000.com
+      - 🇰🇷 -韩国-kr2.czs1000.com
+      - 🇯🇵 -日本-jp01-vm0.entry.srthdw.art
+      - 🇯🇵 -日本-jp02-vm0.entry.rwesdhytjuftyhdafsdgfrh.club
+      - 🇯🇵 -日本-jp03-vm0.entry.rwesdhytjuftyhdafsdgfrh.club
+      - 🇯🇵 -日本-jp06-vm0.entry.srthdw.art
+      - 🇸🇬 -新加坡-02.SGIX.ANRUN-IX.TOP
+      - 🇸🇬 -新加坡-04.SGIX.ANRUN-IX.TOP
       - 🇸🇬 -新加坡-05xjp.mealstream.xyz
-      - 🇸🇬 -新加坡-06xjp.mealstream.xyz
-      - 🇸🇬 -新加坡-13.212.190.167
+      - 🇸🇬 -新加坡-128.199.202.80
       - 🇸🇬 -新加坡-27xjp.mealstream.xyz
       - 🇸🇬 -新加坡-3.1.126.69
       - 🇸🇬 -新加坡-45.118.132.179
-      - 🇸🇬 -新加坡-sg4.czs1000.com
       - 🇸🇬 -新加坡-sg5.czs1000.com
+      - 🇸🇬 -新加坡-sg5.vpnjantit.com
       - 🇸🇬 -新加坡-sg6.czs1000.com
       - 🇸🇬 -新加坡-sg7.czs1000.com
       - 🇸🇬 -新加坡-sg8.czs1000.com
       - 🇸🇬 -新加坡-sg1.sanfen001.pics
+      - 🇸🇬 -新加坡-sg1.tejiewm.com
       - 🇸🇬 -新加坡-sg10.czs1000.com
+      - 🇸🇬 -新加坡-sg13.czs1000.com
+      - 🇸🇬 -新加坡-sg2.elknode.top
+      - 🇸🇬 -新加坡-sggs3.vpnjantit.com
       - 🇸🇬 美国-vmess-ca.0112233.xyz8443-被墙-中转199.87.210.186-解锁新加坡地区NF非自制剧 2
       - 🇯🇵 美国-vmess-jparm.fineyoo.cf443-被墙-中转152.70.81.66-解锁日本地区NF非自制剧 2
       - 🇯🇵 美国-vmess-jparm.fineyoo.ml443-被墙-中转138.2.33.90-解锁日本地区NF非自制剧 2
@@ -537,16 +537,13 @@ proxy-groups:
     interval: 300
     tolerance: 100
     proxies:
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 60
-      - 未知_1130033
-      - 未知_1130013
-      - 未知_1130012
-      - 未知_1130023
-      - 未知_1130011
-      - 未知_1130007
-      - 🇮🇱 以色列-ss-185.162.126.21750004-被墙-直连-解锁以色列地区NF非自制剧
-      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 65
-      - 🇸🇪 [12-02]-🇸🇪-瑞典-464-167.88.63.74
+      - 这些节点只能备用或者防止失联，虽然质量并不是很好，也请低调使用) 105
+      - 🇮🇱 以色列-ss-185.162.125.9150004-被墙-直连-解锁以色列地区NF非自制剧
+      - 🇮🇱 以色列-ss-31.133.100.4950004-被墙-直连-解锁以色列地区NF非自制剧
+      - "[12-02]-🇦🇶-亚太地区-686-103.177.32.252"
+      - "[12-02]-🇦🇶-亚太地区-1924-103.172.116.7"
+      - 🇸🇪 [12-02]-🇸🇪-瑞典-2040-167.88.62.34
+      - 🇳🇴 [12-02]-🇳🇴-挪威-1876-46.29.219.246
       - 🇨🇳 -上海市-114.80.32.47
       - -湖南省-116.162.120.24
       - -湖南省-116.162.120.26
@@ -558,21 +555,24 @@ proxy-groups:
       - -湖南省-116.162.120.43
       - -湖南省-116.162.120.46
       - -湖南省-116.162.120.47
-      - -湖南省-116.162.120.48
       - -湖南省-116.162.120.49
       - -湖南省-116.162.120.50
+      - -湖南省-116.162.120.59
+      - -湖南省-116.162.120.60
+      - 🇨🇳 -北京市-116.129.253.6
+      - 🇩🇪 -德国-136.243.191.85
   - name: 美国
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
+      - 🇸🇬 美国-vmess-ca.0112233.xyz8443-被墙-中转199.87.210.186-解锁新加坡地区NF非自制剧
       - 🇯🇵 美国-vmess-jparm.fineyoo.cf443-被墙-中转152.70.81.66-解锁日本地区NF非自制剧
       - 🇯🇵 美国-vmess-jparm.fineyoo.ml443-被墙-中转138.2.33.90-解锁日本地区NF非自制剧
       - 🇯🇵 美国-vmess-jpamd.fineyoo.ml443-被墙-中转138.2.33.102-解锁日本地区NF非自制剧
       - 🇰🇷 美国-vmess-amdkr.ptuu.ga443-被墙-中转152.69.229.222-解锁韩国地区NF非自制剧
       - 🇰🇷 美国-vmess-amdkr.ptuu.ml443-被墙-中转146.56.96.75-解锁韩国地区NF非自制剧
-      - 🇸🇬 美国-vmess-ca.0112233.xyz8443-被墙-中转199.87.210.186-解锁新加坡地区NF非自制剧
       - 🇺🇸 美国-ss-35.91.237.33443-被墙-直连-解锁美国地区NF非自制剧
       - 🇺🇸 美国-ss-mf01.xmss.vip18888-被墙-中转94.131.107.12-解锁美国地区NF非自制剧
       - 🇸🇬 美国-vmess-ca.0112233.xyz8443-被墙-中转199.87.210.186-解锁新加坡地区NF非自制剧 2
@@ -582,16 +582,17 @@ proxy-groups:
       - 🇯🇵 美国-vmess-jpamd.fineyoo.ml443-被墙-中转138.2.33.102-解锁日本地区NF非自制剧 2
       - 🇰🇷 美国-vmess-amdkr.ptuu.ga443-被墙-中转152.69.229.222-解锁韩国地区NF非自制剧 2
       - 🇰🇷 美国-vmess-amdkr.ptuu.ml443-被墙-中转146.56.96.75-解锁韩国地区NF非自制剧 2
-      - 🇺🇸 [12-02]-🇺🇸-美国-866-155.94.238.220
-      - 🇺🇸 [12-02]-🇺🇸-美国-2482-45.33.93.207
-      - 🇺🇸 [12-02]-🇺🇸-美国-154-38.68.135.93
-      - 🇺🇸 [12-02]-🇺🇸-美国-630-172.99.190.90
-      - 🇺🇸 [12-02]-🇺🇸-美国-408-38.75.137.71
+      - 🇺🇸 [12-02]-🇺🇸-美国-166-155.94.238.220
+      - 🇺🇸 [12-02]-🇺🇸-美国-2432-38.68.135.93
+      - 🇺🇸 [12-02]-🇺🇸-美国-2606-172.99.190.90
       - 🇺🇸 -美国-45.33.88.190
-      - 🇺🇸 -美国-45.79.111.214
-      - 🇺🇸 -美国华盛顿州西雅图-cdnssr.ssrsub.com
+      - 🇺🇸 -美国-68.183.74.63
+      - 🇺🇸 -美国-cdnssr.ssrsub.com
       - 🇺🇸 -美国-nd94jsk0.0xnwy1fyrtlb.com
+      - 🇺🇸 -美国-sh73gxpe.0xnwy1fyrtlb.com
       - 🇺🇸 -美国-us.he.06.nekocloud.cn
+      - 🇺🇸 -美国-104.16.207.183
+      - 🇺🇸 -美国-185.250.220.130
   - name: 香港
     type: url-test
     url: https://www.google.com/generate_204
@@ -599,41 +600,36 @@ proxy-groups:
     tolerance: 100
     proxies:
       - 🇭🇰 -香港-119.237.195.230
-      - 🇭🇰 -香港-168.70.92.12
       - 🇭🇰 -香港-42.98.27.183
-      - 🇭🇰 -香港-47.243.253.120
-      - 🇭🇰 -香港-hk12.sanfen001.pics
-      - 🇭🇰 -香港-hk4.czs1000.com
-      - 🇭🇰 -香港-hk5.czs1000.com
   - name: 狮城
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
-      - 🇸🇬 -新加坡-sg-am3.eqsunshine.com
-      - 🇸🇬 新加坡_1130334
-      - 🇸🇬 中国-vmess-8.214.33.15880-被墙-直连-解锁新加坡地区NF非自制剧
-      - 🇸🇬 [12-02]-🇸🇬-新加坡-2340-217.197.161.109
       - 🇸🇬 美国-vmess-ca.0112233.xyz8443-被墙-中转199.87.210.186-解锁新加坡地区NF非自制剧
-      - 🇸🇬 -新加坡-udp-003.gito.cc
-      - 🇸🇬 -新加坡-128.199.202.80
-      - 🇸🇬 -新加坡-free.sg1.sfsa.cf
-      - 🇸🇬 -新加坡-sg5.vpnjantit.com
-      - 🇸🇬 -新加坡-sg1.tejiewm.com
+      - 🇸🇬 中国-vmess-8.214.33.15880-被墙-直连-解锁新加坡地区NF非自制剧
+      - 🇸🇬 [12-02]-🇸🇬-新加坡-866-217.197.161.109
+      - 🇸🇬 [12-02]-🇸🇬-新加坡-1112-aws2.yydsdy.top
+      - 🇸🇬 -新加坡-sg4.czs1000.com
+      - 🇸🇬 -新加坡-02.SGIX.ANRUN-IX.TOP
+      - 🇸🇬 -新加坡-04.SGIX.ANRUN-IX.TOP
       - 🇸🇬 -新加坡-05xjp.mealstream.xyz
-      - 🇸🇬 -新加坡-06xjp.mealstream.xyz
-      - 🇸🇬 -新加坡-13.212.190.167
+      - 🇸🇬 -新加坡-128.199.202.80
       - 🇸🇬 -新加坡-27xjp.mealstream.xyz
       - 🇸🇬 -新加坡-3.1.126.69
       - 🇸🇬 -新加坡-45.118.132.179
-      - 🇸🇬 -新加坡-sg4.czs1000.com
       - 🇸🇬 -新加坡-sg5.czs1000.com
+      - 🇸🇬 -新加坡-sg5.vpnjantit.com
       - 🇸🇬 -新加坡-sg6.czs1000.com
       - 🇸🇬 -新加坡-sg7.czs1000.com
       - 🇸🇬 -新加坡-sg8.czs1000.com
       - 🇸🇬 -新加坡-sg1.sanfen001.pics
+      - 🇸🇬 -新加坡-sg1.tejiewm.com
       - 🇸🇬 -新加坡-sg10.czs1000.com
+      - 🇸🇬 -新加坡-sg13.czs1000.com
+      - 🇸🇬 -新加坡-sg2.elknode.top
+      - 🇸🇬 -新加坡-sggs3.vpnjantit.com
       - 🇸🇬 美国-vmess-ca.0112233.xyz8443-被墙-中转199.87.210.186-解锁新加坡地区NF非自制剧 2
   - name: 日本
     type: url-test
@@ -642,16 +638,21 @@ proxy-groups:
     tolerance: 100
     proxies:
       - 🇯🇵 日本-ss-52.197.66.243443-被墙-直连-解锁日本地区NF非自制剧
+      - 🇯🇵 日本-vmess-146.56.40.11727675-被墙-直连-解锁韩国地区NF非自制剧
       - 🇯🇵 美国-vmess-jparm.fineyoo.cf443-被墙-中转152.70.81.66-解锁日本地区NF非自制剧
       - 🇯🇵 美国-vmess-jparm.fineyoo.ml443-被墙-中转138.2.33.90-解锁日本地区NF非自制剧
       - 🇯🇵 美国-vmess-jpamd.fineyoo.ml443-被墙-中转138.2.33.102-解锁日本地区NF非自制剧
       - 🇯🇵 -日本-jp.indigo.02.nekocloud.cn
-      - 🇯🇵 -日本-jp04-vm0.entry.srthdw.art
+      - 🇯🇵 -日本东京-124.156.238.155
+      - 🇯🇵 -日本-18.183.218.89
       - 🇯🇵 -日本-paopao.v2.jp05.paopaocloud.cyou
-      - 🇯🇵 -日本-univstar-185-160-26-114.sslip.io
       - 🇯🇵 -日本-18.183.7.142
       - 🇯🇵 -日本-jp8.tejiewm.com
-      - 🇯🇵 -日本-jp06-vm0.entry.rwesdhytjuftyhdafsdgfrh.club
+      - 🇯🇵 -日本-jp2.czs1000.com
+      - 🇯🇵 -日本-jp01-vm0.entry.srthdw.art
+      - 🇯🇵 -日本-jp02-vm0.entry.rwesdhytjuftyhdafsdgfrh.club
+      - 🇯🇵 -日本-jp03-vm0.entry.rwesdhytjuftyhdafsdgfrh.club
+      - 🇯🇵 -日本-jp06-vm0.entry.srthdw.art
       - 🇯🇵 美国-vmess-jparm.fineyoo.cf443-被墙-中转152.70.81.66-解锁日本地区NF非自制剧 2
       - 🇯🇵 美国-vmess-jparm.fineyoo.ml443-被墙-中转138.2.33.90-解锁日本地区NF非自制剧 2
       - 🇯🇵 美国-vmess-jpamd.fineyoo.ml443-被墙-中转138.2.33.102-解锁日本地区NF非自制剧 2
@@ -668,9 +669,10 @@ proxy-groups:
     interval: 300
     tolerance: 100
     proxies:
+      - 🇯🇵 日本-vmess-146.56.40.11727675-被墙-直连-解锁韩国地区NF非自制剧
       - 🇰🇷 美国-vmess-amdkr.ptuu.ga443-被墙-中转152.69.229.222-解锁韩国地区NF非自制剧
       - 🇰🇷 美国-vmess-amdkr.ptuu.ml443-被墙-中转146.56.96.75-解锁韩国地区NF非自制剧
-      - 🇰🇷 -韩国首尔-193.122.113.203
+      - 🇰🇷 -韩国-kr2.czs1000.com
       - 🇰🇷 美国-vmess-amdkr.ptuu.ga443-被墙-中转152.69.229.222-解锁韩国地区NF非自制剧 2
       - 🇰🇷 美国-vmess-amdkr.ptuu.ml443-被墙-中转146.56.96.75-解锁韩国地区NF非自制剧 2
 rules:
