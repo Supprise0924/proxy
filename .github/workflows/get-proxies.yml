@@ -34,8 +34,8 @@ jobs:
         sudo sh ./utils/scripts/set_proxy.sh
     - name: Merge & speedtest
       run: |
-        chmod +x ./utils/subconverter/subconverter-linux-amd64 && chmod +x ./utils/litespeedtest/lite-linux-amd64
-        python ./utils/main.py
+        chmod +x ./utils/src/subconverter/subconverter-linux-amd64 && chmod +x ./utils/src/litespeedtest/lite-linux-amd64
+        python ./utils/src/publish.py
     - name: Commit change
       run: |
         git config --local user.email "actions@github.com"

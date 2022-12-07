@@ -1,0 +1,1 @@
+from litespeedtest.speedtest import speedtest
