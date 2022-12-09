@@ -1,7 +1,7 @@
 import json, base64, os
 import subprocess, argparse
 
-def speedtest(subscription,output_range,other_config={'concurrency': -1, 'timeout': -1}):
+def speedtest(subscription,output_range,other_config={'concurrency': 99, 'timeout': -1}):
     """Wrapper for litespeedtest.
     configurations:
         subscription: Subcription to speedtest, support local file path or url
@@ -11,7 +11,7 @@ def speedtest(subscription,output_range,other_config={'concurrency': -1, 'timeou
     """
     default_config = {
         'subscription': subscription, 'outputRange': output_range, 'speedtestMode': 'all',
-        'concurrency': -1, 'timeout': -1
+        'concurrency': 99, 'timeout': -1
     }
     config = default_config
     config.update(other_config)
