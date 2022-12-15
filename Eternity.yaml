@@ -5,97 +5,98 @@ mode: Rule
 log-level: info
 external-controller: :9090
 proxies:
-  - {name: 🇯🇵 日本 001, server: m4.40010010.xyz, port: 37121, type: vmess, uuid: 575e4d92-1056-44c2-8cac-75ef1c859ad5, alterId: 0, cipher: auto, tls: true}
-  - {name: HK_194 |45.65Mb, server: hrgdvpn.flycdnedc55.vip, port: 80, type: vmess, uuid: 00a1da14-d55f-5f75-e346-79b985e1a723, alterId: 32, cipher: auto, tls: false, network: ws, ws-opts: {path: /opt/video/images, headers: {Host: hrgdvpn.flycdnedc55.vip}}}
-  - {name: 🇸🇬 _null_null->🇸🇬_SG_新加坡, server: 104.18.93.152, port: 2086, type: vmess, uuid: e3cfb09c-deb9-4a83-d5e3-1c96ea2d93b1, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /aries, headers: {Host: azstu.cloudflare.quest}}}
   - {name: 🇸🇬 快嘴科技@来源：kkzui.com_新加坡_162, server: 217.197.161.138, port: 802, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
-  - {name: 🇸🇬 -新加坡-hcm2.safepn.net, server: hcm2.safepn.net, port: 443, type: vmess, uuid: ee76cecf-1219-42be-ae3f-6b8077e4cacc, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hcm2.safepn.net}}}
+  - {name: 🇸🇬 _null_null->🇸🇬_SG_新加坡, server: 104.18.93.152, port: 2086, type: vmess, uuid: e3cfb09c-deb9-4a83-d5e3-1c96ea2d93b1, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /aries, headers: {Host: azstu.cloudflare.quest}}}
+  - {name: 🇭🇰 -香港-42.98.27.183, server: 42.98.27.183, port: 543, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 51361:67mfIToL84PnZq0d, obfs-param: ""}
+  - {name: 🇭🇰 -香港-00000000000000000000000000000000000000000000000000000000000001a.node-for-bigairport.win, server: 00000000000000000000000000000000000000000000000000000000000001a.node-for-bigairport.win, port: 80, type: vmess, uuid: 1617ff1b-4e85-4a8a-81c3-511b3c2efad8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 00000000000000000000000000000000000000000000000000000000000001a.node-for-bigairport.win}}}
   - {name: 🇯🇵 -日本-00000000000000000000000000000000000000000000000000000000000003a.node-for-bigairport.win, server: 00000000000000000000000000000000000000000000000000000000000003a.node-for-bigairport.win, port: 80, type: vmess, uuid: 2100274e-55ae-4686-a380-a66ae8b0ef1b, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇯🇵 -日本-00000000000000000000000000000000000000000000000000000000000004a.node-for-bigairport.win, server: 00000000000000000000000000000000000000000000000000000000000004a.node-for-bigairport.win, port: 443, type: vmess, uuid: 46851ea7-e4bc-4f34-b28a-3b3bd0925bbb, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇸🇬 -新加坡-00000000000000000000000000000000000000000000000000000000000006a.node-for-bigairport.win, server: 00000000000000000000000000000000000000000000000000000000000006a.node-for-bigairport.win, port: 443, type: vmess, uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇯🇵 -日本-00000000000000000000000000000000000000000000000000000000000004a.node-for-bigairport.win, server: 00000000000000000000000000000000000000000000000000000000000004a.node-for-bigairport.win, port: 443, type: vmess, uuid: 2100274e-55ae-4686-a380-a66ae8b0ef1b, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇸🇬 -新加坡-00000000000000000000000000000000000000000000000000000000000005a.node-for-bigairport.win, server: 00000000000000000000000000000000000000000000000000000000000005a.node-for-bigairport.win, port: 80, type: vmess, uuid: 73d0705e-083d-4ce5-b8da-fbec62f543e2, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇸🇬 -新加坡-00000000000000000000000000000000000000000000000000000000000005a.rui77.com, server: 00000000000000000000000000000000000000000000000000000000000005a.rui77.com, port: 80, type: vmess, uuid: f3fda0c6-4025-4da7-82b4-88423d9ec489, alterId: 0, cipher: auto, tls: false}
   - {name: 🇭🇰 -香港-00000000000000000000000000000000000000000000000000000000000021a.node-for-bigairport.win, server: 00000000000000000000000000000000000000000000000000000000000021a.node-for-bigairport.win, port: 52356, type: vmess, uuid: 1617ff1b-4e85-4a8a-81c3-511b3c2efad8, alterId: 0, cipher: auto, tls: false}
   - {name: 🇭🇰 -香港-00000000000000000000000000000000000000000000000000000000000022a.node-for-bigairport.win, server: 00000000000000000000000000000000000000000000000000000000000022a.node-for-bigairport.win, port: 52356, type: vmess, uuid: 1617ff1b-4e85-4a8a-81c3-511b3c2efad8, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇸🇬 -新加坡-00000000000000000000000000000000000000000000000000000000000026a.node-for-bigairport.win, server: 00000000000000000000000000000000000000000000000000000000000026a.node-for-bigairport.win, port: 52356, type: vmess, uuid: 1617ff1b-4e85-4a8a-81c3-511b3c2efad8, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇸🇬 -新加坡-00000000000000000000000000000000000000000000000000000000000025a.node-for-bigairport.win, server: 00000000000000000000000000000000000000000000000000000000000025a.node-for-bigairport.win, port: 52356, type: vmess, uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇸🇬 -新加坡-00000000000000000000000000000000000000000000000000000000000026a.node-for-bigairport.win, server: 00000000000000000000000000000000000000000000000000000000000026a.node-for-bigairport.win, port: 52356, type: vmess, uuid: 2100274e-55ae-4686-a380-a66ae8b0ef1b, alterId: 0, cipher: auto, tls: false}
   - {name: 🇯🇵 -日本-00000000000000000000000000000000000000000000000000000000000027a.node-for-bigairport.win, server: 00000000000000000000000000000000000000000000000000000000000027a.node-for-bigairport.win, port: 52356, type: vmess, uuid: 1617ff1b-4e85-4a8a-81c3-511b3c2efad8, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇰🇷 -韩国-00000000000000000000000000000000000000000000000000000000000028a.node-for-bigairport.win, server: 00000000000000000000000000000000000000000000000000000000000028a.node-for-bigairport.win, port: 52356, type: vmess, uuid: 73d0705e-083d-4ce5-b8da-fbec62f543e2, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇸🇬 -新加坡-05xjp.mealstream.xyz, server: 05xjp.mealstream.xyz, port: 15405, type: vmess, uuid: 50f0ee3c-71ed-4334-96b5-d3a589679b48, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇯🇵 -日本-16hg.mealstream.xyz, server: 16hg.mealstream.xyz, port: 443, type: vmess, uuid: f0875261-04ba-4ca8-916e-4ed10a422f7e, alterId: 0, cipher: auto, tls: true}
-  - {name: 🇯🇵 -日本-17hg.mealstream.xyz, server: 17hg.mealstream.xyz, port: 443, type: vmess, uuid: a3b4cb88-e3aa-4770-a8b7-03ef2a6e753a, alterId: 0, cipher: auto, tls: true}
-  - {name: 🇯🇵 -日本-185.160.24.45, server: 185.160.24.45, port: 80, type: vmess, uuid: 54ac298f-7cbf-400c-8dc2-520b03f030f1, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: shoutingtoutiao3.10010.com}}}
-  - {name: 🇭🇰 -香港-19.douluo.beauty, server: 19.douluo.beauty, port: 53019, type: vmess, uuid: 1fd7abd7-574e-3e24-a3f4-44ab782c89ff, alterId: 2, cipher: auto, tls: false}
+  - {name: 🇰🇷 -韩国-00000000000000000000000000000000000000000000000000000000000028a.node-for-bigairport.win, server: 00000000000000000000000000000000000000000000000000000000000028a.node-for-bigairport.win, port: 52356, type: vmess, uuid: 1617ff1b-4e85-4a8a-81c3-511b3c2efad8, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇭🇰 -香港-00000000000000000000000000000000000000000000000000000000000032a.node-for-bigairport.win, server: 00000000000000000000000000000000000000000000000000000000000032a.node-for-bigairport.win, port: 12356, type: vmess, uuid: 1617ff1b-4e85-4a8a-81c3-511b3c2efad8, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇯🇵 -日本-00000000000000000000000000000000000000000000000000000000000033a.node-for-bigairport.win, server: 00000000000000000000000000000000000000000000000000000000000033a.node-for-bigairport.win, port: 12356, type: vmess, uuid: 15dcb118-88f6-44e8-895a-1770479ab8dc, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇯🇵 -日本-00000000000000000000000000000000000000000000000000000000000034a.node-for-bigairport.win, server: 00000000000000000000000000000000000000000000000000000000000034a.node-for-bigairport.win, port: 12356, type: vmess, uuid: 15dcb118-88f6-44e8-895a-1770479ab8dc, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇰🇷 -韩国-00000000000000000000000000000000000000000000000000000000000038a.node-for-bigairport.win, server: 00000000000000000000000000000000000000000000000000000000000038a.node-for-bigairport.win, port: 12356, type: vmess, uuid: 15dcb118-88f6-44e8-895a-1770479ab8dc, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇭🇰 -香港-104.208.96.70, server: 104.208.96.70, port: 80, type: vmess, uuid: fec544c5-6ec4-45d8-8878-17f799e77e96, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇸🇬 -新加坡-13.76.197.153, server: 13.76.197.153, port: 80, type: vmess, uuid: 1f776c80-bcdc-4890-bc7c-8c88f806e770, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: dizzme.sni.lifebox.lordvcl.trash.vcl.vutmevaosotrac.akmaized.net.tv360.com.viettelidc.cloud.tv360.snidaivaicalon.daivaichuong.yunactv.vietteltelecom.tv360.appfly3m.project4gyuna.pw.yunagrp.xyz.appsflyer.com.a248.e.akamai.net}}}
+  - {name: 🇭🇰 -香港-156.234.39.247, server: 156.234.39.247, port: 53659, type: vmess, uuid: 4a5ebf34-b02b-44e3-8935-19c2306c8cef, alterId: 0, cipher: auto, tls: false, network: http, http-opts: {method: GET, path: [/]}}
+  - {name: 🇭🇰 -香港-20.189.76.88, server: 20.189.76.88, port: 10021, type: vmess, uuid: cb4172af-65a6-4717-87ad-e96cfee20666, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 20.189.76.88:49}}}
+  - {name: 🇭🇰 -香港-210.0.159.89, server: 210.0.159.89, port: 6616, type: vmess, uuid: e44777de-f2e4-4337-8e27-141743b0a67b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
   - {name: 🇭🇰 -香港-236ba16f-7989-71de-e510-1cad33923355.cnnic.rip, server: 236ba16f-7989-71de-e510-1cad33923355.cnnic.rip, port: 80, type: vmess, uuid: 6da8a425-15c7-4c37-ad98-4ef4a75840a2, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: YouTube-aweikeji}}}
-  - {name: 🇭🇰 -香港-23.225.65.125, server: 23.225.65.125, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 64, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: 🇭🇰 -香港-47.243.29.114, server: 47.243.29.114, port: 25167, type: vmess, uuid: 3e870054-fc9c-4937-a7d9-f5878296da4d, alterId: 0, cipher: auto, tls: false, network: http, http-opts: {method: GET, path: [/]}}
+  - {name: 🇭🇰 -香港-23.225.65.125, server: 23.225.65.125, port: 443, type: vmess, uuid: 418048af-a293-4b99-9b0c-98ca3580dd24, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: www.60240757.xyz}}}
+  - {name: 🇯🇵 -日本-3.112.18.130, server: 3.112.18.130, port: 80, type: vmess, uuid: b87a6998-a1bd-48d0-a28c-858f5eee41af, alterId: 64, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇭🇰 -香港-43.129.234.80, server: 43.129.234.80, port: 56607, type: vmess, uuid: e3d62ad7-9dc4-479c-b5fb-24e0bbdd09f1, alterId: 0, cipher: auto, tls: false, network: http, http-opts: {method: GET, path: [/]}}
+  - {name: 🇯🇵 -日本-43.198.80.167, server: 43.198.80.167, port: 11451, type: vmess, uuid: bdecf580-0294-4231-a6b2-64205f04055b, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /}}
+  - {name: 🇸🇬 -新加坡-47.241.191.179, server: 47.241.191.179, port: 46104, type: vmess, uuid: 5b7f1d0e-4821-4108-e4bf-fa765ab28f2e, alterId: 0, cipher: auto, tls: false}
   - {name: 🇯🇵 -日本-47.74.21.73, server: 47.74.21.73, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: jp.sharecentre.online}}}
+  - {name: 🇯🇵 -日本-47.74.3.54, server: 47.74.3.54, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: jp.sharecentre.online}}}
+  - {name: 🇯🇵 -日本-47.74.32.187, server: 47.74.32.187, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: jp.sharecentre.online}}}
   - {name: 🇯🇵 -日本-47.74.5.99, server: 47.74.5.99, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 🇸🇬 -新加坡-66.42.59.36, server: 66.42.59.36, port: 80, type: vmess, uuid: d547acd8-1940-47c5-9e97-4f81abad83c1, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: tlu.dl.delivery.mp.microsoft.com}}}
+  - {name: 🇭🇰 -香港-8.210.226.71, server: 8.210.226.71, port: 35756, type: vmess, uuid: 42b9acac-66ac-4f48-9e43-ce54ebd4778f, alterId: 0, cipher: auto, tls: false, network: http, http-opts: {method: GET, path: [/]}}
   - {name: 🇭🇰 -香港-8.210.95.105, server: 8.210.95.105, port: 24514, type: vmess, uuid: 9174e354-21e9-49b3-8d3c-079e0dd6c879, alterId: 0, cipher: auto, tls: false, network: http, http-opts: {method: GET, path: [/]}}
-  - {name: 🇭🇰 -香港-82c7e5d7-eac9-4cfc-9415-2decc41aff37.xn--9kq12xdq7a.com, server: 82c7e5d7-eac9-4cfc-9415-2decc41aff37.xn--9kq12xdq7a.com, port: 80, type: vmess, uuid: fe15052b-852f-4c7c-8bba-e85c628dbcb7, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: puui.qpic.cn}}}
-  - {name: 🇯🇵 -日本-kr01.170203.xyz, server: kr01.170203.xyz, port: 45453, type: vmess, uuid: 332723e3-33e3-401b-84d7-e5b4cbaaba9d, alterId: 64, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: kr01.170203.xyz}}}
-  - {name: 🇭🇰 -香港-00000000000000000000000000000000000000000000000000000000000001a.node-for-bigairport.win, server: 00000000000000000000000000000000000000000000000000000000000001a.node-for-bigairport.win, port: 80, type: vmess, uuid: 2100274e-55ae-4686-a380-a66ae8b0ef1b, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: 00000000000000000000000000000000000000000000000000000000000001a.node-for-bigairport.win}}}
-  - {name: 🇭🇰 -香港-hk4.verichains.co, server: hk4.verichains.co, port: 443, type: vmess, uuid: a8031f66-528d-4576-8654-a89f7eb7134d, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hk4.verichains.co}}}
-  - {name: 🇭🇰 -香港-hk6.netflix6.com, server: hk6.netflix6.com, port: 443, type: vmess, uuid: 2b394e70-7fa4-3cad-9662-f978d53c321e, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hk6.netflix6.com}}}
-  - {name: 🇭🇰 -香港-hk1.18878a24-49d8-4fb2-a1e3-f37dce7cf2a8.czs1000.com, server: hk1.18878a24-49d8-4fb2-a1e3-f37dce7cf2a8.czs1000.com, port: 20893, type: vmess, uuid: f4079097-1c49-4031-b9b3-2323f6d52168, alterId: 0, cipher: auto, tls: true}
-  - {name: 🇭🇰 -香港-hk2.netflix6.com, server: hk2.netflix6.com, port: 443, type: vmess, uuid: d478e515-74bb-3321-b18e-cf5b14294a89, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hk2.netflix6.com}}}
-  - {name: 🇭🇰 -香港-hk3.czs1000.com, server: hk3.czs1000.com, port: 3887, type: vmess, uuid: 1bd772e1-ce31-4980-9cb7-a4d24873aa1b, alterId: 0, cipher: auto, tls: true}
-  - {name: 🇭🇰 -香港-hkbn03.tizi1.net, server: hkbn03.tizi1.net, port: 443, type: vmess, uuid: 0565f51e-f7e9-4962-ab9c-61407ef581c8, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: hkbn03.tizi1.net}}}
-  - {name: 🇯🇵 -日本-jp7.tejiewm.com, server: jp7.tejiewm.com, port: 4122, type: vmess, uuid: 95fcbb68-58d8-4b24-884c-c96a0c0fc457, alterId: 0, cipher: auto, tls: true}
-  - {name: 🇯🇵 -日本-jp.alt.01.nekocloud.cn, server: jp.alt.01.nekocloud.cn, port: 19055, type: vmess, uuid: 4ed09c54-c3c6-35dc-9e9d-f023715591b2, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: jp.alt.01.nekocloud.cn}}}
-  - {name: 🇯🇵 -日本-jp04.170203.xyz, server: jp04.170203.xyz, port: 23245, type: vmess, uuid: 590fcdc5-4d90-4048-838d-fd963e49a114, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: jp04.170203.xyz}}}
-  - {name: 🇯🇵 -日本-jp19.czs1000.com, server: jp19.czs1000.com, port: 6633, type: vmess, uuid: e9a3d6af-718e-4cf7-ad6c-4173bb822ba2, alterId: 0, cipher: auto, tls: true}
-  - {name: 🇯🇵 -日本-jp3.feiyun.club, server: jp3.feiyun.club, port: 1000, type: vmess, uuid: 1cf63b3f-e691-4605-8f86-f0009f1ee216, alterId: 0, cipher: auto, tls: true}
-  - {name: 🇯🇵 -日本-jp3.hgwc.xyz, server: jp3.hgwc.xyz, port: 101, type: vmess, uuid: 4753033a-3779-4459-adf7-88970190c90a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: jp3.hgwc.xyz}}}
-  - {name: 🇸🇬 -新加坡-sg001.170203.xyz, server: sg001.170203.xyz, port: 43543, type: vmess, uuid: 0b32b3cb-2efa-4328-99ba-53ef235227de, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: sg001.170203.xyz}}}
-  - {name: 🇸🇬 -新加坡-sg03.170203.xyz, server: sg03.170203.xyz, port: 43543, type: vmess, uuid: 810030b8-53ad-4f51-8014-1334aa4e5880, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: sg03.170203.xyz}}}
-  - {name: 🇸🇬 -新加坡-sg1.hgwc.xyz, server: sg1.hgwc.xyz, port: 101, type: vmess, uuid: 4753033a-3779-4459-adf7-88970190c90a, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: sg1.hgwc.xyz}}}
-  - {name: 🇸🇬 -新加坡-sg11.czs1000.com, server: sg11.czs1000.com, port: 4122, type: vmess, uuid: d547acd8-1940-47c5-9e97-4f81abad83c1, alterId: 0, cipher: auto, tls: true}
-  - {name: 🇸🇬 -新加坡-sg12.18878a24-49d8-4fb2-a1e3-f37dce7cf2a8.czs1000.com, server: sg12.18878a24-49d8-4fb2-a1e3-f37dce7cf2a8.czs1000.com, port: 4122, type: vmess, uuid: 49c4b27e-3018-428c-8ae8-976ae6f7d988, alterId: 0, cipher: auto, tls: true}
-  - {name: 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶1-12CDN, server: 190.93.244.2, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /ECTCJ0DF, headers: {Host: lg1.trump2023.us}}}
-  - {name: 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶1-2CDN, server: 188.114.99.9, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /ECTCJ0DF, headers: {Host: lg1.trump2023.us}}}
-  - {name: 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶1-9CDN, server: 185.162.228.228, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /ECTCJ0DF, headers: {Host: lg1.trump2023.us}}}
-  - {name: 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶3-13CDN, server: 190.93.244.4, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: lg10.cfcdn1.xyz}}}
-  - {name: 🇺🇸 美国 006, server: hk1vdf-node.aiqiche123.com, port: 8189, type: vmess, uuid: a90597c1-bab3-4217-ad6f-0838675c8638, alterId: 10, cipher: auto, tls: true}
-  - {name: US_154.53.48.30_12132022805d-6%, server: 154.53.48.30, port: 9595, type: ssr, cipher: aes-256-cfb, password: sk80Likez95, protocol: auth_chain_a, obfs: tls1.2_ticket_auth, protocol-param: "Non%%�[�%%�", obfs-param: ""}
-  - {name: 🇺🇸 美国(油管破解资源君2.0) 17, server: 141.101.115.100, port: 443, type: vmess, uuid: 267a9f38-40d8-4ed6-ab58-cafc67e9c933, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /VHONOFZ3, headers: {Host: lg1.cfcdn2.xyz}}}
-  - {name: 🇺🇸 2.08| httpsgithubcomAlvin9999newpacwiki clash ip1 洛杉矶3CDN, server: 141.101.114.100, port: 443, type: vmess, uuid: 267a9f38-40d8-4ed6-ab58-cafc67e9c933, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /VHONOFZ3, headers: {Host: lg1.cfcdn2.xyz}}}
-  - {name: US_488 | 8.41Mb, server: 165.232.169.142, port: 29332, type: ss, cipher: aes-256-cfb, password: 1e5111699c45496da84112f35db665c4}
-  - {name: 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 9, server: 104.17.191.85, port: 2095, type: vmess, uuid: e3dba91f-b31c-473a-8f17-92e1dedda38f, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: dknbyn3lw16n5elj.gongyiyun.cf}}}
-  - {name: 🇺🇸 -美国-104.17.156.247, server: 104.17.156.247, port: 2082, type: vmess, uuid: 36fa45db-2d4a-4295-a1fe-223836989878, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: PineApple.CLOUDFLARE.QUEST}}}
-  - {name: 🇺🇸 2.13| 美国YouTube由零開始 9, server: 128.14.162.48, port: 443, type: vmess, uuid: 5f64fa65-7b14-49c5-954d-aa15c6bfcacd, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: clash6.ssr-free.xyz}}}
-  - {name: 🇺🇸 美国_1214010, server: youtube-bai-piao-wang-zhe-usa.98848.xyz, port: 443, type: trojan, password: d1478689-439c-4590-b7ce-36e786a02dc3, skip-cert-verify: true}
-  - {name: 🇺🇸 -北美地区-nd94jsk0.0xnwy1fyrtlb.com, server: nd94jsk0.0xnwy1fyrtlb.com, port: 12103, type: ssr, cipher: aes-256-cfb, password: iuo7tbw4ks, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 28305:ZukOkl, obfs-param: V2xSR2JGcHRVWGxQUkUxM1RsTTFhVmxYYkd0a1V6VnFZakl3}
-  - {name: 🇺🇸 -美国-us.he.06.nekocloud.cn, server: us.he.06.nekocloud.cn, port: 19035, type: ssr, cipher: aes-128-cfb, password: iluulrzviik, protocol: auth_aes128_md5, obfs: plain, protocol-param: 42613:4gvqxX, obfs-param: 2c46b42613.wns.windows.com}
-  - {name: 🇺🇸 -美国-162.159.152.129, server: 162.159.152.129, port: 2082, type: vmess, uuid: a427c1b6-c03c-4b39-9f72-c407bef82250, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: VN.CLOUDFLARE.QUEST}}}
-  - {name: 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000009a.node-for-bigairport.win, server: 00000000000000000000000000000000000000000000000000000000000009a.node-for-bigairport.win, port: 80, type: vmess, uuid: 1617ff1b-4e85-4a8a-81c3-511b3c2efad8, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000010a.node-for-bigairport.win, server: 00000000000000000000000000000000000000000000000000000000000010a.node-for-bigairport.win, port: 443, type: vmess, uuid: 2100274e-55ae-4686-a380-a66ae8b0ef1b, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000029a.node-for-bigairport.win, server: 00000000000000000000000000000000000000000000000000000000000029a.node-for-bigairport.win, port: 52356, type: vmess, uuid: 46851ea7-e4bc-4f34-b28a-3b3bd0925bbb, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000030a.node-for-bigairport.win, server: 00000000000000000000000000000000000000000000000000000000000030a.node-for-bigairport.win, port: 52356, type: vmess, uuid: 1617ff1b-4e85-4a8a-81c3-511b3c2efad8, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000037a.rui77.com, server: 00000000000000000000000000000000000000000000000000000000000037a.rui77.com, port: 12356, type: vmess, uuid: a72e790f-e18a-43b0-a7a7-bcc33f144092, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000039a.node-for-bigairport.win, server: 00000000000000000000000000000000000000000000000000000000000039a.node-for-bigairport.win, port: 12356, type: vmess, uuid: 1617ff1b-4e85-4a8a-81c3-511b3c2efad8, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000040a.node-for-bigairport.win, server: 00000000000000000000000000000000000000000000000000000000000040a.node-for-bigairport.win, port: 12356, type: vmess, uuid: 73d0705e-083d-4ce5-b8da-fbec62f543e2, alterId: 0, cipher: auto, tls: false}
-  - {name: 🇫🇷 1.17| httpsgithubcomAlvin9999newpacwiki clash ip5 法国CDN12, server: 141.101.114.111, port: 443, type: vmess, uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /9JZFDTKE, headers: {Host: fr1.trump2023.org}}}
-  - {name: "|22.61Mb", server: fhcamd2.gaox.ml, port: 443, type: trojan, password: dbf9bf9c-2c3f-474a-8031-d4c00666a989, skip-cert-verify: false}
-  - {name: 🇫🇷 https//github.com/Alvin9999/new-pac/wiki clash ip2 法国CDN1-2, server: 198.41.203.5, port: 443, type: vmess, uuid: 4612618c-24cd-4379-9924-cfdf3d61fa5a, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /IYKLD53M, headers: {Host: opfr1.v2rayfree1.xyz}}}
-  - {name: 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶1-12CDN 2, server: 190.93.244.2, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /ECTCJ0DF, headers: {Host: lg1.trump2023.us}}}
-  - {name: 🇫🇷 https//github.com/Alvin9999/new-pac/wiki clash ip2 法国CDN1-13, server: 190.93.244.200, port: 443, type: vmess, uuid: 4612618c-24cd-4379-9924-cfdf3d61fa5a, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /IYKLD53M, headers: {Host: opfr1.v2rayfree1.xyz}}}
-  - {name: 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶1-9CDN 2, server: 185.162.228.228, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /ECTCJ0DF, headers: {Host: lg1.trump2023.us}}}
-  - {name: 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶1-13CDN, server: 190.93.245.2, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /ECTCJ0DF, headers: {Host: lg1.trump2023.us}}}
-  - {name: 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶1-2CDN 2, server: 188.114.99.9, port: 443, type: vmess, uuid: 40d496a6-ceeb-4096-baeb-4cc52b205621, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /ECTCJ0DF, headers: {Host: lg1.trump2023.us}}}
-  - {name: 🇫🇷 1.74| httpsgithubcomAlvin9999newpacwiki clash ip5 法国CDN1, server: 141.101.115.111, port: 443, type: vmess, uuid: 2b214122-1906-428a-bbb7-a039cbb7cd5c, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /9JZFDTKE, headers: {Host: fr1.trump2023.org}}}
-  - {name: 🇷🇺 _null_null->🇷🇺_RU_俄罗斯联邦 2, server: 104.17.109.42, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /shirker, headers: {Host: hk.sharecentre.online}}}
-  - {name: RU_364 |21.92Mb, server: 194.156.99.39, port: 443, type: trojan, password: xxoo, skip-cert-verify: true}
-  - {name: DE_104 | 4.79Mb, server: 193.108.118.30, port: 5500, type: ss, cipher: aes-256-gcm, password: KixLvKzwjekG00rm}
-  - {name: DE_94 | 9.84Mb, server: 193.108.117.24, port: 9101, type: ss, cipher: aes-256-gcm, password: e4FCWrgpkji3QY}
-  - {name: DE_87 | 5.83Mb, server: 193.108.118.36, port: 7306, type: ss, cipher: aes-256-gcm, password: FoOiGlkAA9yPEGP}
-  - {name: 🇷🇺 _null_null->🇷🇺_RU_俄罗斯联邦 7, server: 104.17.48.249, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /shirker, headers: {Host: hk.sharecentre.online}}}
-  - {name: 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶3-13CDN 2, server: 190.93.244.4, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: lg10.cfcdn1.xyz}}}
-  - {name: 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 14, server: 93.186.201.124, port: 812, type: ss, cipher: chacha20-ietf-poly1305, password: G!yBwPWH3Vao}
+  - {name: 🇯🇵 -日本-awsjp1.guojiang.site, server: awsjp1.guojiang.site, port: 80, type: vmess, uuid: bb419165-e073-4592-979a-5916fae2723c, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}}
+  - {name: 🇸🇬 -新加坡-awsxjp01.paolujichang.com, server: awsxjp01.paolujichang.com, port: 80, type: vmess, uuid: 975a0a5d-12b3-4a24-bafc-53f69c431429, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: alidocs.dingtalk.com}}}
+  - {name: 🇭🇰 -香港-c9f0fa11-e4d4-1c50-2fd2-1c41f7b2ff89.cnnic.rip, server: c9f0fa11-e4d4-1c50-2fd2-1c41f7b2ff89.cnnic.rip, port: 80, type: vmess, uuid: 0bd3dda2-88e8-4e7c-a46e-7db7d1d3cb4d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: tms.dingtalk.com}}}
+  - {name: 🇰🇷 -韩国-korea04.4ghatde.com, server: korea04.4ghatde.com, port: 80, type: vmess, uuid: bf03b31b-f13f-4ad7-8ce5-95edc65c1e56, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: frontier-i18n.tiktokv.com}}}
+  - {name: 🇯🇵 -日本-kr01.170203.xyz, server: kr01.170203.xyz, port: 45453, type: vmess, uuid: 590fcdc5-4d90-4048-838d-fd963e49a114, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: kr01.170203.xyz}}}
+  - {name: 🇯🇵 -日本-kr02.paopaocloud.cyou, server: kr02.paopaocloud.cyou, port: 443, type: vmess, uuid: c27d553c-4c81-3376-807c-7331b66fdef1, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: kr02.ssru3.casa}}}
+  - {name: 🇭🇰 -香港-hongkong1.csadata4g.me, server: hongkong1.csadata4g.me, port: 80, type: vmess, uuid: 8a678b26-e4c1-4fe0-b0a4-ec36e3f41996, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: v9-vn.tiktokcdn.com}}}
+  - {name: 🇭🇰 -香港-hk6.netflix6.com, server: hk6.netflix6.com, port: 443, type: vmess, uuid: 75a0bf38-e15f-3ce1-9b12-4f456a7129af, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /, headers: {Host: hk6.netflix6.com}}}
+  - {name: 🇭🇰 -香港-hk-core.pvpgames.net, server: hk-core.pvpgames.net, port: 63077, type: vmess, uuid: c1517df4-6454-39ce-9037-d5eccfc703b7, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: pl01x.myn1des.com}}}
+  - {name: 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶2-8CDN, server: 66.235.200.21, port: 443, type: vmess, uuid: 56a2188b-2ab7-402c-b9b8-34847fdf0958, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /5QNROSRV, headers: {Host: oplg1.zhujicn2.com}}}
   - {name: 🇺🇸 1.45| httpsgithubcomAlvin9999newpacwiki clash ip1 洛杉矶23CDN, server: 198.41.212.145, port: 443, type: vmess, uuid: 33aa57df-1c93-4318-9fce-e850437ee781, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: lg1.cfcdn3.xyz}}}
+  - {name: 🇺🇸 快嘴科技@来源：kkzui.com_美国_174 2, server: cf-lt.sharecentre.online, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /shirker, headers: {Host: sg-gcore-2.sharecentre.online}}}
+  - {name: 🇺🇸 美国_1214010, server: youtube-bai-piao-wang-zhe-usa.98848.xyz, port: 443, type: trojan, password: d1478689-439c-4590-b7ce-36e786a02dc3, skip-cert-verify: true}
+  - {name: 🇺🇸 -美国-104.17.152.15, server: 104.17.152.15, port: 2086, type: vmess, uuid: e91c45c9-2c0f-46a9-c56d-21663b9e2c18, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: BuyVM.CLOUDFLARE.QUEST}}}
+  - {name: 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶3-8CDN, server: 66.235.200.22, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: lg10.cfcdn1.xyz}}}
+  - {name: 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶3-2CDN, server: 188.114.99.11, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: lg10.cfcdn1.xyz}}}
+  - {name: 🇺🇸 -美国-192.240.99.182, server: 192.240.99.182, port: 8097, type: ss, cipher: aes-256-cfb, password: eIW0Dnk69454e6nSwuspv9DmS201tQ0D}
+  - {name: 🇺🇸 -美国-45.33.88.190, server: 45.33.88.190, port: 443, type: ss, cipher: aes-256-cfb, password: 9d6cceaa373bf2c8acb22e60b6a58be6}
+  - {name: 🇺🇸 -美国-cdnssr.ssrsub.com, server: cdnssr.ssrsub.com, port: 443, type: ss, cipher: aes-256-cfb, password: cdnssr.ssrsub.com}
+  - {name: 🇺🇸 -北美地区-nd94jsk0.0xnwy1fyrtlb.com, server: nd94jsk0.0xnwy1fyrtlb.com, port: 12101, type: ssr, cipher: aes-256-cfb, password: iuo7tbw4ks, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: 28305:ZukOkl, obfs-param: V2xSR2JGcHRVWGxQUkUxM1RsTTFhVmxYYkd0a1V6VnFZakl3}
+  - {name: 🇺🇸 -北美地区-nd94jsk0.0xnwy1fyrtlb.com 2, server: nd94jsk0.0xnwy1fyrtlb.com, port: 12105, type: ssr, cipher: aes-256-cfb, password: iuo7tbw4ks, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: e1efd28305.baidu.com}
+  - {name: 🇺🇸 -北美地区-nd94jsk0.0xnwy1fyrtlb.com 3, server: nd94jsk0.0xnwy1fyrtlb.com, port: 12106, type: ssr, cipher: aes-256-cfb, password: iuo7tbw4ks, protocol: auth_aes128_sha1, obfs: tls1.2_ticket_auth, protocol-param: "", obfs-param: e1efd28305.baidu.com}
+  - {name: 🇺🇸 -美国-uicdn.cf, server: uicdn.cf, port: 80, type: vmess, uuid: 6fea1649-425b-4092-bf53-29792152c925, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /, headers: {Host: us-lb.sshkit.org}}}
+  - {name: 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000007a.node-for-bigairport.win, server: 00000000000000000000000000000000000000000000000000000000000007a.node-for-bigairport.win, port: 80, type: vmess, uuid: 2100274e-55ae-4686-a380-a66ae8b0ef1b, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000009a.node-for-bigairport.win, server: 00000000000000000000000000000000000000000000000000000000000009a.node-for-bigairport.win, port: 80, type: vmess, uuid: 1617ff1b-4e85-4a8a-81c3-511b3c2efad8, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000010a.node-for-bigairport.win, server: 00000000000000000000000000000000000000000000000000000000000010a.node-for-bigairport.win, port: 443, type: vmess, uuid: 1617ff1b-4e85-4a8a-81c3-511b3c2efad8, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000011a.node-for-bigairport.win, server: 00000000000000000000000000000000000000000000000000000000000011a.node-for-bigairport.win, port: 26901, type: vmess, uuid: 15dcb118-88f6-44e8-895a-1770479ab8dc, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000013a.node-for-bigairport.win, server: 00000000000000000000000000000000000000000000000000000000000013a.node-for-bigairport.win, port: 43566, type: vmess, uuid: 78065c14-fc80-40b5-a46c-0e34efdf82fa, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000029a.node-for-bigairport.win, server: 00000000000000000000000000000000000000000000000000000000000029a.node-for-bigairport.win, port: 52356, type: vmess, uuid: 15dcb118-88f6-44e8-895a-1770479ab8dc, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000030a.node-for-bigairport.win, server: 00000000000000000000000000000000000000000000000000000000000030a.node-for-bigairport.win, port: 52356, type: vmess, uuid: 1617ff1b-4e85-4a8a-81c3-511b3c2efad8, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000031a.node-for-bigairport.win, server: 00000000000000000000000000000000000000000000000000000000000031a.node-for-bigairport.win, port: 12356, type: vmess, uuid: 2100274e-55ae-4686-a380-a66ae8b0ef1b, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000037a.node-for-bigairport.win, server: 00000000000000000000000000000000000000000000000000000000000037a.node-for-bigairport.win, port: 12356, type: vmess, uuid: 1617ff1b-4e85-4a8a-81c3-511b3c2efad8, alterId: 0, cipher: auto, tls: false}
+  - {name: 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶3-2CDN 2, server: 188.114.99.11, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: lg10.cfcdn1.xyz}}}
+  - {name: 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶3-8CDN 2, server: 66.235.200.22, port: 443, type: vmess, uuid: 17b2a313-37a0-4945-a8e4-e63375506b4a, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /A2DJOPFT, headers: {Host: lg10.cfcdn1.xyz}}}
+  - {name: 🇲🇴 澳门_1214003, server: 45.64.22.55, port: 443, type: trojan, password: Ty33ylFA4u6A5e0NE3wRFp3DIa8lZOzC87CeKnxYgpSOSa2ZaXBjDDSY9qCcxR, sni: flowery.meijireform.com, skip-cert-verify: false}
+  - {name: 🇱🇺 _null_null->🇱🇺_LU_卢森堡 2 2, server: 104.17.117.107, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /shirker, headers: {Host: sg-gcore-2.sharecentre.online}}}
+  - {name: 🇱🇺 _null_null->🇱🇺_LU_卢森堡 3, server: 104.17.58.87, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /shirker, headers: {Host: sg-gcore-2.sharecentre.online}}}
+  - {name: 🇦🇪 阿联酋_1214001, server: 181.214.99.54, port: 2035, type: trojan, password: q9870219, sni: ht.lljllj.buzz, skip-cert-verify: false}
+  - {name: 🇱🇺 _null_null->🇱🇺_LU_卢森堡 4, server: 104.19.162.144, port: 443, type: vmess, uuid: 20e92881-5fb4-4b05-bc77-57929476dc69, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /shirker, headers: {Host: sg-gcore-2.sharecentre.online}}}
+  - {name: 🇺🇸 1.45| httpsgithubcomAlvin9999newpacwiki clash ip1 洛杉矶23CDN 2, server: 198.41.212.145, port: 443, type: vmess, uuid: 33aa57df-1c93-4318-9fce-e850437ee781, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: lg1.cfcdn3.xyz}}}
   - {name: 🇪🇺 欧洲(油管破解资源君2.0) 2, server: 198.41.212.100, port: 443, type: vmess, uuid: 33aa57df-1c93-4318-9fce-e850437ee781, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /dongtaiwang.com, headers: {Host: lg1.cfcdn3.xyz}}}
-  - {name: 🇦🇺 澳大利亚 001, server: 43.200.177.138, port: 42517, type: vmess, uuid: b5b5209f-bcbd-4bac-b044-0d179698c62d, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
-  - {name: NL_AzadNet, server: 185.246.155.35, port: 9059, type: ss, cipher: aes-256-cfb, password: 9XwYyZsK8SNzQDtY}
-  - {name: 🇺🇸 2.08| httpsgithubcomAlvin9999newpacwiki clash ip1 洛杉矶3CDN 2, server: 141.101.114.100, port: 443, type: vmess, uuid: 267a9f38-40d8-4ed6-ab58-cafc67e9c933, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /VHONOFZ3, headers: {Host: lg1.cfcdn2.xyz}}}
-  - {name: 🇪🇺 欧洲(油管破解资源君2.0) 6, server: 198.41.212.155, port: 443, type: vmess, uuid: 267a9f38-40d8-4ed6-ab58-cafc67e9c933, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /VHONOFZ3, headers: {Host: lg1.cfcdn2.xyz}}}
+  - {name: 🇺🇸 2.08| httpsgithubcomAlvin9999newpacwiki clash ip1 洛杉矶3CDN, server: 141.101.114.100, port: 443, type: vmess, uuid: 267a9f38-40d8-4ed6-ab58-cafc67e9c933, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /VHONOFZ3, headers: {Host: lg1.cfcdn2.xyz}}}
+  - {name: "🇳🇱 [12-15]-🇳🇱-荷兰-6960-185.246.155.35", server: 185.246.155.35, port: 9024, type: ss, cipher: aes-256-cfb, password: BejrQvtu9sqUeNuZ}
   - {name: 🇪🇺 欧洲(油管破解资源君) 2, server: 198.41.203.1, port: 443, type: vmess, uuid: 267a9f38-40d8-4ed6-ab58-cafc67e9c933, alterId: 0, cipher: auto, tls: true, network: ws, ws-opts: {path: /VHONOFZ3, headers: {Host: lg1.cfcdn2.xyz}}}
+  - {name: PT_AzadNet, server: 185.231.233.130, port: 989, type: ss, cipher: aes-256-cfb, password: f8f7aCzcPKbsF8p3}
+  - {name: LT_245 | 3.03Mb, server: 213.183.53.177, port: 9040, type: ss, cipher: aes-256-cfb, password: p9z5BVADH2YFs3MN}
+  - {name: vpnclub_12, server: 206.81.31.184, port: 6245, type: vmess, uuid: 9d39cb34-5261-43fb-b0f8-4f8a22b10f15, alterId: 0, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: NL_248 | 0.65Mb, server: 213.183.59.229, port: 9018, type: ss, cipher: aes-256-cfb, password: fG2artUmHfNT2cX7}
+  - {name: -亚太地区-103.167.196.48, server: 103.167.196.48, port: 80, type: vmess, uuid: 56716a96-a265-448c-8969-03e626889580, alterId: 64, cipher: auto, tls: false, network: ws, ws-opts: {path: /}}
+  - {name: 广东省东莞市-14.152.92.81, server: 14.152.92.81, port: 12127, type: ssr, cipher: aes-256-cfb, password: 68xdgu9eyif, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 600777:154T8%%�, obfs-param: 0f099600777.v23f7n%�}
+  - {name: 广东省东莞市-14.152.92.82, server: 14.152.92.82, port: 12127, type: ssr, cipher: aes-256-cfb, password: 68xdgu9eyif, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 600777:154T8b, obfs-param: 0f099600777.v23f7nM0}
+  - {name: 🇨🇳 -上海市-223.166.28.166, server: 223.166.28.166, port: 564, type: ssr, cipher: chacha20-ietf, password: mblank1port, protocol: auth_aes128_md5, obfs: plain, protocol-param: 32329:ff112233, obfs-param: ""}
+  - {name: 广东省东莞市-42.157.195.229, server: 42.157.195.229, port: 12127, type: ssr, cipher: aes-256-cfb, password: 68xdgu9eyif, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 600777:154T8%%�, obfs-param: 0f099600777.v23f7n%�}
+  - {name: 广东省东莞市-42.157.195.230, server: 42.157.195.230, port: 12127, type: ssr, cipher: aes-256-cfb, password: 68xdgu9eyif, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 600777:154T8%%�, obfs-param: 0f099600777.v23f7n%�}
+  - {name: 广东省东莞市-42.157.195.231, server: 42.157.195.231, port: 12127, type: ssr, cipher: aes-256-cfb, password: 68xdgu9eyif, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 600777:154T8%%�, obfs-param: MGYwOTk2MDA3NzcudjIzZjduTTA}
+  - {name: 广东省东莞市-42.157.195.234, server: 42.157.195.234, port: 12127, type: ssr, cipher: aes-256-cfb, password: 68xdgu9eyif, protocol: auth_aes128_sha1, obfs: http_simple, protocol-param: 600777:154T8%%�, obfs-param: 0f099600777.v23f7n%�}
 proxy-groups:
   - name: 🚀 节点选择
     type: select
@@ -111,97 +112,98 @@ proxy-groups:
   - name: 🤘 手动选择
     type: select
     proxies:
-      - 🇯🇵 日本 001
-      - HK_194 |45.65Mb
-      - 🇸🇬 _null_null->🇸🇬_SG_新加坡
       - 🇸🇬 快嘴科技@来源：kkzui.com_新加坡_162
-      - 🇸🇬 -新加坡-hcm2.safepn.net
+      - 🇸🇬 _null_null->🇸🇬_SG_新加坡
+      - 🇭🇰 -香港-42.98.27.183
+      - 🇭🇰 -香港-00000000000000000000000000000000000000000000000000000000000001a.node-for-bigairport.win
       - 🇯🇵 -日本-00000000000000000000000000000000000000000000000000000000000003a.node-for-bigairport.win
       - 🇯🇵 -日本-00000000000000000000000000000000000000000000000000000000000004a.node-for-bigairport.win
-      - 🇸🇬 -新加坡-00000000000000000000000000000000000000000000000000000000000006a.node-for-bigairport.win
+      - 🇸🇬 -新加坡-00000000000000000000000000000000000000000000000000000000000005a.node-for-bigairport.win
+      - 🇸🇬 -新加坡-00000000000000000000000000000000000000000000000000000000000005a.rui77.com
       - 🇭🇰 -香港-00000000000000000000000000000000000000000000000000000000000021a.node-for-bigairport.win
       - 🇭🇰 -香港-00000000000000000000000000000000000000000000000000000000000022a.node-for-bigairport.win
+      - 🇸🇬 -新加坡-00000000000000000000000000000000000000000000000000000000000025a.node-for-bigairport.win
       - 🇸🇬 -新加坡-00000000000000000000000000000000000000000000000000000000000026a.node-for-bigairport.win
       - 🇯🇵 -日本-00000000000000000000000000000000000000000000000000000000000027a.node-for-bigairport.win
       - 🇰🇷 -韩国-00000000000000000000000000000000000000000000000000000000000028a.node-for-bigairport.win
-      - 🇸🇬 -新加坡-05xjp.mealstream.xyz
-      - 🇯🇵 -日本-16hg.mealstream.xyz
-      - 🇯🇵 -日本-17hg.mealstream.xyz
-      - 🇯🇵 -日本-185.160.24.45
-      - 🇭🇰 -香港-19.douluo.beauty
+      - 🇭🇰 -香港-00000000000000000000000000000000000000000000000000000000000032a.node-for-bigairport.win
+      - 🇯🇵 -日本-00000000000000000000000000000000000000000000000000000000000033a.node-for-bigairport.win
+      - 🇯🇵 -日本-00000000000000000000000000000000000000000000000000000000000034a.node-for-bigairport.win
+      - 🇰🇷 -韩国-00000000000000000000000000000000000000000000000000000000000038a.node-for-bigairport.win
+      - 🇭🇰 -香港-104.208.96.70
+      - 🇸🇬 -新加坡-13.76.197.153
+      - 🇭🇰 -香港-156.234.39.247
+      - 🇭🇰 -香港-20.189.76.88
+      - 🇭🇰 -香港-210.0.159.89
       - 🇭🇰 -香港-236ba16f-7989-71de-e510-1cad33923355.cnnic.rip
       - 🇭🇰 -香港-23.225.65.125
-      - 🇭🇰 -香港-47.243.29.114
+      - 🇯🇵 -日本-3.112.18.130
+      - 🇭🇰 -香港-43.129.234.80
+      - 🇯🇵 -日本-43.198.80.167
+      - 🇸🇬 -新加坡-47.241.191.179
       - 🇯🇵 -日本-47.74.21.73
+      - 🇯🇵 -日本-47.74.3.54
+      - 🇯🇵 -日本-47.74.32.187
       - 🇯🇵 -日本-47.74.5.99
+      - 🇸🇬 -新加坡-66.42.59.36
+      - 🇭🇰 -香港-8.210.226.71
       - 🇭🇰 -香港-8.210.95.105
-      - 🇭🇰 -香港-82c7e5d7-eac9-4cfc-9415-2decc41aff37.xn--9kq12xdq7a.com
+      - 🇯🇵 -日本-awsjp1.guojiang.site
+      - 🇸🇬 -新加坡-awsxjp01.paolujichang.com
+      - 🇭🇰 -香港-c9f0fa11-e4d4-1c50-2fd2-1c41f7b2ff89.cnnic.rip
+      - 🇰🇷 -韩国-korea04.4ghatde.com
       - 🇯🇵 -日本-kr01.170203.xyz
-      - 🇭🇰 -香港-00000000000000000000000000000000000000000000000000000000000001a.node-for-bigairport.win
-      - 🇭🇰 -香港-hk4.verichains.co
+      - 🇯🇵 -日本-kr02.paopaocloud.cyou
+      - 🇭🇰 -香港-hongkong1.csadata4g.me
       - 🇭🇰 -香港-hk6.netflix6.com
-      - 🇭🇰 -香港-hk1.18878a24-49d8-4fb2-a1e3-f37dce7cf2a8.czs1000.com
-      - 🇭🇰 -香港-hk2.netflix6.com
-      - 🇭🇰 -香港-hk3.czs1000.com
-      - 🇭🇰 -香港-hkbn03.tizi1.net
-      - 🇯🇵 -日本-jp7.tejiewm.com
-      - 🇯🇵 -日本-jp.alt.01.nekocloud.cn
-      - 🇯🇵 -日本-jp04.170203.xyz
-      - 🇯🇵 -日本-jp19.czs1000.com
-      - 🇯🇵 -日本-jp3.feiyun.club
-      - 🇯🇵 -日本-jp3.hgwc.xyz
-      - 🇸🇬 -新加坡-sg001.170203.xyz
-      - 🇸🇬 -新加坡-sg03.170203.xyz
-      - 🇸🇬 -新加坡-sg1.hgwc.xyz
-      - 🇸🇬 -新加坡-sg11.czs1000.com
-      - 🇸🇬 -新加坡-sg12.18878a24-49d8-4fb2-a1e3-f37dce7cf2a8.czs1000.com
-      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶1-12CDN
-      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶1-2CDN
-      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶1-9CDN
-      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶3-13CDN
-      - 🇺🇸 美国 006
-      - US_154.53.48.30_12132022805d-6%
-      - 🇺🇸 美国(油管破解资源君2.0) 17
-      - 🇺🇸 2.08| httpsgithubcomAlvin9999newpacwiki clash ip1 洛杉矶3CDN
-      - US_488 | 8.41Mb
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 9
-      - 🇺🇸 -美国-104.17.156.247
-      - 🇺🇸 2.13| 美国YouTube由零開始 9
+      - 🇭🇰 -香港-hk-core.pvpgames.net
+      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶2-8CDN
+      - 🇺🇸 1.45| httpsgithubcomAlvin9999newpacwiki clash ip1 洛杉矶23CDN
+      - 🇺🇸 快嘴科技@来源：kkzui.com_美国_174 2
       - 🇺🇸 美国_1214010
+      - 🇺🇸 -美国-104.17.152.15
+      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶3-8CDN
+      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶3-2CDN
+      - 🇺🇸 -美国-192.240.99.182
+      - 🇺🇸 -美国-45.33.88.190
+      - 🇺🇸 -美国-cdnssr.ssrsub.com
       - 🇺🇸 -北美地区-nd94jsk0.0xnwy1fyrtlb.com
-      - 🇺🇸 -美国-us.he.06.nekocloud.cn
-      - 🇺🇸 -美国-162.159.152.129
+      - 🇺🇸 -北美地区-nd94jsk0.0xnwy1fyrtlb.com 2
+      - 🇺🇸 -北美地区-nd94jsk0.0xnwy1fyrtlb.com 3
+      - 🇺🇸 -美国-uicdn.cf
+      - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000007a.node-for-bigairport.win
       - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000009a.node-for-bigairport.win
       - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000010a.node-for-bigairport.win
+      - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000011a.node-for-bigairport.win
+      - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000013a.node-for-bigairport.win
       - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000029a.node-for-bigairport.win
       - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000030a.node-for-bigairport.win
-      - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000037a.rui77.com
-      - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000039a.node-for-bigairport.win
-      - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000040a.node-for-bigairport.win
-      - 🇫🇷 1.17| httpsgithubcomAlvin9999newpacwiki clash ip5 法国CDN12
-      - "|22.61Mb"
-      - 🇫🇷 https//github.com/Alvin9999/new-pac/wiki clash ip2 法国CDN1-2
-      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶1-12CDN 2
-      - 🇫🇷 https//github.com/Alvin9999/new-pac/wiki clash ip2 法国CDN1-13
-      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶1-9CDN 2
-      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶1-13CDN
-      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶1-2CDN 2
-      - 🇫🇷 1.74| httpsgithubcomAlvin9999newpacwiki clash ip5 法国CDN1
-      - 🇷🇺 _null_null->🇷🇺_RU_俄罗斯联邦 2
-      - RU_364 |21.92Mb
-      - DE_104 | 4.79Mb
-      - DE_94 | 9.84Mb
-      - DE_87 | 5.83Mb
-      - 🇷🇺 _null_null->🇷🇺_RU_俄罗斯联邦 7
-      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶3-13CDN 2
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 14
-      - 🇺🇸 1.45| httpsgithubcomAlvin9999newpacwiki clash ip1 洛杉矶23CDN
+      - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000031a.node-for-bigairport.win
+      - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000037a.node-for-bigairport.win
+      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶3-2CDN 2
+      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶3-8CDN 2
+      - 🇲🇴 澳门_1214003
+      - 🇱🇺 _null_null->🇱🇺_LU_卢森堡 2 2
+      - 🇱🇺 _null_null->🇱🇺_LU_卢森堡 3
+      - 🇦🇪 阿联酋_1214001
+      - 🇱🇺 _null_null->🇱🇺_LU_卢森堡 4
+      - 🇺🇸 1.45| httpsgithubcomAlvin9999newpacwiki clash ip1 洛杉矶23CDN 2
       - 🇪🇺 欧洲(油管破解资源君2.0) 2
-      - 🇦🇺 澳大利亚 001
-      - NL_AzadNet
-      - 🇺🇸 2.08| httpsgithubcomAlvin9999newpacwiki clash ip1 洛杉矶3CDN 2
-      - 🇪🇺 欧洲(油管破解资源君2.0) 6
+      - 🇺🇸 2.08| httpsgithubcomAlvin9999newpacwiki clash ip1 洛杉矶3CDN
+      - 🇳🇱 [12-15]-🇳🇱-荷兰-6960-185.246.155.35
       - 🇪🇺 欧洲(油管破解资源君) 2
+      - PT_AzadNet
+      - LT_245 | 3.03Mb
+      - vpnclub_12
+      - NL_248 | 0.65Mb
+      - -亚太地区-103.167.196.48
+      - 广东省东莞市-14.152.92.81
+      - 广东省东莞市-14.152.92.82
+      - 🇨🇳 -上海市-223.166.28.166
+      - 广东省东莞市-42.157.195.229
+      - 广东省东莞市-42.157.195.230
+      - 广东省东莞市-42.157.195.231
+      - 广东省东莞市-42.157.195.234
   - name: 🏳️‍🌈 国家选择
     type: select
     proxies:
@@ -252,412 +254,407 @@ proxy-groups:
     interval: 300
     tolerance: 50
     proxies:
-      - 🇯🇵 日本 001
-      - HK_194 |45.65Mb
-      - 🇸🇬 _null_null->🇸🇬_SG_新加坡
       - 🇸🇬 快嘴科技@来源：kkzui.com_新加坡_162
-      - 🇸🇬 -新加坡-hcm2.safepn.net
+      - 🇸🇬 _null_null->🇸🇬_SG_新加坡
+      - 🇭🇰 -香港-42.98.27.183
+      - 🇭🇰 -香港-00000000000000000000000000000000000000000000000000000000000001a.node-for-bigairport.win
       - 🇯🇵 -日本-00000000000000000000000000000000000000000000000000000000000003a.node-for-bigairport.win
       - 🇯🇵 -日本-00000000000000000000000000000000000000000000000000000000000004a.node-for-bigairport.win
-      - 🇸🇬 -新加坡-00000000000000000000000000000000000000000000000000000000000006a.node-for-bigairport.win
+      - 🇸🇬 -新加坡-00000000000000000000000000000000000000000000000000000000000005a.node-for-bigairport.win
+      - 🇸🇬 -新加坡-00000000000000000000000000000000000000000000000000000000000005a.rui77.com
       - 🇭🇰 -香港-00000000000000000000000000000000000000000000000000000000000021a.node-for-bigairport.win
       - 🇭🇰 -香港-00000000000000000000000000000000000000000000000000000000000022a.node-for-bigairport.win
+      - 🇸🇬 -新加坡-00000000000000000000000000000000000000000000000000000000000025a.node-for-bigairport.win
       - 🇸🇬 -新加坡-00000000000000000000000000000000000000000000000000000000000026a.node-for-bigairport.win
       - 🇯🇵 -日本-00000000000000000000000000000000000000000000000000000000000027a.node-for-bigairport.win
       - 🇰🇷 -韩国-00000000000000000000000000000000000000000000000000000000000028a.node-for-bigairport.win
-      - 🇸🇬 -新加坡-05xjp.mealstream.xyz
-      - 🇯🇵 -日本-16hg.mealstream.xyz
-      - 🇯🇵 -日本-17hg.mealstream.xyz
-      - 🇯🇵 -日本-185.160.24.45
-      - 🇭🇰 -香港-19.douluo.beauty
+      - 🇭🇰 -香港-00000000000000000000000000000000000000000000000000000000000032a.node-for-bigairport.win
+      - 🇯🇵 -日本-00000000000000000000000000000000000000000000000000000000000033a.node-for-bigairport.win
+      - 🇯🇵 -日本-00000000000000000000000000000000000000000000000000000000000034a.node-for-bigairport.win
+      - 🇰🇷 -韩国-00000000000000000000000000000000000000000000000000000000000038a.node-for-bigairport.win
+      - 🇭🇰 -香港-104.208.96.70
+      - 🇸🇬 -新加坡-13.76.197.153
+      - 🇭🇰 -香港-156.234.39.247
+      - 🇭🇰 -香港-20.189.76.88
+      - 🇭🇰 -香港-210.0.159.89
       - 🇭🇰 -香港-236ba16f-7989-71de-e510-1cad33923355.cnnic.rip
       - 🇭🇰 -香港-23.225.65.125
-      - 🇭🇰 -香港-47.243.29.114
+      - 🇯🇵 -日本-3.112.18.130
+      - 🇭🇰 -香港-43.129.234.80
+      - 🇯🇵 -日本-43.198.80.167
+      - 🇸🇬 -新加坡-47.241.191.179
       - 🇯🇵 -日本-47.74.21.73
+      - 🇯🇵 -日本-47.74.3.54
+      - 🇯🇵 -日本-47.74.32.187
       - 🇯🇵 -日本-47.74.5.99
+      - 🇸🇬 -新加坡-66.42.59.36
+      - 🇭🇰 -香港-8.210.226.71
       - 🇭🇰 -香港-8.210.95.105
-      - 🇭🇰 -香港-82c7e5d7-eac9-4cfc-9415-2decc41aff37.xn--9kq12xdq7a.com
+      - 🇯🇵 -日本-awsjp1.guojiang.site
+      - 🇸🇬 -新加坡-awsxjp01.paolujichang.com
+      - 🇭🇰 -香港-c9f0fa11-e4d4-1c50-2fd2-1c41f7b2ff89.cnnic.rip
+      - 🇰🇷 -韩国-korea04.4ghatde.com
       - 🇯🇵 -日本-kr01.170203.xyz
-      - 🇭🇰 -香港-00000000000000000000000000000000000000000000000000000000000001a.node-for-bigairport.win
-      - 🇭🇰 -香港-hk4.verichains.co
+      - 🇯🇵 -日本-kr02.paopaocloud.cyou
+      - 🇭🇰 -香港-hongkong1.csadata4g.me
       - 🇭🇰 -香港-hk6.netflix6.com
-      - 🇭🇰 -香港-hk1.18878a24-49d8-4fb2-a1e3-f37dce7cf2a8.czs1000.com
-      - 🇭🇰 -香港-hk2.netflix6.com
-      - 🇭🇰 -香港-hk3.czs1000.com
-      - 🇭🇰 -香港-hkbn03.tizi1.net
-      - 🇯🇵 -日本-jp7.tejiewm.com
-      - 🇯🇵 -日本-jp.alt.01.nekocloud.cn
-      - 🇯🇵 -日本-jp04.170203.xyz
-      - 🇯🇵 -日本-jp19.czs1000.com
-      - 🇯🇵 -日本-jp3.feiyun.club
-      - 🇯🇵 -日本-jp3.hgwc.xyz
-      - 🇸🇬 -新加坡-sg001.170203.xyz
-      - 🇸🇬 -新加坡-sg03.170203.xyz
-      - 🇸🇬 -新加坡-sg1.hgwc.xyz
-      - 🇸🇬 -新加坡-sg11.czs1000.com
-      - 🇸🇬 -新加坡-sg12.18878a24-49d8-4fb2-a1e3-f37dce7cf2a8.czs1000.com
-      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶1-12CDN
-      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶1-2CDN
-      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶1-9CDN
-      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶3-13CDN
-      - 🇺🇸 美国 006
-      - US_154.53.48.30_12132022805d-6%
-      - 🇺🇸 美国(油管破解资源君2.0) 17
-      - 🇺🇸 2.08| httpsgithubcomAlvin9999newpacwiki clash ip1 洛杉矶3CDN
-      - US_488 | 8.41Mb
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 9
-      - 🇺🇸 -美国-104.17.156.247
-      - 🇺🇸 2.13| 美国YouTube由零開始 9
+      - 🇭🇰 -香港-hk-core.pvpgames.net
+      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶2-8CDN
+      - 🇺🇸 1.45| httpsgithubcomAlvin9999newpacwiki clash ip1 洛杉矶23CDN
+      - 🇺🇸 快嘴科技@来源：kkzui.com_美国_174 2
       - 🇺🇸 美国_1214010
+      - 🇺🇸 -美国-104.17.152.15
+      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶3-8CDN
+      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶3-2CDN
+      - 🇺🇸 -美国-192.240.99.182
+      - 🇺🇸 -美国-45.33.88.190
+      - 🇺🇸 -美国-cdnssr.ssrsub.com
       - 🇺🇸 -北美地区-nd94jsk0.0xnwy1fyrtlb.com
-      - 🇺🇸 -美国-us.he.06.nekocloud.cn
-      - 🇺🇸 -美国-162.159.152.129
+      - 🇺🇸 -北美地区-nd94jsk0.0xnwy1fyrtlb.com 2
+      - 🇺🇸 -北美地区-nd94jsk0.0xnwy1fyrtlb.com 3
+      - 🇺🇸 -美国-uicdn.cf
+      - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000007a.node-for-bigairport.win
       - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000009a.node-for-bigairport.win
       - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000010a.node-for-bigairport.win
+      - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000011a.node-for-bigairport.win
+      - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000013a.node-for-bigairport.win
       - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000029a.node-for-bigairport.win
       - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000030a.node-for-bigairport.win
-      - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000037a.rui77.com
-      - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000039a.node-for-bigairport.win
-      - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000040a.node-for-bigairport.win
-      - 🇫🇷 1.17| httpsgithubcomAlvin9999newpacwiki clash ip5 法国CDN12
-      - "|22.61Mb"
-      - 🇫🇷 https//github.com/Alvin9999/new-pac/wiki clash ip2 法国CDN1-2
-      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶1-12CDN 2
-      - 🇫🇷 https//github.com/Alvin9999/new-pac/wiki clash ip2 法国CDN1-13
-      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶1-9CDN 2
-      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶1-13CDN
-      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶1-2CDN 2
-      - 🇫🇷 1.74| httpsgithubcomAlvin9999newpacwiki clash ip5 法国CDN1
-      - 🇷🇺 _null_null->🇷🇺_RU_俄罗斯联邦 2
-      - RU_364 |21.92Mb
-      - DE_104 | 4.79Mb
-      - DE_94 | 9.84Mb
-      - DE_87 | 5.83Mb
-      - 🇷🇺 _null_null->🇷🇺_RU_俄罗斯联邦 7
-      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶3-13CDN 2
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 14
-      - 🇺🇸 1.45| httpsgithubcomAlvin9999newpacwiki clash ip1 洛杉矶23CDN
+      - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000031a.node-for-bigairport.win
+      - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000037a.node-for-bigairport.win
+      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶3-2CDN 2
+      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶3-8CDN 2
+      - 🇲🇴 澳门_1214003
+      - 🇱🇺 _null_null->🇱🇺_LU_卢森堡 2 2
+      - 🇱🇺 _null_null->🇱🇺_LU_卢森堡 3
+      - 🇦🇪 阿联酋_1214001
+      - 🇱🇺 _null_null->🇱🇺_LU_卢森堡 4
+      - 🇺🇸 1.45| httpsgithubcomAlvin9999newpacwiki clash ip1 洛杉矶23CDN 2
       - 🇪🇺 欧洲(油管破解资源君2.0) 2
-      - 🇦🇺 澳大利亚 001
-      - NL_AzadNet
-      - 🇺🇸 2.08| httpsgithubcomAlvin9999newpacwiki clash ip1 洛杉矶3CDN 2
-      - 🇪🇺 欧洲(油管破解资源君2.0) 6
+      - 🇺🇸 2.08| httpsgithubcomAlvin9999newpacwiki clash ip1 洛杉矶3CDN
+      - 🇳🇱 [12-15]-🇳🇱-荷兰-6960-185.246.155.35
       - 🇪🇺 欧洲(油管破解资源君) 2
+      - PT_AzadNet
+      - LT_245 | 3.03Mb
+      - vpnclub_12
+      - NL_248 | 0.65Mb
+      - -亚太地区-103.167.196.48
+      - 广东省东莞市-14.152.92.81
+      - 广东省东莞市-14.152.92.82
+      - 🇨🇳 -上海市-223.166.28.166
+      - 广东省东莞市-42.157.195.229
+      - 广东省东莞市-42.157.195.230
+      - 广东省东莞市-42.157.195.231
+      - 广东省东莞市-42.157.195.234
   - name: ⚡ 故障转移
     type: fallback
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 50
     proxies:
-      - 🇯🇵 日本 001
-      - HK_194 |45.65Mb
-      - 🇸🇬 _null_null->🇸🇬_SG_新加坡
       - 🇸🇬 快嘴科技@来源：kkzui.com_新加坡_162
-      - 🇸🇬 -新加坡-hcm2.safepn.net
+      - 🇸🇬 _null_null->🇸🇬_SG_新加坡
+      - 🇭🇰 -香港-42.98.27.183
+      - 🇭🇰 -香港-00000000000000000000000000000000000000000000000000000000000001a.node-for-bigairport.win
       - 🇯🇵 -日本-00000000000000000000000000000000000000000000000000000000000003a.node-for-bigairport.win
       - 🇯🇵 -日本-00000000000000000000000000000000000000000000000000000000000004a.node-for-bigairport.win
-      - 🇸🇬 -新加坡-00000000000000000000000000000000000000000000000000000000000006a.node-for-bigairport.win
+      - 🇸🇬 -新加坡-00000000000000000000000000000000000000000000000000000000000005a.node-for-bigairport.win
+      - 🇸🇬 -新加坡-00000000000000000000000000000000000000000000000000000000000005a.rui77.com
       - 🇭🇰 -香港-00000000000000000000000000000000000000000000000000000000000021a.node-for-bigairport.win
       - 🇭🇰 -香港-00000000000000000000000000000000000000000000000000000000000022a.node-for-bigairport.win
+      - 🇸🇬 -新加坡-00000000000000000000000000000000000000000000000000000000000025a.node-for-bigairport.win
       - 🇸🇬 -新加坡-00000000000000000000000000000000000000000000000000000000000026a.node-for-bigairport.win
       - 🇯🇵 -日本-00000000000000000000000000000000000000000000000000000000000027a.node-for-bigairport.win
       - 🇰🇷 -韩国-00000000000000000000000000000000000000000000000000000000000028a.node-for-bigairport.win
-      - 🇸🇬 -新加坡-05xjp.mealstream.xyz
-      - 🇯🇵 -日本-16hg.mealstream.xyz
-      - 🇯🇵 -日本-17hg.mealstream.xyz
-      - 🇯🇵 -日本-185.160.24.45
-      - 🇭🇰 -香港-19.douluo.beauty
+      - 🇭🇰 -香港-00000000000000000000000000000000000000000000000000000000000032a.node-for-bigairport.win
+      - 🇯🇵 -日本-00000000000000000000000000000000000000000000000000000000000033a.node-for-bigairport.win
+      - 🇯🇵 -日本-00000000000000000000000000000000000000000000000000000000000034a.node-for-bigairport.win
+      - 🇰🇷 -韩国-00000000000000000000000000000000000000000000000000000000000038a.node-for-bigairport.win
+      - 🇭🇰 -香港-104.208.96.70
+      - 🇸🇬 -新加坡-13.76.197.153
+      - 🇭🇰 -香港-156.234.39.247
+      - 🇭🇰 -香港-20.189.76.88
+      - 🇭🇰 -香港-210.0.159.89
       - 🇭🇰 -香港-236ba16f-7989-71de-e510-1cad33923355.cnnic.rip
       - 🇭🇰 -香港-23.225.65.125
-      - 🇭🇰 -香港-47.243.29.114
+      - 🇯🇵 -日本-3.112.18.130
+      - 🇭🇰 -香港-43.129.234.80
+      - 🇯🇵 -日本-43.198.80.167
+      - 🇸🇬 -新加坡-47.241.191.179
       - 🇯🇵 -日本-47.74.21.73
+      - 🇯🇵 -日本-47.74.3.54
+      - 🇯🇵 -日本-47.74.32.187
       - 🇯🇵 -日本-47.74.5.99
+      - 🇸🇬 -新加坡-66.42.59.36
+      - 🇭🇰 -香港-8.210.226.71
       - 🇭🇰 -香港-8.210.95.105
-      - 🇭🇰 -香港-82c7e5d7-eac9-4cfc-9415-2decc41aff37.xn--9kq12xdq7a.com
+      - 🇯🇵 -日本-awsjp1.guojiang.site
+      - 🇸🇬 -新加坡-awsxjp01.paolujichang.com
+      - 🇭🇰 -香港-c9f0fa11-e4d4-1c50-2fd2-1c41f7b2ff89.cnnic.rip
+      - 🇰🇷 -韩国-korea04.4ghatde.com
       - 🇯🇵 -日本-kr01.170203.xyz
-      - 🇭🇰 -香港-00000000000000000000000000000000000000000000000000000000000001a.node-for-bigairport.win
-      - 🇭🇰 -香港-hk4.verichains.co
+      - 🇯🇵 -日本-kr02.paopaocloud.cyou
+      - 🇭🇰 -香港-hongkong1.csadata4g.me
       - 🇭🇰 -香港-hk6.netflix6.com
-      - 🇭🇰 -香港-hk1.18878a24-49d8-4fb2-a1e3-f37dce7cf2a8.czs1000.com
-      - 🇭🇰 -香港-hk2.netflix6.com
-      - 🇭🇰 -香港-hk3.czs1000.com
-      - 🇭🇰 -香港-hkbn03.tizi1.net
-      - 🇯🇵 -日本-jp7.tejiewm.com
-      - 🇯🇵 -日本-jp.alt.01.nekocloud.cn
-      - 🇯🇵 -日本-jp04.170203.xyz
-      - 🇯🇵 -日本-jp19.czs1000.com
-      - 🇯🇵 -日本-jp3.feiyun.club
-      - 🇯🇵 -日本-jp3.hgwc.xyz
-      - 🇸🇬 -新加坡-sg001.170203.xyz
-      - 🇸🇬 -新加坡-sg03.170203.xyz
-      - 🇸🇬 -新加坡-sg1.hgwc.xyz
-      - 🇸🇬 -新加坡-sg11.czs1000.com
-      - 🇸🇬 -新加坡-sg12.18878a24-49d8-4fb2-a1e3-f37dce7cf2a8.czs1000.com
-      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶1-12CDN
-      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶1-2CDN
-      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶1-9CDN
-      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶3-13CDN
-      - 🇺🇸 美国 006
-      - US_154.53.48.30_12132022805d-6%
-      - 🇺🇸 美国(油管破解资源君2.0) 17
-      - 🇺🇸 2.08| httpsgithubcomAlvin9999newpacwiki clash ip1 洛杉矶3CDN
-      - US_488 | 8.41Mb
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 9
-      - 🇺🇸 -美国-104.17.156.247
-      - 🇺🇸 2.13| 美国YouTube由零開始 9
+      - 🇭🇰 -香港-hk-core.pvpgames.net
+      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶2-8CDN
+      - 🇺🇸 1.45| httpsgithubcomAlvin9999newpacwiki clash ip1 洛杉矶23CDN
+      - 🇺🇸 快嘴科技@来源：kkzui.com_美国_174 2
       - 🇺🇸 美国_1214010
+      - 🇺🇸 -美国-104.17.152.15
+      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶3-8CDN
+      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶3-2CDN
+      - 🇺🇸 -美国-192.240.99.182
+      - 🇺🇸 -美国-45.33.88.190
+      - 🇺🇸 -美国-cdnssr.ssrsub.com
       - 🇺🇸 -北美地区-nd94jsk0.0xnwy1fyrtlb.com
-      - 🇺🇸 -美国-us.he.06.nekocloud.cn
-      - 🇺🇸 -美国-162.159.152.129
+      - 🇺🇸 -北美地区-nd94jsk0.0xnwy1fyrtlb.com 2
+      - 🇺🇸 -北美地区-nd94jsk0.0xnwy1fyrtlb.com 3
+      - 🇺🇸 -美国-uicdn.cf
+      - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000007a.node-for-bigairport.win
       - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000009a.node-for-bigairport.win
       - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000010a.node-for-bigairport.win
+      - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000011a.node-for-bigairport.win
+      - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000013a.node-for-bigairport.win
       - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000029a.node-for-bigairport.win
       - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000030a.node-for-bigairport.win
-      - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000037a.rui77.com
-      - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000039a.node-for-bigairport.win
-      - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000040a.node-for-bigairport.win
-      - 🇫🇷 1.17| httpsgithubcomAlvin9999newpacwiki clash ip5 法国CDN12
-      - "|22.61Mb"
-      - 🇫🇷 https//github.com/Alvin9999/new-pac/wiki clash ip2 法国CDN1-2
-      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶1-12CDN 2
-      - 🇫🇷 https//github.com/Alvin9999/new-pac/wiki clash ip2 法国CDN1-13
-      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶1-9CDN 2
-      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶1-13CDN
-      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶1-2CDN 2
-      - 🇫🇷 1.74| httpsgithubcomAlvin9999newpacwiki clash ip5 法国CDN1
-      - 🇷🇺 _null_null->🇷🇺_RU_俄罗斯联邦 2
-      - RU_364 |21.92Mb
-      - DE_104 | 4.79Mb
-      - DE_94 | 9.84Mb
-      - DE_87 | 5.83Mb
-      - 🇷🇺 _null_null->🇷🇺_RU_俄罗斯联邦 7
-      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶3-13CDN 2
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 14
-      - 🇺🇸 1.45| httpsgithubcomAlvin9999newpacwiki clash ip1 洛杉矶23CDN
+      - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000031a.node-for-bigairport.win
+      - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000037a.node-for-bigairport.win
+      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶3-2CDN 2
+      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶3-8CDN 2
+      - 🇲🇴 澳门_1214003
+      - 🇱🇺 _null_null->🇱🇺_LU_卢森堡 2 2
+      - 🇱🇺 _null_null->🇱🇺_LU_卢森堡 3
+      - 🇦🇪 阿联酋_1214001
+      - 🇱🇺 _null_null->🇱🇺_LU_卢森堡 4
+      - 🇺🇸 1.45| httpsgithubcomAlvin9999newpacwiki clash ip1 洛杉矶23CDN 2
       - 🇪🇺 欧洲(油管破解资源君2.0) 2
-      - 🇦🇺 澳大利亚 001
-      - NL_AzadNet
-      - 🇺🇸 2.08| httpsgithubcomAlvin9999newpacwiki clash ip1 洛杉矶3CDN 2
-      - 🇪🇺 欧洲(油管破解资源君2.0) 6
+      - 🇺🇸 2.08| httpsgithubcomAlvin9999newpacwiki clash ip1 洛杉矶3CDN
+      - 🇳🇱 [12-15]-🇳🇱-荷兰-6960-185.246.155.35
       - 🇪🇺 欧洲(油管破解资源君) 2
+      - PT_AzadNet
+      - LT_245 | 3.03Mb
+      - vpnclub_12
+      - NL_248 | 0.65Mb
+      - -亚太地区-103.167.196.48
+      - 广东省东莞市-14.152.92.81
+      - 广东省东莞市-14.152.92.82
+      - 🇨🇳 -上海市-223.166.28.166
+      - 广东省东莞市-42.157.195.229
+      - 广东省东莞市-42.157.195.230
+      - 广东省东莞市-42.157.195.231
+      - 广东省东莞市-42.157.195.234
   - name: 🌎 北美地区
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
-      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶1-12CDN
-      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶1-2CDN
-      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶1-9CDN
-      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶3-13CDN
-      - 🇺🇸 美国 006
-      - US_154.53.48.30_12132022805d-6%
-      - 🇺🇸 美国(油管破解资源君2.0) 17
-      - 🇺🇸 2.08| httpsgithubcomAlvin9999newpacwiki clash ip1 洛杉矶3CDN
-      - US_488 | 8.41Mb
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 9
-      - 🇺🇸 -美国-104.17.156.247
-      - 🇺🇸 2.13| 美国YouTube由零開始 9
+      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶2-8CDN
+      - 🇺🇸 1.45| httpsgithubcomAlvin9999newpacwiki clash ip1 洛杉矶23CDN
+      - 🇺🇸 快嘴科技@来源：kkzui.com_美国_174 2
       - 🇺🇸 美国_1214010
+      - 🇺🇸 -美国-104.17.152.15
+      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶3-8CDN
+      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶3-2CDN
+      - 🇺🇸 -美国-192.240.99.182
+      - 🇺🇸 -美国-45.33.88.190
+      - 🇺🇸 -美国-cdnssr.ssrsub.com
       - 🇺🇸 -北美地区-nd94jsk0.0xnwy1fyrtlb.com
-      - 🇺🇸 -美国-us.he.06.nekocloud.cn
-      - 🇺🇸 -美国-162.159.152.129
+      - 🇺🇸 -北美地区-nd94jsk0.0xnwy1fyrtlb.com 2
+      - 🇺🇸 -北美地区-nd94jsk0.0xnwy1fyrtlb.com 3
+      - 🇺🇸 -美国-uicdn.cf
+      - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000007a.node-for-bigairport.win
       - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000009a.node-for-bigairport.win
       - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000010a.node-for-bigairport.win
+      - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000011a.node-for-bigairport.win
+      - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000013a.node-for-bigairport.win
       - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000029a.node-for-bigairport.win
       - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000030a.node-for-bigairport.win
-      - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000037a.rui77.com
-      - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000039a.node-for-bigairport.win
-      - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000040a.node-for-bigairport.win
-      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶1-12CDN 2
-      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶1-9CDN 2
-      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶1-13CDN
-      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶1-2CDN 2
-      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶3-13CDN 2
-      - 🇺🇸 1.45| httpsgithubcomAlvin9999newpacwiki clash ip1 洛杉矶23CDN
-      - 🇺🇸 2.08| httpsgithubcomAlvin9999newpacwiki clash ip1 洛杉矶3CDN 2
+      - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000031a.node-for-bigairport.win
+      - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000037a.node-for-bigairport.win
+      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶3-2CDN 2
+      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶3-8CDN 2
+      - 🇺🇸 1.45| httpsgithubcomAlvin9999newpacwiki clash ip1 洛杉矶23CDN 2
+      - 🇺🇸 2.08| httpsgithubcomAlvin9999newpacwiki clash ip1 洛杉矶3CDN
   - name: 🌏 东亚地区
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
-      - 🇯🇵 日本 001
-      - HK_194 |45.65Mb
-      - 🇸🇬 _null_null->🇸🇬_SG_新加坡
       - 🇸🇬 快嘴科技@来源：kkzui.com_新加坡_162
-      - 🇸🇬 -新加坡-hcm2.safepn.net
+      - 🇸🇬 _null_null->🇸🇬_SG_新加坡
+      - 🇭🇰 -香港-42.98.27.183
+      - 🇭🇰 -香港-00000000000000000000000000000000000000000000000000000000000001a.node-for-bigairport.win
       - 🇯🇵 -日本-00000000000000000000000000000000000000000000000000000000000003a.node-for-bigairport.win
       - 🇯🇵 -日本-00000000000000000000000000000000000000000000000000000000000004a.node-for-bigairport.win
-      - 🇸🇬 -新加坡-00000000000000000000000000000000000000000000000000000000000006a.node-for-bigairport.win
+      - 🇸🇬 -新加坡-00000000000000000000000000000000000000000000000000000000000005a.node-for-bigairport.win
+      - 🇸🇬 -新加坡-00000000000000000000000000000000000000000000000000000000000005a.rui77.com
       - 🇭🇰 -香港-00000000000000000000000000000000000000000000000000000000000021a.node-for-bigairport.win
       - 🇭🇰 -香港-00000000000000000000000000000000000000000000000000000000000022a.node-for-bigairport.win
+      - 🇸🇬 -新加坡-00000000000000000000000000000000000000000000000000000000000025a.node-for-bigairport.win
       - 🇸🇬 -新加坡-00000000000000000000000000000000000000000000000000000000000026a.node-for-bigairport.win
       - 🇯🇵 -日本-00000000000000000000000000000000000000000000000000000000000027a.node-for-bigairport.win
       - 🇰🇷 -韩国-00000000000000000000000000000000000000000000000000000000000028a.node-for-bigairport.win
-      - 🇸🇬 -新加坡-05xjp.mealstream.xyz
-      - 🇯🇵 -日本-16hg.mealstream.xyz
-      - 🇯🇵 -日本-17hg.mealstream.xyz
-      - 🇯🇵 -日本-185.160.24.45
-      - 🇭🇰 -香港-19.douluo.beauty
+      - 🇭🇰 -香港-00000000000000000000000000000000000000000000000000000000000032a.node-for-bigairport.win
+      - 🇯🇵 -日本-00000000000000000000000000000000000000000000000000000000000033a.node-for-bigairport.win
+      - 🇯🇵 -日本-00000000000000000000000000000000000000000000000000000000000034a.node-for-bigairport.win
+      - 🇰🇷 -韩国-00000000000000000000000000000000000000000000000000000000000038a.node-for-bigairport.win
+      - 🇭🇰 -香港-104.208.96.70
+      - 🇸🇬 -新加坡-13.76.197.153
+      - 🇭🇰 -香港-156.234.39.247
+      - 🇭🇰 -香港-20.189.76.88
+      - 🇭🇰 -香港-210.0.159.89
       - 🇭🇰 -香港-236ba16f-7989-71de-e510-1cad33923355.cnnic.rip
       - 🇭🇰 -香港-23.225.65.125
-      - 🇭🇰 -香港-47.243.29.114
+      - 🇯🇵 -日本-3.112.18.130
+      - 🇭🇰 -香港-43.129.234.80
+      - 🇯🇵 -日本-43.198.80.167
+      - 🇸🇬 -新加坡-47.241.191.179
       - 🇯🇵 -日本-47.74.21.73
+      - 🇯🇵 -日本-47.74.3.54
+      - 🇯🇵 -日本-47.74.32.187
       - 🇯🇵 -日本-47.74.5.99
+      - 🇸🇬 -新加坡-66.42.59.36
+      - 🇭🇰 -香港-8.210.226.71
       - 🇭🇰 -香港-8.210.95.105
-      - 🇭🇰 -香港-82c7e5d7-eac9-4cfc-9415-2decc41aff37.xn--9kq12xdq7a.com
+      - 🇯🇵 -日本-awsjp1.guojiang.site
+      - 🇸🇬 -新加坡-awsxjp01.paolujichang.com
+      - 🇭🇰 -香港-c9f0fa11-e4d4-1c50-2fd2-1c41f7b2ff89.cnnic.rip
+      - 🇰🇷 -韩国-korea04.4ghatde.com
       - 🇯🇵 -日本-kr01.170203.xyz
-      - 🇭🇰 -香港-00000000000000000000000000000000000000000000000000000000000001a.node-for-bigairport.win
-      - 🇭🇰 -香港-hk4.verichains.co
+      - 🇯🇵 -日本-kr02.paopaocloud.cyou
+      - 🇭🇰 -香港-hongkong1.csadata4g.me
       - 🇭🇰 -香港-hk6.netflix6.com
-      - 🇭🇰 -香港-hk1.18878a24-49d8-4fb2-a1e3-f37dce7cf2a8.czs1000.com
-      - 🇭🇰 -香港-hk2.netflix6.com
-      - 🇭🇰 -香港-hk3.czs1000.com
-      - 🇭🇰 -香港-hkbn03.tizi1.net
-      - 🇯🇵 -日本-jp7.tejiewm.com
-      - 🇯🇵 -日本-jp.alt.01.nekocloud.cn
-      - 🇯🇵 -日本-jp04.170203.xyz
-      - 🇯🇵 -日本-jp19.czs1000.com
-      - 🇯🇵 -日本-jp3.feiyun.club
-      - 🇯🇵 -日本-jp3.hgwc.xyz
-      - 🇸🇬 -新加坡-sg001.170203.xyz
-      - 🇸🇬 -新加坡-sg03.170203.xyz
-      - 🇸🇬 -新加坡-sg1.hgwc.xyz
-      - 🇸🇬 -新加坡-sg11.czs1000.com
-      - 🇸🇬 -新加坡-sg12.18878a24-49d8-4fb2-a1e3-f37dce7cf2a8.czs1000.com
+      - 🇭🇰 -香港-hk-core.pvpgames.net
   - name: 🌍 其它地区
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
-      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶1-12CDN
-      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶1-2CDN
-      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶1-9CDN
-      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶3-13CDN
-      - 🇺🇸 2.08| httpsgithubcomAlvin9999newpacwiki clash ip1 洛杉矶3CDN
-      - 🇫🇷 1.17| httpsgithubcomAlvin9999newpacwiki clash ip5 法国CDN12
-      - "|22.61Mb"
-      - 🇫🇷 https//github.com/Alvin9999/new-pac/wiki clash ip2 法国CDN1-2
-      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶1-12CDN 2
-      - 🇫🇷 https//github.com/Alvin9999/new-pac/wiki clash ip2 法国CDN1-13
-      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶1-9CDN 2
-      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶1-13CDN
-      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶1-2CDN 2
-      - 🇫🇷 1.74| httpsgithubcomAlvin9999newpacwiki clash ip5 法国CDN1
-      - 🇷🇺 _null_null->🇷🇺_RU_俄罗斯联邦 2
-      - RU_364 |21.92Mb
-      - DE_104 | 4.79Mb
-      - DE_94 | 9.84Mb
-      - DE_87 | 5.83Mb
-      - 🇷🇺 _null_null->🇷🇺_RU_俄罗斯联邦 7
-      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶3-13CDN 2
-      - 🇪🇺 欧洲(欢迎订阅Youtube破解资源君) 14
+      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶2-8CDN
       - 🇺🇸 1.45| httpsgithubcomAlvin9999newpacwiki clash ip1 洛杉矶23CDN
+      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶3-8CDN
+      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶3-2CDN
+      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶3-2CDN 2
+      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶3-8CDN 2
+      - 🇲🇴 澳门_1214003
+      - 🇱🇺 _null_null->🇱🇺_LU_卢森堡 2 2
+      - 🇱🇺 _null_null->🇱🇺_LU_卢森堡 3
+      - 🇦🇪 阿联酋_1214001
+      - 🇱🇺 _null_null->🇱🇺_LU_卢森堡 4
+      - 🇺🇸 1.45| httpsgithubcomAlvin9999newpacwiki clash ip1 洛杉矶23CDN 2
       - 🇪🇺 欧洲(油管破解资源君2.0) 2
-      - 🇦🇺 澳大利亚 001
-      - NL_AzadNet
-      - 🇺🇸 2.08| httpsgithubcomAlvin9999newpacwiki clash ip1 洛杉矶3CDN 2
-      - 🇪🇺 欧洲(油管破解资源君2.0) 6
+      - 🇺🇸 2.08| httpsgithubcomAlvin9999newpacwiki clash ip1 洛杉矶3CDN
+      - 🇳🇱 [12-15]-🇳🇱-荷兰-6960-185.246.155.35
       - 🇪🇺 欧洲(油管破解资源君) 2
+      - PT_AzadNet
+      - LT_245 | 3.03Mb
+      - vpnclub_12
+      - NL_248 | 0.65Mb
+      - -亚太地区-103.167.196.48
+      - 广东省东莞市-14.152.92.81
+      - 广东省东莞市-14.152.92.82
+      - 🇨🇳 -上海市-223.166.28.166
+      - 广东省东莞市-42.157.195.229
+      - 广东省东莞市-42.157.195.230
+      - 广东省东莞市-42.157.195.231
+      - 广东省东莞市-42.157.195.234
   - name: 美国
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
-      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶1-12CDN
-      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶1-2CDN
-      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶1-9CDN
-      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶3-13CDN
-      - 🇺🇸 美国 006
-      - US_154.53.48.30_12132022805d-6%
-      - 🇺🇸 美国(油管破解资源君2.0) 17
-      - 🇺🇸 2.08| httpsgithubcomAlvin9999newpacwiki clash ip1 洛杉矶3CDN
-      - US_488 | 8.41Mb
-      - 🇺🇸 github.com/freefq - 美国CloudFlare公司CDN节点 9
-      - 🇺🇸 -美国-104.17.156.247
-      - 🇺🇸 2.13| 美国YouTube由零開始 9
+      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶2-8CDN
+      - 🇺🇸 1.45| httpsgithubcomAlvin9999newpacwiki clash ip1 洛杉矶23CDN
+      - 🇺🇸 快嘴科技@来源：kkzui.com_美国_174 2
       - 🇺🇸 美国_1214010
+      - 🇺🇸 -美国-104.17.152.15
+      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶3-8CDN
+      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶3-2CDN
+      - 🇺🇸 -美国-192.240.99.182
+      - 🇺🇸 -美国-45.33.88.190
+      - 🇺🇸 -美国-cdnssr.ssrsub.com
       - 🇺🇸 -北美地区-nd94jsk0.0xnwy1fyrtlb.com
-      - 🇺🇸 -美国-us.he.06.nekocloud.cn
-      - 🇺🇸 -美国-162.159.152.129
+      - 🇺🇸 -北美地区-nd94jsk0.0xnwy1fyrtlb.com 2
+      - 🇺🇸 -北美地区-nd94jsk0.0xnwy1fyrtlb.com 3
+      - 🇺🇸 -美国-uicdn.cf
+      - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000007a.node-for-bigairport.win
       - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000009a.node-for-bigairport.win
       - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000010a.node-for-bigairport.win
+      - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000011a.node-for-bigairport.win
+      - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000013a.node-for-bigairport.win
       - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000029a.node-for-bigairport.win
       - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000030a.node-for-bigairport.win
-      - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000037a.rui77.com
-      - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000039a.node-for-bigairport.win
-      - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000040a.node-for-bigairport.win
-      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶1-12CDN 2
-      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶1-9CDN 2
-      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶1-13CDN
-      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶1-2CDN 2
-      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶3-13CDN 2
-      - 🇺🇸 1.45| httpsgithubcomAlvin9999newpacwiki clash ip1 洛杉矶23CDN
-      - 🇺🇸 2.08| httpsgithubcomAlvin9999newpacwiki clash ip1 洛杉矶3CDN 2
+      - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000031a.node-for-bigairport.win
+      - 🇺🇸 -美国-00000000000000000000000000000000000000000000000000000000000037a.node-for-bigairport.win
+      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶3-2CDN 2
+      - 🇺🇸 https//github.com/Alvin9999/new-pac/wiki clash ip1 洛杉矶3-8CDN 2
+      - 🇺🇸 1.45| httpsgithubcomAlvin9999newpacwiki clash ip1 洛杉矶23CDN 2
+      - 🇺🇸 2.08| httpsgithubcomAlvin9999newpacwiki clash ip1 洛杉矶3CDN
   - name: 香港
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
-      - HK_194 |45.65Mb
+      - 🇭🇰 -香港-42.98.27.183
+      - 🇭🇰 -香港-00000000000000000000000000000000000000000000000000000000000001a.node-for-bigairport.win
       - 🇭🇰 -香港-00000000000000000000000000000000000000000000000000000000000021a.node-for-bigairport.win
       - 🇭🇰 -香港-00000000000000000000000000000000000000000000000000000000000022a.node-for-bigairport.win
-      - 🇭🇰 -香港-19.douluo.beauty
+      - 🇭🇰 -香港-00000000000000000000000000000000000000000000000000000000000032a.node-for-bigairport.win
+      - 🇭🇰 -香港-104.208.96.70
+      - 🇭🇰 -香港-156.234.39.247
+      - 🇭🇰 -香港-20.189.76.88
+      - 🇭🇰 -香港-210.0.159.89
       - 🇭🇰 -香港-236ba16f-7989-71de-e510-1cad33923355.cnnic.rip
       - 🇭🇰 -香港-23.225.65.125
-      - 🇭🇰 -香港-47.243.29.114
+      - 🇭🇰 -香港-43.129.234.80
+      - 🇭🇰 -香港-8.210.226.71
       - 🇭🇰 -香港-8.210.95.105
-      - 🇭🇰 -香港-82c7e5d7-eac9-4cfc-9415-2decc41aff37.xn--9kq12xdq7a.com
-      - 🇭🇰 -香港-00000000000000000000000000000000000000000000000000000000000001a.node-for-bigairport.win
-      - 🇭🇰 -香港-hk4.verichains.co
+      - 🇭🇰 -香港-c9f0fa11-e4d4-1c50-2fd2-1c41f7b2ff89.cnnic.rip
+      - 🇭🇰 -香港-hongkong1.csadata4g.me
       - 🇭🇰 -香港-hk6.netflix6.com
-      - 🇭🇰 -香港-hk1.18878a24-49d8-4fb2-a1e3-f37dce7cf2a8.czs1000.com
-      - 🇭🇰 -香港-hk2.netflix6.com
-      - 🇭🇰 -香港-hk3.czs1000.com
-      - 🇭🇰 -香港-hkbn03.tizi1.net
+      - 🇭🇰 -香港-hk-core.pvpgames.net
   - name: 狮城
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
-      - 🇸🇬 _null_null->🇸🇬_SG_新加坡
       - 🇸🇬 快嘴科技@来源：kkzui.com_新加坡_162
-      - 🇸🇬 -新加坡-hcm2.safepn.net
-      - 🇸🇬 -新加坡-00000000000000000000000000000000000000000000000000000000000006a.node-for-bigairport.win
+      - 🇸🇬 _null_null->🇸🇬_SG_新加坡
+      - 🇸🇬 -新加坡-00000000000000000000000000000000000000000000000000000000000005a.node-for-bigairport.win
+      - 🇸🇬 -新加坡-00000000000000000000000000000000000000000000000000000000000005a.rui77.com
+      - 🇸🇬 -新加坡-00000000000000000000000000000000000000000000000000000000000025a.node-for-bigairport.win
       - 🇸🇬 -新加坡-00000000000000000000000000000000000000000000000000000000000026a.node-for-bigairport.win
-      - 🇸🇬 -新加坡-05xjp.mealstream.xyz
-      - 🇸🇬 -新加坡-sg001.170203.xyz
-      - 🇸🇬 -新加坡-sg03.170203.xyz
-      - 🇸🇬 -新加坡-sg1.hgwc.xyz
-      - 🇸🇬 -新加坡-sg11.czs1000.com
-      - 🇸🇬 -新加坡-sg12.18878a24-49d8-4fb2-a1e3-f37dce7cf2a8.czs1000.com
+      - 🇸🇬 -新加坡-13.76.197.153
+      - 🇸🇬 -新加坡-47.241.191.179
+      - 🇸🇬 -新加坡-66.42.59.36
+      - 🇸🇬 -新加坡-awsxjp01.paolujichang.com
   - name: 日本
     type: url-test
     url: https://www.google.com/generate_204
     interval: 300
     tolerance: 100
     proxies:
-      - 🇯🇵 日本 001
       - 🇯🇵 -日本-00000000000000000000000000000000000000000000000000000000000003a.node-for-bigairport.win
       - 🇯🇵 -日本-00000000000000000000000000000000000000000000000000000000000004a.node-for-bigairport.win
       - 🇯🇵 -日本-00000000000000000000000000000000000000000000000000000000000027a.node-for-bigairport.win
-      - 🇯🇵 -日本-16hg.mealstream.xyz
-      - 🇯🇵 -日本-17hg.mealstream.xyz
-      - 🇯🇵 -日本-185.160.24.45
+      - 🇯🇵 -日本-00000000000000000000000000000000000000000000000000000000000033a.node-for-bigairport.win
+      - 🇯🇵 -日本-00000000000000000000000000000000000000000000000000000000000034a.node-for-bigairport.win
+      - 🇯🇵 -日本-3.112.18.130
+      - 🇯🇵 -日本-43.198.80.167
       - 🇯🇵 -日本-47.74.21.73
+      - 🇯🇵 -日本-47.74.3.54
+      - 🇯🇵 -日本-47.74.32.187
       - 🇯🇵 -日本-47.74.5.99
+      - 🇯🇵 -日本-awsjp1.guojiang.site
       - 🇯🇵 -日本-kr01.170203.xyz
-      - 🇯🇵 -日本-jp7.tejiewm.com
-      - 🇯🇵 -日本-jp.alt.01.nekocloud.cn
-      - 🇯🇵 -日本-jp04.170203.xyz
-      - 🇯🇵 -日本-jp19.czs1000.com
-      - 🇯🇵 -日本-jp3.feiyun.club
-      - 🇯🇵 -日本-jp3.hgwc.xyz
+      - 🇯🇵 -日本-kr02.paopaocloud.cyou
   - name: 台湾
     type: url-test
     url: https://www.google.com/generate_204
@@ -672,6 +669,8 @@ proxy-groups:
     tolerance: 100
     proxies:
       - 🇰🇷 -韩国-00000000000000000000000000000000000000000000000000000000000028a.node-for-bigairport.win
+      - 🇰🇷 -韩国-00000000000000000000000000000000000000000000000000000000000038a.node-for-bigairport.win
+      - 🇰🇷 -韩国-korea04.4ghatde.com
 rules:
  - DOMAIN,instant.arubanetworks.com,DIRECT
  - DOMAIN,router.asus.com,DIRECT
